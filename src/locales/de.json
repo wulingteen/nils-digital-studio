@@ -1,0 +1,155 @@
+{
+  "nav": {
+    "home": "Start",
+    "services": "Leistungen",
+    "work": "Projekte",
+    "about": "Über mich",
+    "insights": "Einblicke",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "headline1": "Ich mache GenAI /",
+    "headline2": "AI Agents produktionsreif.",
+    "sub": "Vom Prototyp zur Produktion in regulierten Umgebungen — Governance, Observability und Kostenkontrolle.",
+    "cta_book": "Gespräch buchen",
+    "cta_email": "E-Mail",
+    "cta_linkedin": "LinkedIn"
+  },
+  "proof": {
+    "patent": "2 Patente eingereicht",
+    "award": "Innovationspreis",
+    "talks": "10+ Vorträge & Workshops",
+    "certs": "AWS / Azure zertifiziert",
+    "clients": "Fortune-500-Kunden"
+  },
+  "demos": {
+    "title": "Prototyp-Demos",
+    "sub": "Sehen Sie, wie ich Ideen in Tagen statt Monaten in funktionierende AI-Prototypen verwandle."
+  },
+  "services_teaser": {
+    "title": "Wie ich helfe",
+    "sub": "Von der Strategie bis zur Umsetzung — ich helfe Teams, schnell mit AI voranzukommen.",
+    "cta": "Leistungen ansehen"
+  },
+  "services": {
+    "page_title": "Leistungen",
+    "page_sub": "Fokussierte Engagements für schnelle und messbare Ergebnisse.",
+    "consulting": {
+      "title": "Beratung",
+      "timeline": "1–3 Wochen",
+      "best_for": "Ideal für: Strategieklarheit, Architektur-Review, Build-or-Buy-Entscheidungen",
+      "deliverables": "AI-Strategiebewertung, Architektur-Blueprint, Anbieterbewertung, Risiko- & Governance-Framework, Executive Readout.",
+      "desc": "Ich helfe Führungsteams, den AI-Hype zu durchschauen und fundierte Entscheidungen zu treffen. Erwarten Sie eine klare Roadmap, keine Folienschlacht."
+    },
+    "prototyping": {
+      "title": "Rapid Prototyping",
+      "timeline": "2–6 Wochen",
+      "best_for": "Ideal für: schnelle Wertvalidierung, Risikominimierung vor Personalaufbau",
+      "deliverables": "Funktionierender Prototyp, Evaluierungs-Suite, Kostenmodell, Übergabedokumentation, Demo-Aufzeichnung.",
+      "desc": "Ich baue produktionsnahe Prototypen, die zeigen, was möglich ist — und was nicht. Ihr Team erbt sauberen Code und klare Dokumentation."
+    },
+    "training": {
+      "title": "Enablement & Training",
+      "timeline": "0,5–2 Tage",
+      "best_for": "Ideal für: Engineering-Teams weiterbilden, interne AI-Champions aufbauen",
+      "deliverables": "Maßgeschneiderter Workshop, Hands-on-Labs, Referenzmaterialien, Follow-up Q&A.",
+      "desc": "Ich führe intensive, praxisnahe Workshops durch, die auf den Tech-Stack und das Niveau Ihres Teams zugeschnitten sind. Kein generischer Inhalt — alles basiert auf Ihren realen Problemen."
+    },
+    "cta": "Kontakt aufnehmen"
+  },
+  "work": {
+    "page_title": "Ausgewählte Projekte",
+    "page_sub": "Anonymisierte Fallstudien aus regulierten Unternehmen und globalen Institutionen.",
+    "cases": [
+      {
+        "title": "Enterprise AI Platform",
+        "client": "Globale Tier-1-Bank",
+        "tags": ["LLM-Plattform", "Governance", "Skalierung"],
+        "problem": "Die Bank benötigte eine zentrale Plattform für GenAI-Experimente, die strenge regulatorische Anforderungen erfüllt.",
+        "approach": "Entwurf und Aufbau einer internen AI-Plattform mit Leitplanken, Kostenverfolgung und integrierter Modell-Governance.",
+        "outcome": "Plattform von 12+ Teams in 3 Regionen übernommen. Deployment-Zeit für AI-Use-Cases von Monaten auf Tage reduziert.",
+        "owned": "Architektur, Plattform-Engineering, Stakeholder-Alignment, Governance-Framework"
+      },
+      {
+        "title": "Agentic Document Processing",
+        "client": "Führende SG-Bank",
+        "tags": ["AI Agents", "Document AI", "Automatisierung"],
+        "problem": "Manuelle Dokumentenprüfung verbrauchte tausende Analystenstunden pro Quartal bei hoher Fehlerquote.",
+        "approach": "Aufbau eines Multi-Agenten-Systems zur Extraktion, Validierung und Weiterleitung von Dokumentdaten mit Human-in-the-Loop.",
+        "outcome": "80% Reduktion der Bearbeitungszeit. Fehlerquote unter 2%. System verarbeitet 50K+ Dokumente/Monat.",
+        "owned": "Agenten-Architektur, Evaluierungs-Pipeline, Produktions-Deployment, Monitoring"
+      },
+      {
+        "title": "AI-Powered Research Assistant",
+        "client": "Globale Beratung",
+        "tags": ["RAG", "Suche", "Prototyping"],
+        "problem": "Berater verbrachten Stunden mit der Suche nach relevanten Fallstudien in fragmentierten Wissensdatenbanken.",
+        "approach": "Prototyp eines RAG-basierten Forschungsassistenten mit semantischer Suche, Zitatverfolgung und Qualitätsbewertung.",
+        "outcome": "Prototyp in 3 Wochen validiert. Executive Buy-in und dediziertes Engineering-Team für Produktionsbau gesichert.",
+        "owned": "End-to-End-Prototyp, Evaluierungsframework, Stakeholder-Demos, Übergabe"
+      },
+      {
+        "title": "Cost Optimization Engine",
+        "client": "Reguliertes Unternehmen",
+        "tags": ["Kostenkontrolle", "Observability", "LLM Ops"],
+        "problem": "GenAI-Kosten stiegen monatlich um 40% ohne Transparenz über Nutzungsmuster oder ROI.",
+        "approach": "Aufbau einer Observability-Schicht mit teambasierter Kostenzuordnung, Nutzungsanalysen und automatisierten Budgetwarnungen.",
+        "outcome": "30% Kostenreduktion im ersten Quartal. Vollständige Transparenz für Finanz- und Engineering-Führung.",
+        "owned": "Observability-Architektur, Dashboard-Design, Kostenmodellierung, Rollout"
+      }
+    ]
+  },
+  "about": {
+    "page_title": "Über mich",
+    "bio": "Ich bin Nils — AI-Architekt und Builder, der regulierten Unternehmen hilft, GenAI-Ambitionen in Produktionssysteme zu verwandeln. Ich arbeite seit Jahren an der Schnittstelle von Enterprise-Software und angewandter AI — mit Banken, Beratungen und globalen Institutionen. Ich mache keine Folien ohne Code. Jedes Engagement endet mit etwas, das funktioniert.",
+    "principles_title": "Prinzipien",
+    "principles": [
+      {
+        "title": "The Bitter Lesson",
+        "desc": "Skalierung und Compute gewinnen. Ich baue Systeme, die Foundation Models nutzen statt gegen sie zu arbeiten."
+      },
+      {
+        "title": "Platform-First",
+        "desc": "Einmallösungen überleben nicht. Ich designe von Tag eins für Wiederverwendung, Governance und Teamautonomie."
+      },
+      {
+        "title": "Evaluation-Driven",
+        "desc": "Was man nicht messen kann, kann man nicht ausliefern. Rigorose Evaluation ist die Grundlage jedes Projekts."
+      }
+    ],
+    "skills_title": "Tech-Stack",
+    "skills": ["Python", "TypeScript", "LangChain / LlamaIndex", "OpenAI / Anthropic / Azure", "AWS / GCP", "Kubernetes / Docker", "RAG / Agents / Evals", "React / Next.js", "PostgreSQL / Vektordatenbanken"],
+    "credibility_title": "Referenzen",
+    "credibility": [
+      { "label": "Patente", "value": "2 eingereicht (AI/ML-Systeme)" },
+      { "label": "Vorträge", "value": "10+ auf Branchenkonferenzen" },
+      { "label": "Auszeichnung", "value": "Innovationspreis (Enterprise AI)" },
+      { "label": "Zertifizierungen", "value": "AWS Solutions Architect, Azure AI" }
+    ]
+  },
+  "insights": {
+    "page_title": "Einblicke",
+    "coming_soon": "Demnächst verfügbar.",
+    "sub": "Ich bereite eine Artikelserie über den Aufbau von AI-Systemen in regulierten Umgebungen vor. Bleiben Sie dran."
+  },
+  "contact": {
+    "page_title": "Kontakt",
+    "page_sub": "Ob Strategiesession, Prototyp oder Workshop — ich freue mich auf Ihre Herausforderung.",
+    "name": "Name",
+    "email": "E-Mail",
+    "message": "Nachricht",
+    "send": "Nachricht senden",
+    "success": "Nachricht gesendet! Ich melde mich innerhalb von 24 Stunden.",
+    "timezone": "Standort: Asien/Taipeh (GMT+8)",
+    "validation": {
+      "name_required": "Bitte geben Sie Ihren Namen ein",
+      "email_required": "Bitte geben Sie Ihre E-Mail ein",
+      "email_invalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+      "message_required": "Bitte geben Sie eine Nachricht ein"
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 Nils. Alle Rechte vorbehalten.",
+    "built_with": "Mit Präzision gebaut."
+  }
+}

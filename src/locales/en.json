@@ -1,0 +1,155 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "work": "Work",
+    "about": "About",
+    "insights": "Insights",
+    "contact": "Contact"
+  },
+  "hero": {
+    "headline1": "I make GenAI /",
+    "headline2": "AI Agents operational.",
+    "sub": "From prototype to production in regulated environments — governance, observability, and cost under control.",
+    "cta_book": "Book a Call",
+    "cta_email": "Email",
+    "cta_linkedin": "LinkedIn"
+  },
+  "proof": {
+    "patent": "2 Patents Filed",
+    "award": "Innovation Award",
+    "talks": "10+ Talks & Workshops",
+    "certs": "AWS / Azure Certified",
+    "clients": "Fortune 500 Clients"
+  },
+  "demos": {
+    "title": "Prototype Demos",
+    "sub": "Watch how I turn ideas into working AI prototypes in days, not months."
+  },
+  "services_teaser": {
+    "title": "How I Help",
+    "sub": "From strategy to shipping — I help teams move fast with AI.",
+    "cta": "View Services"
+  },
+  "services": {
+    "page_title": "Services",
+    "page_sub": "Focused engagements designed to move fast and deliver measurable outcomes.",
+    "consulting": {
+      "title": "Consulting",
+      "timeline": "1–3 weeks",
+      "best_for": "Best for: strategy clarity, architecture review, build-or-buy decisions",
+      "deliverables": "AI strategy assessment, architecture blueprint, vendor evaluation, risk & governance framework, executive readout.",
+      "desc": "I help leadership teams cut through AI hype and make confident, informed decisions. Expect a clear roadmap, not a slide deck."
+    },
+    "prototyping": {
+      "title": "Rapid Prototyping",
+      "timeline": "2–6 weeks",
+      "best_for": "Best for: proving value fast, de-risking before committing headcount",
+      "deliverables": "Working prototype, evaluation suite, cost model, handoff documentation, demo recording.",
+      "desc": "I build production-grade prototypes that prove what's possible — and what isn't. Your team inherits clean code and clear documentation."
+    },
+    "training": {
+      "title": "Enablement & Training",
+      "timeline": "0.5–2 days",
+      "best_for": "Best for: upskilling engineering teams, internal AI champions",
+      "deliverables": "Custom workshop, hands-on labs, reference materials, follow-up Q&A session.",
+      "desc": "I run intensive, hands-on workshops tailored to your team's stack and skill level. No generic content — everything is built around your real problems."
+    },
+    "cta": "Let's Talk"
+  },
+  "work": {
+    "page_title": "Selected Work",
+    "page_sub": "Anonymized case studies from regulated enterprises and global institutions.",
+    "cases": [
+      {
+        "title": "Enterprise AI Platform",
+        "client": "Top-Tier Global Bank",
+        "tags": ["LLM Platform", "Governance", "Scale"],
+        "problem": "The bank needed a centralized platform for GenAI experimentation that met strict regulatory requirements.",
+        "approach": "Designed and built an internal AI platform with guardrails, cost tracking, and model governance baked in.",
+        "outcome": "Platform adopted by 12+ teams across 3 regions. Reduced time-to-deploy for AI use cases from months to days.",
+        "owned": "Architecture, platform engineering, stakeholder alignment, governance framework"
+      },
+      {
+        "title": "Agentic Document Processing",
+        "client": "Leading SG Bank",
+        "tags": ["AI Agents", "Document AI", "Automation"],
+        "problem": "Manual document review was consuming thousands of analyst hours per quarter with high error rates.",
+        "approach": "Built a multi-agent system that extracts, validates, and routes document data with human-in-the-loop oversight.",
+        "outcome": "80% reduction in processing time. Error rate dropped below 2%. System handles 50K+ documents/month.",
+        "owned": "Agent architecture, evaluation pipeline, production deployment, monitoring"
+      },
+      {
+        "title": "AI-Powered Research Assistant",
+        "client": "Global Consultancy",
+        "tags": ["RAG", "Search", "Prototyping"],
+        "problem": "Consultants spent hours searching across fragmented knowledge bases for relevant case studies and frameworks.",
+        "approach": "Prototyped a RAG-based research assistant with semantic search, citation tracking, and quality evaluation.",
+        "outcome": "Prototype validated in 3 weeks. Secured executive buy-in and a dedicated engineering team for production build.",
+        "owned": "End-to-end prototype, evaluation framework, stakeholder demos, handoff"
+      },
+      {
+        "title": "Cost Optimization Engine",
+        "client": "Regulated Enterprise",
+        "tags": ["Cost Control", "Observability", "LLM Ops"],
+        "problem": "GenAI costs were growing 40% month-over-month with no visibility into usage patterns or ROI.",
+        "approach": "Built an observability layer with per-team cost attribution, usage analytics, and automated budget alerts.",
+        "outcome": "30% cost reduction in first quarter. Full visibility for finance and engineering leadership.",
+        "owned": "Observability architecture, dashboard design, cost modeling, rollout"
+      }
+    ]
+  },
+  "about": {
+    "page_title": "About",
+    "bio": "I'm Nils — an AI architect and builder who helps regulated enterprises turn GenAI ambitions into production systems. I've spent years at the intersection of enterprise software and applied AI, working with banks, consultancies, and global institutions. I don't do slide decks without code. Every engagement ends with something that works.",
+    "principles_title": "Principles",
+    "principles": [
+      {
+        "title": "The Bitter Lesson",
+        "desc": "Scale and compute win. I build systems that leverage foundation models rather than fight them."
+      },
+      {
+        "title": "Platform-First",
+        "desc": "One-off solutions don't survive. I design for reuse, governance, and team autonomy from day one."
+      },
+      {
+        "title": "Evaluation-Driven",
+        "desc": "If you can't measure it, you can't ship it. Rigorous evaluation is the foundation of every project I touch."
+      }
+    ],
+    "skills_title": "Stack & Skills",
+    "skills": ["Python", "TypeScript", "LangChain / LlamaIndex", "OpenAI / Anthropic / Azure", "AWS / GCP", "Kubernetes / Docker", "RAG / Agents / Evals", "React / Next.js", "PostgreSQL / Vector DBs"],
+    "credibility_title": "Credentials",
+    "credibility": [
+      { "label": "Patents", "value": "2 filed (AI/ML systems)" },
+      { "label": "Talks", "value": "10+ at industry conferences" },
+      { "label": "Award", "value": "Innovation Award (enterprise AI)" },
+      { "label": "Certifications", "value": "AWS Solutions Architect, Azure AI" }
+    ]
+  },
+  "insights": {
+    "page_title": "Insights",
+    "coming_soon": "Coming soon.",
+    "sub": "I'm preparing a series of articles on building AI systems in regulated environments. Stay tuned."
+  },
+  "contact": {
+    "page_title": "Get in Touch",
+    "page_sub": "Whether you need a strategy session, a prototype, or a workshop — I'd love to hear about your challenge.",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message",
+    "success": "Message sent! I'll get back to you within 24 hours.",
+    "timezone": "Based in Asia/Taipei (GMT+8)",
+    "validation": {
+      "name_required": "Name is required",
+      "email_required": "Email is required",
+      "email_invalid": "Please enter a valid email",
+      "message_required": "Message is required"
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 Nils. All rights reserved.",
+    "built_with": "Crafted with precision."
+  }
+}
