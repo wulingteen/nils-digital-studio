@@ -15,7 +15,7 @@ const Layout = () => {
   }, [lang, i18n]);
 
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex min-h-screen flex-col scroll-smooth">
       <Header />
       <main className="flex-1 pt-16">
         <Outlet />
