@@ -1,0 +1,155 @@
+{
+  "nav": {
+    "home": "首頁",
+    "services": "服務",
+    "work": "作品",
+    "about": "關於",
+    "insights": "洞察",
+    "contact": "聯繫"
+  },
+  "hero": {
+    "headline1": "我讓 GenAI /",
+    "headline2": "AI Agents 落地運營。",
+    "sub": "從原型到生產環境 — 在受監管的企業中實現治理、可觀測性與成本控制。",
+    "cta_book": "預約通話",
+    "cta_email": "電子郵件",
+    "cta_linkedin": "LinkedIn"
+  },
+  "proof": {
+    "patent": "2 項專利申請",
+    "award": "創新獎項",
+    "talks": "10+ 場演講與工作坊",
+    "certs": "AWS / Azure 認證",
+    "clients": "財富500強客戶"
+  },
+  "demos": {
+    "title": "原型演示",
+    "sub": "看我如何在幾天內將想法轉化為可運行的 AI 原型。"
+  },
+  "services_teaser": {
+    "title": "我如何幫助您",
+    "sub": "從策略到交付 — 幫助團隊快速推進 AI 落地。",
+    "cta": "查看服務"
+  },
+  "services": {
+    "page_title": "服務",
+    "page_sub": "專注的合作模式，快速推進並交付可衡量的成果。",
+    "consulting": {
+      "title": "顧問諮詢",
+      "timeline": "1–3 週",
+      "best_for": "適合：策略釐清、架構審查、自建或採購決策",
+      "deliverables": "AI 策略評估、架構藍圖、供應商評估、風險與治理框架、高管簡報。",
+      "desc": "我幫助領導團隊穿透 AI 炒作，做出自信且知情的決策。期待的是清晰的路線圖，而非簡報投影片。"
+    },
+    "prototyping": {
+      "title": "快速原型",
+      "timeline": "2–6 週",
+      "best_for": "適合：快速驗證價值、在投入人力前降低風險",
+      "deliverables": "可運行的原型、評估套件、成本模型、交接文檔、演示錄影。",
+      "desc": "我構建生產級原型來證明什麼可行 — 什麼不可行。您的團隊將繼承乾淨的代碼和清晰的文檔。"
+    },
+    "training": {
+      "title": "賦能與培訓",
+      "timeline": "0.5–2 天",
+      "best_for": "適合：提升工程團隊能力、培養內部 AI 推動者",
+      "deliverables": "客製化工作坊、實作練習、參考資料、後續問答環節。",
+      "desc": "我根據您團隊的技術棧和技能水平量身打造密集的實作工作坊。沒有通用內容 — 一切圍繞您的實際問題展開。"
+    },
+    "cta": "開始對話"
+  },
+  "work": {
+    "page_title": "精選作品",
+    "page_sub": "來自受監管企業和全球機構的匿名化案例研究。",
+    "cases": [
+      {
+        "title": "企業 AI 平台",
+        "client": "頂級全球銀行",
+        "tags": ["LLM 平台", "治理", "規模化"],
+        "problem": "該銀行需要一個滿足嚴格監管要求的集中式 GenAI 實驗平台。",
+        "approach": "設計並構建了內置護欄、成本追蹤和模型治理的內部 AI 平台。",
+        "outcome": "平台被 3 個地區的 12+ 個團隊採用。AI 用例的部署時間從數月縮短到數天。",
+        "owned": "架構設計、平台工程、利害關係人協調、治理框架"
+      },
+      {
+        "title": "智能文件處理",
+        "client": "新加坡領先銀行",
+        "tags": ["AI Agents", "文件 AI", "自動化"],
+        "problem": "人工文件審查每季度消耗數千分析師工時，且錯誤率高。",
+        "approach": "構建了多智能體系統，具備提取、驗證和路由文件數據的能力，並有人工監督環節。",
+        "outcome": "處理時間減少 80%。錯誤率降至 2% 以下。系統每月處理 50K+ 份文件。",
+        "owned": "智能體架構、評估管線、生產部署、監控"
+      },
+      {
+        "title": "AI 驅動的研究助手",
+        "client": "全球顧問公司",
+        "tags": ["RAG", "搜索", "原型"],
+        "problem": "顧問花費數小時在碎片化的知識庫中搜索相關案例和框架。",
+        "approach": "原型化了基於 RAG 的研究助手，具備語義搜索、引用追蹤和質量評估功能。",
+        "outcome": "原型在 3 週內驗證。獲得高管認可並組建了專門的工程團隊進行生產構建。",
+        "owned": "端到端原型、評估框架、利害關係人演示、交接"
+      },
+      {
+        "title": "成本優化引擎",
+        "client": "受監管企業",
+        "tags": ["成本控制", "可觀測性", "LLM Ops"],
+        "problem": "GenAI 成本以每月 40% 的速度增長，對使用模式或投資回報率毫無可見性。",
+        "approach": "構建了具備按團隊成本歸因、使用分析和自動預算警報的可觀測性層。",
+        "outcome": "第一季度成本降低 30%。財務和工程領導層獲得完整可見性。",
+        "owned": "可觀測性架構、儀表板設計、成本建模、推廣"
+      }
+    ]
+  },
+  "about": {
+    "page_title": "關於我",
+    "bio": "我是 Nils — 一位 AI 架構師和建造者，幫助受監管企業將 GenAI 願景轉化為生產系統。多年來，我一直在企業軟體和應用 AI 的交匯處工作，服務銀行、顧問公司和全球機構。我不做沒有代碼的簡報。每次合作都以可運行的成果結束。",
+    "principles_title": "原則",
+    "principles": [
+      {
+        "title": "苦澀的教訓",
+        "desc": "規模和算力終將勝出。我構建利用基礎模型而非對抗它們的系統。"
+      },
+      {
+        "title": "平台優先",
+        "desc": "一次性解決方案無法存活。我從第一天就為複用、治理和團隊自主權而設計。"
+      },
+      {
+        "title": "評估驅動",
+        "desc": "無法衡量就無法交付。嚴謹的評估是我經手的每個項目的基礎。"
+      }
+    ],
+    "skills_title": "技術棧",
+    "skills": ["Python", "TypeScript", "LangChain / LlamaIndex", "OpenAI / Anthropic / Azure", "AWS / GCP", "Kubernetes / Docker", "RAG / Agents / Evals", "React / Next.js", "PostgreSQL / 向量資料庫"],
+    "credibility_title": "資歷",
+    "credibility": [
+      { "label": "專利", "value": "2 項已申請（AI/ML 系統）" },
+      { "label": "演講", "value": "10+ 場行業會議演講" },
+      { "label": "獎項", "value": "創新獎（企業 AI）" },
+      { "label": "認證", "value": "AWS Solutions Architect, Azure AI" }
+    ]
+  },
+  "insights": {
+    "page_title": "洞察",
+    "coming_soon": "即將推出。",
+    "sub": "我正在準備一系列關於在受監管環境中構建 AI 系統的文章。敬請期待。"
+  },
+  "contact": {
+    "page_title": "聯繫我",
+    "page_sub": "無論您需要策略會議、原型還是工作坊 — 我很樂意了解您的挑戰。",
+    "name": "姓名",
+    "email": "電子郵件",
+    "message": "訊息",
+    "send": "發送訊息",
+    "success": "訊息已發送！我會在 24 小時內回覆您。",
+    "timezone": "所在地：亞洲/台北（GMT+8）",
+    "validation": {
+      "name_required": "請輸入姓名",
+      "email_required": "請輸入電子郵件",
+      "email_invalid": "請輸入有效的電子郵件地址",
+      "message_required": "請輸入訊息"
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 Nils. 版權所有。",
+    "built_with": "精心打造。"
+  }
+}
