@@ -122,7 +122,7 @@ const SinglePage = () => {
                     animate="visible"
                     className="container-narrow relative flex min-h-screen items-center"
                 >
-                    <div className="mr-auto w-full md:w-1/2 md:pr-12 lg:pr-20">
+                    <div className="mr-auto w-full md:w-2/3 md:pr-8">
                         <motion.p variants={fadeUp} className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-muted-foreground">
                             Nils — AI Architect & Builder
                         </motion.p>
