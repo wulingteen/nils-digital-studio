@@ -22,7 +22,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename="/nils-digital-studio">
         <Routes>
           <Route path="/" element={<Navigate to={`/${getDefaultLang()}`} replace />} />
           <Route path="/:lang" element={<Layout />}>
