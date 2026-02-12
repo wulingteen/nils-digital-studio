@@ -10,17 +10,17 @@
   "hero": {
     "headline1": "I make GenAI /",
     "headline2": "AI Agents operational.",
-    "sub": "From prototype to production in regulated environments — governance, observability, and cost under control.",
+    "sub": "From prototype to production in regulated enterprises — governance, observability, and cost under control.",
     "cta_book": "Book a Call",
     "cta_email": "Email",
     "cta_linkedin": "LinkedIn"
   },
   "proof": {
-    "patent": "2 Patents Filed",
-    "award": "Innovation Award",
-    "talks": "10+ Talks & Workshops",
-    "certs": "AWS / Azure Certified",
-    "clients": "Fortune 500 Clients"
+    "patent": "6 Patents Granted",
+    "award": "1st Place, CUB 2024 Innovation",
+    "talks": "iThome Hello World Speaker",
+    "certs": "PMP Certified",
+    "clients": "Top-Tier Banking Clients"
   },
   "demos": {
     "title": "Prototype Demos",
@@ -59,49 +59,65 @@
   },
   "work": {
     "page_title": "Selected Work",
-    "page_sub": "Anonymized case studies from regulated enterprises and global institutions.",
+    "page_sub": "Case studies from regulated enterprises and global financial institutions.",
     "cases": [
       {
-        "title": "Enterprise AI Platform",
-        "client": "Top-Tier Global Bank",
-        "tags": ["LLM Platform", "Governance", "Scale"],
-        "problem": "The bank needed a centralized platform for GenAI experimentation that met strict regulatory requirements.",
-        "approach": "Designed and built an internal AI platform with guardrails, cost tracking, and model governance baked in.",
-        "outcome": "Platform adopted by 12+ teams across 3 regions. Reduced time-to-deploy for AI use cases from months to days.",
-        "owned": "Architecture, platform engineering, stakeholder alignment, governance framework"
+        "title": "CathayGPT — Enterprise GenAI Platform",
+        "client": "Cathay United Bank",
+        "tags": [
+          "GenAI Platform",
+          "GCP Serverless",
+          "Production"
+        ],
+        "problem": "The bank needed its first production GenAI application for internal knowledge and task assistance, with enterprise-grade security and compliance.",
+        "approach": "Architected and shipped a scalable serverless GenAI stack on GCP (Cloud Run, Cloud SQL, Vertex AI) with enterprise controls across identity, access, auditing, monitoring, and failure handling.",
+        "outcome": "CathayGPT (國泰智多星) became the bank's first production GenAI app. Drove internal ROI via knowledge & task assistance across the organization.",
+        "owned": "Lead developer / architect, end-to-end platform engineering, security & compliance, stakeholder alignment"
       },
       {
-        "title": "Agentic Document Processing",
-        "client": "Leading SG Bank",
-        "tags": ["AI Agents", "Document AI", "Automation"],
-        "problem": "Manual document review was consuming thousands of analyst hours per quarter with high error rates.",
-        "approach": "Built a multi-agent system that extracts, validates, and routes document data with human-in-the-loop oversight.",
-        "outcome": "80% reduction in processing time. Error rate dropped below 2%. System handles 50K+ documents/month.",
-        "owned": "Agent architecture, evaluation pipeline, production deployment, monitoring"
+        "title": "Overseas AI Agent Platform",
+        "client": "Cathay Financial Holdings",
+        "tags": [
+          "Multi-Agent",
+          "MCP",
+          "Agentic Workflows"
+        ],
+        "problem": "The holding company needed a scalable AI Agent platform for overseas operations, supporting multiple scenarios with production operational standards.",
+        "approach": "Founded and built the first overseas-dedicated AI Agent platform with modular multi-agent architecture (agents/tools/memory/evaluation), MCP-style tool servers, and OAuth-based authentication patterns.",
+        "outcome": "Platform designed to scale across scenarios with standardized tool contracts for reuse and measurable evaluation loops.",
+        "owned": "Founding builder, architecture, agentic workflows, tool server design, evaluation framework"
       },
       {
-        "title": "AI-Powered Research Assistant",
-        "client": "Global Consultancy",
-        "tags": ["RAG", "Search", "Prototyping"],
-        "problem": "Consultants spent hours searching across fragmented knowledge bases for relevant case studies and frameworks.",
-        "approach": "Prototyped a RAG-based research assistant with semantic search, citation tracking, and quality evaluation.",
-        "outcome": "Prototype validated in 3 weeks. Secured executive buy-in and a dedicated engineering team for production build.",
-        "owned": "End-to-end prototype, evaluation framework, stakeholder demos, handoff"
+        "title": "Narrator — GenAI Risk Analytics",
+        "client": "Synpulse × Bank Client",
+        "tags": [
+          "GenAI",
+          "Risk Analytics",
+          "NLG"
+        ],
+        "problem": "Risk analytics outputs were complex and inaccessible to non-technical stakeholders, limiting adoption.",
+        "approach": "Built and integrated a GenAI module (Narrator) that transforms risk analytics outputs into natural language; partnered with client engineering for a deployable PoC.",
+        "outcome": "Delivered adoption-ready demo. Translated business goals into implementable AI/analytics patterns and governance controls.",
+        "owned": "GenAI module development, technical discovery, client enablement, execution roadmap"
       },
       {
-        "title": "Cost Optimization Engine",
-        "client": "Regulated Enterprise",
-        "tags": ["Cost Control", "Observability", "LLM Ops"],
-        "problem": "GenAI costs were growing 40% month-over-month with no visibility into usage patterns or ROI.",
-        "approach": "Built an observability layer with per-team cost attribution, usage analytics, and automated budget alerts.",
-        "outcome": "30% cost reduction in first quarter. Full visibility for finance and engineering leadership.",
-        "owned": "Observability architecture, dashboard design, cost modeling, rollout"
+        "title": "Production Automation & ML Enablement",
+        "client": "DBS Bank",
+        "tags": [
+          "Python Automation",
+          "ML Training",
+          "DevOps"
+        ],
+        "problem": "Remote operations during COVID needed automation; engineering teams lacked applied ML literacy.",
+        "approach": "Shipped production-grade Python automation (Linux + MySQL + SHA-256) scaled as reusable templates across 70+ reporting workflows. Led ML enablement program (AWS DeepRacer) for 200 staff.",
+        "outcome": "Automation enabled full remote operations during COVID. ML literacy improved across engineering and business teams.",
+        "owned": "Automation engineering, call center platform delivery, ML training program, code review coordination"
       }
     ]
   },
   "about": {
     "page_title": "About",
-    "bio": "I'm Nils — an AI architect and builder who helps regulated enterprises turn GenAI ambitions into production systems. I've spent years at the intersection of enterprise software and applied AI, working with banks, consultancies, and global institutions. I don't do slide decks without code. Every engagement ends with something that works.",
+    "bio": "I'm Nils (劉岦崱) — a GenAI Solution Architect and builder at Cathay United Bank, one of Taiwan's largest banks. I architect and ship production GenAI systems in regulated environments. Previously, I consulted at Synpulse (global financial services consulting) and served as a Management Associate at DBS Bank. I follow a Software 3.0 / generalization-first approach: reusable capabilities, standardized interfaces, and measurable evaluation loops over one-off prompt customization.",
     "principles_title": "Principles",
     "principles": [
       {
@@ -118,13 +134,43 @@
       }
     ],
     "skills_title": "Stack & Skills",
-    "skills": ["Python", "TypeScript", "LangChain / LlamaIndex", "OpenAI / Anthropic / Azure", "AWS / GCP", "Kubernetes / Docker", "RAG / Agents / Evals", "React / Next.js", "PostgreSQL / Vector DBs"],
+    "skills": [
+      "Python",
+      "SQL",
+      "GCP (Cloud Run / Vertex AI)",
+      "Serverless Architecture",
+      "Agentic Workflows / MCP",
+      "RAG / Agents / Evals",
+      "React / Next.js / TypeScript",
+      "LangChain / LlamaIndex",
+      "PostgreSQL / Vector DBs"
+    ],
     "credibility_title": "Credentials",
     "credibility": [
-      { "label": "Patents", "value": "2 filed (AI/ML systems)" },
-      { "label": "Talks", "value": "10+ at industry conferences" },
-      { "label": "Award", "value": "Innovation Award (enterprise AI)" },
-      { "label": "Certifications", "value": "AWS Solutions Architect, Azure AI" }
+      {
+        "label": "Patents",
+        "value": "6 granted (GenAI / Knowledge Graph / Data Query systems)"
+      },
+      {
+        "label": "Award",
+        "value": "1st Place — CUB 2024 Innovation Competition"
+      },
+      {
+        "label": "Talks",
+        "value": "iThome Hello World speaker, internal workshops"
+      },
+      {
+        "label": "Certifications",
+        "value": "PMP (Project Management Professional)"
+      },
+      {
+        "label": "Education",
+        "value": "NTU CS (MSc) · Quantic MBA · TU Chemnitz MSc · NTU BSc"
+      },
+      {
+        "label": "Languages",
+        "value": "Chinese (native), English, German, Japanese (basic)"
+      }
     ]
   },
   "insights": {
@@ -140,7 +186,7 @@
     "message": "Message",
     "send": "Send Message",
     "success": "Message sent! I'll get back to you within 24 hours.",
-    "timezone": "Based in Asia/Taipei (GMT+8)",
+    "timezone": "Based in Taipei, Taiwan (GMT+8)",
     "validation": {
       "name_required": "Name is required",
       "email_required": "Email is required",

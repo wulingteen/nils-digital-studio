@@ -105,7 +105,7 @@ const SinglePage = () => {
                 <div className="absolute inset-y-0 right-0 w-full md:w-1/2 -z-10">
                     <img
                         src="/nils-profile.png"
-                        alt="Nils — AI Architect & Builder"
+                        alt="Nils — GenAI Solution Architect"
                         className="h-full w-full object-cover object-top"
                     />
                     {/* Fade-out to the left */}
@@ -124,7 +124,7 @@ const SinglePage = () => {
                 >
                     <div className="mr-auto w-full md:w-2/3 md:pr-8">
                         <motion.p variants={fadeUp} className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-muted-foreground">
-                            Nils — AI Architect & Builder
+                            Nils — GenAI Solution Architect
                         </motion.p>
                         <motion.h1 variants={fadeUp} className="mb-2 text-5xl font-bold leading-[1.1] tracking-tight text-foreground md:text-7xl lg:text-8xl">
                             {t("hero.headline1")}
@@ -144,14 +144,14 @@ const SinglePage = () => {
                                 {t("hero.cta_book")}
                             </a>
                             <a
-                                href="mailto:hello@example.com"
+                                href="mailto:wulingteen@gmail.com"
                                 className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-medium text-foreground transition-all hover:bg-secondary"
                             >
                                 <Mail className="h-4 w-4" />
                                 {t("hero.cta_email")}
                             </a>
                             <a
-                                href="https://linkedin.com"
+                                href="https://www.linkedin.com/in/nilsliu/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-medium text-foreground transition-all hover:bg-secondary"
@@ -469,10 +469,10 @@ const SinglePage = () => {
                                 <span className="text-sm">{t("contact.timezone")}</span>
                             </div>
                             <div className="flex flex-col gap-4">
-                                <a href="mailto:hello@example.com" className="inline-flex items-center gap-3 text-sm text-muted-foreground transition-colors hover:text-foreground">
-                                    <Mail className="h-4 w-4" /> hello@example.com
+                                <a href="mailto:wulingteen@gmail.com" className="inline-flex items-center gap-3 text-sm text-muted-foreground transition-colors hover:text-foreground">
+                                    <Mail className="h-4 w-4" /> wulingteen@gmail.com
                                 </a>
-                                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 text-sm text-muted-foreground transition-colors hover:text-foreground">
+                                <a href="https://www.linkedin.com/in/nilsliu/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 text-sm text-muted-foreground transition-colors hover:text-foreground">
                                     <Linkedin className="h-4 w-4" /> LinkedIn
                                 </a>
                                 <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 text-sm text-muted-foreground transition-colors hover:text-foreground">

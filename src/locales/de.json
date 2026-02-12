@@ -10,17 +10,17 @@
   "hero": {
     "headline1": "Ich mache GenAI /",
     "headline2": "AI Agents produktionsreif.",
-    "sub": "Vom Prototyp zur Produktion in regulierten Umgebungen — Governance, Observability und Kostenkontrolle.",
+    "sub": "Vom Prototyp zur Produktion in regulierten Unternehmen — Governance, Observability und Kostenkontrolle.",
     "cta_book": "Gespräch buchen",
     "cta_email": "E-Mail",
     "cta_linkedin": "LinkedIn"
   },
   "proof": {
-    "patent": "2 Patente eingereicht",
-    "award": "Innovationspreis",
-    "talks": "10+ Vorträge & Workshops",
-    "certs": "AWS / Azure zertifiziert",
-    "clients": "Fortune-500-Kunden"
+    "patent": "6 Patente erteilt",
+    "award": "1. Platz, CUB 2024 Innovation",
+    "talks": "iThome Hello World Speaker",
+    "certs": "PMP-zertifiziert",
+    "clients": "Top-Tier-Bankkunden"
   },
   "demos": {
     "title": "Prototyp-Demos",
@@ -59,49 +59,65 @@
   },
   "work": {
     "page_title": "Ausgewählte Projekte",
-    "page_sub": "Anonymisierte Fallstudien aus regulierten Unternehmen und globalen Institutionen.",
+    "page_sub": "Fallstudien aus regulierten Unternehmen und globalen Finanzinstitutionen.",
     "cases": [
       {
-        "title": "Enterprise AI Platform",
-        "client": "Globale Tier-1-Bank",
-        "tags": ["LLM-Plattform", "Governance", "Skalierung"],
-        "problem": "Die Bank benötigte eine zentrale Plattform für GenAI-Experimente, die strenge regulatorische Anforderungen erfüllt.",
-        "approach": "Entwurf und Aufbau einer internen AI-Plattform mit Leitplanken, Kostenverfolgung und integrierter Modell-Governance.",
-        "outcome": "Plattform von 12+ Teams in 3 Regionen übernommen. Deployment-Zeit für AI-Use-Cases von Monaten auf Tage reduziert.",
-        "owned": "Architektur, Plattform-Engineering, Stakeholder-Alignment, Governance-Framework"
+        "title": "CathayGPT — Enterprise GenAI Plattform",
+        "client": "Cathay United Bank",
+        "tags": [
+          "GenAI-Plattform",
+          "GCP Serverless",
+          "Produktion"
+        ],
+        "problem": "Die Bank benötigte ihre erste produktionsreife GenAI-Anwendung für interne Wissens- und Aufgabenunterstützung mit Unternehmens-Sicherheit und Compliance.",
+        "approach": "Entwurf und Auslieferung eines skalierbaren Serverless GenAI-Stacks auf GCP (Cloud Run, Cloud SQL, Vertex AI) mit Unternehmens-Kontrollen für Identität, Zugriff, Audit, Monitoring und Fehlerbehandlung.",
+        "outcome": "CathayGPT (國泰智多星) wurde die erste produktionsreife GenAI-App der Bank. Interner ROI durch Wissens- und Aufgabenunterstützung.",
+        "owned": "Lead-Entwickler / Architekt, End-to-End-Plattform-Engineering, Sicherheit & Compliance, Stakeholder-Alignment"
       },
       {
-        "title": "Agentic Document Processing",
-        "client": "Führende SG-Bank",
-        "tags": ["AI Agents", "Document AI", "Automatisierung"],
-        "problem": "Manuelle Dokumentenprüfung verbrauchte tausende Analystenstunden pro Quartal bei hoher Fehlerquote.",
-        "approach": "Aufbau eines Multi-Agenten-Systems zur Extraktion, Validierung und Weiterleitung von Dokumentdaten mit Human-in-the-Loop.",
-        "outcome": "80% Reduktion der Bearbeitungszeit. Fehlerquote unter 2%. System verarbeitet 50K+ Dokumente/Monat.",
-        "owned": "Agenten-Architektur, Evaluierungs-Pipeline, Produktions-Deployment, Monitoring"
+        "title": "Overseas AI Agent Plattform",
+        "client": "Cathay Financial Holdings",
+        "tags": [
+          "Multi-Agent",
+          "MCP",
+          "Agentic Workflows"
+        ],
+        "problem": "Die Holdinggesellschaft benötigte eine skalierbare AI-Agent-Plattform für den Auslandsbetrieb mit Produktions-Betriebsstandards.",
+        "approach": "Gründung und Aufbau der ersten Auslands-AI-Agent-Plattform mit modularer Multi-Agenten-Architektur, MCP-Tool-Servern und OAuth-Authentifizierung.",
+        "outcome": "Plattform für szenarien-übergreifende Skalierung konzipiert, mit standardisierten Tool-Verträgen und messbaren Evaluierungsschleifen.",
+        "owned": "Gründer/Builder, Architektur, Agentic Workflows, Tool-Server-Design, Evaluierungs-Framework"
       },
       {
-        "title": "AI-Powered Research Assistant",
-        "client": "Globale Beratung",
-        "tags": ["RAG", "Suche", "Prototyping"],
-        "problem": "Berater verbrachten Stunden mit der Suche nach relevanten Fallstudien in fragmentierten Wissensdatenbanken.",
-        "approach": "Prototyp eines RAG-basierten Forschungsassistenten mit semantischer Suche, Zitatverfolgung und Qualitätsbewertung.",
-        "outcome": "Prototyp in 3 Wochen validiert. Executive Buy-in und dediziertes Engineering-Team für Produktionsbau gesichert.",
-        "owned": "End-to-End-Prototyp, Evaluierungsframework, Stakeholder-Demos, Übergabe"
+        "title": "Narrator — GenAI Risikoanalyse",
+        "client": "Synpulse × Bankkunde",
+        "tags": [
+          "GenAI",
+          "Risikoanalyse",
+          "NLG"
+        ],
+        "problem": "Risikoanalyse-Ergebnisse waren zu komplex für nicht-technische Stakeholder.",
+        "approach": "Entwicklung und Integration des GenAI-Moduls Narrator, das Risikoanalyse-Ergebnisse in natürliche Sprache transformiert; Zusammenarbeit mit Client-Engineering für einen deployierbaren PoC.",
+        "outcome": "Adoptionsbereite Demo geliefert. Geschäftsziele in implementierbare AI/Analytics-Muster und Governance-Kontrollen übersetzt.",
+        "owned": "GenAI-Modulentwicklung, technische Discovery, Client-Enablement, Execution-Roadmap"
       },
       {
-        "title": "Cost Optimization Engine",
-        "client": "Reguliertes Unternehmen",
-        "tags": ["Kostenkontrolle", "Observability", "LLM Ops"],
-        "problem": "GenAI-Kosten stiegen monatlich um 40% ohne Transparenz über Nutzungsmuster oder ROI.",
-        "approach": "Aufbau einer Observability-Schicht mit teambasierter Kostenzuordnung, Nutzungsanalysen und automatisierten Budgetwarnungen.",
-        "outcome": "30% Kostenreduktion im ersten Quartal. Vollständige Transparenz für Finanz- und Engineering-Führung.",
-        "owned": "Observability-Architektur, Dashboard-Design, Kostenmodellierung, Rollout"
+        "title": "Produktionsautomatisierung & ML-Enablement",
+        "client": "DBS Bank",
+        "tags": [
+          "Python-Automatisierung",
+          "ML-Training",
+          "DevOps"
+        ],
+        "problem": "Remote-Betrieb während COVID erforderte Automatisierung; Engineering-Teams fehlte angewandte ML-Kompetenz.",
+        "approach": "Produktionsreife Python-Automatisierung (Linux + MySQL + SHA-256) als wiederverwendbare Templates für 70+ Reporting-Workflows. ML-Enablement-Programm (AWS DeepRacer) für 200 Mitarbeiter.",
+        "outcome": "Automatisierung ermöglichte vollständigen Remote-Betrieb während COVID. ML-Kompetenz in Engineering- und Business-Teams verbessert.",
+        "owned": "Automatisierungs-Engineering, Call-Center-Plattform-Delivery, ML-Trainingsprogramm, Code-Review-Koordination"
       }
     ]
   },
   "about": {
     "page_title": "Über mich",
-    "bio": "Ich bin Nils — AI-Architekt und Builder, der regulierten Unternehmen hilft, GenAI-Ambitionen in Produktionssysteme zu verwandeln. Ich arbeite seit Jahren an der Schnittstelle von Enterprise-Software und angewandter AI — mit Banken, Beratungen und globalen Institutionen. Ich mache keine Folien ohne Code. Jedes Engagement endet mit etwas, das funktioniert.",
+    "bio": "Ich bin Nils (劉岦崱) — GenAI Solution Architect und Builder bei der Cathay United Bank, einer der größten Banken Taiwans. Ich entwerfe und liefere produktionsreife GenAI-Systeme in regulierten Umgebungen. Zuvor war ich als Banking-Technology-Berater bei Synpulse und als Management Associate bei der DBS Bank tätig. Ich folge einem Software 3.0 / Generalization-First-Ansatz: wiederverwendbare Fähigkeiten, standardisierte Interfaces und messbare Evaluierungsschleifen statt einmaliger Prompt-Anpassung.",
     "principles_title": "Prinzipien",
     "principles": [
       {
@@ -118,13 +134,43 @@
       }
     ],
     "skills_title": "Tech-Stack",
-    "skills": ["Python", "TypeScript", "LangChain / LlamaIndex", "OpenAI / Anthropic / Azure", "AWS / GCP", "Kubernetes / Docker", "RAG / Agents / Evals", "React / Next.js", "PostgreSQL / Vektordatenbanken"],
+    "skills": [
+      "Python",
+      "SQL",
+      "GCP (Cloud Run / Vertex AI)",
+      "Serverless-Architektur",
+      "Agentic Workflows / MCP",
+      "RAG / Agents / Evals",
+      "React / Next.js / TypeScript",
+      "LangChain / LlamaIndex",
+      "PostgreSQL / Vektordatenbanken"
+    ],
     "credibility_title": "Referenzen",
     "credibility": [
-      { "label": "Patente", "value": "2 eingereicht (AI/ML-Systeme)" },
-      { "label": "Vorträge", "value": "10+ auf Branchenkonferenzen" },
-      { "label": "Auszeichnung", "value": "Innovationspreis (Enterprise AI)" },
-      { "label": "Zertifizierungen", "value": "AWS Solutions Architect, Azure AI" }
+      {
+        "label": "Patente",
+        "value": "6 erteilt (GenAI / Knowledge Graph / Datenabfrage-Systeme)"
+      },
+      {
+        "label": "Auszeichnung",
+        "value": "1. Platz — CUB 2024 Innovationswettbewerb"
+      },
+      {
+        "label": "Vorträge",
+        "value": "iThome Hello World Speaker, interne Workshops"
+      },
+      {
+        "label": "Zertifizierungen",
+        "value": "PMP (Project Management Professional)"
+      },
+      {
+        "label": "Ausbildung",
+        "value": "NTU Informatik (MSc) · Quantic MBA · TU Chemnitz MSc · NTU BSc"
+      },
+      {
+        "label": "Sprachen",
+        "value": "Chinesisch (Muttersprache), Englisch, Deutsch, Japanisch (Grundkenntnisse)"
+      }
     ]
   },
   "insights": {
@@ -140,7 +186,7 @@
     "message": "Nachricht",
     "send": "Nachricht senden",
     "success": "Nachricht gesendet! Ich melde mich innerhalb von 24 Stunden.",
-    "timezone": "Standort: Asien/Taipeh (GMT+8)",
+    "timezone": "Standort: Taipeh, Taiwan (GMT+8)",
     "validation": {
       "name_required": "Bitte geben Sie Ihren Namen ein",
       "email_required": "Bitte geben Sie Ihre E-Mail ein",

@@ -16,11 +16,11 @@
     "cta_linkedin": "LinkedIn"
   },
   "proof": {
-    "patent": "2 項專利申請",
-    "award": "創新獎項",
-    "talks": "10+ 場演講與工作坊",
-    "certs": "AWS / Azure 認證",
-    "clients": "財富500強客戶"
+    "patent": "6 項專利（已核准）",
+    "award": "國泰世華 2024 創新競賽冠軍",
+    "talks": "iThome Hello World 講者",
+    "certs": "PMP 認證",
+    "clients": "頂級金融機構客戶"
   },
   "demos": {
     "title": "原型演示",
@@ -59,49 +59,65 @@
   },
   "work": {
     "page_title": "精選作品",
-    "page_sub": "來自受監管企業和全球機構的匿名化案例研究。",
+    "page_sub": "來自受監管企業與全球金融機構的案例研究。",
     "cases": [
       {
-        "title": "企業 AI 平台",
-        "client": "頂級全球銀行",
-        "tags": ["LLM 平台", "治理", "規模化"],
-        "problem": "該銀行需要一個滿足嚴格監管要求的集中式 GenAI 實驗平台。",
-        "approach": "設計並構建了內置護欄、成本追蹤和模型治理的內部 AI 平台。",
-        "outcome": "平台被 3 個地區的 12+ 個團隊採用。AI 用例的部署時間從數月縮短到數天。",
-        "owned": "架構設計、平台工程、利害關係人協調、治理框架"
+        "title": "CathayGPT — 企業 GenAI 平台",
+        "client": "國泰世華商業銀行",
+        "tags": [
+          "GenAI 平台",
+          "GCP Serverless",
+          "生產環境"
+        ],
+        "problem": "銀行需要第一個符合企業級安全與合規要求的生產 GenAI 應用，用於內部知識與任務協助。",
+        "approach": "在 GCP 上架構並交付可擴展的 Serverless GenAI 技術棧（Cloud Run、Cloud SQL、Vertex AI），涵蓋身分驗證、存取控制、稽核、監控與錯誤處理等企業級控管。",
+        "outcome": "CathayGPT（國泰智多星）成為銀行首個生產 GenAI 應用，透過知識與任務協助驅動內部 ROI。",
+        "owned": "主要開發者／架構師、端到端平台工程、安全合規、利害關係人協調"
       },
       {
-        "title": "智能文件處理",
-        "client": "新加坡領先銀行",
-        "tags": ["AI Agents", "文件 AI", "自動化"],
-        "problem": "人工文件審查每季度消耗數千分析師工時，且錯誤率高。",
-        "approach": "構建了多智能體系統，具備提取、驗證和路由文件數據的能力，並有人工監督環節。",
-        "outcome": "處理時間減少 80%。錯誤率降至 2% 以下。系統每月處理 50K+ 份文件。",
-        "owned": "智能體架構、評估管線、生產部署、監控"
+        "title": "海外 AI Agent 平台",
+        "client": "國泰金控",
+        "tags": [
+          "Multi-Agent",
+          "MCP",
+          "Agentic Workflows"
+        ],
+        "problem": "金控需要可擴展的 AI Agent 平台，支援海外營運的多元場景，具備生產級營運標準。",
+        "approach": "從零創建首個海外專屬 AI Agent 平台，採用模組化多智能體架構（agents/tools/memory/evaluation）、MCP 風格的工具伺服器、OAuth 認證模式。",
+        "outcome": "平台設計可跨場景擴展，透過標準化工具合約實現複用，並建立可衡量的評估迴圈。",
+        "owned": "創建者、架構設計、Agentic Workflows、工具伺服器設計、評估框架"
       },
       {
-        "title": "AI 驅動的研究助手",
-        "client": "全球顧問公司",
-        "tags": ["RAG", "搜索", "原型"],
-        "problem": "顧問花費數小時在碎片化的知識庫中搜索相關案例和框架。",
-        "approach": "原型化了基於 RAG 的研究助手，具備語義搜索、引用追蹤和質量評估功能。",
-        "outcome": "原型在 3 週內驗證。獲得高管認可並組建了專門的工程團隊進行生產構建。",
-        "owned": "端到端原型、評估框架、利害關係人演示、交接"
+        "title": "Narrator — GenAI 風險分析敘事引擎",
+        "client": "Synpulse × 銀行客戶",
+        "tags": [
+          "GenAI",
+          "風險分析",
+          "自然語言生成"
+        ],
+        "problem": "風險分析產出對非技術利害關係人而言過於複雜，限制了採用率。",
+        "approach": "開發並整合 GenAI 模組「Narrator」，將風險分析結果轉化為自然語言；與客戶工程團隊合作交付可部署 PoC。",
+        "outcome": "交付可直接採用的演示。將業務目標轉化為可實施的 AI／分析模式與治理控管。",
+        "owned": "GenAI 模組開發、技術探索、客戶賦能、執行路線圖"
       },
       {
-        "title": "成本優化引擎",
-        "client": "受監管企業",
-        "tags": ["成本控制", "可觀測性", "LLM Ops"],
-        "problem": "GenAI 成本以每月 40% 的速度增長，對使用模式或投資回報率毫無可見性。",
-        "approach": "構建了具備按團隊成本歸因、使用分析和自動預算警報的可觀測性層。",
-        "outcome": "第一季度成本降低 30%。財務和工程領導層獲得完整可見性。",
-        "owned": "可觀測性架構、儀表板設計、成本建模、推廣"
+        "title": "生產自動化與 ML 賦能",
+        "client": "星展銀行（DBS）",
+        "tags": [
+          "Python 自動化",
+          "ML 培訓",
+          "DevOps"
+        ],
+        "problem": "COVID 期間需要遠端營運自動化；工程團隊缺乏應用 ML 素養。",
+        "approach": "交付生產級 Python 自動化方案（Linux + MySQL + SHA-256），擴展為可複用模板覆蓋 70+ 例行報表工作流。主導 ML 賦能計畫（AWS DeepRacer），培訓 200 名員工。",
+        "outcome": "自動化方案確保 COVID 期間全遠端營運。ML 素養在工程與業務團隊中顯著提升。",
+        "owned": "自動化工程、話務中心平台交付、ML 培訓計畫、代碼審查協調"
       }
     ]
   },
   "about": {
     "page_title": "關於我",
-    "bio": "我是 Nils — 一位 AI 架構師和建造者，幫助受監管企業將 GenAI 願景轉化為生產系統。多年來，我一直在企業軟體和應用 AI 的交匯處工作，服務銀行、顧問公司和全球機構。我不做沒有代碼的簡報。每次合作都以可運行的成果結束。",
+    "bio": "我是 Nils（劉岦崱）— 國泰世華銀行的 GenAI 產品經理／解決方案架構師。我在受監管的金融環境中架構並交付生產級 GenAI 系統。此前，我在 Synpulse（全球金融科技顧問公司）擔任銀行科技顧問，更早之前在星展銀行（DBS）擔任儲備幹部與 DevOps 資深專員。我遵循 Software 3.0／泛化優先的方法論：可複用能力、標準化介面與可衡量的評估迴圈，而非一次性的 Prompt 客製化。",
     "principles_title": "原則",
     "principles": [
       {
@@ -118,13 +134,43 @@
       }
     ],
     "skills_title": "技術棧",
-    "skills": ["Python", "TypeScript", "LangChain / LlamaIndex", "OpenAI / Anthropic / Azure", "AWS / GCP", "Kubernetes / Docker", "RAG / Agents / Evals", "React / Next.js", "PostgreSQL / 向量資料庫"],
+    "skills": [
+      "Python",
+      "SQL",
+      "GCP（Cloud Run / Vertex AI）",
+      "Serverless 架構",
+      "Agentic Workflows / MCP",
+      "RAG / Agents / Evals",
+      "React / Next.js / TypeScript",
+      "LangChain / LlamaIndex",
+      "PostgreSQL / 向量資料庫"
+    ],
     "credibility_title": "資歷",
     "credibility": [
-      { "label": "專利", "value": "2 項已申請（AI/ML 系統）" },
-      { "label": "演講", "value": "10+ 場行業會議演講" },
-      { "label": "獎項", "value": "創新獎（企業 AI）" },
-      { "label": "認證", "value": "AWS Solutions Architect, Azure AI" }
+      {
+        "label": "專利",
+        "value": "6 項已核准（GenAI／知識圖譜／資料查詢系統）"
+      },
+      {
+        "label": "獎項",
+        "value": "國泰世華 2024 創新競賽冠軍"
+      },
+      {
+        "label": "演講",
+        "value": "iThome Hello World 講者、內部工作坊"
+      },
+      {
+        "label": "認證",
+        "value": "PMP（專案管理專業人員）"
+      },
+      {
+        "label": "學歷",
+        "value": "台大資工碩士 · Quantic MBA · 德國乞姆尼茲工大理碩 · 台大化學學士"
+      },
+      {
+        "label": "語言",
+        "value": "中文（母語）、英文、德文、日文（基礎）"
+      }
     ]
   },
   "insights": {
@@ -140,7 +186,7 @@
     "message": "訊息",
     "send": "發送訊息",
     "success": "訊息已發送！我會在 24 小時內回覆您。",
-    "timezone": "所在地：亞洲/台北（GMT+8）",
+    "timezone": "所在地：台灣台北（GMT+8）",
     "validation": {
       "name_required": "請輸入姓名",
       "email_required": "請輸入電子郵件",
