@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Layout from "./components/layout/Layout";
 import SinglePage from "./pages/SinglePage";
 import NotFound from "./pages/NotFound";
+import LlmPage from "./pages/LlmPage";
 import "./i18n";
 
 const queryClient = new QueryClient();
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/:lang" element={<Layout />}>
             <Route index element={<SinglePage />} />
           </Route>
+          <Route path="/llm" element={<LlmPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
