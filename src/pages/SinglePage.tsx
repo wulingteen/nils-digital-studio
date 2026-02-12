@@ -101,16 +101,17 @@ const SinglePage = () => {
           § HERO
           ═══════════════════════════════════════════════ */}
             <section id="hero" className="relative min-h-screen overflow-hidden">
-                {/* Full-bleed profile image */}
-                <div className="absolute inset-0 -z-10">
+                {/* Left half — profile photo with fade-out */}
+                <div className="absolute inset-y-0 left-0 w-full md:w-1/2 -z-10">
                     <img
                         src="/nils-profile.png"
                         alt="Nils — AI Architect & Builder"
                         className="h-full w-full object-cover object-top"
                     />
-                    {/* Dark gradient overlay for text readability */}
-                    <div className="absolute inset-0 bg-gradient-to-r from-background/30 via-background/70 to-background" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
+                    {/* Fade-out to the right */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-background" />
+                    {/* Subtle bottom fade */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
                 </div>
 
                 <motion.div
@@ -119,7 +120,7 @@ const SinglePage = () => {
                     animate="visible"
                     className="container-narrow relative flex min-h-screen items-center"
                 >
-                    <div className="ml-auto w-full md:w-3/5 md:pl-8 lg:w-1/2">
+                    <div className="ml-auto w-full md:w-1/2 md:pl-12 lg:pl-20">
                         <motion.p variants={fadeUp} className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-muted-foreground">
                             Nils — AI Architect & Builder
                         </motion.p>
@@ -142,7 +143,7 @@ const SinglePage = () => {
                             </a>
                             <a
                                 href="mailto:hello@example.com"
-                                className="inline-flex items-center gap-2 rounded-full border border-border bg-background/50 backdrop-blur-sm px-6 py-3 text-sm font-medium text-foreground transition-all hover:bg-secondary"
+                                className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-medium text-foreground transition-all hover:bg-secondary"
                             >
                                 <Mail className="h-4 w-4" />
                                 {t("hero.cta_email")}
@@ -151,7 +152,7 @@ const SinglePage = () => {
                                 href="https://linkedin.com"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="inline-flex items-center gap-2 rounded-full border border-border bg-background/50 backdrop-blur-sm px-6 py-3 text-sm font-medium text-foreground transition-all hover:bg-secondary"
+                                className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-medium text-foreground transition-all hover:bg-secondary"
                             >
                                 <Linkedin className="h-4 w-4" />
                                 {t("hero.cta_linkedin")}
