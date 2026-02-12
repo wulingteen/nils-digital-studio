@@ -100,67 +100,63 @@ const SinglePage = () => {
             {/* ═══════════════════════════════════════════════
           § HERO
           ═══════════════════════════════════════════════ */}
-            <section id="hero" className="relative flex min-h-[90vh] items-center section-padding overflow-hidden">
+            <section id="hero" className="relative min-h-screen overflow-hidden">
+                {/* Full-bleed profile image */}
                 <div className="absolute inset-0 -z-10">
-                    <div className="absolute left-1/4 top-1/4 h-96 w-96 rounded-full bg-foreground/[0.03] blur-3xl" />
-                    <div className="absolute bottom-1/4 right-1/4 h-64 w-64 rounded-full bg-foreground/[0.02] blur-3xl" />
+                    <img
+                        src="/nils-profile.png"
+                        alt="Nils — AI Architect & Builder"
+                        className="h-full w-full object-cover object-top"
+                    />
+                    {/* Dark gradient overlay for text readability */}
+                    <div className="absolute inset-0 bg-gradient-to-r from-background/30 via-background/70 to-background" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
                 </div>
 
-                <motion.div variants={stagger} initial="hidden" animate="visible" className="container-narrow">
-                    <div className="grid items-center gap-12 md:grid-cols-[auto_1fr] lg:gap-20">
-                        {/* Profile Portrait */}
-                        <motion.div variants={fadeUp} className="relative mx-auto md:mx-0">
-                            <div className="absolute -inset-3 rounded-full bg-gradient-to-br from-foreground/10 via-transparent to-foreground/5 blur-xl" />
-                            <div className="absolute -inset-1 rounded-full bg-gradient-to-br from-foreground/20 to-transparent opacity-50" />
-                            <div className="relative h-48 w-48 overflow-hidden rounded-full border-2 border-border/50 shadow-2xl lg:h-64 lg:w-64">
-                                <img
-                                    src="/nils-profile.png"
-                                    alt="Nils — AI Architect & Builder"
-                                    className="h-full w-full object-cover object-top"
-                                />
-                            </div>
+                <motion.div
+                    variants={stagger}
+                    initial="hidden"
+                    animate="visible"
+                    className="container-narrow relative flex min-h-screen items-center"
+                >
+                    <div className="ml-auto w-full md:w-3/5 md:pl-8 lg:w-1/2">
+                        <motion.p variants={fadeUp} className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-muted-foreground">
+                            Nils — AI Architect & Builder
+                        </motion.p>
+                        <motion.h1 variants={fadeUp} className="mb-2 text-5xl font-bold leading-[1.1] tracking-tight text-foreground md:text-7xl lg:text-8xl">
+                            {t("hero.headline1")}
+                        </motion.h1>
+                        <motion.h1 variants={fadeUp} className="mb-8 text-5xl font-bold leading-[1.1] tracking-tight text-foreground md:text-7xl lg:text-8xl">
+                            {t("hero.headline2")}
+                        </motion.h1>
+                        <motion.p variants={fadeUp} className="mb-12 max-w-xl text-lg text-muted-foreground leading-relaxed">
+                            {t("hero.sub")}
+                        </motion.p>
+                        <motion.div variants={fadeUp} className="flex flex-wrap gap-4">
+                            <a
+                                href="#contact"
+                                className="inline-flex items-center gap-2 rounded-full bg-foreground px-6 py-3 text-sm font-medium text-background transition-all hover:opacity-90"
+                            >
+                                <Calendar className="h-4 w-4" />
+                                {t("hero.cta_book")}
+                            </a>
+                            <a
+                                href="mailto:hello@example.com"
+                                className="inline-flex items-center gap-2 rounded-full border border-border bg-background/50 backdrop-blur-sm px-6 py-3 text-sm font-medium text-foreground transition-all hover:bg-secondary"
+                            >
+                                <Mail className="h-4 w-4" />
+                                {t("hero.cta_email")}
+                            </a>
+                            <a
+                                href="https://linkedin.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-2 rounded-full border border-border bg-background/50 backdrop-blur-sm px-6 py-3 text-sm font-medium text-foreground transition-all hover:bg-secondary"
+                            >
+                                <Linkedin className="h-4 w-4" />
+                                {t("hero.cta_linkedin")}
+                            </a>
                         </motion.div>
-
-                        {/* Text content */}
-                        <div>
-                            <motion.p variants={fadeUp} className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-muted-foreground">
-                                Nils — AI Architect & Builder
-                            </motion.p>
-                            <motion.h1 variants={fadeUp} className="mb-2 text-5xl font-bold leading-[1.1] tracking-tight text-foreground md:text-7xl lg:text-8xl">
-                                {t("hero.headline1")}
-                            </motion.h1>
-                            <motion.h1 variants={fadeUp} className="mb-8 text-5xl font-bold leading-[1.1] tracking-tight text-foreground md:text-7xl lg:text-8xl">
-                                {t("hero.headline2")}
-                            </motion.h1>
-                            <motion.p variants={fadeUp} className="mb-12 max-w-xl text-lg text-muted-foreground leading-relaxed">
-                                {t("hero.sub")}
-                            </motion.p>
-                            <motion.div variants={fadeUp} className="flex flex-wrap gap-4">
-                                <a
-                                    href="#contact"
-                                    className="inline-flex items-center gap-2 rounded-full bg-foreground px-6 py-3 text-sm font-medium text-background transition-all hover:opacity-90"
-                                >
-                                    <Calendar className="h-4 w-4" />
-                                    {t("hero.cta_book")}
-                                </a>
-                                <a
-                                    href="mailto:hello@example.com"
-                                    className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-medium text-foreground transition-all hover:bg-secondary"
-                                >
-                                    <Mail className="h-4 w-4" />
-                                    {t("hero.cta_email")}
-                                </a>
-                                <a
-                                    href="https://linkedin.com"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-medium text-foreground transition-all hover:bg-secondary"
-                                >
-                                    <Linkedin className="h-4 w-4" />
-                                    {t("hero.cta_linkedin")}
-                                </a>
-                            </motion.div>
-                        </div>
                     </div>
                 </motion.div>
             </section>
