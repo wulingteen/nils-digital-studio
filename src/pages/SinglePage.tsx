@@ -160,27 +160,16 @@ const SinglePage = () => {
                                 {t("hero.cta_linkedin")}
                             </a>
                         </motion.div>
+                        <motion.div variants={fadeUp} className="mt-8 flex flex-wrap items-center gap-x-5 gap-y-2">
+                            {proofItems.map((item, i) => (
+                                <span key={i} className="flex items-center gap-2 text-xs text-muted-foreground/70">
+                                    {i > 0 && <span className="h-1 w-1 rounded-full bg-muted-foreground/40" />}
+                                    {item}
+                                </span>
+                            ))}
+                        </motion.div>
                     </div>
                 </motion.div>
-            </section>
-
-            {/* Proof strip */}
-            <section className="border-y border-border">
-                <div className="flex overflow-x-auto">
-                    {proofItems.map((item, i) => (
-                        <motion.div
-                            key={i}
-                            initial={{ opacity: 0 }}
-                            whileInView={{ opacity: 1 }}
-                            transition={{ delay: i * 0.1 }}
-                            viewport={{ once: true }}
-                            className="flex flex-shrink-0 items-center gap-3 px-8 py-5"
-                        >
-                            <div className="h-1.5 w-1.5 rounded-full bg-muted-foreground" />
-                            <span className="whitespace-nowrap text-sm font-medium text-muted-foreground">{item}</span>
-                        </motion.div>
-                    ))}
-                </div>
             </section>
 
             {/* Prototype Demos */}

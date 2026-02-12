@@ -15,7 +15,7 @@ const Header = () => {
   const { lang } = useParams();
   const location = useLocation();
   const navigate = useNavigate();
-  const [isDark, setIsDark] = useState(true);
+  const [isDark, setIsDark] = useState(() => document.documentElement.classList.contains("dark"));
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const currentLang = lang || "en";
@@ -90,8 +90,8 @@ const Header = () => {
                 key={l.code}
                 onClick={() => switchLanguage(l.code)}
                 className={`rounded-full px-3 py-1 text-xs font-medium transition-all duration-200 ${currentLang === l.code
-                    ? "bg-foreground text-background"
-                    : "text-muted-foreground hover:text-foreground"
+                  ? "bg-foreground text-background"
+                  : "text-muted-foreground hover:text-foreground"
                   }`}
               >
                 {l.label}
@@ -145,8 +145,8 @@ const Header = () => {
                     key={l.code}
                     onClick={() => { switchLanguage(l.code); setMobileOpen(false); }}
                     className={`rounded-full px-3 py-1 text-xs font-medium ${currentLang === l.code
-                        ? "bg-foreground text-background"
-                        : "text-muted-foreground"
+                      ? "bg-foreground text-background"
+                      : "text-muted-foreground"
                       }`}
                   >
                     {l.label}
