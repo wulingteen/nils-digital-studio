@@ -122,17 +122,17 @@ const SinglePage = () => {
                     animate="visible"
                     className="container-narrow relative flex min-h-screen items-center"
                 >
-                    <div className="mr-auto w-full md:w-2/3 md:pr-8">
-                        <motion.p variants={fadeUp} className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-muted-foreground">
+                    <div className="mr-auto w-full md:w-2/3 md:pr-8 px-2 sm:px-0">
+                        <motion.p variants={fadeUp} className="mb-3 text-xs sm:text-sm font-medium uppercase tracking-[0.2em] text-muted-foreground">
                             Nils — GenAI Solution Architect
                         </motion.p>
-                        <motion.h1 variants={fadeUp} className="mb-2 text-5xl font-bold leading-[1.1] tracking-tight text-foreground md:text-7xl lg:text-8xl">
+                        <motion.h1 variants={fadeUp} className="mb-1 text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-bold leading-[1.08] tracking-tight text-foreground">
                             {t("hero.headline1")}
                         </motion.h1>
-                        <motion.h1 variants={fadeUp} className="mb-8 text-5xl font-bold leading-[1.1] tracking-tight text-foreground md:text-7xl lg:text-8xl">
+                        <motion.h1 variants={fadeUp} className="mb-6 sm:mb-8 text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-bold leading-[1.08] tracking-tight text-foreground">
                             {t("hero.headline2")}
                         </motion.h1>
-                        <motion.p variants={fadeUp} className="mb-12 max-w-xl text-lg text-muted-foreground leading-relaxed">
+                        <motion.p variants={fadeUp} className="mb-8 sm:mb-12 max-w-xl text-base sm:text-lg text-muted-foreground leading-relaxed">
                             {t("hero.sub")}
                         </motion.p>
                         <motion.div variants={fadeUp} className="flex flex-wrap gap-4">
