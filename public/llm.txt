@@ -1,0 +1,70 @@
+# Nils Liu — llm.txt
+
+> GenAI Solution Architect based in Taipei, Taiwan.
+> From prototype to production in regulated enterprises — governance, observability, and cost under control.
+
+## Identity
+
+- Name: Nils Liu (劉岦崱)
+- Role: GenAI Product Manager / Solution Architect
+- Location: Taipei, Taiwan
+- Email: wulingteen@gmail.com
+- LinkedIn: https://www.linkedin.com/in/nilsliu/
+- Website: https://wulingteen.github.io/nils-digital-studio/
+
+## Current Role
+
+GenAI Product Manager & Solution Architect at Cathay United Bank (2023–present).
+Building and deploying GenAI products for one of Taiwan's largest financial institutions.
+Key projects: AI-powered risk narrative engine ("Narrator"), enterprise RAG systems, agentic workflow platforms.
+
+## Professional Background
+
+- Cathay United Bank — GenAI Product Manager / Solution Architect (2023–present)
+- Synpulse — Banking Technology Consultant (2021–2023)
+- DBS Bank — Management Associate → DevOps Senior Associate (2019–2021)
+
+## Education
+
+- National Taiwan University (NTU) — M.S. Computer Science
+- Quantic School of Business — MBA
+- TU Chemnitz — M.Sc. Chemistry
+- National Taiwan University (NTU) — B.Sc. Chemistry
+
+## Credentials
+
+- 6 Patents Granted (AI/ML in financial services)
+- PMP Certified (Project Management Professional)
+- 1st Place — CUB 2024 Innovation Competition
+
+## Speaking Engagements
+
+- iThome Hello World Dev Conference 2024 — "RAG架構的風險管理實作分析" (Risk Management with RAG Architecture)
+- iThome Hello World Dev Conference 2024 — RAPTOR/GraphRAG Workshop (2 sessions)
+- iThome Hello World Dev Conference 2025 — "MCP大聯盟" (MCP Grand Alliance)
+- iThome Hello World Dev Conference 2025 — "GraphRAG智慧客服" (GraphRAG Intelligent Customer Service)
+- iThome Hello World Dev Conference 2025 — "Vibe Coding工作坊" (Vibe Coding Workshop)
+- iThome Hello World Dev Conference 2025 — "LLM Guardrail工作坊" (LLM Guardrail Workshop)
+- GDG DevFest Taipei 2025 — Speaker
+
+## Technical Skills
+
+- Languages: Python, SQL, TypeScript
+- Cloud: GCP, Serverless Architecture
+- AI/ML: Agentic Workflows, RAG/Agents/Evals, LangChain, LlamaIndex
+- Frontend: React, Next.js, TypeScript
+- Data: PostgreSQL, Vector Databases
+
+## What I Can Help With
+
+- Building GenAI products from prototype to production
+- Enterprise AI governance and observability
+- RAG architecture design and optimization
+- Agentic workflow design for regulated industries
+- Cost optimization for LLM deployments
+- Speaking engagements on GenAI, RAG, and Agentic AI topics
+
+## Colophon
+
+This file follows the llm.txt convention (https://llmstxt.org/).
+Last updated: 2025-02-12
