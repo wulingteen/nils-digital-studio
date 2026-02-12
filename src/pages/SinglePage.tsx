@@ -101,17 +101,19 @@ const SinglePage = () => {
           § HERO
           ═══════════════════════════════════════════════ */}
             <section id="hero" className="relative min-h-screen overflow-hidden">
-                {/* Left half — profile photo with fade-out */}
-                <div className="absolute inset-y-0 left-0 w-full md:w-1/2 -z-10">
+                {/* Right half — profile photo with fade-out */}
+                <div className="absolute inset-y-0 right-0 w-full md:w-1/2 -z-10">
                     <img
                         src="/nils-profile.png"
                         alt="Nils — AI Architect & Builder"
                         className="h-full w-full object-cover object-top"
                     />
-                    {/* Fade-out to the right */}
-                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-background" />
-                    {/* Subtle bottom fade */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
+                    {/* Fade-out to the left */}
+                    <div className="absolute inset-0 bg-gradient-to-l from-transparent via-background/50 to-background" />
+                    {/* Bottom fade */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
+                    {/* Overall dim */}
+                    <div className="absolute inset-0 bg-background/20" />
                 </div>
 
                 <motion.div
@@ -120,7 +122,7 @@ const SinglePage = () => {
                     animate="visible"
                     className="container-narrow relative flex min-h-screen items-center"
                 >
-                    <div className="ml-auto w-full md:w-1/2 md:pl-12 lg:pl-20">
+                    <div className="mr-auto w-full md:w-1/2 md:pr-12 lg:pr-20">
                         <motion.p variants={fadeUp} className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-muted-foreground">
                             Nils — AI Architect & Builder
                         </motion.p>
