@@ -104,7 +104,7 @@ const SinglePage = () => {
                 {/* Right half — profile photo with fade-out */}
                 <div className="absolute inset-y-0 right-0 w-full md:w-1/2 -z-10">
                     <img
-                        src="/nils-profile.png"
+                        src={`${import.meta.env.BASE_URL}nils-profile.png`}
                         alt="Nils — GenAI Solution Architect"
                         className="h-full w-full object-cover object-top"
                     />
