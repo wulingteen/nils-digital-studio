@@ -316,10 +316,34 @@ const SinglePage = () => {
           ═══════════════════════════════════════════════ */}
             <section id="about" className="section-padding border-t border-border">
                 <div className="container-narrow">
-                    <motion.div variants={sectionFade} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-                        <h2 className="mb-8 text-4xl font-bold text-foreground md:text-5xl">{t("about.page_title")}</h2>
-                        <p className="mb-16 max-w-2xl text-lg leading-relaxed text-muted-foreground">{t("about.bio")}</p>
-                    </motion.div>
+                    {/* About Intro — Portrait + Bio */}
+                    <div className="mb-20 grid items-center gap-12 md:grid-cols-[auto_1fr] lg:gap-20">
+                        {/* Profile Portrait */}
+                        <motion.div
+                            initial={{ opacity: 0, scale: 0.9 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            transition={{ duration: 0.8, ease: "easeOut" }}
+                            viewport={{ once: true }}
+                            className="relative mx-auto md:mx-0"
+                        >
+                            {/* Decorative glow ring */}
+                            <div className="absolute -inset-3 rounded-full bg-gradient-to-br from-foreground/10 via-transparent to-foreground/5 blur-xl" />
+                            <div className="absolute -inset-1 rounded-full bg-gradient-to-br from-foreground/20 to-transparent opacity-50" />
+                            <div className="relative h-56 w-56 overflow-hidden rounded-full border-2 border-border/50 shadow-2xl lg:h-72 lg:w-72">
+                                <img
+                                    src="/nils-profile.png"
+                                    alt="Nils — AI Architect & Builder"
+                                    className="h-full w-full object-cover object-top"
+                                />
+                            </div>
+                        </motion.div>
+
+                        {/* Bio text */}
+                        <motion.div variants={sectionFade} initial="hidden" whileInView="visible" viewport={{ once: true }}>
+                            <h2 className="mb-6 text-4xl font-bold text-foreground md:text-5xl">{t("about.page_title")}</h2>
+                            <p className="max-w-2xl text-lg leading-relaxed text-muted-foreground">{t("about.bio")}</p>
+                        </motion.div>
+                    </div>
 
                     {/* Principles */}
                     <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.6 }} viewport={{ once: true }} className="mb-20">
