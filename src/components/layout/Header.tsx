@@ -23,7 +23,6 @@ const Header = () => {
   const navItems = [
     { key: "home", anchor: "#hero" },
     { key: "services", anchor: "#services" },
-    { key: "work", anchor: "#work" },
     { key: "about", anchor: "#about" },
     { key: "contact", anchor: "#contact" },
   ];

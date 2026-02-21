@@ -15,16 +15,70 @@
     "cta_email": "Email",
     "cta_linkedin": "LinkedIn"
   },
-  "proof": {
-    "patent": "6 Patents Granted",
-    "award": "1st Place, CUB 2024 Innovation",
-    "talks": "7+ Conf Sessions (iThome / GDG)",
-    "certs": "PMP Certified",
-    "clients": "Top-Tier Banking Clients"
-  },
+  "proof": [
+    "GenAI Product Owner (Financial Services)",
+    "Enterprise Knowledge Management & RAG",
+    "AI Agents & Agentic Systems",
+    "LLM Fine-tuning & Dialogue Design",
+    "Synthetic Data for Testing (GenAI Test Data)",
+    "Cloud-native on GCP (Serverless)",
+    "Retrieval Quality & Evaluation",
+    "Governance, Risk & Compliance (GRC) for GenAI",
+    "Data Engineering for Semi-structured Data",
+    "Persona Simulation & AI Coaching Systems",
+    "Patent Holder / Inventor",
+    "Tech Speaker & Trainer"
+  ],
   "demos": {
-    "title": "Prototype Demos",
-    "sub": "Watch how I turn ideas into working AI prototypes in days, not months."
+    "title": "Featured Prototypes",
+    "sub": "See how I build production-grade AI Agents — from concept to working demo.",
+    "cta": "Build Something Like This",
+    "items": [
+      {
+        "video_title": "AI KYC Agent — Autonomous Browser Automation",
+        "video_desc": "An AI Agent that controls the browser like a human to perform KYC verification — fully autonomous, fully audited.",
+        "features": [
+          {
+            "title": "Autonomous Agent",
+            "desc": "AI controls the browser like a human operator — zero manual intervention required."
+          },
+          {
+            "title": "Full Audit Trail",
+            "desc": "Every action is recorded with screenshots and structured audit logs for compliance."
+          },
+          {
+            "title": "Auto-Generated Report",
+            "desc": "A structured KYC report is automatically produced upon task completion."
+          },
+          {
+            "title": "Compliance-Ready",
+            "desc": "Built for regulated environments — governance and observability from day one."
+          }
+        ]
+      },
+      {
+        "video_title": "News Sentiment Agent Team — Multi-Agent Research",
+        "video_desc": "An AI Agent Team that breaks language and time barriers — users discuss news with AI, which automatically collects, summarizes, cites sources, and exports or emails reports.",
+        "features": [
+          {
+            "title": "Multi-Agent Collaboration",
+            "desc": "Agent team members work together and can be infinitely expanded for new capabilities."
+          },
+          {
+            "title": "Cross-Language Research",
+            "desc": "Break language and timezone barriers — discover and analyze global news in any language."
+          },
+          {
+            "title": "Interactive Q&A",
+            "desc": "Chat with AI to drill down into stories, uncover related news, and ask follow-up questions."
+          },
+          {
+            "title": "Auto Summary & Export",
+            "desc": "AI collects info, summarizes with sources attached, and exports or emails the final report."
+          }
+        ]
+      }
+    ]
   },
   "services_teaser": {
     "title": "How I Help",

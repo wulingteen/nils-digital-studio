@@ -4,16 +4,24 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useParams } from "react-router-dom";
 import {
     ArrowRight,
+    Bot,
     Calendar,
     Mail,
     Linkedin,
     Target,
     FileText,
+    FileBarChart,
+    FileOutput,
     Clock,
     ChevronDown,
+    Globe,
+    MessageSquare,
     Send,
     CheckCircle,
     Youtube,
+    Users,
+    ScanSearch,
+    ShieldCheck,
 } from "lucide-react";
 import YouTubeEmbed from "@/components/YouTubeEmbed";
 
@@ -33,16 +41,6 @@ const sectionFade = {
     visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
 };
 
-/* ── Interfaces ────────────────────────────────────── */
-interface CaseStudy {
-    title: string;
-    client: string;
-    tags: string[];
-    problem: string;
-    approach: string;
-    outcome: string;
-    owned: string;
-}
 
 interface Principle { title: string; desc: string; }
 interface Credential { label: string; value: string; }
@@ -55,8 +53,7 @@ const SinglePage = () => {
     const { t } = useTranslation();
     const { lang } = useParams();
 
-    /* Work state */
-    const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
+
 
     /* Contact state */
     const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -64,15 +61,9 @@ const SinglePage = () => {
     const [submitted, setSubmitted] = useState(false);
 
     /* Data */
-    const proofItems = [
-        t("proof.patent"),
-        t("proof.award"),
-        t("proof.talks"),
-        t("proof.certs"),
-        t("proof.clients"),
-    ];
+    const proofItems = t("proof", { returnObjects: true }) as string[];
     const serviceKeys = ["consulting", "prototyping", "training"] as const;
-    const cases = t("work.cases", { returnObjects: true }) as CaseStudy[];
+
     const principles = t("about.principles", { returnObjects: true }) as Principle[];
     const skills = t("about.skills", { returnObjects: true }) as string[];
     const credibility = t("about.credibility", { returnObjects: true }) as Credential[];
@@ -160,10 +151,9 @@ const SinglePage = () => {
                                 {t("hero.cta_linkedin")}
                             </a>
                         </motion.div>
-                        <motion.div variants={fadeUp} className="mt-8 flex flex-wrap items-center gap-x-5 gap-y-2">
+                        <motion.div variants={fadeUp} className="mt-8 flex flex-wrap gap-2">
                             {proofItems.map((item, i) => (
-                                <span key={i} className="flex items-center gap-2 text-xs text-muted-foreground/70">
-                                    {i > 0 && <span className="h-1 w-1 rounded-full bg-muted-foreground/40" />}
+                                <span key={i} className="rounded-full border border-border/60 px-3 py-1 text-xs text-muted-foreground/80 transition-colors hover:border-foreground/30 hover:text-foreground/90">
                                     {item}
                                 </span>
                             ))}
@@ -172,21 +162,83 @@ const SinglePage = () => {
                 </motion.div>
             </section>
 
-            {/* Prototype Demos */}
-            <section className="section-padding">
+            {/* ═══════════════════════════════════════════════
+          § FEATURED SHOWCASE
+          ═══════════════════════════════════════════════ */}
+            <section id="showcase" className="section-padding border-t border-border">
                 <div className="container-narrow">
                     <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} viewport={{ once: true }} className="mb-12">
                         <h2 className="mb-3 text-3xl font-bold text-foreground md:text-4xl">{t("demos.title")}</h2>
-                        <p className="text-muted-foreground">{t("demos.sub")}</p>
+                        <p className="max-w-xl text-muted-foreground">{t("demos.sub")}</p>
                     </motion.div>
-                    <div className="grid gap-6 md:grid-cols-2">
-                        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }} viewport={{ once: true }}>
-                            <YouTubeEmbed videoId="VIDEO_ID_1" title="AI Agent Prototype — Document Processing" />
-                        </motion.div>
-                        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }} viewport={{ once: true }}>
-                            <YouTubeEmbed videoId="VIDEO_ID_2" title="RAG Research Assistant — Live Demo" />
-                        </motion.div>
-                    </div>
+
+                    {(t("demos.items", { returnObjects: true }) as { video_title: string; video_desc: string; features: { title: string; desc: string }[] }[]).map((item, idx) => {
+                        const videoIds = ["JIEdLStSAzs", "f6VQxvXim-c"];
+                        const iconSets = [
+                            [Bot, ScanSearch, FileBarChart, ShieldCheck],
+                            [Users, Globe, MessageSquare, FileOutput],
+                        ];
+                        const icons = iconSets[idx] || iconSets[0];
+                        const isEven = idx % 2 === 0;
+
+                        return (
+                            <div key={idx} className={idx > 0 ? "mt-16 border-t border-border pt-16" : ""}>
+                                <div className={`grid gap-10 lg:grid-cols-5 ${!isEven ? "direction-rtl" : ""}`}>
+                                    {/* Video */}
+                                    <motion.div
+                                        initial={{ opacity: 0, y: 20 }}
+                                        whileInView={{ opacity: 1, y: 0 }}
+                                        transition={{ delay: 0.1 }}
+                                        viewport={{ once: true }}
+                                        className={`lg:col-span-3 ${!isEven ? "lg:order-2" : ""}`}
+                                    >
+                                        <YouTubeEmbed videoId={videoIds[idx]} title={item.video_title} />
+                                        <p className="mt-3 text-sm text-muted-foreground">{item.video_desc}</p>
+                                    </motion.div>
+
+                                    {/* Feature Highlights */}
+                                    <div className={`grid grid-cols-1 gap-4 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-1 ${!isEven ? "lg:order-1" : ""}`}>
+                                        {item.features.map((feat, i) => {
+                                            const Icon = icons[i] || Bot;
+                                            return (
+                                                <motion.div
+                                                    key={i}
+                                                    initial={{ opacity: 0, x: isEven ? 20 : -20 }}
+                                                    whileInView={{ opacity: 1, x: 0 }}
+                                                    transition={{ delay: 0.15 + i * 0.1, duration: 0.5 }}
+                                                    viewport={{ once: true }}
+                                                    className="group flex items-start gap-4 rounded-xl border border-border p-4 transition-colors hover:border-foreground/20 hover:bg-secondary/40"
+                                                >
+                                                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-secondary text-muted-foreground transition-colors group-hover:text-foreground">
+                                                        <Icon className="h-5 w-5" />
+                                                    </div>
+                                                    <div>
+                                                        <h4 className="text-sm font-semibold text-foreground">{feat.title}</h4>
+                                                        <p className="mt-1 text-xs leading-relaxed text-muted-foreground">{feat.desc}</p>
+                                                    </div>
+                                                </motion.div>
+                                            );
+                                        })}
+                                    </div>
+                                </div>
+                            </div>
+                        );
+                    })}
+
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ delay: 0.6 }}
+                        viewport={{ once: true }}
+                        className="mt-12 text-center"
+                    >
+                        <a
+                            href="#contact"
+                            className="inline-flex items-center gap-2 rounded-full bg-foreground px-8 py-3 text-sm font-medium text-background transition-all hover:opacity-90"
+                        >
+                            {t("demos.cta")} <ArrowRight className="h-4 w-4" />
+                        </a>
+                    </motion.div>
                 </div>
             </section>
 
@@ -242,80 +294,7 @@ const SinglePage = () => {
                 </div>
             </section>
 
-            {/* ═══════════════════════════════════════════════
-          § WORK
-          ═══════════════════════════════════════════════ */}
-            <section id="work" className="section-padding border-t border-border">
-                <div className="container-narrow">
-                    <motion.div variants={sectionFade} initial="hidden" whileInView="visible" viewport={{ once: true }} className="mb-16">
-                        <h2 className="mb-4 text-4xl font-bold text-foreground md:text-5xl">{t("work.page_title")}</h2>
-                        <p className="max-w-xl text-lg text-muted-foreground">{t("work.page_sub")}</p>
-                    </motion.div>
 
-                    <div className="flex flex-col gap-6">
-                        {cases.map((c, i) => {
-                            const isOpen = expandedIndex === i;
-                            return (
-                                <motion.div
-                                    key={i}
-                                    initial={{ opacity: 0, y: 20 }}
-                                    whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ delay: i * 0.1, duration: 0.5 }}
-                                    viewport={{ once: true }}
-                                    className="glass-card hover-lift cursor-pointer rounded-xl p-8"
-                                    onClick={() => setExpandedIndex(isOpen ? null : i)}
-                                >
-                                    <div className="flex items-start justify-between">
-                                        <div>
-                                            <p className="mb-1 text-xs font-medium uppercase tracking-widest text-muted-foreground">{c.client}</p>
-                                            <h3 className="text-xl font-semibold text-foreground">{c.title}</h3>
-                                            <div className="mt-3 flex flex-wrap gap-2">
-                                                {c.tags.map((tag) => (
-                                                    <span key={tag} className="rounded-full bg-secondary px-3 py-1 text-xs font-medium text-muted-foreground">
-                                                        {tag}
-                                                    </span>
-                                                ))}
-                                            </div>
-                                        </div>
-                                        <ChevronDown className={`h-5 w-5 text-muted-foreground transition-transform ${isOpen ? "rotate-180" : ""}`} />
-                                    </div>
-
-                                    <AnimatePresence>
-                                        {isOpen && (
-                                            <motion.div
-                                                initial={{ height: 0, opacity: 0 }}
-                                                animate={{ height: "auto", opacity: 1 }}
-                                                exit={{ height: 0, opacity: 0 }}
-                                                transition={{ duration: 0.3 }}
-                                                className="overflow-hidden"
-                                            >
-                                                <div className="mt-6 grid gap-4 border-t border-border pt-6 md:grid-cols-3">
-                                                    <div>
-                                                        <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-muted-foreground">Problem</p>
-                                                        <p className="text-sm leading-relaxed text-foreground">{c.problem}</p>
-                                                    </div>
-                                                    <div>
-                                                        <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-muted-foreground">Approach</p>
-                                                        <p className="text-sm leading-relaxed text-foreground">{c.approach}</p>
-                                                    </div>
-                                                    <div>
-                                                        <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-muted-foreground">Outcome</p>
-                                                        <p className="text-sm leading-relaxed text-foreground">{c.outcome}</p>
-                                                    </div>
-                                                </div>
-                                                <div className="mt-4 rounded-lg bg-secondary/50 p-4">
-                                                    <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">What I Owned</p>
-                                                    <p className="mt-1 text-sm text-foreground">{c.owned}</p>
-                                                </div>
-                                            </motion.div>
-                                        )}
-                                    </AnimatePresence>
-                                </motion.div>
-                            );
-                        })}
-                    </div>
-                </div>
-            </section>
 
             {/* ═══════════════════════════════════════════════
           § ABOUT

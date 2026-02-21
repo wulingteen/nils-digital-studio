@@ -15,16 +15,70 @@
     "cta_email": "電子郵件",
     "cta_linkedin": "LinkedIn"
   },
-  "proof": {
-    "patent": "6 項專利（已核准）",
-    "award": "國泰世華 2024 創新競賽冠軍",
-    "talks": "7+ 場研討會（iThome / GDG）",
-    "certs": "PMP 認證",
-    "clients": "頂級金融機構客戶"
-  },
+  "proof": [
+    "金融業 GenAI 產品負責人",
+    "企業內部知識管理（KM）與 RAG",
+    "AI Agent / Agentic Systems（Level 1–5）",
+    "LLM 微調與對話策略設計",
+    "生成式測試資料（GenAI Test Data）",
+    "雲端原生架構（GCP / Serverless）",
+    "檢索品質與評測（Retrieval / Eval）",
+    "企業導入落地：合規、治理、風險控管",
+    "數據工程：半結構資料 ETL / ODS",
+    "AI 教練系統 / Persona 模擬（客戶分身）",
+    "專利發明與技術輸出（Patents）",
+    "技術演講者 / 內訓講師"
+  ],
   "demos": {
-    "title": "原型演示",
-    "sub": "看我如何在幾天內將想法轉化為可運行的 AI 原型。"
+    "title": "精選原型展示",
+    "sub": "看我如何從概念到可運行的生產級 AI Agent。",
+    "cta": "打造類似產品",
+    "items": [
+      {
+        "video_title": "AI KYC Agent — 自主瀏覽器自動化",
+        "video_desc": "讓 AI 控制瀏覽器，仿真人進行 KYC 驗證 — 完全自主、完整稽核。",
+        "features": [
+          {
+            "title": "全自主 Agent",
+            "desc": "AI 像真人操作員一樣控制瀏覽器 — 零人工介入。"
+          },
+          {
+            "title": "完整稽核軌跡",
+            "desc": "每一步操作都附帶截圖與結構化稽核日誌，滿足合規要求。"
+          },
+          {
+            "title": "自動產出報告",
+            "desc": "任務完成後自動產出結構化 KYC 報告。"
+          },
+          {
+            "title": "合規就緒",
+            "desc": "專為受監管環境設計 — 治理與可觀測性從第一天開始。"
+          }
+        ]
+      },
+      {
+        "video_title": "新聞輿情 Agent Team — 多智能體協作研究",
+        "video_desc": "讓使用者不受語言和時間限制，透過對話令 AI Agent Team 蒐集資訊、自動總結、附加來源，並匯出或透過 email 寄出報告。",
+        "features": [
+          {
+            "title": "多智能體協作",
+            "desc": "Agent 成員互相協作，可無限新增以擴充新能力。"
+          },
+          {
+            "title": "跨語言研究",
+            "desc": "突破語言與時區限制 — 發掘並分析全球任何語言的新聞。"
+          },
+          {
+            "title": "互動問答",
+            "desc": "與 AI 對話來深入探討新聞、挖掘相關報導、進行追問。"
+          },
+          {
+            "title": "自動摘要與匯出",
+            "desc": "AI 蒐集資訊、附帶來源自動摘要，並匯出或 email 寄出最終報告。"
+          }
+        ]
+      }
+    ]
   },
   "services_teaser": {
     "title": "我如何幫助您",
@@ -165,7 +219,7 @@
       },
       {
         "label": "學歷",
-        "value": "台大資工碩士 · Quantic MBA · 德國乞姆尼茲工大理碩 · 台大化學學士"
+        "value": "台大資工碩士 · Quantic MBA · 德國 Chemnitz 工業大學理碩 · 台大化學學士"
       },
       {
         "label": "語言",

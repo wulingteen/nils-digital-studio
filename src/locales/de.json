@@ -15,16 +15,70 @@
     "cta_email": "E-Mail",
     "cta_linkedin": "LinkedIn"
   },
-  "proof": {
-    "patent": "6 Patente erteilt",
-    "award": "1. Platz, CUB 2024 Innovation",
-    "talks": "7+ Konferenz-Sessions (iThome / GDG)",
-    "certs": "PMP-zertifiziert",
-    "clients": "Top-Tier-Bankkunden"
-  },
+  "proof": [
+    "GenAI Product Owner (Finanzdienstleistungen)",
+    "Enterprise Knowledge Management & RAG",
+    "AI Agents & Agentic Systems",
+    "LLM-Feinabstimmung & Dialogdesign",
+    "Synthetische Testdaten (GenAI Test Data)",
+    "Cloud-native auf GCP (Serverless)",
+    "Retrieval-Qualität & Evaluation",
+    "Governance, Risiko & Compliance (GRC) für GenAI",
+    "Data Engineering für semi-strukturierte Daten",
+    "Persona-Simulation & AI-Coaching-Systeme",
+    "Patentinhaber / Erfinder",
+    "Tech-Speaker & Trainer"
+  ],
   "demos": {
-    "title": "Prototyp-Demos",
-    "sub": "Sehen Sie, wie ich Ideen in Tagen statt Monaten in funktionierende AI-Prototypen verwandle."
+    "title": "Ausgewählte Prototypen",
+    "sub": "Sehen Sie, wie ich produktionsreife AI Agents vom Konzept zur fertigen Demo baue.",
+    "cta": "So etwas bauen lassen",
+    "items": [
+      {
+        "video_title": "AI KYC Agent — Autonome Browser-Automatisierung",
+        "video_desc": "Ein AI Agent, der den Browser wie ein Mensch steuert, um KYC-Verifizierung durchzuführen — vollständig autonom, vollständig auditiert.",
+        "features": [
+          {
+            "title": "Autonomer Agent",
+            "desc": "AI steuert den Browser wie ein menschlicher Operator — kein manueller Eingriff erforderlich."
+          },
+          {
+            "title": "Vollständiger Audit-Trail",
+            "desc": "Jede Aktion wird mit Screenshots und strukturierten Audit-Logs für Compliance dokumentiert."
+          },
+          {
+            "title": "Automatischer Bericht",
+            "desc": "Ein strukturierter KYC-Bericht wird automatisch nach Aufgabenabschluss erstellt."
+          },
+          {
+            "title": "Compliance-Ready",
+            "desc": "Für regulierte Umgebungen gebaut — Governance und Observability von Tag eins."
+          }
+        ]
+      },
+      {
+        "video_title": "News-Sentiment Agent Team — Multi-Agenten-Recherche",
+        "video_desc": "Ein AI Agent Team, das Sprach- und Zeitbarrieren überwindet — Nutzer diskutieren Nachrichten mit AI, die automatisch sammelt, zusammenfasst, Quellen zitiert und Berichte exportiert oder per E-Mail versendet.",
+        "features": [
+          {
+            "title": "Multi-Agenten-Kollaboration",
+            "desc": "Agent-Teammitglieder arbeiten zusammen und können unbegrenzt für neue Fähigkeiten erweitert werden."
+          },
+          {
+            "title": "Sprachübergreifende Recherche",
+            "desc": "Sprach- und Zeitzonenbarrieren überwinden — globale Nachrichten in jeder Sprache entdecken und analysieren."
+          },
+          {
+            "title": "Interaktive Q&A",
+            "desc": "Mit AI chatten, um Geschichten zu vertiefen, verwandte Nachrichten aufzudecken und Folgefragen zu stellen."
+          },
+          {
+            "title": "Auto-Zusammenfassung & Export",
+            "desc": "AI sammelt Informationen, fasst mit Quellenangaben zusammen und exportiert oder versendet den Bericht per E-Mail."
+          }
+        ]
+      }
+    ]
   },
   "services_teaser": {
     "title": "Wie ich helfe",
