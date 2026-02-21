@@ -251,5 +251,9 @@
   "footer": {
     "copyright": "© 2025 Nils. All rights reserved.",
     "built_with": "Crafted with precision."
+  },
+  "seo": {
+    "title": "Nils Liu — GenAI Solution Architect",
+    "desc": "From prototype to production in regulated enterprises — governance, observability, and cost under control."
   }
 }

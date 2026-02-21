@@ -12,3 +12,5 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+Sitemap: https://wulingteen.github.io/nils-digital-studio/sitemap.xml

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://wulingteen.github.io/nils-digital-studio/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://wulingteen.github.io/nils-digital-studio/en</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://wulingteen.github.io/nils-digital-studio/zh"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wulingteen.github.io/nils-digital-studio/de"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wulingteen.github.io/nils-digital-studio/en"/>
+  </url>
+  <url>
+    <loc>https://wulingteen.github.io/nils-digital-studio/zh</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wulingteen.github.io/nils-digital-studio/en"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wulingteen.github.io/nils-digital-studio/de"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://wulingteen.github.io/nils-digital-studio/zh"/>
+  </url>
+  <url>
+    <loc>https://wulingteen.github.io/nils-digital-studio/de</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wulingteen.github.io/nils-digital-studio/en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://wulingteen.github.io/nils-digital-studio/zh"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wulingteen.github.io/nils-digital-studio/de"/>
+  </url>
+</urlset>

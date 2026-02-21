@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import Header from "./Header";
 import Footer from "./Footer";
+import SEO from "@/components/SEO";
 
 const Layout = () => {
   const { lang } = useParams();
@@ -16,6 +17,7 @@ const Layout = () => {
 
   return (
     <div className="flex min-h-screen flex-col scroll-smooth">
+      <SEO />
       <Header />
       <main className="flex-1 pt-16">
         <Outlet />

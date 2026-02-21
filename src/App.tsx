@@ -9,6 +9,8 @@ import NotFound from "./pages/NotFound";
 import LlmPage from "./pages/LlmPage";
 import "./i18n";
 
+import { HelmetProvider } from "react-helmet-async";
+
 const queryClient = new QueryClient();
 
 const getDefaultLang = () => {
@@ -19,22 +21,24 @@ const getDefaultLang = () => {
 };
 
 const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter basename="/nils-digital-studio">
-        <Routes>
-          <Route path="/" element={<Navigate to={`/${getDefaultLang()}`} replace />} />
-          <Route path="/:lang" element={<Layout />}>
-            <Route index element={<SinglePage />} />
-          </Route>
-          <Route path="/llm" element={<LlmPage />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
+  <HelmetProvider>
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter basename="/nils-digital-studio">
+          <Routes>
+            <Route path="/" element={<Navigate to={`/${getDefaultLang()}`} replace />} />
+            <Route path="/:lang" element={<Layout />}>
+              <Route index element={<SinglePage />} />
+            </Route>
+            <Route path="/llm" element={<LlmPage />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
+      </TooltipProvider>
+    </QueryClientProvider>
+  </HelmetProvider>
 );
 
 export default App;
