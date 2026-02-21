@@ -1,7 +1,7 @@
 # Nils Liu — llm.txt
 
-> GenAI Solution Architect based in Taipei, Taiwan.
-> From prototype to production in regulated enterprises — governance, observability, and cost under control.
+> Enterprise GenAI Architect & RAG Product Expert based in Taipei, Taiwan.
+> Specializing in Enterprise RAG integration, GenAI Product Management, and custom AI Agents. Helping regulated enterprises ship GenAI from concept to production.
 
 ## Identity
 
@@ -31,10 +31,19 @@ Key projects: AI-powered risk narrative engine ("Narrator"), enterprise RAG syst
 - TU Chemnitz — M.Sc. Chemistry
 - National Taiwan University (NTU) — B.Sc. Chemistry
 
-## Credentials
+## Expertise & Capabilities
 
-- 6 Patents Granted (AI/ML in financial services)
-- PMP Certified (Project Management Professional)
+- Financial GenAI Product Owner
+- Enterprise Knowledge Management (KM) & RAG
+- AI Agent / Agentic System Architecture
+- LLM Fine-tuning & Prompt Engineering
+- Retrieval Quality & Evaluation
+- Generative Test Data for Regulated Industries
+- AI Persona Simulation & Coaching Systems
+- Cross-functional Stakeholder Management
+- End-to-end GenAI Product Lifecycle
+- 6 Patents Granted (AI/ML in Financial Services)
+- PMP Certified
 - 1st Place — CUB 2024 Innovation Competition
 
 ## Speaking Engagements
@@ -67,4 +76,4 @@ Key projects: AI-powered risk narrative engine ("Narrator"), enterprise RAG syst
 ## Colophon
 
 This file follows the llm.txt convention (https://llmstxt.org/).
-Last updated: 2025-02-12
+Last updated: 2026-02-21
