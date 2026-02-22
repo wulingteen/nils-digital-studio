@@ -115,7 +115,7 @@ const SinglePage = () => {
                 >
                     <div className="mr-auto w-full md:w-2/3 md:pr-8 px-2 sm:px-0">
                         <motion.p variants={fadeUp} className="mb-3 text-xs sm:text-sm font-medium uppercase tracking-[0.2em] text-muted-foreground">
-                            Nils — GenAI Solution Architect
+                            劉岦崱 · Nils — GenAI Solution Architect
                         </motion.p>
                         <motion.h1 variants={fadeUp} className="mb-1 text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-bold leading-[1.08] tracking-tight text-foreground">
                             {t("hero.headline1")}
