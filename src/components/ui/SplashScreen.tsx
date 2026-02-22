@@ -16,12 +16,12 @@ interface Node {
 }
 
 const SERVICES = [
-    "Enterprise RAG",
-    "AI Agent Systems",
-    "GenAI Consulting",
-    "LLM Fine-tuning",
-    "Agentic Workflows",
-    "AI Product Design",
+    { en: "Enterprise RAG", zh: "企業知識庫 RAG" },
+    { en: "AI Agent Systems", zh: "AI 多智能體系統" },
+    { en: "GenAI Consulting", zh: "GenAI 導入顧問" },
+    { en: "LLM Fine-tuning", zh: "大語言模型微調" },
+    { en: "Agentic Workflows", zh: "自動化 AI 工作流" },
+    { en: "AI Product Design", zh: "AI 產品設計" },
 ];
 
 const TOTAL_DURATION = 5000;  // ms
@@ -245,6 +245,7 @@ export function SplashScreen({ onComplete }: SplashScreenProps) {
                             {/* Pulse beacon */}
                             <div className="h-2 w-2 rounded-full bg-white animate-pulse shadow-[0_0_14px_5px_rgba(255,255,255,0.35)] mb-1" />
 
+                            {/* Name — Chinese · English */}
                             <h1
                                 className="text-4xl font-bold text-white md:text-6xl"
                                 style={{ fontFamily: "'Space Grotesk',sans-serif", letterSpacing: "-0.025em" }}
@@ -252,13 +253,23 @@ export function SplashScreen({ onComplete }: SplashScreenProps) {
                                 劉岦崱 · Nils Liu
                             </h1>
 
-                            <p
-                                className="text-xs font-semibold uppercase text-slate-400 md:text-sm"
-                                style={{ fontFamily: "'Space Grotesk',sans-serif", letterSpacing: "0.22em" }}
-                            >
-                                Enterprise GenAI Architect
-                            </p>
+                            {/* Title — stacked bilingual */}
+                            <div className="flex flex-col items-center gap-0.5">
+                                <p
+                                    className="text-sm font-semibold text-slate-300"
+                                    style={{ fontFamily: "'Space Grotesk',sans-serif", letterSpacing: "0.05em" }}
+                                >
+                                    企業級 GenAI 架構師
+                                </p>
+                                <p
+                                    className="text-[11px] font-medium uppercase text-slate-500"
+                                    style={{ fontFamily: "'Space Grotesk',sans-serif", letterSpacing: "0.2em" }}
+                                >
+                                    Enterprise GenAI Architect
+                                </p>
+                            </div>
 
+                            {/* Cycling service labels — bilingual */}
                             <div className="mt-1 h-6 overflow-hidden flex items-center justify-center">
                                 <AnimatePresence mode="wait">
                                     <motion.span
@@ -267,10 +278,10 @@ export function SplashScreen({ onComplete }: SplashScreenProps) {
                                         animate={{ opacity: 1, y: 0 }}
                                         exit={{ opacity: 0, y: -8 }}
                                         transition={{ duration: 0.3 }}
-                                        className="text-[11px] font-medium uppercase text-slate-500"
-                                        style={{ fontFamily: "'Space Grotesk',sans-serif", letterSpacing: "0.18em" }}
+                                        className="text-[11px] font-medium text-slate-500"
+                                        style={{ fontFamily: "'Space Grotesk',sans-serif", letterSpacing: "0.12em" }}
                                     >
-                                        ✦ {SERVICES[serviceIdx]}
+                                        ✦ {SERVICES[serviceIdx].zh} &nbsp;·&nbsp; {SERVICES[serviceIdx].en}
                                     </motion.span>
                                 </AnimatePresence>
                             </div>
