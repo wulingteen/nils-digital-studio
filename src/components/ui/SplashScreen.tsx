@@ -41,14 +41,6 @@ export function SplashScreen({ onComplete }: SplashScreenProps) {
     onCompleteRef.current = onComplete;
 
     const [uiPhase, setUiPhase] = useState<"building" | "text" | "outro">("building");
-    const [serviceIdx, setServiceIdx] = useState(0);
-
-    // Cycle service labels when text phase is active
-    useEffect(() => {
-        if (uiPhase !== "text") return;
-        const t = setInterval(() => setServiceIdx(i => (i + 1) % SERVICES.length), 550);
-        return () => clearInterval(t);
-    }, [uiPhase]);
 
     useEffect(() => {
         const canvas = canvasRef.current;
@@ -271,19 +263,12 @@ export function SplashScreen({ onComplete }: SplashScreenProps) {
 
                             {/* Cycling service labels — bilingual */}
                             <div className="mt-1 h-6 overflow-hidden flex items-center justify-center">
-                                <AnimatePresence mode="wait">
-                                    <motion.span
-                                        key={serviceIdx}
-                                        initial={{ opacity: 0, y: 8 }}
-                                        animate={{ opacity: 1, y: 0 }}
-                                        exit={{ opacity: 0, y: -8 }}
-                                        transition={{ duration: 0.3 }}
-                                        className="text-[11px] font-medium text-slate-500"
-                                        style={{ fontFamily: "'Space Grotesk',sans-serif", letterSpacing: "0.12em" }}
-                                    >
-                                        ✦ {SERVICES[serviceIdx].zh} &nbsp;·&nbsp; {SERVICES[serviceIdx].en}
-                                    </motion.span>
-                                </AnimatePresence>
+                                <p
+                                    className="text-[11px] font-medium text-slate-500"
+                                    style={{ fontFamily: "'Space Grotesk',sans-serif", letterSpacing: "0.14em" }}
+                                >
+                                    ✦ RAG &nbsp;·&nbsp; AI Agents &nbsp;·&nbsp; GenAI 企業導入
+                                </p>
                             </div>
                         </motion.div>
                     )}
