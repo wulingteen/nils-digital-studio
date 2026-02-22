@@ -123,7 +123,7 @@ const SinglePage = () => {
                         <motion.h1 variants={fadeUp} className="mb-6 sm:mb-8 text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-bold leading-[1.08] tracking-tight text-foreground">
                             {t("hero.headline2")}
                         </motion.h1>
-                        <motion.p variants={fadeUp} className="mb-8 sm:mb-12 max-w-xl text-base sm:text-lg text-muted-foreground leading-relaxed">
+                        <motion.p variants={fadeUp} className="mb-10 sm:mb-14 max-w-lg text-base sm:text-lg text-muted-foreground leading-relaxed">
                             {t("hero.sub")}
                         </motion.p>
                         <motion.div variants={fadeUp} className="flex flex-wrap gap-4">
@@ -151,15 +151,25 @@ const SinglePage = () => {
                                 {t("hero.cta_linkedin")}
                             </a>
                         </motion.div>
-                        <motion.div variants={fadeUp} className="mt-8 flex flex-wrap gap-2">
-                            {proofItems.map((item, i) => (
-                                <span key={i} className="rounded-full border border-border/60 px-3 py-1 text-xs text-muted-foreground/80 transition-colors hover:border-foreground/30 hover:text-foreground/90">
-                                    {item}
-                                </span>
-                            ))}
-                        </motion.div>
                     </div>
                 </motion.div>
+            </section>
+
+            {/* ═══════════════════════════════════════════════
+          § EXPERTISE STRIP
+          ═══════════════════════════════════════════════ */}
+            <section className="border-y border-border/50 bg-secondary/20 py-5 overflow-hidden">
+                <div className="flex flex-wrap justify-center gap-x-6 gap-y-3 px-6">
+                    {proofItems.map((item, i) => (
+                        <span
+                            key={i}
+                            className="text-xs font-medium text-muted-foreground/70 whitespace-nowrap"
+                        >
+                            {i > 0 && <span className="mr-6 opacity-30">·</span>}
+                            {item}
+                        </span>
+                    ))}
+                </div>
             </section>
 
             {/* ═══════════════════════════════════════════════
