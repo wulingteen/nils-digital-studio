@@ -7,6 +7,8 @@ import Layout from "./components/layout/Layout";
 import SinglePage from "./pages/SinglePage";
 import NotFound from "./pages/NotFound";
 import LlmPage from "./pages/LlmPage";
+import Insights from "./pages/Insights";
+import BlogPost from "./pages/BlogPost";
 import "./i18n";
 
 import { HelmetProvider } from "react-helmet-async";
@@ -60,6 +62,8 @@ const App = () => {
                 <Route path="/" element={<Navigate to={`/${getDefaultLang()}`} replace />} />
                 <Route path="/:lang" element={<Layout />}>
                   <Route index element={<SinglePage />} />
+                  <Route path="insights" element={<Insights />} />
+                  <Route path="insights/:id" element={<BlogPost />} />
                 </Route>
                 <Route path="/llm" element={<LlmPage />} />
                 <Route path="*" element={<NotFound />} />

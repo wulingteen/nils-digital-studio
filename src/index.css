@@ -6,71 +6,73 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 7%;
+    /* Elegant Light Theme: Warm whites, subtle gold accents, deep contrast */
+    --background: 40 33% 98%;      /* Very warm off-white */
+    --foreground: 220 15% 15%;     /* Soft charcoal/navy, avoid pure black */
 
-    --card: 0 0% 98%;
-    --card-foreground: 0 0% 7%;
+    --card: 0 0% 100%;             /* Pure white for elevation */
+    --card-foreground: 220 15% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 7%;
+    --popover-foreground: 220 15% 15%;
 
-    --primary: 0 0% 9%;
-    --primary-foreground: 0 0% 98%;
+    --primary: 43 74% 49%;         /* Elegant Gold/Bronze accent */
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 0 0% 96%;
-    --secondary-foreground: 0 0% 9%;
+    --secondary: 220 10% 90%;      /* Soft blue-gray for secondary elements */
+    --secondary-foreground: 220 15% 15%;
 
-    --muted: 0 0% 94%;
-    --muted-foreground: 0 0% 45%;
+    --muted: 40 20% 95%;           /* Warm muted background */
+    --muted-foreground: 220 10% 45%;
 
-    --accent: 0 0% 94%;
-    --accent-foreground: 0 0% 9%;
+    --accent: 43 74% 95%;          /* Very light gold for hover states */
+    --accent-foreground: 43 74% 20%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 90%;
-    --input: 0 0% 90%;
-    --ring: 0 0% 9%;
+    --border: 220 15% 90%;         /* Subtle soft border */
+    --input: 220 15% 90%;
+    --ring: 43 74% 49%;            /* Gold focus ring */
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;             /* Slightly rounder, softer corners */
 
-    --glass: 0 0% 100% / 0.6;
-    --glass-border: 0 0% 100% / 0.15;
+    --glass: 40 33% 98% / 0.7;
+    --glass-border: 43 74% 49% / 0.15;
   }
 
   .dark {
-    --background: 0 0% 4%;
-    --foreground: 0 0% 95%;
+    /* Elegant Dark Theme: Deep midnight navy, gold/bronze accents */
+    --background: 224 25% 6%;      /* Deep midnight blue, richer than pure black */
+    --foreground: 40 20% 90%;      /* Soft warm off-white text */
 
-    --card: 0 0% 7%;
-    --card-foreground: 0 0% 95%;
+    --card: 224 25% 9%;            /* Slightly elevated midnight */
+    --card-foreground: 40 20% 90%;
 
-    --popover: 0 0% 7%;
-    --popover-foreground: 0 0% 95%;
+    --popover: 224 25% 9%;
+    --popover-foreground: 40 20% 90%;
 
-    --primary: 0 0% 95%;
-    --primary-foreground: 0 0% 4%;
+    --primary: 43 74% 49%;         /* Gold/Bronze accent */
+    --primary-foreground: 224 25% 6%;
 
-    --secondary: 0 0% 12%;
-    --secondary-foreground: 0 0% 95%;
+    --secondary: 224 20% 15%;      /* Elevated inner containers */
+    --secondary-foreground: 40 20% 90%;
 
-    --muted: 0 0% 15%;
-    --muted-foreground: 0 0% 55%;
+    --muted: 224 20% 12%;          /* Dark muted areas */
+    --muted-foreground: 224 10% 60%;
 
-    --accent: 0 0% 15%;
-    --accent-foreground: 0 0% 95%;
+    --accent: 43 74% 15%;          /* Midnight gold glow for active states */
+    --accent-foreground: 43 74% 60%;
 
     --destructive: 0 62% 30%;
     --destructive-foreground: 0 0% 95%;
 
-    --border: 0 0% 18%;
-    --input: 0 0% 18%;
-    --ring: 0 0% 83%;
+    --border: 224 20% 18%;         /* Dark elegant borders */
+    --input: 224 20% 18%;
+    --ring: 43 74% 49%;            /* Gold focus ring */
 
-    --glass: 0 0% 100% / 0.05;
-    --glass-border: 0 0% 100% / 0.1;
+    --glass: 224 25% 6% / 0.6;
+    --glass-border: 43 74% 49% / 0.2;
   }
 }
 

@@ -4,7 +4,7 @@
     "services": "服務",
     "work": "作品",
     "about": "關於",
-    "insights": "洞察",
+    "insights": "GenAI 分享",
     "contact": "聯繫"
   },
   "hero": {
@@ -116,8 +116,8 @@
     "page_sub": "來自受監管企業與全球金融機構的案例研究。",
     "cases": [
       {
-        "title": "CathayGPT — 企業 GenAI 平台",
-        "client": "國泰世華商業銀行",
+        "title": "EnterpriseGPT — 企業 GenAI 平台",
+        "client": "台灣金控龍頭",
         "tags": [
           "GenAI 平台",
           "GCP Serverless",
@@ -125,12 +125,12 @@
         ],
         "problem": "銀行需要第一個符合企業級安全與合規要求的生產 GenAI 應用，用於內部知識與任務協助。",
         "approach": "在 GCP 上架構並交付可擴展的 Serverless GenAI 技術棧（Cloud Run、Cloud SQL、Vertex AI），涵蓋身分驗證、存取控制、稽核、監控與錯誤處理等企業級控管。",
-        "outcome": "CathayGPT（國泰智多星）成為銀行首個生產 GenAI 應用，透過知識與任務協助驅動內部 ROI。",
+        "outcome": "EnterpriseGPT 成為該企業首個生產 GenAI 應用，透過知識與任務協助驅動內部 ROI。",
         "owned": "主要開發者／架構師、端到端平台工程、安全合規、利害關係人協調"
       },
       {
         "title": "海外 AI Agent 平台",
-        "client": "國泰金控",
+        "client": "台灣金控龍頭",
         "tags": [
           "Multi-Agent",
           "MCP",
@@ -171,7 +171,7 @@
   },
   "about": {
     "page_title": "關於我",
-    "bio": "我是 Nils（劉岦崱）— 國泰世華銀行的 GenAI 產品經理／解決方案架構師。我在受監管的金融環境中架構並交付生產級 GenAI 系統。此前，我在 Synpulse（全球金融科技顧問公司）擔任銀行科技顧問，更早之前在星展銀行（DBS）擔任儲備幹部與 DevOps 資深專員。我遵循 Software 3.0／泛化優先的方法論：可複用能力、標準化介面與可衡量的評估迴圈，而非一次性的 Prompt 客製化。",
+    "bio": "我是 Nils（劉岦崱）— 台灣金控龍頭的 GenAI 產品經理／解決方案架構師。我在受監管的金融環境中架構並交付生產級 GenAI 系統。此前，我在 Synpulse（全球金融科技顧問公司）擔任銀行科技顧問，更早之前在星展銀行（DBS）擔任儲備幹部與 DevOps 資深專員。我遵循 Software 3.0／泛化優先的方法論：可複用能力、標準化介面與可衡量的評估迴圈，而非一次性的 Prompt 客製化。",
     "principles_title": "原則",
     "principles": [
       {
@@ -207,7 +207,7 @@
       },
       {
         "label": "獎項",
-        "value": "國泰世華 2024 創新競賽冠軍"
+        "value": "2024 企業內部創新競賽冠軍"
       },
       {
         "label": "演講",
@@ -228,7 +228,7 @@
     ]
   },
   "insights": {
-    "page_title": "洞察",
+    "page_title": "GenAI 分享",
     "coming_soon": "即將推出。",
     "sub": "我正在準備一系列關於在受監管環境中構建 AI 系統的文章。敬請期待。"
   },

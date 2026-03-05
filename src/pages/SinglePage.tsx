@@ -92,19 +92,19 @@ const SinglePage = () => {
           § HERO
           ═══════════════════════════════════════════════ */}
             <section id="hero" className="relative min-h-screen overflow-hidden">
-                {/* Right half — profile photo with fade-out */}
+                {/* Right half — profile photo with elegant fade */}
                 <div className="absolute inset-y-0 right-0 w-full md:w-1/2 -z-10">
                     <img
                         src={`${import.meta.env.BASE_URL}nils-profile.png`}
                         alt="Nils — GenAI Solution Architect"
-                        className="h-full w-full object-cover object-top"
+                        className="h-full w-full object-cover object-top opacity-90"
                     />
-                    {/* Fade-out to the left */}
-                    <div className="absolute inset-0 bg-gradient-to-l from-transparent via-background/50 to-background" />
+                    {/* Deep navy fade-out to the left */}
+                    <div className="absolute inset-0 bg-gradient-to-l from-transparent via-background/80 to-background" />
                     {/* Bottom fade */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
-                    {/* Overall dim */}
-                    <div className="absolute inset-0 bg-background/20" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
+                    {/* Overall subtle elegant tint */}
+                    <div className="absolute inset-0 bg-primary/5 mix-blend-overlay" />
                 </div>
 
                 <motion.div
@@ -114,13 +114,13 @@ const SinglePage = () => {
                     className="container-narrow relative flex min-h-screen items-center"
                 >
                     <div className="mr-auto w-full md:w-2/3 md:pr-8 px-2 sm:px-0">
-                        <motion.p variants={fadeUp} className="mb-3 text-xs sm:text-sm font-medium uppercase tracking-[0.2em] text-muted-foreground">
+                        <motion.p variants={fadeUp} className="mb-3 text-xs sm:text-sm font-medium uppercase tracking-[0.2em] text-primary">
                             劉岦崱 · Nils — GenAI Solution Architect
                         </motion.p>
-                        <motion.h1 variants={fadeUp} className="mb-1 text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-bold leading-[1.08] tracking-tight text-foreground">
+                        <motion.h1 variants={fadeUp} className="mb-1 text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[1.08] tracking-tight text-foreground break-words">
                             {t("hero.headline1")}
                         </motion.h1>
-                        <motion.h1 variants={fadeUp} className="mb-6 sm:mb-8 text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-bold leading-[1.08] tracking-tight text-foreground">
+                        <motion.h1 variants={fadeUp} className="mb-6 sm:mb-8 text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[1.08] tracking-tight text-gradient break-words">
                             {t("hero.headline2")}
                         </motion.h1>
                         <motion.p variants={fadeUp} className="mb-10 sm:mb-14 max-w-lg text-base sm:text-lg text-muted-foreground leading-relaxed">
@@ -129,14 +129,14 @@ const SinglePage = () => {
                         <motion.div variants={fadeUp} className="flex flex-wrap gap-4">
                             <a
                                 href="#contact"
-                                className="inline-flex items-center gap-2 rounded-full bg-foreground px-6 py-3 text-sm font-medium text-background transition-all hover:opacity-90"
+                                className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow-[0_0_20px_rgba(200,160,80,0.3)] transition-all hover:opacity-90 hover:shadow-[0_0_30px_rgba(200,160,80,0.5)]"
                             >
                                 <Calendar className="h-4 w-4" />
                                 {t("hero.cta_book")}
                             </a>
                             <a
                                 href="mailto:wulingteen@gmail.com"
-                                className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-medium text-foreground transition-all hover:bg-secondary"
+                                className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-background/50 px-6 py-3 text-sm font-medium text-foreground backdrop-blur-sm transition-all hover:bg-primary/10 hover:border-primary/50"
                             >
                                 <Mail className="h-4 w-4" />
                                 {t("hero.cta_email")}
@@ -158,8 +158,9 @@ const SinglePage = () => {
             {/* ═══════════════════════════════════════════════
           § EXPERTISE STRIP
           ═══════════════════════════════════════════════ */}
-            <section className="border-y border-border/50 bg-secondary/20 py-5 overflow-hidden">
-                <div className="flex flex-wrap justify-center gap-x-6 gap-y-3 px-6">
+            <section className="border-y border-primary/20 bg-secondary/30 py-6 overflow-hidden relative">
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/5 to-transparent"></div>
+                <div className="flex flex-wrap justify-center gap-x-6 gap-y-3 px-6 relative z-10">
                     {proofItems.map((item, i) => (
                         <span
                             key={i}
@@ -175,10 +176,11 @@ const SinglePage = () => {
             {/* ═══════════════════════════════════════════════
           § FEATURED SHOWCASE
           ═══════════════════════════════════════════════ */}
-            <section id="showcase" className="section-padding border-t border-border">
-                <div className="container-narrow">
+            <section id="showcase" className="section-padding border-t border-border relative">
+                <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
+                <div className="container-narrow relative z-10">
                     <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} viewport={{ once: true }} className="mb-12">
-                        <h2 className="mb-3 text-3xl font-bold text-foreground md:text-4xl">{t("demos.title")}</h2>
+                        <h2 className="mb-3 text-3xl font-bold text-gradient md:text-4xl">{t("demos.title")}</h2>
                         <p className="max-w-xl text-muted-foreground">{t("demos.sub")}</p>
                     </motion.div>
 
@@ -255,11 +257,11 @@ const SinglePage = () => {
             {/* ═══════════════════════════════════════════════
           § SERVICES
           ═══════════════════════════════════════════════ */}
-            <section id="services" className="section-padding border-t border-border">
-                <div className="container-narrow">
-                    <motion.div variants={sectionFade} initial="hidden" whileInView="visible" viewport={{ once: true }} className="mb-16">
-                        <h2 className="mb-4 text-4xl font-bold text-foreground md:text-5xl">{t("services.page_title")}</h2>
-                        <p className="max-w-xl text-lg text-muted-foreground">{t("services.page_sub")}</p>
+            <section id="services" className="section-padding relative">
+                <div className="container-narrow relative z-10">
+                    <motion.div variants={sectionFade} initial="hidden" whileInView="visible" viewport={{ once: true }} className="mb-16 text-center">
+                        <h2 className="mb-4 text-4xl font-bold text-gradient md:text-5xl">{t("services.page_title")}</h2>
+                        <p className="mx-auto max-w-xl text-lg text-muted-foreground">{t("services.page_sub")}</p>
                     </motion.div>
 
                     <div className="grid gap-8 md:grid-cols-3">
@@ -272,15 +274,15 @@ const SinglePage = () => {
                                     whileInView={{ opacity: 1, y: 0 }}
                                     transition={{ delay: 0.1 + i * 0.15, duration: 0.6 }}
                                     viewport={{ once: true }}
-                                    className="glass-card hover-lift group rounded-xl p-8"
+                                    className="glass-card hover-lift group rounded-xl p-8 border-t-2 border-t-primary/20"
                                 >
-                                    <Icon className="mb-4 h-6 w-6 text-muted-foreground transition-colors group-hover:text-foreground" />
+                                    <Icon className="mb-4 h-8 w-8 text-primary/70 transition-colors group-hover:text-primary" />
                                     <h3 className="mb-2 text-xl font-semibold text-foreground">{t(`services.${key}.title`)}</h3>
-                                    <div className="mb-4 inline-block rounded-full bg-secondary px-3 py-1 text-xs font-medium text-muted-foreground">
+                                    <div className="mb-4 inline-block rounded-full border border-primary/20 bg-primary/5 px-3 py-1 text-xs font-medium text-primary shadow-sm">
                                         {t(`services.${key}.timeline`)}
                                     </div>
                                     <p className="mb-4 text-sm leading-relaxed text-muted-foreground">{t(`services.${key}.desc`)}</p>
-                                    <p className="mb-3 text-xs font-medium text-foreground">{t(`services.${key}.best_for`)}</p>
+                                    <p className="mb-3 text-xs font-semibold text-foreground tracking-wide uppercase">{t(`services.${key}.best_for`)}</p>
                                     <p className="text-xs leading-relaxed text-muted-foreground">{t(`services.${key}.deliverables`)}</p>
                                 </motion.div>
                             );
@@ -309,11 +311,12 @@ const SinglePage = () => {
             {/* ═══════════════════════════════════════════════
           § ABOUT
           ═══════════════════════════════════════════════ */}
-            <section id="about" className="section-padding border-t border-border">
-                <div className="container-narrow">
+            <section id="about" className="section-padding bg-secondary/30 relative border-t border-border">
+                <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-20 mask-image-linear-gradient"></div>
+                <div className="container-narrow relative z-10">
                     <motion.div variants={sectionFade} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-                        <h2 className="mb-8 text-4xl font-bold text-foreground md:text-5xl">{t("about.page_title")}</h2>
-                        <p className="mb-16 max-w-2xl text-lg leading-relaxed text-muted-foreground">{t("about.bio")}</p>
+                        <h2 className="mb-8 text-4xl font-bold text-gradient md:text-5xl">{t("about.page_title")}</h2>
+                        <p className="mb-16 max-w-2xl text-lg leading-relaxed text-muted-foreground font-medium">{t("about.bio")}</p>
                     </motion.div>
 
                     {/* Principles */}
@@ -366,10 +369,12 @@ const SinglePage = () => {
             {/* ═══════════════════════════════════════════════
           § CONTACT
           ═══════════════════════════════════════════════ */}
-            <section id="contact" className="section-padding border-t border-border">
-                <div className="container-narrow">
+            <section id="contact" className="section-padding border-t border-border relative overflow-hidden">
+                <div className="absolute -top-[300px] -right-[300px] h-[600px] w-[600px] rounded-full bg-primary/5 blur-3xl"></div>
+                <div className="absolute -bottom-[300px] -left-[300px] h-[600px] w-[600px] rounded-full bg-primary/5 blur-3xl"></div>
+                <div className="container-narrow relative z-10">
                     <motion.div variants={sectionFade} initial="hidden" whileInView="visible" viewport={{ once: true }} className="mb-12">
-                        <h2 className="mb-4 text-4xl font-bold text-foreground md:text-5xl">{t("contact.page_title")}</h2>
+                        <h2 className="mb-4 text-4xl font-bold text-gradient md:text-5xl">{t("contact.page_title")}</h2>
                         <p className="max-w-xl text-lg text-muted-foreground">{t("contact.page_sub")}</p>
                     </motion.div>
 
@@ -415,7 +420,7 @@ const SinglePage = () => {
                                         </div>
                                         <button
                                             type="submit"
-                                            className="inline-flex items-center justify-center gap-2 rounded-full bg-foreground px-8 py-3 text-sm font-medium text-background transition-all hover:opacity-90"
+                                            className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-8 py-3 text-sm font-medium text-primary-foreground transition-all hover:bg-primary/90 hover:shadow-[0_0_20px_rgba(200,160,80,0.3)]"
                                         >
                                             <Send className="h-4 w-4" />
                                             {t("contact.send")}
@@ -426,9 +431,9 @@ const SinglePage = () => {
                                         key="success"
                                         initial={{ opacity: 0, scale: 0.95 }}
                                         animate={{ opacity: 1, scale: 1 }}
-                                        className="flex flex-col items-center justify-center py-16 text-center"
+                                        className="flex flex-col items-center justify-center py-16 text-center border border-primary/20 bg-primary/5 rounded-2xl"
                                     >
-                                        <CheckCircle className="mb-4 h-12 w-12 text-foreground" />
+                                        <CheckCircle className="mb-4 h-12 w-12 text-primary" />
                                         <p className="text-lg font-medium text-foreground">{t("contact.success")}</p>
                                     </motion.div>
                                 )}

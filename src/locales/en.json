@@ -4,7 +4,7 @@
     "services": "Services",
     "work": "Work",
     "about": "About",
-    "insights": "Insights",
+    "insights": "GenAI Sharing",
     "contact": "Contact"
   },
   "hero": {
@@ -116,8 +116,8 @@
     "page_sub": "Case studies from regulated enterprises and global financial institutions.",
     "cases": [
       {
-        "title": "CathayGPT — Enterprise GenAI Platform",
-        "client": "Cathay United Bank",
+        "title": "EnterpriseGPT — Enterprise GenAI Platform",
+        "client": "Leading Financial Holding Company in Taiwan",
         "tags": [
           "GenAI Platform",
           "GCP Serverless",
@@ -125,12 +125,12 @@
         ],
         "problem": "The bank needed its first production GenAI application for internal knowledge and task assistance, with enterprise-grade security and compliance.",
         "approach": "Architected and shipped a scalable serverless GenAI stack on GCP (Cloud Run, Cloud SQL, Vertex AI) with enterprise controls across identity, access, auditing, monitoring, and failure handling.",
-        "outcome": "CathayGPT (國泰智多星) became the bank's first production GenAI app. Drove internal ROI via knowledge & task assistance across the organization.",
+        "outcome": "EnterpriseGPT became the organization's first production GenAI app. Drove internal ROI via knowledge & task assistance across the organization.",
         "owned": "Lead developer / architect, end-to-end platform engineering, security & compliance, stakeholder alignment"
       },
       {
         "title": "Overseas AI Agent Platform",
-        "client": "Cathay Financial Holdings",
+        "client": "Leading Financial Holding Company in Taiwan",
         "tags": [
           "Multi-Agent",
           "MCP",
@@ -171,7 +171,7 @@
   },
   "about": {
     "page_title": "About",
-    "bio": "I'm Nils (劉岦崱) — a GenAI Solution Architect and builder at Cathay United Bank, one of Taiwan's largest banks. I architect and ship production GenAI systems in regulated environments. Previously, I consulted at Synpulse (global financial services consulting) and served as a Management Associate at DBS Bank. I follow a Software 3.0 / generalization-first approach: reusable capabilities, standardized interfaces, and measurable evaluation loops over one-off prompt customization.",
+    "bio": "I'm Nils (劉岦崱) — a GenAI Solution Architect and builder at a leading financial holding company in Taiwan. I architect and ship production GenAI systems in regulated environments. Previously, I consulted at Synpulse (global financial services consulting) and served as a Management Associate at DBS Bank. I follow a Software 3.0 / generalization-first approach: reusable capabilities, standardized interfaces, and measurable evaluation loops over one-off prompt customization.",
     "principles_title": "Principles",
     "principles": [
       {
@@ -207,7 +207,7 @@
       },
       {
         "label": "Award",
-        "value": "1st Place — CUB 2024 Innovation Competition"
+        "value": "1st Place — 2024 Enterprise Innovation Competition"
       },
       {
         "label": "Talks",
@@ -228,7 +228,7 @@
     ]
   },
   "insights": {
-    "page_title": "Insights",
+    "page_title": "GenAI Sharing",
     "coming_soon": "Coming soon.",
     "sub": "I'm preparing a series of articles on building AI systems in regulated environments. Stay tuned."
   },

@@ -235,11 +235,11 @@ export function SplashScreen({ onComplete }: SplashScreenProps) {
                             />
 
                             {/* Pulse beacon */}
-                            <div className="h-2 w-2 rounded-full bg-white animate-pulse shadow-[0_0_14px_5px_rgba(255,255,255,0.35)] mb-1" />
+                            <div className="h-2 w-2 rounded-full bg-primary animate-pulse shadow-[0_0_14px_5px_rgba(200,160,80,0.35)] mb-1" />
 
                             {/* Name — Chinese · English */}
                             <h1
-                                className="text-4xl font-bold text-white md:text-6xl"
+                                className="text-4xl font-bold text-white/90 md:text-6xl"
                                 style={{ fontFamily: "'Space Grotesk',sans-serif", letterSpacing: "-0.025em" }}
                             >
                                 劉岦崱 · Nils Liu
@@ -248,13 +248,13 @@ export function SplashScreen({ onComplete }: SplashScreenProps) {
                             {/* Title — stacked bilingual */}
                             <div className="flex flex-col items-center gap-0.5">
                                 <p
-                                    className="text-sm font-semibold text-slate-300"
+                                    className="text-sm font-semibold text-primary/90"
                                     style={{ fontFamily: "'Space Grotesk',sans-serif", letterSpacing: "0.05em" }}
                                 >
                                     企業級 GenAI 架構師
                                 </p>
                                 <p
-                                    className="text-[11px] font-medium uppercase text-slate-500"
+                                    className="text-[11px] font-medium uppercase text-primary/60"
                                     style={{ fontFamily: "'Space Grotesk',sans-serif", letterSpacing: "0.2em" }}
                                 >
                                     Enterprise GenAI Architect
@@ -264,7 +264,7 @@ export function SplashScreen({ onComplete }: SplashScreenProps) {
                             {/* Cycling service labels — bilingual */}
                             <div className="mt-1 h-6 overflow-hidden flex items-center justify-center">
                                 <p
-                                    className="text-[11px] font-medium text-slate-500"
+                                    className="text-[11px] font-medium text-primary/60"
                                     style={{ fontFamily: "'Space Grotesk',sans-serif", letterSpacing: "0.14em" }}
                                 >
                                     ✦ RAG &nbsp;·&nbsp; AI Agents &nbsp;·&nbsp; GenAI 企業導入

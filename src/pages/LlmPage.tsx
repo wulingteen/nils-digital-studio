@@ -49,7 +49,7 @@ const LlmPage = () => {
 
             if (line.startsWith("## ")) {
                 elements.push(
-                    <h2 key={i} className="mb-4 mt-10 text-xl font-semibold text-foreground font-['Space_Grotesk']">
+                    <h2 key={i} className="mb-4 mt-10 text-xl font-semibold text-primary/90 font-['Space_Grotesk']">
                         {line.replace("## ", "")}
                     </h2>
                 );
@@ -127,11 +127,11 @@ const LlmPage = () => {
 
                     <div className="mb-8 flex items-start justify-between">
                         <div className="flex items-center gap-3">
-                            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-muted">
-                                <Bot className="h-5 w-5 text-muted-foreground" />
+                            <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-primary/20 bg-primary/5 shadow-sm">
+                                <Bot className="h-5 w-5 text-primary" />
                             </div>
                             <div>
-                                <h1 className="text-2xl font-bold text-foreground font-['Space_Grotesk']">llm.txt</h1>
+                                <h1 className="text-2xl font-bold text-gradient font-['Space_Grotesk']">llm.txt</h1>
                                 <p className="text-xs text-muted-foreground">AI-agent-friendly site summary</p>
                             </div>
                         </div>

@@ -32,7 +32,7 @@ const Contact = () => {
       <section className="section-padding">
         <div className="container-narrow">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="mb-12">
-            <h1 className="mb-4 text-4xl font-bold text-foreground md:text-5xl">{t("contact.page_title")}</h1>
+            <h1 className="mb-4 text-4xl font-bold text-gradient md:text-5xl">{t("contact.page_title")}</h1>
             <p className="max-w-xl text-lg text-muted-foreground">{t("contact.page_sub")}</p>
           </motion.div>
 
@@ -78,7 +78,7 @@ const Contact = () => {
                     </div>
                     <button
                       type="submit"
-                      className="inline-flex items-center justify-center gap-2 rounded-full bg-foreground px-8 py-3 text-sm font-medium text-background transition-all hover:opacity-90"
+                      className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-8 py-3 text-sm font-medium text-primary-foreground shadow-[0_0_20px_rgba(200,160,80,0.3)] transition-all hover:bg-primary/90 hover:shadow-[0_0_30px_rgba(200,160,80,0.5)]"
                     >
                       <Send className="h-4 w-4" />
                       {t("contact.send")}
@@ -89,9 +89,9 @@ const Contact = () => {
                     key="success"
                     initial={{ opacity: 0, scale: 0.95 }}
                     animate={{ opacity: 1, scale: 1 }}
-                    className="flex flex-col items-center justify-center py-16 text-center"
+                    className="flex flex-col items-center justify-center py-16 text-center border border-primary/20 bg-primary/5 rounded-2xl"
                   >
-                    <CheckCircle className="mb-4 h-12 w-12 text-foreground" />
+                    <CheckCircle className="mb-4 h-12 w-12 text-primary" />
                     <p className="text-lg font-medium text-foreground">{t("contact.success")}</p>
                   </motion.div>
                 )}

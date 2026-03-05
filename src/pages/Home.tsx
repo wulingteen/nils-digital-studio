@@ -31,10 +31,11 @@ const Home = () => {
     <PageTransition>
       {/* Hero */}
       <section className="relative flex min-h-[90vh] items-center section-padding overflow-hidden">
-        {/* Subtle gradient background */}
+        {/* Elegant gradient background */}
         <div className="absolute inset-0 -z-10">
-          <div className="absolute left-1/4 top-1/4 h-96 w-96 rounded-full bg-foreground/[0.03] blur-3xl" />
-          <div className="absolute bottom-1/4 right-1/4 h-64 w-64 rounded-full bg-foreground/[0.02] blur-3xl" />
+          <div className="absolute inset-0 bg-primary/5 mix-blend-overlay" />
+          <div className="absolute left-1/4 top-1/4 h-96 w-96 rounded-full bg-primary/10 blur-[100px]" />
+          <div className="absolute bottom-1/4 right-1/4 h-64 w-64 rounded-full bg-primary/5 blur-[100px]" />
         </div>
 
         <motion.div
@@ -43,13 +44,13 @@ const Home = () => {
           animate="visible"
           className="container-narrow"
         >
-          <motion.p variants={fadeUp} className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-muted-foreground">
+          <motion.p variants={fadeUp} className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-primary">
             Nils — AI Architect & Builder
           </motion.p>
-          <motion.h1 variants={fadeUp} className="mb-2 text-5xl font-bold leading-[1.1] tracking-tight text-foreground md:text-7xl lg:text-8xl">
+          <motion.h1 variants={fadeUp} className="mb-2 text-5xl font-bold leading-[1.1] tracking-tight text-foreground md:text-7xl lg:text-7xl xl:text-8xl break-words">
             {t("hero.headline1")}
           </motion.h1>
-          <motion.h1 variants={fadeUp} className="mb-8 text-5xl font-bold leading-[1.1] tracking-tight text-foreground md:text-7xl lg:text-8xl">
+          <motion.h1 variants={fadeUp} className="mb-8 text-5xl font-bold leading-[1.1] tracking-tight text-gradient md:text-7xl lg:text-7xl xl:text-8xl break-words">
             {t("hero.headline2")}
           </motion.h1>
           <motion.p variants={fadeUp} className="mb-12 max-w-xl text-lg text-muted-foreground leading-relaxed">
@@ -58,14 +59,14 @@ const Home = () => {
           <motion.div variants={fadeUp} className="flex flex-wrap gap-4">
             <a
               href="#contact"
-              className="inline-flex items-center gap-2 rounded-full bg-foreground px-6 py-3 text-sm font-medium text-background transition-all hover:opacity-90"
+              className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow-[0_0_20px_rgba(200,160,80,0.3)] transition-all hover:opacity-90 hover:shadow-[0_0_30px_rgba(200,160,80,0.5)]"
             >
               <Calendar className="h-4 w-4" />
               {t("hero.cta_book")}
             </a>
             <a
               href="mailto:hello@example.com"
-              className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-medium text-foreground transition-all hover:bg-secondary"
+              className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-background/50 px-6 py-3 text-sm font-medium text-foreground backdrop-blur-sm transition-all hover:bg-primary/10 hover:border-primary/50"
             >
               <Mail className="h-4 w-4" />
               {t("hero.cta_email")}
@@ -74,7 +75,7 @@ const Home = () => {
               href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-medium text-foreground transition-all hover:bg-secondary"
+              className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-background/50 px-6 py-3 text-sm font-medium text-foreground backdrop-blur-sm transition-all hover:bg-primary/10 hover:border-primary/50"
             >
               <Linkedin className="h-4 w-4" />
               {t("hero.cta_linkedin")}
@@ -84,8 +85,9 @@ const Home = () => {
       </section>
 
       {/* Proof strip */}
-      <section className="border-y border-border">
-        <div className="flex overflow-x-auto">
+      <section className="border-y border-primary/20 bg-secondary/30 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/5 to-transparent"></div>
+        <div className="flex overflow-x-auto relative z-10">
           {proofItems.map((item, i) => (
             <motion.div
               key={i}
@@ -95,7 +97,7 @@ const Home = () => {
               viewport={{ once: true }}
               className="flex flex-shrink-0 items-center gap-3 px-8 py-5"
             >
-              <div className="h-1.5 w-1.5 rounded-full bg-muted-foreground" />
+              <div className="h-1.5 w-1.5 rounded-full bg-primary/60" />
               <span className="whitespace-nowrap text-sm font-medium text-muted-foreground">{item}</span>
             </motion.div>
           ))}
@@ -103,8 +105,9 @@ const Home = () => {
       </section>
 
       {/* Prototype Demos */}
-      <section className="section-padding">
-        <div className="container-narrow">
+      <section className="section-padding relative border-t border-border">
+        <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
+        <div className="container-narrow relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -112,7 +115,7 @@ const Home = () => {
             viewport={{ once: true }}
             className="mb-12"
           >
-            <h2 className="mb-3 text-3xl font-bold text-foreground md:text-4xl">{t("demos.title")}</h2>
+            <h2 className="mb-3 text-3xl font-bold text-gradient md:text-4xl">{t("demos.title")}</h2>
             <p className="text-muted-foreground">{t("demos.sub")}</p>
           </motion.div>
           <div className="grid gap-6 md:grid-cols-2">
@@ -127,19 +130,20 @@ const Home = () => {
       </section>
 
       {/* Services teaser */}
-      <section className="section-padding border-t border-border">
-        <div className="container-narrow text-center">
+      <section className="section-padding border-t border-border relative">
+        <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10 mask-image-linear-gradient"></div>
+        <div className="container-narrow text-center relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="mb-3 text-3xl font-bold text-foreground md:text-4xl">{t("services_teaser.title")}</h2>
+            <h2 className="mb-3 text-3xl font-bold text-gradient md:text-4xl">{t("services_teaser.title")}</h2>
             <p className="mb-8 text-muted-foreground">{t("services_teaser.sub")}</p>
             <Link
               to={`/${lang || "en"}/services`}
-              className="inline-flex items-center gap-2 text-sm font-medium text-foreground transition-all hover:gap-3"
+              className="inline-flex items-center gap-2 text-sm font-medium text-primary transition-all hover:gap-3 hover:text-primary/80"
             >
               {t("services_teaser.cta")} <ArrowRight className="h-4 w-4" />
             </Link>
