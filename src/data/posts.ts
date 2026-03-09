@@ -550,7 +550,9 @@ Thank you to all who have supported and mentored us along the way. I look forwar
         coverImage: "/images/blog/ithome-devopsdays.jpg",
         content: `今年是AI Agent的年，我也再次參與了iThome的盛事，6/5-6/6 DevOpsDays見
 
-五種 Agent 行為模式：用 AI 打造未來 DevOps 生態系`
+五種 Agent 行為模式：用 AI 打造未來 DevOps 生態系
+
+https://devopsdays.tw/2025/session-page/3772`
     },
     {
         id: "openai-devday-2024",
