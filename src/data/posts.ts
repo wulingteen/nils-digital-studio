@@ -10,6 +10,19 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
     {
+        id: "ithome-devopsdays-2025",
+        title: "iThome DevOpsDays 2025：五種 Agent 行為模式",
+        excerpt: "今年是 AI Agent 的年，6/5-6/6 DevOpsDays 見——五種 Agent 行為模式：用 AI 打造未來 DevOps 生態系。",
+        date: "2025-04-02",
+        author: "Nils Liu",
+        coverImage: "/images/blog/ithome-devopsdays.jpg",
+        content: `今年是AI Agent的年，我也再次參與了iThome的盛事，6/5-6/6 DevOpsDays見
+
+五種 Agent 行為模式：用 AI 打造未來 DevOps 生態系
+
+https://devopsdays.tw/2025/session-page/3772`
+    },
+    {
         id: "nvidia-gtc-2025-ai-weekly",
         title: "AI 週報：Nvidia GTC 2025、xAI 基建基金、Deloitte 工程師思維",
         excerpt: "Nvidia 收購 Gretel 提升合成數據能力、xAI 與 Nvidia 加入 300 億美元 AI 基礎建設基金、Deloitte 採用工程師思維模式。",
@@ -541,19 +554,7 @@ Thank you to all who have supported and mentored us along the way. I look forwar
 
 #生成式AI #面試革新 #數位轉型`
     },
-    {
-        id: "ithome-devopsdays-2025",
-        title: "iThome DevOpsDays 2025：五種 Agent 行為模式",
-        excerpt: "今年是 AI Agent 的年，6/5-6/6 DevOpsDays 見——五種 Agent 行為模式：用 AI 打造未來 DevOps 生態系。",
-        date: "2025-04-02",
-        author: "Nils Liu",
-        coverImage: "/images/blog/ithome-devopsdays.jpg",
-        content: `今年是AI Agent的年，我也再次參與了iThome的盛事，6/5-6/6 DevOpsDays見
 
-五種 Agent 行為模式：用 AI 打造未來 DevOps 生態系
-
-https://devopsdays.tw/2025/session-page/3772`
-    },
     {
         id: "openai-devday-2024",
         title: "OpenAI DevDay 2024: 一場屬於開發者的技術革新",
