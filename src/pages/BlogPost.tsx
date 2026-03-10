@@ -6,6 +6,7 @@ import { postsEn, titleEn, excerptEn } from "@/data/posts-en";
 import { ArrowLeft, Calendar, User } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useOGTags } from "@/hooks/useOGTags";
+import { Helmet } from "react-helmet-async";
 
 const BlogPost = () => {
     const { lang, id } = useParams();
@@ -70,8 +71,42 @@ const BlogPost = () => {
         return html;
     };
 
+    const displayTitle = (currentLang === "en" && titleEn[post.id]) ? titleEn[post.id] : post.title;
+    const pageUrl = `https://wulingteen.github.io/nils-digital-studio/${currentLang}/insights/${post.id}`;
+
+    const breadcrumbLd = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": `https://wulingteen.github.io/nils-digital-studio/${currentLang}`
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": t("nav.insights", "Insights"),
+                "item": `https://wulingteen.github.io/nils-digital-studio/${currentLang}/insights`
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": displayTitle,
+                "item": pageUrl
+            }
+        ]
+    };
+
     return (
         <PageTransition>
+            <Helmet>
+                <link rel="canonical" href={pageUrl} />
+                <script type="application/ld+json">
+                    {JSON.stringify(breadcrumbLd)}
+                </script>
+            </Helmet>
             <article className="min-h-screen pb-20 pt-32">
                 <div className="container-narrow mx-auto max-w-3xl">
                     <motion.div
@@ -81,6 +116,7 @@ const BlogPost = () => {
                     >
                         <Link
                             to={`/${currentLang}/insights`}
+                            aria-label={t("blog.back_to_insights", "Back to Insights")}
                             className="mb-8 inline-flex items-center gap-2 text-sm font-medium text-primary/80 transition-colors hover:text-primary"
                         >
                             <ArrowLeft className="h-4 w-4" />
@@ -89,7 +125,7 @@ const BlogPost = () => {
 
                         <header className="mb-12">
                             <h1 className="mb-6 text-4xl font-bold leading-tight text-gradient md:text-5xl lg:leading-[1.1]">
-                                {currentLang === 'en' && titleEn[post.id] ? titleEn[post.id] : post.title}
+                                {displayTitle}
                             </h1>
 
                             <div className="flex flex-wrap items-center gap-6 text-sm text-muted-foreground border-b border-primary/20 pb-8">

@@ -5,14 +5,42 @@ import PageTransition from "@/components/layout/PageTransition";
 import { blogPosts } from "@/data/posts";
 import { titleEn, excerptEn } from "@/data/posts-en";
 import { ArrowRight, Calendar, User } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 const Insights = () => {
   const { t } = useTranslation();
   const { lang } = useParams();
   const currentLang = lang || "en";
 
+  const pageUrl = `https://wulingteen.github.io/nils-digital-studio/${currentLang}/insights`;
+
+  const breadcrumbLd = {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+          {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": `https://wulingteen.github.io/nils-digital-studio/${currentLang}`
+          },
+          {
+              "@type": "ListItem",
+              "position": 2,
+              "name": t("nav.insights", "Insights"),
+              "item": pageUrl
+          }
+      ]
+  };
+
   return (
     <PageTransition>
+      <Helmet>
+        <link rel="canonical" href={pageUrl} />
+        <script type="application/ld+json">
+            {JSON.stringify(breadcrumbLd)}
+        </script>
+      </Helmet>
       <section className="section-padding min-h-screen pt-32">
         <div className="container-narrow">
           <motion.div
