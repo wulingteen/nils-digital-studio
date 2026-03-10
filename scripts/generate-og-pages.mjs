@@ -136,4 +136,33 @@ for (const lang of LANGS) {
     }
 }
 
+// ---------------------------------------------------------------------------
+// 5. Update dist/llm.txt with blog posts
+// ---------------------------------------------------------------------------
+const llmTxtPath = join(root, 'dist', 'llm.txt');
+if (existsSync(llmTxtPath)) {
+    let llmTxt = readFileSync(llmTxtPath, 'utf8');
+    
+    // Auto-update the "Last updated" date to today
+    const today = new Date().toISOString().split('T')[0];
+    llmTxt = llmTxt.replace(/Last updated: \d{4}-\d{2}-\d{2}/, `Last updated: ${today}`);
+
+    // Append recent articles
+    llmTxt += '\n\n## Recent Insights & Articles\n\n';
+    
+    // Add top 10 recent posts to llm.txt
+    const recentPosts = posts.slice(0, 10);
+    for (const p of recentPosts) {
+        const title = titleEnMap[p.id] || p.title;
+        const desc = excerptEnMap[p.id] || p.excerpt;
+        llmTxt += `- [${title}](${BASE_URL}/en/insights/${p.id})\n`;
+        llmTxt += `  ${desc}\n`;
+    }
+
+    writeFileSync(llmTxtPath, llmTxt, 'utf8');
+    console.log(`📝 Updated dist/llm.txt with ${recentPosts.length} recent articles`);
+} else {
+    console.warn(`⚠️  dist/llm.txt not found, couldn't append articles`);
+}
+
 console.log(`✅  Generated ${count} OG HTML files (${posts.length} posts × ${LANGS.length} languages)`);
