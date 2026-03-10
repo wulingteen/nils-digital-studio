@@ -10,19 +10,6 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
     {
-        id: "ithome-devopsdays-2025",
-        title: "iThome DevOpsDays 2025：五種 Agent 行為模式",
-        excerpt: "今年是 AI Agent 的年，6/5-6/6 DevOpsDays 見——五種 Agent 行為模式：用 AI 打造未來 DevOps 生態系。",
-        date: "2025-04-02",
-        author: "Nils Liu",
-        coverImage: "/images/blog/ithome-devopsdays.jpg",
-        content: `今年是AI Agent的年，我也再次參與了iThome的盛事，6/5-6/6 DevOpsDays見
-
-五種 Agent 行為模式：用 AI 打造未來 DevOps 生態系
-
-https://devopsdays.tw/2025/session-page/3772`
-    },
-    {
         id: "devfest-taipei-2025-recap",
         title: "DevFest Taipei 2025：AI 教練平台分享紀錄",
         excerpt: "在 DevFest Taipei 2025 分享真實上線的 AI 業務教練平台——多 Agent 協作、Persona World、Ontology + GraphRAG，打造 24/7 個人化培訓系統。",
@@ -86,6 +73,19 @@ https://devopsdays.tw/2025/session-page/3772`
 如果你對這個主題有興趣，歡迎來信，我很樂意分享更多細節。
 
 [📩 寄信索取投影片](mailto:wulingteen@gmail.com?subject=DevFest%20Taipei%202025%20AI%20%E6%95%99%E7%B7%B4%E6%8A%95%E5%BD%B1%E7%89%87)`,
+    },
+    {
+        id: "ithome-devopsdays-2025",
+        title: "iThome DevOpsDays 2025：五種 Agent 行為模式",
+        excerpt: "今年是 AI Agent 的年，6/5-6/6 DevOpsDays 見——五種 Agent 行為模式：用 AI 打造未來 DevOps 生態系。",
+        date: "2025-04-02",
+        author: "Nils Liu",
+        coverImage: "/images/blog/ithome-devopsdays.jpg",
+        content: `今年是AI Agent的年，我也再次參與了iThome的盛事，6/5-6/6 DevOpsDays見
+
+五種 Agent 行為模式：用 AI 打造未來 DevOps 生態系
+
+https://devopsdays.tw/2025/session-page/3772`,
     },
     {
         id: "nvidia-gtc-2025-ai-weekly",
