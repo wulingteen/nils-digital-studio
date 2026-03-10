@@ -35,6 +35,11 @@ const BlogPost = () => {
                 (match, url, videoId) =>
                     `<div class="my-8 overflow-hidden rounded-2xl border border-primary/20 shadow-lg" style="position:relative;padding-bottom:56.25%;height:0;"><iframe src="https://www.youtube.com/embed/${videoId}" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allowfullscreen loading="lazy" title="YouTube video"></iframe></div>`
             )
+            // Markdown links [text](url) → <a> tags (supports mailto: and https:)
+            .replace(
+                /\[([^\]]+)\]\(((?:https?|mailto):[^\)]+)\)/gim,
+                '<a href="$2" class="text-primary underline hover:text-primary/80 transition-colors" target="_blank" rel="noopener noreferrer">$1</a>'
+            )
             .replace(/\n\n/gim, '</p><p class="mb-6 leading-relaxed text-muted-foreground text-lg">')
             .trim();
 
