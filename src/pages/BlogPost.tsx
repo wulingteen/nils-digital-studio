@@ -2,6 +2,7 @@ import { useParams, Link, Navigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import PageTransition from "@/components/layout/PageTransition";
 import { blogPosts } from "@/data/posts";
+import { postsEn } from "@/data/posts-en";
 import { ArrowLeft, Calendar, User } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useOGTags } from "@/hooks/useOGTags";
@@ -12,6 +13,9 @@ const BlogPost = () => {
     const currentLang = lang || "en";
 
     const post = blogPosts.find((p) => p.id === id);
+    const content = (currentLang === "en" && post && postsEn[post.id])
+        ? postsEn[post.id]
+        : post?.content ?? "";
 
     useOGTags(post ? {
         title: post.title,
@@ -109,7 +113,7 @@ const BlogPost = () => {
 
                         <div
                             className="article-content"
-                            dangerouslySetInnerHTML={{ __html: formatMarkdownToHTML(post.content) }}
+                            dangerouslySetInnerHTML={{ __html: formatMarkdownToHTML(content) }}
                         />
                     </motion.div>
                 </div>
