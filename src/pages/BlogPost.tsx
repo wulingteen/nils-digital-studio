@@ -4,6 +4,7 @@ import PageTransition from "@/components/layout/PageTransition";
 import { blogPosts } from "@/data/posts";
 import { ArrowLeft, Calendar, User } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { useOGTags } from "@/hooks/useOGTags";
 
 const BlogPost = () => {
     const { lang, id } = useParams();
@@ -11,6 +12,13 @@ const BlogPost = () => {
     const currentLang = lang || "en";
 
     const post = blogPosts.find((p) => p.id === id);
+
+    useOGTags(post ? {
+        title: post.title,
+        description: post.excerpt,
+        image: post.coverImage,
+        url: window.location.href,
+    } : { title: "GenAI 分享 | Nils Liu", description: "" });
 
     if (!post) {
         return <Navigate to={`/${currentLang}/insights`} replace />;
