@@ -50,7 +50,7 @@ Deloitte 合夥人 Jillian Wanner 強調，隨著 AI 擾動顧問業務，企業
         excerpt: "同一個時代，同樣叫做工程師，有人因 AI 失去工作，也有人因 AI 找到工作。決定你在哪一邊的，不是學歷年資，而是調整速度。",
         date: "2026-02-27",
         author: "Nils Liu",
-        coverImage: "/images/blog/fde-diamond-org.jpg",
+        coverImage: "/images/blog/642211062_1341725981314870_7520906503631550785_n.jpg",
         content: `同一個時代，同樣叫做工程師，有人因 AI 失去工作，也有人因 AI 找到工作。決定你在哪一邊的，不是學歷年資，而是調整速度。新職缺已經靜靜上線了
 
 ———
