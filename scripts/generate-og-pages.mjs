@@ -41,6 +41,30 @@ if (current.id) posts.push({ ...current });
 console.log(`📋 Found ${posts.length} posts`);
 
 // ---------------------------------------------------------------------------
+// 1b. Parse src/data/posts-en.ts to extract English titles and excerpts
+// ---------------------------------------------------------------------------
+const postsEnContent = readFileSync(join(root, 'src/data/posts-en.ts'), 'utf8');
+
+const titleEnMap = {};
+const excerptEnMap = {};
+
+// Parse titleEn block
+const titleEnBlock = postsEnContent.match(/export const titleEn[^=]*=\s*\{([^}]+)\}/s)?.[1] || '';
+for (const line of titleEnBlock.split('\n')) {
+    const m = line.match(/^\s*"([^"]+)":\s*"(.*)",?$/);
+    if (m) titleEnMap[m[1]] = m[2];
+}
+
+// Parse excerptEn block
+const excerptEnBlock = postsEnContent.match(/export const excerptEn[^=]*=\s*\{([^}]+)\}/s)?.[1] || '';
+for (const line of excerptEnBlock.split('\n')) {
+    const m = line.match(/^\s*"([^"]+)":\s*"(.*)",?$/);
+    if (m) excerptEnMap[m[1]] = m[2];
+}
+
+console.log(`🌐 Loaded ${Object.keys(titleEnMap).length} English titles`);
+
+// ---------------------------------------------------------------------------
 // 2. Load dist/index.html as template
 // ---------------------------------------------------------------------------
 const templatePath = join(root, 'dist', 'index.html');
@@ -99,9 +123,10 @@ for (const lang of LANGS) {
 
         mkdirSync(dirPath, { recursive: true });
 
+        const isEn = lang === 'en';
         const patched = patchOG(template, {
-            title:       post.title || 'Nils Liu',
-            description: post.excerpt || '',
+            title:       (isEn && titleEnMap[post.id])   ? titleEnMap[post.id]   : post.title   || 'Nils Liu',
+            description: (isEn && excerptEnMap[post.id]) ? excerptEnMap[post.id] : post.excerpt || '',
             image:       post.coverImage,
             url,
         });
