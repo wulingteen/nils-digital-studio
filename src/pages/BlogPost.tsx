@@ -2,7 +2,7 @@ import { useParams, Link, Navigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import PageTransition from "@/components/layout/PageTransition";
 import { blogPosts } from "@/data/posts";
-import { postsEn } from "@/data/posts-en";
+import { postsEn, titleEn, excerptEn } from "@/data/posts-en";
 import { ArrowLeft, Calendar, User } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useOGTags } from "@/hooks/useOGTags";
@@ -18,8 +18,8 @@ const BlogPost = () => {
         : post?.content ?? "";
 
     useOGTags(post ? {
-        title: post.title,
-        description: post.excerpt,
+        title: (currentLang === "en" && titleEn[post.id]) ? titleEn[post.id] : post.title,
+        description: (currentLang === "en" && excerptEn[post.id]) ? excerptEn[post.id] : post.excerpt,
         image: post.coverImage,
         url: window.location.href,
     } : { title: "GenAI 分享 | Nils Liu", description: "" });
@@ -81,7 +81,7 @@ const BlogPost = () => {
 
                         <header className="mb-12">
                             <h1 className="mb-6 text-4xl font-bold leading-tight text-gradient md:text-5xl lg:leading-[1.1]">
-                                {post.title}
+                                {currentLang === 'en' && titleEn[post.id] ? titleEn[post.id] : post.title}
                             </h1>
 
                             <div className="flex flex-wrap items-center gap-6 text-sm text-muted-foreground border-b border-primary/20 pb-8">

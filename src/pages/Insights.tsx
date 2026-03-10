@@ -3,6 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import PageTransition from "@/components/layout/PageTransition";
 import { blogPosts } from "@/data/posts";
+import { titleEn, excerptEn } from "@/data/posts-en";
 import { ArrowRight, Calendar, User } from "lucide-react";
 
 const Insights = () => {
@@ -61,11 +62,11 @@ const Insights = () => {
 
                     <h2 className="mb-3 text-2xl font-semibold text-foreground transition-colors group-hover:text-primary">
                       <Link to={`/${currentLang}/insights/${post.id}`}>
-                        {post.title}
+                        {currentLang === 'en' && titleEn[post.id] ? titleEn[post.id] : post.title}
                       </Link>
                     </h2>
                     <p className="mb-6 text-muted-foreground leading-relaxed">
-                      {post.excerpt}
+                      {currentLang === 'en' && excerptEn[post.id] ? excerptEn[post.id] : post.excerpt}
                     </p>
                   </div>
 
