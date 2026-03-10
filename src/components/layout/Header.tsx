@@ -30,7 +30,10 @@ const Header = () => {
 
   const switchLanguage = (code: string) => {
     i18n.changeLanguage(code);
-    navigate(`/${code}`);
+    // Replace the current lang prefix with the new one, keeping the rest of the path
+    const currentPath = location.pathname;
+    const newPath = currentPath.replace(/^\/(en|zh|de)(\/|$)/, `/${code}$2`);
+    navigate(newPath || `/${code}`);
   };
 
   const toggleDark = () => {
