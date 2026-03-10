@@ -197,7 +197,9 @@ https://youtu.be/d95J8yzvjbQ?si=pNqqz52EE6Kt4baJ`
 
 我自己會比較好奇的是，在這麼多壓力之下，Perplexity 能不能走出一條「內容方、使用者、自己」都覺得還算公平的合作模式
 
-如果做得到，也許就有機會把現在的困境，變成下一階段的起點`
+如果做得到，也許就有機會把現在的困境，變成下一階段的起點
+
+[📰 Reuters：New York Times sues Perplexity AI for infringing copyright](https://www.reuters.com/legal/litigation/new-york-times-sues-perplexity-ai-infringing-copyright-works-2025-12-05/)`
     },
     {
         id: "google-gemini-antigravity-devops",
