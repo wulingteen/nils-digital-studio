@@ -38,7 +38,7 @@ const Insights = () => {
               >
                 {post.coverImage && (
                   <Link to={`/${currentLang}/insights/${post.id}`} className="block relative h-52 w-full overflow-hidden bg-muted">
-                    <img src={`${import.meta.env.BASE_URL}${post.coverImage.replace(/^\//, '')}`} alt={post.title} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                    <img src={`${import.meta.env.BASE_URL}${post.coverImage.replace(/^\//, '')}`} alt={currentLang === 'en' && titleEn[post.id] ? titleEn[post.id] : post.title} loading="lazy" decoding="async" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
                   </Link>
                 )}
                 <div className="flex flex-1 flex-col p-6">

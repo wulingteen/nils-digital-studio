@@ -52,6 +52,14 @@ const BlogPost = () => {
                 /\[([^\]]+)\]\(((?:https?|mailto):[^\)]+)\)/gim,
                 '<a href="$2" class="text-primary underline hover:text-primary/80 transition-colors" target="_blank" rel="noopener noreferrer">$1</a>'
             )
+            // Markdown images ![alt](url) → <img> tags with lazy loading
+            .replace(
+                /!\[([^\]]*)\]\(([^)]+)\)/gim,
+                (match, alt, url) => {
+                    const fullUrl = url.startsWith('http') ? url : `${import.meta.env.BASE_URL}${url.replace(/^\//, '')}`;
+                    return `<img src="${fullUrl}" alt="${alt || post.title}" loading="lazy" decoding="async" class="my-8 w-full h-auto rounded-xl object-cover border border-primary/10 shadow-md" />`;
+                }
+            )
             .replace(/\n\n/gim, '</p><p class="mb-6 leading-relaxed text-muted-foreground text-lg">')
             .trim();
 
@@ -107,7 +115,7 @@ const BlogPost = () => {
 
                         {post.coverImage && (
                             <div className="mb-12 overflow-hidden rounded-2xl border border-primary/20 shadow-lg">
-                                <img src={`${import.meta.env.BASE_URL}${post.coverImage.replace(/^\//, '')}`} alt={post.title} className="w-full h-auto object-cover max-h-[500px]" />
+                                <img src={`${import.meta.env.BASE_URL}${post.coverImage.replace(/^\//, '')}`} alt={post.title} loading="eager" fetchPriority="high" decoding="async" className="w-full h-auto object-cover max-h-[500px]" />
                             </div>
                         )}
 
