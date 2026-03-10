@@ -240,7 +240,7 @@ AI 不再只是 demo 或 side project 的玩具，而是變成雲端基礎設施
         excerpt: "在 DevFest Taipei 2025 分享真實上線的 AI 業務教練平台——多 Agent 協作、Persona World、Ontology + GraphRAG，打造 24/7 個人化培訓系統。",
         date: "2025-12-02",
         author: "Nils Liu",
-        coverImage: "/images/blog/devfest-taipei-2025.jpg",
+        coverImage: "/images/blog/AI_Coach.png",
         content: `這不只是一個聊天機器人。這是一個為每一位海外業務員設計的 24/7 個人化教練，能以驚人的真實感模擬現實世界的銷售對話，專注於保險與消費金融的訓練。
 
 #DevFestTaipei #AIAgent #Ontology #GraphRAG
