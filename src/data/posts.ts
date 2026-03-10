@@ -181,21 +181,6 @@ AI 正在改變世界。
 https://youtu.be/d95J8yzvjbQ?si=pNqqz52EE6Kt4baJ`
     },
     {
-        id: "nested-learning-transformer-replacement",
-        title: "Nested Learning：Transformer 可能要被換掉了",
-        excerpt: "Google 在 NeurIPS 2025 發表的 Nested Learning / HOPE，讓模型的記憶運作更像人，AI 推論的成本結構可能會慢慢改變。",
-        date: "2025-12-12",
-        author: "Nils Liu",
-        coverImage: "/images/blog/nested-learning.jpg",
-        content: `這兩天這篇文蠻熱門的，看得出來作者是一位業內專家，講 Google 在 NeurIPS 2025 的 Nested Learning / HOPE，
-
-我自己的感覺是Transformer 在幾年內可能就要被換掉了，nested learning可能讓模型的記憶運作更像人一點
-
-如果用股市角度來看，
-我會把這個技術先當成一個小雷達，提醒自己
-未來 AI 推論的成本結構，可能會慢慢變，不一定永遠都是一直堆記憶體就好，可能會更看重算力怎麼用得漂亮，互連怎麼做，整台機器怎麼配，整體AI領域賽道將重置`
-    },
-    {
         id: "perplexity-challenges",
         title: "Perplexity 的困境：AI 搜尋的邊界在哪裡？",
         excerpt: "Perplexity面對的是一個「位置」的考驗，一邊要扛起「AI 搜尋新一代」的期待，一邊又被各種內容方用法律與商業談判來拉扯。",
