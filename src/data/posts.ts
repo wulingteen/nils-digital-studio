@@ -176,7 +176,9 @@ https://youtu.be/Hk_42hV7q2Q?si=Rp9k7AQml9Gm0c6L`
 但今天的發展我們都知道了：Hinton 獲得了 2018 年圖靈獎，並在 2024 年獲得諾貝爾物理學獎。
 而 Demis Hassabis 也在 2024 年因 AlphaFold 相關成果獲得諾貝爾化學獎。
 
-AI 正在改變世界。`
+AI 正在改變世界。
+
+https://youtu.be/d95J8yzvjbQ?si=pNqqz52EE6Kt4baJ`
     },
     {
         id: "nested-learning-transformer-replacement",
