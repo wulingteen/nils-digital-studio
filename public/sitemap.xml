@@ -1,33 +1,204 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Homepage -->
   <url>
     <loc>https://wulingteen.github.io/nils-digital-studio/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+  </url>
+
+  <!-- Main pages – zh / en / de -->
+  <url>
+    <loc>https://wulingteen.github.io/nils-digital-studio/zh</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://wulingteen.github.io/nils-digital-studio/zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wulingteen.github.io/nils-digital-studio/en"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wulingteen.github.io/nils-digital-studio/de"/>
   </url>
   <url>
     <loc>https://wulingteen.github.io/nils-digital-studio/en</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="zh" href="https://wulingteen.github.io/nils-digital-studio/zh"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://wulingteen.github.io/nils-digital-studio/de"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wulingteen.github.io/nils-digital-studio/en"/>
-  </url>
-  <url>
-    <loc>https://wulingteen.github.io/nils-digital-studio/zh</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://wulingteen.github.io/nils-digital-studio/en"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://wulingteen.github.io/nils-digital-studio/de"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://wulingteen.github.io/nils-digital-studio/zh"/>
   </url>
   <url>
     <loc>https://wulingteen.github.io/nils-digital-studio/de</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://wulingteen.github.io/nils-digital-studio/en"/>
     <xhtml:link rel="alternate" hreflang="zh" href="https://wulingteen.github.io/nils-digital-studio/zh"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wulingteen.github.io/nils-digital-studio/en"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://wulingteen.github.io/nils-digital-studio/de"/>
   </url>
+
+  <!-- Sub-pages -->
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/zh/about</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/en/about</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/zh/insights</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/en/insights</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/zh/contact</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/en/contact</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Blog posts (zh / en / de) -->
+  <!-- devfest-taipei-2025-recap -->
+  <url>
+    <loc>https://wulingteen.github.io/nils-digital-studio/zh/insights/devfest-taipei-2025-recap</loc>
+    <changefreq>monthly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://wulingteen.github.io/nils-digital-studio/zh/insights/devfest-taipei-2025-recap"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wulingteen.github.io/nils-digital-studio/en/insights/devfest-taipei-2025-recap"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wulingteen.github.io/nils-digital-studio/de/insights/devfest-taipei-2025-recap"/>
+  </url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/en/insights/devfest-taipei-2025-recap</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/de/insights/devfest-taipei-2025-recap</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- ithome-devopsdays-2025 -->
+  <url>
+    <loc>https://wulingteen.github.io/nils-digital-studio/zh/insights/ithome-devopsdays-2025</loc>
+    <changefreq>monthly</changefreq><priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://wulingteen.github.io/nils-digital-studio/zh/insights/ithome-devopsdays-2025"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://wulingteen.github.io/nils-digital-studio/en/insights/ithome-devopsdays-2025"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://wulingteen.github.io/nils-digital-studio/de/insights/ithome-devopsdays-2025"/>
+  </url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/en/insights/ithome-devopsdays-2025</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/de/insights/ithome-devopsdays-2025</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+
+  <!-- nvidia-gtc-2025-ai-weekly -->
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/zh/insights/nvidia-gtc-2025-ai-weekly</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/en/insights/nvidia-gtc-2025-ai-weekly</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/de/insights/nvidia-gtc-2025-ai-weekly</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- fde-diamond-org -->
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/zh/insights/fde-diamond-org</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/en/insights/fde-diamond-org</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/de/insights/fde-diamond-org</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- ai-picking-future-talents -->
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/zh/insights/ai-picking-future-talents</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/en/insights/ai-picking-future-talents</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/de/insights/ai-picking-future-talents</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- ai-agent-intern-recruit -->
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/zh/insights/ai-agent-intern-recruit</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/en/insights/ai-agent-intern-recruit</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/de/insights/ai-agent-intern-recruit</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- ai-browser-auto-report -->
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/zh/insights/ai-browser-auto-report</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/en/insights/ai-browser-auto-report</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/de/insights/ai-browser-auto-report</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- ai-history-hinton-nobel -->
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/zh/insights/ai-history-hinton-nobel</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/en/insights/ai-history-hinton-nobel</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/de/insights/ai-history-hinton-nobel</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- perplexity-challenges -->
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/zh/insights/perplexity-challenges</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/en/insights/perplexity-challenges</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/de/insights/perplexity-challenges</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- google-gemini-antigravity-devops -->
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/zh/insights/google-gemini-antigravity-devops</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/en/insights/google-gemini-antigravity-devops</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/de/insights/google-gemini-antigravity-devops</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- devfest-taipei-2025-announcement -->
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/zh/insights/devfest-taipei-2025-announcement</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/en/insights/devfest-taipei-2025-announcement</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/de/insights/devfest-taipei-2025-announcement</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- graphrag-smart-customer-service -->
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/zh/insights/graphrag-smart-customer-service</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/en/insights/graphrag-smart-customer-service</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/de/insights/graphrag-smart-customer-service</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- six-patents-approved-2025 -->
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/zh/insights/six-patents-approved-2025</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/en/insights/six-patents-approved-2025</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/de/insights/six-patents-approved-2025</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- devfest-taipei-signup -->
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/zh/insights/devfest-taipei-signup</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/en/insights/devfest-taipei-signup</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/de/insights/devfest-taipei-signup</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- best-attention-explanation -->
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/zh/insights/best-attention-explanation</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/en/insights/best-attention-explanation</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/de/insights/best-attention-explanation</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- jason-wei-ai-scenarios -->
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/zh/insights/jason-wei-ai-scenarios</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/en/insights/jason-wei-ai-scenarios</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/de/insights/jason-wei-ai-scenarios</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- thinking-machine-lab-deterministic-ai -->
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/zh/insights/thinking-machine-lab-deterministic-ai</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/en/insights/thinking-machine-lab-deterministic-ai</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/de/insights/thinking-machine-lab-deterministic-ai</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- vibe-coding-three-giants -->
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/zh/insights/vibe-coding-three-giants</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/en/insights/vibe-coding-three-giants</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/de/insights/vibe-coding-three-giants</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- gemini-flash-nano-banana -->
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/zh/insights/gemini-flash-nano-banana</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/en/insights/gemini-flash-nano-banana</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/de/insights/gemini-flash-nano-banana</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- hiring-devops-fullstack-ddt -->
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/zh/insights/hiring-devops-fullstack-ddt</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/en/insights/hiring-devops-fullstack-ddt</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/de/insights/hiring-devops-fullstack-ddt</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- ai-pm-peter-deng-uber -->
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/zh/insights/ai-pm-peter-deng-uber</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/en/insights/ai-pm-peter-deng-uber</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/de/insights/ai-pm-peter-deng-uber</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- chatgpt-agent-launch -->
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/zh/insights/chatgpt-agent-launch</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/en/insights/chatgpt-agent-launch</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/de/insights/chatgpt-agent-launch</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- stargate-ai-infrastructure -->
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/zh/insights/stargate-ai-infrastructure</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/en/insights/stargate-ai-infrastructure</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/de/insights/stargate-ai-infrastructure</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- google-io-one-for-all -->
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/zh/insights/google-io-one-for-all</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/en/insights/google-io-one-for-all</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/de/insights/google-io-one-for-all</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- kobe-imagination-ai-magic -->
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/zh/insights/kobe-imagination-ai-magic</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/en/insights/kobe-imagination-ai-magic</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/de/insights/kobe-imagination-ai-magic</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- patent-financial-ai-system -->
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/zh/insights/patent-financial-ai-system</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/en/insights/patent-financial-ai-system</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/de/insights/patent-financial-ai-system</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- ai-team-recruitment-genai -->
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/zh/insights/ai-team-recruitment-genai</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/en/insights/ai-team-recruitment-genai</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/de/insights/ai-team-recruitment-genai</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- genai-tech-interview-revolution -->
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/zh/insights/genai-tech-interview-revolution</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/en/insights/genai-tech-interview-revolution</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/de/insights/genai-tech-interview-revolution</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- openai-devday-2024 -->
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/zh/insights/openai-devday-2024</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/en/insights/openai-devday-2024</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/de/insights/openai-devday-2024</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
 </urlset>
