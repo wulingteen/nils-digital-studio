@@ -19,6 +19,9 @@ const BlogPost = () => {
     // To cleanly render basic markdown as HTML since we couldn't install react-markdown due to EPERM
     // Only supports basic headers, paragraphs, lists, and bold text for now.
     const formatMarkdownToHTML = (text: string) => {
+        // Extract YouTube video ID from various URL formats
+        const youtubeRegex = /(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/watch\?v=|youtu\.be\/)([a-zA-Z0-9_-]{11})/;
+
         let html = text
             .replace(/^### (.*$)/gim, '<h3 class="mt-8 mb-4 text-2xl font-bold text-foreground">$1</h3>')
             .replace(/^## (.*$)/gim, '<h2 class="mt-10 mb-5 text-3xl font-bold text-primary/90">$1</h2>')
@@ -26,6 +29,12 @@ const BlogPost = () => {
             .replace(/\*\*(.*)\*\*/gim, '<strong class="text-foreground">$1</strong>')
             .replace(/\*(.*)\*/gim, '<em>$1</em>')
             .replace(/^- (.*$)/gim, '<li class="ml-6 list-disc mb-2 text-muted-foreground">$1</li>')
+            // YouTube embed: a bare YouTube URL on its own line becomes an iframe
+            .replace(
+                new RegExp(`(https?://(?:www\\.)?(?:youtube\\.com/watch\\?v=|youtu\\.be/)([a-zA-Z0-9_-]{11})[^\\s]*)`, 'gim'),
+                (match, url, videoId) =>
+                    `<div class="my-8 overflow-hidden rounded-2xl border border-primary/20 shadow-lg" style="position:relative;padding-bottom:56.25%;height:0;"><iframe src="https://www.youtube.com/embed/${videoId}" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allowfullscreen loading="lazy" title="YouTube video"></iframe></div>`
+            )
             .replace(/\n\n/gim, '</p><p class="mb-6 leading-relaxed text-muted-foreground text-lg">')
             .trim();
 
