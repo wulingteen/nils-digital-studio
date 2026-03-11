@@ -918,6 +918,11 @@ To me, Transformers and generative AI are precisely that kind of magic.
 
 https://www.youtube.com/watch?v=jSVdxhTEJP4`,
 
+"ai-team-recruitment-genai": `We're actively looking for people who want to create AI applications — not just work on them.
+
+Our financial AI tech team is seeking professionals with a passion for DevOps and data science to help develop and deploy generative AI applications in production.
+
+**What you'd work on:**
 1. Design, develop, and deploy system architectures to solve real commercial problems in financial contexts
 2. Track and research the latest techniques, contribute to papers and patents, and continuously improve product performance
 3. Integrate AI into financial workflows — from PoC to production
