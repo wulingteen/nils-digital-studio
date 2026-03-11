@@ -24,6 +24,7 @@ import {
     ShieldCheck,
 } from "lucide-react";
 import YouTubeEmbed from "@/components/YouTubeEmbed";
+import { Globe as GlobeComponent } from "@/components/ui/Globe";
 
 /* ── Animation Helpers ─────────────────────────────── */
 const stagger = {
@@ -188,6 +189,67 @@ const SinglePage = () => {
                             {item}
                         </span>
                     ))}
+                </div>
+            </section>
+
+            {/* ═══════════════════════════════════════════════
+          § CAREER JOURNEY GLOBE SECTION
+          ═══════════════════════════════════════════════ */}
+            <section className="section-padding border-t border-border relative overflow-hidden bg-background">
+                <div className="container-narrow relative z-10">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
+                        
+                        {/* Right Column (Foreground): The Timeline Timeline */}
+                        <div className="order-2 lg:order-1 flex flex-col justify-center space-y-12">
+                            <motion.div
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.6 }}
+                                viewport={{ once: true, margin: "-50px" }}
+                            >
+                                <h2 className="mb-4 text-3xl font-bold text-gradient md:text-4xl">
+                                    {t("career.title")}
+                                </h2>
+                            </motion.div>
+
+                            <div className="relative border-l border-primary/20 pl-8 ml-4 space-y-12">
+                                {(t("career.journey", { returnObjects: true }) as { age: string; title: string; desc: string }[]).map((step, idx) => (
+                                    <motion.div
+                                        key={idx}
+                                        initial={{ opacity: 0, x: -20 }}
+                                        whileInView={{ opacity: 1, x: 0 }}
+                                        transition={{ duration: 0.5, delay: idx * 0.15 }}
+                                        viewport={{ once: true, margin: "-50px" }}
+                                        className="relative group"
+                                    >
+                                        {/* Timeline Node */}
+                                        <div className="absolute -left-[41px] top-1 h-4 w-4 rounded-full border-2 border-primary bg-background shadow-[0_0_10px_rgba(200,160,80,0.5)] group-hover:scale-125 group-hover:bg-primary transition-all duration-300" />
+                                        
+                                        <span className="text-sm font-bold text-primary mb-1 block tracking-wider uppercase">
+                                            {step.age}
+                                        </span>
+                                        <h3 className="text-xl font-semibold text-foreground mb-2">
+                                            {step.title}
+                                        </h3>
+                                        <p className="text-muted-foreground leading-relaxed">
+                                            {step.desc}
+                                        </p>
+                                    </motion.div>
+                                ))}
+                            </div>
+                        </div>
+
+                        {/* Left Column (Background): The Interactive Globe */}
+                        <div className="order-1 lg:order-2 relative h-[400px] lg:h-[600px] flex items-center justify-center">
+                            {/* We use negative margins and absolute positioning to let the globe bleed out of bounds smoothly */}
+                            <div className="absolute inset-0 scale-125 lg:scale-150 pointer-events-auto">
+                                <Globe />
+                            </div>
+                            {/* Vignette fade over the globe to blend it into the background */}
+                            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_40%,hsl(var(--background))_70%)] pointer-events-none" />
+                        </div>
+
+                    </div>
                 </div>
             </section>
 

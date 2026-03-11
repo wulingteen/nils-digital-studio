@@ -217,7 +217,7 @@
         "problem": "Remote operations during COVID needed automation; engineering teams lacked applied ML literacy.",
         "approach": "Shipped production-grade Python automation (Linux + MySQL + SHA-256) scaled as reusable templates across 70+ reporting workflows. Led ML enablement program (AWS DeepRacer) for 200 staff.",
         "outcome": "Automation enabled full remote operations during COVID. ML literacy improved across engineering and business teams.",
-        "owned": "Automation engineering, call center platform delivery, ML training program, code review coordination"
+    "owned": "Automation engineering, call center platform delivery, ML training program, code review coordination"
       }
     ]
   },

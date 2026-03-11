@@ -221,9 +221,38 @@
       }
     ]
   },
+
+  "career": {
+    "title": "Globaler Werdegang",
+    "journey": [
+      {
+        "age": "22",
+        "title": "Abschluss an der NTU",
+        "desc": "Bachelor-Abschluss an der National Taiwan University, Grundstein für die technologische Laufbahn."
+      },
+      {
+        "age": "23",
+        "title": "Umzug nach Deutschland",
+        "desc": "Beginn der internationalen Karriere und interkulturellen beruflichen Entwicklung."
+      },
+      {
+        "age": "7 Jahre",
+        "title": "Erfahrung in Deutschland",
+        "desc": "Tätigkeit als Senior Data Scientist in internationaler Beratung und Startups."
+      },
+      {
+        "age": "1 Jahr",
+        "title": "Erfahrung in den Niederlanden",
+        "desc": "Erweiterung der europäischen Präsenz durch Unterstützung internationaler Bankengruppen."
+      },
+      {
+        "age": "31",
+        "title": "Rückkehr nach Taiwan",
+        "desc": "Rückkehr mit internationaler KI-Architektur-Expertise, um lokale Innovationen voranzutreiben."
+      }
+    ]
+  },
   "about": {
-    "page_title": "Über mich",
-    "bio": "Ich bin Nils (劉岦崱) — GenAI Solution Architect und Builder bei einem führenden Finanzinstitut in Taiwan. Ich entwerfe und liefere produktionsreife GenAI-Systeme in regulierten Umgebungen. Zuvor war ich als Banking-Technology-Berater bei einer Schweizer Finanzberatung und als Management Associate bei einer singapurischen Bank tätig. Ich folge einem Software 3.0 / Generalization-First-Ansatz: wiederverwendbare Fähigkeiten, standardisierte Interfaces und messbare Evaluierungsschleifen statt einmaliger Prompt-Anpassung.",
     "principles_title": "Prinzipien",
     "principles": [
       {
