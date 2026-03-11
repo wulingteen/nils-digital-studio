@@ -109,6 +109,59 @@ const Home = () => {
         </div>
       </section>
 
+      {/* About Me Section */}
+      <section className="section-padding relative overflow-hidden">
+        <div className="absolute right-0 top-0 -z-10 h-[500px] w-[500px] rounded-full bg-primary/5 blur-[100px]" />
+        
+        <div className="container-narrow">
+          <div className="grid gap-12 lg:grid-cols-[1fr_1.5fr] items-center">
+            {/* Left: Photo */}
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.7, ease: "easeOut" }}
+              viewport={{ once: true }}
+              className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-primary/20 shadow-2xl"
+            >
+              <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent z-10" />
+              <img 
+                src={`${import.meta.env.BASE_URL}images/profile-placeholder.png`} 
+                alt="Nils Liu" 
+                className="h-full w-full object-cover grayscale-[30%] hover:grayscale-0 transition-all duration-700"
+              />
+              <div className="absolute bottom-6 left-6 z-20">
+                <p className="text-xl font-bold text-foreground">Nils (劉岦崱)</p>
+                <p className="text-sm font-medium text-primary">GenAI Solution Architect</p>
+              </div>
+            </motion.div>
+
+            {/* Right: Bio */}
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
+              viewport={{ once: true }}
+              className="flex flex-col justify-center"
+            >
+              <h2 className="mb-6 text-3xl font-bold text-gradient md:text-4xl">{t("about.page_title")}</h2>
+              
+              <div className="prose prose-lg prose-p:text-muted-foreground prose-p:leading-relaxed prose-p:font-medium dark:prose-invert">
+                <p>{t("about.bio")}</p>
+              </div>
+
+              <div className="mt-8">
+                <Link
+                  to={`/${lang || "en"}/about`}
+                  className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-6 py-3 text-sm font-medium text-foreground transition-all hover:bg-primary/10 hover:border-primary/50"
+                >
+                  {t("about.principles_title")} <ArrowRight className="h-4 w-4" />
+                </Link>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       {/* Prototype Demos */}
       <section className="section-padding relative border-t border-border">
         <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
