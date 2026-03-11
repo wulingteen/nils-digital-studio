@@ -74,6 +74,8 @@ export const postsEn: Record<string, string> = {
 
 "ithome-hello-world-2025": `At this year's iThome Hello World 2025 Dev Conference, I delivered four back-to-back sessions focused entirely on the practical realities of putting AI into production. This wasn't just about sharing knowledge; it was a distillation of the hard-learned lessons our team gathered while deploying LLMs in the banking sector.
 
+![iThome Hello World 2025 Sessions](/images/blog/ithome-hello-world-2025-audience.jpg)
+
 Rather than pitching grand visions of the AI future, these four sessions zeroed in on how to build AI systems that are stable, deep, and secure. Here's a quick recap of the sessions:
 
 ## 1. The MCP Major League: Building AI-Driven Data Integration and Early Prompting
