@@ -620,7 +620,9 @@ Der Eintritt ist frei (nach erfolgter Registrierung). Ich freue mich darauf, vie
 
 Dies ist mit Abstand das beste Video-Tutorial zum bahnbrechenden Papier "Attention is All You Need", das ich bisher gesehen habe.
 
-Sehr empfehlenswert für alle, die wirklich verstehen wollen, wie Transformers auf der untersten Ebene funktionieren.`,
+Sehr empfehlenswert für alle, die wirklich verstehen wollen, wie Transformers auf der untersten Ebene funktionieren.
+
+https://www.youtube.com/watch?v=_VaEjGnHgOI&t=1274s`,
 
 "jason-wei-ai-scenarios": `### Systematische KI-Szenarien
 

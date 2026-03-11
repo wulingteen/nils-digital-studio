@@ -812,7 +812,9 @@ This is what GenAI deployment looks like when it's real: not just products, but 
 
 Free admission, registration required (reviewed). Come find me after if you want to go deep on the architecture.`,
 
-"best-attention-explanation": `Of all the explanations of "Attention Is All You Need" I've watched, this is the one I'd send to anyone who wants to genuinely understand the Transformer architecture — not just the intuition, but the mechanics.`,
+"best-attention-explanation": `Of all the explanations of "Attention Is All You Need" I've watched, this is the one I'd send to anyone who wants to genuinely understand the Transformer architecture — not just the intuition, but the mechanics.
+
+https://www.youtube.com/watch?v=_VaEjGnHgOI&t=1274s`,
 
 "jason-wei-ai-scenarios": `Jason Wei's talk gave me one of those genuine "aha" moments — the kind that actually changes how I think, not just adds information.
 
