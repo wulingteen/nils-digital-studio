@@ -3,6 +3,12 @@
 // Keyed by post ID. BlogPost.tsx uses this when lang === 'en'.
 
 export const titleEn: Record<string, string> = {
+    "patent-pii-filter": "GenAI Compliance Design Key Tech: How a Bank AI PM Used 'Sensitive Info Substitution' to Balance Performance & Compliance",
+    "patent-multi-agent": "How AI Agents Optimize Databases? A GenAI PM's Multi-Agent Architecture Design Thinking",
+    "patent-wealth-dashboard": "How GenAI Transforms Wealth Management: From Needs to Dashboards—A Bank AI PM's Product Design Journey",
+    "patent-knowledge-graph": "Building a Knowledge Graph from a GenAI Product Owner's Perspective: My First AI Patent",
+    "patent-adaptive-security": "GenAI Security Blind Spots: How a Product Owner Built Adaptive Security with AI",
+    "patent-modular-ai": "Modular GenAI System Design: Why 'More Features' Isn't Better? A PM's Counter-Intuitive Patent",
     "ithome-hello-world-2025": "iThome Hello World 2025: From MCP to Vibe Coding, Four AI Sessions in Action",
     "2025-year-in-review": "2025 Year in Review: The Quiet Power of Steady Progress",
     "devfest-taipei-2025-recap": "DevFest Taipei 2025: Building a Real AI Coaching Platform",
@@ -37,6 +43,12 @@ export const titleEn: Record<string, string> = {
 };
 
 export const excerptEn: Record<string, string> = {
+    "patent-pii-filter": "When introducing an AI knowledge base query system in a bank, how do you prevent PII leaks without sacrificing response quality? This article introduces a GenAI Product Owner's patent architecture for sensitive info filtering and substitution.",
+    "patent-multi-agent": "Traditional DBAs manage databases on experience, but under high concurrency and complex loads, that's not enough. This article shares how a GenAI Product Owner designed a multi-AI-agent collaborative database optimization system and earned a utility patent.",
+    "patent-wealth-dashboard": "What are the true pain points of Relationship Managers? How does GenAI help them generate real-time personalized investment advice in conversations? This article shares the journey and patent thinking of a Bank GenAI Product Manager.",
+    "patent-knowledge-graph": "How does a bank GenAI Product Manager design an LLM system that automatically builds a knowledge graph from business pain points, and successfully obtain a utility patent? This article shares the complete thought process from requirement to patent.",
+    "patent-adaptive-security": "When a GenAI system queries sensitive data, how do you prevent malicious users from bypassing security? This article details how a bank AI Product Manager designed a dynamic access control patent, using AI to guard AI.",
+    "patent-modular-ai": "Are LLM deployment costs skyrocketing? This article shares how a bank GenAI Product Manager used modular architecture design to customize AI systems on demand, lowering hardware burdens and increasing flexibility.",
     "ithome-hello-world-2025": "This October at the iThome Hello World Developer Conference, I presented four intensive sessions covering MCP, GraphRAG, Vibe Coding, and Enterprise LLM Guardrails.",
     "2025-year-in-review": "My 2025 AI journey in four numbers: 6, 5, 1, 6. Not because it was glamorous, but because it was grounded. Building GenAI in a bank is like replacing the plumbing in an operating building — the real challenge isn't the model, it's engineering and trust.",
     "devfest-taipei-2025-recap": "At DevFest Taipei 2025 I shared a real production AI coaching platform — multi-agent collaboration, Persona World, Ontology + GraphRAG, delivering 24/7 personalized sales training.",
@@ -71,6 +83,408 @@ export const excerptEn: Record<string, string> = {
 };
 
 export const postsEn: Record<string, string> = {
+
+"patent-pii-filter": `### The Compliance Nightmare Every GenAI PM Will Face
+
+Imagine this scenario:
+
+You finally get the RAG system online. Customer service reps are using it to query customer data, business rules, internal SOPs... It works great, and everyone is happy.
+
+Then the compliance department walks in.
+
+"This system's reply includes the customer's name and account info. Does this comply with privacy laws?"
+
+"Internal business data is shown in the response. What if someone leaks a screenshot?"
+
+"Are the times and locations mentioned in this response hinting at sensitive business operations?"
+
+This is not a hypothetical scenario; these are conversations I have personally experienced.
+
+**As a GenAI Product Owner, you have to ensure the AI system is "useful AND compliant"—these two things are not mutually exclusive.**
+
+My solution is the sensitive information filtering and substitution technology in patent **M671223 "Information Query System"**.
+
+---
+
+### Core Mechanism: Substitution, Not Masking
+
+When many people hear "sensitive info handling," their first thought is to "delete it" or "mask it with asterisks."
+
+But doing so makes the response lose its semantic completeness. The user simply won't understand it.
+
+The design of this system is more elegant: **it replaces sensitive content with "alternative messages of the same type but different content," preserving the structural semantics.**
+
+Specifically, the system will:
+
+1. Receive an information query, retrieving relevant financial operations data from the knowledge base.
+2. Generate an "initial response" using the LLM, which may contain sensitive info.
+3. Pass it to the Information Processing Module, which identifies **pending substitutions** in the response, categorizing them into:
+   - Personal Data (Names, IDs, Accounts)
+   - Business Content (Specific product details, rates)
+   - Temporal Info (Sensitive transaction times)
+   - Spatial Info (Specific branches, addresses)
+4. According to predefined rules, replace the sensitive content with alternative messages of **the same category but different content**.
+5. Output the final, compliant response.
+
+---
+
+### Why Is This a Core Capability in GenAI Product Design?
+
+Banking, healthcare, law... these highly regulated industries are where GenAI has the most value, yet are the hardest markets to crack.
+
+The bottleneck is almost never the technology; it's **compliance**.
+
+As a **GenAI Product Manager**, if you can solve compliance concerns at the product architecture level, you will leave your competitors far behind. While most are still handling compliance with "post-mortem reviews," you have already built compliance natively into the system.
+
+---
+
+### Three Tiers of GenAI Compliance Architecture Implementation
+
+**Layer 1: Input Filtering**
+Before a user's prompt enters the system, filter out categories of sensitive data that shouldn't be queried.
+
+**Layer 2: Output Substitution (Core of this patent)**
+Before sending the response, automatically identify and replace sensitive content, ensuring the explicit outgoing information is compliant.
+
+**Layer 3: Audit Trails**
+Record every single query and substitution to support post-event auditing and compliance reviews.
+
+**Implementing just one layer is not enough. All three combined constitute a true GenAI compliance architecture.**
+
+---
+
+*M671223 Information Query System (Sensitive Information Filtering and Substitution) | Grant Date: 2025/06/01 | Sole Inventor: Nils Liu*`,
+
+"patent-multi-agent": `### The DBA's Dilemma, The AI Agent's Opportunity
+
+Database optimization is black magic.
+
+Senior DBAs rely on years of accumulated intuition: looking at a query pattern, they know what index to add; looking at a load curve, they know how to tune the connection pool.
+
+But the problem is: **Intuition does not scale, nor is it on call 24/7.**
+
+Modern database workloads are too complex for human brains to analyze in real-time. Especially in e-commerce or finance, traffic spikes can explode 10x in seconds. By the time the DBA wakes up to manually fix it, the system is already down.
+
+This was the starting point for my design of **M671161 "Smart Optimization System"**: **Using AI Agents to automate the DBA's decision-making process.**
+
+---
+
+### Multi-Agent Architecture: Letting AIs "Compete & Cooperate" for the Best Strategy
+
+The most interesting design of this system is its adoption of a **multi-AI-sub-agent collaborative competition** mechanism.
+
+The overall flow looks like this:
+
+\`\`\`
+Performance Monitoring Module → Data Preprocessing Module → Load Prediction Module
+    → AI Agent Module (Multiple Sub-Agents)
+        → Strategy Integration Module
+            → Execution Module → Database Server
+\`\`\`
+
+The **AI Agent Module** consists of four sub-agents:
+
+| Sub-Agent | Area of Responsibility |
+|-----------|------------------------|
+| Query Optimization | Analyzes and rewrites inefficient SQL queries. |
+| Resource Allocation| Dynamic configuration of CPU, Memory, and I/O. |
+| Index Management | Evaluates which indexes to build and which to drop. |
+| Security Assessment| Identifies suspicious query behaviors. |
+
+Each of the four sub-agents produces optimization recommendations autonomously. The **Strategy Integration Module** then consolidates them into the best optimal plan for execution.
+
+Furthermore, the system features a **Reinforcement Learning Feedback Mechanism**: after executing an optimization, it observes the actual effect, feeding it back to the AI Agent Module for continuous learning.
+
+---
+
+### The Most Important Insight for GenAI Product Managers
+
+When building AI products, "a single AI solving all problems" is almost impossible.
+
+Truly useful enterprise AI architectures are often **collaborative systems of multiple specialized Agents.**
+
+This mirrors the microservices concept in software engineering: rather than a monolithic architecture doing everything, it's better to have multiple services performing their specific duties and coordinating with each other.
+
+**As a GenAI Product Owner, the questions you need to ask are:**
+
+- Can my problem be broken down into sub-tasks?
+- What capabilities do the Agents need for each sub-task?
+- How do these Agents collaborate, and how are their outputs integrated?
+- How does the entire system learn from the execution results?
+
+Designing Multi-agent architectures is one of the core skills for a **GenAI PM** post-2025. And this database optimization system is a very concrete implementation example.
+
+---
+
+### Load Prediction: AI Needs "Future Awareness"
+
+Another critical design in the system is the **Load Prediction Module**—using deep learning models combined with a historical performance metrics database, time-series data, and calendars (e.g., month-end closings, Double 11 spikes) to predict future database loads.
+
+**Preventative optimization is always cheaper than reactive emergency response.**
+
+---
+
+*M671161 Smart Optimization System (AI-Driven Database Performance Prediction and Tuning) | Grant Date: 2025/06/01 | Sole Inventor: Nils Liu*`,
+
+"patent-wealth-dashboard": `### The True Pain Point of Relationship Managers
+
+While building AI products at the bank, I spent a lot of time chatting with Relationship Managers (RMs).
+
+They don't lack effort, nor do they lack an understanding of their clients.
+
+What they lack is: **the capability to rapidly synthesize all relevant information and provide persuasive advice right in front of the client.**
+
+The reality looks like this: A client says, "I have 5 million to adjust my portfolio." The RM needs to accomplish the following in just a few minutes:
+
+- Query the client's current asset allocation.
+- Understand the client's risk appetite and history.
+- Check current market trends and interest rate curves.
+- Compare deliverable internal wealth products.
+- Make personalized recommendations.
+
+This is a multi-source information synthesis + personalized recommendation task, which is **the perfect scenario for GenAI.**
+
+This insight was the origin of **M670472 "Financial Investment Recommendation Generation System"**.
+
+---
+
+### System Architecture: An AI Assistant That "Knows the Business"
+
+The system design revolves around the daily workflow of the RM:
+
+**Information Input Layer**
+- **External Servers**: Real-time market info, trends, product quotes.
+- **Internal Servers**: Client profiles, risk assessment reports, client assets, available products.
+
+**AI Processing Layer**
+1. **NLU Module**: Parses the client's financial investment needs (which can be unstructured natural language).
+2. **Multi-Source Synthesis Module**: Synchronously pulls external market data and internal client data.
+3. **Generative AI Model (LLM)**: Integrates all inputs to generate an initial customized investment proposal.
+
+**Visual Output Layer**
+4. **Interactive Asset Dashboard Generation Module**: Displays multi-dimensional analysis of the client's current allocation.
+5. **Investment Proposal Dashboard Generation Module**: Provides custom recommendations with multi-scenario simulations.
+6. **Dynamic Visualization Module**: Combines the above into a single cohesive functional financial dashboard.
+
+Finally, the **Continuous Learning Module** optimizes the AI models based on user interaction feedback over time.
+
+---
+
+### As a GenAI Product Manager: What Did This Project Teach Me?
+
+**1. "Personalization" requires foundational data architecture.**
+
+Many GenAI products claim to be personalized, but in reality, they just stuff a couple of user fields into the prompt.
+
+True personalization requires a complete client data model: risk preferences, asset structures, historical behavior, interaction feedback... Designing this data architecture is more important than the AI model itself.
+
+**2. "Multi-scenario simulation" is a killer feature for AI.**
+
+Traditional RMs can usually only provide one recommendation at a time. This system can simultaneously output "Conservative," "Balanced," and "Aggressive" scenario recommendations, letting the client choose.
+
+This is extremely hard for a human mind to do on the fly, but effortless for an LLM. **Finding an asymmetrical advantage of AI is the core job of a GenAI PM.**
+
+**3. The continuous learning loop is the source of long-term competitiveness.**
+
+Launching the product is just the beginning. The system learns from every RM interaction and client reaction, making the model more accurate over time. **This learning flywheel is the hardest moat to replicate.**
+
+---
+
+### Product Design Advice for GenAI POs
+
+If you're designing financial AI products, my advice is:
+
+**Don't start from the technology; start from the workflow of the RM (or any frontline staff).**
+
+Find where they spend the most time, make the most mistakes, and most require info-synthesis support—that is where GenAI can create the most value.
+
+**The best positioning for AI isn't "replacing the RM"; it's "equipping every RM with an omniscient assistant standing right beside them."**
+
+---
+
+*M670472 Financial Investment Recommendation Generation System (Customized GenAI Financial Dashboard) | Grant Date: 2025/05/11 | Sole Inventor: Nils Liu*`,
+
+"patent-knowledge-graph": `### Why Do Banks Need a "Self-Learning" Knowledge Graph?
+
+Most people think of knowledge graphs as requiring massive manual labeling, predefined ontologies, and a team of domain experts for continuous maintenance.
+
+This is a huge problem in the financial sector.
+
+Banking knowledge changes rapidly: regulatory updates, product revisions, new customer segment demands... The cost of building traditional knowledge graphs is high, and the update cycle is slow. It simply cannot keep up with the pace of the business.
+
+As a **GenAI Product Owner**, I asked myself a question:
+
+> **"If we let the LLM automatically extract entities and relationships during every customer interaction and continuously update the knowledge graph—is such a system feasible?"**
+
+The answer is yes, and this idea later became my patent **M676680 "Knowledge Graph Construction System"**.
+
+---
+
+### How Does the System Work?
+
+The core architecture of this system is very intuitive and is divided into four modules:
+
+1. **Processing Module**: Inputs customer behavioral data and queries into the LLM, parsing them into structured "processed text".
+2. **Entity Recognition Module**: Identifies key entities from the text (people, products, events, risk types, etc.).
+3. **Relationship Extraction Module**: Analyzes the potential relationships between entities (e.g., "Customer A → Holds → Fund B").
+4. **Storage Module**: Uses a Graph Database to store and continuously update the knowledge graph.
+
+More importantly, the system can use this knowledge graph combined with user personas to provide **personalized information responses**.
+
+---
+
+### The GenAI PM's Mindset: Finding Innovation in Process Pain Points
+
+Many people ask me, **how does a PM/PO end up applying for a patent?**
+
+My answer is: **Because a patent is inherently a record of solving a problem.**
+
+When building GenAI products, you are solving a problem every day: how to make AI systems run reliably in an enterprise environment. Knowledge management is the most fragile link in a RAG architecture—garbage in, garbage out (GIGO). If the knowledge base cannot evolve on its own, the effectiveness of RAG will quickly degrade.
+
+The core value of this patent is not a technical flex, but rather **using a systematic architecture to solve the maintenance cost problem of knowledge bases.**
+
+---
+
+### Insights for GenAI Product Managers
+
+If you are planning an enterprise GenAI product, these questions are worth careful consideration:
+
+- How often is your knowledge base updated? Who is responsible?
+- Is there a way for the system to **learn automatically** from user interactions?
+- Can your knowledge graph design support personalization?
+
+**A knowledge graph is not just a technology choice; it's the "memory design" of a GenAI product.**
+
+---
+
+*M676680 Knowledge Graph Construction System | Grant Date: 2025/11/01 | Sole Inventor: Nils Liu*`,
+
+"patent-adaptive-security": `### "Using AI to Guard AI"—It's Not a Slogan, It's Architectural Design
+
+During the process of introducing Generative AI to the bank, the issue that kept me awake at night wasn't model performance, but **security**.
+
+If an AI chatbot capable of querying customer data is manipulated by malicious actors through tailored prompts, the consequences are unimaginable.
+
+What's more troublesome is that static rules of traditional cybersecurity simply cannot catch up with the creativity of prompt injections. Attackers change their wording, and the rules fail entirely.
+
+This prompted me to design a **generative adaptive security strategy**, which ultimately earned the patent **M674713 "Data Query System"**.
+
+---
+
+### System Architecture: Teaching AI to "Understand Malice"
+
+The system is divided into two core layers:
+
+**Layer 1: User Behavior and Intent Analysis Model**
+- **Behavior Analysis Module**: Analyzes the user's query frequency, time, IP location, and historical query patterns.
+- **Real-Time Intent Analysis Module**: Uses NLP to interpret the underlying intent of every query.
+- **Anomalous Operation Detection Module**: Identifies operations that deviate from normal patterns.
+- **Attack Behavior Judgment Module**: Synthesizes the above signals to output a risk assessment.
+
+**Layer 2: Security Strategy Generation Model**
+- **Dynamic Access Control Module**: Instantly adjusts the user's database access permissions based on their query patterns.
+- **Smart Blocking Module**: Decides whether to intercept the query based on the risk level.
+- **Strict Response Control Module**: Generates "strategic responses" to high-risk queries (instead of direct error messages, avoiding system info leakage).
+
+There is also a critical design feature: the **Continuous Optimization Module**. When the system detects an attack, it uses GANs to generate simulated attack scenarios, continually training the model. The more it's attacked, the smarter it gets.
+
+---
+
+### Why Is This a Core Issue in GenAI Product Design?
+
+As a **GenAI Product Manager**, security isn't something to "hand over to the infosec department"; it must be part of the product architecture.
+
+To design this system, I learned several key insights:
+
+**1. Static rules can never outpace dynamic attacks**
+Every guardrail you set might be bypassed by a creative user. The system itself needs the "ability to learn."
+
+**2. Security and user experience are not a zero-sum game**
+Good security design should be invisible to regular users, only triggering on abnormal behavior. This requires extremely precise risk grading.
+
+**3. AI access control should be dynamic**
+It's not a binary judgment of "do you have permission," but rather "in this context, for this query, what tier of information is appropriate for you to see right now?"
+
+---
+
+### A GenAI PO's Checklist: Is Your AI System Secure Enough?
+
+- [ ] Can the system detect abnormal query patterns?
+- [ ] Is there a real-time intent analysis mechanism?
+- [ ] Is access control based on static roles or dynamic context awareness?
+- [ ] Does the system get smarter after an attack, or stay exactly the same?
+
+**Security is the final gate before a GenAI product goes live, and it's the first wall of user trust.**
+
+---
+
+*M674713 Data Query System (Generative Adaptive Security Strategy) | Grant Date: 2025/09/11 | Sole Inventor: Nils Liu*`,
+
+"patent-modular-ai": `### The Most Common Mistake in Enterprise LLMs: Equating "Powerful" with "Useful"
+
+When I first started building enterprise GenAI products, I was also enamored by the belief that "the bigger the model, the better; the more features, the stronger."
+
+Until I saw the actual deployment costs.
+
+If an LLM service deployed on an enterprise intranet uses a full-featured model for every scenario, the GPU costs, inference latency, and maintenance complexity... all skyrocket.
+
+More importantly: **most business scenarios simply don't need all those features.**
+
+A customer service bot needs natural language understanding + dialogue management + knowledge base querying. A financial analysis assistant needs data comprehension + report generation. A personalized recommendation system needs user personas + preference matching.
+
+This insight led to my patent **M671449 "Customizable Generative Artificial Intelligence System"**—a truly modular GenAI architecture.
+
+---
+
+### Core Design: "Building Block" AI Systems
+
+The fundamental modules of this system include:
+
+| Module | Function |
+|--------|----------|
+| NLU Module | Converts user input into structured, processed messages. |
+| Dialogue Management | Decides action strategies based on processed messages. |
+| Knowledge Base Module| Queries structured and unstructured data (supports knowledge graphs). |
+| Text Generation | Generates response text based on decisions and query results. |
+
+Advanced optional modules:
+- **Sentiment Analysis Module**: Adds emotional warmth to responses.
+- **Personalization Module**: Connects to the internal server's customer history data.
+- **Learning & Adaptation Module**: Continuously optimizes generation quality from interaction feedback.
+- **Central Control Module**: Orchestrates execution sequence and info passing among modules.
+
+Depending on the business scenario, you can deploy only the required combination of modules, significantly lowering hardware requirements and system complexity.
+
+---
+
+### What Does This Mean for a GenAI Product Owner?
+
+As a **GenAI PO**, the greatest inspiration this architecture gave me is:
+
+**The architectural design of an AI product dictates its marginal cost curve.**
+
+The marginal cost of full-feature deployments is almost fixed (regardless of how many features are used, the cost remains). Modular deployment allows you to dynamically allocate resources based on usage volume, horizontally scale when business grows, and experiment with new scenarios at an extremely low cost.
+
+This is actually very traditional software engineering thinking—**Separation of Concerns**—just applied to AI components today.
+
+---
+
+### Three GenAI Architecture Design Principles
+
+From this patent, I organized three architectural principles useful for GenAI Product Managers:
+
+**1. Assemble on demand, not all at once**
+Don't try to implement every feature in version 1. Find the core modules first, validate them, and then stack on more.
+
+**2. Every module should be independently replaceable**
+LLM technology evolves incredibly fast. If your text generation module is "hardcoded" into the system, the cost of swapping models later will crush you.
+
+**3. The knowledge base module is your competitive moat**
+Other modules are easily replicated by competitors, but your knowledge base—customer data, business rules, institutional memory—is the true, uncopyable moat.
+
+---
+
+*M671449 Customizable Generative Artificial Intelligence System | Grant Date: 2025/06/11 | Sole Inventor: Nils Liu*`,
 
 "ithome-hello-world-2025": `At this year's iThome Hello World 2025 Dev Conference, I delivered four back-to-back sessions focused entirely on the practical realities of putting AI into production. This wasn't just about sharing knowledge; it was a distillation of the hard-learned lessons our team gathered while deploying LLMs in the banking sector.
 
