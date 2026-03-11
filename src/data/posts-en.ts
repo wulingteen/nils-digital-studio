@@ -104,9 +104,32 @@ If you're interested in the slides or the technical deep-dives from these sessio
 
 [👉 View Full Agenda and Speaker Details (iThome Hello World 2025)](https://hwdc.ithome.com.tw/2025/speaker-page/1582)`,
 
-"2025-year-in-review": `My 2025 AI journey boils down to four numbers: 6, 5, 1, 6.
+"2025-year-in-review": `My 2025 AI journey boils down to four numbers:
 
-6 utility patents granted, 5 invention patents pending, 1 conference paper submission, and 6 speaking engagements — 1 DevOpsDay, 4 iThome Hello Worlds, and 1 Google DevFest Taipei.
+<div class="my-10 grid grid-cols-2 md:grid-cols-4 gap-6 bg-primary/5 rounded-3xl p-6 md:p-8 border border-primary/10">
+  <div class="flex flex-col items-center text-center">
+    <div class="text-5xl font-extrabold text-[#0B7A38] dark:text-[#18A04E] mb-2 flex items-baseline">6<span class="text-2xl ml-1"></span></div>
+    <div class="font-bold text-foreground">Utility Patents</div>
+    <div class="text-sm text-muted-foreground mt-1">Granted</div>
+  </div>
+  <div class="flex flex-col items-center text-center">
+    <div class="text-5xl font-extrabold text-[#0B7A38] dark:text-[#18A04E] mb-2 flex items-baseline">5<span class="text-2xl ml-1"></span></div>
+    <div class="font-bold text-foreground">Invention Patents</div>
+    <div class="text-sm text-muted-foreground mt-1">Pending</div>
+  </div>
+  <div class="flex flex-col items-center text-center">
+    <div class="text-5xl font-extrabold text-[#0B7A38] dark:text-[#18A04E] mb-2 flex items-baseline">1<span class="text-2xl ml-1"></span></div>
+    <div class="font-bold text-foreground">Research Paper</div>
+    <div class="text-sm text-muted-foreground mt-1">Conference Submitted</div>
+  </div>
+  <div class="flex flex-col items-center text-center">
+    <div class="text-5xl font-extrabold text-[#0B7A38] dark:text-[#18A04E] mb-2 flex items-baseline">6<span class="text-2xl ml-1"></span></div>
+    <div class="font-bold text-foreground">Public Talks</div>
+    <div class="text-sm text-muted-foreground mt-1">Tech Sessions</div>
+  </div>
+</div>
+
+These 6 speaking engagements included 1 DevOpsDay, 4 iThome Hello Worlds, and 1 Google DevFest Taipei.
 
 For me, 2025 is a year worth reviewing — not because it was incredibly glamorous, but because it felt incredibly grounded. It was like finishing a little bit every day, and only when I looked back did I realize: *wow, I've walked this far.*
 
