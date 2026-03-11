@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import PageTransition from "@/components/layout/PageTransition";
 import { blogPosts } from "@/data/posts";
 import { postsEn, titleEn, excerptEn } from "@/data/posts-en";
+import { postsDe, titleDe, excerptDe } from "@/data/posts-de";
 import { ArrowLeft, Calendar, User } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useOGTags } from "@/hooks/useOGTags";
@@ -14,13 +15,15 @@ const BlogPost = () => {
     const currentLang = lang || "en";
 
     const post = blogPosts.find((p) => p.id === id);
-    const content = (currentLang === "en" && post && postsEn[post.id])
+    const content = (currentLang === "de" && post && postsDe[post.id])
+        ? postsDe[post.id]
+        : (currentLang === "en" && post && postsEn[post.id])
         ? postsEn[post.id]
         : post?.content ?? "";
 
     useOGTags(post ? {
-        title: (currentLang === "en" && titleEn[post.id]) ? titleEn[post.id] : post.title,
-        description: (currentLang === "en" && excerptEn[post.id]) ? excerptEn[post.id] : post.excerpt,
+        title: (currentLang === "de" && titleDe[post.id]) ? titleDe[post.id] : (currentLang === "en" && titleEn[post.id]) ? titleEn[post.id] : post.title,
+        description: (currentLang === "de" && excerptDe[post.id]) ? excerptDe[post.id] : (currentLang === "en" && excerptEn[post.id]) ? excerptEn[post.id] : post.excerpt,
         image: post.coverImage,
         url: window.location.href,
     } : { title: "GenAI 分享 | Nils Liu", description: "" });

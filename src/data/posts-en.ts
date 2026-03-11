@@ -3,12 +3,12 @@
 // Keyed by post ID. BlogPost.tsx uses this when lang === 'en'.
 
 export const titleEn: Record<string, string> = {
-    "patent-pii-filter": "GenAI Compliance Design Key Tech: How a Bank AI PM Used 'Sensitive Info Substitution' to Balance Performance & Compliance",
-    "patent-multi-agent": "How AI Agents Optimize Databases? A GenAI PM's Multi-Agent Architecture Design Thinking",
-    "patent-wealth-dashboard": "How GenAI Transforms Wealth Management: From Needs to Dashboards—A Bank AI PM's Product Design Journey",
-    "patent-knowledge-graph": "Building a Knowledge Graph from a GenAI Product Owner's Perspective: My First AI Patent",
-    "patent-adaptive-security": "GenAI Security Blind Spots: How a Product Owner Built Adaptive Security with AI",
-    "patent-modular-ai": "Modular GenAI System Design: Why 'More Features' Isn't Better? A PM's Counter-Intuitive Patent",
+    "patent-pii-filter": "[Patent 3] GenAI Compliance Design Key Tech: How a Bank AI PM Used 'Sensitive Info Substitution' to Balance Performance & Compliance",
+    "patent-multi-agent": "[Patent 2] How AI Agents Optimize Databases? A GenAI PM's Multi-Agent Architecture Design Thinking",
+    "patent-wealth-dashboard": "[Patent 1] How GenAI Transforms Wealth Management: From Needs to Dashboards—A Bank AI PM's Product Design Journey",
+    "patent-knowledge-graph": "[Patent 6] Building a Knowledge Graph from a GenAI Product Owner's Perspective: My First AI Patent",
+    "patent-adaptive-security": "[Patent 5] GenAI Security Blind Spots: How a Product Owner Built Adaptive Security with AI",
+    "patent-modular-ai": "[Patent 4] Modular GenAI System Design: Why 'More Features' Isn't Better? A PM's Counter-Intuitive Patent",
     "ithome-hello-world-2025": "iThome Hello World 2025: From MCP to Vibe Coding, Four AI Sessions in Action",
     "2025-year-in-review": "2025 Year in Review: The Quiet Power of Steady Progress",
     "devfest-taipei-2025-recap": "DevFest Taipei 2025: Building a Real AI Coaching Platform",

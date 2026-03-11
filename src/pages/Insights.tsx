@@ -4,7 +4,8 @@ import { motion } from "framer-motion";
 import PageTransition from "@/components/layout/PageTransition";
 import { blogPosts } from "@/data/posts";
 import { titleEn, excerptEn } from "@/data/posts-en";
-import { ArrowRight, Calendar, User } from "lucide-react";
+import { titleDe, excerptDe } from "@/data/posts-de";
+import { ArrowRight, Calendar, User, Pin } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 
 const Insights = () => {
@@ -56,7 +57,12 @@ const Insights = () => {
           </motion.div>
 
           <div className="flex flex-col gap-10 max-w-4xl mx-auto">
-            {blogPosts.map((post, idx) => (
+            {[...blogPosts].sort((a, b) => {
+              if (a.pinned === b.pinned) {
+                return new Date(b.date).getTime() - new Date(a.date).getTime();
+              }
+              return a.pinned ? -1 : 1;
+            }).map((post, idx) => (
               <motion.article
                 key={post.id}
                 initial={{ opacity: 0, y: 30 }}
@@ -73,7 +79,13 @@ const Insights = () => {
                 )}
                 <div className="flex flex-1 flex-col justify-center py-2 md:py-4 md:pr-6">
                   <div>
-                    <div className="mb-4 flex items-center gap-4 text-xs font-medium tracking-wide text-primary/70">
+                    {post.pinned && (
+                      <div className="mb-3 inline-flex items-center gap-1.5 px-3 py-1 text-[11px] font-bold uppercase tracking-widest text-primary-foreground bg-primary rounded-full">
+                        <Pin className="h-3 w-3 fill-current" />
+                        {currentLang === 'zh' ? '置頂' : currentLang === 'de' ? 'Angeheftet' : 'Pinned'}
+                      </div>
+                    )}
+                    <div className="mb-4 flex flex-wrap items-center gap-4 text-xs font-medium tracking-wide text-primary/70">
                       <div className="flex items-center gap-1.5">
                         <Calendar className="h-3.5 w-3.5" />
                         <time dateTime={post.date}>
@@ -92,11 +104,11 @@ const Insights = () => {
 
                     <h2 className="mb-4 text-2xl font-bold leading-tight text-foreground/90 transition-colors group-hover:text-primary md:text-3xl lg:leading-[1.2]">
                       <Link to={`/${currentLang}/insights/${post.id}`}>
-                        {currentLang === 'en' && titleEn[post.id] ? titleEn[post.id] : post.title}
+                        {currentLang === 'de' && titleDe[post.id] ? titleDe[post.id] : currentLang === 'en' && titleEn[post.id] ? titleEn[post.id] : post.title}
                       </Link>
                     </h2>
                     <p className="mb-6 text-muted-foreground leading-relaxed line-clamp-3 md:line-clamp-4">
-                      {currentLang === 'en' && excerptEn[post.id] ? excerptEn[post.id] : post.excerpt}
+                      {currentLang === 'de' && excerptDe[post.id] ? excerptDe[post.id] : currentLang === 'en' && excerptEn[post.id] ? excerptEn[post.id] : post.excerpt}
                     </p>
                   </div>
 
