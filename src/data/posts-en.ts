@@ -88,7 +88,7 @@ In 2025, I became even more certain of what I love doing: taking AI — which of
 
 The patent process is similar.
 
-Getting 6 utility patents with 5 invention patents pending isn't just about collecting certificates for me. It functions more like a mechanism to force honesty upon myself:
+Getting 6 utility patents granted with 5 invention patents pending isn't just about collecting certificates for me. It functions more like a mechanism to force honesty upon myself:
 - What problem did I *actually* solve?
 - Where are the boundaries of my proposed method?
 - Can I articulate the value in a language that others can read and verify?
@@ -173,7 +173,25 @@ I'm excited about Graph-R1 — using reinforcement learning so the agent improve
 
 ## Current Results
 
-118 users in testing. Survey satisfaction: **86%**. System-measured satisfaction: **96%** (by session count). Not a prototype — a live product.
+118 users in testing. Not a prototype — a live product.
+
+<div class="my-10 grid grid-cols-1 md:grid-cols-3 gap-6 bg-primary/5 rounded-3xl p-8 border border-primary/10">
+  <div class="flex flex-col items-center text-center">
+    <div class="text-5xl font-extrabold text-[#0B7A38] dark:text-[#18A04E] mb-2 flex items-baseline">118<span class="text-2xl ml-1"></span></div>
+    <div class="font-bold text-foreground">Active Users</div>
+    <div class="text-sm text-muted-foreground">Sales Agents</div>
+  </div>
+  <div class="flex flex-col items-center text-center">
+    <div class="text-5xl font-extrabold text-[#0B7A38] dark:text-[#18A04E] mb-2 flex items-baseline">96<span class="text-2xl ml-1">%</span></div>
+    <div class="font-bold text-foreground">Satisfaction</div>
+    <div class="text-sm text-muted-foreground">System-measured</div>
+  </div>
+  <div class="flex flex-col items-center text-center">
+    <div class="text-5xl font-extrabold text-[#0B7A38] dark:text-[#18A04E] mb-2 flex items-baseline">86<span class="text-2xl ml-1">%</span></div>
+    <div class="font-bold text-foreground">Usefulness</div>
+    <div class="text-sm text-muted-foreground">Survey results</div>
+  </div>
+</div>
 
 ## Want the Full Slide Deck?
 

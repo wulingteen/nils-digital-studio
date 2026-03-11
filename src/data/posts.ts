@@ -34,7 +34,7 @@ export const blogPosts: BlogPost[] = [
 
 專利這件事也是。
 
-拿到 6 項新型專利、還有 5 項發明專利在等，其實對我來說不只是多幾張證書。它比較像一種逼自己誠實的方式：
+拿到 6 項新型專利已核准、還有 5 項發明專利在等，其實對我來說不只是多幾張證書。它比較像一種逼自己誠實的方式：
 - 我到底解了什麼問題？
 - 我說的方法邊界在哪？
 - 我能不能把價值寫成一種別人看得懂、也能檢驗的語言？
@@ -132,7 +132,25 @@ export const blogPosts: BlogPost[] = [
 
 ## 現在的成果
 
-目前跑下來：118 人參與測試，問卷滿意度 86%，系統統計滿意度 96%（以使用次數算）。這不是 demo，是真的在用的東西。
+目前跑下來這不是 demo，是真的在用的東西。
+
+<div class="my-10 grid grid-cols-1 md:grid-cols-3 gap-6 bg-primary/5 rounded-3xl p-8 border border-primary/10">
+  <div class="flex flex-col items-center text-center">
+    <div class="text-5xl font-extrabold text-[#0B7A38] dark:text-[#18A04E] mb-2 flex items-baseline">118<span class="text-2xl ml-1">人</span></div>
+    <div class="font-bold text-foreground">參與測試</div>
+    <div class="text-sm text-muted-foreground">業務員人數</div>
+  </div>
+  <div class="flex flex-col items-center text-center">
+    <div class="text-5xl font-extrabold text-[#0B7A38] dark:text-[#18A04E] mb-2 flex items-baseline">96<span class="text-2xl ml-1">%</span></div>
+    <div class="font-bold text-foreground">滿意度</div>
+    <div class="text-sm text-muted-foreground">(系統統計)</div>
+  </div>
+  <div class="flex flex-col items-center text-center">
+    <div class="text-5xl font-extrabold text-[#0B7A38] dark:text-[#18A04E] mb-2 flex items-baseline">86<span class="text-2xl ml-1">%</span></div>
+    <div class="font-bold text-foreground">實用度</div>
+    <div class="text-sm text-muted-foreground">(問卷統計)</div>
+  </div>
+</div>
 
 ## 索取完整投影片
 
