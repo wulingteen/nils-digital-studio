@@ -214,7 +214,11 @@ const SinglePage = () => {
                                         viewport={{ once: true }}
                                         className={`lg:col-span-3 ${!isEven ? "lg:order-2" : ""}`}
                                     >
-                                        <YouTubeEmbed videoId={videoIds[idx]} title={item.video_title} />
+                                        <YouTubeEmbed
+                                            videoId={videoIds[idx]}
+                                            title={item.video_title}
+                                            customThumbnail={videoIds[idx] === "S79LP9Ex18g" ? `${import.meta.env.BASE_URL}demos/interview_assistant.jpg` : undefined}
+                                        />
                                         <p className="mt-3 text-sm text-muted-foreground">{item.video_desc}</p>
                                     </motion.div>
 

@@ -5,15 +5,21 @@ import { Dialog, DialogContent } from "@/components/ui/dialog";
 interface YouTubeEmbedProps {
   videoId: string;
   title?: string;
+  customThumbnail?: string;
 }
 
 const THUMB_QUALITIES = ["maxresdefault", "hqdefault", "mqdefault"] as const;
 
-const YouTubeEmbed = ({ videoId, title }: YouTubeEmbedProps) => {
+const YouTubeEmbed = ({ videoId, title, customThumbnail }: YouTubeEmbedProps) => {
   const [playing, setPlaying] = useState(false);
   const [lightbox, setLightbox] = useState(false);
   const [thumbIdx, setThumbIdx] = useState(0);
-  const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/${THUMB_QUALITIES[thumbIdx]}.jpg`;
+  
+  // If we've exhausted YouTube thumbs, or if we have a custom one and we reached the end of the standard ones (actually let's just prioritize YouTube unless it fails, OR prioritize custom if passed).
+  // Easiest is to always use customThumbnail if provided, otherwise try the YouTube ones.
+  const isCustom = customThumbnail && thumbIdx === 0;
+  // If custom is provided, we try it first. Wait, if custom is provided, we ONLY use it.
+  const thumbnailUrl = customThumbnail ? customThumbnail : `https://img.youtube.com/vi/${videoId}/${THUMB_QUALITIES[thumbIdx]}.jpg`;
 
   return (
     <>
@@ -29,7 +35,7 @@ const YouTubeEmbed = ({ videoId, title }: YouTubeEmbedProps) => {
               className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
               loading="lazy"
               onError={(e) => {
-                if (thumbIdx < THUMB_QUALITIES.length - 1) {
+                if (!customThumbnail && thumbIdx < THUMB_QUALITIES.length - 1) {
                   setThumbIdx(thumbIdx + 1);
                 } else {
                   e.currentTarget.style.display = 'none';
