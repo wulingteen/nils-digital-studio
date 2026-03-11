@@ -24,7 +24,7 @@ const Insights = () => {
         post.tags.forEach(tag => tags.add(tag));
       }
     });
-    const preferredOrder = ["GenAI", "Agent", "Architecture", "Career", "Event", "News", "Patent"];
+    const preferredOrder = ["Patent", "GenAI", "Agent", "Architecture", "Career", "Event", "News"];
     return preferredOrder.filter(tag => tags.has(tag));
   }, []);
 

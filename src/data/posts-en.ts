@@ -35,7 +35,7 @@ export const titleEn: Record<string, string> = {
     "stargate-ai-infrastructure": "Stargate: The AI Server Center Running 24/7 Shifts",
     "google-io-one-for-all": "One for All, Winner Takes All: Google I/O Highlights",
     "kobe-imagination-ai-magic": "Kobe on Imagination: Why Transformers & GenAI Are That Kind of Magic",
-    "patent-financial-ai-system": "Patent Approved: Financial Investment Recommendation Generation System",
+
     "ai-team-recruitment-genai": "Join the Team: Let's Create AI Use Cases Together",
     "genai-tech-interview-revolution": "How Generative AI Is Reinventing the Technical Interview",
     "openai-devday-2024": "OpenAI DevDay 2024: A Technical Revolution for Developers",
@@ -74,7 +74,7 @@ export const excerptEn: Record<string, string> = {
     "stargate-ai-infrastructure": "Stargate is a 24/7 round-the-clock server construction project. When Americans start running shifts like this, you know this is a race they don't intend to lose.",
     "google-io-one-for-all": "Relentless. Product after product, packed into 32 minutes. Google I/O felt less like a keynote and more like being underwater with no room to breathe.",
     "kobe-imagination-ai-magic": "Elon told Kobe: imagination matters more than knowledge. Frieren said magic is a world of imagination. To me, Transformers and generative AI are exactly that kind of magic.",
-    "patent-financial-ai-system": "Our team's Financial Investment Recommendation Generation System patent (No. M670472) was approved — combining LLM, GenUI, and RAG to automate personalized investment advice.",
+
     "ai-team-recruitment-genai": "Our financial AI team is looking for DevOps and data science professionals passionate about deploying generative AI applications in real production environments.",
     "genai-tech-interview-revolution": "We challenged intern candidates to build a static website combining LLM and front-end skills in 60 minutes. The results changed how I think about what a hiring process should test.",
     "openai-devday-2024": "OpenAI showcased four major innovations: Vision Fine-Tuning, Realtime API, Model Distillation, and Prompt Caching — handing more creative control to developers than ever before.",
@@ -918,17 +918,6 @@ To me, Transformers and generative AI are precisely that kind of magic.
 
 https://www.youtube.com/watch?v=jSVdxhTEJP4`,
 
-"patent-financial-ai-system": `Excited to share that our team's patent for the **Financial Investment Recommendation Generation System** (Publication No. M670472, filed March 6, 2025) was officially approved on May 11, 2025.
-
-The system combines LLM, GenUI, and RAG to automate personalized investment recommendations — with the goal of improving decision-making efficiency and strengthening risk management.
-
-There's still a lot to optimize, and we'll keep pushing. More patents are in the pipeline. For those building at the intersection of AI and financial services: I'd love to compare notes.`,
-
-"ai-team-recruitment-genai": `We're actively looking for people who want to create AI applications — not just work on them.
-
-Our financial AI tech team is seeking professionals with a passion for DevOps and data science to help develop and deploy generative AI applications in production.
-
-**What you'd work on:**
 1. Design, develop, and deploy system architectures to solve real commercial problems in financial contexts
 2. Track and research the latest techniques, contribute to papers and patents, and continuously improve product performance
 3. Integrate AI into financial workflows — from PoC to production

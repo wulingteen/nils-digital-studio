@@ -1137,33 +1137,6 @@ In a 2017 interview, Kobe Bryant was asked about his views on Elon Musk. Kobe sh
 Frieren once said, "Magic is a world of imagination. If you can't imagine something, your magic can't make it real." To me, Transformers and generative AI are precisely that kind of magic.`
     },
     {
-        id: "patent-financial-ai-system",
-        tags: ["Patent","GenAI"],
-        title: "金融投資建議生成系統專利獲准",
-        excerpt: "與團隊共同研發的「金融投資建議生成系統」專利已獲得核准，結合 LLM、GenUI 及 RAG 自動化生成個人化投資建議。",
-        date: "2025-05-13",
-        author: "Nils Liu",
-        coverImage: "/images/blog/patent-financial-ai.jpg",
-        content: `很高興與大家分享
-我與團隊共同研發的「金融投資建議生成系統」專利（公告號 M670472，申請日 2025/03/06）已於 2025/05/11 獲得核准
-
-這套系統結合LLM、GenUI、以及RAG
-能自動化生成個人化投資建議
-期望在提升決策效率與風險控管上盡一份心力
-
-成果尚有許多可優化之處，我們會繼續扎實推進，期許未來將技術應用落地，為客戶創造更多價值
-
-另外，我們還有更多專利等待核准中，我以及團隊對於 AI 的未來都感到非常期待，並期待能與同在 AI 領域努力的專家同好們有更多的交流
-
-I'm pleased to share that our team's patent for the Financial Investment Recommendation Generation System (Publication No. M670472, filed March 6, 2025) was approved on May 11, 2025.
-
-This system combines big data analytics with machine learning to automate the creation of personalized investment recommendations, aiming to enhance decision-making efficiency and strengthen risk management.
-
-There is still much room for optimization, and we will continue to advance the technology so it can deliver even greater value to our clients.
-
-Thank you to all who have supported and mentored us along the way. I look forward to continued exchange and growth with the fintech community.`
-    },
-    {
         id: "ai-team-recruitment-genai",
         tags: ["Career"],
         title: "歡迎加入團隊：一起積極創造 AI 場景",

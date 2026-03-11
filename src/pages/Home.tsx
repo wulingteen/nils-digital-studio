@@ -143,13 +143,25 @@ const Home = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="mb-12"
+            className="mb-12 flex flex-col md:flex-row md:items-end justify-between gap-6"
           >
-            <h2 className="mb-3 text-3xl font-bold text-gradient md:text-4xl">{t("patents.title")}</h2>
-            <p className="mb-6 text-muted-foreground">{t("patents.sub")}</p>
-            <div className="inline-flex flex-col gap-1.5 rounded-xl border border-primary/20 bg-background/50 backdrop-blur-sm px-5 py-4 text-sm shadow-sm">
-              <span className="font-semibold text-primary">{t("patents.inventor")}</span>
-              <span className="text-muted-foreground">{t("patents.assignee")}</span>
+            <div>
+              <h2 className="mb-3 text-3xl font-bold text-gradient md:text-4xl">{t("patents.title")}</h2>
+              <p className="mb-6 text-muted-foreground max-w-2xl leading-relaxed">
+                {lang === "de" 
+                  ? "Erkunden Sie unsere Patent-Artikelserie, um zu erfahren, wie ich generative KI erfolgreich in Finanzszenarien integriert habe." 
+                  : lang === "zh" 
+                  ? "探索專利系列文章，了解我如何將生成式 AI 落地於金融場景，並成功取得專利核准。" 
+                  : "Explore our patent article series, diving deep into how I've deployed generative AI in finance to successfully secure patents."}
+                {" "}
+                <Link to={`/${lang || "en"}/insights`} className="text-primary hover:text-primary/80 transition-colors font-medium whitespace-nowrap">
+                  {lang === "de" ? "Patente lesen →" : lang === "zh" ? "閱讀專利文章 →" : "Read Patent Articles →"}
+                </Link>
+              </p>
+              <div className="inline-flex flex-col gap-1.5 rounded-xl border border-primary/20 bg-background/50 backdrop-blur-sm px-5 py-4 text-sm shadow-sm">
+                <span className="font-semibold text-primary">{t("patents.inventor")}</span>
+                <span className="text-muted-foreground">{t("patents.assignee")}</span>
+              </div>
             </div>
           </motion.div>
 
