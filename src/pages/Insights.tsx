@@ -1,3 +1,4 @@
+import { useState, useMemo } from "react";
 import { useTranslation } from "react-i18next";
 import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -5,13 +6,45 @@ import PageTransition from "@/components/layout/PageTransition";
 import { blogPosts } from "@/data/posts";
 import { titleEn, excerptEn } from "@/data/posts-en";
 import { titleDe, excerptDe } from "@/data/posts-de";
-import { ArrowRight, Calendar, User, Pin } from "lucide-react";
+import { ArrowRight, Calendar, User, Pin, Search, Tags, Tag } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 
 const Insights = () => {
   const { t } = useTranslation();
   const { lang } = useParams();
   const currentLang = lang || "en";
+
+  const [searchQuery, setSearchQuery] = useState("");
+  const [selectedTag, setSelectedTag] = useState<string | null>(null);
+
+  const allTags = useMemo(() => {
+    const tags = new Set<string>();
+    blogPosts.forEach(post => {
+      if (post.tags) {
+        post.tags.forEach(tag => tags.add(tag));
+      }
+    });
+    const preferredOrder = ["GenAI", "Agent", "Architecture", "Career", "Event", "News", "Patent"];
+    return preferredOrder.filter(tag => tags.has(tag));
+  }, []);
+
+  const filteredPosts = useMemo(() => {
+    return blogPosts.filter((post) => {
+      const matchTag = selectedTag ? post.tags?.includes(selectedTag) : true;
+      const title = currentLang === 'de' && titleDe[post.id] ? titleDe[post.id] : currentLang === 'en' && titleEn[post.id] ? titleEn[post.id] : post.title;
+      const excerpt = currentLang === 'de' && excerptDe[post.id] ? excerptDe[post.id] : currentLang === 'en' && excerptEn[post.id] ? excerptEn[post.id] : post.excerpt;
+      const query = searchQuery.toLowerCase();
+      const matchSearch = query === "" || 
+        title.toLowerCase().includes(query) || 
+        excerpt.toLowerCase().includes(query);
+      return matchTag && matchSearch;
+    }).sort((a, b) => {
+      if (a.pinned === b.pinned) {
+        return new Date(b.date).getTime() - new Date(a.date).getTime();
+      }
+      return a.pinned ? -1 : 1;
+    });
+  }, [searchQuery, selectedTag, currentLang]);
 
   const pageUrl = `https://wulingteen.github.io/nils-digital-studio/${currentLang}/insights`;
 
@@ -56,13 +89,70 @@ const Insights = () => {
             </p>
           </motion.div>
 
+          {/* Search and Filter Section */}
+          <div className="mb-12 flex flex-col gap-6 max-w-4xl mx-auto">
+            {/* Search Bar */}
+            <div className="relative">
+              <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                 <Search className="h-5 w-5 text-muted-foreground" />
+              </div>
+              <input
+                type="text"
+                placeholder={t("blog.search_placeholder", "Search articles...")}
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="block w-full pl-11 pr-4 py-3 sm:text-sm border border-primary/20 bg-background/50 rounded-2xl focus:ring-2 focus:ring-primary focus:border-primary transition-all shadow-sm outline-none"
+              />
+            </div>
+            
+            {/* Tags */}
+            <div className="flex flex-wrap gap-2">
+              <button
+                onClick={() => setSelectedTag(null)}
+                className={`px-4 py-1.5 rounded-full text-sm font-medium transition-all ${
+                  selectedTag === null
+                    ? "bg-primary text-primary-foreground shadow-md"
+                    : "bg-primary/5 text-foreground hover:bg-primary/10 border border-primary/10"
+                }`}
+              >
+                {t("blog.all_tags", "All")}
+              </button>
+              {allTags.map(tag => (
+                <button
+                  key={tag}
+                  onClick={() => setSelectedTag(tag)}
+                  className={`px-4 py-1.5 rounded-full text-sm font-medium transition-all flex items-center gap-1.5 ${
+                    selectedTag === tag
+                      ? "bg-primary text-primary-foreground shadow-md"
+                      : "bg-primary/5 text-foreground hover:bg-primary/10 border border-primary/10"
+                  }`}
+                >
+                  <Tag className="h-3.5 w-3.5" />
+                  {t(`blog.tags.${tag}`, tag)}
+                </button>
+              ))}
+            </div>
+          </div>
+
           <div className="flex flex-col gap-10 max-w-4xl mx-auto">
-            {[...blogPosts].sort((a, b) => {
-              if (a.pinned === b.pinned) {
-                return new Date(b.date).getTime() - new Date(a.date).getTime();
-              }
-              return a.pinned ? -1 : 1;
-            }).map((post, idx) => (
+            {filteredPosts.length === 0 && (
+              <motion.div 
+                initial={{ opacity: 0 }} 
+                animate={{ opacity: 1 }} 
+                className="py-20 text-center flex flex-col items-center border border-primary/10 rounded-[2rem] bg-primary/5"
+              >
+                <Search className="h-12 w-12 text-muted-foreground mb-4 opacity-50" />
+                <h3 className="text-xl font-bold mb-2">{t("blog.no_results", "No articles found matching your criteria.")}</h3>
+                <button 
+                  onClick={() => { setSearchQuery(""); setSelectedTag(null); }}
+                  className="mt-4 text-primary hover:underline font-medium"
+                >
+                  {t("blog.back_to_insights", "Back to Insights")}
+                </button>
+              </motion.div>
+            )}
+            
+            {filteredPosts.map((post, idx) => (
               <motion.article
                 key={post.id}
                 initial={{ opacity: 0, y: 30 }}
@@ -100,6 +190,16 @@ const Insights = () => {
                         <User className="h-3.5 w-3.5" />
                         <span>{post.author}</span>
                       </div>
+                      {post.tags && post.tags.length > 0 && (
+                        <div className="flex items-center flex-wrap gap-1.5">
+                          {post.tags.map(tag => (
+                            <span key={tag} className="flex items-center gap-1 bg-primary/10 px-2 py-0.5 rounded-full text-[10px] uppercase font-bold tracking-wider text-primary">
+                              <Tag className="h-2.5 w-2.5" />
+                              {t(`blog.tags.${tag}`, tag)}
+                            </span>
+                          ))}
+                        </div>
+                      )}
                     </div>
 
                     <h2 className="mb-4 text-2xl font-bold leading-tight text-foreground/90 transition-colors group-hover:text-primary md:text-3xl lg:leading-[1.2]">

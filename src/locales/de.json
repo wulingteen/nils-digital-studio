@@ -239,6 +239,21 @@
     "coming_soon": "Demnächst verfügbar.",
     "sub": "Praxisnahe Einblicke zu AI Agents, GenAI im Produktiveinsatz, GraphRAG, Ontologie-Architektur, DevOps × AI und Enterprise-AI-Plattformen."
   },
+  "blog": {
+    "search_placeholder": "Artikel suchen...",
+    "all_tags": "Alle",
+    "no_results": "Keine Artikel gefunden, die Ihren Kriterien entsprechen.",
+    "back_to_insights": "Zurück zu Einblicke",
+    "tags": {
+      "GenAI": "GenAI",
+      "Agent": "AI Agents",
+      "Architecture": "Architektur",
+      "Career": "Karriere",
+      "Event": "Veranstaltungen",
+      "News": "Nachrichten",
+      "Patent": "Patente"
+    }
+  },
   "contact": {
     "page_title": "Kontakt",
     "page_sub": "Ob Strategiesession, Prototyp oder Workshop — ich freue mich auf Ihre Herausforderung.",

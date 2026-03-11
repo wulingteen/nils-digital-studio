@@ -239,6 +239,21 @@
     "coming_soon": "即將推出。",
     "sub": "分享 AI Agent 實戰、GenAI 落地應用、GraphRAG、Ontology 架構、DevOps × AI 與企業 AI 平台建構的第一手觀察與思考。"
   },
+  "blog": {
+    "search_placeholder": "搜尋文章...",
+    "all_tags": "全部",
+    "no_results": "找不到符合條件的文章。",
+    "back_to_insights": "返回文章列表",
+    "tags": {
+      "GenAI": "GenAI",
+      "Agent": "AI Agent",
+      "Architecture": "系統架構",
+      "Career": "職涯發展",
+      "Event": "演講活動",
+      "News": "新聞觀察",
+      "Patent": "專利系列"
+    }
+  },
   "contact": {
     "page_title": "聯繫我",
     "page_sub": "無論您需要策略會議、原型還是工作坊 — 我很樂意了解您的挑戰。",

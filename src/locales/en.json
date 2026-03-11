@@ -239,6 +239,21 @@
     "coming_soon": "Coming soon.",
     "sub": "First-hand observations on AI Agents, GenAI in production, GraphRAG, Ontology architecture, DevOps × AI, and enterprise AI platform engineering."
   },
+  "blog": {
+    "search_placeholder": "Search articles...",
+    "all_tags": "All",
+    "no_results": "No articles found matching your criteria.",
+    "back_to_insights": "Back to Insights",
+    "tags": {
+      "GenAI": "GenAI",
+      "Agent": "AI Agents",
+      "Architecture": "Architecture",
+      "Career": "Career",
+      "Event": "Events",
+      "News": "News",
+      "Patent": "Patents"
+    }
+  },
   "contact": {
     "page_title": "Get in Touch",
     "page_sub": "Whether you need a strategy session, a prototype, or a workshop — I'd love to hear about your challenge.",
