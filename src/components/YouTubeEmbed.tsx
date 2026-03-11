@@ -7,10 +7,13 @@ interface YouTubeEmbedProps {
   title?: string;
 }
 
+const THUMB_QUALITIES = ["maxresdefault", "hqdefault", "mqdefault"] as const;
+
 const YouTubeEmbed = ({ videoId, title }: YouTubeEmbedProps) => {
   const [playing, setPlaying] = useState(false);
   const [lightbox, setLightbox] = useState(false);
-  const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
+  const [thumbIdx, setThumbIdx] = useState(0);
+  const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/${THUMB_QUALITIES[thumbIdx]}.jpg`;
 
   return (
     <>
@@ -25,7 +28,13 @@ const YouTubeEmbed = ({ videoId, title }: YouTubeEmbedProps) => {
               alt={title || "Video thumbnail"}
               className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
               loading="lazy"
-              onError={(e) => { e.currentTarget.style.display = 'none'; }}
+              onError={(e) => {
+                if (thumbIdx < THUMB_QUALITIES.length - 1) {
+                  setThumbIdx(thumbIdx + 1);
+                } else {
+                  e.currentTarget.style.display = 'none';
+                }
+              }}
             />
             <div className="absolute inset-0 flex items-center justify-center bg-background/30 transition-all group-hover:bg-background/20">
               <div className="flex h-16 w-16 items-center justify-center rounded-full bg-foreground/90 text-background transition-transform group-hover:scale-110">
