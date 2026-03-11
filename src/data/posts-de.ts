@@ -9,6 +9,36 @@ export const titleDe: Record<string, string> = {
     "patent-knowledge-graph": "[Patent 6] Aufbau eines Knowledge Graphs aus der Perspektive eines GenAI Product Owners: Mein erstes KI-Patent",
     "patent-adaptive-security": "[Patent 5] Sicherheitslücken in GenAI: Wie ein Product Owner adaptive Sicherheit mit KI entwickelte",
     "patent-modular-ai": "[Patent 4] Modulares GenAI-Systemdesign: Warum 'Mehr Funktionen' nicht besser ist? Ein kontraintuitives Patent",
+    "ithome-hello-world-2025": "iThome Hello World 2025: Von MCP bis Vibe Coding, vier KI-Sessions in Aktion",
+    "2025-year-in-review": "Jahresrückblick 2025: Die stille Kraft stetigen Fortschritts",
+    "devfest-taipei-2025-recap": "DevFest Taipei 2025: Aufbau einer echten KI-Coaching-Plattform",
+    "ithome-devopsdays-2025": "iThome DevOpsDays 2025: Fünf Verhaltensmuster von KI-Agenten",
+    "fde-diamond-org": "Die Spaltung der Softwareentwickler: Die diamantenförmige Organisation im KI-Zeitalter",
+    "ai-picking-future-talents": "Vom Programmieren zum eigenständigen Vorschlagen: Wie man zukünftige Talente auswählt",
+    "ai-agent-intern-recruit": "Praktikanten gesucht | KI-Agenten-Plattform in Übersee | Fullstack/Backend/GenAI",
+    "ai-browser-auto-report": "AI Browser: Automatische Aufzeichnung von Denkmustern und Erstellung von Untersuchungsberichten",
+    "ai-history-hinton-nobel": "Der historische Wendepunkt der KI: Von der Skepsis zum Nobelpreis",
+    "perplexity-challenges": "Das Dilemma von Perplexity: Wo liegen die Grenzen der KI-Suche?",
+    "google-gemini-antigravity-devops": "Google Gemini 3 Pro und Antigravity: Die Weiterentwicklung der Entwicklerrolle",
+    "devfest-taipei-2025-announcement": "Ankündigung für DevFest Taipei 2025: Anwendung von KI-Agententeams in der Praxis",
+    "graphrag-smart-customer-service": "GraphRAG verbindet Erinnerungen mit Knowledge Graphs und revolutioniert die Schlussfolgerung im intelligenten Kundenservice",
+    "six-patents-approved-2025": "Sechs neue Patente in diesem Jahr genehmigt: Das Jahr des Durchbruchs für generative KI",
+    "devfest-taipei-signup": "Die Anmeldung für das DevFest Taipei 2025 ist eröffnet",
+    "best-attention-explanation": "Bestes Erklärungsvideo zu 'Attention is All You Need'",
+    "jason-wei-ai-scenarios": "Jason Weis Vortrag: Ein systematischer Ansatz zur Suche nach KI-Szenarien",
+    "thinking-machine-lab-deterministic-ai": "Mira Muratis Thinking Machine Lab: Ein Durchbruch im deterministischen KI-Schlussfolgern",
+    "vibe-coding-three-giants": "Das Triumvirat des Vibe Codings: Codex, Gemini und Claude",
+    "gemini-flash-nano-banana": "Nano Banana: Gemini 2.5 Flash Bildgenerierung im Test",
+    "hiring-devops-fullstack-ddt": "Nils sucht Teamkollegen! Stellen für DevOps- und Fullstack-Ingenieure offen",
+    "ai-pm-peter-deng-uber": "Die Denkweise eines KI-Produktmanagers: Peter Dengs Managementphilosophie bei Uber",
+    "chatgpt-agent-launch": "Start des ChatGPT-Agenten: Wie man einer Sekretärin bei der Lösung abstrakter Aufgaben zusieht",
+    "stargate-ai-infrastructure": "Stargate: Ein Serverzentrum-Projekt im 24-Stunden-Schichtbetrieb",
+    "google-io-one-for-all": "The Winner Takes It All: Highlights der Google-Keynote",
+    "kobe-imagination-ai-magic": "Kobe über Vorstellungskraft: Transformers und generative KI als Magie",
+    "patent-financial-ai-system": "Patent für das System zur Generierung von Finanzanlageempfehlungen genehmigt",
+    "ai-team-recruitment-genai": "Werden Sie Teil unseres Teams: Gemeinsam KI-Szenarien gestalten",
+    "genai-tech-interview-revolution": "Generative KI treibt die Revolution bei technischen Vorstellungsgesprächen an",
+    "openai-devday-2024": "OpenAI DevDay 2024: Eine technologische Revolution für Entwickler"
 };
 
 export const excerptDe: Record<string, string> = {
@@ -18,6 +48,36 @@ export const excerptDe: Record<string, string> = {
     "patent-knowledge-graph": "Wie konzipiert ein Bank-GenAI-Produktmanager ein LLM-System, das als Antwort auf Geschäftsprobleme automatisch einen Knowledge Graph aufbaut, und erhält dafür ein Patent? Dieser Artikel teilt den kompletten Denkprozess.",
     "patent-adaptive-security": "Wenn ein GenAI-System sensible Daten abfragt, wie verhindert man, dass böswillige Nutzer die Sicherheit umgehen? Dieser Artikel beschreibt detailliert, wie ein Bank-KI-Produktmanager ein dynamisches Zugriffskontroll-Patent entwarf.",
     "patent-modular-ai": "Explodieren die Bereitstellungskosten für LLMs? Dieser Artikel zeigt, wie ein Bank-GenAI-Produktmanager eine modulare Architektur nutzte, um KI-Systeme nach Bedarf anzupassen, was die Hardwarebelastung senkt und die Flexibilität erhöht.",
+    "ithome-hello-world-2025": "Auf der iThome Hello World Entwicklerkonferenz dieses Jahres hielt ich vier KI-fokussierte Vorträge, vom MCP-Ökosystem und GraphRAG bis hin zu Abwehrmechanismen für LLMs in Unternehmen.",
+    "2025-year-in-review": "Mein KI-Abenteuer 2025 in vier Zahlen: 6, 5, 1, 6. Nicht weil es so glamourös war, sondern weil es bodenständig blieb. GenAI in einer Bank zu implementieren ist wie das Auswechseln von Rohren in einem bewohnten Gebäude.",
+    "devfest-taipei-2025-recap": "Beim DevFest Taipei 2025 habe ich eine produktive KI-Vertriebs-Coaching-Plattform vorgestellt—mit Multi-Agenten-Kollaboration, Persona World und Ontology + GraphRAG.",
+    "ithome-devopsdays-2025": "Dieses Jahr steht im Zeichen der KI-Agenten. Wir sehen uns auf den DevOpsDays am 5. und 6. Juni – Fünf Verhaltensmuster von KI-Agenten: Mit KI die Zukunft des DevOps-Ökosystems gestalten.",
+    "fde-diamond-org": "In derselben Ära und unter derselben Berufsbezeichnung 'Ingenieur' verlieren einige durch KI ihren Job, während andere durch sie neue finden. Was deinen Platz bestimmt, ist nicht Ausbildung oder Betriebszugehörigkeit, sondern Anpassungsgeschwindigkeit.",
+    "ai-picking-future-talents": "So habe ich im vergangenen Jahr Teams geführt, aber ich stellte fest, dass einige Mitarbeiter mit mangelnder Erfahrung und Neugier sich in diesem Arbeitsmodell verloren fühlten. Vielleicht ist das eine Methode, künftige Talente auszuwählen.",
+    "ai-agent-intern-recruit": "Wir bauen eine KI-Agenten-Plattform, die 'wirklich live geht und von echten Menschen genutzt wird', indem wir GenAI in Arbeitsabläufe integrieren – von der Datenverarbeitung bis zur Orchestrierung von Tools und Workflows.",
+    "ai-browser-auto-report": "Habe einen KI-Browser entwickelt, der automatisch alle Denkvorgänge und Suchverläufe aufzeichnet, entscheidet, wann Screenshots gemacht werden müssen, und am Ende einen Untersuchungsbericht ausgibt.",
+    "ai-history-hinton-nobel": "Einst hatte 'KI' in der Akademie ein negatives Image, und Geoffrey Hinton wurde stark für seine Arbeit an neuronalen Netzen kritisiert. Heute hat er den Turing- und Nobelpreis gewonnen und KI verändert die Welt.",
+    "perplexity-challenges": "Perplexity steht vor einem 'Positionierungs'-Test: Einerseits sollen sie die Erwartungen an die 'KI-Suche der nächsten Generation' erfüllen, andererseits werden sie von verschiedenen Content-Anbietern durch rechtliche und kommerzielle Verhandlungen beansprucht.",
+    "google-gemini-antigravity-devops": "KI ist nicht mehr nur ein Spielzeug für Demos, sondern wird Teil der Cloud-Infrastruktur. Wenn sich Werkzeuge ändern, ändern sich auch die dazugehörigen Rollen.",
+    "devfest-taipei-2025-announcement": "Am 30.11. werde ich auf der von Google GDG organisierten DevFest Taipei 2025 über die praktische Anwendung von KI-Agententeams sprechen. Wir freuen uns über Ihre Anmeldung.",
+    "graphrag-smart-customer-service": "GraphRAG ersetzt Einzelpunktsuchen durch eine graphbasierte Wissensstruktur. Es nutzt die Beziehungen zwischen Knoten und Kanten, um die Generierung zu unterstützen, den Kontextkonsens beizubehalten und Multi-Hop-Schlussfolgerungen zu ermöglichen.",
+    "six-patents-approved-2025": "Sechs neue Gebrauchsmuster wurden Anfang dieses Jahres genehmigt und letzten Monat wurden fünf weitere Patente angemeldet. Dies ist das Jahr, in dem generative KI den Durchbruch schafft.",
+    "devfest-taipei-signup": "Am 30.11. spreche ich auf der DevFest Taipei 2025 der Google GDG über angewandte KI-Agententeams. Freier Eintritt nach Überprüfung, Anmeldung ist willkommen.",
+    "best-attention-explanation": "Dies ist das beste Video-Tutorial zum Thema 'Attention is All You Need', das ich bisher gesehen habe.",
+    "jason-wei-ai-scenarios": "Dieser Vortrag von Jason Wei war eine echte Erleuchtung, hat mir Gänsehaut bereitet. Es ist definitiv ein systematischer Weg, um KI-Szenarien zu finden.",
+    "thinking-machine-lab-deterministic-ai": "Erhält man absolut konsistente Ergebnisse, wenn man die Temperatur des KI-Modells auf 0 setzt? Die Antwort ist nein, und eine Studie von Thinking Machine Lab deckt die grundlegenden Gründe auf.",
+    "vibe-coding-three-giants": "Wie der Gacha-Automat der großen drei Vibe-Coding-Modelle: OpenAI's Codex, Google's Gemini und Anthropic's Claude.",
+    "gemini-flash-nano-banana": "Nano Banana (Gemini 2.5 Flash Bildfunktion) ist wirklich beeindruckend, von der Anpassung eines Anzugs über die Korrektur des Lächelns bis hin zu detaillierten Bewegungen ist die Präzision bewundernswert.",
+    "hiring-devops-fullstack-ddt": "Verwandeln generativer KI, moderner Finanztechnologien und intelligenter Finanzanwendungen in skalierbare Produkte und Dienstleistungen – wir bringen Finanz-KI gemeinsam in internationale Märkte.",
+    "ai-pm-peter-deng-uber": "Peter Deng hat fünf Rollen für PMs etabliert und machte die durch verschiedene Standpunkte bedingten Widersprüche und Spannungen öffentlich und transparent – ein Superteam sollte wie die Avengers sein.",
+    "chatgpt-agent-launch": "Die Agenten-Vorgänge von ChatGPT werden in Echtzeit angezeigt und sind nachvollziehbar, fast so, als würde man einer menschlichen Sekretärin dabei zusehen, wie sie abstrakte Aufgaben löst.",
+    "stargate-ai-infrastructure": "Das Stargate ist nun ein 24-Stunden-Schichtprojekt für ein Serverzentrum. Wenn die Amerikaner anfangen, 24/7 zu kämpfen, weiß man, dies ist ein Krieg, den sie nicht verlieren dürfen.",
+    "google-io-one-for-all": "Die Google-Keynote war eine dichte Abfolge von Produktankündigungen, die deren Haltung zeigte. Im Vergleich zur Geschwindigkeit neuer Funktionen ist OpenAI immer noch ein kleines Unternehmen.",
+    "kobe-imagination-ai-magic": "Elon glaubt, Fantasie sei nach dem Erlernen von Wissen das Wichtigste. Frieren sagt, Magie sei die Welt der Vorstellung – Transformers und GenAI sind diese Magie.",
+    "patent-financial-ai-system": "Das gemeinsam mit dem Team entwickelte Patent 'Finanzanlageempfehlungs-Generierungssystem' wurde genehmigt und nutzt LLMs, GenUI und RAG, um Empfehlungen zu automatisieren.",
+    "ai-team-recruitment-genai": "Unser Financial AI Technology Team sucht leidenschaftliche Experten für DevOps und Data Science, um gemeinsam GenAI-Anwendungen zu entwickeln und umzusetzen.",
+    "genai-tech-interview-revolution": "Die Kandidaten müssen innerhalb von 60 Minuten mit LLMs und Frontend-Entwicklung eine statische Website fertigstellen, wodurch der Fokus vom 'Wissensgedächtnis' zur 'Werkzeuganwendung' wechselt.",
+    "openai-devday-2024": "OpenAI zeigte vier große Innovationen: Vision Fine-Tuning, Realtime API, Model Distillation und Prompt Caching, wodurch mehr Kontrolle in die Hände der Entwickler gelegt wird."
 };
 
 export const postsDe: Record<string, string> = {
@@ -422,5 +482,249 @@ Andere Module können von Mitbewerbern leicht kopiert werden, aber Ihre Wissensb
 
 ---
 
-*M671449 Anpassbares Generatives Künstliches Intelligenzsystem | Erteilt: 2025/06/11 | Alleiniger Erfinder: Nils Liu*`
+*M671449 Anpassbares Generatives Künstliches Intelligenzsystem | Erteilt: 2025/06/11 | Alleiniger Erfinder: Nils Liu*`,
+
+"ithome-hello-world-2025": `### iThome Hello World 2025 Entwicklerkonferenz
+
+Auf der iThome Hello World Entwicklerkonferenz in diesem Jahr hatte ich die Gelegenheit, vier KI-fokussierte Vorträge zu halten:
+
+1. **Vom Context zur Capability:** MCP-Ökosystem und Agentic-Architektur
+2. **Beyond RAG:** Wie GraphRAG die Grenzen des KI-Wissens durchbricht
+3. **Vibe Coding in Action:** Von der Idee zum Code mit KI-gestützter iterativer Entwicklung
+4. **Enterprise LLM Guardrails:** Abwehrmechanismen in Produktivumgebungen
+
+Es war eine fantastische Erfahrung, praktische Einblicke aus unserer Implementierung auf Unternehmensebene zu teilen. Die Resonanz der Entwickler-Community war überwältigend und die Diskussionen über Vibe Coding zeigten deutlich, wie sehr sich die Art und Weise der Softwareentwicklung verändert.`,
+
+"2025-year-in-review": `### Jahresrückblick 2025: Die stille Kraft stetigen Fortschritts
+
+Mein KI-Abenteuer 2025 in vier Zahlen: 6, 5, 1, 6.
+Nicht weil es so glamourös war, sondern weil es bodenständig blieb.
+
+GenAI in einer Bank zu implementieren ist wie das Auswechseln von Rohren in einem bewohnten Gebäude — die eigentliche Herausforderung ist nicht das Modell selbst, sondern Engineering, Vertrauen und Compliance. Wir haben bewiesen, dass man auch in einem stark regulierten Umfeld innovativ sein kann.
+
+Dieses Jahr ging es weniger um laute Ankündigungen als vielmehr um das kontinuierliche Schieben wertschöpfender Projekte in die Produktion. Die stillen Fortschritte sind oft die nachhaltigsten.`,
+
+"devfest-taipei-2025-recap": `### Rekapitulation DevFest Taipei 2025
+
+Vielen Dank an alle, die an meiner Sitzung auf dem DevFest Taipei 2025 teilgenommen haben!
+
+Ich habe die Architektur und Implementierung einer echten KI-Vertriebs-Coaching-Plattform vorgestellt, die wir in Produktion gebracht haben. Zu den Kernfunktionen gehören:
+
+- **Multi-Agenten-Kollaboration:** Agenten, die Hand in Hand arbeiten
+- **Persona World:** Dynamisch generierte Kundenprofile
+- **Ontology + GraphRAG:** Vernetztes Wissen für kontextbezogene Intelligenz
+
+Es ist erfüllend zu sehen, wie theoretische Konzepte in Systeme übersetzt werden, die rund um die Uhr personalisiertes Training in großem Maßstab liefern.`,
+
+"ithome-devopsdays-2025": `### Fünf Verhaltensmuster von KI-Agenten
+
+Dieses Jahr steht im Zeichen der KI-Agenten. Wir sehen uns auf den DevOpsDays am 5. und 6. Juni.
+
+Mein Thema: **Fünf Verhaltensmuster von KI-Agenten: Mit KI die Zukunft des DevOps-Ökosystems gestalten.**
+
+Wir werden von einfachen LLM-Wrappern zu Systemen übergehen, die Aktionen planen, Tools nutzen, reflektieren und orchestrieren. Das Verständnis dieser Muster ist entscheidend für DevOps-Teams, die in der nächsten Software-Ära bestehen möchten.`,
+
+"fde-diamond-org": `### Die Spaltung der Softwareentwickler
+
+In derselben Ära und unter derselben Berufsbezeichnung "Ingenieur" verlieren einige durch KI ihren Job, während andere gerade wegen ihr neue Möglichkeiten finden. 
+
+Was deinen Platz bestimmt, ist nicht deine Ausbildung oder deine Betriebszugehörigkeit, sondern deine Anpassungsgeschwindigkeit.
+
+Block hat gerade angekündigt, die Hälfte seiner Ingenieure zu entlassen, obwohl Daten von Indeed zeigen, dass die offenen Stellen für Softwareentwickler stark ansteigen. Diejenigen, die entlassen werden, sind oft diejenigen, die auf alte Weise arbeiten – traditionelles Debugging, Code-Reviews, Routinetests. Genau die Dinge, die KI am besten ersetzen kann. 
+
+Die diamantförmige Organisation ist real: Die Mitte wird ausgehöhlt, und es besteht ein enormer Bedarf an erfahrenen Architekten ganz oben und KI-gestützten Junioren ganz unten. Der Markt verlangt nach Entscheidungsträgern, nicht nur nach Ausführenden.`,
+
+"ai-picking-future-talents": `### Wie KI zukünftige Talente auswählt
+
+In der Führung eines Teams im letzten Jahr fiel mir auf, dass einige Mitarbeiter mit mangelnder Erfahrung und Neugier sich völlig verloren fühlten, sobald wir KI-Workflows integrierten.
+
+Boris Cherny von Anthropic hatte einen interessanten Gedanken dazu: Diese Lücke ist genau das, was zukünftige Talente voneinander trennen wird.
+
+Der Übergang vom reinen "Code-Schreiben" zum "autonomen Vorschlagen und Iterieren" mit KI-Unterstützung erfordert ein völlig anderes Mindset. Die wirklich guten Entwickler werden nicht die sein, die die Syntax perfekt beherrschen, sondern diejenigen, die Probleme strukturieren und LLMs effektiv lenken können.`,
+
+"ai-agent-intern-recruit": `### Praktikanten gesucht: KI-Agenten-Plattform
+
+Wir bauen eine KI-Agenten-Plattform in Übersee auf, die "wirklich live geht und von echten Menschen genutzt wird". 
+
+Wir integrieren GenAI nativ in Arbeitsabläufe – von der Datenverarbeitung über die Werkzeugorchestrierung bis hin zu vollständigen Automatisierungsketten.
+
+Wenn Sie gerne von PoC zu Produktion skalieren, bewerben Sie sich! Wir suchen motivierte Praktikanten für Fullstack, Backend und GenAI-Engineering.`,
+
+"ai-browser-auto-report": `### AI Browser: Automatisierung von Untersuchungsprotokollen
+
+Ich habe einen speziellen "KI-Browser" entwickelt, der genau dokumentiert, wie ein LLM navigiert.
+
+Er zeichnet alle Denkvorgänge auf, verfolgt Suchverläufe, entscheidet automatisch anhand des Kontextes, wann ein Screenshot aufgenommen werden muss, und kompiliert am Ende alles in einen strukturierten Untersuchungsbericht.
+
+Es geht darum, Transparenz und Überprüfbarkeit in die KI-Forschung zu bringen – ein Werkzeug, das nicht nur Antworten liefert, sondern auch den gesamten Weg dorthin belegt.
+
+https://youtu.be/Hk_42hV7q2Q?si=Rp9k7AQml9Gm0c6L`,
+
+"ai-history-hinton-nobel": `### Der historische Wendepunkt der KI
+
+Einst hatte das Wort "KI" in der Akademie ein negatives Image, besonders nach den KI-Wintern. Geoffrey Hinton wurde stark für seine Arbeit an neuronalen Netzen kritisiert, teilweise sogar angefeindet. Er wurde oft gefragt, wie er in etwas vertrauen könne, das man nicht vollständig nachvollziehen kann.
+
+Heute wissen wir, wie die Geschichte ausgeht: Hinton gewann 2018 den Turing-Preis und 2024 den Nobelpreis für Physik. Auch Demis Hassabis wurde für AlphaFold mit dem Nobelpreis für Chemie bedacht.
+
+KI verändert die Welt nachhaltig.
+
+https://youtu.be/d95J8yzvjbQ?si=pNqqz52EE6Kt4baJ`,
+
+"perplexity-challenges": `### Das Dilemma von Perplexity
+
+Als Perplexity startete, fühlte es sich an wie etwas, das jedes kompetente Team bauen könnte. Die grundlegende Technologie hat keinen massiven Schutzwall.
+
+Die eigentliche Herausforderung für sie heute ist eine "Positionierungs"-Prüfung. Einerseits müssen sie die hohen Erwartungen als die "KI-Suchmaschine der nächsten Generation" erfüllen. Andererseits werden sie von Content-Anbietern – von Forbes bis zur New York Times, die nun wegen Urheberrechtsverletzungen klagt – in rechtliche Schranken gewiesen.
+
+Die gesamte Branche lotet derzeit die Grenzen der KI-Suche aus. Ich bin gespannt, ob Perplexity ein Modell etablieren kann, das sich für Content-Ersteller, Nutzer und Plattform fair anfühlt.
+
+[📰 Reuters: New York Times sues Perplexity AI for infringing copyright](https://www.reuters.com/legal/litigation/new-york-times-sues-perplexity-ai-infringing-copyright-works-2025-12-05/)`,
+
+"google-gemini-antigravity-devops": `### Die Weiterentwicklung der Entwicklerrolle
+
+Mit der Veröffentlichung von Gemini 3 Pro und Tools wie Antigravity gibt es ein klares Signal: KI ist nicht mehr nur ein Spielzeug für Demos, sondern wird ein integraler Bestandteil der Cloud-Infrastruktur.
+
+Diese Werkzeuge kapseln Komplexität. Vorher verbrachten Entwickler unzählige Stunden mit Fehlerbehebung in der Infrastruktur, Bereitstellungspipelines und Environment-Setup. Nun werden diese Aufgaben immer stärker abstrahiert, was uns erlaubt, uns auf Produkt, User Experience und AI Governance zu konzentrieren.
+
+Wer sich in den kommenden Jahren behaupten will, muss die Evolution der Werkzeuge mit der Evolution der organisatorischen Fähigkeiten verknüpfen. Wenn sich Werkzeuge ändern, ändern sich auch die dazugehörigen Rollen.`,
+
+"devfest-taipei-2025-announcement": `### Ankündigung: DevFest Taipei 2025
+
+Am 30. November werde ich auf dem von Google GDG organisierten DevFest Taipei 2025 sprechen.
+
+Das Thema: Reale Anwendungen von KI-Agententeams in Produktionsumgebungen, die echtes Geschäftswissen integrieren. Keine Spielzeuge, sondern produktive Systeme.
+
+Wir sehen uns um 10:30 Uhr an der National Taiwan University!`,
+
+"graphrag-smart-customer-service": `### GraphRAG: Revolution im intelligenten Kundenservice
+
+Herkömmliches RAG verlässt sich hauptsächlich auf Vektorsuchen, die den semantischen Faden verlieren können, wenn Gespräche lang werden oder oft das Thema wechseln. 
+
+GraphRAG ersetzt Einzelpunktsuchen durch eine graphbasierte Wissensstruktur. Es nutzt die Beziehungen zwischen Knoten und Kanten, um die Generierung zu unterstützen, den Kontextkonsens beizubehalten und vor allem Multi-Hop-Schlussfolgerungen zu ermöglichen.
+
+In unserem Prototyp-System, das Kundengespräche, Finanznachrichten und Expertenwissen verknüpft, zeigte GraphRAG beim RobustQA-Test eine Genauigkeit von 86% im Vergleich zu 33–76% bei klassischen RAG-Lösungen. Ein enormer Sprung, obwohl bei der Implementierung Systemkomplexität und Kosten genau abgewogen werden müssen.`,
+
+"six-patents-approved-2025": `### Sechs Patente genehmigt
+
+Sechs neue Gebrauchsmuster, die wir Anfang dieses Jahres eingereicht haben, wurden nun offiziell genehmigt.
+
+Im letzten Monat haben wir weitere fünf Patente angemeldet. Dies ist wirklich das Jahr des explosionsartigen Wachstums generativer KI-Anwendungen im reellen Einsatz.`,
+
+"devfest-taipei-signup": `### DevFest Taipei 2025 Anmeldung
+
+Am 30. November werde ich auf der DevFest Taipei 2025 der Google GDG am NTU-Campus über angewandte KI-Agententeams sprechen. 
+
+Der Eintritt ist frei (nach erfolgter Registrierung). Ich freue mich darauf, viele von Ihnen dort zu sehen!`,
+
+"best-attention-explanation": `### Bestes 'Attention is All You Need' Video
+
+Dies ist mit Abstand das beste Video-Tutorial zum bahnbrechenden Papier "Attention is All You Need", das ich bisher gesehen habe.
+
+Sehr empfehlenswert für alle, die wirklich verstehen wollen, wie Transformers auf der untersten Ebene funktionieren.`,
+
+"jason-wei-ai-scenarios": `### Systematische KI-Szenarien
+
+Dieser Vortrag von Jason Wei war eine echte Erleuchtung und hat mir sprichwörtlich Gänsehaut bereitet.
+
+Wenn Sie nach realen und werthaltigen Anwendungsfällen für KI suchen, ist dies genau der systematische Weg, auf dem Sie vorgehen sollten.`,
+
+"thinking-machine-lab-deterministic-ai": `### Deterministisches KI-Schlussfolgern
+
+Erhält man absolut konsistente Ergebnisse, wenn man die Temperatur eines KI-Modells auf 0 setzt? Die intuitive Antwort ist "Ja", die tatsächliche Antwort ist jedoch "Nein". 
+
+Eine neue Studie des Thinking Machine Lab deckt die grundlegenden Gründe dafür auf: Server-Charge-Verarbeitung, Matrixmultiplikation und Genauigkeitsverluste bei der Normalisierung. Die Inkonsistenzen sind real und für stark regulierte Branchen problematisch.
+
+Das Thinking Machine Lab hat eine ladungsunabhängige Lösung entwickelt, die 100%ige Determinierung garantiert, allerdings mit Kosten von 60% Leistungsverlust. Für Bereichen, in denen Zuverlässigkeit Vorrang vor Geschwindigkeit hat, ändert diese Technologie jedoch die Spielregeln vollkommen.`,
+
+"vibe-coding-three-giants": `### Die Vibe Coding Giganten
+
+Vibe Coding im Jahr 2025 fühlt sich ein bisschen an wie an einem Gacha-Automaten zu ziehen. Die großen drei, die diesen Raum derzeit dominieren, sind:
+
+1. **Codex** von OpenAI
+2. **Gemini** von Google
+3. **Claude** von Anthropic`,
+
+"gemini-flash-nano-banana": `### Nano Banana Bildgenerierung
+
+Nano Banana (die Bildgenerierungsfunktion von Gemini 2.5 Flash) ist wirklich erstaunlich.
+
+Prompt 1: "Ändern zu Anzug, Studioaufnahme, Passfoto-Stil"
+Prompt 2: "Professionelles Lächeln hinzufügen, Augen offen"
+Prompt 3: "Hand passt den Krawattenknoten an"
+
+Die Detailgenauigkeit und die Kontrolle über kleinste Haltungs- und Gesichtsausdruckänderungen sind bemerkenswert und nützen echten Produktivitäts-Workflows.`,
+
+"hiring-devops-fullstack-ddt": `### Nils sucht Teamkollegen!
+
+Wir bringen Finanz-KI in internationale Märkte und suchen aktiv nach DevOps- und Fullstack-Ingenieuren!
+
+Wir verwandeln generative KI, moderne Finanztechnologien und intelligente Finanzanwendungen in skalierbare Produkte und Dienstleistungen. Wir haben starken Top-Down-Support, echte Cloud-Architekturen (AWS/GCP) und ein tiefes Engagement, die Grenzen auf Unternehmensebene zu verschieben.
+
+Wenn Sie Leidenschaft für Programmierung, KI und Scrum haben, lassen Sie uns sprechen!`,
+
+"ai-pm-peter-deng-uber": `### Die Philosophie eines KI-Produktmanagers
+
+Peter Dengs Philosophie als Produktmanager, besonders während seiner Zeit bei Uber, ist unglaublich wertvoll für jeden im KI-Bereich.
+
+Er etablierte fünf distincte Rollen für PMs und ermutigte ganz bewusst dazu, die durch verschiedene Standpunkte bedingten Widersprüche und Spannungen öffentlich und transparent auszutragen. Ein Superteam sollte wie die Avengers sein: Jedermann ist besonders, hat seine eigenen Ansichten und es wird sichergestellt, dass jede Stimme berücksichtigt wird.
+
+Sein sechsmonatiger Rekrutierungsgrundsatz lautet: Wenn ein neuer Mitarbeiter nach sechs Monaten noch gesagt bekommen muss, was er tun soll, ist er am falschen Platz. Er sucht Denker und Treiber.`,
+
+"chatgpt-agent-launch": `### Der Launch des ChatGPT-Agenten
+
+Der offizielle Start des Agenten von ChatGPT ist faszinierend: Wenn der Agent Befehle erhält, werden seine Vorgänge in Echtzeit auf dem Bildschirm angezeigt. Es gibt aussagekräftige Protokolle (verbose), sodass alles erklärbar bleibt.
+
+Es fühlt sich ehrlich gesagt so an, als würde man einer menschlichen Sekretärin dabei zusehen, wie sie abstrakte Aufgaben auf einem Computer löst. Entwickelt von Mitgliedern der Deep Research- und Operator-Teams, vereint dieses Setup das Beste aus beiden Welten. Dies zeigt, dass Open-Source-Ansätze in Zukunft hochgeschwindigkeits Deep-Research-Architekturen benötigen werden.`,
+
+"stargate-ai-infrastructure": `### Projekt Stargate
+
+Das "Stargate" ist nun ein Serverzentrum-Projekt, an dem in 24-Stunden-Schichten ununterbrochen gebaut wird.
+
+Wenn die Amerikaner anfangen, 24/7 zu arbeiten und in der physischen Infrastruktur mit so hoher Intensität zu konkurrieren, wird klar, dass dies ein Krieg um die KI-Vorherrschaft ist, den sie absolut nicht verlieren dürfen.`,
+
+"google-io-one-for-all": `### "Winner Takes It All"
+
+Das 32-minütige Highlight-Reel der Google Keynote war eine dichte Abfolge von atemberaubenden Produktankündigungen.
+
+Wenn mir technische Entwicklungen im Bereich KI in der Vergangenheit manchmal schwindelerregend vorkamen, war dies einfach erdrückend in seiner schieren Masse. Es ist eine klare Demonstration von Maßstab. Verglichen mit der unglaublichen Geschwindigkeit, mit der Google diese Features pusht, wirkt OpenAI plötzlich wie ein recht kleines Unternehmen.`,
+
+"kobe-imagination-ai-magic": `### Vorstellungskraft und KI-Magie
+
+In einem Interview 2017 teilte Kobe Bryant Elon Musks Auffassung: Nach dem Sammeln von Wissen ist Vorstellungskraft das Kritischste. Egal wie viel Sie lernen, ohne Vorstellungskraft bringen Sie es nicht auf das nächste Level.
+
+Frieren sagte einmal: "Magie ist die Welt der Vorstellung. Was du dir nicht vorstellen kannst, wird deine Magie nicht realisieren."
+
+Ich glaube wirklich, dass Transformers und generative KI genau diese Art von Magie sind. Ihre Nützlichkeit ist einzig durch die Vorstellungskraft des Nutzers begrenzt.
+https://www.youtube.com/watch?v=jSVdxhTEJP4`,
+
+"patent-financial-ai-system": `### Finanz-KI-Patent genehmigt
+
+Ich freue mich sehr, mitteilen zu können, dass das gemeinsam mit meinem Team entwickelte Patent "Finanzanlageempfehlungs-Generierungssystem" (Publikations-Nr. M670472) offiziell genehmigt wurde!
+
+Dieses System verknüpft LLMs, GenUI und RAG, um automatisch stark personalisierte Anlageempfehlungen zu generieren und so die Entscheidungsfindung und das Risikomanagement zu verbessern. Es gibt noch viel zu optimieren, aber wir treiben diese Technologie weiter voran, um unseren Kunden großen Mehrwert zu bieten.`,
+
+"ai-team-recruitment-genai": `### Stellenangebot: GenAI Team
+
+Unser Financial AI Technology Team sucht leidenschaftliche Experten für DevOps und Data Science, um gemeinsam GenAI-Anwendungen zu entwickeln und umzusetzen!
+
+Ihre Rolle wird das Entwerfen, Entwickeln und Bereitstellen von skalierbaren Systemarchitekturen zur Lösung realer kommerzieller Bedürfnisse sein. Wir veröffentlichen Arbeiten, melden Patente an und übersetzen PoCs schnell in produktionsreife Realität.`,
+
+"genai-tech-interview-revolution": `### Transformation technischer Interviews
+
+Wir haben unser technisches Interview für Praktikanten drastisch aktualisiert.
+
+Wir fordern die Kandidaten nun auf, innerhalb von nur 60 Minuten unter starker Einbindung von LLMs und Frontend-Entwicklungs-Skills eine statische Website zu erstellen. Dies testet nicht das "Wissen auswendig lernen", sondern bewertet die praktische "Werkzeuganwendung".
+
+Der Prozess erfordert schnelles Prompt-Engineering, solideres Interface-Basiswissen und kreative KI-Problemlösungen. In der KI-Ära untersuchen wir nicht nur, was Sie wissen, sondern vor allem, was Sie schnell aufbauen können.`,
+
+"openai-devday-2024": `### OpenAI DevDay 2024: Technische Revolution
+
+Gestern hat OpenAI auf dem DevDay 2024 vier große Neuerungen vorgestellt: Vision Fine-Tuning, Realtime API, Model Distillation und Prompt Caching.
+
+- **Realtime API:** Bahnbrechend für Sprachinteraktionen mit niedriger Latenz.
+- **Prompt Caching:** Bis zu 50% Rabatt auf wiederverwendete Kontext-Tokens – eine enorme Kostenersparnis!
+- **Vision Fine-Tuning:** Endlich Anpassung von GPT-4o mit firmenspezifischen visuellen Daten.
+- **Model Distillation:** Die Ausgaben High-End-Modellen nutzen, um kleinere, effizientere Modelle zu trainieren.
+
+OpenAI legt deutlich mehr Kontrolle, Anpassungsfähigkeit und Kostenmanagement in die Hände der Entwickler. Das ist ein großer Gewinn für den gesamten Entwicklerbereich.`
 };

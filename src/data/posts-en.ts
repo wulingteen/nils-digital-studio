@@ -13,7 +13,6 @@ export const titleEn: Record<string, string> = {
     "2025-year-in-review": "2025 Year in Review: The Quiet Power of Steady Progress",
     "devfest-taipei-2025-recap": "DevFest Taipei 2025: Building a Real AI Coaching Platform",
     "ithome-devopsdays-2025": "iThome DevOpsDays 2025: Five AI Agent Behavior Patterns",
-    "nvidia-gtc-2025-ai-weekly": "AI Weekly: Nvidia GTC 2025, xAI Infrastructure Fund & Deloitte's Engineering Mindset",
     "fde-diamond-org": "The Software Engineer Divide: The Diamond-Shaped Org in the Age of AI",
     "ai-picking-future-talents": "From Coding to Autonomous Proposals: How AI Is Redefining Talent",
     "ai-agent-intern-recruit": "We're Hiring Interns: Overseas AI Agent Platform | Full-Stack / Backend / GenAI",
@@ -53,7 +52,6 @@ export const excerptEn: Record<string, string> = {
     "2025-year-in-review": "My 2025 AI journey in four numbers: 6, 5, 1, 6. Not because it was glamorous, but because it was grounded. Building GenAI in a bank is like replacing the plumbing in an operating building — the real challenge isn't the model, it's engineering and trust.",
     "devfest-taipei-2025-recap": "At DevFest Taipei 2025 I shared a real production AI coaching platform — multi-agent collaboration, Persona World, Ontology + GraphRAG, delivering 24/7 personalized sales training.",
     "ithome-devopsdays-2025": "This is the year of AI Agents. Join me at DevOpsDays on June 5–6 for a session on five agent behavior patterns and building the future DevOps ecosystem with AI.",
-    "nvidia-gtc-2025-ai-weekly": "Nvidia acquires Gretel for synthetic data, xAI & Nvidia join a $30B AI infrastructure fund, Deloitte pivots to engineering-first thinking.",
     "fde-diamond-org": "Same era, same job title — one group is being laid off while another is being hired. What separates them isn't seniority or credentials; it's how fast they've adapted.",
     "ai-picking-future-talents": "Over the past year leading a team, I found that people with genuine curiosity thrive in AI-augmented work. Boris Cherny of Anthropic thinks this gap is exactly how future talent will sort itself.",
     "ai-agent-intern-recruit": "We're building an AI Agent platform that actually ships to real users — want to go from PoC to production? We're looking for full-stack, backend, and GenAI interns.",
@@ -678,17 +676,6 @@ I've been thinking a lot about how AI Agents change the nature of DevOps work: f
 
 Full session details: https://devopsdays.tw/2025/session-page/3772`,
 
-"nvidia-gtc-2025-ai-weekly": `A quick roundup of the AI moves that caught my attention this week.
-
-**Nvidia acquires Gretel for $320M+** — bringing synthetic data generation in-house. This is a smart play: data scarcity and privacy are two of the biggest bottlenecks in enterprise AI training, and synthetic data is increasingly the workaround. Expect Nvidia to bundle this into its platform offerings.
-
-**xAI and Nvidia join the $30B AI infrastructure fund** — backed by BlackRock, Microsoft, and Abu Dhabi. The scale of capital flowing into AI infrastructure continues to stagger. When you're building 24/7 data centers at this price point, it's not just a bet on AI — it's a statement that AI leadership is a geopolitical imperative.
-
-**Deloitte goes "engineer-first"** — Partner Jillian Wanner says consulting needs to rewire its DNA around technical thinking. Billions are being invested in internal AI transformation, and the expectation is that employees lead with an engineering mindset. The consulting world is being disrupted from within.
-
-**Nvidia GTC 2025 highlights** — Jensen Huang unveiled Blackwell GPU updates and the Nvidia Dynamo OS for AI factories. The focus: inference efficiency at scale. The model training wars are largely settled; the next frontier is inference cost.
-
-*One more note:* The "fat filter" AI trend on TikTok sparked real criticism about body shaming. Worth remembering that generative AI democratizes both the creative and the harmful.`,
 
 "fde-diamond-org": `Same era. Same job title. One group is being laid off; another is being hired as fast as companies can find them. The difference isn't seniority or education — it's how fast you've adapted.
 

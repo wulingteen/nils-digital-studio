@@ -66,10 +66,6 @@
   <url><loc>https://wulingteen.github.io/nils-digital-studio/en/insights/ithome-devopsdays-2025</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://wulingteen.github.io/nils-digital-studio/de/insights/ithome-devopsdays-2025</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
-  <!-- nvidia-gtc-2025-ai-weekly -->
-  <url><loc>https://wulingteen.github.io/nils-digital-studio/zh/insights/nvidia-gtc-2025-ai-weekly</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://wulingteen.github.io/nils-digital-studio/en/insights/nvidia-gtc-2025-ai-weekly</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://wulingteen.github.io/nils-digital-studio/de/insights/nvidia-gtc-2025-ai-weekly</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
   <!-- fde-diamond-org -->
   <url><loc>https://wulingteen.github.io/nils-digital-studio/zh/insights/fde-diamond-org</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -200,5 +196,35 @@
   <url><loc>https://wulingteen.github.io/nils-digital-studio/zh/insights/openai-devday-2024</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://wulingteen.github.io/nils-digital-studio/en/insights/openai-devday-2024</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://wulingteen.github.io/nils-digital-studio/de/insights/openai-devday-2024</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- patent-knowledge-graph -->
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/zh/insights/patent-knowledge-graph</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/en/insights/patent-knowledge-graph</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/de/insights/patent-knowledge-graph</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- patent-adaptive-security -->
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/zh/insights/patent-adaptive-security</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/en/insights/patent-adaptive-security</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/de/insights/patent-adaptive-security</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- patent-modular-ai -->
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/zh/insights/patent-modular-ai</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/en/insights/patent-modular-ai</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/de/insights/patent-modular-ai</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- patent-multi-agent -->
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/zh/insights/patent-multi-agent</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/en/insights/patent-multi-agent</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/de/insights/patent-multi-agent</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- patent-pii-filter -->
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/zh/insights/patent-pii-filter</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/en/insights/patent-pii-filter</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/de/insights/patent-pii-filter</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- patent-wealth-dashboard -->
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/zh/insights/patent-wealth-dashboard</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/en/insights/patent-wealth-dashboard</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://wulingteen.github.io/nils-digital-studio/de/insights/patent-wealth-dashboard</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
 </urlset>
