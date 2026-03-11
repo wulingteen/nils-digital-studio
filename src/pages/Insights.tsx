@@ -157,9 +157,10 @@ const Insights = () => {
                 key={post.id}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
+                whileHover={{ y: -4, transition: { duration: 0.4, ease: "easeOut" } }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.6, ease: "easeOut" }}
-                className="group flex flex-col md:flex-row gap-6 md:gap-8 rounded-[2rem] border border-primary/5 bg-gradient-to-br from-background to-secondary/10 p-4 transition-all duration-500 hover:border-primary/20 hover:shadow-[0_8px_30px_rgba(200,160,80,0.08)]"
+                className="group flex flex-col md:flex-row gap-6 md:gap-8 rounded-[2rem] border border-primary/5 bg-gradient-to-br from-background to-secondary/10 p-4 transition-colors duration-500 hover:border-primary/20 hover:shadow-[0_8px_30px_rgba(200,160,80,0.08)]"
               >
                 {post.coverImage && (
                   <Link to={`/${currentLang}/insights/${post.id}`} className="block relative w-full md:w-[320px] lg:w-[360px] shrink-0 overflow-hidden rounded-[2rem] bg-muted aspect-video md:aspect-[16/9]">

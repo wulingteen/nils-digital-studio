@@ -115,9 +115,6 @@ const Contact = () => {
                 <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 text-sm text-muted-foreground transition-colors hover:text-foreground">
                   <Linkedin className="h-4 w-4" /> LinkedIn
                 </a>
-                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 text-sm text-muted-foreground transition-colors hover:text-foreground">
-                  <Youtube className="h-4 w-4" /> YouTube
-                </a>
               </div>
             </motion.div>
           </div>

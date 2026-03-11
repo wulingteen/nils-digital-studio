@@ -28,17 +28,22 @@ import YouTubeEmbed from "@/components/YouTubeEmbed";
 /* ── Animation Helpers ─────────────────────────────── */
 const stagger = {
     hidden: {},
-    visible: { transition: { staggerChildren: 0.15 } },
+    visible: { transition: { staggerChildren: 0.1 } },
 };
 
 const fadeUp = {
-    hidden: { opacity: 0, y: 30 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: "easeOut" as const } },
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" as const } },
 };
 
 const sectionFade = {
     hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" as const } },
+};
+
+const hoverScale = {
+    y: -4, 
+    transition: { duration: 0.4, ease: "easeOut" as const }
 };
 
 
@@ -92,6 +97,8 @@ const SinglePage = () => {
           § HERO
           ═══════════════════════════════════════════════ */}
             <section id="hero" className="relative min-h-screen overflow-hidden">
+                {/* Tech Blueprint Grid Background */}
+                <div className="absolute inset-0 bg-[linear-gradient(to_right,hsl(var(--foreground))_1px,transparent_1px),linear-gradient(to_bottom,hsl(var(--foreground))_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-[0.03] pointer-events-none -z-20" />
                 {/* Right half — profile photo with elegant fade */}
                 <div className="absolute inset-y-0 right-0 w-full md:w-1/2 -z-10">
                     <img
@@ -135,21 +142,24 @@ const SinglePage = () => {
                             </p>
                         </motion.div>
                         <motion.div variants={fadeUp} className="flex flex-wrap gap-4">
-                            <a
+                            <motion.a
+                                whileHover={hoverScale}
                                 href="#contact"
                                 className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow-[0_0_20px_rgba(200,160,80,0.3)] transition-all hover:opacity-90 hover:shadow-[0_0_30px_rgba(200,160,80,0.5)]"
                             >
                                 <Calendar className="h-4 w-4" />
                                 {t("hero.cta_book")}
-                            </a>
-                            <a
+                            </motion.a>
+                            <motion.a
+                                whileHover={hoverScale}
                                 href="mailto:wulingteen@gmail.com"
                                 className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-background/50 px-6 py-3 text-sm font-medium text-foreground backdrop-blur-sm transition-all hover:bg-primary/10 hover:border-primary/50"
                             >
                                 <Mail className="h-4 w-4" />
                                 {t("hero.cta_email")}
-                            </a>
-                            <a
+                            </motion.a>
+                            <motion.a
+                                whileHover={hoverScale}
                                 href="https://www.linkedin.com/in/nilsliu/"
                                 target="_blank"
                                 rel="noopener noreferrer"
@@ -157,7 +167,7 @@ const SinglePage = () => {
                             >
                                 <Linkedin className="h-4 w-4" />
                                 {t("hero.cta_linkedin")}
-                            </a>
+                            </motion.a>
                         </motion.div>
                     </div>
                 </motion.div>
@@ -187,7 +197,7 @@ const SinglePage = () => {
             <section id="showcase" className="section-padding border-t border-border relative">
                 <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
                 <div className="container-narrow relative z-10">
-                    <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} viewport={{ once: true }} className="mb-12">
+                    <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} viewport={{ once: true, margin: "-50px" }} className="mb-12">
                         <h2 className="mb-3 text-3xl font-bold text-gradient md:text-4xl">{t("demos.title")}</h2>
                         <p className="max-w-xl text-muted-foreground">{t("demos.sub")}</p>
                     </motion.div>
@@ -211,7 +221,7 @@ const SinglePage = () => {
                                         initial={{ opacity: 0, y: 20 }}
                                         whileInView={{ opacity: 1, y: 0 }}
                                         transition={{ delay: 0.1 }}
-                                        viewport={{ once: true }}
+                                        viewport={{ once: true, margin: "-50px" }}
                                         className={`lg:col-span-3 ${!isEven ? "lg:order-2" : ""}`}
                                     >
                                         <YouTubeEmbed
@@ -231,8 +241,9 @@ const SinglePage = () => {
                                                     key={i}
                                                     initial={{ opacity: 0, x: isEven ? 20 : -20 }}
                                                     whileInView={{ opacity: 1, x: 0 }}
+                                                    whileHover={hoverScale}
                                                     transition={{ delay: 0.15 + i * 0.1, duration: 0.5 }}
-                                                    viewport={{ once: true }}
+                                                    viewport={{ once: true, margin: "-50px" }}
                                                     className="group flex items-start gap-4 rounded-xl border border-border p-4 transition-colors hover:border-foreground/20 hover:bg-secondary/40"
                                                 >
                                                     <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-secondary text-muted-foreground transition-colors group-hover:text-foreground">
@@ -252,10 +263,10 @@ const SinglePage = () => {
                     })}
 
                     <motion.div
-                        initial={{ opacity: 0 }}
-                        whileInView={{ opacity: 1 }}
-                        transition={{ delay: 0.6 }}
-                        viewport={{ once: true }}
+                        initial={{ opacity: 0, y: 10 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.2, duration: 0.5 }}
+                        viewport={{ once: true, margin: "-50px" }}
                         className="mt-12 text-center"
                     >
                         <a
@@ -272,8 +283,10 @@ const SinglePage = () => {
           § SERVICES
           ═══════════════════════════════════════════════ */}
             <section id="services" className="section-padding relative">
+                {/* Tech Blueprint Grid Background */}
+                <div className="absolute inset-0 bg-[linear-gradient(to_right,hsl(var(--foreground))_1px,transparent_1px),linear-gradient(to_bottom,hsl(var(--foreground))_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-[0.03] pointer-events-none -z-20" />
                 <div className="container-narrow relative z-10">
-                    <motion.div variants={sectionFade} initial="hidden" whileInView="visible" viewport={{ once: true }} className="mb-16 text-center">
+                    <motion.div variants={sectionFade} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-50px" }} className="mb-16 text-center">
                         <h2 className="mb-4 text-4xl font-bold text-gradient md:text-5xl">{t("services.page_title")}</h2>
                         <p className="mx-auto max-w-xl text-lg text-muted-foreground">{t("services.page_sub")}</p>
                     </motion.div>
@@ -286,9 +299,10 @@ const SinglePage = () => {
                                     key={key}
                                     initial={{ opacity: 0, y: 30 }}
                                     whileInView={{ opacity: 1, y: 0 }}
+                                    whileHover={hoverScale}
                                     transition={{ delay: 0.1 + i * 0.15, duration: 0.6 }}
-                                    viewport={{ once: true }}
-                                    className="glass-card hover-lift group rounded-xl p-8 border-t-2 border-t-primary/20"
+                                    viewport={{ once: true, margin: "-50px" }}
+                                    className="glass-card group rounded-xl p-8 border-t-2 border-t-primary/20 transition-colors hover:bg-secondary/40 shadow-sm"
                                 >
                                     <Icon className="mb-4 h-8 w-8 text-primary/70 transition-colors group-hover:text-primary" />
                                     <h3 className="mb-2 text-xl font-semibold text-foreground">{t(`services.${key}.title`)}</h3>
@@ -334,7 +348,7 @@ const SinglePage = () => {
                     </motion.div>
 
                     {/* Principles */}
-                    <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.6 }} viewport={{ once: true }} className="mb-20">
+                    <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} viewport={{ once: true, margin: "-50px" }} className="mb-20">
                         <h3 className="mb-8 text-2xl font-semibold text-foreground">{t("about.principles_title")}</h3>
                         <div className="grid gap-6 md:grid-cols-3">
                             {principles.map((p, i) => (
@@ -343,7 +357,7 @@ const SinglePage = () => {
                                     initial={{ opacity: 0, y: 20 }}
                                     whileInView={{ opacity: 1, y: 0 }}
                                     transition={{ delay: i * 0.1 }}
-                                    viewport={{ once: true }}
+                                    viewport={{ once: true, margin: "-50px" }}
                                     className="rounded-xl border border-border p-6"
                                 >
                                     <h4 className="mb-3 text-lg font-semibold text-foreground">{p.title}</h4>
@@ -354,7 +368,7 @@ const SinglePage = () => {
                     </motion.div>
 
                     {/* Skills */}
-                    <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.6 }} viewport={{ once: true }} className="mb-20">
+                    <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} viewport={{ once: true, margin: "-50px" }} className="mb-20">
                         <h3 className="mb-8 text-2xl font-semibold text-foreground">{t("about.skills_title")}</h3>
                         <div className="flex flex-wrap gap-3">
                             {skills.map((skill) => (
@@ -366,7 +380,7 @@ const SinglePage = () => {
                     </motion.div>
 
                     {/* Credentials */}
-                    <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ duration: 0.6 }} viewport={{ once: true }}>
+                    <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} viewport={{ once: true, margin: "-50px" }}>
                         <h3 className="mb-8 text-2xl font-semibold text-foreground">{t("about.credibility_title")}</h3>
                         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
                             {credibility.map((c, i) => (
@@ -387,13 +401,13 @@ const SinglePage = () => {
                 <div className="absolute -top-[300px] -right-[300px] h-[600px] w-[600px] rounded-full bg-primary/5 blur-3xl"></div>
                 <div className="absolute -bottom-[300px] -left-[300px] h-[600px] w-[600px] rounded-full bg-primary/5 blur-3xl"></div>
                 <div className="container-narrow relative z-10">
-                    <motion.div variants={sectionFade} initial="hidden" whileInView="visible" viewport={{ once: true }} className="mb-12">
+                    <motion.div variants={sectionFade} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-50px" }} className="mb-12">
                         <h2 className="mb-4 text-4xl font-bold text-gradient md:text-5xl">{t("contact.page_title")}</h2>
                         <p className="max-w-xl text-lg text-muted-foreground">{t("contact.page_sub")}</p>
                     </motion.div>
 
                     <div className="grid gap-16 lg:grid-cols-2">
-                        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.2, duration: 0.6 }} viewport={{ once: true }}>
+                        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ delay: 0.2, duration: 0.6 }} viewport={{ once: true, margin: "-50px" }}>
                             <AnimatePresence mode="wait">
                                 {!submitted ? (
                                     <motion.form
@@ -458,7 +472,7 @@ const SinglePage = () => {
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.4, duration: 0.6 }}
-                            viewport={{ once: true }}
+                            viewport={{ once: true, margin: "-50px" }}
                             className="flex flex-col gap-6"
                         >
                             <div className="flex items-center gap-3 text-muted-foreground">
@@ -471,9 +485,6 @@ const SinglePage = () => {
                                 </a>
                                 <a href="https://www.linkedin.com/in/nilsliu/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 text-sm text-muted-foreground transition-colors hover:text-foreground">
                                     <Linkedin className="h-4 w-4" /> LinkedIn
-                                </a>
-                                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-3 text-sm text-muted-foreground transition-colors hover:text-foreground">
-                                    <Youtube className="h-4 w-4" /> YouTube
                                 </a>
                             </div>
                         </motion.div>
