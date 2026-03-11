@@ -3,6 +3,7 @@
 // Keyed by post ID. BlogPost.tsx uses this when lang === 'en'.
 
 export const titleEn: Record<string, string> = {
+    "ithome-hello-world-2025": "iThome Hello World 2025: From MCP to Vibe Coding, Four AI Sessions in Action",
     "2025-year-in-review": "2025 Year in Review: The Quiet Power of Steady Progress",
     "devfest-taipei-2025-recap": "DevFest Taipei 2025: Building a Real AI Coaching Platform",
     "ithome-devopsdays-2025": "iThome DevOpsDays 2025: Five AI Agent Behavior Patterns",
@@ -36,6 +37,7 @@ export const titleEn: Record<string, string> = {
 };
 
 export const excerptEn: Record<string, string> = {
+    "ithome-hello-world-2025": "This October at the iThome Hello World Developer Conference, I presented four intensive sessions covering MCP, GraphRAG, Vibe Coding, and Enterprise LLM Guardrails.",
     "2025-year-in-review": "My 2025 AI journey in four numbers: 6, 5, 1, 6. Not because it was glamorous, but because it was grounded. Building GenAI in a bank is like replacing the plumbing in an operating building — the real challenge isn't the model, it's engineering and trust.",
     "devfest-taipei-2025-recap": "At DevFest Taipei 2025 I shared a real production AI coaching platform — multi-agent collaboration, Persona World, Ontology + GraphRAG, delivering 24/7 personalized sales training.",
     "ithome-devopsdays-2025": "This is the year of AI Agents. Join me at DevOpsDays on June 5–6 for a session on five agent behavior patterns and building the future DevOps ecosystem with AI.",
@@ -69,6 +71,36 @@ export const excerptEn: Record<string, string> = {
 };
 
 export const postsEn: Record<string, string> = {
+
+"ithome-hello-world-2025": `At this year's iThome Hello World 2025 Dev Conference, I delivered four back-to-back sessions focused entirely on the practical realities of putting AI into production. This wasn't just about sharing knowledge; it was a distillation of the hard-learned lessons our team gathered while deploying LLMs in the banking sector.
+
+Rather than pitching grand visions of the AI future, these four sessions zeroed in on how to build AI systems that are stable, deep, and secure. Here's a quick recap of the sessions:
+
+## 1. The MCP Major League: Building AI-Driven Data Integration and Early Prompting
+*(Oct 14, 2025 | 11:00 - 12:30)*
+
+The Model Context Protocol (MCP) is redefining how AI Agents connect with external systems. In this session, we explored how to leverage MCP to build a standardized toolchain, allowing LLMs to securely and efficiently call internal enterprise data APIs, while using Early Prompting mechanisms to guide the agent's decision pathways.
+
+## 2. Making Memories "Flock Together": Using GraphRAG for Customized AI Customer Service
+*(Oct 14, 2025 | 15:25 - 15:55)*
+
+Traditional RAG often falls short when faced with cross-dimensional, multi-hop reasoning questions. We shared our hands-on experience of upgrading from flat-text RAG to a knowledge graph architecture (Ontology + GraphRAG). By letting data structure itself into relational clusters, the customized AI can answer not just isolated queries, but demonstrate contextual memory and deep understanding.
+
+## 3. Five Interns, One Assembly Line: Vibe Coding Practical Workshop
+*(Oct 15, 2025 | 09:00 - 10:30)*
+
+How do you lead newcomers with zero experience to quickly build functional AI prototypes? In this 90-minute hands-on workshop, I walked the audience through the agile "Vibe Coding" paradigm. We demonstrated how to use tools like Cursor, Claude, or Gemini to seamlessly bridge prompting and coding, elevating the productivity of five people to that of a full development squad.
+
+## 4. Enterprise-Grade LLM Guardrails and Prompt Hardening
+*(Oct 15, 2025 | 14:10 - 14:55)*
+
+In the financial industry, security and compliance are non-negotiable. This session tackled the hardest battles in LLM defense — from preventing Prompt Injections to implementing enterprise-grade Guardrails. We explored how to use Prompt Hardening to strengthen the model's inherent resistance, and how to build external validation layers to ensure stable, compliant AI outputs.
+
+---
+
+If you're interested in the slides or the technical deep-dives from these sessions, feel free to check out the official speaker page or reach out for a discussion!
+
+[👉 View Full Agenda and Speaker Details (iThome Hello World 2025)](https://hwdc.ithome.com.tw/2025/speaker-page/1582)`,
 
 "2025-year-in-review": `My 2025 AI journey boils down to four numbers: 6, 5, 1, 6.
 
