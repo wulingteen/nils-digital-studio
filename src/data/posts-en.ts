@@ -3,6 +3,7 @@
 // Keyed by post ID. BlogPost.tsx uses this when lang === 'en'.
 
 export const titleEn: Record<string, string> = {
+    "2025-year-in-review": "2025 Year in Review: The Quiet Power of Steady Progress",
     "devfest-taipei-2025-recap": "DevFest Taipei 2025: Building a Real AI Coaching Platform",
     "ithome-devopsdays-2025": "iThome DevOpsDays 2025: Five AI Agent Behavior Patterns",
     "nvidia-gtc-2025-ai-weekly": "AI Weekly: Nvidia GTC 2025, xAI Infrastructure Fund & Deloitte's Engineering Mindset",
@@ -35,6 +36,7 @@ export const titleEn: Record<string, string> = {
 };
 
 export const excerptEn: Record<string, string> = {
+    "2025-year-in-review": "My 2025 AI journey in four numbers: 6, 5, 1, 6. Not because it was glamorous, but because it was grounded. Building GenAI in a bank is like replacing the plumbing in an operating building — the real challenge isn't the model, it's engineering and trust.",
     "devfest-taipei-2025-recap": "At DevFest Taipei 2025 I shared a real production AI coaching platform — multi-agent collaboration, Persona World, Ontology + GraphRAG, delivering 24/7 personalized sales training.",
     "ithome-devopsdays-2025": "This is the year of AI Agents. Join me at DevOpsDays on June 5–6 for a session on five agent behavior patterns and building the future DevOps ecosystem with AI.",
     "nvidia-gtc-2025-ai-weekly": "Nvidia acquires Gretel for synthetic data, xAI & Nvidia join a $30B AI infrastructure fund, Deloitte pivots to engineering-first thinking.",
@@ -67,6 +69,65 @@ export const excerptEn: Record<string, string> = {
 };
 
 export const postsEn: Record<string, string> = {
+
+"2025-year-in-review": `My 2025 AI journey boils down to four numbers: 6, 5, 1, 6.
+
+6 utility patents granted, 5 invention patents pending, 1 conference paper submission, and 6 speaking engagements — 1 DevOpsDay, 4 iThome Hello Worlds, and 1 Google DevFest Taipei.
+
+For me, 2025 is a year worth reviewing — not because it was incredibly glamorous, but because it felt incredibly grounded. It was like finishing a little bit every day, and only when I looked back did I realize: *wow, I've walked this far.*
+
+## GenAI in Banking: Replacing Plumbing in an Operating Building
+
+I've always felt that deploying GenAI in a bank is somewhat like replacing the plumbing in a building that's still fully operational.
+
+You can't cut the water or power, you can't disturb the tenants, and you absolutely cannot let anyone feel like "this modification is dangerous." Because of that, the truly difficult part is rarely the model itself. The real difficulties are engineering, workflows, governance, boundary setting, accountability, and a massive pile of unromantic but critically important details.
+
+In 2025, I became even more certain of what I love doing: taking AI — which often seems "mystical" — and turning it into a capability that can be verified, trusted, and operated long-term.
+
+## Patents: A Process of Forcing Honesty
+
+The patent process is similar.
+
+Getting 6 utility patents with 5 invention patents pending isn't just about collecting certificates for me. It functions more like a mechanism to force honesty upon myself:
+- What problem did you *actually* solve?
+- Where are the boundaries of your proposed method?
+- Can you articulate the value in a language that others can read and verify?
+
+Every time I finish writing one, it feels like I've just gone through a brutal code review — except the reviewer isn't a colleague, it's the world.
+
+Then there's the conference paper submission, which held a lot of symbolism for me. It wasn't just about throwing an idea out there; it was about putting myself in an arena where I would be challenged and corrected.
+
+I know very well: if I don't write it down, it will forever remain a "I feel like..." thought. But once it's written, it becomes something that can be debated, improved, or even overturned.
+
+Strangely, I actually enjoy that uncertainty — because it means I'm still learning, still growing.
+
+## Speaking & Sharing: An Arena for Self-Verification
+
+As for speaking, I really did a lot in 2025:
+- DevOpsDay (1 session)
+- iThome Hello World (4 sessions)
+- Google DevFest Taipei (1 session)
+
+I get nervous before every time I take the stage. But the nerves aren't about speaking poorly; they're about sounding too much like a slogan, too much like "AI is amazing, everyone get on board." I prefer to talk about reality: the truly difficult part of adopting GenAI in an enterprise is almost always how you make it controllable, traceable, maintainable, and verifiable.
+
+The more you speak, the more you realize that being able to explain something clearly is a form of self-verification. The parts you can't explain clearly are the parts you haven't fully thought through yourself.
+
+## 2026: Run, don't walk!
+
+What I learned in 2025 wasn't how to be faster, but how to be steadier.
+
+It is too easy to be dragged along by speed in this era. But I increasingly believe: **what truly holds long-term value is quiet, solid execution** — making systems stable, clarifying workflows, designing for risk, and putting people before technology.
+
+These things aren't flashy to build, but once they're done, they foster a very reliable kind of confidence.
+
+If you are doing the same thing — turning technology into something that helps people in an environment with high constraints and heavy responsibilities — I want to tell you that you're already doing something incredibly difficult. You don't need to move the whole mountain at once; you just need to push a little bit more every day. Those seemingly small accumulations will ultimately become your most reliable weapons.
+
+Thank you, 2025. And thank you to the great partners who worked alongside me and were willing to exchange ideas along the way.
+
+In 2026, I will keep running.
+> *Run, don’t walk! Either you’re running for food, or you’re running from being food.*
+
+#YearInReview #GenAI #Patents #Research #DevOpsDay #HelloWorld #DevFestTaipei #AIGovernance #Productization`,
 
 "devfest-taipei-2025-recap": `Late last year I took the stage at DevFest Taipei 2025 to share something we've actually shipped — a 24/7 AI coaching platform for overseas sales agents. Not a demo. A real system running in production.
 
