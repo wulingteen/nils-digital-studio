@@ -108,7 +108,7 @@ const BlogPost = () => {
                 </script>
             </Helmet>
             <article className="min-h-screen pb-20 pt-32">
-                <div className="container-narrow mx-auto max-w-3xl">
+                <div className="container-narrow mx-auto max-w-3xl px-6 md:px-8">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}

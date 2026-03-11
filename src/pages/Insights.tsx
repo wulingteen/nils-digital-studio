@@ -42,7 +42,7 @@ const Insights = () => {
         </script>
       </Helmet>
       <section className="section-padding min-h-screen pt-32">
-        <div className="container-narrow">
+        <div className="container-narrow px-6 md:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
