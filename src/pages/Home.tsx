@@ -143,60 +143,39 @@ const Home = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="mb-12 flex flex-col md:flex-row md:items-end justify-between gap-6"
+            className="mb-12"
           >
-            <div>
-              <h2 className="mb-3 text-3xl font-bold text-gradient md:text-4xl">{t("patents.title")}</h2>
-              <p className="mb-6 text-muted-foreground max-w-2xl leading-relaxed">
-                {lang === "de" 
-                  ? "Erkunden Sie unsere Patent-Artikelserie, um zu erfahren, wie ich generative KI erfolgreich in Finanzszenarien integriert habe." 
-                  : lang === "zh" 
-                  ? "探索專利系列文章，了解我如何將生成式 AI 落地於金融場景，並成功取得專利核准。" 
-                  : "Explore our patent article series, diving deep into how I've deployed generative AI in finance to successfully secure patents."}
-                {" "}
-                <Link to={`/${lang || "en"}/insights`} className="text-primary hover:text-primary/80 transition-colors font-medium whitespace-nowrap">
-                  {lang === "de" ? "Patente lesen →" : lang === "zh" ? "閱讀專利文章 →" : "Read Patent Articles →"}
-                </Link>
-              </p>
-              <div className="inline-flex flex-col gap-1.5 rounded-xl border border-primary/20 bg-background/50 backdrop-blur-sm px-5 py-4 text-sm shadow-sm">
-                <span className="font-semibold text-primary">{t("patents.inventor")}</span>
-                <span className="text-muted-foreground">{t("patents.assignee")}</span>
-              </div>
+            <h2 className="mb-3 text-3xl font-bold text-gradient md:text-4xl">{t("patents.title")}</h2>
+            <p className="mb-6 text-muted-foreground">{t("patents.sub")}</p>
+            <div className="inline-flex flex-col gap-1.5 rounded-xl border border-primary/20 bg-background/50 backdrop-blur-sm px-5 py-4 text-sm shadow-sm">
+              <span className="font-semibold text-primary">{t("patents.inventor")}</span>
+              <span className="text-muted-foreground">{t("patents.assignee")}</span>
             </div>
           </motion.div>
 
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="flex flex-col gap-4">
             {patents.map((post, i) => (
               <motion.div
                 key={post.id}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: i * 0.1 }}
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ delay: i * 0.08 }}
                 viewport={{ once: true }}
-                className="h-full flex flex-col"
               >
                 <Link
                   to={`/${lang || "en"}/insights/${post.id}`}
-                  className="group flex h-full flex-col overflow-hidden rounded-xl border border-border bg-card transition-all hover:border-primary/50 hover:shadow-[0_0_30px_rgba(200,160,80,0.15)]"
+                  className="group flex items-start gap-4 rounded-xl border border-border bg-card px-5 py-4 transition-all hover:border-primary/50 hover:shadow-[0_0_20px_rgba(200,160,80,0.1)]"
                 >
-                  <div className="aspect-video overflow-hidden bg-secondary flex-shrink-0">
-                    <img
-                      src={post.coverImage}
-                      alt={lang === "de" ? (titleDe[post.id] || post.title) : lang === "en" ? (titleEn[post.id] || post.title) : post.title}
-                      className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
-                  </div>
-                  <div className="p-6 flex flex-col flex-grow">
-                    <h3 className="mb-3 line-clamp-2 text-lg font-bold text-foreground group-hover:text-primary transition-colors">
+                  <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-primary/10 text-xs font-bold text-primary">{i + 1}</span>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-base font-bold text-foreground group-hover:text-primary transition-colors line-clamp-1 md:line-clamp-none">
                       {lang === "de" ? (titleDe[post.id] || post.title) : lang === "en" ? (titleEn[post.id] || post.title) : post.title}
                     </h3>
-                    <p className="mb-4 line-clamp-3 text-sm text-muted-foreground flex-grow">
+                    <p className="mt-1 text-sm text-muted-foreground line-clamp-1">
                       {lang === "de" ? (excerptDe[post.id] || post.excerpt) : lang === "en" ? (excerptEn[post.id] || post.excerpt) : post.excerpt}
                     </p>
-                    <div className="mt-auto flex items-center gap-2 text-sm font-medium text-primary">
-                      {t("patents.read_more")} <ArrowRight className="h-4 w-4" />
-                    </div>
                   </div>
+                  <ArrowRight className="mt-1 h-4 w-4 shrink-0 text-primary opacity-0 transition-all group-hover:opacity-100 group-hover:translate-x-1" />
                 </Link>
               </motion.div>
             ))}

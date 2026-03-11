@@ -1136,6 +1136,7 @@ In a 2017 interview, Kobe Bryant was asked about his views on Elon Musk. Kobe sh
 
 Frieren once said, "Magic is a world of imagination. If you can't imagine something, your magic can't make it real." To me, Transformers and generative AI are precisely that kind of magic.`
     },
+
     {
         id: "ai-team-recruitment-genai",
         tags: ["Career"],

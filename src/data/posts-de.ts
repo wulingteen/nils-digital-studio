@@ -35,7 +35,6 @@ export const titleDe: Record<string, string> = {
     "stargate-ai-infrastructure": "Stargate: Ein Serverzentrum-Projekt im 24-Stunden-Schichtbetrieb",
     "google-io-one-for-all": "The Winner Takes It All: Highlights der Google-Keynote",
     "kobe-imagination-ai-magic": "Kobe über Vorstellungskraft: Transformers und generative KI als Magie",
-
     "ai-team-recruitment-genai": "Werden Sie Teil unseres Teams: Gemeinsam KI-Szenarien gestalten",
     "genai-tech-interview-revolution": "Generative KI treibt die Revolution bei technischen Vorstellungsgesprächen an",
     "openai-devday-2024": "OpenAI DevDay 2024: Eine technologische Revolution für Entwickler"
@@ -74,7 +73,6 @@ export const excerptDe: Record<string, string> = {
     "stargate-ai-infrastructure": "Das Stargate ist nun ein 24-Stunden-Schichtprojekt für ein Serverzentrum. Wenn die Amerikaner anfangen, 24/7 zu kämpfen, weiß man, dies ist ein Krieg, den sie nicht verlieren dürfen.",
     "google-io-one-for-all": "Die Google-Keynote war eine dichte Abfolge von Produktankündigungen, die deren Haltung zeigte. Im Vergleich zur Geschwindigkeit neuer Funktionen ist OpenAI immer noch ein kleines Unternehmen.",
     "kobe-imagination-ai-magic": "Elon glaubt, Fantasie sei nach dem Erlernen von Wissen das Wichtigste. Frieren sagt, Magie sei die Welt der Vorstellung – Transformers und GenAI sind diese Magie.",
-
     "ai-team-recruitment-genai": "Unser Financial AI Technology Team sucht leidenschaftliche Experten für DevOps und Data Science, um gemeinsam GenAI-Anwendungen zu entwickeln und umzusetzen.",
     "genai-tech-interview-revolution": "Die Kandidaten müssen innerhalb von 60 Minuten mit LLMs und Frontend-Entwicklung eine statische Website fertigstellen, wodurch der Fokus vom 'Wissensgedächtnis' zur 'Werkzeuganwendung' wechselt.",
     "openai-devday-2024": "OpenAI zeigte vier große Innovationen: Vision Fine-Tuning, Realtime API, Model Distillation und Prompt Caching, wodurch mehr Kontrolle in die Hände der Entwickler gelegt wird."
@@ -698,6 +696,7 @@ Frieren sagte einmal: "Magie ist die Welt der Vorstellung. Was du dir nicht vors
 
 Ich glaube wirklich, dass Transformers und generative KI genau diese Art von Magie sind. Ihre Nützlichkeit ist einzig durch die Vorstellungskraft des Nutzers begrenzt.
 https://www.youtube.com/watch?v=jSVdxhTEJP4`,
+
 
 "ai-team-recruitment-genai": `### Stellenangebot: GenAI Team
 

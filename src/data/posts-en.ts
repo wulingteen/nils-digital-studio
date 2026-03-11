@@ -35,7 +35,6 @@ export const titleEn: Record<string, string> = {
     "stargate-ai-infrastructure": "Stargate: The AI Server Center Running 24/7 Shifts",
     "google-io-one-for-all": "One for All, Winner Takes All: Google I/O Highlights",
     "kobe-imagination-ai-magic": "Kobe on Imagination: Why Transformers & GenAI Are That Kind of Magic",
-
     "ai-team-recruitment-genai": "Join the Team: Let's Create AI Use Cases Together",
     "genai-tech-interview-revolution": "How Generative AI Is Reinventing the Technical Interview",
     "openai-devday-2024": "OpenAI DevDay 2024: A Technical Revolution for Developers",
@@ -74,7 +73,6 @@ export const excerptEn: Record<string, string> = {
     "stargate-ai-infrastructure": "Stargate is a 24/7 round-the-clock server construction project. When Americans start running shifts like this, you know this is a race they don't intend to lose.",
     "google-io-one-for-all": "Relentless. Product after product, packed into 32 minutes. Google I/O felt less like a keynote and more like being underwater with no room to breathe.",
     "kobe-imagination-ai-magic": "Elon told Kobe: imagination matters more than knowledge. Frieren said magic is a world of imagination. To me, Transformers and generative AI are exactly that kind of magic.",
-
     "ai-team-recruitment-genai": "Our financial AI team is looking for DevOps and data science professionals passionate about deploying generative AI applications in real production environments.",
     "genai-tech-interview-revolution": "We challenged intern candidates to build a static website combining LLM and front-end skills in 60 minutes. The results changed how I think about what a hiring process should test.",
     "openai-devday-2024": "OpenAI showcased four major innovations: Vision Fine-Tuning, Realtime API, Model Distillation, and Prompt Caching — handing more creative control to developers than ever before.",
@@ -917,6 +915,7 @@ Frieren once said: *"Magic is a world of imagination. If you can't imagine somet
 To me, Transformers and generative AI are precisely that kind of magic.
 
 https://www.youtube.com/watch?v=jSVdxhTEJP4`,
+
 
 "ai-team-recruitment-genai": `We're actively looking for people who want to create AI applications — not just work on them.
 
