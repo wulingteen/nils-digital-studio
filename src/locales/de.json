@@ -77,6 +77,28 @@
             "desc": "AI sammelt Informationen, fasst mit Quellenangaben zusammen und exportiert oder versendet den Bericht per E-Mail."
           }
         ]
+      },
+      {
+        "video_title": "Versicherungsleben — Into the Mist (Kollab: Yen-Min Chiu)",
+        "video_desc": "Ein Lebenssimulationssystem zur Visualisierung von Risikomanagement und Finanzplanung. Es verknüpft unerwartete Lebensereignisse mit realer Versicherungslogik.",
+        "features": [
+          {
+            "title": "Risiko-Visualisierung",
+            "desc": "Warnt vorab vor Lebensereignissen (wie Unfällen oder Krankheiten), damit Spieler Schutznetze planen können."
+          },
+          {
+            "title": "Versicherungsmathematische Abbildung",
+            "desc": "Ordnet unerwartete Ereignisse dynamisch realen Gesundheits- und Versicherungsleistungen zu."
+          },
+          {
+            "title": "Dynamische Alters-Engine",
+            "desc": "Simuliert präzise veränderte Einnahmen, familiäre Verantwortung und Risikowahrscheinlichkeiten im Laufe der Zeit."
+          },
+          {
+            "title": "Interaktive finanzielle Bildung",
+            "desc": "Baut Fachjargon ab und bietet ein interaktives Erlebnis, das Aufklärung mit echter Anspruchslogik verbindet."
+          }
+        ]
       }
     ]
   },

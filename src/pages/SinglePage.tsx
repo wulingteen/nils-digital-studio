@@ -123,9 +123,14 @@ const SinglePage = () => {
                         <motion.h1 variants={fadeUp} className="mb-6 sm:mb-8 text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[1.08] tracking-tight text-gradient break-words">
                             {t("hero.headline2")}
                         </motion.h1>
-                        <motion.p variants={fadeUp} className="mb-10 sm:mb-14 max-w-lg text-base sm:text-lg text-muted-foreground leading-relaxed">
+                        <motion.p variants={fadeUp} className="mb-8 max-w-lg text-base sm:text-lg text-muted-foreground leading-relaxed">
                             {t("hero.sub")}
                         </motion.p>
+                        <motion.div variants={fadeUp} className="mb-10 sm:mb-14 max-w-lg border-l-2 border-primary/30 pl-4 py-1">
+                            <p className="text-sm sm:text-base text-foreground/80 leading-relaxed font-medium">
+                                {t("about.bio")}
+                            </p>
+                        </motion.div>
                         <motion.div variants={fadeUp} className="flex flex-wrap gap-4">
                             <a
                                 href="#contact"
@@ -185,10 +190,11 @@ const SinglePage = () => {
                     </motion.div>
 
                     {(t("demos.items", { returnObjects: true }) as { video_title: string; video_desc: string; features: { title: string; desc: string }[] }[]).map((item, idx) => {
-                        const videoIds = ["JIEdLStSAzs", "f6VQxvXim-c"];
+                        const videoIds = ["JIEdLStSAzs", "f6VQxvXim-c", "qNg3ThoFShI"];
                         const iconSets = [
                             [Bot, ScanSearch, FileBarChart, ShieldCheck],
                             [Users, Globe, MessageSquare, FileOutput],
+                            [Target, FileBarChart, Clock, Users],
                         ];
                         const icons = iconSets[idx] || iconSets[0];
                         const isEven = idx % 2 === 0;

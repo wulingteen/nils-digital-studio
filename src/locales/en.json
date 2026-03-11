@@ -77,6 +77,28 @@
             "desc": "AI collects info, summarizes with sources attached, and exports or emails the final report."
           }
         ]
+      },
+      {
+        "video_title": "Insurance Life — Into the Mist (Collab: Yen-Min Chiu)",
+        "video_desc": "A life simulation system that visualizes risk management and financial planning, mapping life's unexpected events to actual insurance claim logic.",
+        "features": [
+          {
+            "title": "Risk Visualization",
+            "desc": "Pre-warns of life events (like accidents or illness) so players can plan their safety nets in advance."
+          },
+          {
+            "title": "Actuarial Mapping",
+            "desc": "Dynamically maps unexpected events to real-world healthcare and insurance payout results."
+          },
+          {
+            "title": "Dynamic Age Engine",
+            "desc": "Accurately simulates changing income, family responsibilities, and risk probabilities over time."
+          },
+          {
+            "title": "Interactive Financial Education",
+            "desc": "Breaks down jargon barriers to provide an interactive experience with real-world claim logic."
+          }
+        ]
       }
     ]
   },
