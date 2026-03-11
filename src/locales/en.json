@@ -9,7 +9,8 @@
   },
   "hero": {
     "headline1": "I make GenAI",
-    "headline2": "AI Agents operational.",
+    "headline2": "AI Agents",
+    "headline3": "operational.",
     "sub": "From prototype to production in regulated enterprises — governance, observability, and cost under control.",
     "cta_book": "Book a Call",
     "cta_email": "Email",
@@ -97,6 +98,28 @@
           {
             "title": "Interactive Financial Education",
             "desc": "Breaks down jargon barriers to provide an interactive experience with real-world claim logic."
+          }
+        ]
+      },
+      {
+        "video_title": "AI Interview Assistant — Live Google Meet Participant",
+        "video_desc": "An AI Agent that joins Google Meet as a named participant, providing real-time interview support and automated meeting documentation.",
+        "features": [
+          {
+            "title": "Live Meeting Participation",
+            "desc": "AI joins Google Meet directly as a named participant — no plugins or screen capture needed."
+          },
+          {
+            "title": "Interview Workflow Support",
+            "desc": "Assists interviewers in real-time with structured scoring and summary feedback on candidates."
+          },
+          {
+            "title": "Auto Meeting Minutes",
+            "desc": "Automatically records the full conversation and generates exportable structured meeting summaries."
+          },
+          {
+            "title": "Multi-Interviewer Integration",
+            "desc": "Supports multiple interviewers simultaneously, synthesizing different perspectives and evaluations."
           }
         ]
       }

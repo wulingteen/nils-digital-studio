@@ -9,7 +9,8 @@
   },
   "hero": {
     "headline1": "Ich mache GenAI",
-    "headline2": "AI Agents produktionsreif.",
+    "headline2": "AI Agents",
+    "headline3": "produktionsreif.",
     "sub": "Vom Prototyp zur Produktion in regulierten Unternehmen — Governance, Observability und Kostenkontrolle.",
     "cta_book": "Gespräch buchen",
     "cta_email": "E-Mail",
@@ -97,6 +98,28 @@
           {
             "title": "Interaktive finanzielle Bildung",
             "desc": "Baut Fachjargon ab und bietet ein interaktives Erlebnis, das Aufklärung mit echter Anspruchslogik verbindet."
+          }
+        ]
+      },
+      {
+        "video_title": "AI-Interviewassistent — Live-Teilnahme in Google Meet",
+        "video_desc": "Ein AI Agent, der als benannter Teilnehmer an Google Meet teilnimmt und Echtzeit-Interviewunterstützung sowie automatische Meetingdokumentation bietet.",
+        "features": [
+          {
+            "title": "Live-Meeting-Teilnahme",
+            "desc": "AI tritt direkt als benannter Teilnehmer bei Google Meet bei — keine Plugins oder Bildschirmaufnahme nötig."
+          },
+          {
+            "title": "Interview-Workflow-Unterstützung",
+            "desc": "Unterstützt Interviewer in Echtzeit mit strukturierter Bewertung und zusammenfassendem Feedback."
+          },
+          {
+            "title": "Automatisches Meetingprotokoll",
+            "desc": "Zeichnet das gesamte Gespräch automatisch auf und erstellt exportierbare strukturierte Zusammenfassungen."
+          },
+          {
+            "title": "Multi-Interviewer-Integration",
+            "desc": "Unterstützt mehrere Interviewer gleichzeitig und synthetisiert verschiedene Perspektiven und Bewertungen."
           }
         ]
       }

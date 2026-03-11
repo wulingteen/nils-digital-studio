@@ -120,8 +120,11 @@ const SinglePage = () => {
                         <motion.h1 variants={fadeUp} className="mb-1 text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[1.08] tracking-tight text-foreground break-words">
                             {t("hero.headline1")}
                         </motion.h1>
-                        <motion.h1 variants={fadeUp} className="mb-6 sm:mb-8 text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[1.08] tracking-tight text-gradient break-words">
+                        <motion.h1 variants={fadeUp} className="mb-1 text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[1.08] tracking-tight text-gradient break-words">
                             {t("hero.headline2")}
+                        </motion.h1>
+                        <motion.h1 variants={fadeUp} className="mb-6 sm:mb-8 text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[1.08] tracking-tight text-gradient break-words">
+                            {t("hero.headline3")}
                         </motion.h1>
                         <motion.p variants={fadeUp} className="mb-8 max-w-lg text-base sm:text-lg text-muted-foreground leading-relaxed">
                             {t("hero.sub")}
@@ -190,11 +193,12 @@ const SinglePage = () => {
                     </motion.div>
 
                     {(t("demos.items", { returnObjects: true }) as { video_title: string; video_desc: string; features: { title: string; desc: string }[] }[]).map((item, idx) => {
-                        const videoIds = ["JIEdLStSAzs", "f6VQxvXim-c", "qNg3ThoFShI"];
+                        const videoIds = ["JIEdLStSAzs", "f6VQxvXim-c", "qNg3ThoFShI", "S79LP9Ex18g"];
                         const iconSets = [
                             [Bot, ScanSearch, FileBarChart, ShieldCheck],
                             [Users, Globe, MessageSquare, FileOutput],
                             [Target, FileBarChart, Clock, Users],
+                            [Globe, Target, FileOutput, Users],
                         ];
                         const icons = iconSets[idx] || iconSets[0];
                         const isEven = idx % 2 === 0;
