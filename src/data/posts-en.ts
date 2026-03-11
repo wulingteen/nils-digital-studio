@@ -89,9 +89,9 @@ In 2025, I became even more certain of what I love doing: taking AI — which of
 The patent process is similar.
 
 Getting 6 utility patents with 5 invention patents pending isn't just about collecting certificates for me. It functions more like a mechanism to force honesty upon myself:
-- What problem did you *actually* solve?
-- Where are the boundaries of your proposed method?
-- Can you articulate the value in a language that others can read and verify?
+- What problem did I *actually* solve?
+- Where are the boundaries of my proposed method?
+- Can I articulate the value in a language that others can read and verify?
 
 Every time I finish writing one, it feels like I've just gone through a brutal code review — except the reviewer isn't a colleague, it's the world.
 
