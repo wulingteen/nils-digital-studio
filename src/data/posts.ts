@@ -15,6 +15,7 @@ export const blogPosts: BlogPost[] = [
         excerpt: "今年我在 iThome Hello World 開發者大會帶來四場密集的 AI 實戰分享，從 MCP 生態系、GraphRAG 到企業級 LLM 防禦機制，探討大型語言模型落地企業的核心技術。",
         date: "2025-10-20",
         author: "Nils Liu",
+        coverImage: "/images/blog/ithome-hello-world-2025.png",
         content: `在今年的 iThome Hello World 2025 開發者大會上，我一口氣帶來了四場跟 AI 實戰高度相關的議程。這不僅僅是知識的分享，更是我們團隊在銀行內部推動 LLM 落地過程中的血汗經驗總結。
 
 相較於談論 AI 的未來願景，這次的四場分享，我更專注於「怎麼把 AI 系統做穩、做深、做得安全」。以下是四場議程的精華回顧：
