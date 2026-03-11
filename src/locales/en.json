@@ -150,7 +150,7 @@
       },
       {
         "title": "Narrator — GenAI Risk Analytics",
-        "client": "Synpulse × Bank Client",
+        "client": "Swiss Financial Consulting Firm × Bank Client",
         "tags": [
           "GenAI",
           "Risk Analytics",
@@ -163,7 +163,7 @@
       },
       {
         "title": "Production Automation & ML Enablement",
-        "client": "DBS Bank",
+        "client": "Singapore-based Bank",
         "tags": [
           "Python Automation",
           "ML Training",
@@ -178,7 +178,7 @@
   },
   "about": {
     "page_title": "About",
-    "bio": "I'm Nils (劉岦崱) — a GenAI Solution Architect and builder at a leading financial holding company in Taiwan. I architect and ship production GenAI systems in regulated environments. Previously, I consulted at Synpulse (global financial services consulting) and served as a Management Associate at DBS Bank. I follow a Software 3.0 / generalization-first approach: reusable capabilities, standardized interfaces, and measurable evaluation loops over one-off prompt customization.",
+    "bio": "I'm Nils (劉岦崱) — a GenAI Solution Architect and builder at a leading financial holding company in Taiwan. I architect and ship production GenAI systems in regulated environments. Previously, I consulted at a Swiss financial consulting firm and served as a Management Associate at a Singapore-based bank. I follow a Software 3.0 / generalization-first approach: reusable capabilities, standardized interfaces, and measurable evaluation loops over one-off prompt customization.",
     "principles_title": "Principles",
     "principles": [
       {
