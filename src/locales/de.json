@@ -226,29 +226,29 @@
     "title": "Globaler Werdegang",
     "journey": [
       {
-        "age": "22",
-        "title": "Abschluss an der NTU",
-        "desc": "Bachelor-Abschluss an der National Taiwan University, Grundstein für die technologische Laufbahn."
+        "age": "2006–2010",
+        "title": "NTU — B.Sc. Chemie",
+        "desc": "Abschluss an der National Taiwan University mit einer soliden naturwissenschaftlichen Grundlage."
       },
       {
-        "age": "23",
-        "title": "Umzug nach Deutschland",
-        "desc": "Beginn der internationalen Karriere und interkulturellen beruflichen Entwicklung."
+        "age": "2012–2015",
+        "title": "TU Chemnitz — M.Sc. Chemie",
+        "desc": "Masterstudium in Deutschland mit internationaler akademischer und interkultureller Erfahrung."
       },
       {
-        "age": "7 Jahre",
-        "title": "Erfahrung in Deutschland",
-        "desc": "Tätigkeit als Senior Data Scientist in internationaler Beratung und Startups."
+        "age": "2019–2022",
+        "title": "DBS Bank — MA → DevOps Sr. Associate",
+        "desc": "Einstieg über das Management Associate Programm. Leitung von Python-Automatisierung und ML-Enablement für 200+ Mitarbeiter."
       },
       {
-        "age": "1 Jahr",
-        "title": "Erfahrung in den Niederlanden",
-        "desc": "Erweiterung der europäischen Präsenz durch Unterstützung internationaler Bankengruppen."
+        "age": "2023–2024",
+        "title": "Synpulse — Banking-Technologie-Berater",
+        "desc": "Beratung bei einem Schweizer Finanzdienstleister; Entwicklung des GenAI-Risikoanalysemoduls 'Narrator'."
       },
       {
-        "age": "31",
-        "title": "Rückkehr nach Taiwan",
-        "desc": "Rückkehr mit internationaler KI-Architektur-Expertise, um lokale Innovationen voranzutreiben."
+        "age": "2024–Heute",
+        "title": "Cathay United Bank — GenAI Architekt",
+        "desc": "Hauptarchitekt von CathayGPT, der ersten produktiven GenAI-Anwendung der Bank. Aufbau einer KI-Agent-Plattform. 6 erteilte Patente."
       }
     ]
   },

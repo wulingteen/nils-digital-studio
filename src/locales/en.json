@@ -225,29 +225,29 @@
     "title": "Global Trajectory",
     "journey": [
       {
-        "age": "22",
-        "title": "Graduated from NTU",
-        "desc": "Completed Bachelor's degree at National Taiwan University, laying the technical foundation."
+        "age": "2006–2010",
+        "title": "NTU — B.Sc. Chemistry",
+        "desc": "Graduated from National Taiwan University, building a rigorous scientific foundation."
       },
       {
-        "age": "23",
-        "title": "Relocated to Germany",
-        "desc": "Began international career and cross-cultural professional development."
+        "age": "2012–2015",
+        "title": "TU Chemnitz — M.Sc. Chemistry",
+        "desc": "Pursued a Master's degree in Germany, gaining international academic and cross-cultural experience."
       },
       {
-        "age": "7 Years",
-        "title": "Experience in Germany",
-        "desc": "Worked as a Senior Data Scientist in international consulting and startups."
+        "age": "2019–2022",
+        "title": "DBS Bank — MA → DevOps Sr. Associate",
+        "desc": "Joined via Management Associate program. Led Python automation and ML enablement for 200+ staff."
       },
       {
-        "age": "1 Year",
-        "title": "Experience in the Netherlands",
-        "desc": "Expanded European footprint assisting international banking groups."
+        "age": "2023–2024",
+        "title": "Synpulse — Banking Tech Consultant",
+        "desc": "Consulted at a Swiss financial advisory firm; built the GenAI risk analytics module 'Narrator'."
       },
       {
-        "age": "31",
-        "title": "Returned to Taiwan",
-        "desc": "Brought international AI architecture expertise back to drive local innovation."
+        "age": "2024–Now",
+        "title": "Cathay United Bank — GenAI Architect",
+        "desc": "Lead architect of CathayGPT, the bank's first production GenAI app. Built overseas AI Agent platform. 6 patents granted."
       }
     ]
   },

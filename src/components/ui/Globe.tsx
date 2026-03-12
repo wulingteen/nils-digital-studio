@@ -45,10 +45,9 @@ export const Globe = ({ className }: { className?: string }) => {
       markerColor: [0.78, 0.63, 0.31], // Primary Gold color from the theme
       glowColor: [0.1, 0.1, 0.1], // Fades into the dark background
       markers: [
-        // longitude, latitude, size
+        // [latitude, longitude], size
         { location: [25.0330, 121.5654], size: 0.1 },     // Taipei, Taiwan
-        { location: [52.5200, 13.4050], size: 0.08 },     // Berlin, Germany
-        { location: [52.3676, 4.9041], size: 0.08 },      // Amsterdam, Netherlands
+        { location: [50.8278, 12.9214], size: 0.08 },     // Chemnitz, Germany
       ],
       onRender: (state) => {
         // We handle interactive dragging via the spring, while auto-rotating slowly otherwise.
