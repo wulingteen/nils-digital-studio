@@ -756,6 +756,7 @@ Prompt 也需要版本控制。我們用 Git 管理所有 prompt 模板，每次
 *這是「GenAI 產品實戰筆記」系列的最終篇。*`
     },
 
+    {
         id: "patent-knowledge-graph",
         tags: ["Patent","GenAI","Architecture"],
         title: "【專利六】從 GenAI Product Owner 視角打造知識圖譜系統：我的第一個 AI 專利怎麼來的？",
