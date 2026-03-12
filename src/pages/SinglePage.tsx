@@ -213,29 +213,34 @@ const SinglePage = () => {
                             </motion.div>
 
                             <div className="relative border-l border-primary/20 pl-8 ml-4 space-y-12">
-                                {(t("career.journey", { returnObjects: true }) as { age: string; title: string; desc: string }[]).map((step, idx) => (
-                                    <motion.div
-                                        key={idx}
-                                        initial={{ opacity: 0, x: -20 }}
-                                        whileInView={{ opacity: 1, x: 0 }}
-                                        transition={{ duration: 0.5, delay: idx * 0.15 }}
-                                        viewport={{ once: true, margin: "-50px" }}
-                                        className="relative group"
-                                    >
-                                        {/* Timeline Node */}
-                                        <div className="absolute -left-[41px] top-1 h-4 w-4 rounded-full border-2 border-primary bg-background shadow-[0_0_10px_rgba(200,160,80,0.5)] group-hover:scale-125 group-hover:bg-primary transition-all duration-300" />
-                                        
-                                        <span className="text-sm font-bold text-primary mb-1 block tracking-wider uppercase">
-                                            {step.age}
-                                        </span>
-                                        <h3 className="text-xl font-semibold text-foreground mb-2">
-                                            {step.title}
-                                        </h3>
-                                        <p className="text-muted-foreground leading-relaxed">
-                                            {step.desc}
-                                        </p>
-                                    </motion.div>
-                                ))}
+                                {(() => {
+                                    const journeyData = t("career.journey", { returnObjects: true });
+                                    const safeJourney = Array.isArray(journeyData) ? journeyData : [];
+                                    
+                                    return (safeJourney as { age: string; title: string; desc: string }[]).map((step, idx) => (
+                                        <motion.div
+                                            key={idx}
+                                            initial={{ opacity: 0, x: -20 }}
+                                            whileInView={{ opacity: 1, x: 0 }}
+                                            transition={{ duration: 0.5, delay: idx * 0.15 }}
+                                            viewport={{ once: true, margin: "-50px" }}
+                                            className="relative group"
+                                        >
+                                            {/* Timeline Node */}
+                                            <div className="absolute -left-[41px] top-1 h-4 w-4 rounded-full border-2 border-primary bg-background shadow-[0_0_10px_rgba(200,160,80,0.5)] group-hover:scale-125 group-hover:bg-primary transition-all duration-300" />
+                                            
+                                            <span className="text-sm font-bold text-primary mb-1 block tracking-wider uppercase">
+                                                {step.age}
+                                            </span>
+                                            <h3 className="text-xl font-semibold text-foreground mb-2">
+                                                {step.title}
+                                            </h3>
+                                            <p className="text-muted-foreground leading-relaxed">
+                                                {step.desc}
+                                            </p>
+                                        </motion.div>
+                                    ));
+                                })()}
                             </div>
                         </div>
 

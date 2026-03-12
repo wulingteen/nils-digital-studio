@@ -221,6 +221,36 @@
       }
     ]
   },
+  "career": {
+    "title": "Global Trajectory",
+    "journey": [
+      {
+        "age": "22",
+        "title": "Graduated from NTU",
+        "desc": "Completed Bachelor's degree at National Taiwan University, laying the technical foundation."
+      },
+      {
+        "age": "23",
+        "title": "Relocated to Germany",
+        "desc": "Began international career and cross-cultural professional development."
+      },
+      {
+        "age": "7 Years",
+        "title": "Experience in Germany",
+        "desc": "Worked as a Senior Data Scientist in international consulting and startups."
+      },
+      {
+        "age": "1 Year",
+        "title": "Experience in the Netherlands",
+        "desc": "Expanded European footprint assisting international banking groups."
+      },
+      {
+        "age": "31",
+        "title": "Returned to Taiwan",
+        "desc": "Brought international AI architecture expertise back to drive local innovation."
+      }
+    ]
+  },
   "about": {
     "page_title": "About",
     "bio": "I'm Nils (劉岦崱) — a GenAI Solution Architect and builder at a leading financial holding company in Taiwan. I architect and ship production GenAI systems in regulated environments. Previously, I consulted at a Swiss financial consulting firm (global financial services consulting) and served as a Management Associate at a Singapore-headquartered bank. I follow a Software 3.0 / generalization-first approach: reusable capabilities, standardized interfaces, and measurable evaluation loops over one-off prompt customization.",
