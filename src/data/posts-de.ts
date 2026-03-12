@@ -3,6 +3,14 @@
 // Keyed by post ID. BlogPost.tsx uses this when lang === 'de'.
 
 export const titleDe: Record<string, string> = {
+    "ai-pm-daily-work": "Was macht ein AI PM bei einer Bank eigentlich den ganzen Tag?",
+    "ai-pm-feature-to-patent": "Vom Feature zum Patent: GenAI in einer regulierten Bank umsetzen",
+    "ai-pm-banking-10x-harder": "Warum die KI-Einführung im Bankwesen 10x schwieriger ist als gedacht",
+    "ai-pm-vs-traditional-pm": "AI PM vs. Traditioneller PM: Ein vollständiger Skill-Tree-Vergleich",
+    "rag-system-design-banking": "RAG-Systemdesign: 3 Schlüsselentscheidungen für Finanz-Wissensdatenbanken",
+    "enterprise-prompt-engineering": "Prompt Engineering Patterns für Unternehmensszenarien",
+    "genai-roi-metrics": "Wie misst man den ROI von GenAI? Die 4 Kennzahlen, die ich verwende",
+    "ai-agent-product-design-traps": "5 Produktdesign-Fallen beim Bau von KI-Agenten",
     "patent-pii-filter": "[Patent 3] GenAI Compliance-Design: Wie ein Bank-AI-PM 'sensible Informationssubstitution' nutzte, um Leistung & Compliance zu vereinen",
     "patent-multi-agent": "[Patent 2] Wie AI Agents Datenbanken optimieren: Das Architektur-Design eines Multi-Agenten-Systems",
     "patent-wealth-dashboard": "[Patent 1] Wie GenAI die Vermögensverwaltung verändert: Von Bedürfnissen zu Dashboards—Die Reise eines Bank-PMs",
@@ -41,6 +49,14 @@ export const titleDe: Record<string, string> = {
 };
 
 export const excerptDe: Record<string, string> = {
+    "ai-pm-daily-work": "Kein Code, kein Modell-Tuning — was macht ein KI-Produktmanager eigentlich den ganzen Tag? Ein realistischer Tagesablauf eines GenAI PMs im Bankwesen.",
+    "ai-pm-feature-to-patent": "Was durchläuft ein GenAI-Feature von der Idee bis zum Launch und zur Patentanmeldung? Ein vollständiger Erfahrungsbericht eines Bank-KI-PMs.",
+    "ai-pm-banking-10x-harder": "KI in einer Bank einzusetzen bedeutet nicht einfach ein Modell auszuwählen. Compliance, Sicherheit, Data Governance, Organisationskultur — jede Hürde ist schwieriger als die vorherige.",
+    "ai-pm-vs-traditional-pm": "Muss ein AI PM programmieren können? Muss er Mathematik verstehen? Ein vollständiger Skill-Tree-Vergleich zwischen AI PMs und traditionellen PMs.",
+    "rag-system-design-banking": "Ein RAG-System im Bankwesen aufbauen: Wie wählt man Chunk-Strategie, Embedding-Modell und Retrieval-Pipeline? Erfahrungen aus der Produktion.",
+    "enterprise-prompt-engineering": "Enterprise Prompt Engineering ist völlig anders als die persönliche ChatGPT-Nutzung. Strukturierte Templates, Versionskontrolle, Multi-Rollen-Design — Erkenntnisse aus der Praxis.",
+    "genai-roi-metrics": "Wenn Ihr Chef fragt 'Lohnt sich die KI-Investition?', brauchen Sie Zahlen. Hier ist das Vier-Kennzahlen-Framework, das ich zum Nachweis des GenAI-Werts verwende.",
+    "ai-agent-product-design-traps": "KI-Agenten klingen cool, aber der Bau von Agent-Produkten in Unternehmen ist voller Stolperfallen. Hier sind fünf Designfallen, die ich selbst erlebt habe.",
     "patent-pii-filter": "Wie verhindert man bei der Einführung eines KI-Wissensdatenbanksystems in einer Bank Datenlecks, ohne die Antwortqualität zu beeinträchtigen? Dieser Artikel stellt die Patentarchitektur für das Filtern und Ersetzen sensibler Informationen vor.",
     "patent-multi-agent": "Traditionelle DBAs verwalten Datenbanken nach Erfahrung, aber bei hoher Nebenläufigkeit reicht das nicht aus. Dieser Artikel zeigt, wie ein GenAI Product Owner ein auf Multi-Agenten basierendes Optimierungssystem entwarf.",
     "patent-wealth-dashboard": "Was sind die wahren Schmerzpunkte von Kundenberatern? Wie hilft GenAI ihnen, in Echtzeit personalisierte Anlageempfehlungen zu generieren? Dieser Artikel teilt die Reise und das patentierte Denken eines Bank-GenAI-Produktmanagers.",

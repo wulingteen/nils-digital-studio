@@ -24,7 +24,7 @@ const Insights = () => {
         post.tags.forEach(tag => tags.add(tag));
       }
     });
-    const preferredOrder = ["Patent", "GenAI", "Agent", "Architecture", "Career", "Event", "News"];
+    const preferredOrder = ["AI PM 系列", "GenAI 實戰", "Patent", "GenAI", "Agent", "Architecture", "Career", "Event", "News"];
     return preferredOrder.filter(tag => tags.has(tag));
   }, []);
 
