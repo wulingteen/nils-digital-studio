@@ -212,7 +212,7 @@ const SinglePage = () => {
                                 </h2>
                             </motion.div>
 
-                            <div className="relative border-l border-primary/20 pl-8 ml-4 space-y-12">
+                            <div className="relative border-l-2 border-primary/20 pl-8 ml-6 pt-2">
                                 {(() => {
                                     const journeyData = t("career.journey", { returnObjects: true });
                                     const safeJourney = Array.isArray(journeyData) ? journeyData : [];
@@ -222,22 +222,36 @@ const SinglePage = () => {
                                             key={idx}
                                             initial={{ opacity: 0, x: -20 }}
                                             whileInView={{ opacity: 1, x: 0 }}
-                                            transition={{ duration: 0.5, delay: idx * 0.15 }}
+                                            whileHover={{ scale: 1.02 }}
+                                            transition={{ duration: 0.5, delay: idx * 0.1 }}
                                             viewport={{ once: true, margin: "-50px" }}
-                                            className="relative group"
+                                            className="relative group mb-8"
                                         >
-                                            {/* Timeline Node */}
-                                            <div className="absolute -left-[41px] top-1 h-4 w-4 rounded-full border-2 border-primary bg-background shadow-[0_0_10px_rgba(200,160,80,0.5)] group-hover:scale-125 group-hover:bg-primary transition-all duration-300" />
+                                            {/* Timeline Connecting Line Glow (Active on hover) */}
+                                            <div className="absolute -left-[33px] top-0 bottom-[-2rem] w-[2px] bg-gradient-to-b from-primary/0 via-primary/0 to-primary/0 group-hover:from-primary/50 group-hover:via-primary/20 transition-all duration-500" />
                                             
-                                            <span className="text-sm font-bold text-primary mb-1 block tracking-wider uppercase">
-                                                {step.age}
-                                            </span>
-                                            <h3 className="text-xl font-semibold text-foreground mb-2">
-                                                {step.title}
-                                            </h3>
-                                            <p className="text-muted-foreground leading-relaxed">
-                                                {step.desc}
-                                            </p>
+                                            {/* Timeline Node */}
+                                            <div className="absolute -left-[45px] top-5 h-6 w-6 rounded-full border-2 border-primary/50 bg-background shadow-[0_0_15px_rgba(200,160,80,0.2)] flex items-center justify-center group-hover:border-primary group-hover:shadow-[0_0_20px_rgba(200,160,80,0.6)] group-hover:bg-primary/20 transition-all duration-300 z-10">
+                                                <div className="h-2 w-2 rounded-full bg-primary/50 group-hover:bg-primary transition-colors duration-300" />
+                                            </div>
+                                            
+                                            {/* Career Card */}
+                                            <div className="glass-card rounded-xl p-6 border-l-2 border-l-primary/30 transition-all group-hover:border-l-primary group-hover:bg-secondary/40 shadow-sm relative overflow-hidden">
+                                                {/* Subtle background glow on hover */}
+                                                <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                                                
+                                                <div className="relative z-10">
+                                                    <span className="inline-block px-3 py-1 mb-3 text-xs font-bold text-primary bg-primary/10 rounded-full tracking-wider uppercase border border-primary/20">
+                                                        {step.age}
+                                                    </span>
+                                                    <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors duration-300">
+                                                        {step.title}
+                                                    </h3>
+                                                    <p className="text-sm text-muted-foreground leading-relaxed">
+                                                        {step.desc}
+                                                    </p>
+                                                </div>
+                                            </div>
                                         </motion.div>
                                     ));
                                 })()}
