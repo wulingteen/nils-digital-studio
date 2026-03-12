@@ -196,78 +196,61 @@ const SinglePage = () => {
           § CAREER JOURNEY GLOBE SECTION
           ═══════════════════════════════════════════════ */}
             <section className="section-padding border-t border-border relative overflow-hidden bg-background">
+                {/* Globe as Background Decoration — hidden on mobile */}
+                <div className="hidden lg:block absolute -right-[200px] top-1/2 -translate-y-1/2 w-[700px] h-[700px] pointer-events-none opacity-30">
+                    <Globe />
+                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_30%,hsl(var(--background))_65%)]" />
+                </div>
+
                 <div className="container-narrow relative z-10">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
-                        
-                        {/* Right Column (Foreground): The Timeline Timeline */}
-                        <div className="order-2 lg:order-1 flex flex-col justify-center space-y-12">
-                            <motion.div
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.6 }}
-                                viewport={{ once: true, margin: "-50px" }}
-                            >
-                                <h2 className="mb-4 text-3xl font-bold text-gradient md:text-4xl">
-                                    {t("career.title")}
-                                </h2>
-                            </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6 }}
+                        viewport={{ once: true, margin: "-50px" }}
+                        className="mb-10"
+                    >
+                        <h2 className="mb-4 text-3xl font-bold text-gradient md:text-4xl">
+                            {t("career.title")}
+                        </h2>
+                    </motion.div>
 
-                            <div className="relative border-l-2 border-primary/20 pl-8 ml-6 pt-2">
-                                {(() => {
-                                    const journeyData = t("career.journey", { returnObjects: true });
-                                    const safeJourney = Array.isArray(journeyData) ? journeyData : [];
-                                    
-                                    return (safeJourney as { age: string; title: string; desc: string }[]).map((step, idx) => (
-                                        <motion.div
-                                            key={idx}
-                                            initial={{ opacity: 0, x: -20 }}
-                                            whileInView={{ opacity: 1, x: 0 }}
-                                            whileHover={{ scale: 1.02 }}
-                                            transition={{ duration: 0.5, delay: idx * 0.1 }}
-                                            viewport={{ once: true, margin: "-50px" }}
-                                            className="relative group mb-8"
-                                        >
-                                            {/* Timeline Connecting Line Glow (Active on hover) */}
-                                            <div className="absolute -left-[33px] top-0 bottom-[-2rem] w-[2px] bg-gradient-to-b from-primary/0 via-primary/0 to-primary/0 group-hover:from-primary/50 group-hover:via-primary/20 transition-all duration-500" />
-                                            
-                                            {/* Timeline Node */}
-                                            <div className="absolute -left-[45px] top-5 h-6 w-6 rounded-full border-2 border-primary/50 bg-background shadow-[0_0_15px_rgba(200,160,80,0.2)] flex items-center justify-center group-hover:border-primary group-hover:shadow-[0_0_20px_rgba(200,160,80,0.6)] group-hover:bg-primary/20 transition-all duration-300 z-10">
-                                                <div className="h-2 w-2 rounded-full bg-primary/50 group-hover:bg-primary transition-colors duration-300" />
-                                            </div>
-                                            
-                                            {/* Career Card */}
-                                            <div className="glass-card rounded-xl p-6 border-l-2 border-l-primary/30 transition-all group-hover:border-l-primary group-hover:bg-secondary/40 shadow-sm relative overflow-hidden">
-                                                {/* Subtle background glow on hover */}
-                                                <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                                                
-                                                <div className="relative z-10">
-                                                    <span className="inline-block px-3 py-1 mb-3 text-xs font-bold text-primary bg-primary/10 rounded-full tracking-wider uppercase border border-primary/20">
-                                                        {step.age}
-                                                    </span>
-                                                    <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors duration-300">
-                                                        {step.title}
-                                                    </h3>
-                                                    <p className="text-sm text-muted-foreground leading-relaxed">
-                                                        {step.desc}
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </motion.div>
-                                    ));
-                                })()}
-                            </div>
-                        </div>
-
-                        {/* Left Column (Background): The Interactive Globe */}
-                        <div className="order-1 lg:order-2 relative h-[400px] lg:h-[600px] flex items-center justify-center">
-                            {/* We use negative margins and absolute positioning to let the globe bleed out of bounds smoothly */}
-                            <div className="absolute inset-0 scale-125 lg:scale-150 pointer-events-auto">
-                                <Globe />
-                            </div>
-                            {/* Vignette fade over the globe to blend it into the background */}
-                            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_40%,hsl(var(--background))_70%)] pointer-events-none" />
-                        </div>
-
+                    {/* Timeline Grid — 2 columns on desktop, 1 on mobile */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        {(() => {
+                            const journeyData = t("career.journey", { returnObjects: true });
+                            const safeJourney = Array.isArray(journeyData) ? journeyData : [];
+                            
+                            return (safeJourney as { age: string; title: string; desc: string }[]).map((step, idx) => (
+                                <motion.div
+                                    key={idx}
+                                    initial={{ opacity: 0, y: 20 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    whileHover={{ scale: 1.02 }}
+                                    transition={{ duration: 0.5, delay: idx * 0.08 }}
+                                    viewport={{ once: true, margin: "-50px" }}
+                                    className="relative group"
+                                >
+                                    {/* Career Card */}
+                                    <div className="glass-card rounded-xl p-6 h-full border-l-2 border-l-primary/30 transition-all group-hover:border-l-primary group-hover:bg-secondary/40 shadow-sm relative overflow-hidden">
+                                        {/* Subtle background glow on hover */}
+                                        <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                                        
+                                        <div className="relative z-10">
+                                            <span className="inline-block px-3 py-1 mb-3 text-xs font-bold text-primary bg-primary/10 rounded-full tracking-wider uppercase border border-primary/20">
+                                                {step.age}
+                                            </span>
+                                            <h3 className="text-lg font-bold text-foreground mb-2 group-hover:text-primary transition-colors duration-300">
+                                                {step.title}
+                                            </h3>
+                                            <p className="text-sm text-muted-foreground leading-relaxed">
+                                                {step.desc}
+                                            </p>
+                                        </div>
+                                    </div>
+                                </motion.div>
+                            ));
+                        })()}
                     </div>
                 </div>
             </section>
