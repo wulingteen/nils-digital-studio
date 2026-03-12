@@ -197,7 +197,7 @@ const SinglePage = () => {
           ═══════════════════════════════════════════════ */}
             <section className="section-padding border-t border-border relative overflow-hidden bg-background">
                 {/* Globe as Background Decoration — hidden on mobile */}
-                <div className="hidden lg:block absolute -right-[200px] top-1/2 -translate-y-1/2 w-[700px] h-[700px] pointer-events-none opacity-30">
+                <div className="hidden lg:block absolute -right-[200px] top-1/2 -translate-y-1/2 w-[700px] h-[700px] pointer-events-none opacity-20">
                     <Globe />
                     <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_30%,hsl(var(--background))_65%)]" />
                 </div>
@@ -208,48 +208,65 @@ const SinglePage = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6 }}
                         viewport={{ once: true, margin: "-50px" }}
-                        className="mb-10"
+                        className="mb-12 text-center"
                     >
                         <h2 className="mb-4 text-3xl font-bold text-gradient md:text-4xl">
                             {t("career.title")}
                         </h2>
                     </motion.div>
 
-                    {/* Timeline Grid — 2 columns on desktop, 1 on mobile */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    {/* Alternating Zigzag Timeline */}
+                    <div className="relative">
+                        {/* Center vertical line */}
+                        <div className="absolute left-4 md:left-1/2 md:-translate-x-px top-0 bottom-0 w-[2px] bg-gradient-to-b from-primary/10 via-primary/30 to-primary/10" />
+
                         {(() => {
                             const journeyData = t("career.journey", { returnObjects: true });
                             const safeJourney = Array.isArray(journeyData) ? journeyData : [];
-                            
-                            return (safeJourney as { age: string; title: string; desc: string }[]).map((step, idx) => (
-                                <motion.div
-                                    key={idx}
-                                    initial={{ opacity: 0, y: 20 }}
-                                    whileInView={{ opacity: 1, y: 0 }}
-                                    whileHover={{ scale: 1.02 }}
-                                    transition={{ duration: 0.5, delay: idx * 0.08 }}
-                                    viewport={{ once: true, margin: "-50px" }}
-                                    className="relative group"
-                                >
-                                    {/* Career Card */}
-                                    <div className="glass-card rounded-xl p-6 h-full border-l-2 border-l-primary/30 transition-all group-hover:border-l-primary group-hover:bg-secondary/40 shadow-sm relative overflow-hidden">
-                                        {/* Subtle background glow on hover */}
-                                        <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                                        
-                                        <div className="relative z-10">
-                                            <span className="inline-block px-3 py-1 mb-3 text-xs font-bold text-primary bg-primary/10 rounded-full tracking-wider uppercase border border-primary/20">
-                                                {step.age}
-                                            </span>
-                                            <h3 className="text-lg font-bold text-foreground mb-2 group-hover:text-primary transition-colors duration-300">
-                                                {step.title}
-                                            </h3>
-                                            <p className="text-sm text-muted-foreground leading-relaxed">
-                                                {step.desc}
-                                            </p>
+
+                            return (safeJourney as { age: string; title: string; desc: string }[]).map((step, idx) => {
+                                const isLeft = idx % 2 === 0;
+
+                                return (
+                                    <motion.div
+                                        key={idx}
+                                        initial={{ opacity: 0, y: 20 }}
+                                        whileInView={{ opacity: 1, y: 0 }}
+                                        transition={{ duration: 0.5, delay: idx * 0.08 }}
+                                        viewport={{ once: true, margin: "-50px" }}
+                                        className="relative mb-10 md:mb-12 group"
+                                    >
+                                        {/* Timeline Node (center on md+, left on mobile) */}
+                                        <div className="absolute left-4 md:left-1/2 -translate-x-1/2 top-6 z-20">
+                                            <div className="h-5 w-5 rounded-full border-2 border-primary/50 bg-background shadow-[0_0_12px_rgba(200,160,80,0.2)] flex items-center justify-center group-hover:border-primary group-hover:shadow-[0_0_20px_rgba(200,160,80,0.6)] group-hover:bg-primary/20 transition-all duration-300">
+                                                <div className="h-2 w-2 rounded-full bg-primary/50 group-hover:bg-primary transition-colors duration-300" />
+                                            </div>
                                         </div>
-                                    </div>
-                                </motion.div>
-                            ));
+
+                                        {/* Card — alternates sides on desktop, always right on mobile */}
+                                        <div className={`ml-12 md:ml-0 md:w-[calc(50%-2rem)] ${isLeft ? 'md:mr-auto md:pr-4' : 'md:ml-auto md:pl-4'}`}>
+                                            <motion.div whileHover={{ scale: 1.02 }} transition={{ duration: 0.3 }}>
+                                                <div className="glass-card rounded-xl p-6 border-l-2 border-l-primary/30 transition-all group-hover:border-l-primary group-hover:bg-secondary/40 shadow-sm relative overflow-hidden">
+                                                    {/* Subtle background glow on hover */}
+                                                    <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
+                                                    <div className="relative z-10">
+                                                        <span className="inline-block px-3 py-1 mb-3 text-xs font-bold text-primary bg-primary/10 rounded-full tracking-wider uppercase border border-primary/20">
+                                                            {step.age}
+                                                        </span>
+                                                        <h3 className="text-lg font-bold text-foreground mb-2 group-hover:text-primary transition-colors duration-300">
+                                                            {step.title}
+                                                        </h3>
+                                                        <p className="text-sm text-muted-foreground leading-relaxed">
+                                                            {step.desc}
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </motion.div>
+                                        </div>
+                                    </motion.div>
+                                );
+                            });
                         })()}
                     </div>
                 </div>
