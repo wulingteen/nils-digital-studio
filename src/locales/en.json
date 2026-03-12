@@ -217,7 +217,7 @@
         "problem": "Remote operations during COVID needed automation; engineering teams lacked applied ML literacy.",
         "approach": "Shipped production-grade Python automation (Linux + MySQL + SHA-256) scaled as reusable templates across 70+ reporting workflows. Led ML enablement program (AWS DeepRacer) for 200 staff.",
         "outcome": "Automation enabled full remote operations during COVID. ML literacy improved across engineering and business teams.",
-    "owned": "Automation engineering, call center platform delivery, ML training program, code review coordination"
+        "owned": "Automation engineering, call center platform delivery, ML training program, code review coordination"
       }
     ]
   },
@@ -233,6 +233,11 @@
         "age": "2012–2015",
         "title": "TU Chemnitz — M.Sc. Chemistry",
         "desc": "Pursued a Master's degree in Germany, gaining international academic and cross-cultural experience."
+      },
+      {
+        "age": "2016–2017",
+        "title": "Groningen Univ. Visiting Researcher / Fraunhofer Intern",
+        "desc": "Conducted advanced materials and nano-synthesis research at a Nobel Laureate lab (Holland) and Fraunhofer (Germany)."
       },
       {
         "age": "2019–2022",

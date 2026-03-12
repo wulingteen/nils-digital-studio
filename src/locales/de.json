@@ -221,7 +221,6 @@
       }
     ]
   },
-
   "career": {
     "title": "Globaler Werdegang",
     "journey": [
@@ -234,6 +233,11 @@
         "age": "2012–2015",
         "title": "TU Chemnitz — M.Sc. Chemie",
         "desc": "Masterstudium in Deutschland mit internationaler akademischer und interkultureller Erfahrung."
+      },
+      {
+        "age": "2016–2017",
+        "title": "Groningen Univ. Gastforscher / Fraunhofer Praktikant",
+        "desc": "Forschung zu fortschrittlichen Materialien und Nano-Synthese in einem Nobelpreisträger-Labor (Holland) und bei Fraunhofer (Deutschland)."
       },
       {
         "age": "2019–2022",
