@@ -195,7 +195,7 @@ const SinglePage = () => {
             {/* ═══════════════════════════════════════════════
           § CAREER JOURNEY GLOBE SECTION
           ═══════════════════════════════════════════════ */}
-            <section className="section-padding border-t border-border relative overflow-hidden bg-background">
+            <section id="career" className="section-padding border-t border-border relative overflow-hidden bg-background">
                 {/* Globe as Background Decoration — hidden on mobile */}
                 <div className="hidden lg:block absolute -right-[200px] top-1/2 -translate-y-1/2 w-[700px] h-[700px] pointer-events-none opacity-20">
                     <Globe />

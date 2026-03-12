@@ -22,6 +22,8 @@ const Header = () => {
 
   const navItems = [
     { key: "home", anchor: "#hero" },
+    { key: "career", anchor: "#career" },
+    { key: "work", anchor: "#showcase" },
     { key: "services", anchor: "#services" },
     { key: "about", anchor: "#about" },
     { key: "contact", anchor: "#contact" },
