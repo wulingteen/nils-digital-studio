@@ -1,0 +1,27 @@
+---
+import { t } from '../../i18n/utils';
+
+interface Props {
+  lang: string;
+}
+
+const { lang } = Astro.props;
+---
+
+<footer class="border-t border-primary/10 bg-background/50 backdrop-blur-sm">
+  <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-6 py-8 md:flex-row lg:px-12">
+    <p class="text-sm text-muted-foreground">{t(lang, 'footer.copyright')}</p>
+    <div class="flex items-center gap-4">
+      <a href="https://www.linkedin.com/in/nilsliu/" target="_blank" rel="noopener noreferrer" class="text-muted-foreground transition-all hover:text-primary hover:-translate-y-0.5" aria-label="LinkedIn">
+        <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+      </a>
+      <a href="mailto:wulingteen@gmail.com" class="text-muted-foreground transition-all hover:text-primary hover:-translate-y-0.5" aria-label="Email">
+        <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+      </a>
+      <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="text-muted-foreground transition-all hover:text-primary hover:-translate-y-0.5" aria-label="YouTube">
+        <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path><path d="m10 15 5-3-5-3z"></path></svg>
+      </a>
+    </div>
+    <p class="text-xs text-muted-foreground">{t(lang, 'footer.built_with')}</p>
+  </div>
+</footer>

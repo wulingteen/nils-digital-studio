@@ -1,0 +1,23 @@
+---
+// Redirect to default language
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Nils Digital Studio</title>
+    <script>
+      const nav = navigator.language?.toLowerCase() || "";
+      let lang = "en";
+      if (nav.startsWith("zh")) lang = "zh";
+      else if (nav.startsWith("de")) lang = "de";
+      
+      // Add base path for GitHub Pages
+      window.location.replace(`/nils-digital-studio/${lang}`);
+    </script>
+  </head>
+  <body>
+    Redirecting...
+  </body>
+</html>

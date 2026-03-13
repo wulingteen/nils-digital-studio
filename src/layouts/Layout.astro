@@ -1,0 +1,50 @@
+---
+import { Toaster as Sonner } from "@/components/ui/sonner";
+import { TooltipProvider } from "@/components/ui/tooltip";
+import HeaderIsland from "@/components/layout/HeaderIsland";
+import FooterStatic from "@/components/layout/FooterStatic.astro";
+import SplashScreenIsland from "@/components/ui/SplashScreenIsland";
+import "@/App.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+  lang?: string;
+}
+
+const { 
+  title = "Nils Digital Studio", 
+  description = "A GenAI Product Manager's portfolio.",
+  lang = "en" 
+} = Astro.props;
+
+const htmlLang = lang === "zh" ? "zh-TW" : lang;
+---
+
+<!doctype html>
+<html lang={htmlLang} class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/x-icon" href="/nils-digital-studio/favicon.ico" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class="bg-background text-foreground antialiased min-h-screen flex flex-col">
+    <TooltipProvider client:load>
+      <Sonner client:load />
+
+      <!-- Splash Screen Island handles session storage logic client-side -->
+      <SplashScreenIsland client:load />
+
+      <HeaderIsland client:load lang={lang} currentPath={`/${lang}/`} />
+      
+      <main class="flex-1 pt-16">
+        <slot />
+      </main>
+
+      <FooterStatic lang={lang} />
+    </TooltipProvider>
+  </body>
+</html>

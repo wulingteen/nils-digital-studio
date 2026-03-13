@@ -1,16 +1,4 @@
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: facebookexternalhit
-Allow: /
-
 User-agent: *
 Allow: /
 
-Sitemap: https://wulingteen.github.io/nils-digital-studio/sitemap.xml
+Sitemap: https://wulingteen.github.io/nils-digital-studio/sitemap-index.xml

@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "titleEn": {
+      "type": "string"
+    },
+    "titleDe": {
+      "type": "string"
+    },
+    "excerpt": {
+      "type": "string"
+    },
+    "excerptEn": {
+      "type": "string"
+    },
+    "excerptDe": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "author": {
+      "type": "string"
+    },
+    "tags": {
+      "default": [],
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "coverImage": {
+      "type": "string"
+    },
+    "pinned": {
+      "default": false,
+      "type": "boolean"
+    },
+    "$schema": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "title",
+    "excerpt",
+    "date",
+    "author",
+    "tags",
+    "pinned"
+  ],
+  "additionalProperties": false
+}

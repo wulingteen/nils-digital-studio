@@ -1,0 +1,185 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { t } from '../../../i18n/utils';
+import { getCollection } from 'astro:content';
+import HeaderIsland from '../../../components/layout/HeaderIsland';
+import FooterStatic from '../../../components/layout/FooterStatic.astro';
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: 'en' } },
+    { params: { lang: 'zh' } },
+    { params: { lang: 'de' } },
+  ];
+}
+
+const { lang } = Astro.params;
+const SITE = 'https://wulingteen.github.io/nils-digital-studio';
+const BASE = import.meta.env.BASE_URL;
+// Ensure BASE always ends with /
+const B = BASE.endsWith('/') ? BASE : BASE + '/';
+
+const allPosts = await getCollection('posts');
+// Sort: pinned first, then by date descending
+const sortedPosts = allPosts.sort((a, b) => {
+  if (a.data.pinned === b.data.pinned) {
+    return new Date(b.data.date).getTime() - new Date(a.data.date).getTime();
+  }
+  return a.data.pinned ? -1 : 1;
+});
+
+// Get all unique tags in preferred order
+const allTagsSet = new Set<string>();
+sortedPosts.forEach(p => p.data.tags?.forEach(tag => allTagsSet.add(tag)));
+const preferredOrder = ["AI PM 系列", "GenAI 實戰", "Patent", "GenAI", "Agent", "Architecture", "Career", "Event", "News"];
+const allTags = preferredOrder.filter(tag => allTagsSet.has(tag));
+
+function getTitle(post: typeof sortedPosts[0]) {
+  if (lang === 'en' && post.data.titleEn) return post.data.titleEn;
+  if (lang === 'de' && post.data.titleDe) return post.data.titleDe;
+  return post.data.title;
+}
+function getExcerpt(post: typeof sortedPosts[0]) {
+  if (lang === 'en' && post.data.excerptEn) return post.data.excerptEn;
+  if (lang === 'de' && post.data.excerptDe) return post.data.excerptDe;
+  return post.data.excerpt;
+}
+
+const pageTitle = t(lang!, 'nav.insights', 'Insights') + ' | Nils Liu';
+const pageDesc = t(lang!, 'insights.sub', 'Thoughts on generative AI, design, and product architecture.');
+---
+
+<Layout
+  title={pageTitle}
+  description={pageDesc}
+  lang={lang!}
+  ogUrl={`${SITE}/${lang}/insights`}
+  canonicalUrl={`${SITE}/${lang}/insights`}
+>
+  <HeaderIsland lang={lang!} currentPath={`/${lang}/insights`} client:load />
+  
+  <section class="section-padding min-h-screen pt-32">
+    <div class="container-narrow px-6 md:px-8">
+      <div class="mb-16 text-center">
+        <h1 class="mb-4 text-4xl font-bold text-gradient md:text-5xl">
+          {t(lang!, 'nav.insights', 'Insights')}
+        </h1>
+        <p class="max-w-2xl mx-auto text-lg text-muted-foreground">
+          {t(lang!, 'insights.sub', 'Thoughts, tutorials, and perspectives on the intersection of generative AI, design, and product architecture.')}
+        </p>
+      </div>
+
+      <!-- Tags -->
+      <div class="mb-12 flex flex-col gap-6 max-w-4xl mx-auto">
+        <div class="flex flex-wrap gap-2" id="tag-filters">
+          <button data-tag="all" class="px-4 py-1.5 rounded-full text-sm font-medium transition-all bg-primary text-primary-foreground shadow-md tag-btn active">
+            {t(lang!, 'blog.all_tags', 'All')}
+          </button>
+          {allTags.map(tag => (
+            <button data-tag={tag} class="px-4 py-1.5 rounded-full text-sm font-medium transition-all flex items-center gap-1.5 bg-primary/5 text-foreground hover:bg-primary/10 border border-primary/10 tag-btn">
+              {t(lang!, `blog.tags.${tag}`, tag)}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <!-- Articles -->
+      <div class="flex flex-col gap-10 max-w-4xl mx-auto" id="articles-list">
+        {sortedPosts.map((post) => (
+          <article
+            class="group flex flex-col md:flex-row gap-6 md:gap-8 rounded-[2rem] border border-primary/5 bg-gradient-to-br from-background to-secondary/10 p-4 transition-all duration-500 hover:border-primary/20 hover:shadow-[0_8px_30px_rgba(200,160,80,0.08)] hover:-translate-y-1"
+            data-tags={JSON.stringify(post.data.tags)}
+          >
+            {post.data.coverImage && (
+              <a href={`${B}${lang}/insights/${post.id}`} class="block relative w-full md:w-[320px] lg:w-[360px] shrink-0 overflow-hidden rounded-[2rem] bg-muted aspect-video md:aspect-[16/9]">
+                <img
+                  src={`${B}${post.data.coverImage.replace(/^\//, '')}`}
+                  alt={getTitle(post)}
+                  loading="lazy"
+                  decoding="async"
+                  class="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                />
+              </a>
+            )}
+            <div class="flex flex-1 flex-col justify-center py-2 md:py-4 md:pr-6">
+              <div>
+                {post.data.pinned && (
+                  <div class="mb-3 inline-flex items-center gap-1.5 px-3 py-1 text-[11px] font-bold uppercase tracking-widest text-primary-foreground bg-primary rounded-full">
+                    📌 {lang === 'zh' ? '置頂' : lang === 'de' ? 'Angeheftet' : 'Pinned'}
+                  </div>
+                )}
+                <div class="mb-4 flex flex-wrap items-center gap-4 text-xs font-medium tracking-wide text-primary/70">
+                  <div class="flex items-center gap-1.5">
+                    <time datetime={post.data.date.toISOString().split('T')[0]}>
+                      {new Date(post.data.date).toLocaleDateString(
+                        lang === 'de' ? 'de-DE' : lang === 'zh' ? 'zh-TW' : 'en-US',
+                        { year: 'numeric', month: 'short', day: 'numeric' }
+                      )}
+                    </time>
+                  </div>
+                  <span>{post.data.author}</span>
+                  {post.data.tags && post.data.tags.length > 0 && (
+                    <div class="flex items-center flex-wrap gap-1.5">
+                      {post.data.tags.map(tag => (
+                        <span class="bg-primary/10 px-2 py-0.5 rounded-full text-[10px] uppercase font-bold tracking-wider text-primary">
+                          {t(lang!, `blog.tags.${tag}`, tag)}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+                </div>
+
+                <h2 class="mb-4 text-2xl font-bold leading-tight text-foreground/90 transition-colors group-hover:text-primary md:text-3xl lg:leading-[1.2]">
+                  <a href={`${B}${lang}/insights/${post.id}`}>
+                    {getTitle(post)}
+                  </a>
+                </h2>
+                <p class="mb-6 text-muted-foreground leading-relaxed line-clamp-3 md:line-clamp-4">
+                  {getExcerpt(post)}
+                </p>
+              </div>
+
+              <a
+                href={`${B}${lang}/insights/${post.id}`}
+                class="mt-auto inline-flex items-center gap-2 text-sm font-semibold tracking-wide text-primary transition-colors hover:text-primary/70"
+              >
+                Read Article →
+              </a>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <FooterStatic lang={lang!} />
+</Layout>
+
+<script>
+  // Client-side tag filtering
+  document.addEventListener('DOMContentLoaded', () => {
+    const btns = document.querySelectorAll('.tag-btn');
+    const articles = document.querySelectorAll('#articles-list article');
+
+    btns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        btns.forEach(b => {
+          b.classList.remove('bg-primary', 'text-primary-foreground', 'shadow-md', 'active');
+          b.classList.add('bg-primary/5', 'text-foreground', 'border', 'border-primary/10');
+        });
+        btn.classList.add('bg-primary', 'text-primary-foreground', 'shadow-md', 'active');
+        btn.classList.remove('bg-primary/5', 'text-foreground', 'border', 'border-primary/10');
+
+        const tag = (btn as HTMLElement).dataset.tag;
+        articles.forEach(article => {
+          if (tag === 'all') {
+            (article as HTMLElement).style.display = '';
+          } else {
+            const tags = JSON.parse((article as HTMLElement).dataset.tags || '[]');
+            (article as HTMLElement).style.display = tags.includes(tag) ? '' : 'none';
+          }
+        });
+      });
+    });
+  });
+</script>

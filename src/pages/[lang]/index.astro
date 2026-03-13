@@ -1,0 +1,28 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { t } from '../../i18n/utils';
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: 'en' } },
+    { params: { lang: 'zh' } },
+    { params: { lang: 'de' } },
+  ];
+}
+
+const { lang } = Astro.params;
+const SITE = 'https://wulingteen.github.io/nils-digital-studio';
+
+// Import SinglePage as React island
+import SinglePage from '../../pages-react/SinglePage';
+---
+
+<Layout
+  title={t(lang!, 'meta.title', '劉岦崱 Nils Liu | GenAI產品經理')}
+  description={t(lang!, 'meta.description', 'GenAI產品經理、企業級 AI 架構師')}
+  lang={lang!}
+  ogUrl={`${SITE}/${lang}/`}
+  canonicalUrl={`${SITE}/${lang}/`}
+>
+  <SinglePage lang={lang!} client:load />
+</Layout>
