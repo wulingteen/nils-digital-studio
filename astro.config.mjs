@@ -7,7 +7,15 @@ export default defineConfig({
   base: '/nils-digital-studio',
   integrations: [
     react(),
-    sitemap(),
+    sitemap({
+      serialize(item) {
+        // Automatically inject lastmod (Build time) and changefreq params for optimal SEO indexing
+        item.lastmod = new Date().toISOString();
+        item.changefreq = 'weekly';
+        item.priority = 0.8;
+        return item;
+      }
+    }),
   ],
   i18n: {
     defaultLocale: 'en',
