@@ -50,3 +50,15 @@ const formAction = "#";
     </p>
   </div>
 </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const forms = document.querySelectorAll('form[action="#"]');
+    forms.forEach(form => {
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        alert('電子報系統即將上線！請先於原始碼 `NewsletterForm.astro` 內設定您的 Substack 或 Buttondown 訂閱網址。\n\n(Newsletter system integration is pending configuration.)');
+      });
+    });
+  });
+</script>
