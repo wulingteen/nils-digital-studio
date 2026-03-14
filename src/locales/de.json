@@ -264,6 +264,8 @@
     ]
   },
   "about": {
+    "page_title": "Über mich",
+    "bio": "Ich bin Nils (劉岦崱) — ein GenAI Solution Architect und Entwickler bei einer führenden Finanzholding in Taiwan. Ich entwerfe und baue produktive GenAI-Systeme in regulierten Umfeldern. Zuvor war ich als Berater bei einem Schweizer Finanzdienstleister und als Management Associate bei einer in Singapur ansässigen Bank tätig. Ich verfolge einen Software 3.0 / Generalisierungs-Ansatz: wiederverwendbare Fähigkeiten, standardisierte Schnittstellen und messbare Evaluierungszyklen statt einmaliger Prompt-Anpassungen.",
     "principles_title": "Prinzipien",
     "principles": [
       {
