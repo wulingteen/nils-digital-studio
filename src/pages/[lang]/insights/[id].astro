@@ -7,25 +7,29 @@ import FooterStatic from '../../../components/layout/FooterStatic.astro';
 import NewsletterForm from '../../../components/NewsletterForm.astro';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('posts');
+  const allPosts = await getCollection('posts');
+  const basePosts = allPosts.filter((p: any) => !p.id.endsWith('-en') && !p.id.endsWith('-de'));
   const langs = ['en', 'zh', 'de'];
   
   return langs.flatMap(lang =>
-    posts.map(post => ({
+    basePosts.map((post: any) => ({
       params: { lang, id: post.id },
-      props: { post, lang },
+      props: { basePost: post, lang },
     }))
   );
 }
 
-const { post, lang } = Astro.props;
-const { Content } = await render(post);
+const { basePost, lang } = Astro.props as { basePost: any, lang: string };
+const allPosts = await getCollection('posts');
+const localizedId = lang === 'zh' ? basePost.id : `${basePost.id}-${lang}`;
+const localizedPost = allPosts.find((p: any) => p.id === localizedId) || basePost;
+const { Content } = await render(localizedPost);
 
 const allPosts = await getCollection('posts');
-const currentTags = post.data.tags || [];
+const currentTags = basePost.data.tags || [];
 
 const relatedPosts = allPosts
-  .filter(p => p.id !== post.id)
+  .filter((p: any) => !p.id.endsWith('-en') && !p.id.endsWith('-de') && p.id !== basePost.id)
   .map(p => {
     let score = 0;
     const pTags = p.data.tags || [];
@@ -56,17 +60,17 @@ const SITE = 'https://wulingteen.github.io/nils-digital-studio';
 const BASE = import.meta.env.BASE_URL;
 const B = BASE.endsWith('/') ? BASE : BASE + '/';
 
-const displayTitle = lang === 'en' && post.data.titleEn ? post.data.titleEn
-  : lang === 'de' && post.data.titleDe ? post.data.titleDe
-  : post.data.title;
+const displayTitle = lang === 'en' && basePost.data.titleEn ? basePost.data.titleEn
+  : lang === 'de' && basePost.data.titleDe ? basePost.data.titleDe
+  : basePost.data.title;
 
-const displayExcerpt = lang === 'en' && post.data.excerptEn ? post.data.excerptEn
-  : lang === 'de' && post.data.excerptDe ? post.data.excerptDe
-  : post.data.excerpt;
+const displayExcerpt = lang === 'en' && basePost.data.excerptEn ? basePost.data.excerptEn
+  : lang === 'de' && basePost.data.excerptDe ? basePost.data.excerptDe
+  : basePost.data.excerpt;
 
-const pageUrl = `${SITE}/${lang}/insights/${post.id}`;
-const ogImage = post.data.coverImage
-  ? `${SITE}${post.data.coverImage}`
+const pageUrl = `${SITE}/${lang}/insights/${basePost.id}`;
+const ogImage = basePost.data.coverImage
+  ? `${SITE}${basePost.data.coverImage}`
   : `${SITE}/nils-profile.png`;
 
 const breadcrumbLd = {
@@ -84,8 +88,8 @@ const articleLd = {
   "@type": "Article",
   "headline": displayTitle,
   "description": displayExcerpt,
-  "author": { "@type": "Person", "name": post.data.author },
-  "datePublished": post.data.date.toISOString().split('T')[0],
+  "author": { "@type": "Person", "name": basePost.data.author },
+  "datePublished": basePost.data.date.toISOString().split('T')[0],
   "url": pageUrl,
   "image": ogImage,
 };
@@ -99,7 +103,7 @@ const articleLd = {
   canonicalURL={pageUrl}
   articleSchema={JSON.stringify([breadcrumbLd, articleLd])}
 >
-  <HeaderIsland lang={lang} currentPath={`/${lang}/insights/${post.id}`} client:load />
+  <HeaderIsland lang={lang} currentPath={`/${lang}/insights/${basePost.id}`} client:load />
 
   <article class="min-h-screen pb-20 pt-32">
     <div class="container-narrow mx-auto max-w-3xl px-6 md:px-8">
@@ -115,9 +119,9 @@ const articleLd = {
           {displayTitle}
         </h1>
         <div class="flex flex-wrap items-center gap-6 text-sm text-muted-foreground border-b border-primary/20 pb-8">
-          <span>{post.data.author}</span>
-          <time datetime={post.data.date.toISOString().split('T')[0]}>
-            {new Date(post.data.date).toLocaleDateString(
+          <span>{basePost.data.author}</span>
+          <time datetime={basePost.data.date.toISOString().split('T')[0]}>
+            {new Date(basePost.data.date).toLocaleDateString(
               lang === 'de' ? 'de-DE' : lang === 'zh' ? 'zh-TW' : 'en-US',
               { year: 'numeric', month: 'long', day: 'numeric' }
             )}
@@ -125,21 +129,21 @@ const articleLd = {
         </div>
       </header>
 
-      {post.data.coverImage && (
+      {basePost.data.coverImage && (
         <div class="relative mb-12 overflow-hidden rounded-2xl border border-primary/20 shadow-lg">
           <img
-            src={`${B}${post.data.coverImage.replace(/^\//, '')}`}
+            src={`${B}${basePost.data.coverImage.replace(/^\//, '')}`}
             alt={displayTitle}
             loading="eager"
             decoding="async"
             class="w-full h-auto object-cover max-h-[500px]"
           />
-          {post.data.seriesInfo && (
+          {basePost.data.seriesInfo && (
             <div class="absolute top-4 left-4 px-4 py-1.5 bg-white/60 dark:bg-black/50 backdrop-blur-md rounded-full border border-white/30 shadow-sm z-10 flex items-center gap-2 text-sm font-bold text-slate-900 dark:text-slate-100">
               <span class="w-2 h-2 rounded-full bg-blue-600 shadow-[0_0_8px_rgba(37,99,235,0.8)]"></span>
-              {lang === 'zh' ? `第 ${post.data.seriesInfo.part} 篇：${post.data.seriesInfo.name}`
-              : lang === 'de' ? `Teil ${post.data.seriesInfo.part}: ${post.data.seriesInfo.name}`
-              : `Part ${post.data.seriesInfo.part}: ${post.data.seriesInfo.name}`}
+              {lang === 'zh' ? `第 ${basePost.data.seriesInfo.part} 篇：${basePost.data.seriesInfo.name}`
+              : lang === 'de' ? `Teil ${basePost.data.seriesInfo.part}: ${basePost.data.seriesInfo.name}`
+              : `Part ${basePost.data.seriesInfo.part}: ${basePost.data.seriesInfo.name}`}
             </div>
           )}
         </div>

@@ -19,9 +19,10 @@ const BASE = import.meta.env.BASE_URL;
 // Ensure BASE always ends with /
 const B = BASE.endsWith('/') ? BASE : BASE + '/';
 
-const allPosts = await getCollection('posts');
+const allPostsRaw = await getCollection('posts');
+const allPosts = allPostsRaw.filter((p: any) => !p.id.endsWith('-en') && !p.id.endsWith('-de'));
 // Sort: pinned first, then by date descending
-const sortedPosts = allPosts.sort((a, b) => {
+const sortedPosts = allPosts.sort((a: any, b: any) => {
   if (a.data.pinned === b.data.pinned) {
     return new Date(b.data.date).getTime() - new Date(a.data.date).getTime();
   }
