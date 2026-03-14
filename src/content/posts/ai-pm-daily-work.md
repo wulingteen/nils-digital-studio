@@ -11,7 +11,7 @@ tags:
   - "AI PM 系列"
   - "GenAI"
   - "Career"
-coverImage: "/images/blog/ai-pm-base.jpg"
+coverImage: "/images/blog/ai-pm-base.png"
 seriesInfo:
   name: "AI PM 的真實工作"
   part: 3
