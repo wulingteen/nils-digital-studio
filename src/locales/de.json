@@ -338,6 +338,13 @@
       "Patent": "Patente"
     }
   },
+  "newsletter": {
+    "title": "Abonnieren Sie die neuesten Erkenntnisse",
+    "desc": "Abonnieren Sie den Newsletter, um meine neuesten Artikel über GenAI, AI Agents und Architektur zu erhalten.",
+    "placeholder": "Ihre E-Mail-Adresse",
+    "button": "Abonnieren",
+    "spam": "Kein Spam. Jederzeit kündbar."
+  },
   "contact": {
     "page_title": "Kontakt",
     "page_sub": "Ob Strategiesession, Prototyp oder Workshop — ich freue mich auf Ihre Herausforderung.",

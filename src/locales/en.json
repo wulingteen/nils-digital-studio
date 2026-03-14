@@ -340,6 +340,13 @@
       "Patent": "Patents"
     }
   },
+  "newsletter": {
+    "title": "Get the latest insights",
+    "desc": "Join the newsletter to receive my latest articles on GenAI, AI Agents, and architecture.",
+    "placeholder": "Your email address",
+    "button": "Subscribe",
+    "spam": "No spam. Unsubscribe anytime."
+  },
   "contact": {
     "page_title": "Get in Touch",
     "page_sub": "Whether you need a strategy session, a prototype, or a workshop — I'd love to hear about your challenge.",

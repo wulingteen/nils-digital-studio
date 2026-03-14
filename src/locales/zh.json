@@ -340,6 +340,13 @@
       "Patent": "專利系列"
     }
   },
+  "newsletter": {
+    "title": "訂閱最新分享",
+    "desc": "加入電子報，第一時間獲取關於 GenAI 實戰、AI Agent 與架構設計的最新文章。",
+    "placeholder": "您的電子郵件",
+    "button": "免費訂閱",
+    "spam": "絕不發送垃圾信。隨時皆可取消訂閱。"
+  },
   "contact": {
     "page_title": "聯繫我",
     "page_sub": "無論您需要策略會議、原型還是工作坊 — 我很樂意了解您的挑戰。",

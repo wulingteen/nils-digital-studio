@@ -4,6 +4,7 @@ import { t } from '../../../i18n/utils';
 import { getCollection, render } from 'astro:content';
 import HeaderIsland from '../../../components/layout/HeaderIsland';
 import FooterStatic from '../../../components/layout/FooterStatic.astro';
+import NewsletterForm from '../../../components/NewsletterForm.astro';
 
 export async function getStaticPaths() {
   const posts = await getCollection('posts');
@@ -170,6 +171,8 @@ const articleLd = {
           </div>
         </div>
       )}
+
+      <NewsletterForm lang={lang} />
     </div>
   </article>
 </Layout>
