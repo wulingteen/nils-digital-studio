@@ -370,5 +370,9 @@
   "seo": {
     "title": "劉岦崱 Nils Liu | 企業級 GenAI 架構師 & RAG 產品專家",
     "desc": "專攻企業級 RAG 導入、GenAI 產品經理與客製化 AI Agent 開發。協助高度監管企業從概念到落地。提供 GenAI 導入諮詢與內訓，歡迎 AI PM/Lead 相關職缺探討。"
+  },
+  "banner": {
+    "text": "🔥 每週獲取最新的 AI PM 實戰洞見",
+    "cta": "點此訂閱"
   }
 }

@@ -19,6 +19,7 @@ const HeaderIsland = ({ lang, currentPath }: Props) => {
     typeof document !== 'undefined' && document.documentElement.classList.contains("dark")
   );
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [bannerVisible, setBannerVisible] = useState(true);
 
   const currentLang = lang || "en";
   const BASE = '/nils-digital-studio';
@@ -66,11 +67,41 @@ const HeaderIsland = ({ lang, currentPath }: Props) => {
       initial={{ y: -20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className="fixed top-0 left-0 right-0 z-50 glass-card border-b border-primary/10 bg-background/60"
+      className="fixed top-0 left-0 right-0 z-50 flex flex-col"
     >
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-12">
-        <button
-          onClick={() => scrollTo("#hero")}
+      {/* Top Banner */}
+      <AnimatePresence>
+        {bannerVisible && (
+          <motion.div
+            initial={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0, overflow: "hidden" }}
+            className="bg-primary text-primary-foreground relative z-[60] flex items-center justify-center px-4 py-2.5 text-xs sm:text-sm font-medium"
+          >
+            <div className="flex-1 text-center pr-8 sm:pr-0">
+              {t(currentLang, "banner.text")}
+              <span className="mx-2 hidden sm:inline">👉</span>
+              <button 
+                onClick={() => scrollTo("#newsletter")}
+                className="underline underline-offset-4 font-semibold hover:text-white transition-colors"
+              >
+                {t(currentLang, "banner.cta")}
+              </button>
+            </div>
+            <button
+              onClick={() => setBannerVisible(false)}
+              className="absolute right-4 p-1 rounded-full hover:bg-black/10 transition-colors"
+              aria-label="Close banner"
+            >
+              <X className="w-4 h-4" />
+            </button>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      <div className="w-full glass-card border-b border-primary/10 bg-background/60 backdrop-blur-md">
+        <nav className="mx-auto flex w-full max-w-7xl items-center justify-between px-6 py-4 lg:px-12">
+          <button
+            onClick={() => scrollTo("#hero")}
           className="text-lg font-semibold tracking-tight text-foreground"
           style={{ fontFamily: "'Space Grotesk', sans-serif" }}
         >
@@ -125,7 +156,8 @@ const HeaderIsland = ({ lang, currentPath }: Props) => {
         >
           {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
         </button>
-      </nav>
+        </nav>
+      </div>
 
       {/* Mobile menu */}
       <AnimatePresence>

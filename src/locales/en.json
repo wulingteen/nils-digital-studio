@@ -370,5 +370,9 @@
   "seo": {
     "title": "劉岦崱 Nils Liu | Enterprise GenAI Architect & RAG Product Expert",
     "desc": "Specializing in Enterprise RAG integration, GenAI Product Management, and custom AI Agents. Helping regulated enterprises ship GenAI from concept to production. Open to Sr. AI PM roles."
+  },
+  "banner": {
+    "text": "🔥 Get the latest AI PM insights weekly",
+    "cta": "Subscribe here"
   }
 }
