@@ -90,6 +90,19 @@ const hreflangDe = new URL(cleanPath(`${basePath}/de${pathWithoutLang}`), Astro.
 
     <!-- Article JSON-LD Schema -->
     {articleSchema && <script type="application/ld+json" set:html={articleSchema} />}
+
+    <!-- Dark Mode Sync (Taiwan Time) -->
+    <script is:inline>
+      (function() {
+        const now = new Date();
+        const taiwanHour = (now.getUTCHours() + 8) % 24;
+        if (taiwanHour >= 18 || taiwanHour < 6) {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
+      })();
+    </script>
   </head>
   <body class="bg-background text-foreground antialiased min-h-screen flex flex-col">
     <TooltipProvider client:load>

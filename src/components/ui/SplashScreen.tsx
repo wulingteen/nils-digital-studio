@@ -24,9 +24,9 @@ const SERVICES = [
     { en: "AI Product Design", zh: "AI 產品設計" },
 ];
 
-const TOTAL_DURATION = 5000;  // ms
-const TEXT_DELAY = 900;   // text appears
-const OUTRO_START = 4100;  // fade-out starts
+const TOTAL_DURATION = 1000;  // ms
+const TEXT_DELAY = 100;   // text appears
+const OUTRO_START = 700;  // fade-out starts
 const MAX_NODES = 320;
 const CONNECT_DIST = 140;
 
@@ -75,7 +75,7 @@ export function SplashScreen({ onComplete }: SplashScreenProps) {
             if (elapsed > OUTRO_START && phaseRef.current === "text") {
                 phaseRef.current = "outro";
                 setUiPhase("outro");
-                setTimeout(() => onCompleteRef.current(), 920);
+                setTimeout(() => onCompleteRef.current(), 300);
             }
             if (elapsed > TOTAL_DURATION) {
                 // Safety valve: ensure unmount even if outro missed
@@ -204,7 +204,7 @@ export function SplashScreen({ onComplete }: SplashScreenProps) {
             className="fixed inset-0 z-[100] overflow-hidden"
             initial={{ opacity: 1 }}
             animate={{ opacity: uiPhase === "outro" ? 0 : 1 }}
-            transition={{ duration: 0.9, ease: "easeInOut" }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
         >
             <canvas ref={canvasRef} className="absolute inset-0 h-full w-full" />
 
@@ -217,7 +217,7 @@ export function SplashScreen({ onComplete }: SplashScreenProps) {
                             initial={{ opacity: 0, y: 14, filter: "blur(10px)" }}
                             animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                             exit={{ opacity: 0, y: -10, filter: "blur(8px)" }}
-                            transition={{ duration: 1.0, ease: "easeOut" }}
+                            transition={{ duration: 0.4, ease: "easeOut" }}
                             className="relative flex flex-col items-center gap-4"
                         >
                             {/* Dark radial backdrop so text is legible over the mesh */}
