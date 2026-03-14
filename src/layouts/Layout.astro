@@ -56,6 +56,17 @@ const hreflangDe = new URL(cleanPath(`${basePath}/de${pathWithoutLang}`), Astro.
     <!-- Canonical URL -->
     <link rel="canonical" href={canonicalURL || new URL(Astro.url.pathname, Astro.site || 'https://wulingteen.github.io/nils-digital-studio/').href} />
 
+    <script type="application/json" id="astro-debug-variables">
+      {JSON.stringify({
+        pathname: Astro.url.pathname,
+        basePath: basePath,
+        pathWithoutBase: pathWithoutBase,
+        pathWithoutLang: pathWithoutLang,
+        site: Astro.site?.href,
+        hreflangZh: hreflangZh
+      })}
+    </script>
+
     <!-- Hreflang Tags for Multi-language SEO -->
     <link rel="alternate" hreflang="zh-TW" href={hreflangZh} />
     <link rel="alternate" hreflang="en" href={hreflangEn} />
