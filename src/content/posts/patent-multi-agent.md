@@ -67,8 +67,11 @@ coverImage: "/images/blog/patent-multi-agent.png"
 **作為 GenAI Product Owner，你需要問的問題是：**
 
 - 我的問題可以分解成幾個子任務？
+
 - 每個子任務需要什麼能力的 Agent？
+
 - 這些 Agent 如何協作、如何整合輸出？
+
 - 整個系統如何從執行結果中學習？
 
 設計 Multi-agent 架構是 2025 年以後 **GenAI PM** 的核心技能之一。而這個資料庫優化系統，是一個非常具體的實作範例。

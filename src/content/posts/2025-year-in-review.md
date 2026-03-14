@@ -57,8 +57,11 @@ pinned: true
 專利這件事也是。
 
 拿到 6 項新型專利已核准、還有 5 項發明專利在等，其實對我來說不只是多幾張證書。它比較像一種逼自己誠實的方式：
+
 - 我到底解了什麼問題？
+
 - 我說的方法邊界在哪？
+
 - 我能不能把價值寫成一種別人看得懂、也能檢驗的語言？
 
 每次寫到最後都覺得自己像在做一次超硬的 code review，只是 reviewer 不是同事，是這個世界。
@@ -72,8 +75,11 @@ pinned: true
 ## 演講與分享：自我檢驗的場域
 
 至於演講，2025 真的講了不少：
+
 - DevOpsDay (1場)
+
 - iThome Hello World (4場)
+
 - Google DevFest Taipei (1場)
 
 每次上台前我都會緊張，但那個緊張不是怕講不好，而是怕自己講得太像口號、太像「AI 很強大家快上車」。我更想講的是現實：企業導入 GenAI 真正困難的地方，往往是你怎麼讓它可控、可追溯、可維運、可被信任。
@@ -93,6 +99,7 @@ pinned: true
 謝謝 2025，也謝謝一路上一起做事、願意交流的好夥伴們。
 
 2026 我會繼續跑起來。
+
 > *Run, don’t walk! Either you’re running for food, or you’re running from being food.*
 
 #YearInReview #GenAI #專利 #研究 #DevOpsDay #HelloWorld #DevFestTaipei #AI治理 #產品化
