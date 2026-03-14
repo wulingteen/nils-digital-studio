@@ -20,6 +20,37 @@ export async function getStaticPaths() {
 const { post, lang } = Astro.props;
 const { Content } = await render(post);
 
+const allPosts = await getCollection('posts');
+const currentTags = post.data.tags || [];
+
+const relatedPosts = allPosts
+  .filter(p => p.id !== post.id)
+  .map(p => {
+    let score = 0;
+    const pTags = p.data.tags || [];
+    pTags.forEach(tag => {
+      if (currentTags.includes(tag)) score += 1;
+    });
+    return { post: p, score };
+  })
+  .sort((a, b) => {
+    if (a.score !== b.score) return b.score - a.score;
+    return new Date(b.post.data.date).getTime() - new Date(a.post.data.date).getTime();
+  })
+  .slice(0, 2)
+  .map(item => item.post);
+
+function getRelatedTitle(p: any) {
+  if (lang === 'en' && p.data.titleEn) return p.data.titleEn;
+  if (lang === 'de' && p.data.titleDe) return p.data.titleDe;
+  return p.data.title;
+}
+function getRelatedExcerpt(p: any) {
+  if (lang === 'en' && p.data.excerptEn) return p.data.excerptEn;
+  if (lang === 'de' && p.data.excerptDe) return p.data.excerptDe;
+  return p.data.excerpt;
+}
+
 const SITE = 'https://wulingteen.github.io/nils-digital-studio';
 const BASE = import.meta.env.BASE_URL;
 const B = BASE.endsWith('/') ? BASE : BASE + '/';
@@ -108,6 +139,37 @@ const articleLd = {
       <div class="article-content prose prose-lg max-w-none prose-headings:text-foreground prose-p:text-muted-foreground prose-strong:text-foreground prose-li:text-muted-foreground prose-a:text-primary">
         <Content />
       </div>
+
+      {relatedPosts.length > 0 && (
+        <div class="mt-20 border-t border-primary/20 pt-12">
+          <h3 class="mb-8 text-2xl font-bold text-foreground">
+            {t(lang, 'blog.related_articles', lang === 'zh' ? '延伸閱讀' : lang === 'de' ? 'Weitere Artikel' : 'Related Articles')}
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {relatedPosts.map((rp) => (
+              <a 
+                href={`${B}${lang}/insights/${rp.id}`}
+                class="group block p-6 rounded-2xl bg-secondary/5 hover:bg-secondary/10 border border-primary/5 hover:border-primary/20 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+              >
+                <div class="text-xs text-primary/70 mb-2 font-medium">
+                  <time datetime={rp.data.date.toISOString().split('T')[0]}>
+                    {new Date(rp.data.date).toLocaleDateString(
+                      lang === 'de' ? 'de-DE' : lang === 'zh' ? 'zh-TW' : 'en-US',
+                      { year: 'numeric', month: 'short', day: 'numeric' }
+                    )}
+                  </time>
+                </div>
+                <h4 class="text-lg font-bold text-foreground group-hover:text-primary transition-colors leading-snug mb-3 line-clamp-2">
+                  {getRelatedTitle(rp)}
+                </h4>
+                <p class="text-sm text-muted-foreground line-clamp-2 leading-relaxed">
+                  {getRelatedExcerpt(rp)}
+                </p>
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   </article>
 </Layout>
