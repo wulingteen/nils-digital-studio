@@ -6,7 +6,8 @@
     "career": "Karriere",
     "about": "Über mich",
     "insights": "Einblicke",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "subscribe": "Abonnieren"
   },
   "hero": {
     "headline1": "Ich mache GenAI",
@@ -368,9 +369,5 @@
   "seo": {
     "title": "劉岦崱 Nils Liu | Enterprise GenAI Architect & RAG Product Expert",
     "desc": "Spezialisiert auf Enterprise RAG-Integration, GenAI Product Management und KI-Agenten. GenAI-Beratung für regulierte Unternehmen. Offen für Sr. AI PM Positionen."
-  },
-  "banner": {
-    "text": "🔥 Erhalten Sie wöchentlich die neuesten AI PM-Einblicke",
-    "cta": "Hier abonnieren"
   }
 }

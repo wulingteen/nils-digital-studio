@@ -19,7 +19,7 @@ const HeaderIsland = ({ lang, currentPath }: Props) => {
     typeof document !== 'undefined' && document.documentElement.classList.contains("dark")
   );
   const [mobileOpen, setMobileOpen] = useState(false);
-  const [bannerVisible, setBannerVisible] = useState(true);
+  const [modalOpen, setModalOpen] = useState(false);
 
   const currentLang = lang || "en";
   const BASE = '/nils-digital-studio';
@@ -67,33 +67,62 @@ const HeaderIsland = ({ lang, currentPath }: Props) => {
       initial={{ y: -20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className="fixed top-0 left-0 right-0 z-50 flex flex-col"
+      className="fixed top-0 left-0 right-0 z-[100] flex flex-col"
     >
-      {/* Top Banner */}
+      {/* Subscribe Modal */}
       <AnimatePresence>
-        {bannerVisible && (
+        {modalOpen && (
           <motion.div
-            initial={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0, overflow: "hidden" }}
-            className="bg-primary text-primary-foreground relative z-[60] flex items-center justify-center px-4 py-2.5 text-xs sm:text-sm font-medium"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-[110] flex items-center justify-center bg-background/80 p-4 backdrop-blur-sm"
+            onClick={(e) => { if (e.target === e.currentTarget) setModalOpen(false); }}
           >
-            <div className="flex-1 text-center pr-8 sm:pr-0">
-              {t(currentLang, "banner.text")}
-              <span className="mx-2 hidden sm:inline">👉</span>
-              <button 
-                onClick={() => scrollTo("#newsletter")}
-                className="underline underline-offset-4 font-semibold hover:text-white transition-colors"
-              >
-                {t(currentLang, "banner.cta")}
-              </button>
-            </div>
-            <button
-              onClick={() => setBannerVisible(false)}
-              className="absolute right-4 p-1 rounded-full hover:bg-black/10 transition-colors"
-              aria-label="Close banner"
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95, y: 10 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.95, y: 10 }}
+              className="relative w-full max-w-lg overflow-hidden rounded-[2rem] border border-primary/10 bg-gradient-to-br from-secondary/5 to-background p-8 text-center shadow-2xl"
             >
-              <X className="w-4 h-4" />
-            </button>
+              <button onClick={() => setModalOpen(false)} className="absolute right-4 top-4 p-2 text-muted-foreground hover:text-foreground">
+                <X className="h-5 w-5" />
+              </button>
+              <h3 className="mb-4 text-2xl md:text-3xl font-bold text-foreground">
+                {t(currentLang, "newsletter.title")}
+              </h3>
+              <p className="mb-8 text-sm md:text-base leading-relaxed text-muted-foreground">
+                {t(currentLang, "newsletter.desc")}
+              </p>
+
+              <form
+                action="https://formsubmit.co/wulingteen@gmail.com"
+                method="POST"
+                target="_blank"
+                className="relative mx-auto flex max-w-md flex-col gap-3 sm:flex-row"
+                onSubmit={() => setTimeout(() => setModalOpen(false), 1000)}
+              >
+                <input type="hidden" name="_subject" value="New Newsletter Subscription Request (Header Modal)!" />
+                <input type="hidden" name="_autoresponse" value="Thank you for subscribing to Nils Digital Studio! You'll receive the latest GenAI and AI Agent architectures straight to your inbox." />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder={t(currentLang, 'newsletter.placeholder')}
+                  required
+                  className="flex-1 rounded-full border border-primary/20 bg-background/80 px-6 py-3.5 text-sm transition-all focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary backdrop-blur-sm"
+                />
+                <button
+                  type="submit"
+                  className="rounded-full bg-primary px-8 py-3.5 text-sm font-bold text-primary-foreground shadow-lg transition-all duration-300 hover:bg-primary/90 hover:shadow-primary/25 hover:-translate-y-0.5"
+                >
+                  {t(currentLang, 'newsletter.button')}
+                </button>
+              </form>
+              
+              <p className="mt-5 text-[11px] font-medium uppercase tracking-wider text-muted-foreground/60">
+                {t(currentLang, 'newsletter.spam')}
+              </p>
+            </motion.div>
           </motion.div>
         )}
       </AnimatePresence>
@@ -146,6 +175,14 @@ const HeaderIsland = ({ lang, currentPath }: Props) => {
           >
             {isDark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
           </button>
+
+          {/* Subscribe Button (Desktop) */}
+          <button 
+            onClick={() => setModalOpen(true)} 
+            className="ml-2 hidden rounded-full bg-primary px-5 py-2 text-xs font-semibold tracking-wide text-primary-foreground shadow-md transition-all hover:-translate-y-0.5 hover:shadow-lg hover:shadow-primary/20 md:block"
+          >
+            {t(currentLang, "nav.subscribe")}
+          </button>
         </div>
 
         {/* Mobile menu button */}
@@ -196,6 +233,12 @@ const HeaderIsland = ({ lang, currentPath }: Props) => {
                   {isDark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
                 </button>
               </div>
+              <button 
+                onClick={() => { setModalOpen(true); setMobileOpen(false); }} 
+                className="mt-2 w-full rounded-full bg-primary px-4 py-2.5 text-sm font-semibold tracking-wide text-primary-foreground shadow-md transition-all hover:bg-primary/90"
+              >
+                {t(currentLang, "nav.subscribe")}
+              </button>
             </div>
           </motion.div>
         )}
