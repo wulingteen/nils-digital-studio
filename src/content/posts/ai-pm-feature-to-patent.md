@@ -11,7 +11,10 @@ tags:
   - "AI PM 系列"
   - "GenAI"
   - "Patent"
-coverImage: "/images/blog/ai-pm-feature-to-patent.jpg"
+coverImage: "/images/blog/ai-pm-base.jpg"
+seriesInfo:
+  name: "AI PM 的真實工作"
+  part: 4
 ---
 
 大多數 PM 一聽到「**AI 專利申請**」，直覺反應都是：那屬於「底層演算法科學家」或 RD 研發部門的事，與產品經理無關。

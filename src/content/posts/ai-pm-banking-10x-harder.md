@@ -11,7 +11,10 @@ tags:
   - "AI PM 系列"
   - "GenAI"
   - "Architecture"
-coverImage: "/images/blog/ai-pm-banking-10x-harder.jpg"
+coverImage: "/images/blog/ai-pm-base.jpg"
+seriesInfo:
+  name: "AI PM 的真實工作"
+  part: 2
 ---
 
 在新創公司開發 Generative AI 產品，你可能靠著 **Vibe Coding**（與編輯器對話直接產出程式碼）三天就能上線一個 Chatbot，無痛完成從 0 到 1 的快速概念驗證 (PoC)。但如果場景換到銀行內部？同樣的事情可能要花上三個月。若運氣不好，六個月。

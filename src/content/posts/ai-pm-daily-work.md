@@ -11,7 +11,10 @@ tags:
   - "AI PM 系列"
   - "GenAI"
   - "Career"
-coverImage: "/images/blog/ai-pm-daily-work.jpg"
+coverImage: "/images/blog/ai-pm-base.jpg"
+seriesInfo:
+  name: "AI PM 的真實工作"
+  part: 3
 ---
 
 很多人聽到「AI 產品經理」，第一反應往往是：「所以你整天都在用 Python 寫模型嗎？」

@@ -99,6 +99,14 @@ const pageDesc = t(lang!, 'insights.sub', 'Thoughts on generative AI, design, an
                   decoding="async"
                   class="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                 />
+                {post.data.seriesInfo && (
+                  <div class="absolute top-3 left-3 px-3 py-1 bg-white/60 dark:bg-black/50 backdrop-blur-md rounded-full border border-white/30 shadow-sm z-10 flex items-center gap-1.5 text-xs font-bold text-slate-900 dark:text-slate-100">
+                    <span class="w-1.5 h-1.5 rounded-full bg-blue-600 shadow-[0_0_8px_rgba(37,99,235,0.8)]"></span>
+                    {lang === 'zh' ? `第 ${post.data.seriesInfo.part} 篇：${post.data.seriesInfo.name}`
+                    : lang === 'de' ? `Teil ${post.data.seriesInfo.part}: ${post.data.seriesInfo.name}`
+                    : `Part ${post.data.seriesInfo.part}: ${post.data.seriesInfo.name}`}
+                  </div>
+                )}
               </a>
             )}
             <div class="flex flex-1 flex-col justify-center py-2 md:py-4 md:pr-6">

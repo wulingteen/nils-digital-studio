@@ -15,6 +15,10 @@ const postsCollection = defineCollection({
     tags: z.array(z.string()).default([]),
     coverImage: z.string().optional(),
     pinned: z.boolean().default(false),
+    seriesInfo: z.object({
+      name: z.string(),
+      part: z.number(),
+    }).optional(),
   })
 });
 

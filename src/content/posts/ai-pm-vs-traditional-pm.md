@@ -10,7 +10,10 @@ author: "Nils Liu"
 tags:
   - "AI PM 系列"
   - "Career"
-coverImage: "/images/blog/ai-pm-vs-traditional-pm.jpg"
+coverImage: "/images/blog/ai-pm-base.jpg"
+seriesInfo:
+  name: "AI PM 的真實工作"
+  part: 1
 ---
 
 我被問過最多次的問題就是：「**AI 產品經理**跟傳統 PM 到底差在哪裡？如果我要進行**產品經理轉型**，需要會寫程式嗎？」

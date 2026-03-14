@@ -126,7 +126,7 @@ const articleLd = {
       </header>
 
       {post.data.coverImage && (
-        <div class="mb-12 overflow-hidden rounded-2xl border border-primary/20 shadow-lg">
+        <div class="relative mb-12 overflow-hidden rounded-2xl border border-primary/20 shadow-lg">
           <img
             src={`${B}${post.data.coverImage.replace(/^\//, '')}`}
             alt={displayTitle}
@@ -134,6 +134,14 @@ const articleLd = {
             decoding="async"
             class="w-full h-auto object-cover max-h-[500px]"
           />
+          {post.data.seriesInfo && (
+            <div class="absolute top-4 left-4 px-4 py-1.5 bg-white/60 dark:bg-black/50 backdrop-blur-md rounded-full border border-white/30 shadow-sm z-10 flex items-center gap-2 text-sm font-bold text-slate-900 dark:text-slate-100">
+              <span class="w-2 h-2 rounded-full bg-blue-600 shadow-[0_0_8px_rgba(37,99,235,0.8)]"></span>
+              {lang === 'zh' ? `第 ${post.data.seriesInfo.part} 篇：${post.data.seriesInfo.name}`
+              : lang === 'de' ? `Teil ${post.data.seriesInfo.part}: ${post.data.seriesInfo.name}`
+              : `Part ${post.data.seriesInfo.part}: ${post.data.seriesInfo.name}`}
+            </div>
+          )}
         </div>
       )}
 
