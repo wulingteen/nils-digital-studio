@@ -1,98 +1,75 @@
 ---
-title: "銀行 AI PM 一天在做什麼？"
-titleEn: "What Does an AI PM at a Bank Actually Do?"
-titleDe: "Was macht ein AI PM bei einer Bank eigentlich den ganzen Tag?"
-excerpt: "不寫程式、不調模型，那 AI 產品經理整天在忙什麼？從「提出正確問題」到風險預判，一名銀行 GenAI PM 的真實日常拆解。"
-excerptEn: "No coding, no model tuning — so what does an AI Product Manager actually do all day? From 'asking the right questions' to risk prediction, a real daily breakdown."
-excerptDe: "Kein Code, kein Modell-Tuning — was macht ein KI-Produktmanager eigentlich den ganzen Tag? Vom 'Stellen der richtigen Fragen' bis zur Risikovorhersage."
+title: "揭秘 AI PM 工作內容：一窺生成式 AI 產品開發流程的一天"
+titleEn: "What Does an AI PM Actually Do All Day? The Daily Grind of GenAI Development"
+titleDe: "Was macht ein AI PM eigentlich den ganzen Tag? Der Alltag der GenAI-Entwicklung"
+excerpt: "不只是開票寫規格，真實的 AI PM 工作內容究竟長怎樣？從單純的 PM 轉向全端 Builder，帶你走一遍銀行生成式 AI 產品開發流程的殘酷日常。"
+excerptEn: "No coding? Think again. The daily routine of an AI PM involves shifting from a traditional PM to a holistic 'Builder', testing prompts, and battling risk."
+excerptDe: "Kein Code? Von wegen. Der Arbeitsalltag eines AI PM beinhaltet den Wechsel vom traditionellen PM zum ganzheitlichen 'Builder'."
 date: "2026-03-01"
 author: "Nils Liu"
 tags:
   - "AI PM 系列"
   - "GenAI"
   - "Career"
+coverImage: "/images/blog/ai-pm-daily-work.jpg"
 ---
 
-很多人聽到「AI 產品經理」，第一反應往往是：「所以你是在寫 Python、調參數嗎？」
+很多人聽到「AI 產品經理」，第一反應往往是：「所以你整天都在用 Python 寫模型嗎？」
 
-**其實不是。**
+**其實不是。我花最多時間在『建造』。**
 
-如同 OpenAI 產品副總裁 Peter Deng 所提出的前瞻視野，在 AI 時代，最重要的技能不再是基礎編程，而是**「提出正確問題」**並將商業、技術、法規三者融合的能力。
+誠如 OpenAI 產品副總裁 Peter Deng 所預言的未來人才趨勢：**單純的『軟體工程師』或『產品經理』職稱，最快在 2026 年就會模糊化，取而代之的身份是『Builder (建造者)』。** 
 
-在銀行的日常裡，我每天做的事情更像是在當一個跨域「翻譯機」——
-把業務的模糊需求翻成精確的工程規格，把技術的硬性限制翻成主管能接受的戰略取捨。
+在執行**生成式 AI 應用**專案時，**AI PM 工作內容**已經不再是傳統那套「寫 PRD 開票交給工程師」的瀑布流。你必須親自下去測試 Prompt、感受 Token 消耗的速度，並深入理解 RAG 架構的資料盲區。
 
-## 一天的真實節奏：在多種 PM 角色間切換
+以下，是我在金融圈主導**AI 產品開發流程**時，身為一個「Builder」最真實的一天節奏：
 
-Peter Deng 曾將 PM 劃分為五種類型（消費者、增長、業務、平台、研究）。而在銀行做 AI 產品，你往往要在一天之中，隨時在這五種認知模型中來回切換：
+## 09:00 — 站會與底層結構除錯（平台 Builder 視角）
 
-### 09:00 — 站會與進度追蹤（平台 PM 視角）
+Daily Standup 不再只是聽進度報告，而是在抓取系統底層的黑箱風險。如果後端工程師回報「模型回覆差不多可以了」，身為 Builder 我必須立刻追問：
 
-和工程團隊的 Daily Standup。不是單純聽報告，而是在抓取系統基礎建設的風險。
+> 「差不多是指 80% 問題都能過，還是 99% 的法遵敏感題不會暴走？」
 
-如果有人說「差不多快好了」，我會追問：
+在金融領域的**生成式 AI 應用**落地，系統上線的 Delay 代價極高（背後緊接著資安、法務、UAT 的連鎖關卡）。要在從 1 推向 100 規模化的道路上穩住陣腳，你必須能聽懂架構師語言，精準辨識潛在的系統相依性。
 
-> 「差不多是指今天下班前，還是這週？」
+## 10:00 — 需求拆解與人機協作（業務與增長視角）
 
-在銀行做 AI，系統落地的 Delay 代價極高，因為後面緊接著法遵審查、資安檢核、UAT 測試。要在 1 推進到 100 的規模化階段穩住腳步，時程與相依性的精準度至關重要。
+業務單位帶著一個夢幻需求來：「我們想做一個 AI 全能語音理專。」
 
-### 10:00 — 需求釐清會議（業務與增長 PM 視角）
+這句話看似誘人，但身為 Builder 必須立刻擋下不切實際的幻想，並引導出能立刻迭代的 MVP 規格。推動真正的**AI 產品開發流程**，你必須問對以下問題：
 
-業務單位帶著一個新需求來：「我們想要讓 AI 自動回覆客戶的投資問題。」
+* 這個 AI 語音理專，要回答的問題範疇界線畫在哪裡？
 
-這句話看似簡單，背後卻藏著十個必須「提出正確問題」才能解開的迷霧：
+* 如果 AI 對投資市場產生幻覺 (Hallucination) 導致錯誤推薦，客戶因此虧損，Fallback 退場機制與免責條款是什麼？
 
-* 回覆的範圍界定在哪？只有基金還是包含保險？
+* 權限控管邏輯是否與銀行的身分驗證核心系統強耦合？
 
-* 輸出的內容是否需要具備法律免責基礎？
+我的**AI PM 工作內容**，就是把這些充滿變數的商務需求，收斂成人工與 AI 互相補位的「人機協作 (Human-in-the-loop)」動線。
 
-* 如果 AI 產生幻覺（Hallucination）回答錯誤，責任歸屬與 Fallback 機制為何？
+## 13:30 — Prompt 深潛與架構取捨（極致通才視角）
 
-* 權限控管邏輯是否與現有身分認證系統脫鉤？
+下午是「極致通才」發揮價值的時刻——直接進入沙盒測試模型。
 
-我的工作就是把這些模糊的許願，拆解成能被嚴格驗證與執行的 User Story。
+今天的核心爭點是：「RAG（檢索增強生成）的 Chunk Size 應該設為 512 還是 1024？」這不是單純的程式參數，這是一個高度關乎使用者體驗的商業抉擇。
 
-### 13:30 — 技術深潛（研究 PM 視角）
+* **Chunk 太大 (1024)**：容易混入雜訊，AI 的回答會變得發散。
 
-下午通常是和工程師一起深入探討技術整合方案。比如今天的核心議題是：「RAG（檢索增強生成）的 Chunk Size 應該設多大？」
+* **Chunk 太小 (512)**：語意被腰斬，AI 看不懂法規長句的前因後果。
 
-這不只是純粹的程式問題，更是高度與業務情境掛鉤的取捨。
+在 Builder 模式下，我不等工程師寫完測試碼。我會親自打開 LangChain 介面或 Python 腳本，輸入 50 筆客戶最常問的刁鑽 Benchmark 問題，人工比對不同 Chunk Size 產出的精準度，最後給出果斷的產品決策。
 
-* **Chunk 太大**：檢索精度下降，可能混入不相干資訊。
+## 15:00 — 把關無感智能化（風險守門員）
 
-* **Chunk 太小**：上下文斷裂，AI 無法理解完整語意。
+導入**生成式 AI 應用**時，「法遵與資安」擁有絕對的一票否決權。
 
-最終的決定要綜合考量法規文件的長句特性、使用者的查詢習慣，以及系統的延遲容忍度。
+為了確保 AI 在生成過程中絕不吐出客戶的 PII（個人可識別性資訊），我在產品設計階段就親自畫出了一套「防暴走替換機制」。如 Peter Deng 強調的，最好的 AI 是隱形的，它將所有的安全防護網埋在水面下，這正是「無感智能」最艱難的技術工藝。
 
-### 15:00 — 合規與資安對齊（風險管理者）
+## 17:00 — 六個月原則的實踐（未來規劃）
 
-在金融業導入 AI，「法遵」是絕對的王者。
+一天中最安靜的時段，用來反思與撰寫產品需求規劃。
 
-今天要和資安團隊確認：新上線的系統，如果在生成過程中不小心涵蓋到客戶的 PII（個人可識別性資訊）怎麼辦？
+我時常拿 Peter Deng 提到的「六個月原則」來警惕團隊：**不要針對『現在』的模型能力開發產品。如果在程式碼裡花了一個月硬幹出來的解析邏輯，六個月後只要用 GPT-5 加上一行語句就能解決，那現在寫的就全都是技術債。**
 
-這促使我設計了一套「輸出端敏感資訊替換機制」，將風險阻絕於技術底層。
+未來的**AI PM 工作內容**不再受限於畫 Wireframe。只要具備「提出正確問題」的核心能力，加上敢於第一線試錯的 Builder 精神，就算不具備資深軟體工程背景，依然能站在浪尖引領 AI 產品的爆發。
 
-### 17:00 — 寫作與架構收斂（六個月原則的實踐）
-
-一天中最安靜的時段，用來撰寫產品需求文件 (PRD)。
-
-在銀行，PRD 不只是給工程師看——法遵要看、稽核要看、主管要看。所以每個 Feature 都需要附帶完整的風險評估、資料流向圖與退場機制。
-
-如同 Peter Deng 提到的「六個月原則」，我必須讓這份具備深度思考的文件成為強大的自我驅動引擎，讓團隊拿到文件後，不需指令就能協作。
-
----
-
-## AI PM 最核心的三大驅動力
-
-歸結這些日常，我認為優秀的 AI PM 必須具備以下核心能力：
-
-1. **跨界翻譯力**
-   能在業務語言、技術語言、法遵語言之間切換自如，確保多方價值觀不衝突。
-
-2. **減法判斷力**
-   80% 的需求不該做或不用 AI 做。AI PM 的價值是判斷哪些場景值得用大型語言模型的運算成本去解，而非盲目堆疊 AI。
-
-3. **無感智能的設計力**
-   如前述，最好的 AI 不會搶焦點。AI PM 必須將智慧深深嵌入現有系統，讓使用者在不知不覺中大幅提升效率，這才是最高級的產品工藝。
-
-> *如果你正在考慮轉職 AI PM，歡迎繼續閱讀這個系列的其他文章。*
+> *這是「AI PM 的真實工作」系列文章。下一篇我們將討論，如果心血來潮想幫你的 AI 產品註冊專利，該注意什麼。*
