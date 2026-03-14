@@ -56,7 +56,7 @@ Daily Standup 不再只是聽進度報告，而是在抓取系統底層的黑箱
 
 * **Chunk 太小 (512)**：語意被腰斬，AI 看不懂法規長句的前因後果。
 
-在 Builder 模式下，我不等工程師寫完測試碼。我會親自打開 LangChain 介面或 Python 腳本，輸入 50 筆客戶最常問的刁鑽 Benchmark 問題，人工比對不同 Chunk Size 產出的精準度，最後給出果斷的產品決策。
+在 Builder 模式下，我不等工程師寫完測試碼。我會親自打開 Cursor，用語音進行 **Vibe Coding**，十幾分鐘就搭出一個輕量級的 Python 沙盒腳本。輸入 50 筆客戶最常問的刁鑽 Benchmark 問題，並設計嚴格的 **Evaluation 評估機制** 來自動比對不同 Chunk Size 的精準度，最後給出果斷的產品決策。
 
 ## 15:00 — 把關無感智能化（風險守門員）
 

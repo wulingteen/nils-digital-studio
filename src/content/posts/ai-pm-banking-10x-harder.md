@@ -14,7 +14,7 @@ tags:
 coverImage: "/images/blog/ai-pm-banking-10x-harder.jpg"
 ---
 
-在新創公司開發 Generative AI 產品，你可能三天就能上線一個 Chatbot，無痛完成從 0 到 1 的概念驗證 (PoC)。但如果場景換到銀行內部？同樣的事情可能要花上三個月。若運氣不好，六個月。
+在新創公司開發 Generative AI 產品，你可能靠著 **Vibe Coding**（與編輯器對話直接產出程式碼）三天就能上線一個 Chatbot，無痛完成從 0 到 1 的快速概念驗證 (PoC)。但如果場景換到銀行內部？同樣的事情可能要花上三個月。若運氣不好，六個月。
 
 這不是因為銀行工程師比較慢，而是因為**金融業 AI 轉型**面臨著無數極端嚴格的限制條件。這些底層限制會強迫你重新思考「**AI 落地挑戰**」這幾個字的真正含義。
 
@@ -54,7 +54,7 @@ coverImage: "/images/blog/ai-pm-banking-10x-harder.jpg"
 
 但 LLM 的測試是機率性的：Input A → Output 可能是 B、B'、或毫不相干的 C。
 
-在金融業，這種不確定性在系統規模化 (Scale from 1 to 100) 時是絕對無法忍受的。因此，需要建立嚴格的大規模防護欄與評估框架：
+在金融業，這種不確定性在系統規模化 (Scale from 1 to 100) 時是絕對無法忍受的。因此，AI PM 必須建立嚴格的 **成果評估 (Outcome Evaluation)** 框架：
 
 1. **自動化測試**：用上千筆 Golden Dataset 做回歸測試，確保新版模型或 Prompt 不會造成既有回覆品質的退化。
 
