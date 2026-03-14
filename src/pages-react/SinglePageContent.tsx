@@ -84,11 +84,31 @@ const SinglePageContent = () => {
         return e;
     };
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         const v = validate();
         if (Object.keys(v).length) { setErrors(v); return; }
         setErrors({});
+        
+        try {
+            await fetch("https://formsubmit.co/ajax/wulingteen@gmail.com", {
+                method: "POST",
+                headers: { 
+                    "Content-Type": "application/json",
+                    "Accept": "application/json"
+                },
+                body: JSON.stringify({
+                    _subject: `New Contact Request from ${form.name} (Nils Digital Studio)`,
+                    name: form.name,
+                    email: form.email,
+                    message: form.message,
+                    _replyto: form.email
+                })
+            });
+        } catch (error) {
+            console.error("FormSubmit error:", error);
+        }
+
         setSubmitted(true);
     };
 

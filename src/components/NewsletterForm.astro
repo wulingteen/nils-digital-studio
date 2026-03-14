@@ -7,8 +7,8 @@ interface Props {
 
 const { lang } = Astro.props;
 
-// You can replace this action URL with your specific Substack, Buttondown, or ConvertKit form action later!
-const formAction = "#";
+// FormSubmit endpoint automatically routes the captured email directly to the author's inbox!
+const formAction = "https://formsubmit.co/wulingteen@gmail.com";
 ---
 
 <div class="mt-16 rounded-[2rem] border border-primary/10 bg-gradient-to-br from-secondary/5 to-background p-8 md:p-12 text-center relative overflow-hidden shadow-lg">
@@ -23,13 +23,16 @@ const formAction = "#";
       {t(lang, 'newsletter.desc', 'Join the newsletter to receive my latest articles on GenAI, product management, and architecture.')}
     </p>
 
-    <!-- The form points to the external newsletter provider's URL -->
     <form 
       action={formAction} 
-      method="post" 
+      method="POST" 
       target="_blank"
       class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto relative group"
     >
+      <!-- FormSubmit Config -->
+      <input type="hidden" name="_subject" value="New Newsletter Subscription Request (Nils Digital Studio)!" />
+      <input type="hidden" name="_autoresponse" value="Thank you for subscribing to Nils Digital Studio! You'll receive the latest GenAI and AI Agent architectures straight to your inbox." />
+      
       <input 
         type="email" 
         name="email" 
@@ -50,15 +53,3 @@ const formAction = "#";
     </p>
   </div>
 </div>
-
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const forms = document.querySelectorAll('form[action="#"]');
-    forms.forEach(form => {
-      form.addEventListener('submit', (e) => {
-        e.preventDefault();
-        alert('電子報系統即將上線！請先於原始碼 `NewsletterForm.astro` 內設定您的 Substack 或 Buttondown 訂閱網址。\n\n(Newsletter system integration is pending configuration.)');
-      });
-    });
-  });
-</script>
