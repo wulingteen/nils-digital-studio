@@ -25,7 +25,6 @@ const localizedId = lang === 'zh' ? basePost.id : `${basePost.id}-${lang}`;
 const localizedPost = allPosts.find((p: any) => p.id === localizedId) || basePost;
 const { Content } = await render(localizedPost);
 
-const allPosts = await getCollection('posts');
 const currentTags = basePost.data.tags || [];
 
 const relatedPosts = allPosts
