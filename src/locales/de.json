@@ -1,1 +1,365 @@
-{}
+{
+  "nav": {
+    "home": "Start",
+    "services": "Leistungen",
+    "work": "Projekte",
+    "career": "Karriere",
+    "about": "Über mich",
+    "insights": "Einblicke",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "headline1": "Ich mache GenAI",
+    "headline2": "AI Agents",
+    "headline3": "produktionsreif.",
+    "sub": "Vom Prototyp zur Produktion in regulierten Unternehmen — Governance, Observability und Kostenkontrolle.",
+    "cta_book": "Gespräch buchen",
+    "cta_email": "E-Mail",
+    "cta_linkedin": "LinkedIn"
+  },
+  "proof": [
+    "GenAI Product Owner (Finanzdienstleistungen)",
+    "Enterprise Knowledge Management & RAG",
+    "AI Agents & Agentic Systems",
+    "LLM-Feinabstimmung & Dialogdesign",
+    "Synthetische Testdaten (GenAI Test Data)",
+    "Cloud-native auf GCP (Serverless)",
+    "Retrieval-Qualität & Evaluation",
+    "Governance, Risiko & Compliance (GRC) für GenAI",
+    "Data Engineering für semi-strukturierte Daten",
+    "Persona-Simulation & AI-Coaching-Systeme",
+    "Patentinhaber / Erfinder",
+    "Tech-Speaker & Trainer"
+  ],
+  "demos": {
+    "title": "Ausgewählte Prototypen",
+    "sub": "Sehen Sie, wie ich produktionsreife AI Agents vom Konzept zur fertigen Demo baue.",
+    "cta": "So etwas bauen lassen",
+    "items": [
+      {
+        "video_title": "AI KYC Agent — Autonome Browser-Automatisierung",
+        "video_desc": "Ein AI Agent, der den Browser wie ein Mensch steuert, um KYC-Verifizierung durchzuführen — vollständig autonom, vollständig auditiert.",
+        "features": [
+          {
+            "title": "Autonomer Agent",
+            "desc": "AI steuert den Browser wie ein menschlicher Operator — kein manueller Eingriff erforderlich."
+          },
+          {
+            "title": "Vollständiger Audit-Trail",
+            "desc": "Jede Aktion wird mit Screenshots und strukturierten Audit-Logs für Compliance dokumentiert."
+          },
+          {
+            "title": "Automatischer Bericht",
+            "desc": "Ein strukturierter KYC-Bericht wird automatisch nach Aufgabenabschluss erstellt."
+          },
+          {
+            "title": "Compliance-Ready",
+            "desc": "Für regulierte Umgebungen gebaut — Governance und Observability von Tag eins."
+          }
+        ]
+      },
+      {
+        "video_title": "News-Sentiment Agent Team — Multi-Agenten-Recherche",
+        "video_desc": "Ein AI Agent Team, das Sprach- und Zeitbarrieren überwindet — Nutzer diskutieren Nachrichten mit AI, die automatisch sammelt, zusammenfasst, Quellen zitiert und Berichte exportiert oder per E-Mail versendet.",
+        "features": [
+          {
+            "title": "Multi-Agenten-Kollaboration",
+            "desc": "Agent-Teammitglieder arbeiten zusammen und können unbegrenzt für neue Fähigkeiten erweitert werden."
+          },
+          {
+            "title": "Sprachübergreifende Recherche",
+            "desc": "Sprach- und Zeitzonenbarrieren überwinden — globale Nachrichten in jeder Sprache entdecken und analysieren."
+          },
+          {
+            "title": "Interaktive Q&A",
+            "desc": "Mit AI chatten, um Geschichten zu vertiefen, verwandte Nachrichten aufzudecken und Folgefragen zu stellen."
+          },
+          {
+            "title": "Auto-Zusammenfassung & Export",
+            "desc": "AI sammelt Informationen, fasst mit Quellenangaben zusammen und exportiert oder versendet den Bericht per E-Mail."
+          }
+        ]
+      },
+      {
+        "video_title": "Versicherungsleben — Into the Mist (Hauptentwicklerin: Yen-Min Chiu)",
+        "video_desc": "Ein Lebenssimulationssystem zur Visualisierung von Risikomanagement und Finanzplanung. Es verknüpft unerwartete Lebensereignisse mit realer Versicherungslogik.",
+        "features": [
+          {
+            "title": "Risiko-Visualisierung",
+            "desc": "Warnt vorab vor Lebensereignissen (wie Unfällen oder Krankheiten), damit Spieler Schutznetze planen können."
+          },
+          {
+            "title": "Versicherungsmathematische Abbildung",
+            "desc": "Ordnet unerwartete Ereignisse dynamisch realen Gesundheits- und Versicherungsleistungen zu."
+          },
+          {
+            "title": "Dynamische Alters-Engine",
+            "desc": "Simuliert präzise veränderte Einnahmen, familiäre Verantwortung und Risikowahrscheinlichkeiten im Laufe der Zeit."
+          },
+          {
+            "title": "Interaktive finanzielle Bildung",
+            "desc": "Baut Fachjargon ab und bietet ein interaktives Erlebnis, das Aufklärung mit echter Anspruchslogik verbindet."
+          }
+        ]
+      },
+      {
+        "video_title": "AI-Interviewassistent — Live-Teilnahme in Google Meet (Hauptentwickler: Sunny Sun)",
+        "video_desc": "Ein AI Agent, der als benannter Teilnehmer an Google Meet teilnimmt und Echtzeit-Interviewunterstützung sowie automatische Meetingdokumentation bietet.",
+        "features": [
+          {
+            "title": "Live-Meeting-Teilnahme",
+            "desc": "AI tritt direkt als benannter Teilnehmer bei Google Meet bei — keine Plugins oder Bildschirmaufnahme nötig."
+          },
+          {
+            "title": "Interview-Workflow-Unterstützung",
+            "desc": "Unterstützt Interviewer in Echtzeit mit strukturierter Bewertung und zusammenfassendem Feedback."
+          },
+          {
+            "title": "Automatisches Meetingprotokoll",
+            "desc": "Zeichnet das gesamte Gespräch automatisch auf und erstellt exportierbare strukturierte Zusammenfassungen."
+          },
+          {
+            "title": "Multi-Interviewer-Integration",
+            "desc": "Unterstützt mehrere Interviewer gleichzeitig und synthetisiert verschiedene Perspektiven und Bewertungen."
+          }
+        ]
+      }
+    ]
+  },
+  "services_teaser": {
+    "title": "Wie ich helfe",
+    "sub": "Von der Strategie bis zur Umsetzung — ich helfe Teams, schnell mit AI voranzukommen.",
+    "cta": "Leistungen ansehen"
+  },
+  "patents": {
+    "title": "Patentierte Innovationen",
+    "sub": "Umsetzung von KI-Praktiken in geschütztes geistiges Eigentum.",
+    "inventor": "Alleiniger Erfinder: Nils Liu",
+    "assignee": "Patentinhaber: Cathay United Bank",
+    "read_more": "Weiterlesen"
+  },
+  "services": {
+    "page_title": "Leistungen",
+    "page_sub": "Fokussierte Engagements für schnelle und messbare Ergebnisse.",
+    "consulting": {
+      "title": "Beratung",
+      "timeline": "1–3 Wochen",
+      "best_for": "Ideal für: Strategieklarheit, Architektur-Review, Build-or-Buy-Entscheidungen",
+      "deliverables": "AI-Strategiebewertung, Architektur-Blueprint, Anbieterbewertung, Risiko- & Governance-Framework, Executive Readout.",
+      "desc": "Ich helfe Führungsteams, den AI-Hype zu durchschauen und fundierte Entscheidungen zu treffen. Erwarten Sie eine klare Roadmap, keine Folienschlacht."
+    },
+    "prototyping": {
+      "title": "Rapid Prototyping",
+      "timeline": "2–6 Wochen",
+      "best_for": "Ideal für: schnelle Wertvalidierung, Risikominimierung vor Personalaufbau",
+      "deliverables": "Funktionierender Prototyp, Evaluierungs-Suite, Kostenmodell, Übergabedokumentation, Demo-Aufzeichnung.",
+      "desc": "Ich baue produktionsnahe Prototypen, die zeigen, was möglich ist — und was nicht. Ihr Team erbt sauberen Code und klare Dokumentation."
+    },
+    "training": {
+      "title": "Enablement & Training",
+      "timeline": "0,5–2 Tage",
+      "best_for": "Ideal für: Engineering-Teams weiterbilden, interne AI-Champions aufbauen",
+      "deliverables": "Maßgeschneiderter Workshop, Hands-on-Labs, Referenzmaterialien, Follow-up Q&A.",
+      "desc": "Ich führe intensive, praxisnahe Workshops durch, die auf den Tech-Stack und das Niveau Ihres Teams zugeschnitten sind. Kein generischer Inhalt — alles basiert auf Ihren realen Problemen."
+    },
+    "cta": "Kontakt aufnehmen"
+  },
+  "work": {
+    "page_title": "Ausgewählte Projekte",
+    "page_sub": "Fallstudien aus regulierten Unternehmen und globalen Finanzinstitutionen.",
+    "cases": [
+      {
+        "title": "EnterpriseGPT — Enterprise GenAI Plattform",
+        "client": "Führendes Finanzinstitut in Taiwan",
+        "tags": [
+          "GenAI-Plattform",
+          "GCP Serverless",
+          "Produktion"
+        ],
+        "problem": "Die Bank benötigte ihre erste produktionsreife GenAI-Anwendung für interne Wissens- und Aufgabenunterstützung mit Unternehmens-Sicherheit und Compliance.",
+        "approach": "Entwurf und Auslieferung eines skalierbaren Serverless GenAI-Stacks auf GCP (Cloud Run, Cloud SQL, Vertex AI) mit Unternehmens-Kontrollen für Identität, Zugriff, Audit, Monitoring und Fehlerbehandlung.",
+        "outcome": "EnterpriseGPT wurde die erste produktionsreife GenAI-App der Organisation. Interner ROI durch Wissens- und Aufgabenunterstützung.",
+        "owned": "Lead-Entwickler / Architekt, End-to-End-Plattform-Engineering, Sicherheit & Compliance, Stakeholder-Alignment"
+      },
+      {
+        "title": "Overseas AI Agent Plattform",
+        "client": "Führendes Finanzinstitut in Taiwan",
+        "tags": [
+          "Multi-Agent",
+          "MCP",
+          "Agentic Workflows"
+        ],
+        "problem": "Die Holdinggesellschaft benötigte eine skalierbare AI-Agent-Plattform für den Auslandsbetrieb mit Produktions-Betriebsstandards.",
+        "approach": "Gründung und Aufbau der ersten Auslands-AI-Agent-Plattform mit modularer Multi-Agenten-Architektur, MCP-Tool-Servern und OAuth-Authentifizierung.",
+        "outcome": "Plattform für szenarien-übergreifende Skalierung konzipiert, mit standardisierten Tool-Verträgen und messbaren Evaluierungsschleifen.",
+        "owned": "Gründer/Builder, Architektur, Agentic Workflows, Tool-Server-Design, Evaluierungs-Framework"
+      },
+      {
+        "title": "Narrator — GenAI Risikoanalyse",
+        "client": "Schweizer Finanzberatung × Bankkunde",
+        "tags": [
+          "GenAI",
+          "Risikoanalyse",
+          "NLG"
+        ],
+        "problem": "Risikoanalyse-Ergebnisse waren zu komplex für nicht-technische Stakeholder.",
+        "approach": "Entwicklung und Integration des GenAI-Moduls Narrator, das Risikoanalyse-Ergebnisse in natürliche Sprache transformiert; Zusammenarbeit mit Client-Engineering für einen deployierbaren PoC.",
+        "outcome": "Adoptionsbereite Demo geliefert. Geschäftsziele in implementierbare AI/Analytics-Muster und Governance-Kontrollen übersetzt.",
+        "owned": "GenAI-Modulentwicklung, technische Discovery, Client-Enablement, Execution-Roadmap"
+      },
+      {
+        "title": "Produktionsautomatisierung & ML-Enablement",
+        "client": "Singapurische Bank",
+        "tags": [
+          "Python-Automatisierung",
+          "ML-Training",
+          "DevOps"
+        ],
+        "problem": "Remote-Betrieb während COVID erforderte Automatisierung; Engineering-Teams fehlte angewandte ML-Kompetenz.",
+        "approach": "Produktionsreife Python-Automatisierung (Linux + MySQL + SHA-256) als wiederverwendbare Templates für 70+ Reporting-Workflows. ML-Enablement-Programm (AWS DeepRacer) für 200 Mitarbeiter.",
+        "outcome": "Automatisierung ermöglichte vollständigen Remote-Betrieb während COVID. ML-Kompetenz in Engineering- und Business-Teams verbessert.",
+        "owned": "Automatisierungs-Engineering, Call-Center-Plattform-Delivery, ML-Trainingsprogramm, Code-Review-Koordination"
+      }
+    ]
+  },
+  "career": {
+    "title": "Globaler Werdegang",
+    "journey": [
+      {
+        "age": "2006–2010",
+        "title": "NTU — B.Sc. Chemie",
+        "desc": "Abschluss an der National Taiwan University mit einer soliden naturwissenschaftlichen Grundlage."
+      },
+      {
+        "age": "2012–2015",
+        "title": "TU Chemnitz — M.Sc. Chemie",
+        "desc": "Masterstudium in Deutschland mit internationaler akademischer und interkultureller Erfahrung."
+      },
+      {
+        "age": "2016–2017",
+        "title": "Groningen Univ. Gastforscher / Fraunhofer Praktikant",
+        "desc": "Forschung zu fortschrittlichen Materialien und Nano-Synthese in einem Nobelpreisträger-Labor (Holland) und bei Fraunhofer (Deutschland)."
+      },
+      {
+        "age": "2017–2019",
+        "title": "Avancis GmbH — Int'l Project Specialist / PM (Deutschland)",
+        "desc": "Leitung von Technologietransfer-Projekten und Pilotlinien-Implementierungen, Koordination grenzüberschreitender Teams zur Automatisierungsabnahme."
+      },
+      {
+        "age": "2019–2022",
+        "title": "DBS Bank — MA → DevOps Sr. Associate",
+        "desc": "Einstieg über das Management Associate Programm. Leitung von Python-Automatisierung und ML-Enablement für 200+ Mitarbeiter."
+      },
+      {
+        "age": "2023–2024",
+        "title": "Synpulse — Banking-Technologie-Berater",
+        "desc": "Beratung bei einem Schweizer Finanzdienstleister; Entwicklung des GenAI-Risikoanalysemoduls 'Narrator'."
+      },
+      {
+        "age": "2024–Heute",
+        "title": "Cathay United Bank — GenAI Architekt",
+        "desc": "Hauptarchitekt von CathayGPT, der ersten produktiven GenAI-Anwendung der Bank. Aufbau einer KI-Agent-Plattform. 6 erteilte Patente."
+      }
+    ]
+  },
+  "about": {
+    "principles_title": "Prinzipien",
+    "principles": [
+      {
+        "title": "The Bitter Lesson",
+        "desc": "Skalierung und Compute gewinnen. Ich baue Systeme, die Foundation Models nutzen statt gegen sie zu arbeiten."
+      },
+      {
+        "title": "Platform-First",
+        "desc": "Einmallösungen überleben nicht. Ich designe von Tag eins für Wiederverwendung, Governance und Teamautonomie."
+      },
+      {
+        "title": "Evaluation-Driven",
+        "desc": "Was man nicht messen kann, kann man nicht ausliefern. Rigorose Evaluation ist die Grundlage jedes Projekts."
+      }
+    ],
+    "skills_title": "Tech-Stack",
+    "skills": [
+      "Python",
+      "SQL",
+      "GCP (Cloud Run / Vertex AI)",
+      "Serverless-Architektur",
+      "Agentic Workflows / MCP",
+      "RAG / Agents / Evals",
+      "React / Next.js / TypeScript",
+      "LangChain / LlamaIndex",
+      "PostgreSQL / Vektordatenbanken"
+    ],
+    "credibility_title": "Referenzen",
+    "credibility": [
+      {
+        "label": "Patente",
+        "value": "6 erteilt (GenAI / Knowledge Graph / Datenabfrage-Systeme)"
+      },
+      {
+        "label": "Auszeichnung",
+        "value": "1. Platz — 2024 Enterprise Innovationswettbewerb"
+      },
+      {
+        "label": "Vorträge",
+        "value": "iThome Hello World 2024 & 2025 (7 Sessions), DevFest Taipei 2025"
+      },
+      {
+        "label": "Zertifizierungen",
+        "value": "PMP (Project Management Professional)"
+      },
+      {
+        "label": "Ausbildung",
+        "value": "NTU Informatik (MSc) · Quantic MBA · TU Chemnitz MSc · NTU BSc"
+      },
+      {
+        "label": "Sprachen",
+        "value": "Chinesisch (Muttersprache), Englisch, Deutsch, Japanisch (Grundkenntnisse)"
+      }
+    ]
+  },
+  "insights": {
+    "page_title": "Einblicke",
+    "coming_soon": "Demnächst verfügbar.",
+    "sub": "Praxisnahe Einblicke zu AI Agents, GenAI im Produktiveinsatz, GraphRAG, Ontologie-Architektur, DevOps × AI und Enterprise-AI-Plattformen."
+  },
+  "blog": {
+    "search_placeholder": "Artikel suchen...",
+    "all_tags": "Alle",
+    "no_results": "Keine Artikel gefunden, die Ihren Kriterien entsprechen.",
+    "back_to_insights": "Zurück zu Einblicke",
+    "tags": {
+      "GenAI": "GenAI",
+      "Agent": "AI Agents",
+      "Architecture": "Architektur",
+      "Career": "Karriere",
+      "Event": "Veranstaltungen",
+      "News": "Nachrichten",
+      "Patent": "Patente"
+    }
+  },
+  "contact": {
+    "page_title": "Kontakt",
+    "page_sub": "Ob Strategiesession, Prototyp oder Workshop — ich freue mich auf Ihre Herausforderung.",
+    "name": "Name",
+    "email": "E-Mail",
+    "message": "Nachricht",
+    "send": "Nachricht senden",
+    "success": "Nachricht gesendet! Ich melde mich innerhalb von 24 Stunden.",
+    "timezone": "Standort: Taipeh, Taiwan (GMT+8)",
+    "validation": {
+      "name_required": "Bitte geben Sie Ihren Namen ein",
+      "email_required": "Bitte geben Sie Ihre E-Mail ein",
+      "email_invalid": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+      "message_required": "Bitte geben Sie eine Nachricht ein"
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 Nils. Alle Rechte vorbehalten.",
+    "built_with": "Mit Präzision gebaut."
+  },
+  "seo": {
+    "title": "劉岦崱 Nils Liu | Enterprise GenAI Architect & RAG Product Expert",
+    "desc": "Spezialisiert auf Enterprise RAG-Integration, GenAI Product Management und KI-Agenten. GenAI-Beratung für regulierte Unternehmen. Offen für Sr. AI PM Positionen."
+  }
+}

@@ -4,20 +4,27 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import HeaderIsland from "@/components/layout/HeaderIsland";
 import FooterStatic from "@/components/layout/FooterStatic.astro";
 import SplashScreenIsland from "@/components/ui/SplashScreenIsland";
-import "@/App.css";
+import "@/index.css";
 
 interface Props {
   title?: string;
   description?: string;
   lang?: string;
+  image?: string;
 }
 
 const { 
   title = "Nils Digital Studio", 
   description = "A GenAI Product Manager's portfolio.",
-  lang = "en" 
+  lang = "en",
+  image = "/images/og-default.png"
 } = Astro.props;
 
+// For generating full image URLs if a relative path is provided
+const socialImageUrl = new URL(
+  image.startsWith('/') ? `/nils-digital-studio${image}` : image, 
+  Astro.site || 'https://wulingteen.github.io/'
+).href;
 const htmlLang = lang === "zh" ? "zh-TW" : lang;
 ---
 
@@ -25,11 +32,35 @@ const htmlLang = lang === "zh" ? "zh-TW" : lang;
 <html lang={htmlLang} class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
     <meta name="description" content={description} />
-    <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/x-icon" href="/nils-digital-studio/favicon.ico" />
     <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site || 'https://wulingteen.github.io/nils-digital-studio/').href} />
+
+    <!-- Hreflang Tags for Multi-language SEO -->
+    <link rel="alternate" hreflang="zh-TW" href={new URL(`/nils-digital-studio/zh${Astro.url.pathname.replace(/^\/(zh|en|de)/, '')}`, 'https://wulingteen.github.io').href} />
+    <link rel="alternate" hreflang="en" href={new URL(`/nils-digital-studio/en${Astro.url.pathname.replace(/^\/(zh|en|de)/, '')}`, 'https://wulingteen.github.io').href} />
+    <link rel="alternate" hreflang="de" href={new URL(`/nils-digital-studio/de${Astro.url.pathname.replace(/^\/(zh|en|de)/, '')}`, 'https://wulingteen.github.io').href} />
+    <link rel="alternate" hreflang="x-default" href={new URL(`/nils-digital-studio/en${Astro.url.pathname.replace(/^\/(zh|en|de)/, '')}`, 'https://wulingteen.github.io').href} />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.url.href} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={socialImageUrl} />
+    <meta property="og:site_name" content="Nils Digital Studio" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={Astro.url.href} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={socialImageUrl} />
   </head>
   <body class="bg-background text-foreground antialiased min-h-screen flex flex-col">
     <TooltipProvider client:load>

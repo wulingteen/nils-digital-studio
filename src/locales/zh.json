@@ -1,1 +1,367 @@
-{}
+{
+  "nav": {
+    "home": "首頁",
+    "services": "服務",
+    "work": "作品",
+    "career": "職涯軌跡",
+    "about": "關於",
+    "insights": "GenAI 分享",
+    "contact": "聯繫"
+  },
+  "hero": {
+    "headline1": "我讓 GenAI",
+    "headline2": "AI Agents",
+    "headline3": "落地運營。",
+    "sub": "從原型到生產環境 — 在受監管的企業中實現治理、可觀測性與成本控制。",
+    "cta_book": "預約通話",
+    "cta_email": "電子郵件",
+    "cta_linkedin": "LinkedIn"
+  },
+  "proof": [
+    "金融業 GenAI 產品負責人",
+    "企業內部知識管理（KM）與 RAG",
+    "AI Agent / Agentic Systems（Level 1–5）",
+    "LLM 微調與對話策略設計",
+    "生成式測試資料（GenAI Test Data）",
+    "雲端原生架構（GCP / Serverless）",
+    "檢索品質與評測（Retrieval / Eval）",
+    "企業導入落地：合規、治理、風險控管",
+    "數據工程：半結構資料 ETL / ODS",
+    "AI 教練系統 / Persona 模擬（客戶分身）",
+    "專利發明與技術輸出（Patents）",
+    "技術演講者 / 內訓講師"
+  ],
+  "demos": {
+    "title": "精選原型展示",
+    "sub": "看我如何從概念到可運行的生產級 AI Agent。",
+    "cta": "打造類似產品",
+    "items": [
+      {
+        "video_title": "AI KYC Agent — 自主瀏覽器自動化",
+        "video_desc": "讓 AI 控制瀏覽器，仿真人進行 KYC 驗證 — 完全自主、完整稽核。",
+        "features": [
+          {
+            "title": "全自主 Agent",
+            "desc": "AI 像真人操作員一樣控制瀏覽器 — 零人工介入。"
+          },
+          {
+            "title": "完整稽核軌跡",
+            "desc": "每一步操作都附帶截圖與結構化稽核日誌，滿足合規要求。"
+          },
+          {
+            "title": "自動產出報告",
+            "desc": "任務完成後自動產出結構化 KYC 報告。"
+          },
+          {
+            "title": "合規就緒",
+            "desc": "專為受監管環境設計 — 治理與可觀測性從第一天開始。"
+          }
+        ]
+      },
+      {
+        "video_title": "新聞輿情 Agent Team — 多智能體協作研究",
+        "video_desc": "讓使用者不受語言和時間限制，透過對話令 AI Agent Team 蒐集資訊、自動總結、附加來源，並匯出或透過 email 寄出報告。",
+        "features": [
+          {
+            "title": "多智能體協作",
+            "desc": "Agent 成員互相協作，可無限新增以擴充新能力。"
+          },
+          {
+            "title": "跨語言研究",
+            "desc": "突破語言與時區限制 — 發掘並分析全球任何語言的新聞。"
+          },
+          {
+            "title": "互動問答",
+            "desc": "與 AI 對話來深入探討新聞、挖掘相關報導、進行追問。"
+          },
+          {
+            "title": "自動摘要與匯出",
+            "desc": "AI 蒐集資訊、附帶來源自動摘要，並匯出或 email 寄出最終報告。"
+          }
+        ]
+      },
+      {
+        "video_title": "保險人生 — 晴雨之森28000天 (主要開發：邱顏敏)",
+        "video_desc": "將風險管理與財務規劃視覺化的生活模擬系統，將人生的突發事件對應至實際保險理賠邏輯。",
+        "features": [
+          {
+            "title": "風險視覺化",
+            "desc": "事前警示生活事件（如車禍、罹病），讓玩家能預先規劃防護網。"
+          },
+          {
+            "title": "精算邏輯對應",
+            "desc": "動態將意外與疾病等突發事件，對應至真實世界的健保與保險理賠結果。"
+          },
+          {
+            "title": "動態年齡引擎",
+            "desc": "系統精準模擬隨時間推移的收入變化、家庭責任與不同階段的風險機率。"
+          },
+          {
+            "title": "互動式金融教育",
+            "desc": "打破專業術語隔閡，提供兼具教育意義與真實理賠邏輯的互動體驗設計。"
+          }
+        ]
+      },
+      {
+        "video_title": "AI 面試助理 — Google Meet 即時參與 (主要開發：孫旖岑)",
+        "video_desc": "AI Agent 以獨立參與者身分加入 Google Meet，即時提供面試輔助與會議紀錄。",
+        "features": [
+          {
+            "title": "會議即時參與",
+            "desc": "AI 以具名參與者身分直接加入 Google Meet，無需額外插件或截圖。"
+          },
+          {
+            "title": "面試流程輔助",
+            "desc": "即時協助面試官評估候選人，提供結構化評分與摘要回饋。"
+          },
+          {
+            "title": "自動會議紀錄",
+            "desc": "全程自動記錄對話內容，產出可匯出的結構化會議摘要。"
+          },
+          {
+            "title": "多人協作整合",
+            "desc": "支援多位面試官同時參與，AI 統整不同觀點與評估結果。"
+          }
+        ]
+      }
+    ]
+  },
+  "services_teaser": {
+    "title": "我如何幫助您",
+    "sub": "從策略到交付 — 幫助團隊快速推進 AI 落地。",
+    "cta": "查看服務"
+  },
+  "patents": {
+    "title": "專利創新",
+    "sub": "將 AI 實踐轉化為受保護的智慧財產權。",
+    "inventor": "唯一發明人：劉岦崱",
+    "assignee": "專利權人：國泰世華銀行",
+    "read_more": "閱讀更多"
+  },
+  "career": {
+    "title": "職涯軌跡",
+    "journey": [
+      {
+        "age": "2006–2010",
+        "title": "台大化學學士",
+        "desc": "於國立台灣大學化學系完成學業，奠定扎實的科學與邏輯基礎。"
+      },
+      {
+        "age": "2012–2015",
+        "title": "赴德國攻讀碩士",
+        "desc": "前往德國開姆尼茲工業大學取得化學碩士學位，開啟跨國學術視野。"
+      },
+      {
+        "age": "2016–2017",
+        "title": "Groningen 大學訪問學者 / Fraunhofer 研究實習",
+        "desc": "於諾貝爾化學獎得主實驗室（荷蘭）與德國 Fraunhofer 研究機構從事先進材料與奈米合成研究。"
+      },
+      {
+        "age": "2017–2019",
+        "title": "Avancis GmbH 跨國專案專家 / 產品經理（德國）",
+        "desc": "負責技術轉移專案控制與產線導入，協調中德雙邊跨國團隊完成自動化產線驗收。"
+      },
+      {
+        "age": "2019–2022",
+        "title": "星展銀行（DBS）",
+        "desc": "儲備幹部計畫入行，後任 DevOps 資深專員。主導 Python 自動化與 ML 賦能計畫。"
+      },
+      {
+        "age": "2023–2024",
+        "title": "Synpulse 金融科技顧問",
+        "desc": "於瑞士國際金融顧問公司擔任技術顧問，開發 GenAI 風險分析模組 Narrator。"
+      },
+      {
+        "age": "2024–今",
+        "title": "國泰世華銀行 GenAI 架構師",
+        "desc": "主導企業首個生產級 GenAI 應用 CathayGPT，架構海外 AI Agent 平台，取得 6 項專利。"
+      }
+    ]
+  },
+  "services": {
+    "page_title": "服務",
+    "page_sub": "專注的合作模式，快速推進並交付可衡量的成果。",
+    "consulting": {
+      "title": "顧問諮詢",
+      "timeline": "1–3 週",
+      "best_for": "適合：策略釐清、架構審查、自建或採購決策",
+      "deliverables": "AI 策略評估、架構藍圖、供應商評估、風險與治理框架、高管簡報。",
+      "desc": "我幫助領導團隊穿透 AI 炒作，做出自信且知情的決策。期待的是清晰的路線圖，而非簡報投影片。"
+    },
+    "prototyping": {
+      "title": "快速原型",
+      "timeline": "2–6 週",
+      "best_for": "適合：快速驗證價值、在投入人力前降低風險",
+      "deliverables": "可運行的原型、評估套件、成本模型、交接文檔、演示錄影。",
+      "desc": "我構建生產級原型來證明什麼可行 — 什麼不可行。您的團隊將繼承乾淨的代碼和清晰的文檔。"
+    },
+    "training": {
+      "title": "賦能與培訓",
+      "timeline": "0.5–2 天",
+      "best_for": "適合：提升工程團隊能力、培養內部 AI 推動者",
+      "deliverables": "客製化工作坊、實作練習、參考資料、後續問答環節。",
+      "desc": "我根據您團隊的技術棧和技能水平量身打造密集的實作工作坊。沒有通用內容 — 一切圍繞您的實際問題展開。"
+    },
+    "cta": "開始對話"
+  },
+  "work": {
+    "page_title": "精選作品",
+    "page_sub": "來自受監管企業與全球金融機構的案例研究。",
+    "cases": [
+      {
+        "title": "EnterpriseGPT — 企業 GenAI 平台",
+        "client": "台灣金控龍頭",
+        "tags": [
+          "GenAI 平台",
+          "GCP Serverless",
+          "生產環境"
+        ],
+        "problem": "銀行需要第一個符合企業級安全與合規要求的生產 GenAI 應用，用於內部知識與任務協助。",
+        "approach": "在 GCP 上架構並交付可擴展的 Serverless GenAI 技術棧（Cloud Run、Cloud SQL、Vertex AI），涵蓋身分驗證、存取控制、稽核、監控與錯誤處理等企業級控管。",
+        "outcome": "EnterpriseGPT 成為該企業首個生產 GenAI 應用，透過知識與任務協助驅動內部 ROI。",
+        "owned": "主要開發者／架構師、端到端平台工程、安全合規、利害關係人協調"
+      },
+      {
+        "title": "海外 AI Agent 平台",
+        "client": "台灣金控龍頭",
+        "tags": [
+          "Multi-Agent",
+          "MCP",
+          "Agentic Workflows"
+        ],
+        "problem": "金控需要可擴展的 AI Agent 平台，支援海外營運的多元場景，具備生產級營運標準。",
+        "approach": "從零創建首個海外專屬 AI Agent 平台，採用模組化多智能體架構（agents/tools/memory/evaluation）、MCP 風格的工具伺服器、OAuth 認證模式。",
+        "outcome": "平台設計可跨場景擴展，透過標準化工具合約實現複用，並建立可衡量的評估迴圈。",
+        "owned": "創建者、架構設計、Agentic Workflows、工具伺服器設計、評估框架"
+      },
+      {
+        "title": "Narrator — GenAI 風險分析敘事引擎",
+        "client": "瑞士金融顧問行 × 銀行客戶",
+        "tags": [
+          "GenAI",
+          "風險分析",
+          "自然語言生成"
+        ],
+        "problem": "風險分析產出對非技術利害關係人而言過於複雜，限制了採用率。",
+        "approach": "開發並整合 GenAI 模組「Narrator」，將風險分析結果轉化為自然語言；與客戶工程團隊合作交付可部署 PoC。",
+        "outcome": "交付可直接採用的演示。將業務目標轉化為可實施的 AI／分析模式與治理控管。",
+        "owned": "GenAI 模組開發、技術探索、客戶賦能、執行路線圖"
+      },
+      {
+        "title": "生產自動化與 ML 賦能",
+        "client": "新加坡商銀行",
+        "tags": [
+          "Python 自動化",
+          "ML 培訓",
+          "DevOps"
+        ],
+        "problem": "COVID 期間需要遠端營運自動化；工程團隊缺乏應用 ML 素養。",
+        "approach": "交付生產級 Python 自動化方案（Linux + MySQL + SHA-256），擴展為可複用模板覆蓋 70+ 例行報表工作流。主導 ML 賦能計畫（AWS DeepRacer），培訓 200 名員工。",
+        "outcome": "自動化方案確保 COVID 期間全遠端營運。ML 素養在工程與業務團隊中顯著提升。",
+        "owned": "自動化工程、話務中心平台交付、ML 培訓計畫、代碼審查協調"
+      }
+    ]
+  },
+  "about": {
+    "page_title": "關於我",
+    "bio": "我是 Nils（劉岦崱）— 台灣金控龍頭的 GenAI 產品經理／解決方案架構師。我在受監管的金融環境中架構並交付生產級 GenAI 系統。此前，我在瑞士金融顧問行業擔任銀行科技顧問，更早之前在新加坡商銀行擔任儲備幹部與 DevOps 資深專員。我遵循 Software 3.0／泛化優先的方法論：可複用能力、標準化介面與可衡量的評估迴圈，而非一次性的 Prompt 客製化。",
+    "principles_title": "原則",
+    "principles": [
+      {
+        "title": "苦澀的教訓",
+        "desc": "規模和算力終將勝出。我構建利用基礎模型而非對抗它們的系統。"
+      },
+      {
+        "title": "平台優先",
+        "desc": "一次性解決方案無法存活。我從第一天就為複用、治理和團隊自主權而設計。"
+      },
+      {
+        "title": "評估驅動",
+        "desc": "無法衡量就無法交付。嚴謹的評估是我經手的每個項目的基礎。"
+      }
+    ],
+    "skills_title": "技術棧",
+    "skills": [
+      "Python",
+      "SQL",
+      "GCP（Cloud Run / Vertex AI）",
+      "Serverless 架構",
+      "Agentic Workflows / MCP",
+      "RAG / Agents / Evals",
+      "React / Next.js / TypeScript",
+      "LangChain / LlamaIndex",
+      "PostgreSQL / 向量資料庫"
+    ],
+    "credibility_title": "資歷",
+    "credibility": [
+      {
+        "label": "專利",
+        "value": "6 項已核准（GenAI／知識圖譜／資料查詢系統）"
+      },
+      {
+        "label": "獎項",
+        "value": "2024 企業內部創新競賽冠軍"
+      },
+      {
+        "label": "演講",
+        "value": "iThome Hello World 2024 & 2025（7 場）、DevFest Taipei 2025"
+      },
+      {
+        "label": "認證",
+        "value": "PMP（專案管理專業人員）"
+      },
+      {
+        "label": "學歷",
+        "value": "台大資工碩士 · Quantic MBA · 德國 Chemnitz 工業大學理碩 · 台大化學學士"
+      },
+      {
+        "label": "語言",
+        "value": "中文（母語）、英文、德文、日文（基礎）"
+      }
+    ]
+  },
+  "insights": {
+    "page_title": "GenAI 分享",
+    "coming_soon": "即將推出。",
+    "sub": "分享 AI Agent 實戰、GenAI 落地應用、GraphRAG、Ontology 架構、DevOps × AI 與企業 AI 平台建構的第一手觀察與思考。"
+  },
+  "blog": {
+    "search_placeholder": "搜尋文章...",
+    "all_tags": "全部",
+    "no_results": "找不到符合條件的文章。",
+    "back_to_insights": "返回文章列表",
+    "tags": {
+      "GenAI": "GenAI",
+      "Agent": "AI Agent",
+      "Architecture": "系統架構",
+      "Career": "職涯發展",
+      "Event": "演講活動",
+      "News": "新聞觀察",
+      "Patent": "專利系列"
+    }
+  },
+  "contact": {
+    "page_title": "聯繫我",
+    "page_sub": "無論您需要策略會議、原型還是工作坊 — 我很樂意了解您的挑戰。",
+    "name": "姓名",
+    "email": "電子郵件",
+    "message": "訊息",
+    "send": "發送訊息",
+    "success": "訊息已發送！我會在 24 小時內回覆您。",
+    "timezone": "所在地：台灣台北（GMT+8）",
+    "validation": {
+      "name_required": "請輸入姓名",
+      "email_required": "請輸入電子郵件",
+      "email_invalid": "請輸入有效的電子郵件地址",
+      "message_required": "請輸入訊息"
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 Nils. 版權所有。",
+    "built_with": "精心打造。"
+  },
+  "seo": {
+    "title": "劉岦崱 Nils Liu | 企業級 GenAI 架構師 & RAG 產品專家",
+    "desc": "專攻企業級 RAG 導入、GenAI 產品經理與客製化 AI Agent 開發。協助高度監管企業從概念到落地。提供 GenAI 導入諮詢與內訓，歡迎 AI PM/Lead 相關職缺探討。"
+  }
+}
