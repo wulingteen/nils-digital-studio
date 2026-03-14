@@ -63,17 +63,11 @@ const articleLd = {
   title={`${displayTitle} | Nils Liu`}
   description={displayExcerpt}
   lang={lang}
-  ogImage={ogImage}
-  ogUrl={pageUrl}
-  canonicalUrl={pageUrl}
-  ogType="article"
+  image={ogImage}
+  canonicalURL={pageUrl}
+  articleSchema={JSON.stringify([breadcrumbLd, articleLd])}
 >
   <HeaderIsland lang={lang} currentPath={`/${lang}/insights/${post.id}`} client:load />
-
-  <Fragment>
-    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbLd)} />
-    <script type="application/ld+json" set:html={JSON.stringify(articleLd)} />
-  </Fragment>
 
   <article class="min-h-screen pb-20 pt-32">
     <div class="container-narrow mx-auto max-w-3xl px-6 md:px-8">
