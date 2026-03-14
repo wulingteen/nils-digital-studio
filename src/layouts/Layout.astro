@@ -30,6 +30,17 @@ const socialImageUrl = new URL(
   Astro.site || 'https://wulingteen.github.io/'
 ).href;
 const htmlLang = lang === "zh" ? "zh-TW" : lang;
+
+const basePath = import.meta.env.BASE_URL === '/' ? '' : import.meta.env.BASE_URL;
+const pathWithoutBase = Astro.url.pathname.startsWith(basePath) 
+  ? Astro.url.pathname.slice(basePath.length) 
+  : Astro.url.pathname;
+const pathWithoutLang = pathWithoutBase.replace(/^\/?(zh|en|de)\/?/, '/');
+const cleanPath = (p: string) => p.replace(/\/\/+/g, '/');
+
+const hreflangZh = new URL(cleanPath(`${basePath}/zh${pathWithoutLang}`), Astro.site || 'https://wulingteen.github.io/').href;
+const hreflangEn = new URL(cleanPath(`${basePath}/en${pathWithoutLang}`), Astro.site || 'https://wulingteen.github.io/').href;
+const hreflangDe = new URL(cleanPath(`${basePath}/de${pathWithoutLang}`), Astro.site || 'https://wulingteen.github.io/').href;
 ---
 
 <!doctype html>
@@ -46,10 +57,10 @@ const htmlLang = lang === "zh" ? "zh-TW" : lang;
     <link rel="canonical" href={canonicalURL || new URL(Astro.url.pathname, Astro.site || 'https://wulingteen.github.io/nils-digital-studio/').href} />
 
     <!-- Hreflang Tags for Multi-language SEO -->
-    <link rel="alternate" hreflang="zh-TW" href={new URL(`/nils-digital-studio/zh${Astro.url.pathname.replace(/^\/(zh|en|de)/, '')}`, 'https://wulingteen.github.io').href} />
-    <link rel="alternate" hreflang="en" href={new URL(`/nils-digital-studio/en${Astro.url.pathname.replace(/^\/(zh|en|de)/, '')}`, 'https://wulingteen.github.io').href} />
-    <link rel="alternate" hreflang="de" href={new URL(`/nils-digital-studio/de${Astro.url.pathname.replace(/^\/(zh|en|de)/, '')}`, 'https://wulingteen.github.io').href} />
-    <link rel="alternate" hreflang="x-default" href={new URL(`/nils-digital-studio/en${Astro.url.pathname.replace(/^\/(zh|en|de)/, '')}`, 'https://wulingteen.github.io').href} />
+    <link rel="alternate" hreflang="zh-TW" href={hreflangZh} />
+    <link rel="alternate" hreflang="en" href={hreflangEn} />
+    <link rel="alternate" hreflang="de" href={hreflangDe} />
+    <link rel="alternate" hreflang="x-default" href={hreflangEn} />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
