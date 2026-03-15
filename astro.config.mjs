@@ -6,6 +6,7 @@ import auth from 'auth-astro';
 
 export default defineConfig({
   site: 'https://wulingteen.github.io',
+  base: '/nils-digital-studio',
   output: 'static',
   adapter: vercel(),
   integrations: [

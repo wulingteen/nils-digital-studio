@@ -9,13 +9,16 @@ export default function AuthPanel() {
 
   React.useEffect(() => {
     fetch('/api/auth/session')
-      .then(res => res.json())
+      .then(res => {
+        if (!res.ok) return null;
+        return res.json();
+      })
       .then(data => {
-        if (Object.keys(data).length > 0) {
+        if (data && typeof data === 'object' && Object.keys(data).length > 0 && data.user) {
           setSession(data);
         }
       })
-      .catch(console.error)
+      .catch(() => { /* silently fail - user is not logged in */ })
       .finally(() => setLoading(false));
   }, []);
 
