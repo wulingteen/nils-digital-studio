@@ -157,4 +157,8 @@
   .container-narrow {
     @apply mx-auto max-w-7xl;
   }
+
+  .tag-btn {
+    @apply inline-flex items-center rounded-full border border-primary/20 bg-primary/5 px-3 py-1 text-xs font-medium text-foreground transition-all hover:bg-primary/15 hover:text-primary mb-2 mr-2;
+  }
 }
