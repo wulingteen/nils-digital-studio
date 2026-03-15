@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://wulingteen.github.io/nils-digital-studio/sitemap-index.xml
+Sitemap: https://nils-digital-studio.vercel.app/sitemap-index.xml
