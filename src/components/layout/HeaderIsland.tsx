@@ -2,6 +2,7 @@ import { useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Moon, Sun, Menu, X } from "lucide-react";
 import { t } from "../../i18n/utils";
+import AuthPanel from "./AuthPanel";
 
 const languages = [
   { code: "en", label: "EN" },
@@ -12,9 +13,10 @@ const languages = [
 interface Props {
   lang: string;
   currentPath: string;
+  session: any;
 }
 
-const HeaderIsland = ({ lang, currentPath }: Props) => {
+const HeaderIsland = ({ lang, currentPath, session }: Props) => {
   const [isDark, setIsDark] = useState(() =>
     typeof document !== 'undefined' && document.documentElement.classList.contains("dark")
   );
@@ -176,13 +178,8 @@ const HeaderIsland = ({ lang, currentPath }: Props) => {
             {isDark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
           </button>
 
-          {/* Subscribe Button (Desktop) */}
-          <button 
-            onClick={() => setModalOpen(true)} 
-            className="ml-2 hidden rounded-full bg-primary px-5 py-2 text-xs font-semibold tracking-wide text-primary-foreground shadow-md transition-all hover:-translate-y-0.5 hover:shadow-lg hover:shadow-primary/20 md:block"
-          >
-            {t(currentLang, "nav.subscribe")}
-          </button>
+          {/* Auth Button (Desktop) */}
+          <AuthPanel session={session} />
         </div>
 
         {/* Mobile menu button */}
@@ -233,12 +230,9 @@ const HeaderIsland = ({ lang, currentPath }: Props) => {
                   {isDark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
                 </button>
               </div>
-              <button 
-                onClick={() => { setModalOpen(true); setMobileOpen(false); }} 
-                className="mt-2 w-full rounded-full bg-primary px-4 py-2.5 text-sm font-semibold tracking-wide text-primary-foreground shadow-md transition-all hover:bg-primary/90"
-              >
-                {t(currentLang, "nav.subscribe")}
-              </button>
+              <div className="mt-4 flex justify-center border-t border-primary/10 pt-4">
+                <AuthPanel session={session} />
+              </div>
             </div>
           </motion.div>
         )}
