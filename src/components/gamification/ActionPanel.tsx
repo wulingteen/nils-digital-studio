@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useGamificationStore } from '../../store/gamificationStore';
-import { Bookmark, Download, Linkedin, Share2 } from 'lucide-react';
+import { Bookmark, Linkedin, Share2 } from 'lucide-react';
 import SocialProof from './SocialProof';
 
 interface Props {
@@ -22,9 +22,7 @@ export default function ActionPanel({ articleId, lang, title }: Props) {
 
   const isBookmarked = bookmarkedArticles.includes(articleId);
 
-  const handlePrint = () => {
-    window.print();
-  };
+
 
   const handleLinkedInShare = () => {
     const url = encodeURIComponent(window.location.href);
@@ -49,13 +47,7 @@ export default function ActionPanel({ articleId, lang, title }: Props) {
           {isBookmarked ? '已加入學習路徑' : '存到我的學習路徑'}
         </button>
 
-        <button
-          onClick={handlePrint}
-          className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium bg-background hover:bg-primary/10 border border-border hover:border-primary/30 text-foreground transition-all"
-        >
-          <Download className="h-4 w-4" />
-          下載精華知識卡
-        </button>
+
 
         <button
           onClick={handleLinkedInShare}
