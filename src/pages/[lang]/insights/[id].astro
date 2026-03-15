@@ -5,6 +5,12 @@ import { getCollection, render } from 'astro:content';
 import HeaderIsland from '../../../components/layout/HeaderIsland';
 import FooterStatic from '../../../components/layout/FooterStatic.astro';
 import NewsletterForm from '../../../components/NewsletterForm.astro';
+import RandomArticleButton from '../../../components/gamification/RandomArticleButton';
+import ReadingProgress from '../../../components/gamification/ReadingProgress';
+import BottomUnlock from '../../../components/gamification/BottomUnlock';
+import ActionPanel from '../../../components/gamification/ActionPanel';
+import InteractiveScenarioForm from '../../../components/gamification/InteractiveScenarioForm';
+import ContentPaywall from '../../../components/gamification/ContentPaywall';
 
 export async function getStaticPaths() {
   const allPosts = await getCollection('posts');
@@ -21,9 +27,16 @@ export async function getStaticPaths() {
 
 const { basePost, lang } = Astro.props as { basePost: any, lang: string };
 const allPosts = await getCollection('posts');
+const articleIds = allPosts.filter((p: any) => !p.id.endsWith('-en') && !p.id.endsWith('-de')).map((p: any) => p.id);
 const localizedId = lang === 'zh' ? basePost.id : `${basePost.id}-${lang}`;
 const localizedPost = allPosts.find((p: any) => p.id === localizedId) || basePost;
 const { Content } = await render(localizedPost);
+
+const seriesIds = basePost.data.seriesInfo
+  ? allPosts
+      .filter((p: any) => p.data.seriesInfo?.name === basePost.data.seriesInfo.name && !p.id.endsWith('-en') && !p.id.endsWith('-de'))
+      .map((p: any) => p.id)
+  : [];
 
 const currentTags = basePost.data.tags || [];
 
@@ -106,14 +119,22 @@ const articleLd = {
 
   <article class="min-h-screen pb-20 pt-32">
     <div class="container-narrow mx-auto max-w-3xl px-6 md:px-8">
-      <a
-        href={`${B}${lang}/insights`}
-        class="mb-8 inline-flex items-center gap-2 text-sm font-medium text-primary/80 transition-colors hover:text-primary"
-      >
-        ← {t(lang, 'blog.back_to_insights', 'Back to Insights')}
-      </a>
+      <div class="flex items-center justify-between mb-8">
+        <a
+          href={`${B}${lang}/insights`}
+          class="inline-flex items-center gap-2 text-sm font-medium text-primary/80 transition-colors hover:text-primary"
+        >
+          ← {t(lang, 'blog.back_to_insights', 'Back to Insights')}
+        </a>
+        <RandomArticleButton lang={lang} articleIds={articleIds} client:load />
+      </div>
 
       <header class="mb-12">
+        {currentTags.includes('Patent') && (
+          <div class="mb-4 inline-flex items-center gap-2 rounded-full border border-yellow-500/50 bg-yellow-500/10 px-4 py-1.5 text-xs font-bold text-yellow-600 shadow-[0_0_20px_rgba(234,179,8,0.2)] dark:text-yellow-400 lg:text-sm">
+            🏆 {lang === 'zh' ? '台灣第一個 solo 銀行 AI 專利發明人' : lang === 'de' ? 'Erster Solo-Erfinder eines Bank-KI-Patents in Taiwan' : 'Taiwan\'s First Solo Bank AI Patent Inventor'}
+          </div>
+        )}
         <h1 class="mb-6 text-4xl font-bold leading-tight text-gradient md:text-5xl lg:leading-[1.1]">
           {displayTitle}
         </h1>
@@ -148,15 +169,40 @@ const articleLd = {
         </div>
       )}
 
-      <div class="article-content prose prose-lg max-w-none prose-headings:text-foreground prose-p:text-muted-foreground prose-strong:text-foreground prose-li:text-muted-foreground prose-a:text-primary">
-        <Content />
+      {basePost.data.seriesInfo && (
+        <ReadingProgress 
+          seriesName={basePost.data.seriesInfo.name} 
+          seriesIds={seriesIds} 
+          client:load 
+        />
+      )}
+
+      {currentTags.includes('AI PM 系列') || currentTags.includes('Architecture') ? (
+        <ContentPaywall client:load>
+          <div class="prose prose-lg dark:prose-invert prose-headings:font-bold prose-headings:text-foreground prose-p:text-muted-foreground prose-a:text-primary hover:prose-a:text-primary/80 prose-strong:text-foreground prose-code:text-primary prose-code:bg-primary/5 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded-md prose-code:before:content-none prose-code:after:content-none max-w-none">
+            <Content />
+          </div>
+        </ContentPaywall>
+      ) : (
+        <div class="prose prose-lg dark:prose-invert prose-headings:font-bold prose-headings:text-foreground prose-p:text-muted-foreground prose-a:text-primary hover:prose-a:text-primary/80 prose-strong:text-foreground prose-code:text-primary prose-code:bg-primary/5 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded-md prose-code:before:content-none prose-code:after:content-none max-w-none">
+          <Content />
+        </div>
+      )}
+
+      {basePost.data.seriesInfo && (
+        <InteractiveScenarioForm articleId={basePost.id} client:visible />
+      )}
+
+      <BottomUnlock articleId={basePost.id} client:only="react" />
+
+      {/* Tags & Action Row */}
+      <div class="mt-16 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 pb-12 border-b border-border">
+        <ActionPanel articleId={basePost.id} lang={lang} title={displayTitle} client:load />
       </div>
 
       {relatedPosts.length > 0 && (
         <div class="mt-20 border-t border-primary/20 pt-12">
           <h3 class="mb-8 text-2xl font-bold text-foreground">
-            {t(lang, 'blog.related_articles', lang === 'zh' ? '延伸閱讀' : lang === 'de' ? 'Weitere Artikel' : 'Related Articles')}
-          </h3>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             {relatedPosts.map((rp) => (
               <a 

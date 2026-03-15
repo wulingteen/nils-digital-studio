@@ -145,6 +145,10 @@ const SinglePageContent = () => {
                         <motion.p variants={fadeUp} className="mb-3 text-xs sm:text-sm font-medium uppercase tracking-[0.2em] text-primary">
                             劉岦崱 · Nils — GenAI Solution Architect
                         </motion.p>
+                        <motion.div variants={fadeUp} className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-4 py-1.5 text-sm text-primary shadow-[0_0_15px_rgba(200,160,80,0.15)]">
+                            <span className="flex h-2 w-2 rounded-full bg-primary animate-pulse"></span>
+                            {t("hero.mission")}
+                        </motion.div>
                         <motion.h1 variants={fadeUp} className="mb-1 text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[1.08] tracking-tight text-foreground break-words">
                             {t("hero.headline1")}
                         </motion.h1>

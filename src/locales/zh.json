@@ -10,12 +10,13 @@
     "subscribe": "訂閱電子報"
   },
   "hero": {
-    "headline1": "我讓 GenAI",
-    "headline2": "AI Agents",
-    "headline3": "落地運營。",
-    "sub": "從原型到生產環境 — 在受監管的企業中實現治理、可觀測性與成本控制。",
-    "cta_book": "預約通話",
-    "cta_email": "電子郵件",
+    "headline1": "我專注於讓 GenAI",
+    "headline2": "與 AI Agents",
+    "headline3": "落地生產。",
+    "sub": "由概念驗證（PoC）推進至受監管企業內的正式生產環境 — 專注於治理、可觀測性與成本控制。",
+    "mission": "你在讀一個真正在銀行落地 AI 的人撰寫的技術筆記。",
+    "cta_book": "預約諮詢",
+    "cta_email": "寄信給我",
     "cta_linkedin": "LinkedIn"
   },
   "proof": [
@@ -343,9 +344,9 @@
   },
   "newsletter": {
     "title": "訂閱最新分享",
-    "desc": "加入電子報，第一時間獲取關於 GenAI 實戰、AI Agent 與架構設計的最新文章。",
+    "desc": "加入電子報，第一時間獲取關於 GenAI 實戰與架構設計的最新文章。不訂閱你會慢別人一個週期！",
     "placeholder": "您的電子郵件",
-    "button": "免費訂閱",
+    "button": "不想落後，立即訂閱",
     "spam": "絕不發送垃圾信。隨時皆可取消訂閱。"
   },
   "contact": {

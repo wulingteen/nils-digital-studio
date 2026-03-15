@@ -11,11 +11,12 @@
   },
   "hero": {
     "headline1": "I make GenAI",
-    "headline2": "AI Agents",
-    "headline3": "operational.",
-    "sub": "From prototype to production in regulated enterprises — governance, observability, and cost under control.",
-    "cta_book": "Book a Call",
-    "cta_email": "Email",
+    "headline2": "and AI Agents",
+    "headline3": "production-ready.",
+    "sub": "Taking AI from prototype to production in regulated enterprises — with governance, observability, and cost-control.",
+    "mission": "You are reading the technical notes of someone actually shipping AI in a bank.",
+    "cta_book": "Book a Chat",
+    "cta_email": "Email Me",
     "cta_linkedin": "LinkedIn"
   },
   "proof": [

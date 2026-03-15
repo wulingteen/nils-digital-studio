@@ -4,6 +4,9 @@ import { t } from '../../../i18n/utils';
 import { getCollection } from 'astro:content';
 import HeaderIsland from '../../../components/layout/HeaderIsland';
 import FooterStatic from '../../../components/layout/FooterStatic.astro';
+import RandomArticleButton from '../../../components/gamification/RandomArticleButton';
+import ReaderLevelBadge from '../../../components/gamification/ReaderLevelBadge';
+import AIPMAssessment from '../../../components/gamification/AIPMAssessment';
 
 export function getStaticPaths() {
   return [
@@ -48,6 +51,7 @@ function getExcerpt(post: typeof sortedPosts[0]) {
 
 const pageTitle = t(lang!, 'nav.insights', 'Insights') + ' | Nils Liu';
 const pageDesc = t(lang!, 'insights.sub', 'Thoughts on generative AI, design, and product architecture.');
+const articleIds = sortedPosts.map((p: any) => p.id);
 ---
 
 <Layout
@@ -65,14 +69,15 @@ const pageDesc = t(lang!, 'insights.sub', 'Thoughts on generative AI, design, an
         <h1 class="mb-4 text-4xl font-bold text-gradient md:text-5xl">
           {t(lang!, 'nav.insights', 'Insights')}
         </h1>
-        <p class="max-w-2xl mx-auto text-lg text-muted-foreground">
+        <p class="max-w-2xl mx-auto text-lg text-muted-foreground mb-4">
           {t(lang!, 'insights.sub', 'Thoughts, tutorials, and perspectives on the intersection of generative AI, design, and product architecture.')}
         </p>
+        <ReaderLevelBadge client:only="react" />
       </div>
 
-      <!-- Tags -->
-      <div class="mb-12 flex flex-col gap-6 max-w-4xl mx-auto">
-        <div class="flex flex-wrap gap-2" id="tag-filters">
+      <!-- Tags & Actions -->
+      <div class="mb-12 flex flex-col md:flex-row md:items-center justify-between gap-6 max-w-4xl mx-auto">
+        <div class="flex flex-wrap flex-1 gap-2" id="tag-filters">
           <button data-tag="all" class="px-4 py-1.5 rounded-full text-sm font-medium transition-all bg-primary text-primary-foreground shadow-md tag-btn active">
             {t(lang!, 'blog.all_tags', 'All')}
           </button>
@@ -82,6 +87,13 @@ const pageDesc = t(lang!, 'insights.sub', 'Thoughts on generative AI, design, an
             </button>
           ))}
         </div>
+        <div class="shrink-0">
+          <RandomArticleButton lang={lang!} articleIds={articleIds} client:load />
+        </div>
+      </div>
+
+      <div class="max-w-4xl mx-auto mb-16">
+        <AIPMAssessment client:only="react" />
       </div>
 
       <!-- Articles -->

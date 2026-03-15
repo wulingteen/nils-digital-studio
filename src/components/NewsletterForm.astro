@@ -24,6 +24,7 @@ const formAction = "https://formsubmit.co/wulingteen@gmail.com";
     </p>
 
     <form 
+      id="newsletter-form"
       action={formAction} 
       method="POST" 
       target="_blank"
@@ -53,3 +54,14 @@ const formAction = "https://formsubmit.co/wulingteen@gmail.com";
     </p>
   </div>
 </div>
+
+<script>
+  import { useGamificationStore } from '../store/gamificationStore';
+
+  const form = document.getElementById('newsletter-form');
+  if (form) {
+    form.addEventListener('submit', () => {
+      useGamificationStore.getState().subscribe();
+    });
+  }
+</script>
