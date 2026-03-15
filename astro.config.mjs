@@ -5,8 +5,7 @@ import vercel from '@astrojs/vercel';
 import auth from 'auth-astro';
 
 export default defineConfig({
-  site: 'https://wulingteen.github.io',
-  base: '/nils-digital-studio',
+  site: 'https://nils-digital-studio.vercel.app',
   output: 'static',
   adapter: vercel(),
   integrations: [

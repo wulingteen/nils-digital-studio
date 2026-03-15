@@ -36,7 +36,7 @@ export default function AuthPanel() {
     return (
       <div className="flex items-center gap-3 ml-2">
         <img 
-          src={session.user?.image || "/nils-digital-studio/favicon.png"} 
+          src={session.user?.image || "/favicon.png"} 
           alt={session.user?.name || "User"} 
           className="w-8 h-8 rounded-full border border-primary/20"
         />

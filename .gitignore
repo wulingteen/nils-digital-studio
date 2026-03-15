@@ -26,3 +26,4 @@ dist-ssr
 .npm-cache/
 fetch_images.py
 app/
+.vercel/

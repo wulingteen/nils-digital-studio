@@ -23,7 +23,7 @@ const HeaderIsland = ({ lang, currentPath }: Props) => {
   const [modalOpen, setModalOpen] = useState(false);
 
   const currentLang = lang || "en";
-  const BASE = '/nils-digital-studio';
+  const BASE = '';
 
   const navItems = [
     { key: "home", anchor: "#hero" },

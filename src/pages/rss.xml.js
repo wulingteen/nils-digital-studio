@@ -24,7 +24,7 @@ export async function GET(context) {
         title: `[${lang.toUpperCase()}] ${title}`,
         pubDate: post.data.date,
         description: description,
-        link: `/nils-digital-studio/${lang}/insights/${post.id}/`,
+        link: `/${lang}/insights/${post.id}/`,
       });
     });
   });
