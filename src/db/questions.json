@@ -1,0 +1,502 @@
+[
+  {
+    "topic": "RAG Design",
+    "difficulty": "Medium",
+    "text": "當客戶提出『我要一個能寫公文的 AI』時，你的第一步是？",
+    "options": [
+      { "text": "立刻挑選開源 LLM 並開始微調", "score": 0 },
+      { "text": "尋找現成的 SaaS 服務", "score": 3 },
+      { "text": "拆解『寫公文』的流程，釐清退件率最高的情境", "score": 10 }
+    ]
+  },
+  {
+    "topic": "Evaluation",
+    "difficulty": "Hard",
+    "text": "AI 在正式上線前，你如何評估系統的可用性？",
+    "options": [
+      { "text": "自己測試 10 個 Prompts，看沒問題就上", "score": 0 },
+      { "text": "請 QA 團隊人工盲測 100 題", "score": 5 },
+      { "text": "建立 Golden Dataset，使用 LLM-as-a-Judge 批量評測", "score": 10 }
+    ]
+  },
+  {
+    "topic": "Architecture Strategy",
+    "difficulty": "Medium",
+    "text": "專案預算有限，但需要高精準度的企業知識問答，你會選擇？",
+    "options": [
+      { "text": "微調 (Fine-tuning) 7B 開源模型", "score": 2 },
+      { "text": "直接使用 GPT-4o 解決一切問題", "score": 5 },
+      { "text": "建置 RAG 架構，搭配良好的 Chunking 與平價模型", "score": 10 }
+    ]
+  },
+  {
+    "topic": "Agentic Workflows",
+    "difficulty": "Medium",
+    "text": "若要設計一個自動化客服 Agent，防範幻覺的最佳設計是？",
+    "options": [
+      { "text": "在 System Prompt 加一句『嚴禁編造答案』", "score": 0 },
+      { "text": "使用較低的 Temperature (例如 0.1)", "score": 3 },
+      { "text": "導入 Human-in-the-Loop 與檢索信心分數雙重閥值", "score": 10 }
+    ]
+  },
+  {
+    "topic": "UI/UX",
+    "difficulty": "Easy",
+    "text": "當 AI 生成內容需要等待 10 秒以上時，最合適的對話介面設計是？",
+    "options": [
+      { "text": "顯示傳統的 loading 轉圈圈", "score": 3 },
+      { "text": "暫時隱藏畫面，等載入完再切換過來", "score": 0 },
+      { "text": "使用 Streaming UI (流式輸出)，搭配處理步驟狀態指示", "score": 10 }
+    ]
+  },
+  {
+    "topic": "Fine-Tuning",
+    "difficulty": "Hard",
+    "text": "何時才是選擇微調 (Fine-Tuning) 而非 RAG 的正確時機？",
+    "options": [
+      { "text": "當我們需要模型學會最新的公司新聞時", "score": 0 },
+      { "text": "當我們希望模型能夠『看圖說故事』時", "score": 3 },
+      { "text": "當我們希望改變模型的『說話語氣與結構格式』時", "score": 10 }
+    ]
+  },
+  {
+    "topic": "Data Strategy",
+    "difficulty": "Medium",
+    "text": "如何構建 GenAI 產品的『數據飛輪』？",
+    "options": [
+      { "text": "盡可能收集使用者的對話紀錄並餵給原廠", "score": 0 },
+      { "text": "靠使用者填寫外部問卷調查改善", "score": 3 },
+      { "text": "在介面中加入隱性的 Accept/Reject 互動點，沉澱具回饋標籤的對話", "score": 10 }
+    ]
+  },
+  {
+    "topic": "Governance",
+    "difficulty": "Medium",
+    "text": "客戶擔心機密資料會成為 OpenAI 的訓練資料，你該如何解決？",
+    "options": [
+      { "text": "告訴客戶不用擔心，AI 絕對安全", "score": 0 },
+      { "text": "強制改用地端開源小模型", "score": 5 },
+      { "text": "確認並使用企業版 API (Zero Data Retention) 及 PII 過濾機制", "score": 10 }
+    ]
+  },
+  {
+    "topic": "Evaluation",
+    "difficulty": "Hard",
+    "text": "在 RAG 系統中，如果生成的答案錯誤，如何判斷是『檢索失敗』還是『生成失敗』？",
+    "options": [
+      { "text": "換一個模型生成再試一次", "score": 0 },
+      { "text": "看原本的 Prompt 寫得好不好", "score": 3 },
+      { "text": "檢查 RAGAS 的 Context Precision 與 Context Recall 指標", "score": 10 }
+    ]
+  },
+  {
+    "topic": "Prompt Engineering",
+    "difficulty": "Easy",
+    "text": "撰寫 System Prompt 時，最有效的結構是？",
+    "options": [
+      { "text": "像跟朋友聊天一樣把需求講完", "score": 0 },
+      { "text": "只給出最終期望的範例", "score": 4 },
+      { "text": "利用 Persona, Context, Task, Constraints, Output Format 框架化", "score": 10 }
+    ]
+  },
+  {
+    "topic": "RAG Design",
+    "difficulty": "Medium",
+    "text": "企業內部的文件通常是長篇 PDF，在向量化之前你該如何處理？",
+    "options": [
+      { "text": "直接整份轉成文字塞給模型整理", "score": 0 },
+      { "text": "按照頁碼直接切片 (Chunking)", "score": 3 },
+      { "text": "以語義邊界分塊，並為每個 Chunk 加上 Meta-data (如章節、標題)", "score": 10 }
+    ]
+  },
+  {
+    "topic": "Ethics",
+    "difficulty": "Medium",
+    "text": "若系統被發現對某特定族群有歧視性生成，首要的防護策略是？",
+    "options": [
+      { "text": "在頁面上加上免責聲明", "score": 0 },
+      { "text": "花錢請人標註幾萬筆無歧視資料微調", "score": 3 },
+      { "text": "建立獨立的 Safety Guardrail 模型攔截這類惡意 Prompt 與生成", "score": 10 }
+    ]
+  },
+  {
+    "topic": "Product Execution",
+    "difficulty": "Medium",
+    "text": "啟動一個 AI 專案的第一週，最該產出的交付物是？",
+    "options": [
+      { "text": "完整的技術架構設計圖", "score": 3 },
+      { "text": "詳細的甘特圖跟 Jira Ticket", "score": 0 },
+      { "text": "透過 Cursor 等工具快速建出的 MVP (Vibe Coding)", "score": 10 }
+    ]
+  },
+  {
+    "topic": "Agentic Workflows",
+    "difficulty": "Hard",
+    "text": "設計 Multi-Agent 系統時，Agent 之間的溝通最容易出現什麼問題？",
+    "options": [
+      { "text": "模型版本不一致", "score": 0 },
+      { "text": "Token 花費太高", "score": 4 },
+      { "text": "無限對話迴圈 (Infinite Loop) 與方向發散 (Topic Drift)", "score": 10 }
+    ]
+  },
+  {
+    "topic": "Evaluation",
+    "difficulty": "Medium",
+    "text": "如果一個功能的成功標準是『提升工程師 30% 開發效率』，你如何衡量？",
+    "options": [
+      { "text": "算一下他們用 Copilot 的時間", "score": 0 },
+      { "text": "發問卷問大家『你覺得變快了嗎』", "score": 3 },
+      { "text": "追蹤實際的 PR 合併數、Code Acceptance Rate 及 Lead Time", "score": 10 }
+    ]
+  },
+  {
+    "topic": "RAG Design",
+    "difficulty": "Hard",
+    "text": "面對使用者喜歡輸入『這個』、『那些』等代名詞進行多輪問答，RAG 該如何設計？",
+    "options": [
+      { "text": "把過去 10 次的對話歷史全部塞給檢索器", "score": 0 },
+      { "text": "叫使用者不要用代名詞", "score": 2 },
+      { "text": "在進入 Retrieve 之前增加獨立的 Query Rewriter (查詢重寫) 步驟", "score": 10 }
+    ]
+  },
+  {
+    "topic": "UI/UX",
+    "difficulty": "Medium",
+    "text": "讓非技術用戶信任你的 AI 產品，最關鍵的介面機制是？",
+    "options": [
+      { "text": "把模型名稱 (例如 GPT-4o) 標示得很大", "score": 0 },
+      { "text": "設計漂亮的機器人頭像", "score": 2 },
+      { "text": "提供透明化的『參考來源引用 (Citations)』標籤", "score": 10 }
+    ]
+  },
+  {
+    "topic": "Data Strategy",
+    "difficulty": "Easy",
+    "text": "你發現公司內部沒有一份乾淨的語料庫可以做 RAG，這時你該？",
+    "options": [
+      { "text": "放棄引進 AI，等公司系統現代化再說", "score": 0 },
+      { "text": "找外包團隊全部手打進 Excel", "score": 3 },
+      { "text": "把『知識獲取』包裝進現有工作流，同時進行非結構資料解析實驗", "score": 10 }
+    ]
+  },
+  {
+    "topic": "Prompt Engineering",
+    "difficulty": "Hard",
+    "text": "要求 LLM 輸出特定格式時，最穩定的做法是？",
+    "options": [
+      { "text": "在 System Prompt 重複三遍『一定要給我 JSON』", "score": 0 },
+      { "text": "給它 5 個對話範例 (Few-shot)", "score": 4 },
+      { "text": "使用 Structured Output (Function Calling) 或限制 Schema 輸出", "score": 10 }
+    ]
+  },
+  {
+    "topic": "Agentic Workflows",
+    "difficulty": "Medium",
+    "text": "讓 AI 取代傳統爬蟲去抓取競爭對手網站時，最大的挑戰是？",
+    "options": [
+      { "text": "AI 算圖太慢", "score": 0 },
+      { "text": "需要很高階的開源模型", "score": 2 },
+      { "text": "網站 DOM 結構經常改變，導致 DOM 解析成功率波動", "score": 10 }
+    ]
+  },
+  {
+    "topic": "Product Strategy",
+    "difficulty": "Medium",
+    "text": "開發 AI 功能的第一天，CEO 要你評估 ROI (投資報酬率)，你該注重？",
+    "options": [
+      { "text": "省下多少 API Token 的成本", "score": 0 },
+      { "text": "競爭對手有沒有做這個功能", "score": 3 },
+      { "text": "自動化該流程節省的工時價值對比 API 與研發維運成本", "score": 10 }
+    ]
+  },
+  {
+    "topic": "Ethics",
+    "difficulty": "Hard",
+    "text": "如果在客服 Agent 中，AI 承諾了客戶錯誤的折扣，誰該負責？",
+    "options": [
+      { "text": "模型供應商 (如 OpenAI)", "score": 0 },
+      { "text": "負責提詞工程的工程師", "score": 3 },
+      { "text": "企業本身 (需要透過法務與 Guardrail 機制限制預設立場)", "score": 10 }
+    ]
+  },
+  {
+    "topic": "RAG Design",
+    "difficulty": "Medium",
+    "text": "為何在 RAG 架構中常使用 Hybrid Search (混合檢索)？",
+    "options": [
+      { "text": "因為可以讓系統看起來比較高級", "score": 0 },
+      { "text": "它比純向量庫省錢", "score": 2 },
+      { "text": "解決純語義檢索對『專有名詞 (精確關鍵字)』匹配能力弱的問題", "score": 10 }
+    ]
+  },
+  {
+    "topic": "Evaluation",
+    "difficulty": "Medium",
+    "text": "如果一個 AI 功能一直被使用者反饋『回答很無聊』，你第一步觀察？",
+    "options": [
+      { "text": "直接換一個參數更大的模型", "score": 0 },
+      { "text": "調高 Temperature，讓系統隨便編", "score": 3 },
+      { "text": "分析 Log，釐清是 Context 不足還是 Prompt 的語氣預設太保守", "score": 10 }
+    ]
+  },
+  {
+    "topic": "Agentic Workflows",
+    "difficulty": "Hard",
+    "text": "何時該讓你的 AI 升級為給予『工具調用權限 (Tool Use)』的 Agent？",
+    "options": [
+      { "text": "每一次使用 ChatGPT 我都想給他 Tool", "score": 0 },
+      { "text": "當對話需要查詢當下時間的時候", "score": 3 },
+      { "text": "當任務需要破除封閉文字世界，與真實外部系統發生狀態改變 (如訂票) 時", "score": 10 }
+    ]
+  },
+  {
+    "topic": "Architecture Strategy",
+    "difficulty": "Medium",
+    "text": "企業內已有十幾個部門要使用 GenAI，最核心的架構設計思維是？",
+    "options": [
+      { "text": "每個部門自己花錢綁自己的 ChatGPT Plus", "score": 0 },
+      { "text": "叫工程師寫一個超級後端涵蓋所有業務邏輯", "score": 3 },
+      { "text": "建立統一的 AI Gateway 進行路由、計費與 PII 過濾", "score": 10 }
+    ]
+  },
+  {
+    "topic": "UI/UX",
+    "difficulty": "Easy",
+    "text": "設計 AI Agent 工具的對話框，最容易被忽略的細節是？",
+    "options": [
+      { "text": "對話框顏色的漸層", "score": 0 },
+      { "text": "輸入框裡有沒有麥克風 icon", "score": 3 },
+      { "text": "缺乏『快速啟動建議 (Starter Prompts)』讓使用者不知道如何開啟對話", "score": 10 }
+    ]
+  },
+  {
+    "topic": "Fine-Tuning",
+    "difficulty": "Medium",
+    "text": "你準備了 1 萬筆『客服問答』去微調模型，結果發生了 Catastrophic Forgetting (災難性遺忘)，表現為？",
+    "options": [
+      { "text": "模型跑得很慢", "score": 0 },
+      { "text": "模型回答的字數變短了", "score": 3 },
+      { "text": "模型學會了客服語氣，卻喪失了原本基礎的常識推理能力", "score": 10 }
+    ]
+  },
+  {
+    "topic": "Data Strategy",
+    "difficulty": "Hard",
+    "text": "為了準備 RAG 知識庫，如何處理表格中非結構化的隱含關聯？",
+    "options": [
+      { "text": "直接把表格轉成 CSV 丟給模型", "score": 0 },
+      { "text": "把行列資料單純 concat 起來", "score": 3 },
+      { "text": "導入專門解析文檔的視覺模型 (如 LayoutLM) 還原表格語義到 Markdown", "score": 10 }
+    ]
+  },
+  {
+    "topic": "Product Execution",
+    "difficulty": "Medium",
+    "text": "開發 AI 功能遇到瓶頸，工程師告訴你『這個 API 就是做不到』，你該？",
+    "options": [
+      { "text": "接受現實，改 Spec", "score": 0 },
+      { "text": "罵工程師技術不好", "score": 2 },
+      { "text": "切換為 Builder 思維，自己寫個簡單的 Python 腳本驗證是否真的是底層限制", "score": 10 }
+    ]
+  },
+  {
+    "topic": "Prompt Engineering",
+    "difficulty": "Easy",
+    "text": "如果 AI 老是在結論中包含廢話 (如『總之...』)，如何解決最快？",
+    "options": [
+      { "text": "換一個更貴的模型", "score": 0 },
+      { "text": "後處理用 Regex 把那些字砍掉", "score": 3 },
+      { "text": "在 System Prompt 定義 Negative constraints (嚴禁使用結論性客套話)", "score": 10 }
+    ]
+  },
+  {
+    "topic": "Evaluation",
+    "difficulty": "Hard",
+    "text": "導入 LLM-as-a-Judge 進行自動化評估時，最大的偏見風險 (Bias) 是？",
+    "options": [
+      { "text": "它看不懂中文", "score": 0 },
+      { "text": "它會隨機給分數", "score": 3 },
+      { "text": "模型傾向於給較長的答案、或是它自己家族生成的答案更高分 (Self-enhancement Bias)", "score": 10 }
+    ]
+  },
+  {
+    "topic": "RAG Design",
+    "difficulty": "Medium",
+    "text": "使用者發問『幫我總結今年的所有銷售策略紀錄』，標準 RAG 在這題會失敗的原因是？",
+    "options": [
+      { "text": "Tokenizer 處理中文字很差", "score": 0 },
+      { "text": "向量搜尋速度太慢", "score": 3 },
+      { "text": "Top-K 檢索邏輯不適合應對『通盤分析性 (Summarization over corpus)』的廣泛問題", "score": 10 }
+    ]
+  },
+  {
+    "topic": "Architecture",
+    "difficulty": "Medium",
+    "text": "在生成報告的場景中，如果任務需要分析 300 頁財報，如何迴避 Token 限制？",
+    "options": [
+      { "text": "直接等 OpenAI 開放出 1M 的 Context window", "score": 0 },
+      { "text": "叫使用者自己一頁一頁貼", "score": 2 },
+      { "text": "採用 Map-Reduce 策略，先分段處理再由統整模型進行彙整", "score": 10 }
+    ]
+  },
+  {
+    "topic": "Agentic Workflows",
+    "difficulty": "Medium",
+    "text": "讓 Agent 自己寫程式並執行的流程，最不可或缺的安全機制是？",
+    "options": [
+      { "text": "確保 Agent 只使用 Python", "score": 0 },
+      { "text": "只給它讀取權限", "score": 3 },
+      { "text": "建立封閉的 Sandbox (沙盒容器) 執行環境隔絕它與主機網路", "score": 10 }
+    ]
+  },
+  {
+    "topic": "UI/UX",
+    "difficulty": "Medium",
+    "text": "什麼叫做 AI 產品的『無感智能 (Invisible AI)』？",
+    "options": [
+      { "text": "把聊天框的顏色調淡", "score": 0 },
+      { "text": "把 AI 的回應速度弄得跟系統預設一樣", "score": 3 },
+      { "text": "沒有聊天框，直接在背景自動將冗長報告總結為短摘要供使用者閱讀", "score": 10 }
+    ]
+  },
+  {
+    "topic": "Architecture Strategy",
+    "difficulty": "Hard",
+    "text": "若企業堅持在地端 (On-Premise) 部署並追求性價比，應採用哪種堆疊？",
+    "options": [
+      { "text": "全面採購 GPT-4 Enterprise", "score": 0 },
+      { "text": "花上百萬訓練一個獨家的閉源模型", "score": 3 },
+      { "text": "利用 vLLM 部署 Llama3 8B 級別模型配合 RAG，並優化 GPU 資源", "score": 10 }
+    ]
+  },
+  {
+    "topic": "Data Strategy",
+    "difficulty": "Easy",
+    "text": "進行 RAG 架構前，最重要的第一步是？",
+    "options": [
+      { "text": "決定要買哪一家的向量庫", "score": 0 },
+      { "text": "測試不同 Embedding 模型的維度", "score": 3 },
+      { "text": "徹底清洗並爬梳企業內部混亂的資料格式與權限", "score": 10 }
+    ]
+  },
+  {
+    "topic": "Prompt Engineering",
+    "difficulty": "Medium",
+    "text": "如果我要 LLM 扮演某個角色最有效的方式是？",
+    "options": [
+      { "text": "說『請幫我』", "score": 0 },
+      { "text": "開頭加上『你是一個專家』", "score": 4 },
+      { "text": "建立深度的 System Persona (給定背景、價值觀、語氣特徵與反面案例)", "score": 10 }
+    ]
+  },
+  {
+    "topic": "Evaluation",
+    "difficulty": "Medium",
+    "text": "當業務單位抱怨 AI『很笨』時，你該如何收斂問題？",
+    "options": [
+      { "text": "直接去後台修改 System Prompt 安撫他們", "score": 0 },
+      { "text": "回覆『這是機率問題』，結案", "score": 2 },
+      { "text": "要求提出具體發生的 Trace ID 與 Log，並重現該特定失敗場景", "score": 10 }
+    ]
+  },
+  {
+    "topic": "Agentic Workflows",
+    "difficulty": "Hard",
+    "text": "在 ReAct (Reasoning and Acting) 框架中，『Thought』存在的意義是？",
+    "options": [
+      { "text": "讓系統跑得慢一點，以符合人類期待", "score": 0 },
+      { "text": "只是為了讓 Log 比較好看", "score": 3 },
+      { "text": "強迫模型在行動前留下推理路徑，這能大幅提升複雜問題的決策正確率", "score": 10 }
+    ]
+  },
+  {
+    "topic": "Ethics",
+    "difficulty": "Medium",
+    "text": "設計 AI 面試官時，最可怕的道德陷阱是？",
+    "options": [
+      { "text": "AI 聲音太像機器人", "score": 0 },
+      { "text": "問出太難的演算法題目", "score": 3 },
+      { "text": "模型繼承了歷史履歷中的性別、種族與學歷偏見而自主過濾掉優秀人才", "score": 10 }
+    ]
+  },
+  {
+    "topic": "UI/UX",
+    "difficulty": "Hard",
+    "text": "為什麼很多 GenAI 工具需要加上『重新生成 (Regenerate)』按鈕？",
+    "options": [
+      { "text": "只是軟體設計的抄襲慣性", "score": 0 },
+      { "text": "為了讓使用者有事做", "score": 2 },
+      { "text": "承認生成具備機率性，讓使用者掌控探索邊界並為演算法提供隱性負向回饋", "score": 10 }
+    ]
+  },
+  {
+    "topic": "Architecture Strategy",
+    "difficulty": "Medium",
+    "text": "針對無法容忍延遲 (Latency < 200ms) 的補完場景，架構應如何調整？",
+    "options": [
+      { "text": "祈禱網路順暢", "score": 0 },
+      { "text": "買更高等級的 API 專線", "score": 3 },
+      { "text": "使用極小的專用模型 (如 1B 量級) 或改用語義快取 (Semantic Cache)", "score": 10 }
+    ]
+  },
+  {
+    "topic": "Data Strategy",
+    "difficulty": "Medium",
+    "text": "測試資料集 (Test Set) 多久需要更新一次？",
+    "options": [
+      { "text": "專案做完就不用管了", "score": 0 },
+      { "text": "一年更新一次", "score": 3 },
+      { "text": "持續將線上最罕見的 Edge cases (邊緣案例) 納回資料庫打造動態評測集", "score": 10 }
+    ]
+  },
+  {
+    "topic": "RAG Design",
+    "difficulty": "Hard",
+    "text": "若檢索結果出現不一致的資訊（例：舊版與新版政策），RAG 系統應該？",
+    "options": [
+      { "text": "隨機挑選一個回答", "score": 0 },
+      { "text": "請模型自己去猜哪個是對的", "score": 3 },
+      { "text": "依靠 Meta-data 過濾，甚至在生成時顯式對比兩者的差異與生效時間", "score": 10 }
+    ]
+  },
+  {
+    "topic": "Product Execution",
+    "difficulty": "Easy",
+    "text": "當團隊討論一個 AI 功能到底要不要做時，衡量重點是？",
+    "options": [
+      { "text": "這個 AI 技術酷不酷", "score": 0 },
+      { "text": "這能不能幫忙製造公關話題", "score": 3 },
+      { "text": "這是否解決了真實劇烈的業務痛點，且不加 AI 做不到", "score": 10 }
+    ]
+  },
+  {
+    "topic": "Prompt Engineering",
+    "difficulty": "Medium",
+    "text": "面對長上下文 (100K token) 時，最大的痛點是？",
+    "options": [
+      { "text": "模型會當機", "score": 0 },
+      { "text": "生成出來的速度變特別慢而已", "score": 3 },
+      { "text": "Lost in the Middle 效應：模型容易忽略位於文本中段的重要指示或資訊", "score": 10 }
+    ]
+  },
+  {
+    "topic": "Agentic Workflows",
+    "difficulty": "Hard",
+    "text": "讓 LLM 使用外部 API (如查股票) 時，若該 API 當機頻繁，較好的防護是？",
+    "options": [
+      { "text": "叫用戶稍後再試", "score": 0 },
+      { "text": "寫信給提供 API 的廠商", "score": 3 },
+      { "text": "設定 Fallback 機制讓模型依賴最後快取結果或改變對話策略，並攔截特定 Error code", "score": 10 }
+    ]
+  },
+  {
+    "topic": "Evaluation",
+    "difficulty": "Medium",
+    "text": "在對 AI 專案進行驗收時，為何傳統的 A/B Testing 可能不夠？",
+    "options": [
+      { "text": "無法計算點擊率", "score": 0 },
+      { "text": "PM 不會看報表", "score": 2 },
+      { "text": "缺乏質性洞察，無法區分是用戶不喜歡介面還是模型的生成品質太低", "score": 10 }
+    ]
+  }
+]

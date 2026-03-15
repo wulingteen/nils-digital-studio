@@ -1,12 +1,17 @@
 import { defineConfig } from 'astro/config';
 import react from '@astrojs/react';
 import sitemap from '@astrojs/sitemap';
+import vercel from '@astrojs/vercel/serverless';
+import auth from 'auth-astro';
 
 export default defineConfig({
   site: 'https://wulingteen.github.io',
   base: '/nils-digital-studio',
+  output: 'hybrid',
+  adapter: vercel(),
   integrations: [
     react(),
+    auth(),
     sitemap({
       serialize(item) {
         // Automatically inject lastmod (Build time) and changefreq params for optimal SEO indexing

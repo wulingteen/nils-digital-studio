@@ -1,46 +1,46 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useGamificationStore } from '../../store/gamificationStore';
-import { Brain, ChevronRight, RefreshCcw, Send } from 'lucide-react';
+import { Brain, ChevronRight, RefreshCcw, Send, Loader2 } from 'lucide-react';
 
-const questions = [
-  {
-    id: 1,
-    text: "當客戶提出『我要一個能寫公文的 AI』時，你的第一步是？",
-    options: [
-      { text: "立刻挑選開源 LLM 並開始微調 (Fine-tuning)。", score: 0 },
-      { text: "尋找現成的 SaaS 服務，買帳號給他們用。", score: 3 },
-      { text: "拆解『寫公文』的流程，釐清退件率最高的情境，再決定 AI 介入點。", score: 10 },
-    ]
-  },
-  {
-    id: 2,
-    text: "AI 在正式上線前，你如何評估系統的可用性？",
-    options: [
-      { text: "自己測試 10 個 Prompts，看起來沒問題就上。", score: 0 },
-      { text: "請 QA 團隊人工盲測 100 題。", score: 5 },
-      { text: "建立 Golden Dataset，使用 LLM-as-a-Judge 進行自動化批量評測。", score: 10 },
-    ]
-  },
-  {
-    id: 3,
-    text: "專案預算有限，但需要高精準度的知識問答，你會選擇？",
-    options: [
-      { text: "堅持微調 (Fine-tuning) 7B 模型，因為資料不能外流。", score: 2 },
-      { text: "砸錢用 GPT-4o 解決一切問題。", score: 5 },
-      { text: "建置 RAG 架構，搭配具備良好 Chunking 策略的向量庫與平價模型。", score: 10 },
-    ]
-  }
-];
+interface Question {
+  id: number;
+  topic: string;
+  difficulty: string;
+  text: string;
+  options: { text: string; score: number }[];
+}
 
 export default function AIPMAssessment() {
   const assessmentScore = useGamificationStore((state) => state.assessmentScore);
   const setAssessmentScore = useGamificationStore((state) => state.setAssessmentScore);
   
+  const [questions, setQuestions] = useState<Question[]>([]);
+  const [loading, setLoading] = useState(true);
   const [currentStep, setCurrentStep] = useState(0);
   const [tempScore, setTempScore] = useState(0);
+  const [gaps, setGaps] = useState<string[]>([]);
 
-  const handleAnswer = (score: number) => {
-    const newScore = tempScore + score;
+  useEffect(() => {
+    fetch('/api/questions/random')
+      .then(res => res.json())
+      .then(data => {
+        setQuestions(data);
+        setLoading(false);
+      })
+      .catch(err => {
+        console.error("Failed to load questions", err);
+        setLoading(false);
+      });
+  }, []);
+
+  const handleAnswer = (option: { text: string; score: number }) => {
+    const newScore = tempScore + option.score;
+    
+    // Identify gap if score is low
+    if (option.score < 5) {
+      setGaps(prev => Array.from(new Set([...prev, questions[currentStep].topic])));
+    }
+
     if (currentStep < questions.length - 1) {
       setTempScore(newScore);
       setCurrentStep(currentStep + 1);
@@ -49,19 +49,50 @@ export default function AIPMAssessment() {
     }
   };
 
-  const resetQuiz = () => {
-    setCurrentStep(0);
-    setTempScore(0);
-    setAssessmentScore(null); // Assuming null reset isn't strictly defined, but 0 works
+  const submitToDatabase = async (email: string) => {
+    try {
+      await fetch('/api/questions/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          score: tempScore || assessmentScore,
+          gaps,
+          email
+        })
+      });
+    } catch (e) {
+      console.error("Failed to sync with DB", e);
+    }
   };
+
+  const handleFormSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    // We let the form natively trigger FormSubmit (target="_blank"), 
+    // but intercept the event to simultaneously ping our own Postgres backend.
+    const formData = new FormData(e.currentTarget);
+    const email = formData.get('email') as string;
+    
+    submitToDatabase(email);
+    useGamificationStore.getState().subscribe();
+  };
+
+  if (loading) {
+    return (
+      <div className="my-10 rounded-2xl border border-border bg-card p-12 flex flex-col justify-center items-center shadow-sm gap-4">
+        <Loader2 className="h-8 w-8 text-primary animate-spin" />
+        <p className="text-sm text-muted-foreground animate-pulse">載入題庫中...</p>
+      </div>
+    );
+  }
+
+  if (questions.length === 0) return null;
 
   if (assessmentScore !== null) {
     let resultMessage = "你的 AI 產品力打敗了 90% 的傳統 PM！";
     let subMessage = "你已經具備帶領企業導入 GenAI 的架構思維。";
-    if (assessmentScore < 15) {
+    if (assessmentScore < 20) {
       resultMessage = "你還停留在傳統軟體思維。";
       subMessage = "你需要盡快補足 RAG 與評測框架的認知，否則將被淘汰。";
-    } else if (assessmentScore < 25) {
+    } else if (assessmentScore < 40) {
       resultMessage = "你的 AI 產品力優於 60% 的 PM。";
       subMessage = "具備基礎認知，但在複雜架構上的落地經驗還需累積。";
     }
@@ -78,7 +109,7 @@ export default function AIPMAssessment() {
             action="https://formsubmit.co/wulingteen@gmail.com" 
             method="POST" 
             target="_blank"
-            onSubmit={() => useGamificationStore.getState().subscribe()}
+            onSubmit={handleFormSubmit}
             className="flex flex-col sm:flex-row gap-2 w-full max-w-lg mx-auto"
           >
             <input type="hidden" name="_subject" value="New Newsletter Subscription (Assessment)!" />
@@ -97,7 +128,7 @@ export default function AIPMAssessment() {
               <Send className="h-4 w-4" /> 訂閱電子報解鎖進階指南
             </button>
           </form>
-          <button onClick={() => { setTempScore(0); setCurrentStep(0); setAssessmentScore(null as any); }} className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-all mt-2">
+          <button onClick={() => { setTempScore(0); setCurrentStep(0); setGaps([]); setAssessmentScore(null as any); window.location.reload(); }} className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-all mt-2 cursor-pointer">
             <RefreshCcw className="h-4 w-4" /> 重新測驗
           </button>
         </div>
@@ -125,8 +156,8 @@ export default function AIPMAssessment() {
         {q.options.map((opt, idx) => (
           <button
             key={idx}
-            onClick={() => handleAnswer(opt.score)}
-            className="group flex items-center justify-between rounded-xl border border-border bg-background p-4 text-left transition-all hover:border-primary/50 hover:bg-primary/5 hover:shadow-md"
+            onClick={() => handleAnswer(opt)}
+            className="group flex items-center justify-between rounded-xl border border-border bg-background p-4 text-left transition-all hover:border-primary/50 hover:bg-primary/5 hover:shadow-md cursor-pointer"
           >
             <span className="text-sm font-medium text-muted-foreground group-hover:text-foreground">{opt.text}</span>
             <ChevronRight className="h-4 w-4 text-primary opacity-0 transition-opacity group-hover:opacity-100 shrink-0 ml-4" />
