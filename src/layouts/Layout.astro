@@ -58,13 +58,14 @@ const personSchema = JSON.stringify({
   "description": "台灣金融業 GenAI 架構師與顧問。主導 CathayGPT 等生產級 AI 系統，擁有 6 項 AI 專利。",
   "knowsAbout": ["GenAI", "AI Agent", "RAG", "LLM", "Prompt Engineering", "Enterprise AI"],
   "sameAs": [
-    "https://www.linkedin.com/in/nils-liu/"
+    "https://www.linkedin.com/in/nilsliu/"
   ]
 });
 
 const serviceSchema = JSON.stringify({
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
+  "@id": "https://nils-digital-studio.vercel.app/#service",
   "name": "Nils Digital Studio",
   "url": "https://nils-digital-studio.vercel.app",
   "description": "GenAI 顧問諮詢、快速原型開發與企業團隊培訓服務。專注 AI Agent、RAG、LLM 企業落地。",
@@ -72,7 +73,11 @@ const serviceSchema = JSON.stringify({
     "@type": "Person",
     "name": "劉岦崱 Nils Liu"
   },
-  "areaServed": "TW",
+  "areaServed": {
+    "@type": "Country",
+    "name": "TW"
+  },
+  "email": "wulingteen@gmail.com",
   "serviceType": ["AI Consulting", "GenAI Architecture", "Team Training", "Rapid Prototyping"]
 });
 ---
