@@ -40,9 +40,6 @@ const seriesIds = basePost.data.seriesInfo
 
 const currentTags = basePost.data.tags || [];
 
-const tagIcons: Record<string, string> = {
-  "GenAI 實戰": "/images/tags/genai-action.png"
-};
 
 const relatedPosts = allPosts
   .filter((p: any) => !p.id.endsWith('-en') && !p.id.endsWith('-de') && p.id !== basePost.id)
