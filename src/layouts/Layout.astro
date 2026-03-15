@@ -4,11 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import HeaderIsland from "@/components/layout/HeaderIsland";
 import FooterStatic from "@/components/layout/FooterStatic.astro";
 import SplashScreenIsland from "@/components/ui/SplashScreenIsland";
-import { getSession } from "auth-astro/server";
 import "@/index.css";
-
-// Fetch the current user session on the server side
-const session = await getSession(Astro.request);
 
 interface Props {
   title?: string;
@@ -115,7 +111,7 @@ const hreflangDe = new URL(cleanPath(`${basePath}/de${pathWithoutLang}`), Astro.
       <!-- Splash Screen Island handles session storage logic client-side -->
       <SplashScreenIsland client:load />
 
-      <HeaderIsland client:load lang={lang} currentPath={`/${lang}/`} session={session} />
+      <HeaderIsland client:load lang={lang} currentPath={`/${lang}/`} />
       
       <main class="flex-1 pt-16">
         <slot />

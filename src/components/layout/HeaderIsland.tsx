@@ -13,10 +13,9 @@ const languages = [
 interface Props {
   lang: string;
   currentPath: string;
-  session: any;
 }
 
-const HeaderIsland = ({ lang, currentPath, session }: Props) => {
+const HeaderIsland = ({ lang, currentPath }: Props) => {
   const [isDark, setIsDark] = useState(() =>
     typeof document !== 'undefined' && document.documentElement.classList.contains("dark")
   );
@@ -179,7 +178,7 @@ const HeaderIsland = ({ lang, currentPath, session }: Props) => {
           </button>
 
           {/* Auth Button (Desktop) */}
-          <AuthPanel session={session} />
+          <AuthPanel />
         </div>
 
         {/* Mobile menu button */}
@@ -231,7 +230,7 @@ const HeaderIsland = ({ lang, currentPath, session }: Props) => {
                 </button>
               </div>
               <div className="mt-4 flex justify-center border-t border-primary/10 pt-4">
-                <AuthPanel session={session} />
+                <AuthPanel />
               </div>
             </div>
           </motion.div>

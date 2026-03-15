@@ -3,8 +3,21 @@ import { LogIn, LogOut, Loader2 } from 'lucide-react';
 // Auth-Astro provides pre-built React hooks and methods
 import { signIn, signOut } from 'auth-astro/client';
 
-export default function AuthPanel({ session }: { session: any }) {
-  const [loading, setLoading] = React.useState(false);
+export default function AuthPanel() {
+  const [session, setSession] = React.useState<any>(null);
+  const [loading, setLoading] = React.useState(true);
+
+  React.useEffect(() => {
+    fetch('/api/auth/session')
+      .then(res => res.json())
+      .then(data => {
+        if (Object.keys(data).length > 0) {
+          setSession(data);
+        }
+      })
+      .catch(console.error)
+      .finally(() => setLoading(false));
+  }, []);
 
   const handleSignIn = async () => {
     setLoading(true);
