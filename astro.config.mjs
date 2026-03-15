@@ -12,9 +12,8 @@ export default defineConfig({
     react(),
     auth(),
     sitemap({
+      filter: (page) => !page.includes('/llm') && !page.includes('/api/'),
       serialize(item) {
-        // Automatically inject lastmod (Build time) and changefreq params for optimal SEO indexing
-        item.lastmod = new Date().toISOString();
         item.changefreq = 'weekly';
         item.priority = 0.8;
         return item;

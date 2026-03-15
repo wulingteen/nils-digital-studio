@@ -120,6 +120,10 @@ const serviceSchema = JSON.stringify({
     <meta property="og:description" content={description} />
     <meta property="og:image" content={socialImageUrl} />
     <meta property="og:site_name" content="Nils Digital Studio" />
+    <meta property="og:locale" content={lang === 'zh' ? 'zh_TW' : lang === 'de' ? 'de_DE' : 'en_US'} />
+    {lang !== 'en' && <meta property="og:locale:alternate" content="en_US" />}
+    {lang !== 'zh' && <meta property="og:locale:alternate" content="zh_TW" />}
+    {lang !== 'de' && <meta property="og:locale:alternate" content="de_DE" />}
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
