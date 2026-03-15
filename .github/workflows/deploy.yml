@@ -18,28 +18,36 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Create redirect page
+      - name: Create redirect pages
         run: |
-          mkdir -p _site/nils-digital-studio
-          cat > _site/nils-digital-studio/index.html << 'EOF'
+          mkdir -p _site
+
+          # Create the redirect HTML template
+          cat > _site/index.html << 'REDIRECT'
           <!DOCTYPE html>
-          <html>
+          <html lang="zh-TW">
           <head>
             <meta charset="utf-8">
-            <title>Redirecting to Nils Digital Studio...</title>
+            <title>正在跳轉至 Nils Digital Studio...</title>
             <script>
-              var path = window.location.pathname.replace('/nils-digital-studio', '');
+              // Strip the old /nils-digital-studio base and redirect to Vercel
+              var path = window.location.pathname.replace(/^\/nils-digital-studio\/?/, '/');
+              if (path === '' || path === '/') path = '/zh/';
+              var search = window.location.search;
               var hash = window.location.hash;
-              window.location.replace('https://nils-digital-studio.vercel.app' + path + hash);
+              window.location.replace('https://nils-digital-studio.vercel.app' + path + search + hash);
             </script>
             <meta http-equiv="refresh" content="0;url=https://nils-digital-studio.vercel.app/zh/">
           </head>
-          <body>
-            <p>Redirecting to <a href="https://nils-digital-studio.vercel.app/zh/">nils-digital-studio.vercel.app</a>...</p>
+          <body style="font-family:sans-serif;display:flex;justify-content:center;align-items:center;height:100vh;margin:0;background:#1a1a2e;color:#e0e0e0;">
+            <p>正在跳轉至 <a href="https://nils-digital-studio.vercel.app/zh/" style="color:#c8a050;">nils-digital-studio.vercel.app</a>...</p>
           </body>
           </html>
-          EOF
-          cp _site/nils-digital-studio/index.html _site/index.html
+          REDIRECT
+
+          # 404.html catches ALL unmatched paths (including /zh/insights/...)
+          cp _site/index.html _site/404.html
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
 
