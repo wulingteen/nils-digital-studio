@@ -25,9 +25,11 @@ export default function ActionPanel({ articleId, lang, title }: Props) {
 
 
   const handleLinkedInShare = () => {
-    const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent(`閱讀一篇文章：${title}`);
-    window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${url}`, '_blank');
+    // LinkedIn requires the URL to be explicitly in the text body if using the native feed composer
+    // Alternatively, use article sharing format: https://www.linkedin.com/article/new/?url=
+    const currentUrl = window.location.href;
+    const shareText = encodeURIComponent(`閱讀一篇文章：${title}\n\n${currentUrl}`);
+    window.open(`https://www.linkedin.com/feed/?shareActive=true&text=${shareText}`, '_blank');
   };
 
   return (
