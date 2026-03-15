@@ -73,11 +73,31 @@ export default function AIPMAssessment() {
         <h3 className="mb-2 text-2xl font-bold text-foreground">{resultMessage}</h3>
         <p className="mb-6 text-muted-foreground">{subMessage}</p>
         
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a href="#newsletter" className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-2.5 text-sm font-medium text-primary-foreground shadow-[0_0_20px_rgba(200,160,80,0.3)] transition-all hover:-translate-y-1">
-            <Send className="h-4 w-4" /> 訂閱電子報解鎖進階指南
-          </a>
-          <button onClick={() => { setTempScore(0); setCurrentStep(0); setAssessmentScore(null as any); }} className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-all">
+        <div className="flex flex-col items-center justify-center gap-4 mt-2">
+          <form 
+            action="https://formsubmit.co/wulingteen@gmail.com" 
+            method="POST" 
+            target="_blank"
+            onSubmit={() => useGamificationStore.getState().subscribe()}
+            className="flex flex-col sm:flex-row gap-2 w-full max-w-lg mx-auto"
+          >
+            <input type="hidden" name="_subject" value="New Newsletter Subscription (Assessment)!" />
+            <input type="hidden" name="_autoresponse" value="Thank you for subscribing to Nils Digital Studio! You'll receive the latest GenAI and AI Agent architectures straight to your inbox." />
+            <input 
+              type="email" 
+              name="email" 
+              placeholder="您的電子郵件"
+              required
+              className="flex-1 rounded-full border border-primary/20 bg-background/80 px-4 py-2.5 text-sm focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary transition-all text-foreground"
+            />
+            <button 
+              type="submit"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-6 py-2.5 text-sm font-medium text-primary-foreground shadow-[0_0_20px_rgba(200,160,80,0.3)] transition-all hover:-translate-y-0.5 hover:bg-primary/90 whitespace-nowrap"
+            >
+              <Send className="h-4 w-4" /> 訂閱電子報解鎖進階指南
+            </button>
+          </form>
+          <button onClick={() => { setTempScore(0); setCurrentStep(0); setAssessmentScore(null as any); }} className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-all mt-2">
             <RefreshCcw className="h-4 w-4" /> 重新測驗
           </button>
         </div>
