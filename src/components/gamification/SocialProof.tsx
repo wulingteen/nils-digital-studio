@@ -1,34 +1,47 @@
-import React, { useMemo } from 'react';
-import { Users } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { Users, Loader2 } from 'lucide-react';
 
 interface Props {
   articleId: string;
 }
 
 export default function SocialProof({ articleId }: Props) {
-  // Deterministic view count algorithm based on string hashing
-  // So it doesn't jump wildly but provides realistic numbers.
-  const viewCount = useMemo(() => {
-    let hash = 0;
-    for (let i = 0; i < articleId.length; i++) {
-        hash = articleId.charCodeAt(i) + ((hash << 5) - hash);
-    }
-    const base = Math.abs(hash) % 8000;
+  const [viewCount, setViewCount] = useState<number | null>(null);
+
+  useEffect(() => {
+    let mounted = true;
     
-    // Add time component so it slowly grows over time (deterministic relative to week)
-    const timeGrow = Math.floor(Date.now() / (1000 * 60 * 60 * 24 * 7)) % 1000;
-    return base + timeGrow + 1243; // Floor of ~1k readers
+    // First increment the view for this visit, then fetch the updated count
+    fetch('/api/articles/views', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ articleId })
+    })
+      .then(res => res.json())
+      .then(data => {
+        if (mounted && data.views) {
+          // Add base 1200 so it looks populated immediately
+          setViewCount(data.views + 1200); 
+        }
+      })
+      .catch(err => console.error("Could not fetch views", err));
+
+    return () => { mounted = false; };
   }, [articleId]);
 
   return (
-    <div className="flex items-center gap-2 text-sm text-muted-foreground mr-auto">
+    <div className="flex items-center gap-2 text-sm text-muted-foreground mr-auto min-h-[24px]">
       <div className="flex -space-x-2">
-        {/* Fake avatar pile */}
+        {/* Abstract avatar pile */}
         <div className="h-6 w-6 rounded-full border-2 border-background bg-blue-100 flex items-center justify-center text-[10px]">👨‍💻</div>
         <div className="h-6 w-6 rounded-full border-2 border-background bg-green-100 flex items-center justify-center text-[10px]">👩‍💼</div>
         <div className="h-6 w-6 rounded-full border-2 border-background bg-purple-100 flex items-center justify-center text-[10px]">🧔</div>
       </div>
-      <span className="font-semibold text-foreground/80">{viewCount.toLocaleString()}</span> 人正在學此系列
+      {viewCount === null ? (
+        <span className="flex items-center gap-2 text-foreground/50 text-xs"><Loader2 className="w-3 h-3 animate-spin"/> 讀取中</span>
+      ) : (
+        <><span className="font-semibold text-foreground/80">{viewCount.toLocaleString()}</span> 人正在學此系列</>
+      )}
     </div>
   );
 }
