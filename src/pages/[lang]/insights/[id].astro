@@ -40,6 +40,10 @@ const seriesIds = basePost.data.seriesInfo
 
 const currentTags = basePost.data.tags || [];
 
+const tagIcons: Record<string, string> = {
+  "GenAI 實戰": "/images/tags/genai-action.png"
+};
+
 const relatedPosts = allPosts
   .filter((p: any) => !p.id.endsWith('-en') && !p.id.endsWith('-de') && p.id !== basePost.id)
   .map(p => {
@@ -146,6 +150,18 @@ const articleLd = {
               { year: 'numeric', month: 'long', day: 'numeric' }
             )}
           </time>
+          {currentTags.length > 0 && (
+            <div class="flex items-center flex-wrap gap-1.5 ml-auto">
+              {currentTags.map((tag: string) => (
+                <span class="bg-primary/10 px-2 py-0.5 rounded-full text-[10px] uppercase font-bold tracking-wider text-primary flex items-center gap-1">
+                  {tagIcons[tag] && (
+                    <img src={`${B}${tagIcons[tag].replace(/^\//, '')}`} alt={tag} class="w-3 h-3 object-contain" />
+                  )}
+                  {t(lang, `blog.tags.${tag}`, tag)}
+                </span>
+              ))}
+            </div>
+          )}
         </div>
       </header>
 
