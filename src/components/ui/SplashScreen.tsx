@@ -24,9 +24,9 @@ const SERVICES = [
     { en: "AI Product Design", zh: "AI 產品設計" },
 ];
 
-const TOTAL_DURATION = 1000;  // ms
+const TOTAL_DURATION = 2000;  // ms
 const TEXT_DELAY = 100;   // text appears
-const OUTRO_START = 700;  // fade-out starts
+const OUTRO_START = 1700;  // fade-out starts
 const MAX_NODES = 320;
 const CONNECT_DIST = 140;
 

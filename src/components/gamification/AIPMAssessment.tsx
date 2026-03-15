@@ -92,7 +92,7 @@ export default function AIPMAssessment() {
       <div className="mb-6 flex items-center justify-between">
         <h3 className="text-xl font-bold text-foreground flex items-center gap-2">
           <Brain className="h-5 w-5 text-primary" />
-          AI PM 核心能力檢測
+          測驗你的AI PM核心能力
         </h3>
         <span className="text-xs font-bold uppercase tracking-widest text-muted-foreground">
           {currentStep + 1} / {questions.length}
