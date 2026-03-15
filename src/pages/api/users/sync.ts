@@ -2,6 +2,8 @@ import type { APIRoute } from 'astro';
 import { sql } from '@vercel/postgres';
 import { getSession } from 'auth-astro/server';
 
+export const prerender = false;
+
 export const POST: APIRoute = async ({ request }) => {
   try {
     const session = await getSession(request);

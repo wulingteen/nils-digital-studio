@@ -1,6 +1,8 @@
 import type { APIRoute } from 'astro';
 import { sql } from '@vercel/postgres';
 
+export const prerender = false;
+
 export const GET: APIRoute = async ({ request }) => {
   const url = new URL(request.url);
   const articleId = url.searchParams.get('id');

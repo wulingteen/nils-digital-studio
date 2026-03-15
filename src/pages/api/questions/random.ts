@@ -1,6 +1,8 @@
 import type { APIRoute } from 'astro';
 import { sql } from '@vercel/postgres';
 
+export const prerender = false;
+
 export const GET: APIRoute = async () => {
   try {
     // Select 5 random questions from the database for the assessment
