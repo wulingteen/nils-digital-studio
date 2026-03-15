@@ -10,6 +10,7 @@ author: "Nils Liu"
 tags:
   - "GenAI 實戰"
   - "GenAI"
+coverImage: "/images/blog/genai-action.png"
 ---
 
 每一個做 GenAI 的 PM 都會遇到這個問題：

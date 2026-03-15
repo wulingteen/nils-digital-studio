@@ -149,14 +149,12 @@ const SinglePageContent = () => {
                             <span className="flex h-2 w-2 rounded-full bg-primary animate-pulse"></span>
                             {t("hero.mission")}
                         </motion.div>
-                        <motion.h1 variants={fadeUp} className="mb-1 text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[1.08] tracking-tight text-foreground break-words">
-                            {t("hero.headline1")}
-                        </motion.h1>
-                        <motion.h1 variants={fadeUp} className="mb-1 text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[1.08] tracking-tight text-gradient break-words">
-                            {t("hero.headline2")}
-                        </motion.h1>
-                        <motion.h1 variants={fadeUp} className="mb-6 sm:mb-8 text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[1.08] tracking-tight text-gradient break-words">
-                            {t("hero.headline3")}
+                        <motion.h1 variants={fadeUp} className="mb-6 sm:mb-8 text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[1.08] tracking-tight break-words">
+                            <span className="text-foreground">{t("hero.headline1")}</span>
+                            <br />
+                            <span className="text-gradient">{t("hero.headline2")}</span>
+                            <br />
+                            <span className="text-gradient">{t("hero.headline3")}</span>
                         </motion.h1>
                         <motion.p variants={fadeUp} className="mb-8 max-w-lg text-base sm:text-lg text-muted-foreground leading-relaxed">
                             {t("hero.sub")}

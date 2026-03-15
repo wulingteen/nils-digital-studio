@@ -38,9 +38,43 @@ const pathWithoutBase = Astro.url.pathname.startsWith(basePath)
 const pathWithoutLang = pathWithoutBase.replace(/^\/?(zh|en|de)\/?/, '/');
 const cleanPath = (p: string) => p.replace(/\/\/+/g, '/');
 
-const hreflangZh = new URL(cleanPath(`${basePath}/zh${pathWithoutLang}`), Astro.site || 'https://wulingteen.github.io/').href;
-const hreflangEn = new URL(cleanPath(`${basePath}/en${pathWithoutLang}`), Astro.site || 'https://wulingteen.github.io/').href;
-const hreflangDe = new URL(cleanPath(`${basePath}/de${pathWithoutLang}`), Astro.site || 'https://wulingteen.github.io/').href;
+const hreflangZh = new URL(cleanPath(`${basePath}/zh${pathWithoutLang}`), Astro.site || 'https://nils-digital-studio.vercel.app/').href;
+const hreflangEn = new URL(cleanPath(`${basePath}/en${pathWithoutLang}`), Astro.site || 'https://nils-digital-studio.vercel.app/').href;
+const hreflangDe = new URL(cleanPath(`${basePath}/de${pathWithoutLang}`), Astro.site || 'https://nils-digital-studio.vercel.app/').href;
+
+// JSON-LD Person & ProfessionalService schema
+const personSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "劉岦崱 Nils Liu",
+  "alternateName": "Nils Liu",
+  "url": "https://nils-digital-studio.vercel.app",
+  "image": "https://nils-digital-studio.vercel.app/nils-profile.png",
+  "jobTitle": "GenAI Solution Architect",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Cathay Financial Holdings"
+  },
+  "description": "台灣金融業 GenAI 架構師與顧問。主導 CathayGPT 等生產級 AI 系統，擁有 6 項 AI 專利。",
+  "knowsAbout": ["GenAI", "AI Agent", "RAG", "LLM", "Prompt Engineering", "Enterprise AI"],
+  "sameAs": [
+    "https://www.linkedin.com/in/nils-liu/"
+  ]
+});
+
+const serviceSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Nils Digital Studio",
+  "url": "https://nils-digital-studio.vercel.app",
+  "description": "GenAI 顧問諮詢、快速原型開發與企業團隊培訓服務。專注 AI Agent、RAG、LLM 企業落地。",
+  "provider": {
+    "@type": "Person",
+    "name": "劉岦崱 Nils Liu"
+  },
+  "areaServed": "TW",
+  "serviceType": ["AI Consulting", "GenAI Architecture", "Team Training", "Rapid Prototyping"]
+});
 ---
 
 <!doctype html>
@@ -50,6 +84,7 @@ const hreflangDe = new URL(cleanPath(`${basePath}/de${pathWithoutLang}`), Astro.
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
+    <meta name="robots" content="index, follow" />
     <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="generator" content={Astro.generator} />
 
@@ -90,6 +125,10 @@ const hreflangDe = new URL(cleanPath(`${basePath}/de${pathWithoutLang}`), Astro.
 
     <!-- Article JSON-LD Schema -->
     {articleSchema && <script type="application/ld+json" set:html={articleSchema} />}
+
+    <!-- Person & Service JSON-LD Schema -->
+    <script type="application/ld+json" set:html={personSchema} />
+    <script type="application/ld+json" set:html={serviceSchema} />
 
     <!-- Dark Mode Sync (Taiwan Time) -->
     <script is:inline>
