@@ -1,4 +1,8 @@
 {
+  "meta": {
+    "title": "Nils Liu | Taiwan GenAI Consultant · AI Agent Architect",
+    "description": "Taiwan-based GenAI architect & consultant. Led CathayGPT and enterprise AI systems, holding 6 AI patents. Specializing in AI Agents, RAG, and LLM enterprise deployment. Advisory, prototyping & training services."
+  },
   "nav": {
     "home": "Home",
     "services": "Services",
