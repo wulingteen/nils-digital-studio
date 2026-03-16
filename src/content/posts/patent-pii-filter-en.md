@@ -14,7 +14,7 @@ tags:
 coverImage: "/images/blog/patent-pii-filter.png"
 ---
 
-### The Compliance Nightmare Every GenAI PM Will Face
+## The Compliance Nightmare Every GenAI PM Will Face
 
 Imagine this scenario:
 
@@ -36,7 +36,7 @@ My solution is the sensitive information filtering and substitution technology i
 
 ---
 
-### Core Mechanism: Substitution, Not Masking
+## Core Mechanism: Substitution, Not Masking
 
 When many people hear "sensitive info handling," their first thought is to "delete it" or "mask it with asterisks."
 
@@ -58,7 +58,7 @@ Specifically, the system will:
 
 ---
 
-### Why Is This a Core Capability in GenAI Product Design?
+## Why Is This a Core Capability in GenAI Product Design?
 
 Banking, healthcare, law... these highly regulated industries are where GenAI has the most value, yet are the hardest markets to crack.
 
@@ -68,7 +68,7 @@ As a **GenAI Product Manager**, if you can solve compliance concerns at the prod
 
 ---
 
-### Three Tiers of GenAI Compliance Architecture Implementation
+## Three Tiers of GenAI Compliance Architecture Implementation
 
 **Layer 1: Input Filtering**
 Before a user's prompt enters the system, filter out categories of sensitive data that shouldn't be queried.

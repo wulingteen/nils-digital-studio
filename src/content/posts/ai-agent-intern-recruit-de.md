@@ -13,7 +13,7 @@ tags:
 coverImage: "/images/blog/ai-agent-intern.jpg"
 ---
 
-### Praktikanten gesucht: KI-Agenten-Plattform
+## Praktikanten gesucht: KI-Agenten-Plattform
 
 Wir bauen eine KI-Agenten-Plattform in Übersee auf, die "wirklich live geht und von echten Menschen genutzt wird". 
 

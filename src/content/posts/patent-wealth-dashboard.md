@@ -13,7 +13,7 @@ tags:
 coverImage: "/images/blog/patent-wealth-dashboard.png"
 ---
 
-### 理財專員的真實痛點
+## 理財專員的真實痛點
 
 在銀行做 AI 產品，我花了很多時間跟理財專員（RM）聊天。
 
@@ -39,7 +39,7 @@ coverImage: "/images/blog/patent-wealth-dashboard.png"
 
 ---
 
-### 系統架構：一個「懂業務」的 AI 助理
+## 系統架構：一個「懂業務」的 AI 助理
 
 系統設計圍繞著 RM 的工作流程展開：
 
@@ -69,7 +69,7 @@ coverImage: "/images/blog/patent-wealth-dashboard.png"
 
 ---
 
-### 作為 GenAI Product Manager：這個專案教了我什麼？
+## 作為 GenAI Product Manager：這個專案教了我什麼？
 
 **1. 「個人化」需要資料架構支撐**
 
@@ -89,7 +89,7 @@ coverImage: "/images/blog/patent-wealth-dashboard.png"
 
 ---
 
-### 給 GenAI PO 的產品設計建議
+## 給 GenAI PO 的產品設計建議
 
 如果你正在設計金融 AI 產品，我的建議是：
 

@@ -10,13 +10,13 @@ seriesInfo:
   name: "GenAI Product Manager Evolution"
 ---
 
-### Standard Specs Are No Longer Enough
+## Standard Specs Are No Longer Enough
 
 The traditional software PM skill tree focuses heavily on specific functional domains: UI/UX wireframing, Agile sprint planning, and conversion rate optimization metrics. While these are still useful, the AI Product Manager (AI PM) needs an entirely new branch on their skill tree.
 
 Generative AI fundamentally breaks the determinism of traditional software. When a user clicks a button, a traditional app queries a database and returns the exact same data every time. When a user prompts an AI, the output can vary wildly based on temperature, system instructions, and training data drift.
 
-### The Missing Skills
+## The Missing Skills
 
 To bridge this gap, AI PMs must excel in:
 - **0-to-1 Probabilistic Thinking:** Accepting that the product will never be 100% predictable, but designing user experiences (UX) that gracefully handle edge cases.

@@ -13,7 +13,7 @@ tags:
 coverImage: "/images/blog/ai-picking-talents.jpg"
 ---
 
-### Wie KI zukünftige Talente auswählt
+## Wie KI zukünftige Talente auswählt
 
 In der Führung eines Teams im letzten Jahr fiel mir auf, dass einige Mitarbeiter mit mangelnder Erfahrung und Neugier sich völlig verloren fühlten, sobald wir KI-Workflows integrierten.
 

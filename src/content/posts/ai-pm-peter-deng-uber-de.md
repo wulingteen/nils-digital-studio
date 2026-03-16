@@ -14,7 +14,7 @@ tags:
 coverImage: "/images/blog/ai-pm-peter-deng.jpg"
 ---
 
-### Die Philosophie eines KI-Produktmanagers
+## Die Philosophie eines KI-Produktmanagers
 
 Peter Dengs Philosophie als Produktmanager, besonders während seiner Zeit bei Uber, ist unglaublich wertvoll für jeden im KI-Bereich.
 

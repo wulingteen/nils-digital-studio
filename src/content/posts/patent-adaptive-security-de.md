@@ -14,7 +14,7 @@ tags:
 coverImage: "/images/blog/patent-adaptive-security.png"
 ---
 
-### "KI nutzen, um KI zu bewachen" — Kein Slogan, sondern Architektur-Design
+## "KI nutzen, um KI zu bewachen" — Kein Slogan, sondern Architektur-Design
 
 Während des Prozesses, Generative KI in der Bank einzuführen, war das Thema, das mich nachts wach hielt, nicht die Modellleistung, sondern **Sicherheit**.
 
@@ -26,7 +26,7 @@ Das brachte mich dazu, eine **generative adaptive Sicherheitsstrategie** zu entw
 
 ---
 
-### Systemarchitektur: Der KI "Böswilligkeit verstehen" beibringen
+## Systemarchitektur: Der KI "Böswilligkeit verstehen" beibringen
 
 Das System ist in zwei Kernebenen unterteilt:
 
@@ -45,7 +45,7 @@ Es gibt noch ein entscheidendes Designmerkmal: das **Kontinuierliche Optimierung
 
 ---
 
-### Warum ist dies ein Kernthema im GenAI Produktdesign?
+## Warum ist dies ein Kernthema im GenAI Produktdesign?
 
 Als **GenAI Product Manager** ist Sicherheit nicht etwas, das man "der Infosec-Abteilung übergibt"; es muss Teil der Produktarchitektur sein.
 
@@ -62,7 +62,7 @@ Es ist kein binäres Urteil von "hast du die Erlaubnis", sondern eher "welche In
 
 ---
 
-### Eine Checkliste für GenAI POs: Ist Ihr KI-System sicher genug?
+## Eine Checkliste für GenAI POs: Ist Ihr KI-System sicher genug?
 
 - [ ] Kann das System anomale Abfragemuster erkennen?
 - [ ] Gibt es einen Echtzeit-Mechanismus zur Intentionsanalyse?

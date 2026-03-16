@@ -13,7 +13,7 @@ tags:
 coverImage: "/images/blog/patents-approved.jpg"
 ---
 
-### Sechs Patente genehmigt
+## Sechs Patente genehmigt
 
 Sechs neue Gebrauchsmuster, die wir Anfang dieses Jahres eingereicht haben, wurden nun offiziell genehmigt.
 

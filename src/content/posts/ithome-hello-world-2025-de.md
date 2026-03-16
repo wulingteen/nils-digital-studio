@@ -15,7 +15,7 @@ coverImage: "/images/blog/ithome-hello-world-2025.png"
 pinned: true
 ---
 
-### iThome Hello World 2025 Entwicklerkonferenz
+## iThome Hello World 2025 Entwicklerkonferenz
 
 Auf der iThome Hello World Entwicklerkonferenz in diesem Jahr hatte ich die Gelegenheit, vier KI-fokussierte Vorträge zu halten:
 

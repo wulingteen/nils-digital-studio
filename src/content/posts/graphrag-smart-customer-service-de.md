@@ -13,7 +13,7 @@ tags:
 coverImage: "/images/blog/graphrag-knowledge.jpg"
 ---
 
-### GraphRAG: Revolution im intelligenten Kundenservice
+## GraphRAG: Revolution im intelligenten Kundenservice
 
 Herkömmliches RAG verlässt sich hauptsächlich auf Vektorsuchen, die den semantischen Faden verlieren können, wenn Gespräche lang werden oder oft das Thema wechseln. 
 

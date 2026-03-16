@@ -10,7 +10,7 @@ seriesInfo:
   name: "GenAI Product Manager Evolution"
 ---
 
-### The Reality of Bank GenAI
+## The Reality of Bank GenAI
 
 Many people assume an AI Product Manager spends all day training models or tweaking algorithms. In reality, especially in the highly regulated banking environment, my day is mostly spent bridging the gap between "bleeding-edge technology" and "conservative institutional rules."
 
@@ -20,6 +20,6 @@ A typical day involves:
 - **1:00 PM:** Conducting a "Vibe Coding" session with the engineering team to rapidly prototype a new internal tool using AI-assisted IDEs.
 - **4:00 PM:** Synthesizing user feedback from Relationship Managers who tested the new proactive portfolio recommendation agent.
 
-### The True Value of an AI PM
+## The True Value of an AI PM
 
 As models become commoditized, the value of the PM isn't in understanding the math behind attention mechanisms—it's in seeing the friction in human workflows and knowing exactly which GenAI pattern (Classification, Extraction, Generation, Dialogue) can permanently remove it.

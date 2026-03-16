@@ -14,7 +14,7 @@ tags:
 coverImage: "/images/blog/thinking-machine-lab.jpg"
 ---
 
-### Deterministisches KI-Schlussfolgern
+## Deterministisches KI-Schlussfolgern
 
 Erhält man absolut konsistente Ergebnisse, wenn man die Temperatur eines KI-Modells auf 0 setzt? Die intuitive Antwort ist "Ja", die tatsächliche Antwort ist jedoch "Nein". 
 

@@ -19,7 +19,7 @@ coverImage: "/images/blog/genai-action.png"
 
 這篇分享我在企業場景中做 prompt engineering 時，累積的幾個核心模式。
 
-### 模式 #1：結構化 Prompt 模板
+## 模式 #1：結構化 Prompt 模板
 
 企業場景的 prompt 不能靠「手感」。你需要一套可複製、可審計、可回滾的 prompt 模板。
 
@@ -58,7 +58,7 @@ coverImage: "/images/blog/genai-action.png"
 
 因為在企業環境中，prompt 不是一個人寫的——可能有 PM 定義需求、工程師實作、法遵審核。每個人都需要看得懂 prompt 在做什麼。
 
-### 模式 #2：版本控制與 AB 測試
+## 模式 #2：版本控制與 AB 測試
 
 Prompt 也需要版本控制。我們用 Git 管理所有 prompt 模板，每次修改都需要：
 
@@ -70,7 +70,7 @@ Prompt 也需要版本控制。我們用 Git 管理所有 prompt 模板，每次
 
 我們曾經因為改了一個詞（把「建議」改成「參考」），導致回覆品質下降 15%。如果沒有 evaluation pipeline，這個問題可能要等客訴才會被發現。
 
-### 模式 #3：多角色系統 Prompt
+## 模式 #3：多角色系統 Prompt
 
 在多 Agent 的系統中，每個 Agent 需要不同的 system prompt。
 
@@ -94,7 +94,7 @@ Prompt 也需要版本控制。我們用 Git 管理所有 prompt 模板，每次
 
 > (3) 示範一個更好的回答方式。
 
-### 模式 #4：防禦性 Prompt 設計
+## 模式 #4：防禦性 Prompt 設計
 
 企業 prompt 最容易被忽略的是**安全性**。
 
@@ -116,7 +116,7 @@ Prompt 也需要版本控制。我們用 Git 管理所有 prompt 模板，每次
 
 4. **持續監控**：記錄所有被攔截的異常 prompt，定期分析模式
 
-### 模式 #5：Few-shot 與 CoT 的取捨
+## 模式 #5：Few-shot 與 CoT 的取捨
 
 在銀行場景中，我們大量使用 few-shot examples：
 

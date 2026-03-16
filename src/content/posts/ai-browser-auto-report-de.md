@@ -12,7 +12,7 @@ tags:
 coverImage: "/images/blog/ai-browser.jpg"
 ---
 
-### AI Browser: Automatisierung von Untersuchungsprotokollen
+## AI Browser: Automatisierung von Untersuchungsprotokollen
 
 Ich habe einen speziellen "KI-Browser" entwickelt, der genau dokumentiert, wie ein LLM navigiert.
 

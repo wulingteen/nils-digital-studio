@@ -10,13 +10,13 @@ seriesInfo:
   name: "GenAI Product Manager Evolution"
 ---
 
-### Invisible AI is the Best AI
+## Invisible AI is the Best AI
 
 When building Generative AI products for enterprise use cases, the most common trap is forcing the user to adopt a "ChatGPT interface." But enterprise users don't want to chat; they want to get their work done.
 
 As an AI Product Manager, I've learned that the most successful products are the ones where the AI is completely invisible. It operates silently in the background, analyzing context, synthesizing rules, and removing friction before the user even realizes a problem existed.
 
-### The Patent Journey
+## The Patent Journey
 
 This philosophy is what led to my recent utility patents. By observing Relationship Managers struggle with synthesizing unstructured client data, we designed a backend GenAI architecture that pre-processes the information without requiring a single conversational prompt from the RM.
 

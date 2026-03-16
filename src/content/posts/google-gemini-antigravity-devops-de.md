@@ -14,7 +14,7 @@ tags:
 coverImage: "/images/blog/google-gemini-antigravity.jpg"
 ---
 
-### Die Weiterentwicklung der Entwicklerrolle
+## Die Weiterentwicklung der Entwicklerrolle
 
 Mit der Veröffentlichung von Gemini 3 Pro und Tools wie Antigravity gibt es ein klares Signal: KI ist nicht mehr nur ein Spielzeug für Demos, sondern wird ein integraler Bestandteil der Cloud-Infrastruktur.
 

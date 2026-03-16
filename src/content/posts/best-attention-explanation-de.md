@@ -13,7 +13,7 @@ tags:
 coverImage: "/images/blog/attention-transformer.jpg"
 ---
 
-### Bestes 'Attention is All You Need' Video
+## Bestes 'Attention is All You Need' Video
 
 Dies ist mit Abstand das beste Video-Tutorial zum bahnbrechenden Papier "Attention is All You Need", das ich bisher gesehen habe.
 

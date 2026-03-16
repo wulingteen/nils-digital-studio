@@ -14,7 +14,7 @@ tags:
 coverImage: "/images/blog/patent-modular-ai.png"
 ---
 
-### The Most Common Mistake in Enterprise LLMs: Equating "Powerful" with "Useful"
+## The Most Common Mistake in Enterprise LLMs: Equating "Powerful" with "Useful"
 
 When I first started building enterprise GenAI products, I was also enamored by the belief that "the bigger the model, the better; the more features, the stronger."
 
@@ -30,7 +30,7 @@ This insight led to my patent **M671449 "Customizable Generative Artificial Inte
 
 ---
 
-### Core Design: "Building Block" AI Systems
+## Core Design: "Building Block" AI Systems
 
 The fundamental modules of this system include:
 
@@ -51,7 +51,7 @@ Depending on the business scenario, you can deploy only the required combination
 
 ---
 
-### What Does This Mean for a GenAI Product Owner?
+## What Does This Mean for a GenAI Product Owner?
 
 As a **GenAI PO**, the greatest inspiration this architecture gave me is:
 
@@ -63,7 +63,7 @@ This is actually very traditional software engineering thinking—**Separation o
 
 ---
 
-### Three GenAI Architecture Design Principles
+## Three GenAI Architecture Design Principles
 
 From this patent, I organized three architectural principles useful for GenAI Product Managers:
 

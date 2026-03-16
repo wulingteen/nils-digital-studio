@@ -14,7 +14,7 @@ tags:
 coverImage: "/images/blog/patent-modular-ai.png"
 ---
 
-### 企業導入 LLM 最常犯的錯：把「強大」等於「好用」
+## 企業導入 LLM 最常犯的錯：把「強大」等於「好用」
 
 剛開始做企業 GenAI 產品的時候，我也曾經迷信「模型越大越好、功能越多越強」。
 
@@ -30,7 +30,7 @@ coverImage: "/images/blog/patent-modular-ai.png"
 
 ---
 
-### 核心設計：「積木式」AI 系統
+## 核心設計：「積木式」AI 系統
 
 這套系統的基礎模組包括：
 
@@ -55,7 +55,7 @@ coverImage: "/images/blog/patent-modular-ai.png"
 
 ---
 
-### 這對 GenAI Product Owner 意味著什麼？
+## 這對 GenAI Product Owner 意味著什麼？
 
 作為 **GenAI PO**，這套架構給我最大的啟發是：
 
@@ -67,7 +67,7 @@ coverImage: "/images/blog/patent-modular-ai.png"
 
 ---
 
-### 三個 GenAI 架構設計原則
+## 三個 GenAI 架構設計原則
 
 從這個專利中，我整理出三個對 GenAI Product Manager 有用的架構原則：
 

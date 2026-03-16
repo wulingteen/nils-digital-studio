@@ -21,7 +21,7 @@ coverImage: "/images/blog/genai-action.png"
 
 這篇分享我實際使用的四個 GenAI ROI 衡量指標。
 
-### 指標 #1：效率提升率（Efficiency Gain）
+## 指標 #1：效率提升率（Efficiency Gain）
 
 **定義：** 使用 AI 前後，完成同一項任務所需時間的變化。
 
@@ -44,7 +44,7 @@ coverImage: "/images/blog/genai-action.png"
 
 - 對照組：留一群人不用 AI，做對照比較
 
-### 指標 #2：品質提升率（Quality Improvement）
+## 指標 #2：品質提升率（Quality Improvement）
 
 **定義：** 使用 AI 前後，回覆/建議的品質變化。
 
@@ -64,7 +64,7 @@ coverImage: "/images/blog/genai-action.png"
 
 **結果：** AI 回覆的平均品質分數從上線初期的 3.2 提升到穩定運行後的 4.1（滿分 5）。
 
-### 指標 #3：採用率與黏著度（Adoption & Retention）
+## 指標 #3：採用率與黏著度（Adoption & Retention）
 
 **定義：** 目標使用者中，有多少人在用 AI 功能？用了多久之後還繼續用？
 
@@ -91,7 +91,7 @@ coverImage: "/images/blog/genai-action.png"
 **關鍵洞察：** 
 如果採用率高但留存率低，代表你的 AI 解決的不是真正的痛點——或者使用者試了之後覺得不夠好。
 
-### 指標 #4：機會成本節省（Opportunity Cost Savings）
+## 指標 #4：機會成本節省（Opportunity Cost Savings）
 
 **定義：** AI 釋放出的人力時間，可以被重新配置到哪些更高價值的活動？
 
@@ -116,7 +116,7 @@ coverImage: "/images/blog/genai-action.png"
 
 這就是你可以跟主管說的數字。
 
-### 如何呈現
+## 如何呈現
 
 最後，資料的呈現方式和資料本身一樣重要。我的建議：
 

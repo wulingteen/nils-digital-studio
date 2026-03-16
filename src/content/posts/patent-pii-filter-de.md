@@ -14,7 +14,7 @@ tags:
 coverImage: "/images/blog/patent-pii-filter.png"
 ---
 
-### Der Compliance-Albtraum jedes GenAI PMs
+## Der Compliance-Albtraum jedes GenAI PMs
 
 Stellen Sie sich folgendes Szenario vor:
 
@@ -36,7 +36,7 @@ Meine Lösung dafür ist die Technologie zur Filterung und Ersetzung sensibler I
 
 ---
 
-### Der Kernmechanismus: Ersetzen, nicht Maskieren
+## Der Kernmechanismus: Ersetzen, nicht Maskieren
 
 Wenn viele Menschen "Umgang mit sensiblen Informationen" hören, denken sie zuerst an "Löschen" oder "Maskieren mit Sternchen".
 
@@ -58,7 +58,7 @@ Im Detail geht das System so vor:
 
 ---
 
-### Warum ist dies eine Kernkompetenz im GenAI-Produktdesign?
+## Warum ist dies eine Kernkompetenz im GenAI-Produktdesign?
 
 Bankwesen, Gesundheitswesen, Recht... diese stark regulierten Branchen sind die Bereiche, in denen GenAI den größten Mehrwert bietet, aber sie sind auch die am schwersten zu knackenden Märkte.
 
@@ -68,7 +68,7 @@ Wenn Sie als **GenAI Product Manager** Compliance-Bedenken auf der Architektureb
 
 ---
 
-### Drei Ebenen der GenAI Compliance-Architektur-Implementierung
+## Drei Ebenen der GenAI Compliance-Architektur-Implementierung
 
 **Ebene 1: Eingabefilterung**
 Bevor ein Nutzer-Prompt in das System gelangt, werden Kategorien sensibler Daten herausgefiltert, die gar nicht erst abgefragt werden sollten.

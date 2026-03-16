@@ -101,10 +101,19 @@ const articleLd = {
   "@type": "Article",
   "headline": displayTitle,
   "description": displayExcerpt,
-  "author": { "@type": "Person", "name": basePost.data.author },
+  "author": {
+    "@type": "Person",
+    "name": basePost.data.author,
+    "url": `${SITE}/zh/`
+  },
   "datePublished": basePost.data.date.toISOString().split('T')[0],
+  "dateModified": basePost.data.date.toISOString().split('T')[0],
   "url": pageUrl,
   "image": ogImage,
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": pageUrl
+  }
 };
 ---
 
@@ -115,6 +124,10 @@ const articleLd = {
   image={ogImage}
   canonicalURL={pageUrl}
   articleSchema={JSON.stringify([breadcrumbLd, articleLd])}
+  ogType="article"
+  articleDate={basePost.data.date.toISOString().split('T')[0]}
+  articleAuthor={basePost.data.author}
+  articleSection={currentTags[0] || "GenAI"}
 >
   <HeaderIsland lang={lang} currentPath={`/${lang}/insights/${basePost.id}`} client:load />
 

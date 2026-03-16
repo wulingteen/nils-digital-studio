@@ -14,7 +14,7 @@ tags:
 coverImage: "/images/blog/patent-multi-agent.png"
 ---
 
-### The DBA's Dilemma, The AI Agent's Opportunity
+## The DBA's Dilemma, The AI Agent's Opportunity
 
 Database optimization is black magic.
 
@@ -28,7 +28,7 @@ This was the starting point for my design of **M671161 "Smart Optimization Syste
 
 ---
 
-### Multi-Agent Architecture: Letting AIs "Compete & Cooperate" for the Best Strategy
+## Multi-Agent Architecture: Letting AIs "Compete & Cooperate" for the Best Strategy
 
 The most interesting design of this system is its adoption of a **multi-AI-sub-agent collaborative competition** mechanism.
 
@@ -56,7 +56,7 @@ Furthermore, the system features a **Reinforcement Learning Feedback Mechanism**
 
 ---
 
-### The Most Important Insight for GenAI Product Managers
+## The Most Important Insight for GenAI Product Managers
 
 When building AI products, "a single AI solving all problems" is almost impossible.
 
@@ -75,7 +75,7 @@ Designing Multi-agent architectures is one of the core skills for a **GenAI PM**
 
 ---
 
-### Load Prediction: AI Needs "Future Awareness"
+## Load Prediction: AI Needs "Future Awareness"
 
 Another critical design in the system is the **Load Prediction Module**—using deep learning models combined with a historical performance metrics database, time-series data, and calendars (e.g., month-end closings, Double 11 spikes) to predict future database loads.
 

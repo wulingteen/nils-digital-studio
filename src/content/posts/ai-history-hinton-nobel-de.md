@@ -13,7 +13,7 @@ tags:
 coverImage: "/images/blog/ai-history-hinton.jpg"
 ---
 
-### Der historische Wendepunkt der KI
+## Der historische Wendepunkt der KI
 
 Einst hatte das Wort "KI" in der Akademie ein negatives Image, besonders nach den KI-Wintern. Geoffrey Hinton wurde stark für seine Arbeit an neuronalen Netzen kritisiert, teilweise sogar angefeindet. Er wurde oft gefragt, wie er in etwas vertrauen könne, das man nicht vollständig nachvollziehen kann.
 

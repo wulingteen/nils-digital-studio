@@ -14,7 +14,7 @@ tags:
 coverImage: "/images/blog/patent-multi-agent.png"
 ---
 
-### DBA 的困境，AI Agent 的機會
+## DBA 的困境，AI Agent 的機會
 
 資料庫優化是一門黑魔法。
 
@@ -28,7 +28,7 @@ coverImage: "/images/blog/patent-multi-agent.png"
 
 ---
 
-### 多代理架構：讓 AI 們「競合」出最佳策略
+## 多代理架構：讓 AI 們「競合」出最佳策略
 
 這個系統最有趣的設計，是採用**多個 AI 子代理（Sub-agents）協作競爭**的機制。
 
@@ -56,7 +56,7 @@ coverImage: "/images/blog/patent-multi-agent.png"
 
 ---
 
-### 這對 GenAI Product Manager 最重要的啟示
+## 這對 GenAI Product Manager 最重要的啟示
 
 做 AI 產品，「單一 AI 解決所有問題」幾乎不可能。
 
@@ -78,7 +78,7 @@ coverImage: "/images/blog/patent-multi-agent.png"
 
 ---
 
-### 負載預測：AI 需要「未來感知」
+## 負載預測：AI 需要「未來感知」
 
 系統中另一個關鍵設計是**負載預測模組**——用深度學習模型，結合歷史效能指標資料庫、時間序列資料和行事曆（例如：月底結帳日、雙十一等高峰），預測未來的資料庫負載。
 

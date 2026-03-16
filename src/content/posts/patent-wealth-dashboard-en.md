@@ -13,7 +13,7 @@ tags:
 coverImage: "/images/blog/patent-wealth-dashboard.png"
 ---
 
-### The True Pain Point of Relationship Managers
+## The True Pain Point of Relationship Managers
 
 While building AI products at the bank, I spent a lot of time chatting with Relationship Managers (RMs).
 
@@ -35,7 +35,7 @@ This insight was the origin of **M670472 "Financial Investment Recommendation Ge
 
 ---
 
-### System Architecture: An AI Assistant That "Knows the Business"
+## System Architecture: An AI Assistant That "Knows the Business"
 
 The system design revolves around the daily workflow of the RM:
 
@@ -57,7 +57,7 @@ Finally, the **Continuous Learning Module** optimizes the AI models based on use
 
 ---
 
-### As a GenAI Product Manager: What Did This Project Teach Me?
+## As a GenAI Product Manager: What Did This Project Teach Me?
 
 **1. "Personalization" requires foundational data architecture.**
 
@@ -77,7 +77,7 @@ Launching the product is just the beginning. The system learns from every RM int
 
 ---
 
-### Product Design Advice for GenAI POs
+## Product Design Advice for GenAI POs
 
 If you're designing financial AI products, my advice is:
 

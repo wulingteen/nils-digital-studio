@@ -13,7 +13,7 @@ tags:
 coverImage: "/images/blog/devfest-taipei-announce.jpg"
 ---
 
-### DevFest Taipei 2025 Anmeldung
+## DevFest Taipei 2025 Anmeldung
 
 Am 30. November werde ich auf der DevFest Taipei 2025 der Google GDG am NTU-Campus über angewandte KI-Agententeams sprechen. 
 

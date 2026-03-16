@@ -12,7 +12,7 @@ tags:
 coverImage: "/images/blog/stargate-ai-infra.jpg"
 ---
 
-### Projekt Stargate
+## Projekt Stargate
 
 Das "Stargate" ist nun ein Serverzentrum-Projekt, an dem in 24-Stunden-Schichten ununterbrochen gebaut wird.
 

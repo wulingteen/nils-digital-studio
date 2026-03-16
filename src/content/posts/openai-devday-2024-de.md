@@ -13,7 +13,7 @@ tags:
 coverImage: "/images/blog/openai-devday-2024.png"
 ---
 
-### OpenAI DevDay 2024: Technische Revolution
+## OpenAI DevDay 2024: Technische Revolution
 
 Gestern hat OpenAI auf dem DevDay 2024 vier große Neuerungen vorgestellt: Vision Fine-Tuning, Realtime API, Model Distillation und Prompt Caching.
 

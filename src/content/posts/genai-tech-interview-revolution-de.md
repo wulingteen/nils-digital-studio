@@ -13,7 +13,7 @@ tags:
 coverImage: "/images/blog/genai-tech-interview.jpg"
 ---
 
-### Transformation technischer Interviews
+## Transformation technischer Interviews
 
 Wir haben unser technisches Interview für Praktikanten drastisch aktualisiert.
 

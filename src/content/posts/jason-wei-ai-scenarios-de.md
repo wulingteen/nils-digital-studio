@@ -13,7 +13,7 @@ tags:
 coverImage: "/images/blog/jason-wei-ai.jpg"
 ---
 
-### Systematische KI-Szenarien
+## Systematische KI-Szenarien
 
 Dieser Vortrag von Jason Wei war eine echte Erleuchtung und hat mir sprichwörtlich Gänsehaut bereitet.
 

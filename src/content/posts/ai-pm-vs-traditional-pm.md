@@ -36,17 +36,17 @@ seriesInfo:
 
 ## 面向 AI 時代的進階 AI PM 技能
 
-### 1. 提出正確問題的能力（The Art of Asking Questions）
+## 1. 提出正確問題的能力（The Art of Asking Questions）
 
 Peter Deng 認為，未來 Builder 最重要的技能不再是基礎的語法，而是「提出正確問題的能力」。你需要透過精準的 Prompt Engineering 與架構探詢，讓 AI 不僅回答表面問題，更能挖掘出商業價值的底層邏輯。
 
-### 2. 現代 Vibe Coding 與從 0 到 1 的快速原型開發
+## 2. 現代 Vibe Coding 與從 0 到 1 的快速原型開發
 
 AI PM 需要寫程式嗎？傳統意義上的「不需要」，但現代意義上的回答是「你必須懂得 Vibe Coding」。
 
 **Vibe Coding（感知寫碼）** 指的是透過與 AI 工具（如 Cursor、GitHub Copilot）對話，運用自然語言極速生成程式碼的過程。身為 AI PM，當你想驗證一個從 0 到 1 的新概念時，你不再需要開 Jira 票苦等軟體工程師排程；你可以親自依賴 Vibe Coding 搭出一個可運作的 MVP（最小可行性產品）去測試使用者的真實痛點。這種**快速原型開發 (Quick Prototyping)** 的能力，是 AI PM 甩開傳統 PM 最大的護城河之一。
 
-### 3. 特殊的成果評估 (Outcome Evaluation) 與成長心態
+## 3. 特殊的成果評估 (Outcome Evaluation) 與成長心態
 
 傳統 PM 追求的是確定性的轉換率（如 A/B Test 點擊率對比）。然而，**成果評價 (Evaluation)** 是 AI 專案中最困難、也是 AI PM 最特殊的專業技能。
 
@@ -58,11 +58,11 @@ AI 產出的結果是機率性的，沒有絕對的標準答案。你的 Evaluat
 
 這需要極強的**成長心態**。很多時候嚴苛的 Evaluation 結果會告訴你「架構全錯了」，你必須勇於面對失敗並極速調整。
 
-### 4. 資料敏感度與飛輪建構 (Data Flywheel)
+## 4. 資料敏感度與飛輪建構 (Data Flywheel)
 
 傳統 PM 關注發布功能，AI PM 關注資料如何流動。這包歷史資料從哪裡來？偏誤風險如何？系統上線後，使用者的「接受 / 拒絕」動作是否順利存回系統，為未來更強的專用模型儲備**數據飛輪**的燃料？
 
-### 5. 無感智能的風險護欄設計
+## 5. 無感智能的風險護欄設計
 
 你的 GenAI 系統可能 99% 回答正確，但那 1% 的嚴重幻覺若無法被預先攔截，就會摧毀信任。價值的 AI 產品不會一直跳出警告，而是把 Guardrails（安全護欄）與 Fallback 機制默默嵌入工作流程中，實踐**無感智能化**。
 

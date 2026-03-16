@@ -10,13 +10,13 @@ seriesInfo:
   name: "GenAI Product Manager Evolution"
 ---
 
-### Standard-Fähigkeiten reichen nicht mehr aus
+## Standard-Fähigkeiten reichen nicht mehr aus
 
 Der traditionelle Software-PM-Fähigkeitsbaum konzentriert sich stark auf UI/UX-Wireframing, Agile Sprint-Planung und Konversionsratenoptimierung. Obwohl dies nützlich bleibt, benötigt der KI-Produktmanager (AI PM) einen völlig neuen Zweig in seinem Talentbaum.
 
 Generative KI bricht grundlegend mit dem Determinismus traditioneller Software. Wenn ein Benutzer eine Schaltfläche anklickt, durchsucht eine traditionelle App eine Datenbank und gibt jedes Mal dieselben Daten zurück. Wenn ein Benutzer eine KI abfragt, kann die Ausgabe je nach Systemanweisungen und Modellparametern stark variieren.
 
-### Die fehlenden Fähigkeiten
+## Die fehlenden Fähigkeiten
 
 Um diese Lücke zu schließen, müssen AI PMs folgende Dinge beherrschen:
 - **Wahrscheinlichkeitsbasiertes Denken:** Zu akzeptieren, dass das Produkt niemals zu 100 % vorhersehbar sein wird, aber Nutzererfahrungen (UX) so zu gestalten, dass Randfälle elegant bewältigt werden.

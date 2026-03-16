@@ -14,7 +14,7 @@ tags:
 coverImage: "/images/blog/patent-knowledge-graph.png"
 ---
 
-### 為什麼銀行需要「會自己學習」的知識圖譜？
+## 為什麼銀行需要「會自己學習」的知識圖譜？
 
 大多數人對知識圖譜的印象是：需要大量人工標記、需要事先定義本體（ontology）、需要一群領域專家持續維護。
 
@@ -30,7 +30,7 @@ coverImage: "/images/blog/patent-knowledge-graph.png"
 
 ---
 
-### 系統怎麼運作？
+## 系統怎麼運作？
 
 這個系統的核心架構很直觀，分成四個模組：
 
@@ -46,7 +46,7 @@ coverImage: "/images/blog/patent-knowledge-graph.png"
 
 ---
 
-### GenAI PM 的核心思維：從流程痛點找創新點
+## GenAI PM 的核心思維：從流程痛點找創新點
 
 很多人問我，**一個 PM/PO 怎麼會去申請專利？**
 
@@ -58,7 +58,7 @@ coverImage: "/images/blog/patent-knowledge-graph.png"
 
 ---
 
-### 對 GenAI Product Manager 的啟示
+## 對 GenAI Product Manager 的啟示
 
 如果你正在規劃企業 GenAI 產品，這幾個問題值得認真思考：
 

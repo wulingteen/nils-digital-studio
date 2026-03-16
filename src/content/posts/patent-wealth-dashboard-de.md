@@ -13,7 +13,7 @@ tags:
 coverImage: "/images/blog/patent-wealth-dashboard.png"
 ---
 
-### Der wahre Schmerzpunkt von Kundenberatern
+## Der wahre Schmerzpunkt von Kundenberatern
 
 Während des Baus von KI-Produkten in der Bank habe ich viel Zeit damit verbracht, mich mit Kundenberatern (RMs) auszutauschen.
 
@@ -35,7 +35,7 @@ Diese Einsicht war der Ursprung von **M670472 "System zur Generierung von Finanz
 
 ---
 
-### Systemarchitektur: Ein KI-Assistent, der "das Geschäft kennt"
+## Systemarchitektur: Ein KI-Assistent, der "das Geschäft kennt"
 
 Das Systemdesign dreht sich um den täglichen Arbeitsablauf des RMs:
 
@@ -57,7 +57,7 @@ Schließlich optimiert das **Kontinuierliche Lernmodul** die KI-Modelle im Laufe
 
 ---
 
-### Als GenAI Product Manager: Was habe ich aus diesem Projekt gelernt?
+## Als GenAI Product Manager: Was habe ich aus diesem Projekt gelernt?
 
 **1. "Personalisierung" erfordert fundamentale Datenarchitektur.**
 
@@ -77,7 +77,7 @@ Der Launch des Produkts ist nur der Anfang. Das System lernt aus jeder Interakti
 
 ---
 
-### Ratschläge zum Produktdesign für GenAI POs
+## Ratschläge zum Produktdesign für GenAI POs
 
 Wenn Sie KI-Finanzprodukte entwerfen, lautet mein Rat:
 

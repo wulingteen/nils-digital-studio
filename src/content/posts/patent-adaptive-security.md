@@ -14,7 +14,7 @@ tags:
 coverImage: "/images/blog/patent-adaptive-security.png"
 ---
 
-### 「用 AI 守護 AI」——這不是口號，是架構設計
+## 「用 AI 守護 AI」——這不是口號，是架構設計
 
 在銀行導入生成式 AI 的過程中，最讓我夜不能寐的問題不是模型效果，而是**安全性**。
 
@@ -26,7 +26,7 @@ coverImage: "/images/blog/patent-adaptive-security.png"
 
 ---
 
-### 系統架構：讓 AI 學會「看懂惡意」
+## 系統架構：讓 AI 學會「看懂惡意」
 
 系統分成兩個核心層：
 
@@ -52,7 +52,7 @@ coverImage: "/images/blog/patent-adaptive-security.png"
 
 ---
 
-### 為什麼這是 GenAI 產品設計的核心議題？
+## 為什麼這是 GenAI 產品設計的核心議題？
 
 作為 **GenAI Product Manager**，安全性不是「交給資安部門」的事，它必須是產品架構的一部分。
 
@@ -69,7 +69,7 @@ coverImage: "/images/blog/patent-adaptive-security.png"
 
 ---
 
-### GenAI PO 的 Checklist：你的 AI 系統夠安全嗎？
+## GenAI PO 的 Checklist：你的 AI 系統夠安全嗎？
 
 - [ ] 系統能否偵測異常查詢模式？
 

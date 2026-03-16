@@ -14,7 +14,7 @@ tags:
 coverImage: "/images/blog/patent-pii-filter.png"
 ---
 
-### 每一個 GenAI PM 都會遇到的合規噩夢
+## 每一個 GenAI PM 都會遇到的合規噩夢
 
 想像這個場景：
 
@@ -36,7 +36,7 @@ coverImage: "/images/blog/patent-pii-filter.png"
 
 ---
 
-### 核心機制：替換，而非遮蔽
+## 核心機制：替換，而非遮蔽
 
 很多人聽到「敏感資訊處理」，第一反應是「直接刪掉」或「打星號遮蔽」。
 
@@ -62,7 +62,7 @@ coverImage: "/images/blog/patent-pii-filter.png"
 
 ---
 
-### 為什麼這是 GenAI 產品設計的核心能力？
+## 為什麼這是 GenAI 產品設計的核心能力？
 
 銀行、醫療、法律……這些高度受監管的行業，是 GenAI 最有價值、也最難落地的市場。
 
@@ -72,7 +72,7 @@ coverImage: "/images/blog/patent-pii-filter.png"
 
 ---
 
-### 實作 GenAI 合規架構的三個層次
+## 實作 GenAI 合規架構的三個層次
 
 **Layer 1：輸入端過濾**
 在用戶的 prompt 進入系統前，過濾掉不應該被查詢的敏感資料範疇。

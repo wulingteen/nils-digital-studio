@@ -13,7 +13,7 @@ tags:
 coverImage: "/images/blog/devfest-announcement.jpg"
 ---
 
-### Ankündigung: DevFest Taipei 2025
+## Ankündigung: DevFest Taipei 2025
 
 Am 30. November werde ich auf dem von Google GDG organisierten DevFest Taipei 2025 sprechen.
 

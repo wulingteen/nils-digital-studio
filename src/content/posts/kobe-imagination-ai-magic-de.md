@@ -13,7 +13,7 @@ tags:
 coverImage: "/images/blog/kobe-imagination-ai.jpg"
 ---
 
-### Vorstellungskraft und KI-Magie
+## Vorstellungskraft und KI-Magie
 
 In einem Interview 2017 teilte Kobe Bryant Elon Musks Auffassung: Nach dem Sammeln von Wissen ist Vorstellungskraft das Kritischste. Egal wie viel Sie lernen, ohne Vorstellungskraft bringen Sie es nicht auf das nächste Level.
 

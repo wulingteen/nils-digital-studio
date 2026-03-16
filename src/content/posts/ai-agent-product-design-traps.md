@@ -20,7 +20,7 @@ coverImage: "/images/blog/genai-action.png"
 
 這篇分享我在設計和部署企業 AI Agent 系統時，親身經歷的五個設計陷阱。
 
-### 陷阱 #1：讓 Agent 做太多事
+## 陷阱 #1：讓 Agent 做太多事
 
 **症狀：** 一個 Agent 同時負責理解使用者意圖、查詢知識庫、調用 API、生成回覆、檢查合規性。
 
@@ -38,7 +38,7 @@ coverImage: "/images/blog/genai-action.png"
 
 每個 Agent 的輸入輸出都有明確的 schema 定義。這讓你可以獨立測試、獨立部署、獨立迭代。
 
-### 陷阱 #2：忽略 Agent 的失敗模式
+## 陷阱 #2：忽略 Agent 的失敗模式
 
 **症狀：** 設計時只考慮 happy path——「使用者說這個，Agent 回那個」。
 
@@ -64,7 +64,7 @@ coverImage: "/images/blog/genai-action.png"
 
 - **人工介入觸發器**：特定場景強制轉接人工
 
-### 陷阱 #3：過度信任 Agent 的「推理」
+## 陷阱 #3：過度信任 Agent 的「推理」
 
 **症狀：** 把 Agent 當成真正會推理的系統，給它複雜的決策任務。
 
@@ -80,7 +80,7 @@ coverImage: "/images/blog/genai-action.png"
 
 3. **使用結構化的決策框架**——不是讓 Agent 自由推理，而是給它一個決策樹或 scoring rubric
 
-### 陷阱 #4：忽略 Agent 之間的協調成本
+## 陷阱 #4：忽略 Agent 之間的協調成本
 
 **症狀：** 設計了一個很酷的 Multi-Agent 系統，每個 Agent 都很強，但整體效果不如預期。
 
@@ -104,7 +104,7 @@ coverImage: "/images/blog/genai-action.png"
 
 4. **設定 token budget**——每個 Agent 有明確的 token 使用上限
 
-### 陷阱 #5：沒有 Observability
+## 陷阱 #5：沒有 Observability
 
 **症狀：** Agent 上線後，你不知道它到底在做什麼。
 

@@ -12,7 +12,7 @@ tags:
 coverImage: "/images/blog/hiring-devops.jpg"
 ---
 
-### Nils sucht Teamkollegen!
+## Nils sucht Teamkollegen!
 
 Wir bringen Finanz-KI in internationale Märkte und suchen aktiv nach DevOps- und Fullstack-Ingenieuren!
 

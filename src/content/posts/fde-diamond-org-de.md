@@ -13,7 +13,7 @@ tags:
 coverImage: "/images/blog/642211062_1341725981314870_7520906503631550785_n.jpg"
 ---
 
-### Die Spaltung der Softwareentwickler
+## Die Spaltung der Softwareentwickler
 
 In derselben Ära und unter derselben Berufsbezeichnung "Ingenieur" verlieren einige durch KI ihren Job, während andere gerade wegen ihr neue Möglichkeiten finden. 
 

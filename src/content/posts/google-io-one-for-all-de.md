@@ -12,7 +12,7 @@ tags:
 coverImage: "/images/blog/google-io-all.jpg"
 ---
 
-### "Winner Takes It All"
+## "Winner Takes It All"
 
 Das 32-minütige Highlight-Reel der Google Keynote war eine dichte Abfolge von atemberaubenden Produktankündigungen.
 

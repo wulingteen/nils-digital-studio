@@ -13,6 +13,10 @@ interface Props {
   image?: string;
   canonicalURL?: string;
   articleSchema?: string;
+  ogType?: string;
+  articleDate?: string;
+  articleAuthor?: string;
+  articleSection?: string;
 }
 
 const { 
@@ -21,7 +25,11 @@ const {
   lang = "en",
   image = "/images/og-default.png",
   canonicalURL,
-  articleSchema
+  articleSchema,
+  ogType = "website",
+  articleDate,
+  articleAuthor,
+  articleSection
 } = Astro.props;
 
 // For generating full image URLs if a relative path is provided
@@ -114,7 +122,7 @@ const serviceSchema = JSON.stringify({
     <link rel="alternate" hreflang="x-default" href={hreflangEn} />
 
     <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={ogType} />
     <meta property="og:url" content={canonicalURL || Astro.url.href} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
@@ -124,6 +132,9 @@ const serviceSchema = JSON.stringify({
     {lang !== 'en' && <meta property="og:locale:alternate" content="en_US" />}
     {lang !== 'zh' && <meta property="og:locale:alternate" content="zh_TW" />}
     {lang !== 'de' && <meta property="og:locale:alternate" content="de_DE" />}
+    {articleDate && <meta property="article:published_time" content={articleDate} />}
+    {articleAuthor && <meta property="article:author" content={articleAuthor} />}
+    {articleSection && <meta property="article:section" content={articleSection} />}
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />

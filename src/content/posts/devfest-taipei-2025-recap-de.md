@@ -15,7 +15,7 @@ coverImage: "/images/blog/AI_Coach.png"
 pinned: true
 ---
 
-### Rekapitulation DevFest Taipei 2025
+## Rekapitulation DevFest Taipei 2025
 
 Vielen Dank an alle, die an meiner Sitzung auf dem DevFest Taipei 2025 teilgenommen haben!
 

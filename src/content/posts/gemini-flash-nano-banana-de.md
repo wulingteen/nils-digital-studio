@@ -12,7 +12,7 @@ tags:
 coverImage: "/images/blog/gemini-flash-image.jpg"
 ---
 
-### Nano Banana Bildgenerierung
+## Nano Banana Bildgenerierung
 
 Nano Banana (die Bildgenerierungsfunktion von Gemini 2.5 Flash) ist wirklich erstaunlich.
 

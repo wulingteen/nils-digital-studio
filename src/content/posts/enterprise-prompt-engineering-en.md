@@ -7,13 +7,13 @@ coverImage: "/images/blog/ai-roi-metrics-cover.png"
 tags: ["Architecture", "GenAI", "Product Management"]
 ---
 
-### Stop Writing "Magic Spells"
+## Stop Writing "Magic Spells"
 
 When using ChatGPT personally, you might write long, convoluted paragraphs hoping the AI "understands your vibe". In an enterprise production system, that approach is a disaster. If a prompt relies on the LLM "guessing right," it will eventually guess wrong.
 
 Enterprise Prompt Engineering is closer to software engineering than creative writing.
 
-### The 3 Core Patterns of Enterprise Prompts
+## The 3 Core Patterns of Enterprise Prompts
 
 1. **The System Persona Matrix:** Never just say "You are a helpful assistant." Define the persona's boundaries, its assumptions, its tone, and explicitly state what it is *forbidden* from answering.
 2. **Structured Few-Shot Examples:** Don't just explain the rules; show the rules. We use JSON-structured few-shot examples embedded directly in the system prompt to enforce output schema consistency.

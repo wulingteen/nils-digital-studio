@@ -7,13 +7,13 @@ coverImage: "/images/blog/ai-roi-metrics-cover.png"
 tags: ["Product Management", "GenAI", "Data", "Business"]
 ---
 
-### The ROI Dilemma
+## The ROI Dilemma
 
 The hardest question an AI Product Manager faces from executives isn't "How does this work?", but rather, "Is this actually saving us money?"
 
 Generative AI is inherently expensive to run. If you cannot quantify its value, your project will be killed when the hype cycle ends.
 
-### The 4-Metric Framework
+## The 4-Metric Framework
 
 1. **Time-to-Task Completion (TTC) Reduction:** Does the AI assistant actually make the human faster? We measure the baseline time it takes an employee to complete a task (e.g., generating a client report) versus the time it takes with AI assistance.
 2. **Deflection Rate:** In customer service or internal IT desk scenarios, how many tickets were completely resolved by the AI without human escalation?

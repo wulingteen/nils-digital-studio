@@ -14,7 +14,7 @@ tags:
 coverImage: "/images/blog/patent-knowledge-graph.png"
 ---
 
-### Warum benötigen Banken einen "selbstlernenden" Knowledge Graph?
+## Warum benötigen Banken einen "selbstlernenden" Knowledge Graph?
 
 Die meisten Menschen assoziieren Wissensgraphen (Knowledge Graphs) mit massiver manueller Kennzeichnung, vordefinierten Ontologien und einem Team von Fachexperten, die kontinuierlich für Instandhaltung sorgen müssen.
 
@@ -30,7 +30,7 @@ Die Antwort lautet ja, und diese Idee wurde später zu meinem Patent **M676680 "
 
 ---
 
-### Wie funktioniert das System?
+## Wie funktioniert das System?
 
 Die Kernarchitektur dieses Systems ist sehr intuitiv gestaltet und in vier Module unterteilt:
 
@@ -43,7 +43,7 @@ Wichtiger noch: Das System kann diesen Knowledge Graph in Kombination mit Nutzer
 
 ---
 
-### Das Mindset eines GenAI PMs: Innovation durch Problem-Pain-Points
+## Das Mindset eines GenAI PMs: Innovation durch Problem-Pain-Points
 
 Viele Leute fragen mich: **Wie meldet ein PM/PO eigentlich ein Patent an?**
 
@@ -55,7 +55,7 @@ Der Kernwert dieses Patents ist keine technische Angeberei, sondern **die Nutzun
 
 ---
 
-### Erkenntnisse für GenAI Product Manager
+## Erkenntnisse für GenAI Product Manager
 
 Wenn Sie ein Unternehmens-GenAI-Produkt planen, lohnt es sich, folgende Fragen zu prüfen:
 

@@ -13,7 +13,7 @@ tags:
 coverImage: "/images/blog/vibe-coding.jpg"
 ---
 
-### Die Vibe Coding Giganten
+## Die Vibe Coding Giganten
 
 Vibe Coding im Jahr 2025 fühlt sich ein bisschen an wie an einem Gacha-Automaten zu ziehen. Die großen drei, die diesen Raum derzeit dominieren, sind:
 

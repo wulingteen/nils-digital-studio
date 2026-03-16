@@ -7,13 +7,13 @@ coverImage: "/images/blog/ai-roi-metrics-cover.png"
 tags: ["Architecture", "GenAI", "Finance"]
 ---
 
-### Die Realität von RAG
+## Die Realität von RAG
 
 RAG (Retrieval-Augmented Generation) klingt in einem Tutorial einfach: Betten Sie Ihre PDFs ein, werfen Sie sie in eine Vektordatenbank und führen Sie eine Kosinusähnlichkeitssuche durch. In der Produktion – insbesondere im Bankwesen – scheitert dieser naive Ansatz sofort.
 
 Finanzdokumente sind komplex. Sie enthalten Tabellen, Fußnoten und Querverweise. Eine einfache Vektorsuche ruft in 50 % der Fälle die falsche Klausel ab.
 
-### 3 Wichtige Architekturentscheidungen
+## 3 Wichtige Architekturentscheidungen
 
 1. **Semantisches Chunking statt festes Chunking:** Zerlegen Sie Texte niemals pauschal in „alle 500 Token“. Finanzdokumente müssen nach semantischen Grenzen getrennt werden.
 2. **Hybrid Retrieval (Vektor + Schlüsselwort):** Vektorsuche ist schlecht darin, spezifische alphanumerische Codes zu finden. Sie müssen eine hybride Pipeline implementieren, die BM25 (Schlüsselwortsuche) mit dichten Vektoreinbettungen kombiniert.

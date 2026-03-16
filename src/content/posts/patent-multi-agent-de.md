@@ -14,7 +14,7 @@ tags:
 coverImage: "/images/blog/patent-multi-agent.png"
 ---
 
-### Das Dilemma des DBAs, die Chance des AI Agents
+## Das Dilemma des DBAs, die Chance des AI Agents
 
 Datenbankoptimierung ist schwarze Magie.
 
@@ -28,7 +28,7 @@ Das war der Ausgangspunkt für mein Design von **M671161 "Smarte Optimierungssys
 
 ---
 
-### Multi-Agent-Architektur: KI "konkurrieren & kooperieren" lassen für die beste Strategie
+## Multi-Agent-Architektur: KI "konkurrieren & kooperieren" lassen für die beste Strategie
 
 Das interessanteste Design dieses Systems ist die Annahme eines Mechanismus der **kollaborativen Konkurrenz mehrerer KI-Sub-Agenten**.
 
@@ -56,7 +56,7 @@ Darüber hinaus verfügt das System über einen **Reinforcement-Learning-Feedbac
 
 ---
 
-### Die wichtigste Erkenntnis für GenAI Product Manager
+## Die wichtigste Erkenntnis für GenAI Product Manager
 
 Beim Bau von KI-Produkten ist "eine einzige KI, die alle Probleme löst" nahezu unmöglich.
 
@@ -75,7 +75,7 @@ Das Designen von Multi-Agent-Architekturen gehört zu den Kernkompetenzen eines 
 
 ---
 
-### Lastvorhersage: KI braucht "Zukunftsbewusstsein"
+## Lastvorhersage: KI braucht "Zukunftsbewusstsein"
 
 Ein weiteres entscheidendes Design im System ist das **Lastvorhersage-Modul**—die Nutzung tiefgreifender Lernmodelle kombiniert mit einer historischen Leistungsmetrik-Datenbank, Zeitreihendaten und Kalendern (z. B. Monatsabschlüsse, Double-11-Spitzen), um zukünftige Datenbanklasten vorherzusagen.
 

@@ -13,7 +13,7 @@ tags:
 coverImage: "/images/blog/ithome-devopsdays.jpg"
 ---
 
-### Fünf Verhaltensmuster von KI-Agenten
+## Fünf Verhaltensmuster von KI-Agenten
 
 Dieses Jahr steht im Zeichen der KI-Agenten. Wir sehen uns auf den DevOpsDays am 5. und 6. Juni.
 

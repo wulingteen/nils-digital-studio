@@ -10,7 +10,7 @@ seriesInfo:
   name: "GenAI Product Manager Evolution"
 ---
 
-### Human Needs + Existing Tech Combination
+## Human Needs + Existing Tech Combination
 
 Everyone outside the banking industry assumes that big banks simply refuse to adopt LLMs out of sheer stubbornness or technical incompetence. The truth is much more complicated. Deploying an LLM in a heavily regulated financial institution is 10x harder than deploying an email client.
 

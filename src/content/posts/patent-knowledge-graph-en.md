@@ -14,7 +14,7 @@ tags:
 coverImage: "/images/blog/patent-knowledge-graph.png"
 ---
 
-### Why Do Banks Need a "Self-Learning" Knowledge Graph?
+## Why Do Banks Need a "Self-Learning" Knowledge Graph?
 
 Most people think of knowledge graphs as requiring massive manual labeling, predefined ontologies, and a team of domain experts for continuous maintenance.
 
@@ -30,7 +30,7 @@ The answer is yes, and this idea later became my patent **M676680 "Knowledge Gra
 
 ---
 
-### How Does the System Work?
+## How Does the System Work?
 
 The core architecture of this system is very intuitive and is divided into four modules:
 
@@ -43,7 +43,7 @@ More importantly, the system can use this knowledge graph combined with user per
 
 ---
 
-### The GenAI PM's Mindset: Finding Innovation in Process Pain Points
+## The GenAI PM's Mindset: Finding Innovation in Process Pain Points
 
 Many people ask me, **how does a PM/PO end up applying for a patent?**
 
@@ -55,7 +55,7 @@ The core value of this patent is not a technical flex, but rather **using a syst
 
 ---
 
-### Insights for GenAI Product Managers
+## Insights for GenAI Product Managers
 
 If you are planning an enterprise GenAI product, these questions are worth careful consideration:
 

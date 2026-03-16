@@ -10,7 +10,7 @@ seriesInfo:
   name: "GenAI Product Manager Evolution"
 ---
 
-### Menschliche Bedürfnisse + Bewährte Technologie
+## Menschliche Bedürfnisse + Bewährte Technologie
 
 Jeder außerhalb der Bankenbranche geht davon aus, dass große Banken sich schlichtweg weigern, LLMs aus reiner Sturheit einzuführen. Die Wahrheit ist viel komplizierter. Die Bereitstellung eines LLM in einem stark regulierten Finanzinstitut ist extrem schwierig.
 

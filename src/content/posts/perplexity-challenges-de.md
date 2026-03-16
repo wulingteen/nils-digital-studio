@@ -13,7 +13,7 @@ tags:
 coverImage: "/images/blog/perplexity-challenges.jpg"
 ---
 
-### Das Dilemma von Perplexity
+## Das Dilemma von Perplexity
 
 Als Perplexity startete, fühlte es sich an wie etwas, das jedes kompetente Team bauen könnte. Die grundlegende Technologie hat keinen massiven Schutzwall.
 

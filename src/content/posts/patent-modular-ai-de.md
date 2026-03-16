@@ -14,7 +14,7 @@ tags:
 coverImage: "/images/blog/patent-modular-ai.png"
 ---
 
-### Der häufigste Fehler bei Enterprise-LLMs: "Mächtig" mit "Nützlich" gleichzusetzen
+## Der häufigste Fehler bei Enterprise-LLMs: "Mächtig" mit "Nützlich" gleichzusetzen
 
 Als ich anfing, Unternehmens-GenAI-Produkte zu bauen, verliebte ich mich ebenfalls in den Glauben: "Je größer das Modell, desto besser; je mehr Funktionen, desto stärker."
 
@@ -30,7 +30,7 @@ Diese Erkenntnis führte zu meinem Patent **M671449 "Anpassbares Generatives Kü
 
 ---
 
-### Das Kerndesign: "Baukasten" KI-Systeme
+## Das Kerndesign: "Baukasten" KI-Systeme
 
 Die wesentlichen Grundmodule dieses Systems umfassen:
 
@@ -51,7 +51,7 @@ Je nach Geschäftsszenario können Sie lediglich die benötigte Modulkombination
 
 ---
 
-### Was bedeutet das für einen GenAI Product Owner?
+## Was bedeutet das für einen GenAI Product Owner?
 
 Als **GenAI PO** ist die größte Inspiration, die mir diese Architektur gebracht hat:
 
@@ -63,7 +63,7 @@ Das ist eigentlich sehr traditionelles Software-Engineering-Denken — **Separat
 
 ---
 
-### Drei Prinzipien des GenAI Architekturdesigns
+## Drei Prinzipien des GenAI Architekturdesigns
 
 Aus diesem Patent habe ich drei Architekturprinzipien destilliert, die für GenAI-Produktmanager von Nutzen sind:
 

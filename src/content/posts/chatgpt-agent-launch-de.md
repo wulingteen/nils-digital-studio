@@ -13,7 +13,7 @@ tags:
 coverImage: "/images/blog/chatgpt-agent.jpg"
 ---
 
-### Der Launch des ChatGPT-Agenten
+## Der Launch des ChatGPT-Agenten
 
 Der offizielle Start des Agenten von ChatGPT ist faszinierend: Wenn der Agent Befehle erhält, werden seine Vorgänge in Echtzeit auf dem Bildschirm angezeigt. Es gibt aussagekräftige Protokolle (verbose), sodass alles erklärbar bleibt.
 

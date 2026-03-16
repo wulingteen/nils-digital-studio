@@ -10,13 +10,13 @@ seriesInfo:
   name: "GenAI Product Manager Evolution"
 ---
 
-### Products Are Not Just Pixels
+## Products Are Not Just Pixels
 
 According to Peter Deng (a veteran at Uber, Meta, and OpenAI), a product is fundamentally an "emotion engine." You are not designing a tool; you are designing how a person feels when they use your technology. 
 
 In the era of Generative AI, this philosophy is more important than ever. AI can generate text, images, and code instantly—but if it doesn't solve a core human anxiety or fulfill a desire, it is just a gimmick. A great AI Product Manager must transition from being a "feature specifier" to an "architect of emotions."
 
-### The 5 PM Archetypes
+## The 5 PM Archetypes
 
 Deng famously outlined 5 distinct PM archetypes that must cooperate like the Avengers:
 

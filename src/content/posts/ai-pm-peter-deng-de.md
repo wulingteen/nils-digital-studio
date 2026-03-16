@@ -10,13 +10,13 @@ seriesInfo:
   name: "GenAI Product Manager Evolution"
 ---
 
-### Produkte sind keine Pixel
+## Produkte sind keine Pixel
 
 Laut Peter Deng (einem Veteranen bei Uber, Meta und OpenAI) ist ein Produkt im Grunde eine „Emotionsmaschine“. Sie entwerfen kein Werkzeug; Sie entwerfen, wie sich ein Mensch fühlt, wenn er Ihre Technologie nutzt.
 
 In der Ära der generativen KI ist diese Philosophie wichtiger denn je. KI kann sofort Textbilder und Code generieren – aber wenn sie nicht eine grundlegende menschliche Angst löst oder einen Wunsch erfüllt, ist sie nur eine Spielerei. Ein großartiger KI-Produktmanager muss sich von einem „Feature-Spezifizierer“ zu einem „Architekten von Emotionen“ wandeln.
 
-### Die 5 PM-Archetypen
+## Die 5 PM-Archetypen
 
 Deng hat bekanntermaßen 5 verschiedene PM-Archetypen skizziert, die wie die Avengers zusammenarbeiten müssen:
 

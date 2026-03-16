@@ -12,7 +12,7 @@ tags:
 coverImage: "/images/blog/ai-team-recruitment.jpg"
 ---
 
-### Stellenangebot: GenAI Team
+## Stellenangebot: GenAI Team
 
 Unser Financial AI Technology Team sucht leidenschaftliche Experten für DevOps und Data Science, um gemeinsam GenAI-Anwendungen zu entwickeln und umzusetzen!
 

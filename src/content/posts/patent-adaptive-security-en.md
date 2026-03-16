@@ -14,7 +14,7 @@ tags:
 coverImage: "/images/blog/patent-adaptive-security.png"
 ---
 
-### "Using AI to Guard AI"—It's Not a Slogan, It's Architectural Design
+## "Using AI to Guard AI"—It's Not a Slogan, It's Architectural Design
 
 During the process of introducing Generative AI to the bank, the issue that kept me awake at night wasn't model performance, but **security**.
 
@@ -26,7 +26,7 @@ This prompted me to design a **generative adaptive security strategy**, which ul
 
 ---
 
-### System Architecture: Teaching AI to "Understand Malice"
+## System Architecture: Teaching AI to "Understand Malice"
 
 The system is divided into two core layers:
 
@@ -45,7 +45,7 @@ There is also a critical design feature: the **Continuous Optimization Module**.
 
 ---
 
-### Why Is This a Core Issue in GenAI Product Design?
+## Why Is This a Core Issue in GenAI Product Design?
 
 As a **GenAI Product Manager**, security isn't something to "hand over to the infosec department"; it must be part of the product architecture.
 
@@ -62,7 +62,7 @@ It's not a binary judgment of "do you have permission," but rather "in this cont
 
 ---
 
-### A GenAI PO's Checklist: Is Your AI System Secure Enough?
+## A GenAI PO's Checklist: Is Your AI System Secure Enough?
 
 - [ ] Can the system detect abnormal query patterns?
 - [ ] Is there a real-time intent analysis mechanism?

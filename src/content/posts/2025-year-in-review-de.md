@@ -15,7 +15,7 @@ coverImage: "/images/blog/2025-year-in-review.jpg"
 pinned: true
 ---
 
-### Jahresrückblick 2025: Die stille Kraft stetigen Fortschritts
+## Jahresrückblick 2025: Die stille Kraft stetigen Fortschritts
 
 Mein KI-Abenteuer 2025 in vier Zahlen: 6, 5, 1, 6.
 Nicht weil es so glamourös war, sondern weil es bodenständig blieb.
