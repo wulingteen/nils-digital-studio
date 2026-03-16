@@ -1,23 +1,27 @@
 ---
-// Redirect to default language
+// Root page — server-side redirect handled by Vercel Edge Middleware (middleware.ts)
+// This page serves as fallback for client-side JS-based language detection
 ---
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Nils Digital Studio</title>
+    <title>Nils Digital Studio — Redirecting...</title>
+    <meta name="robots" content="noindex" />
+    <link rel="canonical" href="https://nils-digital-studio.vercel.app/en/" />
     <script>
       const nav = navigator.language?.toLowerCase() || "";
       let lang = "en";
       if (nav.startsWith("zh")) lang = "zh";
       else if (nav.startsWith("de")) lang = "de";
-      
-      // Add base path for GitHub Pages
-      window.location.replace(`/${lang}`);
+      window.location.replace(`/${lang}/`);
     </script>
+    <noscript>
+      <meta http-equiv="refresh" content="0;url=/en/" />
+    </noscript>
   </head>
   <body>
-    Redirecting...
+    <p>Redirecting... <a href="/en/">Click here</a> if not redirected.</p>
   </body>
 </html>
