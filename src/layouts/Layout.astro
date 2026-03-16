@@ -77,13 +77,19 @@ const personSchema = JSON.stringify({
   ]
 });
 
+const serviceDesc = lang === 'en'
+  ? 'GenAI consulting, rapid prototyping, and enterprise team training. Specializing in AI Agent, RAG, and LLM enterprise deployment.'
+  : lang === 'de'
+  ? 'GenAI-Beratung, schnelles Prototyping und Enterprise-Team-Training. Spezialisiert auf AI Agent, RAG und LLM-Enterprise-Deployment.'
+  : 'GenAI 顧問諮詢、快速原型開發與企業團隊培訓服務。專注 AI Agent、RAG、LLM 企業落地。';
+
 const serviceSchema = JSON.stringify({
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   "@id": "https://nils-digital-studio.vercel.app/#service",
   "name": "Nils Digital Studio",
   "url": "https://nils-digital-studio.vercel.app",
-  "description": "GenAI 顧問諮詢、快速原型開發與企業團隊培訓服務。專注 AI Agent、RAG、LLM 企業落地。",
+  "description": serviceDesc,
   "provider": {
     "@type": "Person",
     "name": "劉岦崱 Nils Liu"
