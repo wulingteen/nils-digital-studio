@@ -3,11 +3,33 @@ import { useGamificationStore } from '../../store/gamificationStore';
 import { Lock, Mail, CheckCircle2 } from 'lucide-react';
 import { motion } from 'framer-motion';
 
-export default function ContentPaywall({ children }: { children: React.ReactNode }) {
+const translations: Record<string, Record<string, string>> = {
+  zh: {
+    title: '解鎖完整深度架構解析',
+    desc: '這是一篇硬核技術文章。加入內部通訊，即可立即閱讀剩餘內容以及未來所有進階架構指南，讓你永不落後。',
+    cta: '解鎖文章',
+    note: '* 點擊解鎖即代表已加入學習路徑，進度將會為你保存',
+  },
+  en: {
+    title: 'Unlock the Full Architecture Deep Dive',
+    desc: 'This is an in-depth technical article. Subscribe to read the rest and get access to all future advanced architecture guides.',
+    cta: 'Unlock Article',
+    note: '* By unlocking, you join the learning path and your progress will be saved.',
+  },
+  de: {
+    title: 'Vollständige Architekturanalyse freischalten',
+    desc: 'Dies ist ein tiefgehender technischer Artikel. Abonnieren Sie, um den Rest zu lesen und Zugang zu allen zukünftigen Architektur-Guides zu erhalten.',
+    cta: 'Artikel freischalten',
+    note: '* Durch das Freischalten treten Sie dem Lernpfad bei und Ihr Fortschritt wird gespeichert.',
+  },
+};
+
+export default function ContentPaywall({ children, lang = 'zh' }: { children: React.ReactNode; lang?: string }) {
   const isSubscribed = useGamificationStore((state) => state.isSubscribed);
   const subscribe = useGamificationStore((state) => state.subscribe);
   const [email, setEmail] = useState('');
   const [submitting, setSubmitting] = useState(false);
+  const t = translations[lang] || translations.zh;
 
   if (isSubscribed) {
     return <>{children}</>;
@@ -32,11 +54,9 @@ export default function ContentPaywall({ children }: { children: React.ReactNode
           context: "Unlocked via Content Paywall"
         })
       });
-      // Unlock on success
       subscribe();
     } catch (error) {
       console.error("FormSubmit error:", error);
-      // Still unlock even if form submit fails on the client for UX
       subscribe();
     }
     setSubmitting(false);
@@ -58,9 +78,9 @@ export default function ContentPaywall({ children }: { children: React.ReactNode
           <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10 text-primary shadow-inner">
             <Lock className="h-6 w-6" />
           </div>
-          <h3 className="mb-2 text-2xl font-bold text-foreground">解鎖完整深度架構解析</h3>
+          <h3 className="mb-2 text-2xl font-bold text-foreground">{t.title}</h3>
           <p className="mb-8 text-sm text-muted-foreground leading-relaxed">
-            這是一篇硬核技術文章。加入內部通訊，即可立即閱讀剩餘內容以及未來所有進階架構指南，讓你永不落後。
+            {t.desc}
           </p>
 
           <form onSubmit={handleSubscribe} className="flex flex-col gap-3">
@@ -87,12 +107,12 @@ export default function ContentPaywall({ children }: { children: React.ReactNode
               ) : (
                 <>
                   <CheckCircle2 className="h-4 w-4 transition-transform group-hover:scale-110" />
-                  解鎖文章
+                  {t.cta}
                 </>
               )}
             </button>
             <p className="mt-2 text-xs text-muted-foreground opacity-70">
-              * 點擊解鎖即代表已加入學習路徑，進度將會為你保存
+              {t.note}
             </p>
           </form>
         </motion.div>

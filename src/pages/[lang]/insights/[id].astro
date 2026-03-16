@@ -202,7 +202,7 @@ const articleLd = {
       )}
 
       {currentTags.includes('AI PM 系列') || currentTags.includes('Architecture') ? (
-        <ContentPaywall client:load>
+        <ContentPaywall lang={lang} client:load>
           <div class="prose prose-lg dark:prose-invert prose-headings:font-bold prose-headings:text-foreground prose-p:text-muted-foreground prose-a:text-primary hover:prose-a:text-primary/80 prose-strong:text-foreground prose-code:text-primary prose-code:bg-primary/5 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded-md prose-code:before:content-none prose-code:after:content-none max-w-none">
             <Content />
           </div>
