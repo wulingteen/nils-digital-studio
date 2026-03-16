@@ -54,14 +54,33 @@ function getExcerpt(post: typeof sortedPosts[0]) {
 const pageTitle = t(lang!, 'nav.insights', 'Insights') + ' | Nils Liu';
 const pageDesc = t(lang!, 'insights.sub', 'Thoughts on generative AI, design, and product architecture.');
 const articleIds = sortedPosts.map((p: any) => p.id);
+
+const blogSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Blog",
+  "name": t(lang!, 'nav.insights', 'GenAI 分享'),
+  "description": pageDesc,
+  "url": `${SITE}/${lang}/insights/`,
+  "author": {
+    "@type": "Person",
+    "name": "劉岦崱 Nils Liu",
+    "url": `${SITE}/zh/`
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nils Digital Studio",
+    "url": `${SITE}/`
+  }
+});
 ---
 
 <Layout
   title={pageTitle}
   description={pageDesc}
   lang={lang!}
-  ogUrl={`${SITE}/${lang}/insights`}
-  canonicalUrl={`${SITE}/${lang}/insights`}
+  ogUrl={`${SITE}/${lang}/insights/`}
+  canonicalUrl={`${SITE}/${lang}/insights/`}
+  articleSchema={blogSchema}
 >
   <HeaderIsland lang={lang!} currentPath={`/${lang}/insights`} client:load />
   

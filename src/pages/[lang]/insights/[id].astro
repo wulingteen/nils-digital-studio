@@ -81,7 +81,7 @@ const displayExcerpt = lang === 'en' && basePost.data.excerptEn ? basePost.data.
   : lang === 'de' && basePost.data.excerptDe ? basePost.data.excerptDe
   : basePost.data.excerpt;
 
-const pageUrl = `${SITE}/${lang}/insights/${basePost.id}`;
+const pageUrl = `${SITE}/${lang}/insights/${basePost.id}/`;
 const ogImage = basePost.data.coverImage
   ? `${SITE}${basePost.data.coverImage}`
   : `${SITE}/nils-profile.png`;
@@ -90,8 +90,8 @@ const breadcrumbLd = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": `${SITE}/${lang}` },
-    { "@type": "ListItem", "position": 2, "name": t(lang, 'nav.insights', 'Insights'), "item": `${SITE}/${lang}/insights` },
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": `${SITE}/${lang}/` },
+    { "@type": "ListItem", "position": 2, "name": t(lang, 'nav.insights', 'Insights'), "item": `${SITE}/${lang}/insights/` },
     { "@type": "ListItem", "position": 3, "name": displayTitle, "item": pageUrl },
   ]
 };
@@ -110,6 +110,11 @@ const articleLd = {
   "dateModified": basePost.data.date.toISOString().split('T')[0],
   "url": pageUrl,
   "image": ogImage,
+  "publisher": {
+    "@type": "Organization",
+    "name": "Nils Digital Studio",
+    "url": "https://nils-digital-studio.vercel.app/"
+  },
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": pageUrl
