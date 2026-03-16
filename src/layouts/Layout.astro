@@ -23,7 +23,7 @@ const {
   title = "Nils Digital Studio", 
   description = "A GenAI Product Manager's portfolio.",
   lang = "en",
-  image = "/images/og-default.png",
+  image = "/images/og-default.jpg",
   canonicalURL,
   articleSchema,
   ogType = "website",
@@ -51,19 +51,26 @@ const hreflangEn = new URL(cleanPath(`${basePath}/en${pathWithoutLang}`), Astro.
 const hreflangDe = new URL(cleanPath(`${basePath}/de${pathWithoutLang}`), Astro.site || 'https://nils-digital-studio.vercel.app/').href;
 
 // JSON-LD Person & ProfessionalService schema
+const personDesc = lang === 'en'
+  ? 'Taiwan-based GenAI architect & consultant. Led CathayGPT. 6 AI patents. Specializing in AI Agents, RAG, and LLM enterprise deployment.'
+  : lang === 'de'
+  ? 'GenAI-Architekt und Berater aus Taiwan. Leitung von CathayGPT. 6 AI-Patente. Spezialisiert auf AI Agents, RAG und LLM-Enterprise-Deployment.'
+  : '台灣金融業 GenAI 架構師與顧問。主導 CathayGPT 等生產級 AI 系統，擁有 6 項 AI 專利。';
+
 const personSchema = JSON.stringify({
   "@context": "https://schema.org",
   "@type": "Person",
+  "@id": "https://nils-digital-studio.vercel.app/#person",
   "name": "劉岦崱 Nils Liu",
   "alternateName": "Nils Liu",
   "url": "https://nils-digital-studio.vercel.app",
-  "image": "https://nils-digital-studio.vercel.app/nils-profile.png",
+  "image": "https://nils-digital-studio.vercel.app/nils-profile.jpg",
   "jobTitle": "GenAI Solution Architect",
   "worksFor": {
     "@type": "Organization",
     "name": "Cathay Financial Holdings"
   },
-  "description": "台灣金融業 GenAI 架構師與顧問。主導 CathayGPT 等生產級 AI 系統，擁有 6 項 AI 專利。",
+  "description": personDesc,
   "knowsAbout": ["GenAI", "AI Agent", "RAG", "LLM", "Prompt Engineering", "Enterprise AI"],
   "sameAs": [
     "https://www.linkedin.com/in/nilsliu/"

@@ -10,7 +10,7 @@ author: "Nils Liu"
 tags:
   - "GenAI 實戰"
   - "GenAI"
-coverImage: "/images/blog/genai-action.png"
+coverImage: "/images/blog/genai-action.jpg"
 ---
 
 個人用 ChatGPT 寫 prompt，最多就是「幫我寫一封信」。

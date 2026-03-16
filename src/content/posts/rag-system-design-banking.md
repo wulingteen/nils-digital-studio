@@ -11,7 +11,7 @@ tags:
   - "GenAI 實戰"
   - "GenAI"
   - "Architecture"
-coverImage: "/images/blog/genai-action.png"
+coverImage: "/images/blog/genai-action.jpg"
 ---
 
 RAG（Retrieval-Augmented Generation）是 2024-2025 最熱門的企業 AI 架構。但真正在企業環境中建過 RAG 系統的人都知道：**魔鬼在細節裡。**

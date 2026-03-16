@@ -11,7 +11,7 @@ tags:
   - "GenAI 實戰"
   - "Agent"
   - "Architecture"
-coverImage: "/images/blog/genai-action.png"
+coverImage: "/images/blog/genai-action.jpg"
 ---
 
 2025 年是 AI Agent 元年。到了 2026 年，每個企業都在問：「我們也要做 Agent 嗎？」

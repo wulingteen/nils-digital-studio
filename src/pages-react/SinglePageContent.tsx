@@ -123,7 +123,7 @@ const SinglePageContent = () => {
                 {/* Right half — profile photo with elegant fade */}
                 <div className="absolute inset-y-0 right-0 w-full md:w-1/2 -z-10">
                     <img
-                        src={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/nils-profile.png`}
+                        src={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/nils-profile.jpg`}
                         alt="Nils — GenAI Solution Architect"
                         className="h-full w-full object-cover object-top opacity-90"
                     />
