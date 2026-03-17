@@ -37,8 +37,9 @@ const HeaderIsland = ({ lang, currentPath }: Props) => {
   ];
 
   const switchLanguage = (code: string) => {
-    // Replace current lang in path with new lang
-    const newPath = currentPath.replace(/^\/(en|zh|de)(\/|$)/, `/${code}$2`);
+    // Use actual browser path so it works on any page (quiz, insights, etc.)
+    const actualPath = typeof window !== 'undefined' ? window.location.pathname : currentPath;
+    const newPath = actualPath.replace(/^\/(en|zh|de)(\/|$)/, `/${code}$2`);
     window.location.href = `${BASE}${newPath || `/${code}`}`;
   };
 
