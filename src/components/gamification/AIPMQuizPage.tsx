@@ -2,114 +2,27 @@ import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { useGamificationStore } from '../../store/gamificationStore';
 import { Brain, Flame, Trophy, Clock, Target, BookOpen, RefreshCw, CheckCircle2, XCircle, Award, Medal } from 'lucide-react';
 
-/* ── Questions (hardcoded, no API) ── */
-interface Question {
-  id: number;
-  topic: string;
-  text: string;
-  options: { text: string; score: number }[];
-}
+import { QUESTIONS, type Question } from '../../data/quizQuestions';
 
-const QUESTIONS: Question[] = [
-  {
-    id: 1, topic: 'RAG 架構',
-    text: '客戶要求「用 AI 搜尋內部知識庫」。你的第一步是什麼？',
-    options: [
-      { text: '直接串接 ChatGPT API，把文件丟進 system prompt', score: 2 },
-      { text: '評估文件量與格式，設計 Embedding + Vector DB 的 RAG pipeline', score: 10 },
-      { text: '先用 Google 搜尋看有沒有現成方案', score: 4 },
-    ],
-  },
-  {
-    id: 2, topic: 'Prompt Engineering',
-    text: 'LLM 輸出結果不穩定、格式時好時壞，你的做法是？',
-    options: [
-      { text: '換一個更大的模型', score: 3 },
-      { text: '加上 Few-shot Examples + Output Schema 約束', score: 10 },
-      { text: '多呼叫幾次，取最好的結果', score: 2 },
-    ],
-  },
-  {
-    id: 3, topic: 'AI Agent',
-    text: '老闆說「我要一個能自動處理客訴的 AI Agent」，你如何拆解？',
-    options: [
-      { text: '定義 Agent 的工具清單、決策邊界與 Human-in-the-loop 機制', score: 10 },
-      { text: '直接買一個客服 SaaS 平台', score: 4 },
-      { text: '先做一版全自動的 demo 給老闆看', score: 3 },
-    ],
-  },
-  {
-    id: 4, topic: '評測框架',
-    text: '你的 GenAI 產品上線後，如何衡量「AI 回答品質」？',
-    options: [
-      { text: '看使用者有沒有抱怨', score: 2 },
-      { text: '建立 Golden Dataset + 自動化評測 Pipeline (Accuracy / Faithfulness / Relevance)', score: 10 },
-      { text: '每週人工抽查 10 筆', score: 5 },
-    ],
-  },
-  {
-    id: 5, topic: '企業落地',
-    text: '金融業客戶擔心資料外洩，不想用公有雲 LLM。你建議？',
-    options: [
-      { text: '說服客戶「OpenAI 很安全」', score: 1 },
-      { text: '評估 On-premise 部署方案 (vLLM/Ollama) + PII 過濾機制', score: 10 },
-      { text: '改用 Apple Intelligence', score: 2 },
-    ],
-  },
-  {
-    id: 6, topic: '產品設計',
-    text: '使用者回饋「AI 回答太長看不完」，你的第一反應是？',
-    options: [
-      { text: '在 prompt 裡加「請簡短回答」', score: 4 },
-      { text: '重新思考 UX：分段式輸出、摘要 + 展開、Action buttons', score: 10 },
-      { text: '限制 max_tokens 參數', score: 3 },
-    ],
-  },
-  {
-    id: 7, topic: 'LLM 選型',
-    text: '新專案需選擇 LLM，預算有限但要求中文能力強。你如何評估？',
-    options: [
-      { text: '直接選最便宜的', score: 2 },
-      { text: '用專案真實用例做 A/B Benchmark，比較 Latency / Quality / Cost', score: 10 },
-      { text: '選最新最紅的模型', score: 3 },
-    ],
-  },
-  {
-    id: 8, topic: '資料治理',
-    text: '內部數據散落在 30 個不同系統，要做 AI 知識庫，你先做什麼？',
-    options: [
-      { text: '全部匯入一個大資料庫', score: 3 },
-      { text: '建立 Data Inventory → 優先處理高頻使用的 Top 5 資料源', score: 10 },
-      { text: '等 IT 部門整理好再開始', score: 1 },
-    ],
-  },
-  {
-    id: 9, topic: 'ROI 量化',
-    text: '老闆問「導入 GenAI 到底省了多少錢？」你如何回答？',
-    options: [
-      { text: '說「AI 的價值無法量化」', score: 1 },
-      { text: '設計 Before/After 對照實驗，追蹤處理時間、人力成本、錯誤率', score: 10 },
-      { text: '引用 McKinsey 報告的數據', score: 4 },
-    ],
-  },
-  {
-    id: 10, topic: '團隊建設',
-    text: '你需要在 3 個月內組建企業 AI 團隊，你的策略是？',
-    options: [
-      { text: '先招 10 個 ML Engineer', score: 3 },
-      { text: '定義 AI PM + Prompt Engineer + MLOps 三角核心，從 1 個垂直場景做起', score: 10 },
-      { text: '全部外包給顧問公司', score: 2 },
-    ],
-  },
-];
 
 const TIMER_SECONDS = 30;
-const TOPICS = [...new Set(QUESTIONS.map(q => q.topic))];
+
+// Helper to shuffle array
+const shuffle = <T,>(array: T[]): T[] => {
+  const newArray = [...array];
+  for (let i = newArray.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
+  }
+  return newArray;
+};
 
 /* ── Component ── */
 export default function AIPMQuizPage({ lang = 'zh' }: { lang?: string }) {
   const { assessmentScore, setAssessmentScore, bestCombo, setBestCombo, unlockBadge, unlockedBadges } = useGamificationStore();
 
+  const [activeQuestions, setActiveQuestions] = useState<Question[]>([]);
+  const [activeTopics, setActiveTopics] = useState<string[]>([]);
   const [step, setStep] = useState(0);
   const [score, setScore] = useState(0);
   const [combo, setCombo] = useState(0);
@@ -145,10 +58,10 @@ export default function AIPMQuizPage({ lang = 'zh' }: { lang?: string }) {
   }, [step]);
 
   const advanceStep = (optScore: number) => {
-    const q = QUESTIONS[step];
+    const q = activeQuestions[step];
     setTopicScores(prev => ({ ...prev, [q.topic]: (prev[q.topic] || 0) + optScore }));
 
-    if (step >= QUESTIONS.length - 1) {
+    if (step >= activeQuestions.length - 1) {
       const finalScore = score + optScore;
       setScore(finalScore);
       setFinished(true);
@@ -192,6 +105,22 @@ export default function AIPMQuizPage({ lang = 'zh' }: { lang?: string }) {
     setStep(0); setScore(0); setCombo(0); setMaxCombo(0);
     setTimer(TIMER_SECONDS); setStarted(false); setFinished(false);
     setTopicScores({}); setSelectedIdx(null); setIsCorrectFlash(null);
+    setActiveQuestions([]);
+    setActiveTopics([]);
+  };
+
+  const startQuiz = () => {
+    const shuffled = shuffle(QUESTIONS).slice(0, 20); // Pick 20 questions
+    
+    // Randomize options for each question to avoid pattern recognition
+    const preparedQuestions = shuffled.map(q => ({
+      ...q,
+      options: shuffle(q.options)
+    }));
+    
+    setActiveQuestions(preparedQuestions);
+    setActiveTopics([...new Set(preparedQuestions.map(q => q.topic))]);
+    setStarted(true);
   };
 
   /* ── Intro Screen ── */
@@ -205,9 +134,9 @@ export default function AIPMQuizPage({ lang = 'zh' }: { lang?: string }) {
           {lang === 'zh' ? 'AI PM 核心能力測驗' : lang === 'de' ? 'AI PM Kompetenztest' : 'AI PM Skills Assessment'}
         </h1>
         <p className="text-muted-foreground mb-2 max-w-lg mx-auto">
-          {lang === 'zh' ? '10 道真實企業情境題，測驗你的 AI 產品力。每題限時 30 秒，連續答對獲得 Combo 加成！'
-            : lang === 'de' ? '10 reale Unternehmensfragen, 30 Sekunden pro Frage.'
-            : '10 real-world enterprise scenarios, 30 seconds per question. Build combos for streaks!'}
+          {lang === 'zh' ? '從百大真實企業情境中隨機抽取 20 題，測驗你的 AI 產品力。每題限時 30 秒，連續答對獲得 Combo 加成！'
+            : lang === 'de' ? '20 zufällige Szenarien aus 100 realen Unternehmensfragen, 30 Sekunden pro Frage.'
+            : '20 random scenarios from 100 real-world enterprise situations, 30 seconds per question. Build combos for streaks!'}
         </p>
         <div className="flex flex-wrap justify-center gap-3 my-6 text-sm">
           <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary/10 text-primary font-medium"><Clock className="w-3.5 h-3.5" /> 30s / {lang === 'zh' ? '題' : 'Q'}</span>
@@ -221,7 +150,7 @@ export default function AIPMQuizPage({ lang = 'zh' }: { lang?: string }) {
           </p>
         )}
         <button
-          onClick={() => setStarted(true)}
+          onClick={startQuiz}
           className="mt-2 inline-flex items-center gap-2 rounded-full bg-primary px-8 py-3.5 text-base font-bold text-primary-foreground shadow-[0_0_30px_rgba(200,160,80,0.3)] transition-all hover:-translate-y-1 hover:shadow-[0_0_40px_rgba(200,160,80,0.5)] cursor-pointer"
         >
           {lang === 'zh' ? '開始測驗' : lang === 'de' ? 'Test starten' : 'Start Quiz'}
@@ -249,7 +178,7 @@ export default function AIPMQuizPage({ lang = 'zh' }: { lang?: string }) {
           <BadgeIcon className="w-16 h-16 text-primary mx-auto" />
         </div>
         <h2 className="text-2xl font-bold text-foreground mb-1">{badgeTitle}</h2>
-        <p className="text-4xl font-black text-primary my-4">{score} / {QUESTIONS.length * 10}</p>
+        <p className="text-4xl font-black text-primary my-4">{score} / {activeQuestions.length * 10}</p>
         <p className="text-muted-foreground mb-6">
           {lang === 'zh' ? `正確率 ${pct}%　|　最高 Combo ${maxCombo}` : `Accuracy ${pct}%  |  Max Combo ${maxCombo}`}
         </p>
@@ -259,7 +188,7 @@ export default function AIPMQuizPage({ lang = 'zh' }: { lang?: string }) {
           <h3 className="text-sm font-bold text-foreground mb-3 uppercase tracking-widest">
             {lang === 'zh' ? '能力分佈' : 'Skill Breakdown'}
           </h3>
-          {TOPICS.map(topic => {
+          {activeTopics.slice(0, 5).map(topic => { // Show top 5 topics for brevity
             const s = topicScores[topic] || 0;
             const w = Math.round((s / 10) * 100);
             return (
@@ -294,13 +223,56 @@ export default function AIPMQuizPage({ lang = 'zh' }: { lang?: string }) {
             <BookOpen className="w-4 h-4" /> {lang === 'zh' ? '閱讀更多文章' : 'Read Articles'}
           </a>
         </div>
+        {/* Email Subscribe & Articles Promo */}
+        <div className="mt-16 w-full max-w-3xl mx-auto rounded-3xl border border-primary/20 bg-background/50 backdrop-blur-xl shadow-2xl overflow-hidden p-8 text-left relative z-10">
+          <div className="flex flex-col md:flex-row gap-8 items-center">
+            <div className="flex-1">
+              <h3 className="text-2xl font-bold text-foreground mb-3">
+                {lang === 'zh' ? '不要讓知識停在這裡' : 'Do not stop learning'}
+              </h3>
+              <p className="text-muted-foreground mb-6 leading-relaxed">
+                {lang === 'zh' 
+                  ? '想深入了解 AI PM 實務與系統架構嗎？加入電子報，每週獲取第一手企業級 GenAI 落地經驗。也可以繼續閱讀我的系列文章！'
+                  : 'Want to dive deeper into AI PM and System Architecture? Subscribe to get first-hand enterprise GenAI deployment experiences, or keep reading my articles. '}
+              </p>
+              <form action="https://formsubmit.co/wulingteen@gmail.com" method="POST" className="flex gap-2 w-full max-w-sm">
+                <input type="hidden" name="_next" value="https://nils-digital-studio.vercel.app" />
+                <input type="hidden" name="_subject" value="New Subscriber from Quiz Page" />
+                <input 
+                  type="email" 
+                  name="email"
+                  placeholder="name@example.com" 
+                  required
+                  className="flex-1 h-12 rounded-xl border border-border bg-background/80 px-4 text-sm outline-none transition-all focus:border-primary focus:ring-1 focus:ring-primary"
+                />
+                <button type="submit" className="h-12 px-6 rounded-xl bg-primary font-bold text-primary-foreground text-sm hover:opacity-90 transition-opacity whitespace-nowrap">
+                   {lang === 'zh' ? '訂閱電子報' : 'Subscribe'}
+                </button>
+              </form>
+            </div>
+            
+            <div className="w-full md:w-64 shrink-0 flex flex-col gap-3">
+              <div className="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-1">
+                {lang === 'zh' ? '推薦閱讀：AI PM 系列' : 'Recommended: AI PM Series'}
+              </div>
+              <a href={`/${lang}/insights/ai-pm-daily-work`} className="block px-4 py-3 rounded-xl border border-border hover:border-primary/50 hover:bg-primary/5 transition-all text-sm font-medium text-foreground">
+                {lang === 'zh' ? 'AI PM 的日常：不寫程式的 PM 如何帶領 AI 團隊發展' : 'Daily Life of an AI PM'}
+              </a>
+              <a href={`/${lang}/insights/ai-pm-peter-deng-uber`} className="block px-4 py-3 rounded-xl border border-border hover:border-primary/50 hover:bg-primary/5 transition-all text-sm font-medium text-foreground">
+                {lang === 'zh' ? '前 OpenAI 副總 Peter Deng 的洞見：AI 產品的下一步' : "Peter Deng's AI Insights"}
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
 
   /* ── Quiz Screen ── */
-  const q = QUESTIONS[step];
-  const progress = ((step) / QUESTIONS.length) * 100;
+  const q = activeQuestions[step];
+  if (!q) return null; // Safe guard
+  
+  const progress = ((step) / activeQuestions.length) * 100;
   const timerPct = (timer / TIMER_SECONDS) * 100;
   const timerColor = timer <= 10 ? 'bg-red-500' : timer <= 20 ? 'bg-yellow-500' : 'bg-primary';
 
@@ -311,7 +283,7 @@ export default function AIPMQuizPage({ lang = 'zh' }: { lang?: string }) {
         {/* Progress Bar */}
         <div className="flex items-center justify-between mb-2">
           <span className="text-xs font-bold text-muted-foreground uppercase tracking-widest">
-            {step + 1} / {QUESTIONS.length}
+            {step + 1} / {activeQuestions.length}
           </span>
           <div className="flex items-center gap-3">
             {combo > 0 && (
