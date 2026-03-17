@@ -1,7 +1,7 @@
 ---
-title: "Generative KI treibt die Revolution bei technischen Vorstellungsgesprächen an"
+title: "Generative KI treibt die Revolution bei technischen..."
 titleEn: "How Generative AI Is Reinventing the Technical Interview"
-titleDe: "Generative KI treibt die Revolution bei technischen Vorstellungsgesprächen an"
+titleDe: "Generative KI treibt die Revolution bei technischen..."
 excerpt: "Die Kandidaten müssen innerhalb von 60 Minuten mit LLMs und Frontend-Entwicklung eine statische Website fertigstellen, wodurch der Fokus vom 'Wissensgedächt..."
 excerptEn: "We challenged intern candidates to build a static website combining LLM and front-end skills in 60 minutes. The results changed how I think about what a hir..."
 excerptDe: "Die Kandidaten müssen innerhalb von 60 Minuten mit LLMs und Frontend-Entwicklung eine statische Website fertigstellen, wodurch der Fokus vom 'Wissensgedächt..."

@@ -1,7 +1,7 @@
 ---
 title: "揭秘 AI PM 工作內容：一窺生成式 AI 產品開發流程的一天"
-titleEn: "What Does an AI PM Actually Do All Day? The Daily Grind of GenAI Development"
-titleDe: "Was macht ein AI PM eigentlich den ganzen Tag? Der Alltag der GenAI-Entwicklung"
+titleEn: "What Does an AI PM Actually Do All Day? The Daily Grind..."
+titleDe: "Was macht ein AI PM eigentlich den ganzen Tag? Der..."
 excerpt: "不只是開票寫規格，真實的 AI PM 工作內容究竟長怎樣？從單純的 PM 轉向全端 Builder，帶你走一遍銀行生成式 AI 產品開發流程的殘酷日常。 很多人聽到「AI 產品經理」，第一反應往往是：「所以你整天都在用 Python 寫模型嗎？」 其實不是。我花最多時間在『建造』。 誠如 Ope..."
 excerptEn: "No coding? Think again. The daily routine of an AI PM involves shifting from a traditional PM to a holistic 'Builder', testing prompts, and battling risk."
 excerptDe: "Kein Code? Von wegen. Der Arbeitsalltag eines AI PM beinhaltet den Wechsel vom traditionellen PM zum ganzheitlichen 'Builder'."

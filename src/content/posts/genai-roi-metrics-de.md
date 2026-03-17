@@ -1,5 +1,5 @@
 ---
-title: "Wie misst man den GenAI-ROI? Die 4 Metriken, die ich verwende"
+title: "Wie misst man den GenAI-ROI? Die 4 Metriken, die ich..."
 excerpt: "Wenn Ihr Chef fragt: „Lohnt sich die Investition in KI?“, brauchen Sie Zahlen. Hier ist das Framework mit vier Kennzahlen, mit dem ich den GenAI-Wert beweise."
 author: "Nils Liu"
 date: 2024-08-18

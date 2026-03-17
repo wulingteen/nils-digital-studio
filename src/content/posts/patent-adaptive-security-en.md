@@ -1,7 +1,7 @@
 ---
-title: "[Patent 5] GenAI Security Blind Spots: How a Product Owner Built Adaptive Security with AI"
-titleEn: "[Patent 5] GenAI Security Blind Spots: How a Product Owner Built Adaptive Security with AI"
-titleDe: "[Patent 5] Sicherheitslücken in GenAI: Wie ein Product Owner adaptive Sicherheit mit KI entwickelte"
+title: "[Patent 5] GenAI Security Blind Spots"
+titleEn: "[Patent 5] GenAI Security Blind Spots"
+titleDe: "[Patent 5] Sicherheitslücken in GenAI"
 excerpt: "When a GenAI system queries sensitive data, how do you prevent malicious users from bypassing security? This article details how a bank AI Product Manager d..."
 excerptEn: "When a GenAI system queries sensitive data, how do you prevent malicious users from bypassing security? This article details how a bank AI Product Manager d..."
 excerptDe: "Wenn ein GenAI-System sensible Daten abfragt, wie verhindert man, dass böswillige Nutzer die Sicherheit umgehen? Dieser Artikel beschreibt detailliert, wie..."

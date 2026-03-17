@@ -1,7 +1,7 @@
 ---
 title: "【專利六】從 GenAI Product Owner 視角打造知識圖譜系統：我的第一個 AI 專利怎麼來的？"
-titleEn: "[Patent 6] Building a Knowledge Graph from a GenAI Product Owner's Perspective: My First AI Patent"
-titleDe: "[Patent 6] Aufbau eines Knowledge Graphs aus der Perspektive eines GenAI Product Owners: Mein erstes KI-Patent"
+titleEn: "[Patent 6] Building a Knowledge Graph from a GenAI..."
+titleDe: "[Patent 6] Aufbau eines Knowledge Graphs aus der..."
 excerpt: "一位銀行 GenAI 產品經理如何從業務痛點出發，設計出能自動建構知識圖譜的 LLM 系統，並成功取得新型專利？本文分享從需求到專利的完整思路。 大多數人對知識圖譜的印象是：需要大量人工標記、需要事先定義本體（ontology）、需要一群領域專家持續維護。 這在金融業尤其是個大問題。 銀行的業務..."
 excerptEn: "How does a bank GenAI Product Manager design an LLM system that automatically builds a knowledge graph from business pain points, and successfully obtain a..."
 excerptDe: "Wie konzipiert ein Bank-GenAI-Produktmanager ein LLM-System, das als Antwort auf Geschäftsprobleme automatisch einen Knowledge Graph aufbaut, und erhält daf..."

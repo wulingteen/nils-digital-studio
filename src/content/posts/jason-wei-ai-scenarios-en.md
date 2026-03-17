@@ -1,7 +1,7 @@
 ---
-title: "Jason Wei's Talk: A Systematic Method for Finding AI Use Cases"
-titleEn: "Jason Wei's Talk: A Systematic Method for Finding AI Use Cases"
-titleDe: "Jason Weis Vortrag: Ein systematischer Ansatz zur Suche nach KI-Szenarien"
+title: "Jason Wei's Talk"
+titleEn: "Jason Wei's Talk"
+titleDe: "Jason Weis Vortrag"
 excerpt: "Jason Wei's talk gave me a genuine 'aha' moment. The systematic framework he lays out for finding AI use cases is exactly what I wish I'd articulated earlier."
 excerptEn: "Jason Wei's talk gave me a genuine 'aha' moment. The systematic framework he lays out for finding AI use cases is exactly what I wish I'd articulated earlier."
 excerptDe: "Dieser Vortrag von Jason Wei war eine echte Erleuchtung, hat mir Gänsehaut bereitet. Es ist definitiv ein systematischer Weg, um KI-Szenarien zu finden."

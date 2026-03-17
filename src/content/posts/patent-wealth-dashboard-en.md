@@ -1,7 +1,7 @@
 ---
-title: "[Patent 1] How GenAI Transforms Wealth Management: From Needs to Dashboards—A Bank AI PM's Product Design Journey"
-titleEn: "[Patent 1] How GenAI Transforms Wealth Management: From Needs to Dashboards—A Bank AI PM's Product Design Journey"
-titleDe: "[Patent 1] Wie GenAI die Vermögensverwaltung verändert: Von Bedürfnissen zu Dashboards—Die Reise eines Bank-PMs"
+title: "[Patent 1] How GenAI Transforms Wealth Management"
+titleEn: "[Patent 1] How GenAI Transforms Wealth Management"
+titleDe: "[Patent 1] Wie GenAI die Vermögensverwaltung verändert"
 excerpt: "What are the true pain points of Relationship Managers? How does GenAI help them generate real-time personalized investment advice in conversations? This ar..."
 excerptEn: "What are the true pain points of Relationship Managers? How does GenAI help them generate real-time personalized investment advice in conversations? This ar..."
 excerptDe: "Was sind die wahren Schmerzpunkte von Kundenberatern? Wie hilft GenAI ihnen, in Echtzeit personalisierte Anlageempfehlungen zu generieren? Dieser Artikel te..."

@@ -1,7 +1,7 @@
 ---
 title: "【專利五】GenAI 系統的資安盲點：一個 Product Owner 如何用 AI 打造自適應安全防護？"
-titleEn: "[Patent 5] GenAI Security Blind Spots: How a Product Owner Built Adaptive Security with AI"
-titleDe: "[Patent 5] Sicherheitslücken in GenAI: Wie ein Product Owner adaptive Sicherheit mit KI entwickelte"
+titleEn: "[Patent 5] GenAI Security Blind Spots"
+titleDe: "[Patent 5] Sicherheitslücken in GenAI"
 excerpt: "當 GenAI 系統被用來查詢敏感資料，如何防止惡意使用者繞過安全機制？本文介紹銀行 AI 產品經理如何設計動態存取控制專利，用 AI 守護 AI。 在銀行導入生成式 AI 的過程中，最讓我夜不能寐的問題不是模型效果，而是安全性。 一個能查詢客戶資料的 AI 聊天機器人，如果被有心人士透過特製 ..."
 excerptEn: "When a GenAI system queries sensitive data, how do you prevent malicious users from bypassing security? This article details how a bank AI Product Manager d..."
 excerptDe: "Wenn ein GenAI-System sensible Daten abfragt, wie verhindert man, dass böswillige Nutzer die Sicherheit umgehen? Dieser Artikel beschreibt detailliert, wie..."

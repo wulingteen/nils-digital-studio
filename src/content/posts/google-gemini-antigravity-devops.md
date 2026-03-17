@@ -1,7 +1,7 @@
 ---
 title: "Google Gemini 3 Pro 與 Antigravity：開發者角色的升級"
-titleEn: "Google Gemini 3 Pro & Antigravity: Leveling Up the Developer Role"
-titleDe: "Google Gemini 3 Pro und Antigravity: Die Weiterentwicklung der Entwicklerrolle"
+titleEn: "Google Gemini 3 Pro & Antigravity"
+titleDe: "Google Gemini 3 Pro und Antigravity"
 excerpt: "AI 不再只是 demo 的玩具，而是變成雲端基礎設施的一環。工具在變，角色就有機會跟著變。 Google 把 Gemini 3 Pro 和 Antigravity 推上來之後 我開始重新思考「開發者跟 AI 的關係」這件事 這一波更新，很直白地釋出一個訊號： AI 不再只是 demo 或 si..."
 excerptEn: "After Google pushed Gemini 3 Pro and Antigravity, I started rethinking the relationship between developers and AI infrastructure — and what 'role elevation'..."
 excerptDe: "KI ist nicht mehr nur ein Spielzeug für Demos, sondern wird Teil der Cloud-Infrastruktur. Wenn sich Werkzeuge ändern, ändern sich auch die dazugehörigen Rollen."

@@ -1,7 +1,7 @@
 ---
-title: "[Patent 2] How AI Agents Optimize Databases? A GenAI PM's Multi-Agent Architecture Design Thinking"
-titleEn: "[Patent 2] How AI Agents Optimize Databases? A GenAI PM's Multi-Agent Architecture Design Thinking"
-titleDe: "[Patent 2] Wie AI Agents Datenbanken optimieren: Das Architektur-Design eines Multi-Agenten-Systems"
+title: "[Patent 2] How AI Agents Optimize Databases? A GenAI..."
+titleEn: "[Patent 2] How AI Agents Optimize Databases? A GenAI..."
+titleDe: "[Patent 2] Wie AI Agents Datenbanken optimieren"
 excerpt: "Traditional DBAs manage databases on experience, but under high concurrency and complex loads, that's not enough. This article shares how a GenAI Product Ow..."
 excerptEn: "Traditional DBAs manage databases on experience, but under high concurrency and complex loads, that's not enough. This article shares how a GenAI Product Ow..."
 excerptDe: "Traditionelle DBAs verwalten Datenbanken nach Erfahrung, aber bei hoher Nebenläufigkeit reicht das nicht aus. Dieser Artikel zeigt, wie ein GenAI Product Ow..."

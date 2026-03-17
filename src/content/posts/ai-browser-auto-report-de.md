@@ -1,7 +1,7 @@
 ---
-title: "AI Browser: Automatische Aufzeichnung von Denkmustern und Erstellung von Untersuchungsberichten"
-titleEn: "AI Browser: Automatically Recording Reasoning Trails & Generating Investigation Reports"
-titleDe: "AI Browser: Automatische Aufzeichnung von Denkmustern und Erstellung von Untersuchungsberichten"
+title: "AI Browser: Automatische Aufzeichnung von Denkmustern..."
+titleEn: "AI Browser: Automatically Recording Reasoning Trails &..."
+titleDe: "AI Browser: Automatische Aufzeichnung von Denkmustern..."
 excerpt: "Habe einen KI-Browser entwickelt, der automatisch alle Denkvorgänge und Suchverläufe aufzeichnet, entscheidet, wann Screenshots gemacht werden müssen, und a..."
 excerptEn: "I built an AI Browser that records every reasoning step, tracks queries, auto-decides when to screenshot, and compiles everything into a structured investig..."
 excerptDe: "Habe einen KI-Browser entwickelt, der automatisch alle Denkvorgänge und Suchverläufe aufzeichnet, entscheidet, wann Screenshots gemacht werden müssen, und a..."

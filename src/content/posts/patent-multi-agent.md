@@ -1,7 +1,7 @@
 ---
 title: "【專利二】AI Agent 怎麼優化資料庫？一個 GenAI PM 的多代理架構設計思考"
-titleEn: "[Patent 2] How AI Agents Optimize Databases? A GenAI PM's Multi-Agent Architecture Design Thinking"
-titleDe: "[Patent 2] Wie AI Agents Datenbanken optimieren: Das Architektur-Design eines Multi-Agenten-Systems"
+titleEn: "[Patent 2] How AI Agents Optimize Databases? A GenAI..."
+titleDe: "[Patent 2] Wie AI Agents Datenbanken optimieren"
 excerpt: "傳統 DBA 靠經驗管資料庫，但在高併發、複雜負載的環境下，這不夠用。本文分享一位 GenAI Product Owner 如何設計多 AI 代理協作的資料庫智慧優化系統，並取得新型專利。 資料庫優化是一門黑魔法。 資深 DBA 靠的是多年累積的直覺：看到某個查詢 pattern，知道要加什麼 ..."
 excerptEn: "Traditional DBAs manage databases on experience, but under high concurrency and complex loads, that's not enough. This article shares how a GenAI Product Ow..."
 excerptDe: "Traditionelle DBAs verwalten Datenbanken nach Erfahrung, aber bei hoher Nebenläufigkeit reicht das nicht aus. Dieser Artikel zeigt, wie ein GenAI Product Ow..."

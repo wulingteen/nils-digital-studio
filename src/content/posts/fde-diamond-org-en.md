@@ -1,7 +1,7 @@
 ---
-title: "The Software Engineer Divide: The Diamond-Shaped Org in the Age of AI"
-titleEn: "The Software Engineer Divide: The Diamond-Shaped Org in the Age of AI"
-titleDe: "Die Spaltung der Softwareentwickler: Die diamantenförmige Organisation im KI-Zeitalter"
+title: "The Software Engineer Divide"
+titleEn: "The Software Engineer Divide"
+titleDe: "Die Spaltung der Softwareentwickler"
 excerpt: "Same era, same job title — one group is being laid off while another is being hired. What separates them isn't seniority or credentials; it's how fast they'..."
 excerptEn: "Same era, same job title — one group is being laid off while another is being hired. What separates them isn't seniority or credentials; it's how fast they'..."
 excerptDe: "In derselben Ära und unter derselben Berufsbezeichnung 'Ingenieur' verlieren einige durch KI ihren Job, während andere durch sie neue finden. Was deinen Pla..."

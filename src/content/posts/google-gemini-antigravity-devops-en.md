@@ -1,7 +1,7 @@
 ---
-title: "Google Gemini 3 Pro & Antigravity: Leveling Up the Developer Role"
-titleEn: "Google Gemini 3 Pro & Antigravity: Leveling Up the Developer Role"
-titleDe: "Google Gemini 3 Pro und Antigravity: Die Weiterentwicklung der Entwicklerrolle"
+title: "Google Gemini 3 Pro & Antigravity"
+titleEn: "Google Gemini 3 Pro & Antigravity"
+titleDe: "Google Gemini 3 Pro und Antigravity"
 excerpt: "After Google pushed Gemini 3 Pro and Antigravity, I started rethinking the relationship between developers and AI infrastructure — and what 'role elevation'..."
 excerptEn: "After Google pushed Gemini 3 Pro and Antigravity, I started rethinking the relationship between developers and AI infrastructure — and what 'role elevation'..."
 excerptDe: "KI ist nicht mehr nur ein Spielzeug für Demos, sondern wird Teil der Cloud-Infrastruktur. Wenn sich Werkzeuge ändern, ändern sich auch die dazugehörigen Rollen."

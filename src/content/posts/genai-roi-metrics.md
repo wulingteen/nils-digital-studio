@@ -1,7 +1,7 @@
 ---
 title: "如何衡量 GenAI 功能的 ROI？我用的 4 個指標"
 titleEn: "How to Measure GenAI ROI? The 4 Metrics I Use"
-titleDe: "Wie misst man den ROI von GenAI? Die 4 Kennzahlen, die ich verwende"
+titleDe: "Wie misst man den ROI von GenAI? Die 4 Kennzahlen, die..."
 excerpt: "主管問你「AI 到底值不值得投資？」時，你需要拿出數字。這是我用來證明 GenAI 價值的四個指標框架。 每一個做 GenAI 的 PM 都會遇到這個問題： > 「AI 很好，但怎麼證明它值得投資？」 在銀行，這個問題更尖銳。因為每一筆 AI 的投資都需要和傳統 IT 項目競爭預算——而傳統項目..."
 excerptEn: "When your boss asks 'Is AI worth the investment?', you need numbers. Here's the four-metric framework I use to prove GenAI value."
 excerptDe: "Wenn Ihr Chef fragt 'Lohnt sich die KI-Investition?', brauchen Sie Zahlen. Hier ist das Vier-Kennzahlen-Framework, das ich zum Nachweis des GenAI-Werts verw..."

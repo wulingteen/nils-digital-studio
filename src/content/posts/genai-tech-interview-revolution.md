@@ -1,7 +1,7 @@
 ---
 title: "生成式 AI 驅動技術面試革新"
 titleEn: "How Generative AI Is Reinventing the Technical Interview"
-titleDe: "Generative KI treibt die Revolution bei technischen Vorstellungsgesprächen an"
+titleDe: "Generative KI treibt die Revolution bei technischen..."
 excerpt: "要求候選人在 60 分鐘內結合 LLM 與前端開發能力完成靜態網站，從「知識背誦」轉向「工具落地」。 生成式 AI 驅動技術面試革新 最近，我們將實習生技術評估提升到新層次： 要求候選人在 60 分鐘內，結合 LLM 與前端開發能力，完成一個自我介紹＋OpenAI 提示工程指南的靜態網站 三位候..."
 excerptEn: "We challenged intern candidates to build a static website combining LLM and front-end skills in 60 minutes. The results changed how I think about what a hir..."
 excerptDe: "Die Kandidaten müssen innerhalb von 60 Minuten mit LLMs und Frontend-Entwicklung eine statische Website fertigstellen, wodurch der Fokus vom 'Wissensgedächt..."

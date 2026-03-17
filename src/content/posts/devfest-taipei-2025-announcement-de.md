@@ -1,7 +1,7 @@
 ---
-title: "Ankündigung für DevFest Taipei 2025: Anwendung von KI-Agententeams in der Praxis"
-titleEn: "DevFest Taipei 2025 Talk Preview: AI Agent Teams in Production"
-titleDe: "Ankündigung für DevFest Taipei 2025: Anwendung von KI-Agententeams in der Praxis"
+title: "Ankündigung für DevFest Taipei 2025"
+titleEn: "DevFest Taipei 2025 Talk Preview"
+titleDe: "Ankündigung für DevFest Taipei 2025"
 excerpt: "Am 30.11. werde ich auf der von Google GDG organisierten DevFest Taipei 2025 über die praktische Anwendung von KI-Agententeams sprechen. Wir freuen uns über..."
 excerptEn: "On November 30th I'll be presenting real AI Agent team applications running in production at DevFest Taipei 2025, hosted by Google GDG."
 excerptDe: "Am 30.11. werde ich auf der von Google GDG organisierten DevFest Taipei 2025 über die praktische Anwendung von KI-Agententeams sprechen. Wir freuen uns über..."

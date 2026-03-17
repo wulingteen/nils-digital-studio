@@ -1,5 +1,5 @@
 ---
-title: "Warum die Bereitstellung von LLMs im Bankwesen zehnmal schwieriger ist, als Sie denken"
+title: "Warum die Bereitstellung von LLMs im Bankwesen zehnmal..."
 excerpt: "KI in einer Bank einzusetzen bedeutet nicht nur, ein Modell auszuwählen. Compliance, Sicherheit, Data Governance — jede Hürde ist schwieriger als die vorherige."
 author: "Nils Liu"
 date: 2025-05-18

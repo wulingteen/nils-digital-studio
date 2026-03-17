@@ -1,7 +1,7 @@
 ---
-title: "[Patent 3] GenAI Compliance Design Key Tech: How a Bank AI PM Used 'Sensitive Info Substitution' to Balance Performance & Compliance"
-titleEn: "[Patent 3] GenAI Compliance Design Key Tech: How a Bank AI PM Used 'Sensitive Info Substitution' to Balance Performance & Compliance"
-titleDe: "[Patent 3] GenAI Compliance-Design: Wie ein Bank-AI-PM 'sensible Informationssubstitution' nutzte, um Leistung & Compliance zu vereinen"
+title: "[Patent 3] GenAI Compliance Design Key Tech"
+titleEn: "[Patent 3] GenAI Compliance Design Key Tech"
+titleDe: "[Patent 3] GenAI Compliance-Design"
 excerpt: "When introducing an AI knowledge base query system in a bank, how do you prevent PII leaks without sacrificing response quality? This article introduces a G..."
 excerptEn: "When introducing an AI knowledge base query system in a bank, how do you prevent PII leaks without sacrificing response quality? This article introduces a G..."
 excerptDe: "Wie verhindert man bei der Einführung eines KI-Wissensdatenbanksystems in einer Bank Datenlecks, ohne die Antwortqualität zu beeinträchtigen? Dieser Artikel..."

@@ -1,7 +1,7 @@
 ---
 title: "【專利四】模組化 GenAI 系統設計：為什麼不是「功能越多越好」？一個 PM 的反直覺專利"
-titleEn: "[Patent 4] Modular GenAI System Design: Why 'More Features' Isn't Better? A PM's Counter-Intuitive Patent"
-titleDe: "[Patent 4] Modulares GenAI-Systemdesign: Warum 'Mehr Funktionen' nicht besser ist? Ein kontraintuitives Patent"
+titleEn: "[Patent 4] Modular GenAI System Design"
+titleDe: "[Patent 4] Modulares GenAI-Systemdesign"
 excerpt: "大型語言模型部署成本越來越高？本文分享一位銀行 GenAI Product Manager 如何透過模組化架構設計，讓 AI 系統可依需求客製，降低硬體負擔並提升彈性。 剛開始做企業 GenAI 產品的時候，我也曾經迷信「模型越大越好、功能越多越強」。 直到我看到實際的部署成本。 一個部署在企業..."
 excerptEn: "Are LLM deployment costs skyrocketing? This article shares how a bank GenAI Product Manager used modular architecture design to customize AI systems on dema..."
 excerptDe: "Explodieren die Bereitstellungskosten für LLMs? Dieser Artikel zeigt, wie ein Bank-GenAI-Produktmanager eine modulare Architektur nutzte, um KI-Systeme nach..."

@@ -1,7 +1,7 @@
 ---
 title: "Stargate: The AI Server Center Running 24/7 Shifts"
 titleEn: "Stargate: The AI Server Center Running 24/7 Shifts"
-titleDe: "Stargate: Ein Serverzentrum-Projekt im 24-Stunden-Schichtbetrieb"
+titleDe: "Stargate: Ein Serverzentrum-Projekt im..."
 excerpt: "Stargate is a 24/7 round-the-clock server construction project. When Americans start running shifts like this, you know this is a race they don't intend to..."
 excerptEn: "Stargate is a 24/7 round-the-clock server construction project. When Americans start running shifts like this, you know this is a race they don't intend to..."
 excerptDe: "Das Stargate ist nun ein 24-Stunden-Schichtprojekt für ein Serverzentrum. Wenn die Amerikaner anfangen, 24/7 zu kämpfen, weiß man, dies ist ein Krieg, den s..."

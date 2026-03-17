@@ -1,7 +1,7 @@
 ---
 title: "Join the Team: Let's Create AI Use Cases Together"
 titleEn: "Join the Team: Let's Create AI Use Cases Together"
-titleDe: "Werden Sie Teil unseres Teams: Gemeinsam KI-Szenarien gestalten"
+titleDe: "Werden Sie Teil unseres Teams"
 excerpt: "Our financial AI team is looking for DevOps and data science professionals passionate about deploying generative AI applications in real production environm..."
 excerptEn: "Our financial AI team is looking for DevOps and data science professionals passionate about deploying generative AI applications in real production environm..."
 excerptDe: "Unser Financial AI Technology Team sucht leidenschaftliche Experten für DevOps und Data Science, um gemeinsam GenAI-Anwendungen zu entwickeln und umzusetzen."

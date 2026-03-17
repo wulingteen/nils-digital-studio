@@ -1,7 +1,7 @@
 ---
 title: "【專利一】GenAI 如何改造理財服務？從需求到儀表板——一個銀行 AI PM 的產品設計思路"
-titleEn: "[Patent 1] How GenAI Transforms Wealth Management: From Needs to Dashboards—A Bank AI PM's Product Design Journey"
-titleDe: "[Patent 1] Wie GenAI die Vermögensverwaltung verändert: Von Bedürfnissen zu Dashboards—Die Reise eines Bank-PMs"
+titleEn: "[Patent 1] How GenAI Transforms Wealth Management"
+titleDe: "[Patent 1] Wie GenAI die Vermögensverwaltung verändert"
 excerpt: "理財專員的痛點是什麼？GenAI 如何讓他們在對話中即時生成個人化投資建議？本文分享一位銀行 GenAI Product Manager 的金融 AI 產品設計歷程與專利思維。 在銀行做 AI 產品，我花了很多時間跟理財專員（RM）聊天。 他們不缺努力，也不缺對客戶的了解。 他們缺的是：在客戶面..."
 excerptEn: "What are the true pain points of Relationship Managers? How does GenAI help them generate real-time personalized investment advice in conversations? This ar..."
 excerptDe: "Was sind die wahren Schmerzpunkte von Kundenberatern? Wie hilft GenAI ihnen, in Echtzeit personalisierte Anlageempfehlungen zu generieren? Dieser Artikel te..."

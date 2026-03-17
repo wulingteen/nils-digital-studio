@@ -1,7 +1,7 @@
 ---
-title: "Start des ChatGPT-Agenten: Wie man einer Sekretärin bei der Lösung abstrakter Aufgaben zusieht"
-titleEn: "ChatGPT Launches Agents: Like Watching a Secretary Work Your Computer"
-titleDe: "Start des ChatGPT-Agenten: Wie man einer Sekretärin bei der Lösung abstrakter Aufgaben zusieht"
+title: "Start des ChatGPT-Agenten"
+titleEn: "ChatGPT Launches Agents"
+titleDe: "Start des ChatGPT-Agenten"
 excerpt: "Die Agenten-Vorgänge von ChatGPT werden in Echtzeit angezeigt und sind nachvollziehbar, fast so, als würde man einer menschlichen Sekretärin dabei zusehen,..."
 excerptEn: "ChatGPT's agent renders its operations in real-time with full verbosity — like watching a capable human assistant work at a workstation on your behalf."
 excerptDe: "Die Agenten-Vorgänge von ChatGPT werden in Echtzeit angezeigt und sind nachvollziehbar, fast so, als würde man einer menschlichen Sekretärin dabei zusehen,..."

@@ -1,7 +1,7 @@
 ---
-title: "[Patent 6] Building a Knowledge Graph from a GenAI Product Owner's Perspective: My First AI Patent"
-titleEn: "[Patent 6] Building a Knowledge Graph from a GenAI Product Owner's Perspective: My First AI Patent"
-titleDe: "[Patent 6] Aufbau eines Knowledge Graphs aus der Perspektive eines GenAI Product Owners: Mein erstes KI-Patent"
+title: "[Patent 6] Building a Knowledge Graph from a GenAI..."
+titleEn: "[Patent 6] Building a Knowledge Graph from a GenAI..."
+titleDe: "[Patent 6] Aufbau eines Knowledge Graphs aus der..."
 excerpt: "How does a bank GenAI Product Manager design an LLM system that automatically builds a knowledge graph from business pain points, and successfully obtain a..."
 excerptEn: "How does a bank GenAI Product Manager design an LLM system that automatically builds a knowledge graph from business pain points, and successfully obtain a..."
 excerptDe: "Wie konzipiert ein Bank-GenAI-Produktmanager ein LLM-System, das als Antwort auf Geschäftsprobleme automatisch einen Knowledge Graph aufbaut, und erhält daf..."

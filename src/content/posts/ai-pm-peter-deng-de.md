@@ -1,5 +1,5 @@
 ---
-title: "Die Kern-Ausbildung für AI PMs: Peter Dengs 5 PM-Archetypen und Produktphilosophie"
+title: "Die Kern-Ausbildung für AI PMs"
 excerpt: "Produkte sind nicht nur Pixel, sie sind Maschinen menschlicher Emotionen. Inspiriert von Peter Deng, hier ist, wie man als GenAI-Produktmanager erfolgreich ist."
 author: "Nils Liu"
 date: 2026-03-14

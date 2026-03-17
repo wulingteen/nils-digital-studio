@@ -1,7 +1,7 @@
 ---
 title: "Kobe 談想像力：Transformer 和生成式 AI 就是這樣的魔法"
-titleEn: "Kobe on Imagination: Why Transformers & GenAI Are That Kind of Magic"
-titleDe: "Kobe über Vorstellungskraft: Transformers und generative KI als Magie"
+titleEn: "Kobe on Imagination"
+titleDe: "Kobe über Vorstellungskraft"
 excerpt: "Elon 認為學習知識後最重要的是想像力。芙莉蓮說魔法是想像的世界——Transformer 和生成式 AI 就是這樣的魔法。 2017年曾有新聞採訪Kobe，詢問他對Elon Musk的看法。當時Kobe提到，Elon認為學習知識後最重要的是想像力；無論你學了多少東西、看了多少書，如果缺乏想像..."
 excerptEn: "Elon told Kobe: imagination matters more than knowledge. Frieren said magic is a world of imagination. To me, Transformers and generative AI are exactly tha..."
 excerptDe: "Elon glaubt, Fantasie sei nach dem Erlernen von Wissen das Wichtigste. Frieren sagt, Magie sei die Welt der Vorstellung – Transformers und GenAI sind diese..."

@@ -1,7 +1,7 @@
 ---
 title: "為什麼在銀行做 AI 是最難的戰場？深度解析金融業 AI 轉型與落地挑戰"
 titleEn: "Why Deploying LLMs in Banking Is 10x Harder Than You Think"
-titleDe: "Warum die KI-Einführung im Bankwesen 10x schwieriger ist als gedacht"
+titleDe: "Warum die KI-Einführung im Bankwesen 10x schwieriger ist..."
 excerpt: "金融業 AI 轉型不是選個模型就好。資安、法遵、資料治理——這是將銀行 AI 系統從 1 推向 100 的必經之路，也是 AI 落地挑戰最真實的面貌。 在新創公司開發 Generative AI 產品，你可能靠著 Vibe Coding（與編輯器對話直接產出程式碼）三天就能上線一個 Chatbo..."
 excerptEn: "Deploying AI in a bank isn't just picking a model. Compliance, security, data governance, organizational culture — each hurdle is the necessary path from 1..."
 excerptDe: "KI in einer Bank einzusetzen bedeutet nicht einfach ein Modell auszuwählen. Compliance, Sicherheit, Data Governance, Organisationskultur — jede Hürde ist de..."

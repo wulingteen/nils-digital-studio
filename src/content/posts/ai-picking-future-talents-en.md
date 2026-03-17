@@ -1,7 +1,7 @@
 ---
-title: "From Coding to Autonomous Proposals: How AI Is Redefining Talent"
-titleEn: "From Coding to Autonomous Proposals: How AI Is Redefining Talent"
-titleDe: "Vom Programmieren zum eigenständigen Vorschlagen: Wie man zukünftige Talente auswählt"
+title: "From Coding to Autonomous Proposals"
+titleEn: "From Coding to Autonomous Proposals"
+titleDe: "Vom Programmieren zum eigenständigen Vorschlagen"
 excerpt: "Over the past year leading a team, I found that people with genuine curiosity thrive in AI-augmented work. Boris Cherny of Anthropic thinks this gap is exac..."
 excerptEn: "Over the past year leading a team, I found that people with genuine curiosity thrive in AI-augmented work. Boris Cherny of Anthropic thinks this gap is exac..."
 excerptDe: "So habe ich im vergangenen Jahr Teams geführt, aber ich stellte fest, dass einige Mitarbeiter mit mangelnder Erfahrung und Neugier sich in diesem Arbeitsmod..."

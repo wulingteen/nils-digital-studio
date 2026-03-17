@@ -1,7 +1,7 @@
 ---
 title: "OpenAI DevDay 2024: 一場屬於開發者的技術革新"
 titleEn: "OpenAI DevDay 2024: A Technical Revolution for Developers"
-titleDe: "OpenAI DevDay 2024: Eine technologische Revolution für Entwickler"
+titleDe: "OpenAI DevDay 2024"
 excerpt: "OpenAI 展示了四個重要創新：視覺微調、實時 API、模型蒸餾和提示快取，將更多的創新和控制權交到開發者手中。 OpenAI DevDay 2024: 一場屬於開發者的技術革新 就在今天，OpenAI 展示了四個重要創新：視覺微調（Vision Fine-Tuning）、實時 API（Rea..."
 excerptEn: "OpenAI showcased four major innovations: Vision Fine-Tuning, Realtime API, Model Distillation, and Prompt Caching — handing more creative control to develop..."
 excerptDe: "OpenAI zeigte vier große Innovationen: Vision Fine-Tuning, Realtime API, Model Distillation und Prompt Caching, wodurch mehr Kontrolle in die Hände der Entw..."

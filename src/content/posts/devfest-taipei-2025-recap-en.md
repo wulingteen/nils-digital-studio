@@ -1,7 +1,7 @@
 ---
 title: "DevFest Taipei 2025: Building a Real AI Coaching Platform"
 titleEn: "DevFest Taipei 2025: Building a Real AI Coaching Platform"
-titleDe: "DevFest Taipei 2025: Aufbau einer echten KI-Coaching-Plattform"
+titleDe: "DevFest Taipei 2025"
 excerpt: "At DevFest Taipei 2025 I shared a real production AI coaching platform — multi-agent collaboration, Persona World, Ontology + GraphRAG, delivering 24/7 pers..."
 excerptEn: "At DevFest Taipei 2025 I shared a real production AI coaching platform — multi-agent collaboration, Persona World, Ontology + GraphRAG, delivering 24/7 pers..."
 excerptDe: "Beim DevFest Taipei 2025 habe ich eine produktive KI-Vertriebs-Coaching-Plattform vorgestellt—mit Multi-Agenten-Kollaboration, Persona World und Ontology +..."

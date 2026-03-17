@@ -1,7 +1,7 @@
 ---
-title: "GraphRAG verbindet Erinnerungen mit Knowledge Graphs und revolutioniert die Schlussfolgerung im intelligenten Kundenservice"
-titleEn: "GraphRAG: Reshaping Smart Customer Service with Knowledge Graph Reasoning"
-titleDe: "GraphRAG verbindet Erinnerungen mit Knowledge Graphs und revolutioniert die Schlussfolgerung im intelligenten Kundenservice"
+title: "GraphRAG verbindet Erinnerungen mit Knowledge Graphs und..."
+titleEn: "GraphRAG: Reshaping Smart Customer Service with..."
+titleDe: "GraphRAG verbindet Erinnerungen mit Knowledge Graphs und..."
 excerpt: "GraphRAG ersetzt Einzelpunktsuchen durch eine graphbasierte Wissensstruktur. Es nutzt die Beziehungen zwischen Knoten und Kanten, um die Generierung zu unte..."
 excerptEn: "GraphRAG replaces flat vector retrieval with graph-structured knowledge, enabling multi-hop reasoning and consistent context — 86% accuracy on RobustQA vs...."
 excerptDe: "GraphRAG ersetzt Einzelpunktsuchen durch eine graphbasierte Wissensstruktur. Es nutzt die Beziehungen zwischen Knoten und Kanten, um die Generierung zu unte..."

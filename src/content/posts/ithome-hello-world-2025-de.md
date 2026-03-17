@@ -1,7 +1,7 @@
 ---
-title: "iThome Hello World 2025: Von MCP bis Vibe Coding, vier KI-Sessions in Aktion"
-titleEn: "iThome Hello World 2025: From MCP to Vibe Coding, Four AI Sessions in Action"
-titleDe: "iThome Hello World 2025: Von MCP bis Vibe Coding, vier KI-Sessions in Aktion"
+title: "iThome Hello World 2025"
+titleEn: "iThome Hello World 2025"
+titleDe: "iThome Hello World 2025"
 excerpt: "Auf der iThome Hello World Entwicklerkonferenz dieses Jahres hielt ich vier KI-fokussierte Vorträge, vom MCP-Ökosystem und GraphRAG bis hin zu Abwehrmechani..."
 excerptEn: "This October at the iThome Hello World Developer Conference, I presented four intensive sessions covering MCP, GraphRAG, Vibe Coding, and Enterprise LLM Gua..."
 excerptDe: "Auf der iThome Hello World Entwicklerkonferenz dieses Jahres hielt ich vier KI-fokussierte Vorträge, vom MCP-Ökosystem und GraphRAG bis hin zu Abwehrmechani..."

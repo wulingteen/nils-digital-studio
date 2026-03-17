@@ -1,5 +1,5 @@
 ---
-title: "The AI PM Core Curriculum: Peter Deng's 5 PM Archetypes and Product Philosophy"
+title: "The AI PM Core Curriculum"
 excerpt: "Products aren't just pixels; they're human emotion engines. Inspired by Uber and OpenAI executive Peter Deng, here's how to navigate GenAI product managemen..."
 author: "Nils Liu"
 date: 2026-03-14

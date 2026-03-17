@@ -1,7 +1,7 @@
 ---
-title: "Die Denkweise eines KI-Produktmanagers: Peter Dengs Managementphilosophie bei Uber und KI-Einblicke"
-titleEn: "The AI PM Mindset: Peter Deng's Management Philosophy at Uber and AI Insights"
-titleDe: "Die Denkweise eines KI-Produktmanagers: Peter Dengs Managementphilosophie bei Uber und KI-Einblicke"
+title: "Die Denkweise eines KI-Produktmanagers"
+titleEn: "The AI PM Mindset"
+titleDe: "Die Denkweise eines KI-Produktmanagers"
 excerpt: "Der ehemalige OpenAI VP of Product, Peter Deng, detailliert das Wesen von Produkten, Wachstumsstrategien von 1 auf 100, die fünf PM-Archetypen sowie den Wer..."
 excerptEn: "Former OpenAI VP of Product Peter Deng details the essence of product, 1-to-100 growth strategies, the five PM archetypes, and the value of invisible AI."
 excerptDe: "Der ehemalige OpenAI VP of Product, Peter Deng, detailliert das Wesen von Produkten, Wachstumsstrategien von 1 auf 100, die fünf PM-Archetypen sowie den Wer..."

@@ -1,7 +1,7 @@
 ---
 title: "尼爾斯在找隊友！DevOps 與 Fullstack 工程師招募中"
-titleEn: "Nils Is Looking for Teammates! DevOps & Full-Stack Engineers Wanted"
-titleDe: "Nils sucht Teamkollegen! Stellen für DevOps- und Fullstack-Ingenieure offen"
+titleEn: "Nils Is Looking for Teammates! DevOps & Full-Stack..."
+titleDe: "Nils sucht Teamkollegen! Stellen für DevOps- und..."
 excerpt: "把生成式 AI、現代化金融科技、智慧金融應用變成可規模化的產品與服務，一起把金融 AI 做到海外市場。 尼爾斯在找隊友！我們要一起把金融 AI 做到海外市場（東南亞），兩個角色同步招募中 我們在做什麼 把生成式 AI、現代化金融科技、智慧金融應用變成可規模化的產品與服務，直接解決真實業務問題。 ..."
 excerptEn: "We're taking financial AI to Southeast Asia and looking for two engineers. DevOps and full-stack roles open in Taipei Xinyi."
 excerptDe: "Verwandeln generativer KI, moderner Finanztechnologien und intelligenter Finanzanwendungen in skalierbare Produkte und Dienstleistungen – wir bringen Finanz..."

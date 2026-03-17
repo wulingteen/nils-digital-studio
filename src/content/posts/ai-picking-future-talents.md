@@ -1,7 +1,7 @@
 ---
 title: "從寫程式到自主提案：未來人才挑選法"
-titleEn: "From Coding to Autonomous Proposals: How AI Is Redefining Talent"
-titleDe: "Vom Programmieren zum eigenständigen Vorschlagen: Wie man zukünftige Talente auswählt"
+titleEn: "From Coding to Autonomous Proposals"
+titleDe: "Vom Programmieren zum eigenständigen Vorschlagen"
 excerpt: "過去一年我也是這樣帶團隊，但發現部份經驗與好奇心不足的人會對這種工作型態無所適從，這大概就是一種挑選未來人才的方法。 過去一年我也是這樣帶團隊，但發現部份經驗與好奇心不足的人（例如一些實習生）會對這種工作型態無所適從 個人感覺，這大概就是一種挑選未來人才的方法 --- Anthropic 的 C..."
 excerptEn: "Over the past year leading a team, I found that people with genuine curiosity thrive in AI-augmented work. Boris Cherny of Anthropic thinks this gap is exac..."
 excerptDe: "So habe ich im vergangenen Jahr Teams geführt, aber ich stellte fest, dass einige Mitarbeiter mit mangelnder Erfahrung und Neugier sich in diesem Arbeitsmod..."

@@ -1,7 +1,7 @@
 ---
 title: "軟體工程師的分歧：AI 時代的鑽石型組織"
-titleEn: "The Software Engineer Divide: The Diamond-Shaped Org in the Age of AI"
-titleDe: "Die Spaltung der Softwareentwickler: Die diamantenförmige Organisation im KI-Zeitalter"
+titleEn: "The Software Engineer Divide"
+titleDe: "Die Spaltung der Softwareentwickler"
 excerpt: "同一個時代，同樣叫做工程師，有人因 AI 失去工作，也有人因 AI 找到工作。決定你在哪一邊的，不是學歷年資，而是調整速度。 同一個時代，同樣叫做工程師，有人因 AI 失去工作，也有人因 AI 找到工作。決定你在哪一邊的，不是學歷年資，而是調整速度。新職缺已經靜靜上線了 ——— Block 剛宣..."
 excerptEn: "Same era, same job title — one group is being laid off while another is being hired. What separates them isn't seniority or credentials; it's how fast they'..."
 excerptDe: "In derselben Ära und unter derselben Berufsbezeichnung 'Ingenieur' verlieren einige durch KI ihren Job, während andere durch sie neue finden. Was deinen Pla..."

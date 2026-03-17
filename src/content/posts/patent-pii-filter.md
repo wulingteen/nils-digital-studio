@@ -1,7 +1,7 @@
 ---
 title: "【專利三】GenAI 合規設計的關鍵技術：銀行 AI 產品經理如何用「敏感資訊替換」兼顧效能與法遵？"
-titleEn: "[Patent 3] GenAI Compliance Design Key Tech: How a Bank AI PM Used 'Sensitive Info Substitution' to Balance Performance & Compliance"
-titleDe: "[Patent 3] GenAI Compliance-Design: Wie ein Bank-AI-PM 'sensible Informationssubstitution' nutzte, um Leistung & Compliance zu vereinen"
+titleEn: "[Patent 3] GenAI Compliance Design Key Tech"
+titleDe: "[Patent 3] GenAI Compliance-Design"
 excerpt: "在銀行導入 AI 知識庫查詢系統時，如何防止個資外洩又不犧牲回覆品質？本文介紹一個 GenAI Product Owner 設計的敏感資訊過濾與替換專利架構。 想像這個場景： 你終於把 RAG 系統上線了，客服人員用它查詢客戶資料、業務規則、內部 SOP……效果很好，大家都很開心。 然後法遵部門..."
 excerptEn: "When introducing an AI knowledge base query system in a bank, how do you prevent PII leaks without sacrificing response quality? This article introduces a G..."
 excerptDe: "Wie verhindert man bei der Einführung eines KI-Wissensdatenbanksystems in einer Bank Datenlecks, ohne die Antwortqualität zu beeinträchtigen? Dieser Artikel..."

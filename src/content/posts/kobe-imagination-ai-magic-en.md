@@ -1,7 +1,7 @@
 ---
-title: "Kobe on Imagination: Why Transformers & GenAI Are That Kind of Magic"
-titleEn: "Kobe on Imagination: Why Transformers & GenAI Are That Kind of Magic"
-titleDe: "Kobe über Vorstellungskraft: Transformers und generative KI als Magie"
+title: "Kobe on Imagination"
+titleEn: "Kobe on Imagination"
+titleDe: "Kobe über Vorstellungskraft"
 excerpt: "Elon told Kobe: imagination matters more than knowledge. Frieren said magic is a world of imagination. To me, Transformers and generative AI are exactly tha..."
 excerptEn: "Elon told Kobe: imagination matters more than knowledge. Frieren said magic is a world of imagination. To me, Transformers and generative AI are exactly tha..."
 excerptDe: "Elon glaubt, Fantasie sei nach dem Erlernen von Wissen das Wichtigste. Frieren sagt, Magie sei die Welt der Vorstellung – Transformers und GenAI sind diese..."

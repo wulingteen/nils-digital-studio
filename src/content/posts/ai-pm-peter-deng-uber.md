@@ -1,7 +1,7 @@
 ---
 title: "AI 產品經理的思維：Peter Deng 在 Uber 的管理哲學與 AI 洞見"
-titleEn: "The AI PM Mindset: Peter Deng's Management Philosophy at Uber and AI Insights"
-titleDe: "Die Denkweise eines KI-Produktmanagers: Peter Dengs Managementphilosophie bei Uber und KI-Einblicke"
+titleEn: "The AI PM Mindset"
+titleDe: "Die Denkweise eines KI-Produktmanagers"
 excerpt: "前 OpenAI 產品副總裁 Peter Deng 深入解析產品本質、1 到 100 的增長策略、五種 PM 角色分類，以及在 AI 時代中最核心的無感智能化設計與提問能力。 身為 AI 領域的產品經理或技術人員，我非常信奉矽谷頂尖產品大師 Peter Deng（曾任職於 Facebook、In..."
 excerptEn: "Former OpenAI VP of Product Peter Deng details the essence of product, 1-to-100 growth strategies, the five PM archetypes, and the value of invisible AI."
 excerptDe: "Der ehemalige OpenAI VP of Product, Peter Deng, detailliert das Wesen von Produkten, Wachstumsstrategien von 1 auf 100, die fünf PM-Archetypen sowie den Wer..."

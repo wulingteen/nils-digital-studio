@@ -1,5 +1,5 @@
 ---
-title: "RAG System Design: 3 Key Decisions for Financial Knowledge Bases"
+title: "RAG System Design"
 excerpt: "Building a RAG system in banking: how to choose your chunk strategy, embedding model, and retrieval pipeline. Lessons from real production experience."
 author: "Nils Liu"
 date: 2024-09-02

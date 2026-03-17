@@ -1,5 +1,5 @@
 ---
-title: "Von Funktion zu Patent: Veröffentlichung von GenAI in einer regulierten Bank"
+title: "Von Funktion zu Patent"
 excerpt: "Was macht ein GenAI-Feature von der Konzeption über den Launch bis hin zur Patentanmeldung durch? Ein kompletter Erfahrungsbericht eines Bank-KI-PMs."
 author: "Nils Liu"
 date: 2025-05-18

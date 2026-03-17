@@ -1,7 +1,7 @@
 ---
 title: "AI 專利申請實戰：如何從 GenAI 創新需求打造 AI 產品護城河？"
-titleEn: "From Feature to Patent: Building an AI Product Moat through GenAI Innovation"
-titleDe: "Vom Feature zum Patent: Aufbau eines KI-Schutzgrabens durch GenAI-Innovation"
+titleEn: "From Feature to Patent"
+titleDe: "Vom Feature zum Patent"
 excerpt: "擔心 AI 功能幾個月後就被開源模型取代？本文教你如何透過預判模型進化的思維進行 AI 專利申請，打造別人抄不走的 GenAI 產品護城河。 大多數 PM 一聽到「AI 專利申請」，直覺反應都是：那屬於「底層演算法科學家」或 RD 研發部門的事，與產品經理無關。 但我主導的最高價值專利，往往是從..."
 excerptEn: "Worried your AI feature will be rendered obsolete by the next model update? Learn how to anticipate model evolution and file AI patents to build an uncopyab..."
 excerptDe: "Besorgt, dass Ihr KI-Feature bald überflüssig wird? Erfahren Sie, wie Sie Modellentwicklungen antizipieren und KI-Patente anmelden, um einen unangreifbaren..."

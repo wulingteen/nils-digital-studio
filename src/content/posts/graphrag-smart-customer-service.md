@@ -1,7 +1,7 @@
 ---
 title: "GraphRAG 以知識圖譜串聯記憶，重塑智慧客服推理能力"
-titleEn: "GraphRAG: Reshaping Smart Customer Service with Knowledge Graph Reasoning"
-titleDe: "GraphRAG verbindet Erinnerungen mit Knowledge Graphs und revolutioniert die Schlussfolgerung im intelligenten Kundenservice"
+titleEn: "GraphRAG: Reshaping Smart Customer Service with..."
+titleDe: "GraphRAG verbindet Erinnerungen mit Knowledge Graphs und..."
 excerpt: "GraphRAG 以圖譜化知識結構取代單點檢索，藉由節點與邊的關聯輔助生成，既能維持上下文一致，又具備多跳推理能力。 GraphRAG 以知識圖譜串聯記憶，重塑智慧客服推理能力 傳統 RAG 模型仰賴向量檢索，當對話延展過長或主題跨度太廣，語意易被割裂，導致 LLM 回應冗長卻偏離重點。Grap..."
 excerptEn: "GraphRAG replaces flat vector retrieval with graph-structured knowledge, enabling multi-hop reasoning and consistent context — 86% accuracy on RobustQA vs...."
 excerptDe: "GraphRAG ersetzt Einzelpunktsuchen durch eine graphbasierte Wissensstruktur. Es nutzt die Beziehungen zwischen Knoten und Kanten, um die Generierung zu unte..."

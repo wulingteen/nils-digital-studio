@@ -1,7 +1,7 @@
 ---
-title: "Der historische Wendepunkt der KI: Von der Skepsis zum Nobelpreis"
-titleEn: "AI's Historical Turning Point: From Skepticism to the Nobel Prize"
-titleDe: "Der historische Wendepunkt der KI: Von der Skepsis zum Nobelpreis"
+title: "Der historische Wendepunkt der KI"
+titleEn: "AI's Historical Turning Point"
+titleDe: "Der historische Wendepunkt der KI"
 excerpt: "Einst hatte 'KI' in der Akademie ein negatives Image, und Geoffrey Hinton wurde stark für seine Arbeit an neuronalen Netzen kritisiert. Heute hat er den Tur..."
 excerptEn: "There was a time when saying 'AI' in serious academic circles was a mark against you. Geoffrey Hinton won the Turing Award in 2018 and the Nobel Prize in Ph..."
 excerptDe: "Einst hatte 'KI' in der Akademie ein negatives Image, und Geoffrey Hinton wurde stark für seine Arbeit an neuronalen Netzen kritisiert. Heute hat er den Tur..."

@@ -1,7 +1,7 @@
 ---
-title: "[Patent 4] Modulares GenAI-Systemdesign: Warum 'Mehr Funktionen' nicht besser ist? Ein kontraintuitives Patent"
-titleEn: "[Patent 4] Modular GenAI System Design: Why 'More Features' Isn't Better? A PM's Counter-Intuitive Patent"
-titleDe: "[Patent 4] Modulares GenAI-Systemdesign: Warum 'Mehr Funktionen' nicht besser ist? Ein kontraintuitives Patent"
+title: "[Patent 4] Modulares GenAI-Systemdesign"
+titleEn: "[Patent 4] Modular GenAI System Design"
+titleDe: "[Patent 4] Modulares GenAI-Systemdesign"
 excerpt: "Explodieren die Bereitstellungskosten für LLMs? Dieser Artikel zeigt, wie ein Bank-GenAI-Produktmanager eine modulare Architektur nutzte, um KI-Systeme nach..."
 excerptEn: "Are LLM deployment costs skyrocketing? This article shares how a bank GenAI Product Manager used modular architecture design to customize AI systems on dema..."
 excerptDe: "Explodieren die Bereitstellungskosten für LLMs? Dieser Artikel zeigt, wie ein Bank-GenAI-Produktmanager eine modulare Architektur nutzte, um KI-Systeme nach..."

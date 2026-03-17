@@ -1,5 +1,5 @@
 ---
-title: "AI PM vs. Traditioneller PM: Eine Aufschlüsselung des Talentbaums"
+title: "AI PM vs. Traditioneller PM"
 excerpt: "Muss ein AI PM programmieren können? Mathematik verstehen? Ein vollständiger Vergleich der Fähigkeiten von AI PMs und traditionellen PMs."
 author: "Nils Liu"
 date: 2025-05-18

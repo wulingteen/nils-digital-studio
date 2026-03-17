@@ -1,5 +1,5 @@
 ---
-title: "RAG-Systemdesign: 3 Schlüsselentscheidungen für Finanz-Wissensdatenbanken"
+title: "RAG-Systemdesign"
 excerpt: "Der Aufbau eines RAG-Systems im Bankwesen: So wählen Sie Ihre Chunking-Strategie, Ihr Einbettungsmodell und Ihre Abrufpipeline."
 author: "Nils Liu"
 date: 2024-09-02

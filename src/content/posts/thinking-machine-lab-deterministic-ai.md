@@ -1,7 +1,7 @@
 ---
 title: "Mira Murati 的 Thinking Machine Lab：AI 確定性推理的突破"
-titleEn: "Mira Murati's Thinking Machine Lab: A Breakthrough in Deterministic AI Reasoning"
-titleDe: "Mira Muratis Thinking Machine Lab: Ein Durchbruch im deterministischen KI-Schlussfolgern"
+titleEn: "Mira Murati's Thinking Machine Lab"
+titleDe: "Mira Muratis Thinking Machine Lab"
 excerpt: "把 AI 模型的 temperature 設為 0 就能得到完全一致的結果嗎？答案是否，Thinking Machine Lab 的研究揭示了根本性的原因。 Thinking Machine Lab (Mira Murati創立的startup，在還沒有任何產品和工作方向時，光是Mira Mur..."
 excerptEn: "Does setting temperature to 0 give perfectly consistent AI outputs? No — and Thinking Machine Lab found out why. Batch processing is the culprit, and they b..."
 excerptDe: "Erhält man absolut konsistente Ergebnisse, wenn man die Temperatur des KI-Modells auf 0 setzt? Die Antwort ist nein, und eine Studie von Thinking Machine La..."
