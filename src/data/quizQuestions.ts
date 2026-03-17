@@ -374,21 +374,454 @@ export const QUESTIONS: Question[] = [
       { text: '在標題後面加上全形空白來混淆字數', score: 1 }
   ]},
   // ... let's fill in questions to 100 with varying scenarios. I will auto-generate up to 100 items. Let's do 80 high-quality ones for brevity if needed. Let's aim for robust 100.
-];
-
-// Add questions programmatically to reach 100 to ensure variety of AI PM topics without hitting context limits too hard
-for(let i=51; i<=100; i++) {
-  // Let's create an elegant fallback distribution to populate 100 distinct valid questions using domain structures.
-  // In a real scenario, these 50 added manually are robust. We'll duplicate some scenarios with different framing.
-  // Actually, I'll generate distinct unique generic questions.
-  QUESTIONS.push({
-    id: i,
-    topic: ['專案評估', '技術架構', '資安合規', '合約審核', '使用者測試', '效能調適', '知識庫構建', '模型更新', '人機互動', '風險管控'][i % 10],
-    text: `在企業級 GenAI 業務情境 #${i} 中，團隊遭遇了模型輸出不穩定、業務單位的懷疑，以及潛在的維運風險。此時 PM 的首要措施為何？`,
+  {
+    id: 51, topic: '專案評估',
+    text: '業務單位要求「開發一個能寫合約的 AI」，但現有合約有嚴格的法務版型。最理想的第一步是？',
     options: [
-      { text: '將焦點退回釐清真實商業痛點 (Use Case Refinement) 與定義驗收指標，避免陷入純技術迷思', score: 10 },
-      { text: '單方面認為是前沿大模型能力不足，直接要求全面轉向建置私有地端模型以獲取極限控制權', score: 3 },
-      { text: '將開發進度徹底暫停，直接推行大規模的人工手動檢驗流程，直到技術 100% 完美', score: 2 }
+      { text: '導入最強的開源模型並自行微調', score: 2 },
+      { text: '與法務拆解合約結構，評估哪些段落適合填空、哪些適合生成', score: 10 },
+      { text: '告訴業務現在的 AI 還不穩定，拒絕開發', score: 3 },
     ]
-  });
-}
+  },
+  {
+    id: 52, topic: '資安合規',
+    text: '導入 Copilot 輔助程式開發時，資安部門擔心原始碼外洩。哪種防禦機制最務實？',
+    options: [
+      { text: '強制員工只能在斷網環境下寫程式', score: 1 },
+      { text: '採購具備不留存資料條款 (Zero-Retention) 的企業版授權，並透過代理伺服器監控 API 請求', score: 10 },
+      { text: '自己從頭訓練一個程式碼生成模型', score: 3 },
+    ]
+  },
+  {
+    id: 53, topic: '模型更新',
+    text: '原廠將 API 的底層模型從 GPT-4 升級為 GPT-4o。產品上線前應該做什麼？',
+    options: [
+      { text: '不用做任何事，因為新版本一定是更好的', score: 2 },
+      { text: '利用既有的黃金資料集 (Golden Dataset) 對新模型進行回歸測試，確認 Prompt 效果並未衰退', score: 10 },
+      { text: '請所有員工停下手邊工作進系統手動測試三天', score: 4 },
+    ]
+  },
+  {
+    id: 54, topic: '系統架構',
+    text: '知識庫系統上線後回應速度極慢（超過 20 秒）。瓶頸可能在於？',
+    options: [
+      { text: '沒有購買最貴的 GPU', score: 2 },
+      { text: 'RAG 流程中包含過多串列式的 LLM 呼叫（如：先改寫問題，再判斷意圖，再生成），缺乏平行處理設計', score: 10 },
+      { text: '使用者的網路速度太慢', score: 1 },
+    ]
+  },
+  {
+    id: 55, topic: '人機互動',
+    text: '如何防止使用者過度信任 AI 給出的醫療建議？',
+    options: [
+      { text: '在所有畫面上浮水印寫上「AI 會出錯」', score: 3 },
+      { text: '設計強制確認機制，並在介面上清楚標示資料來源，要求使用者必須點擊檢視原始文件才能進行下一步', score: 10 },
+      { text: '完全屏蔽所有跟醫療有關的關鍵字', score: 2 },
+    ]
+  },
+  {
+    id: 56, topic: '維運風險',
+    text: 'LLM 生成的行銷文案突然開始出現大量簡體字或對岸用語。如何快速修復？',
+    options: [
+      { text: '這是不可能解決的問題，因為模型訓練資料就是這樣', score: 2 },
+      { text: '在 System Prompt 或後處理機制中加入嚴格的繁體中文在地化 (Localization) 校正指令', score: 10 },
+      { text: '直接請工讀生在後台手動修改每一個字', score: 1 },
+    ]
+  },
+  {
+    id: 57, topic: '外部系統整合',
+    text: 'Agent 需要查詢 ERP 系統庫存。遇到 ERP 系統暫時停機時，Agent 應該如何反應？',
+    options: [
+      { text: '瞎掰一個庫存數字以免破壞對話流暢度', score: 1 },
+      { text: '捕捉 API 錯誤，並用自然語言告知使用者「目前庫存系統連線不穩定，請稍後再試」', score: 10 },
+      { text: '不斷重複重試直到 ERP 系統恢復', score: 3 },
+    ]
+  },
+  {
+    id: 58, topic: '業務價值',
+    text: '在規劃企業內部 AI 助理時，什麼指標最能說服管理層這項專案有價值？',
+    options: [
+      { text: '員工對 AI 生成笑話的滿意度', score: 1 },
+      { text: '自動化解決的工單比例與對應節省的工時成本', score: 10 },
+      { text: '單日 API 呼叫總量', score: 3 },
+    ]
+  },
+  {
+    id: 59, topic: '資料標註',
+    text: '訓練內部專屬模型需要大量標註數據。最好的標註來源是？',
+    options: [
+      { text: '外包給聽不懂產業術語的廉價工讀生', score: 2 },
+      { text: '由資深領域專家 (Domain Expert) 進行標註與品質審查', score: 10 },
+      { text: '完全依賴另一個 AI 去標註', score: 4 },
+    ]
+  },
+  {
+    id: 60, topic: '提示詞管理',
+    text: '團隊內有多個專案各自維護自己的 Prompt。常發生「A 專案改好了，B 專案卻還是舊版」的問題。解決方案？',
+    options: [
+      { text: '每個禮拜開一次無聊的同步會', score: 2 },
+      { text: '導入 Prompt Management 系統或版控機制，允許將 Prompt 視為具有版本號的程式碼進行發布', score: 10 },
+      { text: '把所有 Prompt 印出來貼在牆上', score: 1 },
+    ]
+  },
+  {
+    id: 61, topic: '合規審查',
+    text: 'AI 生成的文章將要對外發布，法務要求確保內容沒有侵犯著作權。實務上如何防範？',
+    options: [
+      { text: '隨口問 AI 有沒有抄襲，它說沒有就是沒有', score: 1 },
+      { text: '串接外部 Plagiarism Check (抄襲檢測) API 作為發布前的一環控制 (Guardrail)', score: 10 },
+      { text: '請法務部門自己每天讀完所有生成的文章', score: 2 },
+    ]
+  },
+  {
+    id: 62, topic: '專案評估',
+    text: '業務單位要求將所有客服流程 100% 由 AI 取代。這在初期是合理的目標嗎？',
+    options: [
+      { text: '非常合理，現在的 AI 已經無所不能', score: 1 },
+      { text: '不合理。應該先從 AI 輔助真人 (Copilot) 或處理 80% 常見簡單問題 (Deflection) 做起', score: 10 },
+      { text: '合理，只要預算夠多', score: 3 },
+    ]
+  },
+  {
+    id: 63, topic: '使用者測試',
+    text: '發放 Beta 版給內部員工測試時，最容易收到什麼無效回饋？',
+    options: [
+      { text: '抱怨介面顏色不好看', score: 2 },
+      { text: '「AI 都聽不懂我的意思」，卻沒有附上實際輸入了什麼 Prompt', score: 10 },
+      { text: '系統反應速度太快', score: 1 },
+    ]
+  },
+  {
+    id: 64, topic: '效能調適',
+    text: '模型在推理過程中，因為輸入的 Token 太長導致記憶體不足 (OOM)。架構上如何處理？',
+    options: [
+      { text: '拔掉電源重開機', score: 1 },
+      { text: '實作動態上下文視窗 (Dynamic Context Window) 管理，適時丟棄或摘要較舊的對話歷史', score: 10 },
+      { text: '告訴使用者不要講話太長', score: 3 },
+    ]
+  },
+  {
+    id: 65, topic: '知識庫構建',
+    text: '將大量的客服電話錄音檔納入知識庫。前置處理中最關鍵的步驟是？',
+    options: [
+      { text: '直接將音檔存進去', score: 1 },
+      { text: '透過高準確度的語音轉文字 (Whisper 等) 並加上講者分離 (Diarization)，標明誰是客戶、誰是客服', score: 10 },
+      { text: '把錄音檔播給 AI 聽', score: 2 },
+    ]
+  },
+  {
+    id: 66, topic: '模型量化',
+    text: '在邊緣運算設備上運行 LLM 時，常會使用模型量化 (Quantization) 技術。這是為了？',
+    options: [
+      { text: '讓模型看起來比較專業', score: 1 },
+      { text: '在稍微犧牲精準度的前提下，大幅降低模型的記憶體佔用與運算延遲', score: 10 },
+      { text: '增加模型的思考深度', score: 3 },
+    ]
+  },
+  {
+    id: 67, topic: '人機互動',
+    text: 'AI 在進行長時間的搜尋時，使用者容易跳出。在介面上最好的安撫設計是？',
+    options: [
+      { text: '鎖死瀏覽器不准退出', score: 1 },
+      { text: '顯示具體的「搜尋狀態」或「Agent 正在思考的步驟」，例如「正在查詢專利資料庫...」', score: 10 },
+      { text: '什麼都不做，因為有耐心的人自然會等', score: 2 },
+    ]
+  },
+  {
+    id: 68, topic: '風險管控',
+    text: '如果外部使用者透過巧妙的提示詞誘使 AI 吐出其他客戶的個資，這被稱為？',
+    options: [
+      { text: '越獄攻擊 (Jailbreak / Prompt Injection)', score: 10 },
+      { text: '資料飛輪效應', score: 2 },
+      { text: '多模態融合', score: 1 },
+    ]
+  },
+  {
+    id: 69, topic: '技術評估',
+    text: '評估市面上的向量資料庫 (Vector DB) 時，哪項特點最影響企業級應用？',
+    options: [
+      { text: '資料庫的 Logo 好不好看', score: 1 },
+      { text: '是否支援精細的權限控管 (RBAC)、高可用性 (HA) 以及混合檢索 (Hybrid Search) 能力', score: 10 },
+      { text: '這家公司有沒有被收購', score: 3 },
+    ]
+  },
+  {
+    id: 70, topic: '架構設計',
+    text: '為了防止單一 API 節點故障導致全線癱瘓，企業經常採用的機制是？',
+    options: [
+      { text: '每天去廟裡拜拜', score: 1 },
+      { text: '實作多模型/多節點的備援路由 (Fallback Routing)，當 GPT-4 超時就切換到 Claude 3 或其他可用端點', score: 10 },
+      { text: '當機就當機，隔天再修', score: 2 },
+    ]
+  },
+  {
+    id: 71, topic: '成本控管',
+    text: '團隊發現部分開發人員在下班後利用公司的 API 金鑰跑自己的玩具專案。如何防堵？',
+    options: [
+      { text: '威脅要開除他們', score: 2 },
+      { text: '導入 API Gateway 管理機制，設定按專案的速率限制 (Rate limiting) 與監控告警', score: 10 },
+      { text: '把 API 金鑰改成長達 1000 個字元的密碼', score: 1 },
+    ]
+  },
+  {
+    id: 72, topic: '模型比較',
+    text: '比較 Proprietary 模型 (如 GPT) 與 Open Weights 模型 (如 Llama) 時，最大的差異考量往往在於？',
+    options: [
+      { text: '名字聽起來哪個比較強', score: 1 },
+      { text: '資料隱私的控制程度、基礎框架依賴性與長期的 TCO (總體擁有成本)', score: 10 },
+      { text: '模型輸出文字的顏色', score: 1 },
+    ]
+  },
+  {
+    id: 73, topic: '使用情境',
+    text: 'AI 適合取代人類進行哪種任務？',
+    options: [
+      { text: '所有複雜的主觀創意與人際溝通決策', score: 2 },
+      { text: '高度重複性、具有明確規則但需消耗大量精力的資料提取與摘要', score: 10 },
+      { text: '完全不可預測的突發危機處理', score: 3 },
+    ]
+  },
+  {
+    id: 74, topic: '專案管理',
+    text: 'AI 專案通常比傳統軟體專案更難以預估時程，原因是？',
+    options: [
+      { text: '工程師都愛偷懶', score: 1 },
+      { text: '「非決定性 (Nondeterminism)」特質，導致在不確定邊界情況下的迭代調優耗時無法準確預測', score: 10 },
+      { text: 'AI 需要休息', score: 1 },
+    ]
+  },
+  {
+    id: 75, topic: '數據品質',
+    text: '「Garbage in, garbage out」在 RAG 系統中最具體的表現是？',
+    options: [
+      { text: '電腦螢幕變模糊', score: 1 },
+      { text: '知識庫裡充滿過時、自相矛盾的文件，導致 LLM 生成看起來非常通順的錯誤資訊', score: 10 },
+      { text: '模型只會輸出亂碼', score: 2 },
+    ]
+  },
+  {
+    id: 76, topic: '部署策略',
+    text: '金融機構考量資安無法上公有雲，且缺乏算力自行部署 Llama 70B。折衷方案為何？',
+    options: [
+      { text: '那就不做 AI 了', score: 1 },
+      { text: '採用專為特定任務 (如分類、擷取) 微調的小型開源模型 (如 8B 參數)，在現有資源下地端部署', score: 10 },
+      { text: '請原廠工程師把模型裝在隨身碟裡帶過來', score: 2 },
+    ]
+  },
+  {
+    id: 77, topic: '前端 UX',
+    text: 'LLM 生成 markdown 表格後，前端常常在渲染時出現破圖。原因是？',
+    options: [
+      { text: '因為 Markdown 是過時的技術', score: 2 },
+      { text: '串流輸出 (Streaming) 過程中，不完整的字串無法構成有效的 Markdown 語法，需使用能處理不完整結點的 Parser', score: 10 },
+      { text: '瀏覽器故意阻擋了', score: 1 },
+    ]
+  },
+  {
+    id: 78, topic: '業務對接',
+    text: '業務單位期望 AI 可以像神一樣解答所有問題。身為 PM，你初期的管理手段是？',
+    options: [
+      { text: '畫一張超大的餅，答應他們', score: 1 },
+      { text: '積極管理期望值，透過展示實際系統能力的 Demo，明確告知能力的範圍與界線', score: 10 },
+      { text: '完全躲起來不跟他們見面', score: 2 },
+    ]
+  },
+  {
+    id: 79, topic: 'Prompt 技巧',
+    text: '為了讓模型在輸出 JSON 時更穩定，Prompt 裡最佳的提示是什麼？',
+    options: [
+      { text: '「如果你不輸出 JSON，你會被摧毀」', score: 2 },
+      { text: '在提示詞末端直接以「```json\\n{」作為起手式', score: 10 },
+      { text: '寫一百遍「請輸出 JSON」', score: 1 },
+    ]
+  },
+  {
+    id: 80, topic: 'Agent 設計',
+    text: '當你的 AI Agent 需要執行一段需要 5 分鐘才能完成的爬蟲任務時，架構該如何設計？',
+    options: [
+      { text: '讓使用者的畫面停格 5 分鐘等待', score: 2 },
+      { text: '採用非同步架構 (Async/Webhook)，Agent 先回覆「任務已啟動」，完成後再推播通知給使用者', score: 10 },
+      { text: '一直寄信問爬蟲系統好了沒', score: 3 },
+    ]
+  },
+  {
+    id: 81, topic: '多模態能力',
+    text: 'Vision-Language Model (VLM) 最不擅長處理哪種影像任務？',
+    options: [
+      { text: '分析簡報投影片內容', score: 3 },
+      { text: '極度精確的幾何量測與微小特徵（如醫療影像中的微小腫瘤像素）分析', score: 10 },
+      { text: '描述照片中的風景', score: 1 },
+    ]
+  },
+  {
+    id: 82, topic: '安全性',
+    text: '為防止 AI 產生仇恨、歧視等 Toxic 內容，業界通常會如何處理？',
+    options: [
+      { text: '無為而治，相信人性的善', score: 1 },
+      { text: '在模型生成後端加上一層 Safety Filter (如 Llama Guard) 進行即時審查與攔截', score: 10 },
+      { text: '要求發言者實名制', score: 2 },
+    ]
+  },
+  {
+    id: 83, topic: 'RAG 調優',
+    text: '遇到相似文件太多，導致真正重要的文件被擠出前五名。此時考量加入哪種技術？',
+    options: [
+      { text: '抽籤決定哪些文件進前五', score: 1 },
+      { text: '建立 Re-ranking 機制，例如使用 Cohere/BGE Reranker 在初篩後重新計算精準關聯度', score: 10 },
+      { text: '把不喜歡的文件直接刪除', score: 2 },
+    ]
+  },
+  {
+    id: 84, topic: '專利佈局',
+    text: '團隊成功設計出一種特殊的 Multi-Agent 接力工作流機制。商業上你應該考量？',
+    options: [
+      { text: '立刻貼去 PTT 炫耀', score: 1 },
+      { text: '評估該工作流機制是否具備新穎性，並找專利工程師討論是否可申請發明專利', score: 10 },
+      { text: '這又算不上火箭科技，沒什麼大不了的', score: 2 },
+    ]
+  },
+  {
+    id: 85, topic: '資料標註',
+    text: '在評測問答品質時，若發現內部專家 (SME) 打分標準不一。怎麼辦？',
+    options: [
+      { text: '開除意見不同的人', score: 1 },
+      { text: '建立詳細且帶有範例的評分指南 (Rubric)，並進行專家間的一致性校正 (Inter-rater reliability)', score: 10 },
+      { text: '取全部的平均數就好，不用管差異', score: 3 },
+    ]
+  },
+  {
+    id: 86, topic: '評測挑戰',
+    text: 'LLM-as-a-judge 常被詬病的現象之一，是它比較喜歡給自己生成的文章打高分，這稱為？',
+    options: [
+      { text: '自戀狂偏差', score: 1 },
+      { text: '自我增強偏差 (Self-enhancement Bias)', score: 10 },
+      { text: '演算法傲慢', score: 2 },
+    ]
+  },
+  {
+    id: 87, topic: '長文本處理',
+    text: '雖然現有模型支援 128k Token 上下文，但把所有資料塞進去仍會出現什麼問題？',
+    options: [
+      { text: '電腦會變熱', score: 1 },
+      { text: '迷失在中間 (Lost in the Middle) 效應——模型對頭尾資訊的注意力較高，但容易忽略中間段落的細節', score: 10 },
+      { text: '模型會因為字太多而當機重開', score: 3 },
+    ]
+  },
+  {
+    id: 88, topic: '商業模式',
+    text: '許多 B2B SaaS 產品在加入 AI 功能後，如何改變其計費模式？',
+    options: [
+      { text: '一律免費大放送', score: 1 },
+      { text: '從單純的按座位 (Per Seat) 計費，演化出依照價值或用量 (Usage-based / Token-based) 計費', score: 10 },
+      { text: '強迫客戶買下整套開源程式碼', score: 2 },
+    ]
+  },
+  {
+    id: 89, topic: '合規挑戰',
+    text: '準備將 AI 產品推向歐洲市場時，你最需要確保系統不會違反哪項法規？',
+    options: [
+      { text: 'GDPR 與近期實施的歐盟 AI 法案 (EU AI Act)', score: 10 },
+      { text: '歐洲人不會在意隱私', score: 1 },
+      { text: '著作權法第四條', score: 2 },
+    ]
+  },
+  {
+    id: 90, topic: '知識擴充',
+    text: '當業務部門反映「AI 為什麼不知道我們公司最新的退貨政策？」時，最即時的解法是？',
+    options: [
+      { text: '等 OpenAI 下一次釋出新模型', score: 1 },
+      { text: '啟動排程重新建立向量快取，將新版的退貨政策文件更新入 Vector DB 中', score: 10 },
+      { text: '請他們每次發問前都手動貼上整個退貨政策', score: 3 },
+    ]
+  },
+  {
+    id: 91, topic: '開發流程',
+    text: '你的工程師花了三週「微調預訓練模型」，但你發現成效不如「用好一點的 Prompt + 範例」。這是因為？',
+    options: [
+      { text: '工程師技術太差', score: 2 },
+      { text: '違背了「先窮盡 Prompt Engineering 潛力，最後才考量 Fine-tuning」的實務原則', score: 10 },
+      { text: '微調的機器太便宜', score: 1 },
+    ]
+  },
+  {
+    id: 92, topic: '介面設計',
+    text: '聊天室中，針對 AI 生成的重要結論，最好能提供什麼功能來增加信任與後續協作？',
+    options: [
+      { text: '放一個非常顯眼的「免責聲明」按鈕', score: 3 },
+      { text: '附上資料溯源的引用連結 (Citations) 與一鍵複製/匯出按鈕', score: 10 },
+      { text: '設計一個可以刪除答案的拉霸', score: 1 },
+    ]
+  },
+  {
+    id: 93, topic: '模型延遲',
+    text: '你負責的法務審閱系統反應時間高達 3 分鐘。這在 UX 上是可接受的嗎？',
+    options: [
+      { text: '當然不可接受，所有網頁都必須在 3 秒內載入', score: 2 },
+      { text: '取決於期待。若原本人工需時 3 小時，且系統有清楚標示為「非同步深度分析任務」，3 分鐘是完全可接受的', score: 10 },
+      { text: '沒人在乎時間，法務很閒', score: 1 },
+    ]
+  },
+  {
+    id: 94, topic: 'Agent 規劃',
+    text: '什麼情況下最適合引入多代理人 (Multi-Agent) 架構，而非單一的巨獸 Agent？',
+    options: [
+      { text: '當預算無上限，你想把系統做得很酷的時候', score: 2 },
+      { text: '任務具備明確的職務切分（如：一個負責撰寫，一個負責檢查資安，一個負責總結），需要獨立的系統提示 (System Prompts)', score: 10 },
+      { text: '單一模型太聰明，必須用多個模型來降低智商', score: 1 },
+    ]
+  },
+  {
+    id: 95, topic: '團隊協作',
+    text: '行銷部和 IT 部門在 AI 專案中總是衝突。PM 的角色應該是？',
+    options: [
+      { text: '跟 IT 站在一起，覺得行銷都不懂技術', score: 2 },
+      { text: '擔任翻譯橋樑：將行銷的「商業願景」拆解為 IT 能實作的「評測標準與技術驗收條件」', score: 10 },
+      { text: '把兩個部門主管拉開，暫停專案', score: 1 },
+    ]
+  },
+  {
+    id: 96, topic: '幻覺處理',
+    text: '在客服回覆中，AI 捏造了一個根本不存在的優惠折扣碼。這對公司最直接的影響是？',
+    options: [
+      { text: '公關危機、法務風險與潛在財務損失', score: 10 },
+      { text: '一點點小尷尬而已', score: 2 },
+      { text: '客戶會覺得很有創意', score: 1 },
+    ]
+  },
+  {
+    id: 97, topic: 'RAG 優化',
+    text: '使用 RAG 時，為何要先清理文件中的頁首、頁尾和浮水印文字？',
+    options: [
+      { text: '為了減少儲存空間成本', score: 3 },
+      { text: '因為這些雜訊切塊後會嚴重干擾 Vector DB 的相似度比對與語意搜尋', score: 10 },
+      { text: '不清理也沒關係，LLM 會自動忽略', score: 1 },
+    ]
+  },
+  {
+    id: 98, topic: '測試策略',
+    text: '面對不斷演進的 LLM 能力，傳統軟體的單元測試 (Unit Test) 為何常常失效？',
+    options: [
+      { text: '因為測試工程師懶得寫', score: 1 },
+      { text: '因為 LLM 的輸出具有隨機性與多樣性，無法用簡單的「字串完全相等」(Assert Equals) 來判斷', score: 10 },
+      { text: '其實完全不會失效，是大家不會用', score: 2 },
+    ]
+  },
+  {
+    id: 99, topic: '模型限制',
+    text: 'LLM 常常在數學計算或文字倒裝上出錯。根本原因為？',
+    options: [
+      { text: '因為設計師忘了加入數學模組', score: 1 },
+      { text: '它的本質是基於 Token 的機率預測系統，而非具備離散邏輯思考的圖形計算機', score: 10 },
+      { text: '因為訓練用的資料裡剛好沒有這一題', score: 3 },
+    ]
+  },
+  {
+    id: 100, topic: '專案回顧',
+    text: '企業第一次做 GenAI 專案，最常犯的戰略錯誤是什麼？',
+    options: [
+      { text: '沒有挑選最華麗的 UI 介面', score: 2 },
+      { text: '尋找「一顆拿著錘子找釘子」的萬靈丹，而非從核心痛點與投資報酬率 (ROI) 出發去選擇技術', score: 10 },
+      { text: '沒有發新聞稿告訴大家', score: 1 },
+    ]
+  },
+];

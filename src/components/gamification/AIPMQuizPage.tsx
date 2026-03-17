@@ -41,22 +41,28 @@ export default function AIPMQuizPage({ lang = 'zh' }: { lang?: string }) {
     timerRef.current = setInterval(() => {
       setTimer(prev => {
         if (prev <= 1) {
-          // Time's up — auto advance
-          handleTimeout();
-          return TIMER_SECONDS;
+          if (timerRef.current) clearInterval(timerRef.current);
+          setCombo(0);
+          setIsCorrectFlash(false);
+          // Advance after a brief delay
+          setTimeout(() => {
+            setTopicScores(topics => ({ ...topics, [activeQuestions[step].topic]: (topics[activeQuestions[step].topic] || 0) + 0 }));
+            if (step >= activeQuestions.length - 1) {
+              setFinished(true);
+            } else {
+              setStep(s => s + 1);
+              setTimer(TIMER_SECONDS);
+              setSelectedIdx(null);
+              setIsCorrectFlash(null);
+            }
+          }, 600);
+          return 0;
         }
         return prev - 1;
       });
     }, 1000);
     return () => { if (timerRef.current) clearInterval(timerRef.current); };
-  }, [started, finished, step]);
-
-  const handleTimeout = useCallback(() => {
-    setCombo(0);
-    setIsCorrectFlash(false);
-    setTimeout(() => advanceStep(0), 600);
-  }, [step]);
-
+  }, [started, finished, step, activeQuestions]);
   const advanceStep = (optScore: number) => {
     const q = activeQuestions[step];
     setTopicScores(prev => ({ ...prev, [q.topic]: (prev[q.topic] || 0) + optScore }));
