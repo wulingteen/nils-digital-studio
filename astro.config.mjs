@@ -5,7 +5,7 @@ import vercel from '@astrojs/vercel';
 import auth from 'auth-astro';
 
 export default defineConfig({
-  site: 'https://nils-digital-studio.vercel.app',
+  site: 'https://nilsliu.dev',
   trailingSlash: 'always',
   output: 'static',
   adapter: vercel(),
