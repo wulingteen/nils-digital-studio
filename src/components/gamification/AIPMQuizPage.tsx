@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { useGamificationStore } from '../../store/gamificationStore';
+import { Brain, Flame, Trophy, Clock, Target, BookOpen, RefreshCw, CheckCircle2, XCircle, Award, Medal } from 'lucide-react';
 
 /* ── Questions (hardcoded, no API) ── */
 interface Question {
@@ -198,7 +199,7 @@ export default function AIPMQuizPage({ lang = 'zh' }: { lang?: string }) {
     return (
       <div className="text-center py-12">
         <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 mb-6">
-          <span className="text-4xl">🧠</span>
+          <Brain className="w-10 h-10 text-primary" />
         </div>
         <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
           {lang === 'zh' ? 'AI PM 核心能力測驗' : lang === 'de' ? 'AI PM Kompetenztest' : 'AI PM Skills Assessment'}
@@ -209,21 +210,21 @@ export default function AIPMQuizPage({ lang = 'zh' }: { lang?: string }) {
             : '10 real-world enterprise scenarios, 30 seconds per question. Build combos for streaks!'}
         </p>
         <div className="flex flex-wrap justify-center gap-3 my-6 text-sm">
-          <span className="px-3 py-1.5 rounded-full bg-primary/10 text-primary font-medium">⏱ 30s / {lang === 'zh' ? '題' : 'Q'}</span>
-          <span className="px-3 py-1.5 rounded-full bg-primary/10 text-primary font-medium">🔥 Combo</span>
-          <span className="px-3 py-1.5 rounded-full bg-primary/10 text-primary font-medium">🏆 {lang === 'zh' ? '徽章解鎖' : 'Badges'}</span>
+          <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary/10 text-primary font-medium"><Clock className="w-3.5 h-3.5" /> 30s / {lang === 'zh' ? '題' : 'Q'}</span>
+          <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary/10 text-primary font-medium"><Flame className="w-3.5 h-3.5" /> Combo</span>
+          <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary/10 text-primary font-medium"><Trophy className="w-3.5 h-3.5" /> {lang === 'zh' ? '徽章解鎖' : 'Badges'}</span>
         </div>
         {unlockedBadges.length > 0 && (
           <p className="text-xs text-muted-foreground mb-4">
-            {lang === 'zh' ? `🎖 你已擁有 ${unlockedBadges.length} 個徽章` : `🎖 ${unlockedBadges.length} badges earned`}
-            {bestCombo > 0 && (lang === 'zh' ? ` ・ 🔥 歷史最佳 Combo: ${bestCombo}` : ` ・ 🔥 Best combo: ${bestCombo}`)}
+            {lang === 'zh' ? `已擁有 ${unlockedBadges.length} 個徽章` : `${unlockedBadges.length} badges earned`}
+            {bestCombo > 0 && (lang === 'zh' ? ` ・ 歷史最佳 Combo: ${bestCombo}` : ` ・ Best combo: ${bestCombo}`)}
           </p>
         )}
         <button
           onClick={() => setStarted(true)}
           className="mt-2 inline-flex items-center gap-2 rounded-full bg-primary px-8 py-3.5 text-base font-bold text-primary-foreground shadow-[0_0_30px_rgba(200,160,80,0.3)] transition-all hover:-translate-y-1 hover:shadow-[0_0_40px_rgba(200,160,80,0.5)] cursor-pointer"
         >
-          {lang === 'zh' ? '🚀 開始測驗' : lang === 'de' ? '🚀 Test starten' : '🚀 Start Quiz'}
+          {lang === 'zh' ? '開始測驗' : lang === 'de' ? 'Test starten' : 'Start Quiz'}
         </button>
       </div>
     );
@@ -232,7 +233,7 @@ export default function AIPMQuizPage({ lang = 'zh' }: { lang?: string }) {
   /* ── Results Screen ── */
   if (finished) {
     const pct = Math.round((score / (QUESTIONS.length * 10)) * 100);
-    const badgeEmoji = pct >= 100 ? '👑' : pct >= 70 ? '🏆' : pct >= 40 ? '🎯' : '📘';
+    const BadgeIcon = pct >= 100 ? Award : pct >= 70 ? Trophy : pct >= 40 ? Target : BookOpen;
     const badgeTitle = pct >= 100
       ? (lang === 'zh' ? 'GenAI 大師' : 'GenAI Master')
       : pct >= 70
@@ -245,12 +246,12 @@ export default function AIPMQuizPage({ lang = 'zh' }: { lang?: string }) {
       <div className="text-center py-8">
         {/* Badge Animation */}
         <div className="mb-6 animate-bounce">
-          <span className="text-6xl">{badgeEmoji}</span>
+          <BadgeIcon className="w-16 h-16 text-primary mx-auto" />
         </div>
         <h2 className="text-2xl font-bold text-foreground mb-1">{badgeTitle}</h2>
         <p className="text-4xl font-black text-primary my-4">{score} / {QUESTIONS.length * 10}</p>
         <p className="text-muted-foreground mb-6">
-          {lang === 'zh' ? `正確率 ${pct}%　|　最高 Combo 🔥${maxCombo}` : `Accuracy ${pct}%  |  Max Combo 🔥${maxCombo}`}
+          {lang === 'zh' ? `正確率 ${pct}%　|　最高 Combo ${maxCombo}` : `Accuracy ${pct}%  |  Max Combo ${maxCombo}`}
         </p>
 
         {/* Radar Chart (simple bar-based) */}
@@ -284,13 +285,13 @@ export default function AIPMQuizPage({ lang = 'zh' }: { lang?: string }) {
             onClick={resetQuiz}
             className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-bold text-primary-foreground shadow-lg transition-all hover:-translate-y-0.5 cursor-pointer"
           >
-            🔄 {lang === 'zh' ? '再挑戰一次' : 'Try Again'}
+            <RefreshCw className="w-4 h-4" /> {lang === 'zh' ? '再挑戰一次' : 'Try Again'}
           </button>
           <a
             href={`/${lang}/insights/`}
             className="inline-flex items-center gap-2 rounded-full border border-primary/20 px-6 py-3 text-sm font-medium text-foreground transition-all hover:bg-primary/5"
           >
-            📚 {lang === 'zh' ? '閱讀更多文章' : 'Read Articles'}
+            <BookOpen className="w-4 h-4" /> {lang === 'zh' ? '閱讀更多文章' : 'Read Articles'}
           </a>
         </div>
       </div>
@@ -314,12 +315,12 @@ export default function AIPMQuizPage({ lang = 'zh' }: { lang?: string }) {
           </span>
           <div className="flex items-center gap-3">
             {combo > 0 && (
-              <span className="text-sm font-bold text-orange-500 animate-pulse">
-                🔥 Combo x{combo}
+              <span className="inline-flex items-center gap-1 text-sm font-bold text-orange-500 animate-pulse">
+                <Flame className="w-4 h-4" /> Combo x{combo}
               </span>
             )}
-            <span className={`text-sm font-mono font-bold ${timer <= 10 ? 'text-red-500 animate-pulse' : 'text-muted-foreground'}`}>
-              ⏱ {timer}s
+            <span className={`inline-flex items-center gap-1 text-sm font-mono font-bold ${timer <= 10 ? 'text-red-500 animate-pulse' : 'text-muted-foreground'}`}>
+              <Clock className="w-3.5 h-3.5" /> {timer}s
             </span>
           </div>
         </div>
@@ -352,7 +353,7 @@ export default function AIPMQuizPage({ lang = 'zh' }: { lang?: string }) {
       {/* Flash feedback overlay */}
       {isCorrectFlash !== null && (
         <div className={`fixed inset-0 z-50 flex items-center justify-center pointer-events-none transition-opacity duration-300 ${isCorrectFlash ? 'bg-green-500/10' : 'bg-red-500/10'}`}>
-          <span className="text-6xl animate-bounce">{isCorrectFlash ? '✅' : '❌'}</span>
+          {isCorrectFlash ? <CheckCircle2 className="w-16 h-16 text-green-500 animate-bounce" /> : <XCircle className="w-16 h-16 text-red-500 animate-bounce" />}
         </div>
       )}
 

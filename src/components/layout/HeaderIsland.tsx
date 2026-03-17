@@ -33,6 +33,7 @@ const HeaderIsland = ({ lang, currentPath }: Props) => {
     { key: "about", anchor: "#about" },
     { key: "contact", anchor: "#contact" },
     { key: "insights", anchor: "/insights" },
+    { key: "quiz", anchor: "/quiz" },
   ];
 
   const switchLanguage = (code: string) => {
