@@ -47,3 +47,5 @@ In the financial industry, security and compliance are non-negotiable. This sess
 If you're interested in the slides or the technical deep-dives from these sessions, feel free to check out the official speaker page or reach out for a discussion!
 
 [👉 View Full Agenda and Speaker Details (iThome Hello World 2025)](https://hwdc.ithome.com.tw/2025/speaker-page/1582)
+
+💬 **Read more:** [2025 Year in Review (English)](/en/insights/2025-year-in-review-en)
