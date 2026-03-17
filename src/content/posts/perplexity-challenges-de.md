@@ -2,13 +2,14 @@
 title: "Das Dilemma von Perplexity: Wo liegen die Grenzen der KI-Suche?"
 titleEn: "Perplexity's Dilemma: Where Does AI Search Draw the Line?"
 titleDe: "Das Dilemma von Perplexity: Wo liegen die Grenzen der KI-Suche?"
-excerpt: "Perplexity steht vor einem 'Positionierungs'-Test: Einerseits sollen sie die Erwartungen an die 'KI-Suche der nächsten Generation' erfüllen, andererseits werden sie von verschiedenen Content-Anbietern durch rechtliche und kommerzielle Verhandlungen beansprucht."
-excerptEn: "Perplexity is caught between being the next-generation search paradigm and facing mounting legal pressure from content publishers. Can they find a deal structure that's fair to everyone?"
-excerptDe: "Perplexity steht vor einem 'Positionierungs'-Test: Einerseits sollen sie die Erwartungen an die 'KI-Suche der nächsten Generation' erfüllen, andererseits werden sie von verschiedenen Content-Anbietern durch rechtliche und kommerzielle Verhandlungen beansprucht."
+excerpt: "Perplexity steht vor einem 'Positionierungs'-Test: Einerseits sollen sie die Erwartungen an die 'KI-Suche der nächsten Generation' erfüllen, andererseits we..."
+excerptEn: "Perplexity is caught between being the next-generation search paradigm and facing mounting legal pressure from content publishers. Can they find a deal stru..."
+excerptDe: "Perplexity steht vor einem 'Positionierungs'-Test: Einerseits sollen sie die Erwartungen an die 'KI-Suche der nächsten Generation' erfüllen, andererseits we..."
 date: "2025-12-06"
 author: "Nils Liu"
 tags:
   - "News"
+  - "Blog"
   - "GenAI"
 coverImage: "/images/blog/perplexity-challenges.jpg"
 ---
@@ -22,3 +23,5 @@ Die eigentliche Herausforderung für sie heute ist eine "Positionierungs"-Prüfu
 Die gesamte Branche lotet derzeit die Grenzen der KI-Suche aus. Ich bin gespannt, ob Perplexity ein Modell etablieren kann, das sich für Content-Ersteller, Nutzer und Plattform fair anfühlt.
 
 [📰 Reuters: New York Times sues Perplexity AI for infringing copyright](https://www.reuters.com/legal/litigation/new-york-times-sues-perplexity-ai-infringing-copyright-works-2025-12-05/)
+
+💬 **Lese mehr:** [2025 Jahresrückblick (Auf Deutsch)](/de/insights/2025-year-in-review-de)

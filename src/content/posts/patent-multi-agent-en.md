@@ -2,16 +2,17 @@
 title: "[Patent 2] How AI Agents Optimize Databases? A GenAI PM's Multi-Agent Architecture Design Thinking"
 titleEn: "[Patent 2] How AI Agents Optimize Databases? A GenAI PM's Multi-Agent Architecture Design Thinking"
 titleDe: "[Patent 2] Wie AI Agents Datenbanken optimieren: Das Architektur-Design eines Multi-Agenten-Systems"
-excerpt: "Traditional DBAs manage databases on experience, but under high concurrency and complex loads, that's not enough. This article shares how a GenAI Product Owner designed a multi-AI-agent collaborative database optimization system and earned a utility patent."
-excerptEn: "Traditional DBAs manage databases on experience, but under high concurrency and complex loads, that's not enough. This article shares how a GenAI Product Owner designed a multi-AI-agent collaborative database optimization system and earned a utility patent."
-excerptDe: "Traditionelle DBAs verwalten Datenbanken nach Erfahrung, aber bei hoher Nebenläufigkeit reicht das nicht aus. Dieser Artikel zeigt, wie ein GenAI Product Owner ein auf Multi-Agenten basierendes Optimierungssystem entwarf."
+excerpt: "Traditional DBAs manage databases on experience, but under high concurrency and complex loads, that's not enough. This article shares how a GenAI Product Ow..."
+excerptEn: "Traditional DBAs manage databases on experience, but under high concurrency and complex loads, that's not enough. This article shares how a GenAI Product Ow..."
+excerptDe: "Traditionelle DBAs verwalten Datenbanken nach Erfahrung, aber bei hoher Nebenläufigkeit reicht das nicht aus. Dieser Artikel zeigt, wie ein GenAI Product Ow..."
 date: "2025-06-01"
 author: "Nils Liu"
 tags:
   - "Patent"
+  - "Blog"
   - "Agent"
   - "Architecture"
-coverImage: "/images/blog/patent-multi-agent.png"
+coverImage: "/images/blog/patent-multi-agent.webp"
 ---
 
 ## The DBA's Dilemma, The AI Agent's Opportunity
@@ -84,3 +85,5 @@ Another critical design in the system is the **Load Prediction Module**—using 
 ---
 
 *M671161 Smart Optimization System (AI-Driven Database Performance Prediction and Tuning) | Grant Date: 2025/06/01 | Sole Inventor: Nils Liu*
+
+💬 **Read more:** [2025 Year in Review (English)](/en/insights/2025-year-in-review-en)

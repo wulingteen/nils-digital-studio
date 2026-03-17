@@ -3,12 +3,13 @@ title: "Werden Sie Teil unseres Teams: Gemeinsam KI-Szenarien gestalten"
 titleEn: "Join the Team: Let's Create AI Use Cases Together"
 titleDe: "Werden Sie Teil unseres Teams: Gemeinsam KI-Szenarien gestalten"
 excerpt: "Unser Financial AI Technology Team sucht leidenschaftliche Experten für DevOps und Data Science, um gemeinsam GenAI-Anwendungen zu entwickeln und umzusetzen."
-excerptEn: "Our financial AI team is looking for DevOps and data science professionals passionate about deploying generative AI applications in real production environments."
+excerptEn: "Our financial AI team is looking for DevOps and data science professionals passionate about deploying generative AI applications in real production environm..."
 excerptDe: "Unser Financial AI Technology Team sucht leidenschaftliche Experten für DevOps und Data Science, um gemeinsam GenAI-Anwendungen zu entwickeln und umzusetzen."
 date: "2025-05-01"
 author: "Nils Liu"
 tags:
   - "Career"
+  - "Blog"
 coverImage: "/images/blog/ai-team-recruitment.jpg"
 ---
 
@@ -17,3 +18,5 @@ coverImage: "/images/blog/ai-team-recruitment.jpg"
 Unser Financial AI Technology Team sucht leidenschaftliche Experten für DevOps und Data Science, um gemeinsam GenAI-Anwendungen zu entwickeln und umzusetzen!
 
 Ihre Rolle wird das Entwerfen, Entwickeln und Bereitstellen von skalierbaren Systemarchitekturen zur Lösung realer kommerzieller Bedürfnisse sein. Wir veröffentlichen Arbeiten, melden Patente an und übersetzen PoCs schnell in produktionsreife Realität.
+
+💬 **Lese mehr:** [2025 Jahresrückblick (Auf Deutsch)](/de/insights/2025-year-in-review-de)

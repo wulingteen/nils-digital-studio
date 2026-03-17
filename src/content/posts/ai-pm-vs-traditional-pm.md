@@ -2,15 +2,16 @@
 title: "AI 產品經理與傳統 PM 差在哪？產品經理轉型的必備 AI PM 技能樹"
 titleEn: "AI PM vs Traditional PM: A Complete Skill Tree for the PM Transition"
 titleDe: "AI PM vs. Traditioneller PM: Ein vollständiger Skill-Tree-Vergleich"
-excerpt: "想從傳統 PM 進行產品經理轉型？AI 產品經理需要寫程式嗎？結合 OpenAI 副總裁 Peter Deng 與 Vibe Coding 哲學，拆解你缺少的 AI PM 技能樹與思維。"
+excerpt: "想從傳統 PM 進行產品經理轉型？AI 產品經理需要寫程式嗎？結合 OpenAI 副總裁 Peter Deng 與 Vibe Coding 哲學，拆解你缺少的 AI PM 技能樹與思維。 我被問過最多次的問題就是：「AI 產品經理跟傳統 PM 到底差在哪裡？如果我要進行產品經理轉型，需要會寫程式..."
 excerptEn: "Does an AI PM need to code? A complete skill tree breakdown comparing AI PMs' skills, including Vibe Coding and specialized evaluation, versus traditional PMs."
 excerptDe: "Muss ein AI PM programmieren können? Ein vollständiger Skill-Tree-Vergleich, einschließlich Vibe Coding, von AI PMs."
 date: "2026-03-04"
 author: "Nils Liu"
 tags:
   - "AI PM 系列"
+  - "Blog"
   - "Career"
-coverImage: "/images/blog/ai-pm-base.png"
+coverImage: "/images/blog/ai-pm-base.webp"
 seriesInfo:
   name: "AI PM 的真實工作"
   part: 1
@@ -83,3 +84,6 @@ AI 產出的結果是機率性的，沒有絕對的標準答案。你的 Evaluat
 | 風險護欄與無感智能設計 | △ 加分 | **✅✅ 絕對核心** |
 
 > *這是「AI PM 系列」文章。下一篇我們將探討，為什麼在金融業做 AI PM 的難度是其他行業的 10 倍。如果你不提前掌握這些護欄設計，你將被懂 AI 的競爭者無情淘汰。請務必將此篇加入學習路徑，我們下週揭曉...*
+
+
+💬 **延伸閱讀：** [2025 年度回顧與未來展望](/zh/insights/2025-year-in-review)

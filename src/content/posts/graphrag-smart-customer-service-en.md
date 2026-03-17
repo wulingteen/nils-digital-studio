@@ -2,13 +2,14 @@
 title: "GraphRAG: Reshaping Smart Customer Service with Knowledge Graph Reasoning"
 titleEn: "GraphRAG: Reshaping Smart Customer Service with Knowledge Graph Reasoning"
 titleDe: "GraphRAG verbindet Erinnerungen mit Knowledge Graphs und revolutioniert die Schlussfolgerung im intelligenten Kundenservice"
-excerpt: "GraphRAG replaces flat vector retrieval with graph-structured knowledge, enabling multi-hop reasoning and consistent context — 86% accuracy on RobustQA vs. 33–76% for traditional RAG."
-excerptEn: "GraphRAG replaces flat vector retrieval with graph-structured knowledge, enabling multi-hop reasoning and consistent context — 86% accuracy on RobustQA vs. 33–76% for traditional RAG."
-excerptDe: "GraphRAG ersetzt Einzelpunktsuchen durch eine graphbasierte Wissensstruktur. Es nutzt die Beziehungen zwischen Knoten und Kanten, um die Generierung zu unterstützen, den Kontextkonsens beizubehalten und Multi-Hop-Schlussfolgerungen zu ermöglichen."
+excerpt: "GraphRAG replaces flat vector retrieval with graph-structured knowledge, enabling multi-hop reasoning and consistent context — 86% accuracy on RobustQA vs...."
+excerptEn: "GraphRAG replaces flat vector retrieval with graph-structured knowledge, enabling multi-hop reasoning and consistent context — 86% accuracy on RobustQA vs...."
+excerptDe: "GraphRAG ersetzt Einzelpunktsuchen durch eine graphbasierte Wissensstruktur. Es nutzt die Beziehungen zwischen Knoten und Kanten, um die Generierung zu unte..."
 date: "2025-11-10"
 author: "Nils Liu"
 tags:
   - "GenAI"
+  - "Blog"
   - "Architecture"
 coverImage: "/images/blog/graphrag-knowledge.jpg"
 ---
@@ -24,3 +25,5 @@ Our prototype drew from three data sources: customer conversation history, finan
 RobustQA benchmarks: **GraphRAG achieved 86% accuracy**, versus 33–76% for conventional RAG variants.
 
 The caveats: GraphRAG adds system complexity, cost, and requires careful attention to privacy architecture. But for applications where reasoning quality is the point, the investment is worth it.
+
+💬 **Read more:** [2025 Year in Review (English)](/en/insights/2025-year-in-review-en)

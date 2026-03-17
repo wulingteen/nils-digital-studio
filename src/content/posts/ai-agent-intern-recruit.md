@@ -2,13 +2,14 @@
 title: "招募實習生｜海外 AI Agent 平台｜全端/後端/GenAI"
 titleEn: "We're Hiring Interns: Overseas AI Agent Platform | Full-Stack / Backend / GenAI"
 titleDe: "Praktikanten gesucht | KI-Agenten-Plattform in Übersee | Fullstack/Backend/GenAI"
-excerpt: "我們在做一個「真的會上線、真的有人用」的 AI Agent 平台：把 GenAI 串進工作流程，從資料處理到 tools & workflows 的調度。"
-excerptEn: "We're building an AI Agent platform that actually ships to real users — want to go from PoC to production? We're looking for full-stack, backend, and GenAI interns."
-excerptDe: "Wir bauen eine KI-Agenten-Plattform, die 'wirklich live geht und von echten Menschen genutzt wird', indem wir GenAI in Arbeitsabläufe integrieren – von der Datenverarbeitung bis zur Orchestrierung von Tools und Workflows."
+excerpt: "我們在做一個「真的會上線、真的有人用」的 AI Agent 平台：把 GenAI 串進工作流程，從資料處理到 tools & workflows 的調度。 【招募實習生｜海外 AI Agent 平台｜全端/後端/GenAI】 我們在做一個「真的會上線、真的有人用」的 AI Agent 平台：把 ..."
+excerptEn: "We're building an AI Agent platform that actually ships to real users — want to go from PoC to production? We're looking for full-stack, backend, and GenAI..."
+excerptDe: "Wir bauen eine KI-Agenten-Plattform, die 'wirklich live geht und von echten Menschen genutzt wird', indem wir GenAI in Arbeitsabläufe integrieren – von der..."
 date: "2026-01-21"
 author: "Nils Liu"
 tags:
   - "Career"
+  - "Blog"
   - "Agent"
 coverImage: "/images/blog/ai-agent-intern.jpg"
 ---
@@ -32,3 +33,6 @@ coverImage: "/images/blog/ai-agent-intern.jpg"
 地點：台北／混合（依安排）
 
 有興趣請私訊我：履歷 + GitHub/作品 + 想投方向（全端/後端/GenAI）+ 最想學的 1 件事
+
+
+💬 **延伸閱讀：** [2025 年度回顧與未來展望](/zh/insights/2025-year-in-review)

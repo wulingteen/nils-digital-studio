@@ -9,6 +9,7 @@ date: "2025-10-23"
 author: "Nils Liu"
 tags:
   - "GenAI"
+  - "Blog"
   - "News"
 coverImage: "/images/blog/jason-wei-ai.jpg"
 ---
@@ -18,3 +19,5 @@ Jason Wei's talk gave me one of those genuine "aha" moments — the kind that ac
 The systematic approach to finding AI use cases he lays out is exactly the framework I wish I'd articulated earlier. Most product teams hunt for AI applications opportunistically; what he describes is principled. I left the talk with a clearer methodology for the next round of scoping work.
 
 Worth the time.
+
+💬 **Read more:** [2025 Year in Review (English)](/en/insights/2025-year-in-review-en)

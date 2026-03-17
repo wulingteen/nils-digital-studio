@@ -2,16 +2,17 @@
 title: "[Patent 6] Aufbau eines Knowledge Graphs aus der Perspektive eines GenAI Product Owners: Mein erstes KI-Patent"
 titleEn: "[Patent 6] Building a Knowledge Graph from a GenAI Product Owner's Perspective: My First AI Patent"
 titleDe: "[Patent 6] Aufbau eines Knowledge Graphs aus der Perspektive eines GenAI Product Owners: Mein erstes KI-Patent"
-excerpt: "Wie konzipiert ein Bank-GenAI-Produktmanager ein LLM-System, das als Antwort auf Geschäftsprobleme automatisch einen Knowledge Graph aufbaut, und erhält dafür ein Patent? Dieser Artikel teilt den kompletten Denkprozess."
-excerptEn: "How does a bank GenAI Product Manager design an LLM system that automatically builds a knowledge graph from business pain points, and successfully obtain a utility patent? This article shares the complete thought process from requirement to patent."
-excerptDe: "Wie konzipiert ein Bank-GenAI-Produktmanager ein LLM-System, das als Antwort auf Geschäftsprobleme automatisch einen Knowledge Graph aufbaut, und erhält dafür ein Patent? Dieser Artikel teilt den kompletten Denkprozess."
+excerpt: "Wie konzipiert ein Bank-GenAI-Produktmanager ein LLM-System, das als Antwort auf Geschäftsprobleme automatisch einen Knowledge Graph aufbaut, und erhält daf..."
+excerptEn: "How does a bank GenAI Product Manager design an LLM system that automatically builds a knowledge graph from business pain points, and successfully obtain a..."
+excerptDe: "Wie konzipiert ein Bank-GenAI-Produktmanager ein LLM-System, das als Antwort auf Geschäftsprobleme automatisch einen Knowledge Graph aufbaut, und erhält daf..."
 date: "2025-11-01"
 author: "Nils Liu"
 tags:
   - "Patent"
+  - "Blog"
   - "GenAI"
   - "Architecture"
-coverImage: "/images/blog/patent-knowledge-graph.png"
+coverImage: "/images/blog/patent-knowledge-graph.webp"
 ---
 
 ## Warum benötigen Banken einen "selbstlernenden" Knowledge Graph?
@@ -68,3 +69,5 @@ Wenn Sie ein Unternehmens-GenAI-Produkt planen, lohnt es sich, folgende Fragen z
 ---
 
 *M676680 System zur Konstruktion von Knowledge Graphs | Erteilt: 2025/11/01 | Alleiniger Erfinder: Nils Liu*
+
+💬 **Lese mehr:** [2025 Jahresrückblick (Auf Deutsch)](/de/insights/2025-year-in-review-de)

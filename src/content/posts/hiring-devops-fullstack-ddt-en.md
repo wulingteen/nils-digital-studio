@@ -4,11 +4,12 @@ titleEn: "Nils Is Looking for Teammates! DevOps & Full-Stack Engineers Wanted"
 titleDe: "Nils sucht Teamkollegen! Stellen für DevOps- und Fullstack-Ingenieure offen"
 excerpt: "We're taking financial AI to Southeast Asia and looking for two engineers. DevOps and full-stack roles open in Taipei Xinyi."
 excerptEn: "We're taking financial AI to Southeast Asia and looking for two engineers. DevOps and full-stack roles open in Taipei Xinyi."
-excerptDe: "Verwandeln generativer KI, moderner Finanztechnologien und intelligenter Finanzanwendungen in skalierbare Produkte und Dienstleistungen – wir bringen Finanz-KI gemeinsam in internationale Märkte."
+excerptDe: "Verwandeln generativer KI, moderner Finanztechnologien und intelligenter Finanzanwendungen in skalierbare Produkte und Dienstleistungen – wir bringen Finanz..."
 date: "2025-08-07"
 author: "Nils Liu"
 tags:
   - "Career"
+  - "Blog"
 coverImage: "/images/blog/hiring-devops.jpg"
 ---
 
@@ -37,3 +38,5 @@ We're taking financial AI to Southeast Asia, and I'm looking for two engineers t
 - Finance-grade problems, large-scale users, and a cross-border market
 - Top-down commitment to AI R&D (including PoC, paper, and patent opportunities)
 - Competitive compensation, full benefits, and real learning infrastructure
+
+💬 **Read more:** [2025 Year in Review (English)](/en/insights/2025-year-in-review-en)

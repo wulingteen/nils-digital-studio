@@ -2,16 +2,17 @@
 title: "[Patent 3] GenAI Compliance Design Key Tech: How a Bank AI PM Used 'Sensitive Info Substitution' to Balance Performance & Compliance"
 titleEn: "[Patent 3] GenAI Compliance Design Key Tech: How a Bank AI PM Used 'Sensitive Info Substitution' to Balance Performance & Compliance"
 titleDe: "[Patent 3] GenAI Compliance-Design: Wie ein Bank-AI-PM 'sensible Informationssubstitution' nutzte, um Leistung & Compliance zu vereinen"
-excerpt: "When introducing an AI knowledge base query system in a bank, how do you prevent PII leaks without sacrificing response quality? This article introduces a GenAI Product Owner's patent architecture for sensitive info filtering and substitution."
-excerptEn: "When introducing an AI knowledge base query system in a bank, how do you prevent PII leaks without sacrificing response quality? This article introduces a GenAI Product Owner's patent architecture for sensitive info filtering and substitution."
-excerptDe: "Wie verhindert man bei der Einführung eines KI-Wissensdatenbanksystems in einer Bank Datenlecks, ohne die Antwortqualität zu beeinträchtigen? Dieser Artikel stellt die Patentarchitektur für das Filtern und Ersetzen sensibler Informationen vor."
+excerpt: "When introducing an AI knowledge base query system in a bank, how do you prevent PII leaks without sacrificing response quality? This article introduces a G..."
+excerptEn: "When introducing an AI knowledge base query system in a bank, how do you prevent PII leaks without sacrificing response quality? This article introduces a G..."
+excerptDe: "Wie verhindert man bei der Einführung eines KI-Wissensdatenbanksystems in einer Bank Datenlecks, ohne die Antwortqualität zu beeinträchtigen? Dieser Artikel..."
 date: "2025-06-01"
 author: "Nils Liu"
 tags:
   - "Patent"
+  - "Blog"
   - "GenAI"
   - "Architecture"
-coverImage: "/images/blog/patent-pii-filter.png"
+coverImage: "/images/blog/patent-pii-filter.webp"
 ---
 
 ## The Compliance Nightmare Every GenAI PM Will Face
@@ -84,3 +85,5 @@ Record every single query and substitution to support post-event auditing and co
 ---
 
 *M671223 Information Query System (Sensitive Information Filtering and Substitution) | Grant Date: 2025/06/01 | Sole Inventor: Nils Liu*
+
+💬 **Read more:** [2025 Year in Review (English)](/en/insights/2025-year-in-review-en)

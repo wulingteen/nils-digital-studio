@@ -2,13 +2,14 @@
 title: "OpenAI DevDay 2024: Eine technologische Revolution für Entwickler"
 titleEn: "OpenAI DevDay 2024: A Technical Revolution for Developers"
 titleDe: "OpenAI DevDay 2024: Eine technologische Revolution für Entwickler"
-excerpt: "OpenAI zeigte vier große Innovationen: Vision Fine-Tuning, Realtime API, Model Distillation und Prompt Caching, wodurch mehr Kontrolle in die Hände der Entwickler gelegt wird."
-excerptEn: "OpenAI showcased four major innovations: Vision Fine-Tuning, Realtime API, Model Distillation, and Prompt Caching — handing more creative control to developers than ever before."
-excerptDe: "OpenAI zeigte vier große Innovationen: Vision Fine-Tuning, Realtime API, Model Distillation und Prompt Caching, wodurch mehr Kontrolle in die Hände der Entwickler gelegt wird."
+excerpt: "OpenAI zeigte vier große Innovationen: Vision Fine-Tuning, Realtime API, Model Distillation und Prompt Caching, wodurch mehr Kontrolle in die Hände der Entw..."
+excerptEn: "OpenAI showcased four major innovations: Vision Fine-Tuning, Realtime API, Model Distillation, and Prompt Caching — handing more creative control to develop..."
+excerptDe: "OpenAI zeigte vier große Innovationen: Vision Fine-Tuning, Realtime API, Model Distillation und Prompt Caching, wodurch mehr Kontrolle in die Hände der Entw..."
 date: "2024-10-02"
 author: "Nils Liu"
 tags:
   - "News"
+  - "Blog"
   - "GenAI"
 coverImage: "/images/blog/openai-devday-2024.png"
 ---
@@ -23,3 +24,5 @@ Gestern hat OpenAI auf dem DevDay 2024 vier große Neuerungen vorgestellt: Visio
 - **Model Distillation:** Die Ausgaben High-End-Modellen nutzen, um kleinere, effizientere Modelle zu trainieren.
 
 OpenAI legt deutlich mehr Kontrolle, Anpassungsfähigkeit und Kostenmanagement in die Hände der Entwickler. Das ist ein großer Gewinn für den gesamten Entwicklerbereich.
+
+💬 **Lese mehr:** [2025 Jahresrückblick (Auf Deutsch)](/de/insights/2025-year-in-review-de)

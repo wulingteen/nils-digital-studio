@@ -2,16 +2,17 @@
 title: "為什麼在銀行做 AI 是最難的戰場？深度解析金融業 AI 轉型與落地挑戰"
 titleEn: "Why Deploying LLMs in Banking Is 10x Harder Than You Think"
 titleDe: "Warum die KI-Einführung im Bankwesen 10x schwieriger ist als gedacht"
-excerpt: "金融業 AI 轉型不是選個模型就好。資安、法遵、資料治理——這是將銀行 AI 系統從 1 推向 100 的必經之路，也是 AI 落地挑戰最真實的面貌。"
-excerptEn: "Deploying AI in a bank isn't just picking a model. Compliance, security, data governance, organizational culture — each hurdle is the necessary path from 1 to 100."
-excerptDe: "KI in einer Bank einzusetzen bedeutet nicht einfach ein Modell auszuwählen. Compliance, Sicherheit, Data Governance, Organisationskultur — jede Hürde ist der notwendige Weg von 1 bis 100."
+excerpt: "金融業 AI 轉型不是選個模型就好。資安、法遵、資料治理——這是將銀行 AI 系統從 1 推向 100 的必經之路，也是 AI 落地挑戰最真實的面貌。 在新創公司開發 Generative AI 產品，你可能靠著 Vibe Coding（與編輯器對話直接產出程式碼）三天就能上線一個 Chatbo..."
+excerptEn: "Deploying AI in a bank isn't just picking a model. Compliance, security, data governance, organizational culture — each hurdle is the necessary path from 1..."
+excerptDe: "KI in einer Bank einzusetzen bedeutet nicht einfach ein Modell auszuwählen. Compliance, Sicherheit, Data Governance, Organisationskultur — jede Hürde ist de..."
 date: "2026-03-03"
 author: "Nils Liu"
 tags:
   - "AI PM 系列"
+  - "Blog"
   - "GenAI"
   - "Architecture"
-coverImage: "/images/blog/ai-pm-base.png"
+coverImage: "/images/blog/ai-pm-base.webp"
 seriesInfo:
   name: "AI PM 的真實工作"
   part: 2
@@ -104,3 +105,6 @@ seriesInfo:
 **越難克服的監管挑戰，打造出來的護城河就越深。** 如果你能在銀行端將一套 AI 系統從 1 成功帶到 100，那麼你在世界上任何行業的 AI 產品主戰場，都能輕易勝出。
 
 > *這是「AI PM 系列」文章。下一篇我們將帶你揭開 AI 產品經理一整天的真實日常。*
+
+
+💬 **延伸閱讀：** [2025 年度回顧與未來展望](/zh/insights/2025-year-in-review)

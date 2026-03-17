@@ -2,13 +2,14 @@
 title: "2025 Year in Review: The Quiet Power of Steady Progress"
 titleEn: "2025 Year in Review: The Quiet Power of Steady Progress"
 titleDe: "Jahresrückblick 2025: Die stille Kraft stetigen Fortschritts"
-excerpt: "My 2025 AI journey in four numbers: 6, 5, 1, 6. Not because it was glamorous, but because it was grounded. Building GenAI in a bank is like replacing the plumbing in an operating building — the real challenge isn't the model, it's engineering and trust."
-excerptEn: "My 2025 AI journey in four numbers: 6, 5, 1, 6. Not because it was glamorous, but because it was grounded. Building GenAI in a bank is like replacing the plumbing in an operating building — the real challenge isn't the model, it's engineering and trust."
-excerptDe: "Mein KI-Abenteuer 2025 in vier Zahlen: 6, 5, 1, 6. Nicht weil es so glamourös war, sondern weil es bodenständig blieb. GenAI in einer Bank zu implementieren ist wie das Auswechseln von Rohren in einem bewohnten Gebäude."
+excerpt: "My 2025 AI journey in four numbers: 6, 5, 1, 6. Not because it was glamorous, but because it was grounded. Building GenAI in a bank is like replacing the pl..."
+excerptEn: "My 2025 AI journey in four numbers: 6, 5, 1, 6. Not because it was glamorous, but because it was grounded. Building GenAI in a bank is like replacing the pl..."
+excerptDe: "Mein KI-Abenteuer 2025 in vier Zahlen: 6, 5, 1, 6. Nicht weil es so glamourös war, sondern weil es bodenständig blieb. GenAI in einer Bank zu implementieren..."
 date: "2025-12-31"
 author: "Nils Liu"
 tags:
   - "Career"
+  - "Blog"
   - "Patent"
   - "Event"
 coverImage: "/images/blog/2025-year-in-review.jpg"
@@ -96,3 +97,5 @@ In 2026, I will keep running.
 > *Run, don’t walk! Either you’re running for food, or you’re running from being food.*
 
 #YearInReview #GenAI #Patents #Research #DevOpsDay #HelloWorld #DevFestTaipei #AIGovernance #Productization
+
+💬 **Read more:** [2025 Year in Review (English)](/en/insights/2025-year-in-review-en)

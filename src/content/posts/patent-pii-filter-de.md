@@ -2,16 +2,17 @@
 title: "[Patent 3] GenAI Compliance-Design: Wie ein Bank-AI-PM 'sensible Informationssubstitution' nutzte, um Leistung & Compliance zu vereinen"
 titleEn: "[Patent 3] GenAI Compliance Design Key Tech: How a Bank AI PM Used 'Sensitive Info Substitution' to Balance Performance & Compliance"
 titleDe: "[Patent 3] GenAI Compliance-Design: Wie ein Bank-AI-PM 'sensible Informationssubstitution' nutzte, um Leistung & Compliance zu vereinen"
-excerpt: "Wie verhindert man bei der Einführung eines KI-Wissensdatenbanksystems in einer Bank Datenlecks, ohne die Antwortqualität zu beeinträchtigen? Dieser Artikel stellt die Patentarchitektur für das Filtern und Ersetzen sensibler Informationen vor."
-excerptEn: "When introducing an AI knowledge base query system in a bank, how do you prevent PII leaks without sacrificing response quality? This article introduces a GenAI Product Owner's patent architecture for sensitive info filtering and substitution."
-excerptDe: "Wie verhindert man bei der Einführung eines KI-Wissensdatenbanksystems in einer Bank Datenlecks, ohne die Antwortqualität zu beeinträchtigen? Dieser Artikel stellt die Patentarchitektur für das Filtern und Ersetzen sensibler Informationen vor."
+excerpt: "Wie verhindert man bei der Einführung eines KI-Wissensdatenbanksystems in einer Bank Datenlecks, ohne die Antwortqualität zu beeinträchtigen? Dieser Artikel..."
+excerptEn: "When introducing an AI knowledge base query system in a bank, how do you prevent PII leaks without sacrificing response quality? This article introduces a G..."
+excerptDe: "Wie verhindert man bei der Einführung eines KI-Wissensdatenbanksystems in einer Bank Datenlecks, ohne die Antwortqualität zu beeinträchtigen? Dieser Artikel..."
 date: "2025-06-01"
 author: "Nils Liu"
 tags:
   - "Patent"
+  - "Blog"
   - "GenAI"
   - "Architecture"
-coverImage: "/images/blog/patent-pii-filter.png"
+coverImage: "/images/blog/patent-pii-filter.webp"
 ---
 
 ## Der Compliance-Albtraum jedes GenAI PMs
@@ -84,3 +85,5 @@ Jede einzelne Abfrage und Ersetzung wird protokolliert, um nachträgliche Audits
 ---
 
 *M671223 Informationsabfragesystem (Filterung und Ersetzung sensibler Informationen) | Erteilt: 2025/06/01 | Alleiniger Erfinder: Nils Liu*
+
+💬 **Lese mehr:** [2025 Jahresrückblick (Auf Deutsch)](/de/insights/2025-year-in-review-de)

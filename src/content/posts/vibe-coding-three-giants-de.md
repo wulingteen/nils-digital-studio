@@ -9,6 +9,7 @@ date: "2025-09-02"
 author: "Nils Liu"
 tags:
   - "News"
+  - "Blog"
   - "GenAI"
 coverImage: "/images/blog/vibe-coding.jpg"
 ---
@@ -20,3 +21,5 @@ Vibe Coding im Jahr 2025 fühlt sich ein bisschen an wie an einem Gacha-Automate
 1. **Codex** von OpenAI
 2. **Gemini** von Google
 3. **Claude** von Anthropic
+
+💬 **Lese mehr:** [2025 Jahresrückblick (Auf Deutsch)](/de/insights/2025-year-in-review-de)

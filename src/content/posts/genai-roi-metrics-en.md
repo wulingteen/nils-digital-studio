@@ -21,3 +21,6 @@ Generative AI is inherently expensive to run. If you cannot quantify its value, 
 4. **Token Efficiency ROI:** The cost of generating the output versus the estimated cost of human labor for the same output. If 1,000 queries cost $10 in API fees but save 50 hours of human labor, the ROI is mathematically undeniable.
 
 Stop selling "magic." Start selling verified operational metrics.
+
+
+💬 **Read more:** [2025 Year in Review (English)](/en/insights/2025-year-in-review-en)

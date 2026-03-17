@@ -3,7 +3,7 @@ title: "AI PM vs Traditional PM: A Complete Skill Tree Breakdown"
 excerpt: "Does an AI PM need to code? Need to understand math? A complete skill tree breakdown comparing AI PMs and traditional PMs."
 author: "Nils Liu"
 date: 2025-05-18
-coverImage: "/images/blog/ai-pm-base.png"
+coverImage: "/images/blog/ai-pm-base.webp"
 tags: ["AI PM", "GenAI", "Product Management", "Career"]
 seriesInfo:
   part: 1
@@ -24,3 +24,6 @@ To bridge this gap, AI PMs must excel in:
 - **Evaluation Engineering:** If A/B testing was the gold standard for traditional PMs, LLM-as-a-Judge and ROUGE/BLEU scores (or semantic similarity) are the equivalents for AI PMs. You must define what "good" output looks like mathematically.
 
 Products are no longer just pixels on a screen. They are dynamic psychological entities, and it takes an AI PM to steer them toward delivering genuine value.
+
+
+💬 **Read more:** [2025 Year in Review (English)](/en/insights/2025-year-in-review-en)

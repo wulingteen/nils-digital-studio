@@ -2,16 +2,17 @@
 title: "[Patent 5] GenAI Security Blind Spots: How a Product Owner Built Adaptive Security with AI"
 titleEn: "[Patent 5] GenAI Security Blind Spots: How a Product Owner Built Adaptive Security with AI"
 titleDe: "[Patent 5] Sicherheitslücken in GenAI: Wie ein Product Owner adaptive Sicherheit mit KI entwickelte"
-excerpt: "When a GenAI system queries sensitive data, how do you prevent malicious users from bypassing security? This article details how a bank AI Product Manager designed a dynamic access control patent, using AI to guard AI."
-excerptEn: "When a GenAI system queries sensitive data, how do you prevent malicious users from bypassing security? This article details how a bank AI Product Manager designed a dynamic access control patent, using AI to guard AI."
-excerptDe: "Wenn ein GenAI-System sensible Daten abfragt, wie verhindert man, dass böswillige Nutzer die Sicherheit umgehen? Dieser Artikel beschreibt detailliert, wie ein Bank-KI-Produktmanager ein dynamisches Zugriffskontroll-Patent entwarf."
+excerpt: "When a GenAI system queries sensitive data, how do you prevent malicious users from bypassing security? This article details how a bank AI Product Manager d..."
+excerptEn: "When a GenAI system queries sensitive data, how do you prevent malicious users from bypassing security? This article details how a bank AI Product Manager d..."
+excerptDe: "Wenn ein GenAI-System sensible Daten abfragt, wie verhindert man, dass böswillige Nutzer die Sicherheit umgehen? Dieser Artikel beschreibt detailliert, wie..."
 date: "2025-09-11"
 author: "Nils Liu"
 tags:
   - "Patent"
+  - "Blog"
   - "GenAI"
   - "Architecture"
-coverImage: "/images/blog/patent-adaptive-security.png"
+coverImage: "/images/blog/patent-adaptive-security.webp"
 ---
 
 ## "Using AI to Guard AI"—It's Not a Slogan, It's Architectural Design
@@ -74,3 +75,5 @@ It's not a binary judgment of "do you have permission," but rather "in this cont
 ---
 
 *M674713 Data Query System (Generative Adaptive Security Strategy) | Grant Date: 2025/09/11 | Sole Inventor: Nils Liu*
+
+💬 **Read more:** [2025 Year in Review (English)](/en/insights/2025-year-in-review-en)

@@ -2,13 +2,14 @@
 title: "Mira Murati's Thinking Machine Lab: A Breakthrough in Deterministic AI Reasoning"
 titleEn: "Mira Murati's Thinking Machine Lab: A Breakthrough in Deterministic AI Reasoning"
 titleDe: "Mira Muratis Thinking Machine Lab: Ein Durchbruch im deterministischen KI-Schlussfolgern"
-excerpt: "Does setting temperature to 0 give perfectly consistent AI outputs? No — and Thinking Machine Lab found out why. Batch processing is the culprit, and they built a fix."
-excerptEn: "Does setting temperature to 0 give perfectly consistent AI outputs? No — and Thinking Machine Lab found out why. Batch processing is the culprit, and they built a fix."
-excerptDe: "Erhält man absolut konsistente Ergebnisse, wenn man die Temperatur des KI-Modells auf 0 setzt? Die Antwort ist nein, und eine Studie von Thinking Machine Lab deckt die grundlegenden Gründe auf."
+excerpt: "Does setting temperature to 0 give perfectly consistent AI outputs? No — and Thinking Machine Lab found out why. Batch processing is the culprit, and they b..."
+excerptEn: "Does setting temperature to 0 give perfectly consistent AI outputs? No — and Thinking Machine Lab found out why. Batch processing is the culprit, and they b..."
+excerptDe: "Erhält man absolut konsistente Ergebnisse, wenn man die Temperatur des KI-Modells auf 0 setzt? Die Antwort ist nein, und eine Studie von Thinking Machine La..."
 date: "2025-09-13"
 author: "Nils Liu"
 tags:
   - "News"
+  - "Blog"
   - "GenAI"
   - "Architecture"
 coverImage: "/images/blog/thinking-machine-lab.jpg"
@@ -32,3 +33,5 @@ For most use cases, the speed cost isn't worth it. For regulated financial, heal
 A practical diagnostic: run the same prompt 100 times and count how many distinct outputs you get. If you're building anything mission-critical with AI, you should know that number.
 
 The encouraging part: this is a *solvable* technical problem, not an inherent property of AI systems. Expect the performance cost to come down as the approach matures.
+
+💬 **Read more:** [2025 Year in Review (English)](/en/insights/2025-year-in-review-en)

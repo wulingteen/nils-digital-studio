@@ -2,13 +2,14 @@
 title: "RAG 系統設計：金融知識庫的 3 個關鍵決策"
 titleEn: "RAG System Design: 3 Key Decisions for Financial Knowledge Bases"
 titleDe: "RAG-Systemdesign: 3 Schlüsselentscheidungen für Finanz-Wissensdatenbanken"
-excerpt: "在銀行建 RAG 系統，chunk 策略、embedding 模型、retrieval pipeline 三個決策點怎麼選？實戰經驗分享。"
+excerpt: "在銀行建 RAG 系統，chunk 策略、embedding 模型、retrieval pipeline 三個決策點怎麼選？實戰經驗分享。 RAG（Retrieval-Augmented Generation）是 2024-2025 最熱門的企業 AI 架構。但真正在企業環境中建過 RAG 系統..."
 excerptEn: "Building a RAG system in banking: how to choose your chunk strategy, embedding model, and retrieval pipeline. Lessons from real production experience."
 excerptDe: "Ein RAG-System im Bankwesen aufbauen: Wie wählt man Chunk-Strategie, Embedding-Modell und Retrieval-Pipeline? Erfahrungen aus der Produktion."
 date: "2026-03-05"
 author: "Nils Liu"
 tags:
   - "GenAI 實戰"
+  - "Blog"
   - "GenAI"
   - "Architecture"
 coverImage: "/images/blog/genai-action.jpg"
@@ -123,3 +124,6 @@ Query → Query Rewriting → Hybrid Search (Vector + BM25)
 ---
 
 *這是「GenAI 產品實戰筆記」系列的第一篇。*
+
+
+💬 **延伸閱讀：** [2025 年度回顧與未來展望](/zh/insights/2025-year-in-review)

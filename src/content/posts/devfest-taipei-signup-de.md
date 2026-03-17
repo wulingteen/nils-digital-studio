@@ -9,6 +9,7 @@ date: "2025-10-28"
 author: "Nils Liu"
 tags:
   - "Event"
+  - "Blog"
   - "Agent"
 coverImage: "/images/blog/devfest-taipei-announce.jpg"
 ---
@@ -18,3 +19,5 @@ coverImage: "/images/blog/devfest-taipei-announce.jpg"
 Am 30. November werde ich auf der DevFest Taipei 2025 der Google GDG am NTU-Campus über angewandte KI-Agententeams sprechen. 
 
 Der Eintritt ist frei (nach erfolgter Registrierung). Ich freue mich darauf, viele von Ihnen dort zu sehen!
+
+💬 **Lese mehr:** [2025 Jahresrückblick (Auf Deutsch)](/de/insights/2025-year-in-review-de)

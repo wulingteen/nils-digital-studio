@@ -2,16 +2,17 @@
 title: "【專利二】AI Agent 怎麼優化資料庫？一個 GenAI PM 的多代理架構設計思考"
 titleEn: "[Patent 2] How AI Agents Optimize Databases? A GenAI PM's Multi-Agent Architecture Design Thinking"
 titleDe: "[Patent 2] Wie AI Agents Datenbanken optimieren: Das Architektur-Design eines Multi-Agenten-Systems"
-excerpt: "傳統 DBA 靠經驗管資料庫，但在高併發、複雜負載的環境下，這不夠用。本文分享一位 GenAI Product Owner 如何設計多 AI 代理協作的資料庫智慧優化系統，並取得新型專利。"
-excerptEn: "Traditional DBAs manage databases on experience, but under high concurrency and complex loads, that's not enough. This article shares how a GenAI Product Owner designed a multi-AI-agent collaborative database optimization system and earned a utility patent."
-excerptDe: "Traditionelle DBAs verwalten Datenbanken nach Erfahrung, aber bei hoher Nebenläufigkeit reicht das nicht aus. Dieser Artikel zeigt, wie ein GenAI Product Owner ein auf Multi-Agenten basierendes Optimierungssystem entwarf."
+excerpt: "傳統 DBA 靠經驗管資料庫，但在高併發、複雜負載的環境下，這不夠用。本文分享一位 GenAI Product Owner 如何設計多 AI 代理協作的資料庫智慧優化系統，並取得新型專利。 資料庫優化是一門黑魔法。 資深 DBA 靠的是多年累積的直覺：看到某個查詢 pattern，知道要加什麼 ..."
+excerptEn: "Traditional DBAs manage databases on experience, but under high concurrency and complex loads, that's not enough. This article shares how a GenAI Product Ow..."
+excerptDe: "Traditionelle DBAs verwalten Datenbanken nach Erfahrung, aber bei hoher Nebenläufigkeit reicht das nicht aus. Dieser Artikel zeigt, wie ein GenAI Product Ow..."
 date: "2025-06-01"
 author: "Nils Liu"
 tags:
   - "Patent"
+  - "Blog"
   - "Agent"
   - "Architecture"
-coverImage: "/images/blog/patent-multi-agent.png"
+coverImage: "/images/blog/patent-multi-agent.webp"
 ---
 
 ## DBA 的困境，AI Agent 的機會
@@ -87,3 +88,6 @@ coverImage: "/images/blog/patent-multi-agent.png"
 ---
 
 *M671161 智慧優化系統（AI 驅動資料庫效能預測與調優）｜公告日：2025/06/01｜唯一發明人：劉岦崱*
+
+
+💬 **延伸閱讀：** [2025 年度回顧與未來展望](/zh/insights/2025-year-in-review)

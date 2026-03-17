@@ -2,16 +2,17 @@
 title: "[Patent 4] Modulares GenAI-Systemdesign: Warum 'Mehr Funktionen' nicht besser ist? Ein kontraintuitives Patent"
 titleEn: "[Patent 4] Modular GenAI System Design: Why 'More Features' Isn't Better? A PM's Counter-Intuitive Patent"
 titleDe: "[Patent 4] Modulares GenAI-Systemdesign: Warum 'Mehr Funktionen' nicht besser ist? Ein kontraintuitives Patent"
-excerpt: "Explodieren die Bereitstellungskosten für LLMs? Dieser Artikel zeigt, wie ein Bank-GenAI-Produktmanager eine modulare Architektur nutzte, um KI-Systeme nach Bedarf anzupassen, was die Hardwarebelastung senkt und die Flexibilität erhöht."
-excerptEn: "Are LLM deployment costs skyrocketing? This article shares how a bank GenAI Product Manager used modular architecture design to customize AI systems on demand, lowering hardware burdens and increasing flexibility."
-excerptDe: "Explodieren die Bereitstellungskosten für LLMs? Dieser Artikel zeigt, wie ein Bank-GenAI-Produktmanager eine modulare Architektur nutzte, um KI-Systeme nach Bedarf anzupassen, was die Hardwarebelastung senkt und die Flexibilität erhöht."
+excerpt: "Explodieren die Bereitstellungskosten für LLMs? Dieser Artikel zeigt, wie ein Bank-GenAI-Produktmanager eine modulare Architektur nutzte, um KI-Systeme nach..."
+excerptEn: "Are LLM deployment costs skyrocketing? This article shares how a bank GenAI Product Manager used modular architecture design to customize AI systems on dema..."
+excerptDe: "Explodieren die Bereitstellungskosten für LLMs? Dieser Artikel zeigt, wie ein Bank-GenAI-Produktmanager eine modulare Architektur nutzte, um KI-Systeme nach..."
 date: "2025-06-11"
 author: "Nils Liu"
 tags:
   - "Patent"
+  - "Blog"
   - "GenAI"
   - "Architecture"
-coverImage: "/images/blog/patent-modular-ai.png"
+coverImage: "/images/blog/patent-modular-ai.webp"
 ---
 
 ## Der häufigste Fehler bei Enterprise-LLMs: "Mächtig" mit "Nützlich" gleichzusetzen
@@ -79,3 +80,5 @@ Andere Module können von Mitbewerbern leicht kopiert werden, aber Ihre Wissensb
 ---
 
 *M671449 Anpassbares Generatives Künstliches Intelligenzsystem | Erteilt: 2025/06/11 | Alleiniger Erfinder: Nils Liu*
+
+💬 **Lese mehr:** [2025 Jahresrückblick (Auf Deutsch)](/de/insights/2025-year-in-review-de)

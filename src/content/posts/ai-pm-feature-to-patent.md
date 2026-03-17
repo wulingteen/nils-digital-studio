@@ -2,16 +2,17 @@
 title: "AI 專利申請實戰：如何從 GenAI 創新需求打造 AI 產品護城河？"
 titleEn: "From Feature to Patent: Building an AI Product Moat through GenAI Innovation"
 titleDe: "Vom Feature zum Patent: Aufbau eines KI-Schutzgrabens durch GenAI-Innovation"
-excerpt: "擔心 AI 功能幾個月後就被開源模型取代？本文教你如何透過預判模型進化的思維進行 AI 專利申請，打造別人抄不走的 GenAI 產品護城河。"
-excerptEn: "Worried your AI feature will be rendered obsolete by the next model update? Learn how to anticipate model evolution and file AI patents to build an uncopyable product moat."
-excerptDe: "Besorgt, dass Ihr KI-Feature bald überflüssig wird? Erfahren Sie, wie Sie Modellentwicklungen antizipieren und KI-Patente anmelden, um einen unangreifbaren Schutzwall aufzubauen."
+excerpt: "擔心 AI 功能幾個月後就被開源模型取代？本文教你如何透過預判模型進化的思維進行 AI 專利申請，打造別人抄不走的 GenAI 產品護城河。 大多數 PM 一聽到「AI 專利申請」，直覺反應都是：那屬於「底層演算法科學家」或 RD 研發部門的事，與產品經理無關。 但我主導的最高價值專利，往往是從..."
+excerptEn: "Worried your AI feature will be rendered obsolete by the next model update? Learn how to anticipate model evolution and file AI patents to build an uncopyab..."
+excerptDe: "Besorgt, dass Ihr KI-Feature bald überflüssig wird? Erfahren Sie, wie Sie Modellentwicklungen antizipieren und KI-Patente anmelden, um einen unangreifbaren..."
 date: "2026-03-02"
 author: "Nils Liu"
 tags:
   - "AI PM 系列"
+  - "Blog"
   - "GenAI"
   - "Patent"
-coverImage: "/images/blog/ai-pm-base.png"
+coverImage: "/images/blog/ai-pm-base.webp"
 seriesInfo:
   name: "AI PM 的真實工作"
   part: 4
@@ -101,3 +102,6 @@ seriesInfo:
    把演算法升級的焦慮交給 OpenAI 去煩惱。AI PM 的工作是專注於人類永恆的需求，並在這個需求的基礎上，打造能隨著底層模型進化而越來越強的技術生態體系。
 
 > *至此，「AI PM 系列」告一段落。在這個劇烈變動的時代，最好的防禦就是不斷建造。祝大家都能成為最頂尖的 AI Builder。*
+
+
+💬 **延伸閱讀：** [2025 年度回顧與未來展望](/zh/insights/2025-year-in-review)

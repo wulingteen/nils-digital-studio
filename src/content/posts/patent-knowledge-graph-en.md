@@ -2,16 +2,17 @@
 title: "[Patent 6] Building a Knowledge Graph from a GenAI Product Owner's Perspective: My First AI Patent"
 titleEn: "[Patent 6] Building a Knowledge Graph from a GenAI Product Owner's Perspective: My First AI Patent"
 titleDe: "[Patent 6] Aufbau eines Knowledge Graphs aus der Perspektive eines GenAI Product Owners: Mein erstes KI-Patent"
-excerpt: "How does a bank GenAI Product Manager design an LLM system that automatically builds a knowledge graph from business pain points, and successfully obtain a utility patent? This article shares the complete thought process from requirement to patent."
-excerptEn: "How does a bank GenAI Product Manager design an LLM system that automatically builds a knowledge graph from business pain points, and successfully obtain a utility patent? This article shares the complete thought process from requirement to patent."
-excerptDe: "Wie konzipiert ein Bank-GenAI-Produktmanager ein LLM-System, das als Antwort auf Geschäftsprobleme automatisch einen Knowledge Graph aufbaut, und erhält dafür ein Patent? Dieser Artikel teilt den kompletten Denkprozess."
+excerpt: "How does a bank GenAI Product Manager design an LLM system that automatically builds a knowledge graph from business pain points, and successfully obtain a..."
+excerptEn: "How does a bank GenAI Product Manager design an LLM system that automatically builds a knowledge graph from business pain points, and successfully obtain a..."
+excerptDe: "Wie konzipiert ein Bank-GenAI-Produktmanager ein LLM-System, das als Antwort auf Geschäftsprobleme automatisch einen Knowledge Graph aufbaut, und erhält daf..."
 date: "2025-11-01"
 author: "Nils Liu"
 tags:
   - "Patent"
+  - "Blog"
   - "GenAI"
   - "Architecture"
-coverImage: "/images/blog/patent-knowledge-graph.png"
+coverImage: "/images/blog/patent-knowledge-graph.webp"
 ---
 
 ## Why Do Banks Need a "Self-Learning" Knowledge Graph?
@@ -68,3 +69,5 @@ If you are planning an enterprise GenAI product, these questions are worth caref
 ---
 
 *M676680 Knowledge Graph Construction System | Grant Date: 2025/11/01 | Sole Inventor: Nils Liu*
+
+💬 **Read more:** [2025 Year in Review (English)](/en/insights/2025-year-in-review-en)

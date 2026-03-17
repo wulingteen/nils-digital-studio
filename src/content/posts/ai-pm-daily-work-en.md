@@ -3,7 +3,7 @@ title: "What Does an AI PM at a Bank Actually Do?"
 excerpt: "No coding, no model tuning — so what does an AI Product Manager actually do all day? A real daily breakdown from a GenAI PM working in banking."
 author: "Nils Liu"
 date: 2025-05-18
-coverImage: "/images/blog/ai-pm-base.png"
+coverImage: "/images/blog/ai-pm-base.webp"
 tags: ["AI PM", "GenAI", "Product Management", "Career"]
 seriesInfo:
   part: 3
@@ -23,3 +23,6 @@ A typical day involves:
 ## The True Value of an AI PM
 
 As models become commoditized, the value of the PM isn't in understanding the math behind attention mechanisms—it's in seeing the friction in human workflows and knowing exactly which GenAI pattern (Classification, Extraction, Generation, Dialogue) can permanently remove it.
+
+
+💬 **Read more:** [2025 Year in Review (English)](/en/insights/2025-year-in-review-en)

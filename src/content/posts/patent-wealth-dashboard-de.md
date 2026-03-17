@@ -2,15 +2,16 @@
 title: "[Patent 1] Wie GenAI die Vermögensverwaltung verändert: Von Bedürfnissen zu Dashboards—Die Reise eines Bank-PMs"
 titleEn: "[Patent 1] How GenAI Transforms Wealth Management: From Needs to Dashboards—A Bank AI PM's Product Design Journey"
 titleDe: "[Patent 1] Wie GenAI die Vermögensverwaltung verändert: Von Bedürfnissen zu Dashboards—Die Reise eines Bank-PMs"
-excerpt: "Was sind die wahren Schmerzpunkte von Kundenberatern? Wie hilft GenAI ihnen, in Echtzeit personalisierte Anlageempfehlungen zu generieren? Dieser Artikel teilt die Reise und das patentierte Denken eines Bank-GenAI-Produktmanagers."
-excerptEn: "What are the true pain points of Relationship Managers? How does GenAI help them generate real-time personalized investment advice in conversations? This article shares the journey and patent thinking of a Bank GenAI Product Manager."
-excerptDe: "Was sind die wahren Schmerzpunkte von Kundenberatern? Wie hilft GenAI ihnen, in Echtzeit personalisierte Anlageempfehlungen zu generieren? Dieser Artikel teilt die Reise und das patentierte Denken eines Bank-GenAI-Produktmanagers."
+excerpt: "Was sind die wahren Schmerzpunkte von Kundenberatern? Wie hilft GenAI ihnen, in Echtzeit personalisierte Anlageempfehlungen zu generieren? Dieser Artikel te..."
+excerptEn: "What are the true pain points of Relationship Managers? How does GenAI help them generate real-time personalized investment advice in conversations? This ar..."
+excerptDe: "Was sind die wahren Schmerzpunkte von Kundenberatern? Wie hilft GenAI ihnen, in Echtzeit personalisierte Anlageempfehlungen zu generieren? Dieser Artikel te..."
 date: "2025-05-11"
 author: "Nils Liu"
 tags:
   - "Patent"
+  - "Blog"
   - "GenAI"
-coverImage: "/images/blog/patent-wealth-dashboard.png"
+coverImage: "/images/blog/patent-wealth-dashboard.webp"
 ---
 
 ## Der wahre Schmerzpunkt von Kundenberatern
@@ -90,3 +91,5 @@ Finden Sie heraus, wo sie die meiste Zeit verbringen, die meisten Fehler machen 
 ---
 
 *M670472 System zur Generierung von Finanzinvestitionsempfehlungen (Kundenspezifisches GenAI Finanz-Dashboard) | Erteilt: 2025/05/11 | Alleiniger Erfinder: Nils Liu*
+
+💬 **Lese mehr:** [2025 Jahresrückblick (Auf Deutsch)](/de/insights/2025-year-in-review-de)

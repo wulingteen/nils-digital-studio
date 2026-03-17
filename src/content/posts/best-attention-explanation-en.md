@@ -9,6 +9,7 @@ date: "2025-10-26"
 author: "Nils Liu"
 tags:
   - "GenAI"
+  - "Blog"
   - "Architecture"
 coverImage: "/images/blog/attention-transformer.jpg"
 ---
@@ -16,3 +17,5 @@ coverImage: "/images/blog/attention-transformer.jpg"
 Of all the explanations of "Attention Is All You Need" I've watched, this is the one I'd send to anyone who wants to genuinely understand the Transformer architecture — not just the intuition, but the mechanics.
 
 https://www.youtube.com/watch?v=_VaEjGnHgOI&t=1274s
+
+💬 **Read more:** [2025 Year in Review (English)](/en/insights/2025-year-in-review-en)

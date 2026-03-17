@@ -21,3 +21,6 @@ Generative KI ist im Betrieb von Natur aus teuer. Wenn Sie ihren Wert nicht quan
 4. **Token-Effizienz-ROI:** Die Kosten für die Generierung der Ausgabe im Vergleich zu den geschätzten Kosten der menschlichen Arbeitskraft für dieselbe Ausgabe.
 
 Hören Sie auf, „Magie“ zu verkaufen. Fangen Sie an, verifizierte Betriebsmetriken zu verkaufen.
+
+
+💬 **Lese mehr:** [2025 Jahresrückblick (Auf Deutsch)](/de/insights/2025-year-in-review-de)

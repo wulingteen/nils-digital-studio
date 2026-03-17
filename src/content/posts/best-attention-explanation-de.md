@@ -9,6 +9,7 @@ date: "2025-10-26"
 author: "Nils Liu"
 tags:
   - "GenAI"
+  - "Blog"
   - "Architecture"
 coverImage: "/images/blog/attention-transformer.jpg"
 ---
@@ -20,3 +21,5 @@ Dies ist mit Abstand das beste Video-Tutorial zum bahnbrechenden Papier "Attenti
 Sehr empfehlenswert für alle, die wirklich verstehen wollen, wie Transformers auf der untersten Ebene funktionieren.
 
 https://www.youtube.com/watch?v=_VaEjGnHgOI&t=1274s
+
+💬 **Lese mehr:** [2025 Jahresrückblick (Auf Deutsch)](/de/insights/2025-year-in-review-de)

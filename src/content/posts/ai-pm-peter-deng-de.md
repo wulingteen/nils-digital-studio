@@ -3,7 +3,7 @@ title: "Die Kern-Ausbildung für AI PMs: Peter Dengs 5 PM-Archetypen und Produkt
 excerpt: "Produkte sind nicht nur Pixel, sie sind Maschinen menschlicher Emotionen. Inspiriert von Peter Deng, hier ist, wie man als GenAI-Produktmanager erfolgreich ist."
 author: "Nils Liu"
 date: 2026-03-14
-coverImage: "/images/blog/ai-pm-base.png"
+coverImage: "/images/blog/ai-pm-base.webp"
 tags: ["Product Management", "GenAI", "Silicon Valley", "Career"]
 seriesInfo:
   part: 5
@@ -27,3 +27,6 @@ Deng hat bekanntermaßen 5 verschiedene PM-Archetypen skizziert, die wie die Ave
 5. **Der Growth Hacker:** Findet asymmetrische Vertriebskanäle, um die KI nahtlos in bestehende Workflows zu integrieren.
 
 Um den GenAI-Übergang zu überleben, müssen Sie Ihren dominanten Archetyp beherrschen und Ihre blinden Flecken durch kluge Einstellungen ausgleichen.
+
+
+💬 **Lese mehr:** [2025 Jahresrückblick (Auf Deutsch)](/de/insights/2025-year-in-review-de)

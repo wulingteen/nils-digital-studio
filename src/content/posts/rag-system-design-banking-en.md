@@ -20,3 +20,6 @@ Financial documents are dense. They contain tables, footnotes, hierarchical clau
 3. **Re-ranking is Mandatory:** Retrieving top 20 candidate chunks introduces too much noise. You need a dedicated Cross-Encoder re-ranking model to score the relevance of the retrieved chunks against the original user query before passing the top 5 to the LLM.
 
 If your RAG system is hallucinating, 9 times out of 10, the problem is in the retrieval pipeline, not the language model.
+
+
+💬 **Read more:** [2025 Year in Review (English)](/en/insights/2025-year-in-review-en)

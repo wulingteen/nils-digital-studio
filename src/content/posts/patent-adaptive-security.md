@@ -2,16 +2,17 @@
 title: "【專利五】GenAI 系統的資安盲點：一個 Product Owner 如何用 AI 打造自適應安全防護？"
 titleEn: "[Patent 5] GenAI Security Blind Spots: How a Product Owner Built Adaptive Security with AI"
 titleDe: "[Patent 5] Sicherheitslücken in GenAI: Wie ein Product Owner adaptive Sicherheit mit KI entwickelte"
-excerpt: "當 GenAI 系統被用來查詢敏感資料，如何防止惡意使用者繞過安全機制？本文介紹銀行 AI 產品經理如何設計動態存取控制專利，用 AI 守護 AI。"
-excerptEn: "When a GenAI system queries sensitive data, how do you prevent malicious users from bypassing security? This article details how a bank AI Product Manager designed a dynamic access control patent, using AI to guard AI."
-excerptDe: "Wenn ein GenAI-System sensible Daten abfragt, wie verhindert man, dass böswillige Nutzer die Sicherheit umgehen? Dieser Artikel beschreibt detailliert, wie ein Bank-KI-Produktmanager ein dynamisches Zugriffskontroll-Patent entwarf."
+excerpt: "當 GenAI 系統被用來查詢敏感資料，如何防止惡意使用者繞過安全機制？本文介紹銀行 AI 產品經理如何設計動態存取控制專利，用 AI 守護 AI。 在銀行導入生成式 AI 的過程中，最讓我夜不能寐的問題不是模型效果，而是安全性。 一個能查詢客戶資料的 AI 聊天機器人，如果被有心人士透過特製 ..."
+excerptEn: "When a GenAI system queries sensitive data, how do you prevent malicious users from bypassing security? This article details how a bank AI Product Manager d..."
+excerptDe: "Wenn ein GenAI-System sensible Daten abfragt, wie verhindert man, dass böswillige Nutzer die Sicherheit umgehen? Dieser Artikel beschreibt detailliert, wie..."
 date: "2025-09-11"
 author: "Nils Liu"
 tags:
   - "Patent"
+  - "Blog"
   - "GenAI"
   - "Architecture"
-coverImage: "/images/blog/patent-adaptive-security.png"
+coverImage: "/images/blog/patent-adaptive-security.webp"
 ---
 
 ## 「用 AI 守護 AI」——這不是口號，是架構設計
@@ -84,3 +85,6 @@ coverImage: "/images/blog/patent-adaptive-security.png"
 ---
 
 *M674713 資料查詢系統（生成式自適應安全策略）｜公告日：2025/09/11｜唯一發明人：劉岦崱*
+
+
+💬 **延伸閱讀：** [2025 年度回顧與未來展望](/zh/insights/2025-year-in-review)

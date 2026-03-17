@@ -2,13 +2,14 @@
 title: "Prompt Engineering 在企業場景的眉眉角角"
 titleEn: "Prompt Engineering Patterns for Enterprise Scenarios"
 titleDe: "Prompt Engineering Patterns für Unternehmensszenarien"
-excerpt: "企業級 prompt 跟個人使用完全不同。結構化、版本控制、多角色設計——這些是我踩過的坑。"
+excerpt: "企業級 prompt 跟個人使用完全不同。結構化、版本控制、多角色設計——這些是我踩過的坑。 個人用 ChatGPT 寫 prompt，最多就是「幫我寫一封信」。 企業用 LLM 寫 prompt，是一整套工程實踐。 這篇分享我在企業場景中做 prompt engineering 時，累積的幾個..."
 excerptEn: "Enterprise prompt engineering is nothing like personal ChatGPT use. Structured templates, version control, multi-role design — lessons from the trenches."
-excerptDe: "Enterprise Prompt Engineering ist völlig anders als die persönliche ChatGPT-Nutzung. Strukturierte Templates, Versionskontrolle, Multi-Rollen-Design — Erkenntnisse aus der Praxis."
+excerptDe: "Enterprise Prompt Engineering ist völlig anders als die persönliche ChatGPT-Nutzung. Strukturierte Templates, Versionskontrolle, Multi-Rollen-Design — Erken..."
 date: "2026-03-06"
 author: "Nils Liu"
 tags:
   - "GenAI 實戰"
+  - "Blog"
   - "GenAI"
 coverImage: "/images/blog/genai-action.jpg"
 ---
@@ -136,3 +137,6 @@ Prompt 也需要版本控制。我們用 Git 管理所有 prompt 模板，每次
 ---
 
 *這是「GenAI 產品實戰筆記」系列的第二篇。*
+
+
+💬 **延伸閱讀：** [2025 年度回顧與未來展望](/zh/insights/2025-year-in-review)

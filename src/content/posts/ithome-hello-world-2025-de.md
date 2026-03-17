@@ -2,13 +2,14 @@
 title: "iThome Hello World 2025: Von MCP bis Vibe Coding, vier KI-Sessions in Aktion"
 titleEn: "iThome Hello World 2025: From MCP to Vibe Coding, Four AI Sessions in Action"
 titleDe: "iThome Hello World 2025: Von MCP bis Vibe Coding, vier KI-Sessions in Aktion"
-excerpt: "Auf der iThome Hello World Entwicklerkonferenz dieses Jahres hielt ich vier KI-fokussierte Vorträge, vom MCP-Ökosystem und GraphRAG bis hin zu Abwehrmechanismen für LLMs in Unternehmen."
-excerptEn: "This October at the iThome Hello World Developer Conference, I presented four intensive sessions covering MCP, GraphRAG, Vibe Coding, and Enterprise LLM Guardrails."
-excerptDe: "Auf der iThome Hello World Entwicklerkonferenz dieses Jahres hielt ich vier KI-fokussierte Vorträge, vom MCP-Ökosystem und GraphRAG bis hin zu Abwehrmechanismen für LLMs in Unternehmen."
+excerpt: "Auf der iThome Hello World Entwicklerkonferenz dieses Jahres hielt ich vier KI-fokussierte Vorträge, vom MCP-Ökosystem und GraphRAG bis hin zu Abwehrmechani..."
+excerptEn: "This October at the iThome Hello World Developer Conference, I presented four intensive sessions covering MCP, GraphRAG, Vibe Coding, and Enterprise LLM Gua..."
+excerptDe: "Auf der iThome Hello World Entwicklerkonferenz dieses Jahres hielt ich vier KI-fokussierte Vorträge, vom MCP-Ökosystem und GraphRAG bis hin zu Abwehrmechani..."
 date: "2025-10-20"
 author: "Nils Liu"
 tags:
   - "Event"
+  - "Blog"
   - "GenAI"
   - "Architecture"
 coverImage: "/images/blog/ithome-hello-world-2025.png"
@@ -25,3 +26,5 @@ Auf der iThome Hello World Entwicklerkonferenz in diesem Jahr hatte ich die Gele
 4. **Enterprise LLM Guardrails:** Abwehrmechanismen in Produktivumgebungen
 
 Es war eine fantastische Erfahrung, praktische Einblicke aus unserer Implementierung auf Unternehmensebene zu teilen. Die Resonanz der Entwickler-Community war überwältigend und die Diskussionen über Vibe Coding zeigten deutlich, wie sehr sich die Art und Weise der Softwareentwicklung verändert.
+
+💬 **Lese mehr:** [2025 Jahresrückblick (Auf Deutsch)](/de/insights/2025-year-in-review-de)

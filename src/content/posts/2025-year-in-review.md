@@ -2,13 +2,14 @@
 title: "2025 年度回顧：不喧嘩的扎實推動"
 titleEn: "2025 Year in Review: The Quiet Power of Steady Progress"
 titleDe: "Jahresrückblick 2025: Die stille Kraft stetigen Fortschritts"
-excerpt: "我的 2025 年 AI 歷險有四個數字：6、5、1、6。不是因為多光鮮，而是因為很踏實。在銀行做 GenAI 就像在營運中的大樓換管線，真正難的往往不是模型，而是工程與信任。"
-excerptEn: "My 2025 AI journey in four numbers: 6, 5, 1, 6. Not because it was glamorous, but because it was grounded. Building GenAI in a bank is like replacing the plumbing in an operating building — the real challenge isn't the model, it's engineering and trust."
-excerptDe: "Mein KI-Abenteuer 2025 in vier Zahlen: 6, 5, 1, 6. Nicht weil es so glamourös war, sondern weil es bodenständig blieb. GenAI in einer Bank zu implementieren ist wie das Auswechseln von Rohren in einem bewohnten Gebäude."
+excerpt: "我的 2025 年 AI 歷險有四個數字：6、5、1、6。不是因為多光鮮，而是因為很踏實。在銀行做 GenAI 就像在營運中的大樓換管線，真正難的往往不是模型，而是工程與信任。 我的 2025 年 AI 歷險有四個數字：        6項     新型專利     已核准           ..."
+excerptEn: "My 2025 AI journey in four numbers: 6, 5, 1, 6. Not because it was glamorous, but because it was grounded. Building GenAI in a bank is like replacing the pl..."
+excerptDe: "Mein KI-Abenteuer 2025 in vier Zahlen: 6, 5, 1, 6. Nicht weil es so glamourös war, sondern weil es bodenständig blieb. GenAI in einer Bank zu implementieren..."
 date: "2025-12-31"
 author: "Nils Liu"
 tags:
   - "Career"
+  - "Blog"
   - "Patent"
   - "Event"
 coverImage: "/images/blog/2025-year-in-review.jpg"
@@ -103,3 +104,6 @@ pinned: true
 > *Run, don’t walk! Either you’re running for food, or you’re running from being food.*
 
 #YearInReview #GenAI #專利 #研究 #DevOpsDay #HelloWorld #DevFestTaipei #AI治理 #產品化
+
+
+💬 **延伸閱讀：** [2025 年度回顧與未來展望](/zh/insights/2025-year-in-review)

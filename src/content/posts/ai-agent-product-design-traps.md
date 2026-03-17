@@ -2,13 +2,14 @@
 title: "AI Agent 產品設計的 5 個陷阱"
 titleEn: "5 Product Design Traps When Building AI Agents"
 titleDe: "5 Produktdesign-Fallen beim Bau von KI-Agenten"
-excerpt: "Agent 聽起來很酷，但在企業環境做 Agent 產品很容易踩坑。這是我親身經歷的五個設計陷阱。"
+excerpt: "Agent 聽起來很酷，但在企業環境做 Agent 產品很容易踩坑。這是我親身經歷的五個設計陷阱。 2025 年是 AI Agent 元年。到了 2026 年，每個企業都在問：「我們也要做 Agent 嗎？」 但「做 Agent」和「做好 Agent 產品」是兩件完全不同的事。 這篇分享我在設計..."
 excerptEn: "AI Agents sound cool, but building Agent products in enterprise is full of pitfalls. Here are five design traps I've experienced firsthand."
 excerptDe: "KI-Agenten klingen cool, aber der Bau von Agent-Produkten in Unternehmen ist voller Stolperfallen. Hier sind fünf Designfallen, die ich selbst erlebt habe."
 date: "2026-03-08"
 author: "Nils Liu"
 tags:
   - "GenAI 實戰"
+  - "Blog"
   - "Agent"
   - "Architecture"
 coverImage: "/images/blog/genai-action.jpg"
@@ -133,3 +134,6 @@ coverImage: "/images/blog/genai-action.jpg"
 ---
 
 *這是「GenAI 產品實戰筆記」系列的最終篇。*
+
+
+💬 **延伸閱讀：** [2025 年度回顧與未來展望](/zh/insights/2025-year-in-review)

@@ -2,13 +2,14 @@
 title: "Kobe über Vorstellungskraft: Transformers und generative KI als Magie"
 titleEn: "Kobe on Imagination: Why Transformers & GenAI Are That Kind of Magic"
 titleDe: "Kobe über Vorstellungskraft: Transformers und generative KI als Magie"
-excerpt: "Elon glaubt, Fantasie sei nach dem Erlernen von Wissen das Wichtigste. Frieren sagt, Magie sei die Welt der Vorstellung – Transformers und GenAI sind diese Magie."
-excerptEn: "Elon told Kobe: imagination matters more than knowledge. Frieren said magic is a world of imagination. To me, Transformers and generative AI are exactly that kind of magic."
-excerptDe: "Elon glaubt, Fantasie sei nach dem Erlernen von Wissen das Wichtigste. Frieren sagt, Magie sei die Welt der Vorstellung – Transformers und GenAI sind diese Magie."
+excerpt: "Elon glaubt, Fantasie sei nach dem Erlernen von Wissen das Wichtigste. Frieren sagt, Magie sei die Welt der Vorstellung – Transformers und GenAI sind diese..."
+excerptEn: "Elon told Kobe: imagination matters more than knowledge. Frieren said magic is a world of imagination. To me, Transformers and generative AI are exactly tha..."
+excerptDe: "Elon glaubt, Fantasie sei nach dem Erlernen von Wissen das Wichtigste. Frieren sagt, Magie sei die Welt der Vorstellung – Transformers und GenAI sind diese..."
 date: "2025-05-15"
 author: "Nils Liu"
 tags:
   - "GenAI"
+  - "Blog"
   - "Career"
 coverImage: "/images/blog/kobe-imagination-ai.jpg"
 ---
@@ -21,3 +22,5 @@ Frieren sagte einmal: "Magie ist die Welt der Vorstellung. Was du dir nicht vors
 
 Ich glaube wirklich, dass Transformers und generative KI genau diese Art von Magie sind. Ihre Nützlichkeit ist einzig durch die Vorstellungskraft des Nutzers begrenzt.
 https://www.youtube.com/watch?v=jSVdxhTEJP4
+
+💬 **Lese mehr:** [2025 Jahresrückblick (Auf Deutsch)](/de/insights/2025-year-in-review-de)

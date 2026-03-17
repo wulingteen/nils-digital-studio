@@ -2,15 +2,16 @@
 title: "[Patent 1] How GenAI Transforms Wealth Management: From Needs to Dashboards—A Bank AI PM's Product Design Journey"
 titleEn: "[Patent 1] How GenAI Transforms Wealth Management: From Needs to Dashboards—A Bank AI PM's Product Design Journey"
 titleDe: "[Patent 1] Wie GenAI die Vermögensverwaltung verändert: Von Bedürfnissen zu Dashboards—Die Reise eines Bank-PMs"
-excerpt: "What are the true pain points of Relationship Managers? How does GenAI help them generate real-time personalized investment advice in conversations? This article shares the journey and patent thinking of a Bank GenAI Product Manager."
-excerptEn: "What are the true pain points of Relationship Managers? How does GenAI help them generate real-time personalized investment advice in conversations? This article shares the journey and patent thinking of a Bank GenAI Product Manager."
-excerptDe: "Was sind die wahren Schmerzpunkte von Kundenberatern? Wie hilft GenAI ihnen, in Echtzeit personalisierte Anlageempfehlungen zu generieren? Dieser Artikel teilt die Reise und das patentierte Denken eines Bank-GenAI-Produktmanagers."
+excerpt: "What are the true pain points of Relationship Managers? How does GenAI help them generate real-time personalized investment advice in conversations? This ar..."
+excerptEn: "What are the true pain points of Relationship Managers? How does GenAI help them generate real-time personalized investment advice in conversations? This ar..."
+excerptDe: "Was sind die wahren Schmerzpunkte von Kundenberatern? Wie hilft GenAI ihnen, in Echtzeit personalisierte Anlageempfehlungen zu generieren? Dieser Artikel te..."
 date: "2025-05-11"
 author: "Nils Liu"
 tags:
   - "Patent"
+  - "Blog"
   - "GenAI"
-coverImage: "/images/blog/patent-wealth-dashboard.png"
+coverImage: "/images/blog/patent-wealth-dashboard.webp"
 ---
 
 ## The True Pain Point of Relationship Managers
@@ -90,3 +91,5 @@ Find where they spend the most time, make the most mistakes, and most require in
 ---
 
 *M670472 Financial Investment Recommendation Generation System (Customized GenAI Financial Dashboard) | Grant Date: 2025/05/11 | Sole Inventor: Nils Liu*
+
+💬 **Read more:** [2025 Year in Review (English)](/en/insights/2025-year-in-review-en)

@@ -9,6 +9,7 @@ date: "2025-10-23"
 author: "Nils Liu"
 tags:
   - "GenAI"
+  - "Blog"
   - "News"
 coverImage: "/images/blog/jason-wei-ai.jpg"
 ---
@@ -18,3 +19,5 @@ coverImage: "/images/blog/jason-wei-ai.jpg"
 Dieser Vortrag von Jason Wei war eine echte Erleuchtung und hat mir sprichwörtlich Gänsehaut bereitet.
 
 Wenn Sie nach realen und werthaltigen Anwendungsfällen für KI suchen, ist dies genau der systematische Weg, auf dem Sie vorgehen sollten.
+
+💬 **Lese mehr:** [2025 Jahresrückblick (Auf Deutsch)](/de/insights/2025-year-in-review-de)

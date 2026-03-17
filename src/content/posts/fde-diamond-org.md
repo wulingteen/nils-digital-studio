@@ -2,13 +2,14 @@
 title: "軟體工程師的分歧：AI 時代的鑽石型組織"
 titleEn: "The Software Engineer Divide: The Diamond-Shaped Org in the Age of AI"
 titleDe: "Die Spaltung der Softwareentwickler: Die diamantenförmige Organisation im KI-Zeitalter"
-excerpt: "同一個時代，同樣叫做工程師，有人因 AI 失去工作，也有人因 AI 找到工作。決定你在哪一邊的，不是學歷年資，而是調整速度。"
-excerptEn: "Same era, same job title — one group is being laid off while another is being hired. What separates them isn't seniority or credentials; it's how fast they've adapted."
-excerptDe: "In derselben Ära und unter derselben Berufsbezeichnung 'Ingenieur' verlieren einige durch KI ihren Job, während andere durch sie neue finden. Was deinen Platz bestimmt, ist nicht Ausbildung oder Betriebszugehörigkeit, sondern Anpassungsgeschwindigkeit."
+excerpt: "同一個時代，同樣叫做工程師，有人因 AI 失去工作，也有人因 AI 找到工作。決定你在哪一邊的，不是學歷年資，而是調整速度。 同一個時代，同樣叫做工程師，有人因 AI 失去工作，也有人因 AI 找到工作。決定你在哪一邊的，不是學歷年資，而是調整速度。新職缺已經靜靜上線了 ——— Block 剛宣..."
+excerptEn: "Same era, same job title — one group is being laid off while another is being hired. What separates them isn't seniority or credentials; it's how fast they'..."
+excerptDe: "In derselben Ära und unter derselben Berufsbezeichnung 'Ingenieur' verlieren einige durch KI ihren Job, während andere durch sie neue finden. Was deinen Pla..."
 date: "2026-02-27"
 author: "Nils Liu"
 tags:
   - "Career"
+  - "Blog"
   - "Agent"
 coverImage: "/images/blog/642211062_1341725981314870_7520906503631550785_n.jpg"
 ---
@@ -30,3 +31,6 @@ Block 剛宣布裁員一半工程師，同一時間 Indeed 數據顯示軟體工
 如果你有工程背景，再加上一點業務溝通能力，你的組合正在變得稀缺，而不是過剩。與其等工作經驗，不如用 AI 建立作品集。現在市場要的，是能把 AI 真正裝進真實世界的人
 
 #軟體工程師 #AI就業 #職涯轉型 #FDE #鑽石型組織
+
+
+💬 **延伸閱讀：** [2025 年度回顧與未來展望](/zh/insights/2025-year-in-review)

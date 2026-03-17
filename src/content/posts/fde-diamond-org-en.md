@@ -2,13 +2,14 @@
 title: "The Software Engineer Divide: The Diamond-Shaped Org in the Age of AI"
 titleEn: "The Software Engineer Divide: The Diamond-Shaped Org in the Age of AI"
 titleDe: "Die Spaltung der Softwareentwickler: Die diamantenförmige Organisation im KI-Zeitalter"
-excerpt: "Same era, same job title — one group is being laid off while another is being hired. What separates them isn't seniority or credentials; it's how fast they've adapted."
-excerptEn: "Same era, same job title — one group is being laid off while another is being hired. What separates them isn't seniority or credentials; it's how fast they've adapted."
-excerptDe: "In derselben Ära und unter derselben Berufsbezeichnung 'Ingenieur' verlieren einige durch KI ihren Job, während andere durch sie neue finden. Was deinen Platz bestimmt, ist nicht Ausbildung oder Betriebszugehörigkeit, sondern Anpassungsgeschwindigkeit."
+excerpt: "Same era, same job title — one group is being laid off while another is being hired. What separates them isn't seniority or credentials; it's how fast they'..."
+excerptEn: "Same era, same job title — one group is being laid off while another is being hired. What separates them isn't seniority or credentials; it's how fast they'..."
+excerptDe: "In derselben Ära und unter derselben Berufsbezeichnung 'Ingenieur' verlieren einige durch KI ihren Job, während andere durch sie neue finden. Was deinen Pla..."
 date: "2026-02-27"
 author: "Nils Liu"
 tags:
   - "Career"
+  - "Blog"
   - "Agent"
 coverImage: "/images/blog/642211062_1341725981314870_7520906503631550785_n.jpg"
 ---
@@ -26,3 +27,5 @@ That's exactly what FDEs (Field Deployment Engineers) do — and FDE roles grew 
 If you have an engineering background *and* can communicate with stakeholders, your profile is getting rarer, not more common. Build a portfolio with AI tools while everyone else is waiting for experience.
 
 #SoftwareEngineering #AIJobs #CareerPivot #DiamondOrg
+
+💬 **Read more:** [2025 Year in Review (English)](/en/insights/2025-year-in-review-en)

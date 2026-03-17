@@ -20,3 +20,6 @@ Enterprise Prompt Engineering ähnelt eher der Softwareentwicklung als dem kreat
 3. **Chain of Thought (CoT) Erzwingung:** Zwingen Sie das Modell, vor der endgültigen Antwort einen `<thinking>`-Block auszugeben. Dies verbessert nicht nur die Qualität der Schlussfolgerungen, sondern erleichtert auch das Debuggen.
 
 Prompts sind Code. Versionieren Sie sie, testen Sie sie gegen Datensätze und setzen Sie niemals einen "Zauberspruch" in die Produktion ein.
+
+
+💬 **Lese mehr:** [2025 Jahresrückblick (Auf Deutsch)](/de/insights/2025-year-in-review-de)

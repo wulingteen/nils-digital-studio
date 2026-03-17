@@ -2,16 +2,17 @@
 title: "[Patent 2] Wie AI Agents Datenbanken optimieren: Das Architektur-Design eines Multi-Agenten-Systems"
 titleEn: "[Patent 2] How AI Agents Optimize Databases? A GenAI PM's Multi-Agent Architecture Design Thinking"
 titleDe: "[Patent 2] Wie AI Agents Datenbanken optimieren: Das Architektur-Design eines Multi-Agenten-Systems"
-excerpt: "Traditionelle DBAs verwalten Datenbanken nach Erfahrung, aber bei hoher Nebenläufigkeit reicht das nicht aus. Dieser Artikel zeigt, wie ein GenAI Product Owner ein auf Multi-Agenten basierendes Optimierungssystem entwarf."
-excerptEn: "Traditional DBAs manage databases on experience, but under high concurrency and complex loads, that's not enough. This article shares how a GenAI Product Owner designed a multi-AI-agent collaborative database optimization system and earned a utility patent."
-excerptDe: "Traditionelle DBAs verwalten Datenbanken nach Erfahrung, aber bei hoher Nebenläufigkeit reicht das nicht aus. Dieser Artikel zeigt, wie ein GenAI Product Owner ein auf Multi-Agenten basierendes Optimierungssystem entwarf."
+excerpt: "Traditionelle DBAs verwalten Datenbanken nach Erfahrung, aber bei hoher Nebenläufigkeit reicht das nicht aus. Dieser Artikel zeigt, wie ein GenAI Product Ow..."
+excerptEn: "Traditional DBAs manage databases on experience, but under high concurrency and complex loads, that's not enough. This article shares how a GenAI Product Ow..."
+excerptDe: "Traditionelle DBAs verwalten Datenbanken nach Erfahrung, aber bei hoher Nebenläufigkeit reicht das nicht aus. Dieser Artikel zeigt, wie ein GenAI Product Ow..."
 date: "2025-06-01"
 author: "Nils Liu"
 tags:
   - "Patent"
+  - "Blog"
   - "Agent"
   - "Architecture"
-coverImage: "/images/blog/patent-multi-agent.png"
+coverImage: "/images/blog/patent-multi-agent.webp"
 ---
 
 ## Das Dilemma des DBAs, die Chance des AI Agents
@@ -84,3 +85,5 @@ Ein weiteres entscheidendes Design im System ist das **Lastvorhersage-Modul**—
 ---
 
 *M671161 Smartes Optimierungssystem (KI-gestützte Datenbank-Leistungsvorhersage und -Tuning) | Erteilt: 2025/06/01 | Alleiniger Erfinder: Nils Liu*
+
+💬 **Lese mehr:** [2025 Jahresrückblick (Auf Deutsch)](/de/insights/2025-year-in-review-de)

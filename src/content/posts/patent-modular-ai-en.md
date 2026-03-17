@@ -2,16 +2,17 @@
 title: "[Patent 4] Modular GenAI System Design: Why 'More Features' Isn't Better? A PM's Counter-Intuitive Patent"
 titleEn: "[Patent 4] Modular GenAI System Design: Why 'More Features' Isn't Better? A PM's Counter-Intuitive Patent"
 titleDe: "[Patent 4] Modulares GenAI-Systemdesign: Warum 'Mehr Funktionen' nicht besser ist? Ein kontraintuitives Patent"
-excerpt: "Are LLM deployment costs skyrocketing? This article shares how a bank GenAI Product Manager used modular architecture design to customize AI systems on demand, lowering hardware burdens and increasing flexibility."
-excerptEn: "Are LLM deployment costs skyrocketing? This article shares how a bank GenAI Product Manager used modular architecture design to customize AI systems on demand, lowering hardware burdens and increasing flexibility."
-excerptDe: "Explodieren die Bereitstellungskosten für LLMs? Dieser Artikel zeigt, wie ein Bank-GenAI-Produktmanager eine modulare Architektur nutzte, um KI-Systeme nach Bedarf anzupassen, was die Hardwarebelastung senkt und die Flexibilität erhöht."
+excerpt: "Are LLM deployment costs skyrocketing? This article shares how a bank GenAI Product Manager used modular architecture design to customize AI systems on dema..."
+excerptEn: "Are LLM deployment costs skyrocketing? This article shares how a bank GenAI Product Manager used modular architecture design to customize AI systems on dema..."
+excerptDe: "Explodieren die Bereitstellungskosten für LLMs? Dieser Artikel zeigt, wie ein Bank-GenAI-Produktmanager eine modulare Architektur nutzte, um KI-Systeme nach..."
 date: "2025-06-11"
 author: "Nils Liu"
 tags:
   - "Patent"
+  - "Blog"
   - "GenAI"
   - "Architecture"
-coverImage: "/images/blog/patent-modular-ai.png"
+coverImage: "/images/blog/patent-modular-ai.webp"
 ---
 
 ## The Most Common Mistake in Enterprise LLMs: Equating "Powerful" with "Useful"
@@ -79,3 +80,5 @@ Other modules are easily replicated by competitors, but your knowledge base—cu
 ---
 
 *M671449 Customizable Generative Artificial Intelligence System | Grant Date: 2025/06/11 | Sole Inventor: Nils Liu*
+
+💬 **Read more:** [2025 Year in Review (English)](/en/insights/2025-year-in-review-en)

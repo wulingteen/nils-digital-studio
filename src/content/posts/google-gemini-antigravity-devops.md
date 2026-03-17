@@ -2,13 +2,14 @@
 title: "Google Gemini 3 Pro 與 Antigravity：開發者角色的升級"
 titleEn: "Google Gemini 3 Pro & Antigravity: Leveling Up the Developer Role"
 titleDe: "Google Gemini 3 Pro und Antigravity: Die Weiterentwicklung der Entwicklerrolle"
-excerpt: "AI 不再只是 demo 的玩具，而是變成雲端基礎設施的一環。工具在變，角色就有機會跟著變。"
-excerptEn: "After Google pushed Gemini 3 Pro and Antigravity, I started rethinking the relationship between developers and AI infrastructure — and what 'role elevation' really means."
+excerpt: "AI 不再只是 demo 的玩具，而是變成雲端基礎設施的一環。工具在變，角色就有機會跟著變。 Google 把 Gemini 3 Pro 和 Antigravity 推上來之後 我開始重新思考「開發者跟 AI 的關係」這件事 這一波更新，很直白地釋出一個訊號： AI 不再只是 demo 或 si..."
+excerptEn: "After Google pushed Gemini 3 Pro and Antigravity, I started rethinking the relationship between developers and AI infrastructure — and what 'role elevation'..."
 excerptDe: "KI ist nicht mehr nur ein Spielzeug für Demos, sondern wird Teil der Cloud-Infrastruktur. Wenn sich Werkzeuge ändern, ändern sich auch die dazugehörigen Rollen."
 date: "2025-12-06"
 author: "Nils Liu"
 tags:
   - "GenAI"
+  - "Blog"
   - "Architecture"
   - "Career"
 coverImage: "/images/blog/google-gemini-antigravity.jpg"
@@ -41,3 +42,6 @@ AI 不再只是 demo 或 side project 的玩具，而是變成雲端基礎設施
 對我自己來說，看到這些更新，心裡浮現的關鍵字是「選擇權」，我們多了一些不用從零開始的選擇權，也多了一些把時間留給團隊、留給使用者、留給產品路線圖的選擇權
 
 工具在變，角色就有機會跟著變，接下來幾年，誰能把「工具進化」跟「組織能力進化」綁在一起，誰就會在這一波 AI 浪潮裡走得比較穩
+
+
+💬 **延伸閱讀：** [2025 年度回顧與未來展望](/zh/insights/2025-year-in-review)

@@ -20,3 +20,6 @@ Enterprise Prompt Engineering is closer to software engineering than creative wr
 3. **Chain of Thought (CoT) Enforcement:** Force the model to output a `<thinking>` block before the final answer. This not only improves reasoning quality but makes debugging output errors significantly easier.
 
 Prompts are code. Version them, test them against regression datasets, and never deploy a "magic spell" to production.
+
+
+💬 **Read more:** [2025 Year in Review (English)](/en/insights/2025-year-in-review-en)

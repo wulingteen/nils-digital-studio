@@ -1,9 +1,9 @@
 ---
 title: "The AI PM Core Curriculum: Peter Deng's 5 PM Archetypes and Product Philosophy"
-excerpt: "Products aren't just pixels; they're human emotion engines. Inspired by Uber and OpenAI executive Peter Deng, here's how to navigate GenAI product management across 5 distinct archetypes."
+excerpt: "Products aren't just pixels; they're human emotion engines. Inspired by Uber and OpenAI executive Peter Deng, here's how to navigate GenAI product managemen..."
 author: "Nils Liu"
 date: 2026-03-14
-coverImage: "/images/blog/ai-pm-base.png"
+coverImage: "/images/blog/ai-pm-base.webp"
 tags: ["Product Management", "GenAI", "Silicon Valley", "Career"]
 seriesInfo:
   part: 5
@@ -27,3 +27,6 @@ Deng famously outlined 5 distinct PM archetypes that must cooperate like the Ave
 5. **The Growth Hacker:** Finds asymmetrical distribution channels. In GenAI, this means figuring out how to insert AI natively into existing enterprise workflows so users adopt it unconsciously.
 
 To survive the GenAI transition, you must master your dominant archetype and hire for your blind spots.
+
+
+💬 **Read more:** [2025 Year in Review (English)](/en/insights/2025-year-in-review-en)

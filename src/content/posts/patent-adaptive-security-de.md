@@ -2,16 +2,17 @@
 title: "[Patent 5] Sicherheitslücken in GenAI: Wie ein Product Owner adaptive Sicherheit mit KI entwickelte"
 titleEn: "[Patent 5] GenAI Security Blind Spots: How a Product Owner Built Adaptive Security with AI"
 titleDe: "[Patent 5] Sicherheitslücken in GenAI: Wie ein Product Owner adaptive Sicherheit mit KI entwickelte"
-excerpt: "Wenn ein GenAI-System sensible Daten abfragt, wie verhindert man, dass böswillige Nutzer die Sicherheit umgehen? Dieser Artikel beschreibt detailliert, wie ein Bank-KI-Produktmanager ein dynamisches Zugriffskontroll-Patent entwarf."
-excerptEn: "When a GenAI system queries sensitive data, how do you prevent malicious users from bypassing security? This article details how a bank AI Product Manager designed a dynamic access control patent, using AI to guard AI."
-excerptDe: "Wenn ein GenAI-System sensible Daten abfragt, wie verhindert man, dass böswillige Nutzer die Sicherheit umgehen? Dieser Artikel beschreibt detailliert, wie ein Bank-KI-Produktmanager ein dynamisches Zugriffskontroll-Patent entwarf."
+excerpt: "Wenn ein GenAI-System sensible Daten abfragt, wie verhindert man, dass böswillige Nutzer die Sicherheit umgehen? Dieser Artikel beschreibt detailliert, wie..."
+excerptEn: "When a GenAI system queries sensitive data, how do you prevent malicious users from bypassing security? This article details how a bank AI Product Manager d..."
+excerptDe: "Wenn ein GenAI-System sensible Daten abfragt, wie verhindert man, dass böswillige Nutzer die Sicherheit umgehen? Dieser Artikel beschreibt detailliert, wie..."
 date: "2025-09-11"
 author: "Nils Liu"
 tags:
   - "Patent"
+  - "Blog"
   - "GenAI"
   - "Architecture"
-coverImage: "/images/blog/patent-adaptive-security.png"
+coverImage: "/images/blog/patent-adaptive-security.webp"
 ---
 
 ## "KI nutzen, um KI zu bewachen" — Kein Slogan, sondern Architektur-Design
@@ -74,3 +75,5 @@ Es ist kein binäres Urteil von "hast du die Erlaubnis", sondern eher "welche In
 ---
 
 *M674713 Datenabfragesystem (Generative adaptive Sicherheitsstrategie) | Erteilt: 2025/09/11 | Alleiniger Erfinder: Nils Liu*
+
+💬 **Lese mehr:** [2025 Jahresrückblick (Auf Deutsch)](/de/insights/2025-year-in-review-de)

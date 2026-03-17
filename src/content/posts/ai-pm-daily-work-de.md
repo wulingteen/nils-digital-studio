@@ -3,7 +3,7 @@ title: "Was macht ein AI PM in einer Bank eigentlich?"
 excerpt: "Kein Programmieren, kein Modell-Tuning — was macht ein KI-Produktmanager eigentlich den ganzen Tag? Ein echter Einblick in den Alltag eines GenAI PM."
 author: "Nils Liu"
 date: 2025-05-18
-coverImage: "/images/blog/ai-pm-base.png"
+coverImage: "/images/blog/ai-pm-base.webp"
 tags: ["AI PM", "GenAI", "Product Management", "Career"]
 seriesInfo:
   part: 3
@@ -23,3 +23,6 @@ Ein typischer Tag sieht so aus:
 ## Der wahre Wert eines KI-PMs
 
 Da Modelle zur Massenware werden, liegt der Wert des PM nicht darin, die Mathematik hinter Aufmerksamkeitsmechanismen zu verstehen – sondern darin, Reibungen in menschlichen Arbeitsabläufen zu erkennen und genau zu wissen, welches GenAI-Muster diese Reibung dauerhaft beseitigen kann.
+
+
+💬 **Lese mehr:** [2025 Jahresrückblick (Auf Deutsch)](/de/insights/2025-year-in-review-de)

@@ -2,16 +2,17 @@
 title: "揭秘 AI PM 工作內容：一窺生成式 AI 產品開發流程的一天"
 titleEn: "What Does an AI PM Actually Do All Day? The Daily Grind of GenAI Development"
 titleDe: "Was macht ein AI PM eigentlich den ganzen Tag? Der Alltag der GenAI-Entwicklung"
-excerpt: "不只是開票寫規格，真實的 AI PM 工作內容究竟長怎樣？從單純的 PM 轉向全端 Builder，帶你走一遍銀行生成式 AI 產品開發流程的殘酷日常。"
+excerpt: "不只是開票寫規格，真實的 AI PM 工作內容究竟長怎樣？從單純的 PM 轉向全端 Builder，帶你走一遍銀行生成式 AI 產品開發流程的殘酷日常。 很多人聽到「AI 產品經理」，第一反應往往是：「所以你整天都在用 Python 寫模型嗎？」 其實不是。我花最多時間在『建造』。 誠如 Ope..."
 excerptEn: "No coding? Think again. The daily routine of an AI PM involves shifting from a traditional PM to a holistic 'Builder', testing prompts, and battling risk."
 excerptDe: "Kein Code? Von wegen. Der Arbeitsalltag eines AI PM beinhaltet den Wechsel vom traditionellen PM zum ganzheitlichen 'Builder'."
 date: "2026-03-01"
 author: "Nils Liu"
 tags:
   - "AI PM 系列"
+  - "Blog"
   - "GenAI"
   - "Career"
-coverImage: "/images/blog/ai-pm-base.png"
+coverImage: "/images/blog/ai-pm-base.webp"
 seriesInfo:
   name: "AI PM 的真實工作"
   part: 3
@@ -76,3 +77,6 @@ Daily Standup 不再只是聽進度報告，而是在抓取系統底層的黑箱
 未來的**AI PM 工作內容**不再受限於畫 Wireframe。只要具備「提出正確問題」的核心能力，加上敢於第一線試錯的 Builder 精神，就算不具備資深軟體工程背景，依然能站在浪尖引領 AI 產品的爆發。
 
 > *這是「AI PM 的真實工作」系列文章。下一篇我們將討論，如果心血來潮想幫你的 AI 產品註冊專利，該注意什麼。*
+
+
+💬 **延伸閱讀：** [2025 年度回顧與未來展望](/zh/insights/2025-year-in-review)

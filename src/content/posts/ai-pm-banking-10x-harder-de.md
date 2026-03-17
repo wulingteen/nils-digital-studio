@@ -3,7 +3,7 @@ title: "Warum die Bereitstellung von LLMs im Bankwesen zehnmal schwieriger ist, 
 excerpt: "KI in einer Bank einzusetzen bedeutet nicht nur, ein Modell auszuwählen. Compliance, Sicherheit, Data Governance — jede Hürde ist schwieriger als die vorherige."
 author: "Nils Liu"
 date: 2025-05-18
-coverImage: "/images/blog/ai-pm-base.png"
+coverImage: "/images/blog/ai-pm-base.webp"
 tags: ["AI PM", "GenAI", "Finance", "Career"]
 seriesInfo:
   part: 2
@@ -22,3 +22,6 @@ Um als GenAI-PM im Bankwesen erfolgreich zu sein, müssen Sie die Kunst beherrsc
 - **Audit-Trails**, die genau aufzeichnen, welches Modell an welchem Tag welche spezifische Antwort produziert hat.
 
 In diesem Umfeld macht „Prompt Engineering“ nur 5 % der Arbeit aus. Die restlichen 95 % bestehen darin, eine Infrastruktur des Vertrauens rund um die KI aufzubauen.
+
+
+💬 **Lese mehr:** [2025 Jahresrückblick (Auf Deutsch)](/de/insights/2025-year-in-review-de)

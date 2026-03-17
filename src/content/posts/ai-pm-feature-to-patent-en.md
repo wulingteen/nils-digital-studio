@@ -3,7 +3,7 @@ title: "From Feature to Patent: Shipping GenAI in a Regulated Bank"
 excerpt: "What does a GenAI feature go through from inception to launch to patent filing? A complete journey record from a bank AI PM."
 author: "Nils Liu"
 date: 2025-05-18
-coverImage: "/images/blog/ai-pm-base.png"
+coverImage: "/images/blog/ai-pm-base.webp"
 tags: ["AI PM", "GenAI", "Patents", "Career"]
 seriesInfo:
   part: 4
@@ -21,3 +21,6 @@ As an AI Product Manager, I've learned that the most successful products are the
 This philosophy is what led to my recent utility patents. By observing Relationship Managers struggle with synthesizing unstructured client data, we designed a backend GenAI architecture that pre-processes the information without requiring a single conversational prompt from the RM.
 
 When you solve core friction at an architectural level rather than just a UI level, you don't just build a feature—you invent a patentable system. The journey from feature to patent is about proving that your specific application of AI uniquely solves an industry-specific bottleneck that traditional software could not.
+
+
+💬 **Read more:** [2025 Year in Review (English)](/en/insights/2025-year-in-review-en)

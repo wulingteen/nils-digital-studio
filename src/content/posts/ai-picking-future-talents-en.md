@@ -2,13 +2,14 @@
 title: "From Coding to Autonomous Proposals: How AI Is Redefining Talent"
 titleEn: "From Coding to Autonomous Proposals: How AI Is Redefining Talent"
 titleDe: "Vom Programmieren zum eigenständigen Vorschlagen: Wie man zukünftige Talente auswählt"
-excerpt: "Over the past year leading a team, I found that people with genuine curiosity thrive in AI-augmented work. Boris Cherny of Anthropic thinks this gap is exactly how future talent will sort itself."
-excerptEn: "Over the past year leading a team, I found that people with genuine curiosity thrive in AI-augmented work. Boris Cherny of Anthropic thinks this gap is exactly how future talent will sort itself."
-excerptDe: "So habe ich im vergangenen Jahr Teams geführt, aber ich stellte fest, dass einige Mitarbeiter mit mangelnder Erfahrung und Neugier sich in diesem Arbeitsmodell verloren fühlten. Vielleicht ist das eine Methode, künftige Talente auszuwählen."
+excerpt: "Over the past year leading a team, I found that people with genuine curiosity thrive in AI-augmented work. Boris Cherny of Anthropic thinks this gap is exac..."
+excerptEn: "Over the past year leading a team, I found that people with genuine curiosity thrive in AI-augmented work. Boris Cherny of Anthropic thinks this gap is exac..."
+excerptDe: "So habe ich im vergangenen Jahr Teams geführt, aber ich stellte fest, dass einige Mitarbeiter mit mangelnder Erfahrung und Neugier sich in diesem Arbeitsmod..."
 date: "2026-02-21"
 author: "Nils Liu"
 tags:
   - "Career"
+  - "Blog"
   - "GenAI"
 coverImage: "/images/blog/ai-picking-talents.jpg"
 ---
@@ -45,3 +46,5 @@ Don't learn skills based on today's AI capabilities. Ask: will this be automated
 ## 5. Protect Your Human Moat
 
 Boris is direct: almost everything done at a computer will be disrupted. The lasting advantages are things AI can't replicate — **trust-building, ethical judgment, asking the right questions**. AI is excellent at answering. Humans need to stay excellent at asking.
+
+💬 **Read more:** [2025 Year in Review (English)](/en/insights/2025-year-in-review-en)

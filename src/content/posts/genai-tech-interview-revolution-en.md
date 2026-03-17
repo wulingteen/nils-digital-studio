@@ -2,13 +2,14 @@
 title: "How Generative AI Is Reinventing the Technical Interview"
 titleEn: "How Generative AI Is Reinventing the Technical Interview"
 titleDe: "Generative KI treibt die Revolution bei technischen Vorstellungsgesprächen an"
-excerpt: "We challenged intern candidates to build a static website combining LLM and front-end skills in 60 minutes. The results changed how I think about what a hiring process should test."
-excerptEn: "We challenged intern candidates to build a static website combining LLM and front-end skills in 60 minutes. The results changed how I think about what a hiring process should test."
-excerptDe: "Die Kandidaten müssen innerhalb von 60 Minuten mit LLMs und Frontend-Entwicklung eine statische Website fertigstellen, wodurch der Fokus vom 'Wissensgedächtnis' zur 'Werkzeuganwendung' wechselt."
+excerpt: "We challenged intern candidates to build a static website combining LLM and front-end skills in 60 minutes. The results changed how I think about what a hir..."
+excerptEn: "We challenged intern candidates to build a static website combining LLM and front-end skills in 60 minutes. The results changed how I think about what a hir..."
+excerptDe: "Die Kandidaten müssen innerhalb von 60 Minuten mit LLMs und Frontend-Entwicklung eine statische Website fertigstellen, wodurch der Fokus vom 'Wissensgedächt..."
 date: "2025-04-28"
 author: "Nils Liu"
 tags:
   - "Career"
+  - "Blog"
   - "GenAI"
 coverImage: "/images/blog/genai-tech-interview.jpg"
 ---
@@ -27,3 +28,5 @@ What this format was actually testing:
 In an era where AI tools are table stakes, the interview should probably reflect that. What matters isn't what candidates know. It's what they can build.
 
 #GenerativeAI #InterviewDesign #DigitalTransformation
+
+💬 **Read more:** [2025 Year in Review (English)](/en/insights/2025-year-in-review-en)

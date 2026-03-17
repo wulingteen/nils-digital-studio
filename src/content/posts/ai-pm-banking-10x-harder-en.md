@@ -3,7 +3,7 @@ title: "Why Deploying LLMs in Banking Is 10x Harder Than You Think"
 excerpt: "Deploying AI in a bank isn't just picking a model. Compliance, security, data governance, organizational culture — each hurdle is harder than the last."
 author: "Nils Liu"
 date: 2025-05-18
-coverImage: "/images/blog/ai-pm-base.png"
+coverImage: "/images/blog/ai-pm-base.webp"
 tags: ["AI PM", "GenAI", "Finance", "Career"]
 seriesInfo:
   part: 2
@@ -22,3 +22,6 @@ To succeed as a GenAI PM in banking, you must master the art of combining human 
 - **Audit Trails** that record exactly which version of a model produced which advice on which day.
 
 In this environment, "prompt engineering" is just 5% of the work. The remaining 95% is building an infrastructure of trust around the AI.
+
+
+💬 **Read more:** [2025 Year in Review (English)](/en/insights/2025-year-in-review-en)

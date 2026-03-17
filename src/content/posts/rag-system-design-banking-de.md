@@ -20,3 +20,6 @@ Finanzdokumente sind komplex. Sie enthalten Tabellen, Fußnoten und Querverweise
 3. **Re-Ranking ist Pflicht:** Das Abrufen der Top 20 Kandidaten-Chunks führt zu viel Rauschen. Sie benötigen ein Cross-Encoder-Re-Ranking-Modell, um die Relevanz der gefundenen Chunks zu bewerten, bevor sie an das LLM übergeben werden.
 
 Wenn Ihr RAG-System halluziniert, liegt das Problem in 9 von 10 Fällen in der Retrieval-Pipeline, nicht im Sprachmodell.
+
+
+💬 **Lese mehr:** [2025 Jahresrückblick (Auf Deutsch)](/de/insights/2025-year-in-review-de)

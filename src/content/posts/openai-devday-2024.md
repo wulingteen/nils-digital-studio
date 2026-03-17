@@ -2,13 +2,14 @@
 title: "OpenAI DevDay 2024: 一場屬於開發者的技術革新"
 titleEn: "OpenAI DevDay 2024: A Technical Revolution for Developers"
 titleDe: "OpenAI DevDay 2024: Eine technologische Revolution für Entwickler"
-excerpt: "OpenAI 展示了四個重要創新：視覺微調、實時 API、模型蒸餾和提示快取，將更多的創新和控制權交到開發者手中。"
-excerptEn: "OpenAI showcased four major innovations: Vision Fine-Tuning, Realtime API, Model Distillation, and Prompt Caching — handing more creative control to developers than ever before."
-excerptDe: "OpenAI zeigte vier große Innovationen: Vision Fine-Tuning, Realtime API, Model Distillation und Prompt Caching, wodurch mehr Kontrolle in die Hände der Entwickler gelegt wird."
+excerpt: "OpenAI 展示了四個重要創新：視覺微調、實時 API、模型蒸餾和提示快取，將更多的創新和控制權交到開發者手中。 OpenAI DevDay 2024: 一場屬於開發者的技術革新 就在今天，OpenAI 展示了四個重要創新：視覺微調（Vision Fine-Tuning）、實時 API（Rea..."
+excerptEn: "OpenAI showcased four major innovations: Vision Fine-Tuning, Realtime API, Model Distillation, and Prompt Caching — handing more creative control to develop..."
+excerptDe: "OpenAI zeigte vier große Innovationen: Vision Fine-Tuning, Realtime API, Model Distillation und Prompt Caching, wodurch mehr Kontrolle in die Hände der Entw..."
 date: "2024-10-02"
 author: "Nils Liu"
 tags:
   - "News"
+  - "Blog"
   - "GenAI"
 coverImage: "/images/blog/openai-devday-2024.png"
 ---
@@ -36,3 +37,6 @@ OpenAI DevDay 2024: 一場屬於開發者的技術革新
 最後，模型蒸餾技術或許是最具顛覆性的創新。開發者可以使用高階模型如 GPT-4o 的輸出，來訓練更小、更高效的模型，這將幫助那些資源有限的公司大幅降低計算成本。
 
 這一次的轉變，可能會讓 AI 應用真正遍地開花，進一步推動各行各業的發展。
+
+
+💬 **延伸閱讀：** [2025 年度回顧與未來展望](/zh/insights/2025-year-in-review)

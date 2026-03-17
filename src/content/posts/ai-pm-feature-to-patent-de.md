@@ -3,7 +3,7 @@ title: "Von Funktion zu Patent: Veröffentlichung von GenAI in einer regulierten
 excerpt: "Was macht ein GenAI-Feature von der Konzeption über den Launch bis hin zur Patentanmeldung durch? Ein kompletter Erfahrungsbericht eines Bank-KI-PMs."
 author: "Nils Liu"
 date: 2025-05-18
-coverImage: "/images/blog/ai-pm-base.png"
+coverImage: "/images/blog/ai-pm-base.webp"
 tags: ["AI PM", "GenAI", "Patents", "Career"]
 seriesInfo:
   part: 4
@@ -21,3 +21,6 @@ Als KI-Produktmanager habe ich gelernt, dass die erfolgreichsten Produkte diejen
 Diese Philosophie führte zu meinen jüngsten Gebrauchsmusterpatenten. Indem wir Kundenbetreuer dabei beobachteten, wie sie mit unstrukturierten Kundendaten zu kämpfen hatten, entwarfen wir eine GenAI-Architektur im Backend, die die Informationen vorverarbeitet.
 
 Wenn Sie tiefgreifende Reibungen auf architektureller Ebene statt nur auf UI-Ebene lösen, bauen Sie nicht nur ein Feature – Sie erfinden ein patentierbares System. Der Weg vom Feature zum Patent beweist, dass Ihre spezifische Anwendung von KI einen branchenspezifischen Engpass löst, den herkömmliche Software nicht bewältigen konnte.
+
+
+💬 **Lese mehr:** [2025 Jahresrückblick (Auf Deutsch)](/de/insights/2025-year-in-review-de)

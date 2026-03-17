@@ -9,6 +9,7 @@ date: "2025-10-28"
 author: "Nils Liu"
 tags:
   - "Event"
+  - "Blog"
   - "Agent"
 coverImage: "/images/blog/devfest-taipei-announce.jpg"
 ---
@@ -16,3 +17,5 @@ coverImage: "/images/blog/devfest-taipei-announce.jpg"
 I'll be speaking at DevFest Taipei 2025 on November 30th — hosted by Google GDG. The session covers AI Agent team applications that are actually running in production.
 
 Free admission, registration required (reviewed). Come find me after if you want to go deep on the architecture.
+
+💬 **Read more:** [2025 Year in Review (English)](/en/insights/2025-year-in-review-en)
