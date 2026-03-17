@@ -1,0 +1,43 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { t } from '../../../i18n/utils';
+import HeaderIsland from '../../../components/layout/HeaderIsland';
+import FooterStatic from '../../../components/layout/FooterStatic.astro';
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: 'en' } },
+    { params: { lang: 'zh' } },
+    { params: { lang: 'de' } },
+  ];
+}
+
+const { lang } = Astro.params;
+const SITE = 'https://nilsliu.dev';
+
+import AIPMQuizPage from '../../../components/gamification/AIPMQuizPage';
+
+const pageTitle = lang === 'zh' ? 'AI PM 核心能力測驗 | Nils Liu' 
+  : lang === 'de' ? 'AI PM Kompetenztest | Nils Liu' 
+  : 'AI PM Skills Assessment | Nils Liu';
+const pageDesc = lang === 'zh' ? '10 道情境題，測驗你的 AI 產品經理核心能力。涵蓋 RAG、Prompt Engineering、AI Agent 架構等實戰主題。'
+  : lang === 'de' ? '10 Szenario-Fragen zur Bewertung Ihrer AI-PM-Kernkompetenzen.'
+  : '10 scenario-based questions to assess your AI Product Manager core competencies.';
+---
+
+<Layout
+  title={pageTitle}
+  description={pageDesc}
+  lang={lang!}
+  canonicalURL={`${SITE}/${lang}/quiz/`}
+>
+  <HeaderIsland lang={lang!} currentPath={`/${lang}/quiz`} client:load />
+
+  <section class="section-padding min-h-screen pt-32 pb-20">
+    <div class="container-narrow px-6 md:px-8 max-w-3xl mx-auto">
+      <AIPMQuizPage lang={lang!} client:only="react" />
+    </div>
+  </section>
+
+  <FooterStatic lang={lang!} />
+</Layout>

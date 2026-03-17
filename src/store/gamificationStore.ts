@@ -7,11 +7,13 @@ export interface GamificationState {
   unlockedBadges: string[];
   isSubscribed: boolean;
   assessmentScore: number | null;
+  bestCombo: number;
   markAsRead: (id: string) => void;
   toggleBookmark: (id: string) => void;
   unlockBadge: (badge: string) => void;
   subscribe: () => void;
   setAssessmentScore: (score: number) => void;
+  setBestCombo: (combo: number) => void;
 }
 
 export const useGamificationStore = create<GamificationState>()(
@@ -22,6 +24,7 @@ export const useGamificationStore = create<GamificationState>()(
       unlockedBadges: [],
       isSubscribed: false,
       assessmentScore: null,
+      bestCombo: 0,
       markAsRead: (id) =>
         set((state) => ({
           readArticles: state.readArticles.includes(id)
@@ -42,6 +45,7 @@ export const useGamificationStore = create<GamificationState>()(
         })),
       subscribe: () => set({ isSubscribed: true }),
       setAssessmentScore: (score) => set({ assessmentScore: score }),
+      setBestCombo: (combo) => set((state) => ({ bestCombo: Math.max(state.bestCombo, combo) })),
     }),
     {
       name: 'nils-gamification-storage', // Key in localStorage
