@@ -1,5 +1,5 @@
 ---
-title: "OpenClaw Hummerzucht-Beobachtung & Ökosystem-Leitfaden: Wie NemoClaw und ZeroClaw persönliche KI-Assistenten neu definieren"
+title: "OpenClaw Ökosystem-Beobachtung: Wie NemoClaw, ZeroClaw und NanoClaw persönliche KI-Assistenten neu definieren"
 titleEn: "OpenClaw Ecosystem Observation: How Variants are Redefining Personal AI Assistants"
 titleDe: "OpenClaw Ökosystem-Beobachtung: Wie Varianten persönliche KI-Assistenten neu definieren"
 excerpt: "OpenClaw hat gezeigt, dass ein Assistent eine persistente Computing-Schicht ist. Aber seine Varianten (wie NanoBot, CoPaw, IronClaw) sind noch faszinierender. Fünf verschiedene Pfade skizzieren die wahre Form der nächsten Generation von KI-Assistenten."

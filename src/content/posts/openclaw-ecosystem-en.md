@@ -1,5 +1,5 @@
 ---
-title: "OpenClaw Ecosystem Observation: How Variants are Redefining Personal AI Assistants"
+title: "OpenClaw Ecosystem Observation: How NemoClaw, ZeroClaw, and NanoClaw are Redefining Personal AI Assistants"
 titleEn: "OpenClaw Ecosystem Observation: How Variants are Redefining Personal AI Assistants"
 titleDe: "OpenClaw Ökosystem-Beobachtung: Wie Varianten persönliche KI-Assistenten neu definieren"
 excerpt: "OpenClaw showed us that an assistant is an always-on computing layer, not just a chatbot. But its variants (like NanoBot, CoPaw, IronClaw) are even more fascinating. Spanning five distinct paths, they outline the true shape of next-generation AI assistants."

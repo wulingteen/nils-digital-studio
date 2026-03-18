@@ -1,5 +1,5 @@
 ---
-title: "OpenClaw 生態觀察：從龍蝦變種看個人 AI Assistant 的未來"
+title: "OpenClaw 生態觀察：我為什麼覺得 NemoClaw、ZeroClaw、NanoClaw 這些變體，正在重新定義個人 AI Assistant 的未來"
 titleEn: "OpenClaw Ecosystem Observation: How Variants are Redefining Personal AI Assistants"
 titleDe: "OpenClaw Ökosystem-Beobachtung: Wie Varianten persönliche KI-Assistenten neu definieren"
 excerpt: "OpenClaw 的出現讓大家看到「assistant 不只是聊天機器人」，而是一個常駐的代理層。但真正有趣的是它的變種（如 NanoBot, CoPaw, IronClaw），從基礎設施到極端硬體部署，五大路線正在回答下一代 AI 助理的真正形狀。"
