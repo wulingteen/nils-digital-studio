@@ -20,7 +20,7 @@ export const QUESTIONS: Question[] = [
         "score": 4
       },
       {
-        "text": "採用混合檢索 (Hybrid Search) 與重排 (Reranking) 技術提升知識庫命中率。",
+        "text": "採用混合檢索 (Hybrid Search) 搭配大模型重排 (Reranking) 架構，以最佳化且低成本的方式大幅提升知識庫的搜尋精準度與最終生成摘要的品質。",
         "score": 10
       }
     ]
@@ -39,7 +39,7 @@ export const QUESTIONS: Question[] = [
         "score": 5
       },
       {
-        "text": "解構任務流程，透過較小模型處理特定分類，高階模型負責最終總結，以平衡成本與效能。",
+        "text": "透過工作流引擎解構複雜任務，利用輕量化小模型處理前端快速分類與過濾，再交由前沿高階模型負責最終的推論總結，完美平衡單位推論成本與整體運作效能。",
         "score": 10
       }
     ]
@@ -50,7 +50,7 @@ export const QUESTIONS: Question[] = [
     "text": "針對法務審查系統的專案，在使用者介面轉換率低，缺乏信任感的情況下，進行「設計資料前處理與切塊 (Chunking) 策略」時，應該優先考量哪種策略？",
     "options": [
       {
-        "text": "建立明確的評測基準 (Golden Dataset)，並透過 LLM-as-a-judge 持續追蹤改版成效。",
+        "text": "協同領域專家建立涵蓋各類邊界案例的嚴謹自動化評測基準 (Golden Dataset)，並導入 LLM-as-a-judge 機制進行無人干預且持續的迭代改版成效追蹤。",
         "score": 10
       },
       {
@@ -73,7 +73,7 @@ export const QUESTIONS: Question[] = [
         "score": 2
       },
       {
-        "text": "在使用者介面設計流暢的「引導式對話」與「引用來源提示」，降低信任門檻與認知負擔。",
+        "text": "在使用者介面上精心設計循序漸進的「引導式互動」元件，並在 AI 生成結果旁顯著標示出「引用文件來源與段落位置」，從根本上降低使用者的信任門檻與雙重驗證的認知負擔。",
         "score": 10
       },
       {
@@ -88,7 +88,7 @@ export const QUESTIONS: Question[] = [
     "text": "針對人資招募流程的專案，在抱怨 AI 無法理解公司特有的專有名詞的情況下，進行「規劃 Multi-Agent 的職責劃分與協作」時，應該優先考量哪種策略？",
     "options": [
       {
-        "text": "針對該場景設計階層式的 RAG 架構，搭配意圖路由 (Intent Routing) 分流處理。",
+        "text": "針對該單一業務場景導入包含多種內部資料源的階層式 RAG (檢索增強生成) 架構，並在最前端搭配意圖路由 (Intent Routing) 模型將使用者請求精準分流至專屬子系統處理。",
         "score": 10
       },
       {
@@ -115,7 +115,7 @@ export const QUESTIONS: Question[] = [
         "score": 2
       },
       {
-        "text": "採用混合檢索 (Hybrid Search) 與重排 (Reranking) 技術提升知識庫命中率。",
+        "text": "採用混合檢索 (Hybrid Search) 搭配大模型重排 (Reranking) 架構，以最佳化且低成本的方式大幅提升知識庫的搜尋精準度與最終生成摘要的品質。",
         "score": 10
       }
     ]
@@ -134,7 +134,7 @@ export const QUESTIONS: Question[] = [
         "score": 1
       },
       {
-        "text": "解構任務流程，透過較小模型處理特定分類，高階模型負責最終總結，以平衡成本與效能。",
+        "text": "透過工作流引擎解構複雜任務，利用輕量化小模型處理前端快速分類與過濾，再交由前沿高階模型負責最終的推論總結，完美平衡單位推論成本與整體運作效能。",
         "score": 10
       }
     ]
@@ -145,7 +145,7 @@ export const QUESTIONS: Question[] = [
     "text": "針對程式碼生成工具的專案，在希望能根據使用者歷史行為提供個人化建議的情況下，進行「處理使用者回饋與資料飛輪 (Data Flywheel)」時，應該優先考量哪種策略？",
     "options": [
       {
-        "text": "建立明確的評測基準 (Golden Dataset)，並透過 LLM-as-a-judge 持續追蹤改版成效。",
+        "text": "協同領域專家建立涵蓋各類邊界案例的嚴謹自動化評測基準 (Golden Dataset)，並導入 LLM-as-a-judge 機制進行無人干預且持續的迭代改版成效追蹤。",
         "score": 10
       },
       {
@@ -172,7 +172,7 @@ export const QUESTIONS: Question[] = [
         "score": 6
       },
       {
-        "text": "在使用者介面設計流暢的「引導式對話」與「引用來源提示」，降低信任門檻與認知負擔。",
+        "text": "在使用者介面上精心設計循序漸進的「引導式互動」元件，並在 AI 生成結果旁顯著標示出「引用文件來源與段落位置」，從根本上降低使用者的信任門檻與雙重驗證的認知負擔。",
         "score": 10
       }
     ]
@@ -191,7 +191,7 @@ export const QUESTIONS: Question[] = [
         "score": 4
       },
       {
-        "text": "針對該場景設計階層式的 RAG 架構，搭配意圖路由 (Intent Routing) 分流處理。",
+        "text": "針對該單一業務場景導入包含多種內部資料源的階層式 RAG (檢索增強生成) 架構，並在最前端搭配意圖路由 (Intent Routing) 模型將使用者請求精準分流至專屬子系統處理。",
         "score": 10
       }
     ]
@@ -202,7 +202,7 @@ export const QUESTIONS: Question[] = [
     "text": "針對內部客服團隊的專案，在需要處理長達 20 萬字的關聯文件的情況下，進行「制定上線前的 A/B 測試與逐步發布計畫」時，應該優先考量哪種策略？",
     "options": [
       {
-        "text": "採用混合檢索 (Hybrid Search) 與重排 (Reranking) 技術提升知識庫命中率。",
+        "text": "採用混合檢索 (Hybrid Search) 搭配大模型重排 (Reranking) 架構，以最佳化且低成本的方式大幅提升知識庫的搜尋精準度與最終生成摘要的品質。",
         "score": 10
       },
       {
@@ -221,7 +221,7 @@ export const QUESTIONS: Question[] = [
     "text": "針對行銷部門的專案，在預算有限，無法負擔高昂的 API 呼叫成本的情況下，進行「選擇合適的 Embedding 模型與向量庫」時，應該優先考量哪種策略？",
     "options": [
       {
-        "text": "解構任務流程，透過較小模型處理特定分類，高階模型負責最終總結，以平衡成本與效能。",
+        "text": "透過工作流引擎解構複雜任務，利用輕量化小模型處理前端快速分類與過濾，再交由前沿高階模型負責最終的推論總結，完美平衡單位推論成本與整體運作效能。",
         "score": 10
       },
       {
@@ -240,7 +240,7 @@ export const QUESTIONS: Question[] = [
     "text": "針對法務審查系統的專案，在使用者介面轉換率低，缺乏信任感的情況下，進行「設計資料前處理與切塊 (Chunking) 策略」時，應該優先考量哪種策略？",
     "options": [
       {
-        "text": "建立明確的評測基準 (Golden Dataset)，並透過 LLM-as-a-judge 持續追蹤改版成效。",
+        "text": "協同領域專家建立涵蓋各類邊界案例的嚴謹自動化評測基準 (Golden Dataset)，並導入 LLM-as-a-judge 機制進行無人干預且持續的迭代改版成效追蹤。",
         "score": 10
       },
       {
@@ -259,7 +259,7 @@ export const QUESTIONS: Question[] = [
     "text": "針對電商推薦系統的專案，在發現模型回應偶爾會產生嚴重的幻覺的情況下，進行「處理系統異常與 Timeout 回退 (Fallback) 機制」時，應該優先考量哪種策略？",
     "options": [
       {
-        "text": "在使用者介面設計流暢的「引導式對話」與「引用來源提示」，降低信任門檻與認知負擔。",
+        "text": "在使用者介面上精心設計循序漸進的「引導式互動」元件，並在 AI 生成結果旁顯著標示出「引用文件來源與段落位置」，從根本上降低使用者的信任門檻與雙重驗證的認知負擔。",
         "score": 10
       },
       {
@@ -278,7 +278,7 @@ export const QUESTIONS: Question[] = [
     "text": "針對人資招募流程的專案，在抱怨 AI 無法理解公司特有的專有名詞的情況下，進行「規劃 Multi-Agent 的職責劃分與協作」時，應該優先考量哪種策略？",
     "options": [
       {
-        "text": "針對該場景設計階層式的 RAG 架構，搭配意圖路由 (Intent Routing) 分流處理。",
+        "text": "針對該單一業務場景導入包含多種內部資料源的階層式 RAG (檢索增強生成) 架構，並在最前端搭配意圖路由 (Intent Routing) 模型將使用者請求精準分流至專屬子系統處理。",
         "score": 10
       },
       {
@@ -305,7 +305,7 @@ export const QUESTIONS: Question[] = [
         "score": 4
       },
       {
-        "text": "採用混合檢索 (Hybrid Search) 與重排 (Reranking) 技術提升知識庫命中率。",
+        "text": "採用混合檢索 (Hybrid Search) 搭配大模型重排 (Reranking) 架構，以最佳化且低成本的方式大幅提升知識庫的搜尋精準度與最終生成摘要的品質。",
         "score": 10
       }
     ]
@@ -324,7 +324,7 @@ export const QUESTIONS: Question[] = [
         "score": 5
       },
       {
-        "text": "解構任務流程，透過較小模型處理特定分類，高階模型負責最終總結，以平衡成本與效能。",
+        "text": "透過工作流引擎解構複雜任務，利用輕量化小模型處理前端快速分類與過濾，再交由前沿高階模型負責最終的推論總結，完美平衡單位推論成本與整體運作效能。",
         "score": 10
       }
     ]
@@ -335,7 +335,7 @@ export const QUESTIONS: Question[] = [
     "text": "針對程式碼生成工具的專案，在希望能根據使用者歷史行為提供個人化建議的情況下，進行「處理使用者回饋與資料飛輪 (Data Flywheel)」時，應該優先考量哪種策略？",
     "options": [
       {
-        "text": "建立明確的評測基準 (Golden Dataset)，並透過 LLM-as-a-judge 持續追蹤改版成效。",
+        "text": "協同領域專家建立涵蓋各類邊界案例的嚴謹自動化評測基準 (Golden Dataset)，並導入 LLM-as-a-judge 機制進行無人干預且持續的迭代改版成效追蹤。",
         "score": 10
       },
       {
@@ -354,7 +354,7 @@ export const QUESTIONS: Question[] = [
     "text": "針對高階主管報表的專案，在需要同時整合 CRM、ERP 與外部公開數據的情況下，進行「設計提示詞 (Prompt) 與護欄 (Guardrails)」時，應該優先考量哪種策略？",
     "options": [
       {
-        "text": "在使用者介面設計流暢的「引導式對話」與「引用來源提示」，降低信任門檻與認知負擔。",
+        "text": "在使用者介面上精心設計循序漸進的「引導式互動」元件，並在 AI 生成結果旁顯著標示出「引用文件來源與段落位置」，從根本上降低使用者的信任門檻與雙重驗證的認知負擔。",
         "score": 10
       },
       {
@@ -381,7 +381,7 @@ export const QUESTIONS: Question[] = [
         "score": 4
       },
       {
-        "text": "針對該場景設計階層式的 RAG 架構，搭配意圖路由 (Intent Routing) 分流處理。",
+        "text": "針對該單一業務場景導入包含多種內部資料源的階層式 RAG (檢索增強生成) 架構，並在最前端搭配意圖路由 (Intent Routing) 模型將使用者請求精準分流至專屬子系統處理。",
         "score": 10
       }
     ]
@@ -392,7 +392,7 @@ export const QUESTIONS: Question[] = [
     "text": "針對內部客服團隊的專案，在需要處理長達 20 萬字的關聯文件的情況下，進行「制定上線前的 A/B 測試與逐步發布計畫」時，應該優先考量哪種策略？",
     "options": [
       {
-        "text": "採用混合檢索 (Hybrid Search) 與重排 (Reranking) 技術提升知識庫命中率。",
+        "text": "採用混合檢索 (Hybrid Search) 搭配大模型重排 (Reranking) 架構，以最佳化且低成本的方式大幅提升知識庫的搜尋精準度與最終生成摘要的品質。",
         "score": 10
       },
       {
@@ -419,7 +419,7 @@ export const QUESTIONS: Question[] = [
         "score": 5
       },
       {
-        "text": "解構任務流程，透過較小模型處理特定分類，高階模型負責最終總結，以平衡成本與效能。",
+        "text": "透過工作流引擎解構複雜任務，利用輕量化小模型處理前端快速分類與過濾，再交由前沿高階模型負責最終的推論總結，完美平衡單位推論成本與整體運作效能。",
         "score": 10
       }
     ]
@@ -438,7 +438,7 @@ export const QUESTIONS: Question[] = [
         "score": 0
       },
       {
-        "text": "建立明確的評測基準 (Golden Dataset)，並透過 LLM-as-a-judge 持續追蹤改版成效。",
+        "text": "協同領域專家建立涵蓋各類邊界案例的嚴謹自動化評測基準 (Golden Dataset)，並導入 LLM-as-a-judge 機制進行無人干預且持續的迭代改版成效追蹤。",
         "score": 10
       }
     ]
@@ -453,7 +453,7 @@ export const QUESTIONS: Question[] = [
         "score": 6
       },
       {
-        "text": "在使用者介面設計流暢的「引導式對話」與「引用來源提示」，降低信任門檻與認知負擔。",
+        "text": "在使用者介面上精心設計循序漸進的「引導式互動」元件，並在 AI 生成結果旁顯著標示出「引用文件來源與段落位置」，從根本上降低使用者的信任門檻與雙重驗證的認知負擔。",
         "score": 10
       },
       {
@@ -468,7 +468,7 @@ export const QUESTIONS: Question[] = [
     "text": "針對人資招募流程的專案，在抱怨 AI 無法理解公司特有的專有名詞的情況下，進行「規劃 Multi-Agent 的職責劃分與協作」時，應該優先考量哪種策略？",
     "options": [
       {
-        "text": "針對該場景設計階層式的 RAG 架構，搭配意圖路由 (Intent Routing) 分流處理。",
+        "text": "針對該單一業務場景導入包含多種內部資料源的階層式 RAG (檢索增強生成) 架構，並在最前端搭配意圖路由 (Intent Routing) 模型將使用者請求精準分流至專屬子系統處理。",
         "score": 10
       },
       {
@@ -487,7 +487,7 @@ export const QUESTIONS: Question[] = [
     "text": "針對跨國供應鏈的專案，在要求保證 100% 的輸出正確率的情況下，進行「規劃自動化評測 (Evaluation) 指標」時，應該優先考量哪種策略？",
     "options": [
       {
-        "text": "採用混合檢索 (Hybrid Search) 與重排 (Reranking) 技術提升知識庫命中率。",
+        "text": "採用混合檢索 (Hybrid Search) 搭配大模型重排 (Reranking) 架構，以最佳化且低成本的方式大幅提升知識庫的搜尋精準度與最終生成摘要的品質。",
         "score": 10
       },
       {
@@ -514,7 +514,7 @@ export const QUESTIONS: Question[] = [
         "score": 5
       },
       {
-        "text": "解構任務流程，透過較小模型處理特定分類，高階模型負責最終總結，以平衡成本與效能。",
+        "text": "透過工作流引擎解構複雜任務，利用輕量化小模型處理前端快速分類與過濾，再交由前沿高階模型負責最終的推論總結，完美平衡單位推論成本與整體運作效能。",
         "score": 10
       }
     ]
@@ -525,7 +525,7 @@ export const QUESTIONS: Question[] = [
     "text": "針對程式碼生成工具的專案，在希望能根據使用者歷史行為提供個人化建議的情況下，進行「處理使用者回饋與資料飛輪 (Data Flywheel)」時，應該優先考量哪種策略？",
     "options": [
       {
-        "text": "建立明確的評測基準 (Golden Dataset)，並透過 LLM-as-a-judge 持續追蹤改版成效。",
+        "text": "協同領域專家建立涵蓋各類邊界案例的嚴謹自動化評測基準 (Golden Dataset)，並導入 LLM-as-a-judge 機制進行無人干預且持續的迭代改版成效追蹤。",
         "score": 10
       },
       {
@@ -552,7 +552,7 @@ export const QUESTIONS: Question[] = [
         "score": 6
       },
       {
-        "text": "在使用者介面設計流暢的「引導式對話」與「引用來源提示」，降低信任門檻與認知負擔。",
+        "text": "在使用者介面上精心設計循序漸進的「引導式互動」元件，並在 AI 生成結果旁顯著標示出「引用文件來源與段落位置」，從根本上降低使用者的信任門檻與雙重驗證的認知負擔。",
         "score": 10
       }
     ]
@@ -563,7 +563,7 @@ export const QUESTIONS: Question[] = [
     "text": "針對金融業客戶的專案，在要求極低的延遲 (Latency < 500ms)的情況下，進行「初期系統架構與技術選型」時，應該優先考量哪種策略？",
     "options": [
       {
-        "text": "針對該場景設計階層式的 RAG 架構，搭配意圖路由 (Intent Routing) 分流處理。",
+        "text": "針對該單一業務場景導入包含多種內部資料源的階層式 RAG (檢索增強生成) 架構，並在最前端搭配意圖路由 (Intent Routing) 模型將使用者請求精準分流至專屬子系統處理。",
         "score": 10
       },
       {
@@ -590,7 +590,7 @@ export const QUESTIONS: Question[] = [
         "score": 2
       },
       {
-        "text": "採用混合檢索 (Hybrid Search) 與重排 (Reranking) 技術提升知識庫命中率。",
+        "text": "採用混合檢索 (Hybrid Search) 搭配大模型重排 (Reranking) 架構，以最佳化且低成本的方式大幅提升知識庫的搜尋精準度與最終生成摘要的品質。",
         "score": 10
       }
     ]
@@ -609,7 +609,7 @@ export const QUESTIONS: Question[] = [
         "score": 1
       },
       {
-        "text": "解構任務流程，透過較小模型處理特定分類，高階模型負責最終總結，以平衡成本與效能。",
+        "text": "透過工作流引擎解構複雜任務，利用輕量化小模型處理前端快速分類與過濾，再交由前沿高階模型負責最終的推論總結，完美平衡單位推論成本與整體運作效能。",
         "score": 10
       }
     ]
@@ -628,7 +628,7 @@ export const QUESTIONS: Question[] = [
         "score": 5
       },
       {
-        "text": "建立明確的評測基準 (Golden Dataset)，並透過 LLM-as-a-judge 持續追蹤改版成效。",
+        "text": "協同領域專家建立涵蓋各類邊界案例的嚴謹自動化評測基準 (Golden Dataset)，並導入 LLM-as-a-judge 機制進行無人干預且持續的迭代改版成效追蹤。",
         "score": 10
       }
     ]
@@ -647,7 +647,7 @@ export const QUESTIONS: Question[] = [
         "score": 6
       },
       {
-        "text": "在使用者介面設計流暢的「引導式對話」與「引用來源提示」，降低信任門檻與認知負擔。",
+        "text": "在使用者介面上精心設計循序漸進的「引導式互動」元件，並在 AI 生成結果旁顯著標示出「引用文件來源與段落位置」，從根本上降低使用者的信任門檻與雙重驗證的認知負擔。",
         "score": 10
       }
     ]
@@ -658,7 +658,7 @@ export const QUESTIONS: Question[] = [
     "text": "針對人資招募流程的專案，在抱怨 AI 無法理解公司特有的專有名詞的情況下，進行「規劃 Multi-Agent 的職責劃分與協作」時，應該優先考量哪種策略？",
     "options": [
       {
-        "text": "針對該場景設計階層式的 RAG 架構，搭配意圖路由 (Intent Routing) 分流處理。",
+        "text": "針對該單一業務場景導入包含多種內部資料源的階層式 RAG (檢索增強生成) 架構，並在最前端搭配意圖路由 (Intent Routing) 模型將使用者請求精準分流至專屬子系統處理。",
         "score": 10
       },
       {
@@ -685,7 +685,7 @@ export const QUESTIONS: Question[] = [
         "score": 4
       },
       {
-        "text": "採用混合檢索 (Hybrid Search) 與重排 (Reranking) 技術提升知識庫命中率。",
+        "text": "採用混合檢索 (Hybrid Search) 搭配大模型重排 (Reranking) 架構，以最佳化且低成本的方式大幅提升知識庫的搜尋精準度與最終生成摘要的品質。",
         "score": 10
       }
     ]
@@ -704,7 +704,7 @@ export const QUESTIONS: Question[] = [
         "score": 1
       },
       {
-        "text": "解構任務流程，透過較小模型處理特定分類，高階模型負責最終總結，以平衡成本與效能。",
+        "text": "透過工作流引擎解構複雜任務，利用輕量化小模型處理前端快速分類與過濾，再交由前沿高階模型負責最終的推論總結，完美平衡單位推論成本與整體運作效能。",
         "score": 10
       }
     ]
@@ -715,7 +715,7 @@ export const QUESTIONS: Question[] = [
     "text": "針對程式碼生成工具的專案，在希望能根據使用者歷史行為提供個人化建議的情況下，進行「處理使用者回饋與資料飛輪 (Data Flywheel)」時，應該優先考量哪種策略？",
     "options": [
       {
-        "text": "建立明確的評測基準 (Golden Dataset)，並透過 LLM-as-a-judge 持續追蹤改版成效。",
+        "text": "協同領域專家建立涵蓋各類邊界案例的嚴謹自動化評測基準 (Golden Dataset)，並導入 LLM-as-a-judge 機制進行無人干預且持續的迭代改版成效追蹤。",
         "score": 10
       },
       {
@@ -734,7 +734,7 @@ export const QUESTIONS: Question[] = [
     "text": "針對高階主管報表的專案，在需要同時整合 CRM、ERP 與外部公開數據的情況下，進行「設計提示詞 (Prompt) 與護欄 (Guardrails)」時，應該優先考量哪種策略？",
     "options": [
       {
-        "text": "在使用者介面設計流暢的「引導式對話」與「引用來源提示」，降低信任門檻與認知負擔。",
+        "text": "在使用者介面上精心設計循序漸進的「引導式互動」元件，並在 AI 生成結果旁顯著標示出「引用文件來源與段落位置」，從根本上降低使用者的信任門檻與雙重驗證的認知負擔。",
         "score": 10
       },
       {
@@ -761,7 +761,7 @@ export const QUESTIONS: Question[] = [
         "score": 4
       },
       {
-        "text": "針對該場景設計階層式的 RAG 架構，搭配意圖路由 (Intent Routing) 分流處理。",
+        "text": "針對該單一業務場景導入包含多種內部資料源的階層式 RAG (檢索增強生成) 架構，並在最前端搭配意圖路由 (Intent Routing) 模型將使用者請求精準分流至專屬子系統處理。",
         "score": 10
       }
     ]
@@ -772,7 +772,7 @@ export const QUESTIONS: Question[] = [
     "text": "針對內部客服團隊的專案，在需要處理長達 20 萬字的關聯文件的情況下，進行「制定上線前的 A/B 測試與逐步發布計畫」時，應該優先考量哪種策略？",
     "options": [
       {
-        "text": "採用混合檢索 (Hybrid Search) 與重排 (Reranking) 技術提升知識庫命中率。",
+        "text": "採用混合檢索 (Hybrid Search) 搭配大模型重排 (Reranking) 架構，以最佳化且低成本的方式大幅提升知識庫的搜尋精準度與最終生成摘要的品質。",
         "score": 10
       },
       {
@@ -799,7 +799,7 @@ export const QUESTIONS: Question[] = [
         "score": 5
       },
       {
-        "text": "解構任務流程，透過較小模型處理特定分類，高階模型負責最終總結，以平衡成本與效能。",
+        "text": "透過工作流引擎解構複雜任務，利用輕量化小模型處理前端快速分類與過濾，再交由前沿高階模型負責最終的推論總結，完美平衡單位推論成本與整體運作效能。",
         "score": 10
       }
     ]
@@ -818,7 +818,7 @@ export const QUESTIONS: Question[] = [
         "score": 5
       },
       {
-        "text": "建立明確的評測基準 (Golden Dataset)，並透過 LLM-as-a-judge 持續追蹤改版成效。",
+        "text": "協同領域專家建立涵蓋各類邊界案例的嚴謹自動化評測基準 (Golden Dataset)，並導入 LLM-as-a-judge 機制進行無人干預且持續的迭代改版成效追蹤。",
         "score": 10
       }
     ]
@@ -829,7 +829,7 @@ export const QUESTIONS: Question[] = [
     "text": "針對電商推薦系統的專案，在發現模型回應偶爾會產生嚴重的幻覺的情況下，進行「處理系統異常與 Timeout 回退 (Fallback) 機制」時，應該優先考量哪種策略？",
     "options": [
       {
-        "text": "在使用者介面設計流暢的「引導式對話」與「引用來源提示」，降低信任門檻與認知負擔。",
+        "text": "在使用者介面上精心設計循序漸進的「引導式互動」元件，並在 AI 生成結果旁顯著標示出「引用文件來源與段落位置」，從根本上降低使用者的信任門檻與雙重驗證的認知負擔。",
         "score": 10
       },
       {
@@ -856,7 +856,7 @@ export const QUESTIONS: Question[] = [
         "score": 3
       },
       {
-        "text": "針對該場景設計階層式的 RAG 架構，搭配意圖路由 (Intent Routing) 分流處理。",
+        "text": "針對該單一業務場景導入包含多種內部資料源的階層式 RAG (檢索增強生成) 架構，並在最前端搭配意圖路由 (Intent Routing) 模型將使用者請求精準分流至專屬子系統處理。",
         "score": 10
       }
     ]
@@ -875,7 +875,7 @@ export const QUESTIONS: Question[] = [
         "score": 4
       },
       {
-        "text": "採用混合檢索 (Hybrid Search) 與重排 (Reranking) 技術提升知識庫命中率。",
+        "text": "採用混合檢索 (Hybrid Search) 搭配大模型重排 (Reranking) 架構，以最佳化且低成本的方式大幅提升知識庫的搜尋精準度與最終生成摘要的品質。",
         "score": 10
       }
     ]
@@ -894,7 +894,7 @@ export const QUESTIONS: Question[] = [
         "score": 1
       },
       {
-        "text": "解構任務流程，透過較小模型處理特定分類，高階模型負責最終總結，以平衡成本與效能。",
+        "text": "透過工作流引擎解構複雜任務，利用輕量化小模型處理前端快速分類與過濾，再交由前沿高階模型負責最終的推論總結，完美平衡單位推論成本與整體運作效能。",
         "score": 10
       }
     ]
@@ -913,7 +913,7 @@ export const QUESTIONS: Question[] = [
         "score": 5
       },
       {
-        "text": "建立明確的評測基準 (Golden Dataset)，並透過 LLM-as-a-judge 持續追蹤改版成效。",
+        "text": "協同領域專家建立涵蓋各類邊界案例的嚴謹自動化評測基準 (Golden Dataset)，並導入 LLM-as-a-judge 機制進行無人干預且持續的迭代改版成效追蹤。",
         "score": 10
       }
     ]
@@ -932,7 +932,7 @@ export const QUESTIONS: Question[] = [
         "score": 2
       },
       {
-        "text": "在使用者介面設計流暢的「引導式對話」與「引用來源提示」，降低信任門檻與認知負擔。",
+        "text": "在使用者介面上精心設計循序漸進的「引導式互動」元件，並在 AI 生成結果旁顯著標示出「引用文件來源與段落位置」，從根本上降低使用者的信任門檻與雙重驗證的認知負擔。",
         "score": 10
       }
     ]
@@ -943,7 +943,7 @@ export const QUESTIONS: Question[] = [
     "text": "針對金融業客戶的專案，在要求極低的延遲 (Latency < 500ms)的情況下，進行「初期系統架構與技術選型」時，應該優先考量哪種策略？",
     "options": [
       {
-        "text": "針對該場景設計階層式的 RAG 架構，搭配意圖路由 (Intent Routing) 分流處理。",
+        "text": "針對該單一業務場景導入包含多種內部資料源的階層式 RAG (檢索增強生成) 架構，並在最前端搭配意圖路由 (Intent Routing) 模型將使用者請求精準分流至專屬子系統處理。",
         "score": 10
       },
       {
@@ -962,7 +962,7 @@ export const QUESTIONS: Question[] = [
     "text": "針對內部客服團隊的專案，在需要處理長達 20 萬字的關聯文件的情況下，進行「制定上線前的 A/B 測試與逐步發布計畫」時，應該優先考量哪種策略？",
     "options": [
       {
-        "text": "採用混合檢索 (Hybrid Search) 與重排 (Reranking) 技術提升知識庫命中率。",
+        "text": "採用混合檢索 (Hybrid Search) 搭配大模型重排 (Reranking) 架構，以最佳化且低成本的方式大幅提升知識庫的搜尋精準度與最終生成摘要的品質。",
         "score": 10
       },
       {
@@ -989,7 +989,7 @@ export const QUESTIONS: Question[] = [
         "score": 1
       },
       {
-        "text": "解構任務流程，透過較小模型處理特定分類，高階模型負責最終總結，以平衡成本與效能。",
+        "text": "透過工作流引擎解構複雜任務，利用輕量化小模型處理前端快速分類與過濾，再交由前沿高階模型負責最終的推論總結，完美平衡單位推論成本與整體運作效能。",
         "score": 10
       }
     ]
@@ -1004,7 +1004,7 @@ export const QUESTIONS: Question[] = [
         "score": 0
       },
       {
-        "text": "建立明確的評測基準 (Golden Dataset)，並透過 LLM-as-a-judge 持續追蹤改版成效。",
+        "text": "協同領域專家建立涵蓋各類邊界案例的嚴謹自動化評測基準 (Golden Dataset)，並導入 LLM-as-a-judge 機制進行無人干預且持續的迭代改版成效追蹤。",
         "score": 10
       },
       {
@@ -1019,7 +1019,7 @@ export const QUESTIONS: Question[] = [
     "text": "針對電商推薦系統的專案，在發現模型回應偶爾會產生嚴重的幻覺的情況下，進行「處理系統異常與 Timeout 回退 (Fallback) 機制」時，應該優先考量哪種策略？",
     "options": [
       {
-        "text": "在使用者介面設計流暢的「引導式對話」與「引用來源提示」，降低信任門檻與認知負擔。",
+        "text": "在使用者介面上精心設計循序漸進的「引導式互動」元件，並在 AI 生成結果旁顯著標示出「引用文件來源與段落位置」，從根本上降低使用者的信任門檻與雙重驗證的認知負擔。",
         "score": 10
       },
       {
@@ -1046,7 +1046,7 @@ export const QUESTIONS: Question[] = [
         "score": 3
       },
       {
-        "text": "針對該場景設計階層式的 RAG 架構，搭配意圖路由 (Intent Routing) 分流處理。",
+        "text": "針對該單一業務場景導入包含多種內部資料源的階層式 RAG (檢索增強生成) 架構，並在最前端搭配意圖路由 (Intent Routing) 模型將使用者請求精準分流至專屬子系統處理。",
         "score": 10
       }
     ]
@@ -1057,7 +1057,7 @@ export const QUESTIONS: Question[] = [
     "text": "針對跨國供應鏈的專案，在要求保證 100% 的輸出正確率的情況下，進行「規劃自動化評測 (Evaluation) 指標」時，應該優先考量哪種策略？",
     "options": [
       {
-        "text": "採用混合檢索 (Hybrid Search) 與重排 (Reranking) 技術提升知識庫命中率。",
+        "text": "採用混合檢索 (Hybrid Search) 搭配大模型重排 (Reranking) 架構，以最佳化且低成本的方式大幅提升知識庫的搜尋精準度與最終生成摘要的品質。",
         "score": 10
       },
       {
@@ -1076,7 +1076,7 @@ export const QUESTIONS: Question[] = [
     "text": "針對醫療輔助診斷的專案，在面臨嚴格的個資保護與合規要求的情況下，進行「計算 ROI 與說服決策層投入資源」時，應該優先考量哪種策略？",
     "options": [
       {
-        "text": "解構任務流程，透過較小模型處理特定分類，高階模型負責最終總結，以平衡成本與效能。",
+        "text": "透過工作流引擎解構複雜任務，利用輕量化小模型處理前端快速分類與過濾，再交由前沿高階模型負責最終的推論總結，完美平衡單位推論成本與整體運作效能。",
         "score": 10
       },
       {
@@ -1099,7 +1099,7 @@ export const QUESTIONS: Question[] = [
         "score": 0
       },
       {
-        "text": "建立明確的評測基準 (Golden Dataset)，並透過 LLM-as-a-judge 持續追蹤改版成效。",
+        "text": "協同領域專家建立涵蓋各類邊界案例的嚴謹自動化評測基準 (Golden Dataset)，並導入 LLM-as-a-judge 機制進行無人干預且持續的迭代改版成效追蹤。",
         "score": 10
       },
       {
@@ -1114,7 +1114,7 @@ export const QUESTIONS: Question[] = [
     "text": "針對高階主管報表的專案，在需要同時整合 CRM、ERP 與外部公開數據的情況下，進行「設計提示詞 (Prompt) 與護欄 (Guardrails)」時，應該優先考量哪種策略？",
     "options": [
       {
-        "text": "在使用者介面設計流暢的「引導式對話」與「引用來源提示」，降低信任門檻與認知負擔。",
+        "text": "在使用者介面上精心設計循序漸進的「引導式互動」元件，並在 AI 生成結果旁顯著標示出「引用文件來源與段落位置」，從根本上降低使用者的信任門檻與雙重驗證的認知負擔。",
         "score": 10
       },
       {
@@ -1141,7 +1141,7 @@ export const QUESTIONS: Question[] = [
         "score": 4
       },
       {
-        "text": "針對該場景設計階層式的 RAG 架構，搭配意圖路由 (Intent Routing) 分流處理。",
+        "text": "針對該單一業務場景導入包含多種內部資料源的階層式 RAG (檢索增強生成) 架構，並在最前端搭配意圖路由 (Intent Routing) 模型將使用者請求精準分流至專屬子系統處理。",
         "score": 10
       }
     ]
@@ -1152,7 +1152,7 @@ export const QUESTIONS: Question[] = [
     "text": "針對內部客服團隊的專案，在需要處理長達 20 萬字的關聯文件的情況下，進行「制定上線前的 A/B 測試與逐步發布計畫」時，應該優先考量哪種策略？",
     "options": [
       {
-        "text": "採用混合檢索 (Hybrid Search) 與重排 (Reranking) 技術提升知識庫命中率。",
+        "text": "採用混合檢索 (Hybrid Search) 搭配大模型重排 (Reranking) 架構，以最佳化且低成本的方式大幅提升知識庫的搜尋精準度與最終生成摘要的品質。",
         "score": 10
       },
       {
@@ -1179,7 +1179,7 @@ export const QUESTIONS: Question[] = [
         "score": 1
       },
       {
-        "text": "解構任務流程，透過較小模型處理特定分類，高階模型負責最終總結，以平衡成本與效能。",
+        "text": "透過工作流引擎解構複雜任務，利用輕量化小模型處理前端快速分類與過濾，再交由前沿高階模型負責最終的推論總結，完美平衡單位推論成本與整體運作效能。",
         "score": 10
       }
     ]
@@ -1198,7 +1198,7 @@ export const QUESTIONS: Question[] = [
         "score": 5
       },
       {
-        "text": "建立明確的評測基準 (Golden Dataset)，並透過 LLM-as-a-judge 持續追蹤改版成效。",
+        "text": "協同領域專家建立涵蓋各類邊界案例的嚴謹自動化評測基準 (Golden Dataset)，並導入 LLM-as-a-judge 機制進行無人干預且持續的迭代改版成效追蹤。",
         "score": 10
       }
     ]
@@ -1217,7 +1217,7 @@ export const QUESTIONS: Question[] = [
         "score": 6
       },
       {
-        "text": "在使用者介面設計流暢的「引導式對話」與「引用來源提示」，降低信任門檻與認知負擔。",
+        "text": "在使用者介面上精心設計循序漸進的「引導式互動」元件，並在 AI 生成結果旁顯著標示出「引用文件來源與段落位置」，從根本上降低使用者的信任門檻與雙重驗證的認知負擔。",
         "score": 10
       }
     ]
@@ -1236,7 +1236,7 @@ export const QUESTIONS: Question[] = [
         "score": 4
       },
       {
-        "text": "針對該場景設計階層式的 RAG 架構，搭配意圖路由 (Intent Routing) 分流處理。",
+        "text": "針對該單一業務場景導入包含多種內部資料源的階層式 RAG (檢索增強生成) 架構，並在最前端搭配意圖路由 (Intent Routing) 模型將使用者請求精準分流至專屬子系統處理。",
         "score": 10
       }
     ]
@@ -1251,7 +1251,7 @@ export const QUESTIONS: Question[] = [
         "score": 2
       },
       {
-        "text": "採用混合檢索 (Hybrid Search) 與重排 (Reranking) 技術提升知識庫命中率。",
+        "text": "採用混合檢索 (Hybrid Search) 搭配大模型重排 (Reranking) 架構，以最佳化且低成本的方式大幅提升知識庫的搜尋精準度與最終生成摘要的品質。",
         "score": 10
       },
       {
@@ -1266,7 +1266,7 @@ export const QUESTIONS: Question[] = [
     "text": "針對醫療輔助診斷的專案，在面臨嚴格的個資保護與合規要求的情況下，進行「計算 ROI 與說服決策層投入資源」時，應該優先考量哪種策略？",
     "options": [
       {
-        "text": "解構任務流程，透過較小模型處理特定分類，高階模型負責最終總結，以平衡成本與效能。",
+        "text": "透過工作流引擎解構複雜任務，利用輕量化小模型處理前端快速分類與過濾，再交由前沿高階模型負責最終的推論總結，完美平衡單位推論成本與整體運作效能。",
         "score": 10
       },
       {
@@ -1293,7 +1293,7 @@ export const QUESTIONS: Question[] = [
         "score": 5
       },
       {
-        "text": "建立明確的評測基準 (Golden Dataset)，並透過 LLM-as-a-judge 持續追蹤改版成效。",
+        "text": "協同領域專家建立涵蓋各類邊界案例的嚴謹自動化評測基準 (Golden Dataset)，並導入 LLM-as-a-judge 機制進行無人干預且持續的迭代改版成效追蹤。",
         "score": 10
       }
     ]
@@ -1304,7 +1304,7 @@ export const QUESTIONS: Question[] = [
     "text": "針對高階主管報表的專案，在需要同時整合 CRM、ERP 與外部公開數據的情況下，進行「設計提示詞 (Prompt) 與護欄 (Guardrails)」時，應該優先考量哪種策略？",
     "options": [
       {
-        "text": "在使用者介面設計流暢的「引導式對話」與「引用來源提示」，降低信任門檻與認知負擔。",
+        "text": "在使用者介面上精心設計循序漸進的「引導式互動」元件，並在 AI 生成結果旁顯著標示出「引用文件來源與段落位置」，從根本上降低使用者的信任門檻與雙重驗證的認知負擔。",
         "score": 10
       },
       {
@@ -1327,7 +1327,7 @@ export const QUESTIONS: Question[] = [
         "score": 3
       },
       {
-        "text": "針對該場景設計階層式的 RAG 架構，搭配意圖路由 (Intent Routing) 分流處理。",
+        "text": "針對該單一業務場景導入包含多種內部資料源的階層式 RAG (檢索增強生成) 架構，並在最前端搭配意圖路由 (Intent Routing) 模型將使用者請求精準分流至專屬子系統處理。",
         "score": 10
       },
       {
@@ -1342,7 +1342,7 @@ export const QUESTIONS: Question[] = [
     "text": "針對內部客服團隊的專案，在需要處理長達 20 萬字的關聯文件的情況下，進行「制定上線前的 A/B 測試與逐步發布計畫」時，應該優先考量哪種策略？",
     "options": [
       {
-        "text": "採用混合檢索 (Hybrid Search) 與重排 (Reranking) 技術提升知識庫命中率。",
+        "text": "採用混合檢索 (Hybrid Search) 搭配大模型重排 (Reranking) 架構，以最佳化且低成本的方式大幅提升知識庫的搜尋精準度與最終生成摘要的品質。",
         "score": 10
       },
       {
@@ -1369,7 +1369,7 @@ export const QUESTIONS: Question[] = [
         "score": 5
       },
       {
-        "text": "解構任務流程，透過較小模型處理特定分類，高階模型負責最終總結，以平衡成本與效能。",
+        "text": "透過工作流引擎解構複雜任務，利用輕量化小模型處理前端快速分類與過濾，再交由前沿高階模型負責最終的推論總結，完美平衡單位推論成本與整體運作效能。",
         "score": 10
       }
     ]
@@ -1388,7 +1388,7 @@ export const QUESTIONS: Question[] = [
         "score": 5
       },
       {
-        "text": "建立明確的評測基準 (Golden Dataset)，並透過 LLM-as-a-judge 持續追蹤改版成效。",
+        "text": "協同領域專家建立涵蓋各類邊界案例的嚴謹自動化評測基準 (Golden Dataset)，並導入 LLM-as-a-judge 機制進行無人干預且持續的迭代改版成效追蹤。",
         "score": 10
       }
     ]
@@ -1407,7 +1407,7 @@ export const QUESTIONS: Question[] = [
         "score": 2
       },
       {
-        "text": "在使用者介面設計流暢的「引導式對話」與「引用來源提示」，降低信任門檻與認知負擔。",
+        "text": "在使用者介面上精心設計循序漸進的「引導式互動」元件，並在 AI 生成結果旁顯著標示出「引用文件來源與段落位置」，從根本上降低使用者的信任門檻與雙重驗證的認知負擔。",
         "score": 10
       }
     ]
@@ -1418,7 +1418,7 @@ export const QUESTIONS: Question[] = [
     "text": "針對人資招募流程的專案，在抱怨 AI 無法理解公司特有的專有名詞的情況下，進行「規劃 Multi-Agent 的職責劃分與協作」時，應該優先考量哪種策略？",
     "options": [
       {
-        "text": "針對該場景設計階層式的 RAG 架構，搭配意圖路由 (Intent Routing) 分流處理。",
+        "text": "針對該單一業務場景導入包含多種內部資料源的階層式 RAG (檢索增強生成) 架構，並在最前端搭配意圖路由 (Intent Routing) 模型將使用者請求精準分流至專屬子系統處理。",
         "score": 10
       },
       {
@@ -1437,7 +1437,7 @@ export const QUESTIONS: Question[] = [
     "text": "針對跨國供應鏈的專案，在要求保證 100% 的輸出正確率的情況下，進行「規劃自動化評測 (Evaluation) 指標」時，應該優先考量哪種策略？",
     "options": [
       {
-        "text": "採用混合檢索 (Hybrid Search) 與重排 (Reranking) 技術提升知識庫命中率。",
+        "text": "採用混合檢索 (Hybrid Search) 搭配大模型重排 (Reranking) 架構，以最佳化且低成本的方式大幅提升知識庫的搜尋精準度與最終生成摘要的品質。",
         "score": 10
       },
       {
@@ -1464,7 +1464,7 @@ export const QUESTIONS: Question[] = [
         "score": 5
       },
       {
-        "text": "解構任務流程，透過較小模型處理特定分類，高階模型負責最終總結，以平衡成本與效能。",
+        "text": "透過工作流引擎解構複雜任務，利用輕量化小模型處理前端快速分類與過濾，再交由前沿高階模型負責最終的推論總結，完美平衡單位推論成本與整體運作效能。",
         "score": 10
       }
     ]
@@ -1483,7 +1483,7 @@ export const QUESTIONS: Question[] = [
         "score": 0
       },
       {
-        "text": "建立明確的評測基準 (Golden Dataset)，並透過 LLM-as-a-judge 持續追蹤改版成效。",
+        "text": "協同領域專家建立涵蓋各類邊界案例的嚴謹自動化評測基準 (Golden Dataset)，並導入 LLM-as-a-judge 機制進行無人干預且持續的迭代改版成效追蹤。",
         "score": 10
       }
     ]
@@ -1502,7 +1502,7 @@ export const QUESTIONS: Question[] = [
         "score": 2
       },
       {
-        "text": "在使用者介面設計流暢的「引導式對話」與「引用來源提示」，降低信任門檻與認知負擔。",
+        "text": "在使用者介面上精心設計循序漸進的「引導式互動」元件，並在 AI 生成結果旁顯著標示出「引用文件來源與段落位置」，從根本上降低使用者的信任門檻與雙重驗證的認知負擔。",
         "score": 10
       }
     ]
@@ -1513,7 +1513,7 @@ export const QUESTIONS: Question[] = [
     "text": "針對金融業客戶的專案，在要求極低的延遲 (Latency < 500ms)的情況下，進行「初期系統架構與技術選型」時，應該優先考量哪種策略？",
     "options": [
       {
-        "text": "針對該場景設計階層式的 RAG 架構，搭配意圖路由 (Intent Routing) 分流處理。",
+        "text": "針對該單一業務場景導入包含多種內部資料源的階層式 RAG (檢索增強生成) 架構，並在最前端搭配意圖路由 (Intent Routing) 模型將使用者請求精準分流至專屬子系統處理。",
         "score": 10
       },
       {
@@ -1532,7 +1532,7 @@ export const QUESTIONS: Question[] = [
     "text": "針對內部客服團隊的專案，在需要處理長達 20 萬字的關聯文件的情況下，進行「制定上線前的 A/B 測試與逐步發布計畫」時，應該優先考量哪種策略？",
     "options": [
       {
-        "text": "採用混合檢索 (Hybrid Search) 與重排 (Reranking) 技術提升知識庫命中率。",
+        "text": "採用混合檢索 (Hybrid Search) 搭配大模型重排 (Reranking) 架構，以最佳化且低成本的方式大幅提升知識庫的搜尋精準度與最終生成摘要的品質。",
         "score": 10
       },
       {
@@ -1559,7 +1559,7 @@ export const QUESTIONS: Question[] = [
         "score": 5
       },
       {
-        "text": "解構任務流程，透過較小模型處理特定分類，高階模型負責最終總結，以平衡成本與效能。",
+        "text": "透過工作流引擎解構複雜任務，利用輕量化小模型處理前端快速分類與過濾，再交由前沿高階模型負責最終的推論總結，完美平衡單位推論成本與整體運作效能。",
         "score": 10
       }
     ]
@@ -1578,7 +1578,7 @@ export const QUESTIONS: Question[] = [
         "score": 5
       },
       {
-        "text": "建立明確的評測基準 (Golden Dataset)，並透過 LLM-as-a-judge 持續追蹤改版成效。",
+        "text": "協同領域專家建立涵蓋各類邊界案例的嚴謹自動化評測基準 (Golden Dataset)，並導入 LLM-as-a-judge 機制進行無人干預且持續的迭代改版成效追蹤。",
         "score": 10
       }
     ]
@@ -1589,7 +1589,7 @@ export const QUESTIONS: Question[] = [
     "text": "針對電商推薦系統的專案，在發現模型回應偶爾會產生嚴重的幻覺的情況下，進行「處理系統異常與 Timeout 回退 (Fallback) 機制」時，應該優先考量哪種策略？",
     "options": [
       {
-        "text": "在使用者介面設計流暢的「引導式對話」與「引用來源提示」，降低信任門檻與認知負擔。",
+        "text": "在使用者介面上精心設計循序漸進的「引導式互動」元件，並在 AI 生成結果旁顯著標示出「引用文件來源與段落位置」，從根本上降低使用者的信任門檻與雙重驗證的認知負擔。",
         "score": 10
       },
       {
@@ -1608,7 +1608,7 @@ export const QUESTIONS: Question[] = [
     "text": "針對人資招募流程的專案，在抱怨 AI 無法理解公司特有的專有名詞的情況下，進行「規劃 Multi-Agent 的職責劃分與協作」時，應該優先考量哪種策略？",
     "options": [
       {
-        "text": "針對該場景設計階層式的 RAG 架構，搭配意圖路由 (Intent Routing) 分流處理。",
+        "text": "針對該單一業務場景導入包含多種內部資料源的階層式 RAG (檢索增強生成) 架構，並在最前端搭配意圖路由 (Intent Routing) 模型將使用者請求精準分流至專屬子系統處理。",
         "score": 10
       },
       {
@@ -1631,7 +1631,7 @@ export const QUESTIONS: Question[] = [
         "score": 2
       },
       {
-        "text": "採用混合檢索 (Hybrid Search) 與重排 (Reranking) 技術提升知識庫命中率。",
+        "text": "採用混合檢索 (Hybrid Search) 搭配大模型重排 (Reranking) 架構，以最佳化且低成本的方式大幅提升知識庫的搜尋精準度與最終生成摘要的品質。",
         "score": 10
       },
       {
@@ -1646,7 +1646,7 @@ export const QUESTIONS: Question[] = [
     "text": "針對醫療輔助診斷的專案，在面臨嚴格的個資保護與合規要求的情況下，進行「計算 ROI 與說服決策層投入資源」時，應該優先考量哪種策略？",
     "options": [
       {
-        "text": "解構任務流程，透過較小模型處理特定分類，高階模型負責最終總結，以平衡成本與效能。",
+        "text": "透過工作流引擎解構複雜任務，利用輕量化小模型處理前端快速分類與過濾，再交由前沿高階模型負責最終的推論總結，完美平衡單位推論成本與整體運作效能。",
         "score": 10
       },
       {
@@ -1673,7 +1673,7 @@ export const QUESTIONS: Question[] = [
         "score": 5
       },
       {
-        "text": "建立明確的評測基準 (Golden Dataset)，並透過 LLM-as-a-judge 持續追蹤改版成效。",
+        "text": "協同領域專家建立涵蓋各類邊界案例的嚴謹自動化評測基準 (Golden Dataset)，並導入 LLM-as-a-judge 機制進行無人干預且持續的迭代改版成效追蹤。",
         "score": 10
       }
     ]
@@ -1692,7 +1692,7 @@ export const QUESTIONS: Question[] = [
         "score": 6
       },
       {
-        "text": "在使用者介面設計流暢的「引導式對話」與「引用來源提示」，降低信任門檻與認知負擔。",
+        "text": "在使用者介面上精心設計循序漸進的「引導式互動」元件，並在 AI 生成結果旁顯著標示出「引用文件來源與段落位置」，從根本上降低使用者的信任門檻與雙重驗證的認知負擔。",
         "score": 10
       }
     ]
@@ -1703,7 +1703,7 @@ export const QUESTIONS: Question[] = [
     "text": "針對金融業客戶的專案，在要求極低的延遲 (Latency < 500ms)的情況下，進行「初期系統架構與技術選型」時，應該優先考量哪種策略？",
     "options": [
       {
-        "text": "針對該場景設計階層式的 RAG 架構，搭配意圖路由 (Intent Routing) 分流處理。",
+        "text": "針對該單一業務場景導入包含多種內部資料源的階層式 RAG (檢索增強生成) 架構，並在最前端搭配意圖路由 (Intent Routing) 模型將使用者請求精準分流至專屬子系統處理。",
         "score": 10
       },
       {
@@ -1722,7 +1722,7 @@ export const QUESTIONS: Question[] = [
     "text": "針對內部客服團隊的專案，在需要處理長達 20 萬字的關聯文件的情況下，進行「制定上線前的 A/B 測試與逐步發布計畫」時，應該優先考量哪種策略？",
     "options": [
       {
-        "text": "採用混合檢索 (Hybrid Search) 與重排 (Reranking) 技術提升知識庫命中率。",
+        "text": "採用混合檢索 (Hybrid Search) 搭配大模型重排 (Reranking) 架構，以最佳化且低成本的方式大幅提升知識庫的搜尋精準度與最終生成摘要的品質。",
         "score": 10
       },
       {
@@ -1741,7 +1741,7 @@ export const QUESTIONS: Question[] = [
     "text": "針對行銷部門的專案，在預算有限，無法負擔高昂的 API 呼叫成本的情況下，進行「選擇合適的 Embedding 模型與向量庫」時，應該優先考量哪種策略？",
     "options": [
       {
-        "text": "解構任務流程，透過較小模型處理特定分類，高階模型負責最終總結，以平衡成本與效能。",
+        "text": "透過工作流引擎解構複雜任務，利用輕量化小模型處理前端快速分類與過濾，再交由前沿高階模型負責最終的推論總結，完美平衡單位推論成本與整體運作效能。",
         "score": 10
       },
       {
@@ -1764,7 +1764,7 @@ export const QUESTIONS: Question[] = [
         "score": 0
       },
       {
-        "text": "建立明確的評測基準 (Golden Dataset)，並透過 LLM-as-a-judge 持續追蹤改版成效。",
+        "text": "協同領域專家建立涵蓋各類邊界案例的嚴謹自動化評測基準 (Golden Dataset)，並導入 LLM-as-a-judge 機制進行無人干預且持續的迭代改版成效追蹤。",
         "score": 10
       },
       {
@@ -1787,7 +1787,7 @@ export const QUESTIONS: Question[] = [
         "score": 6
       },
       {
-        "text": "在使用者介面設計流暢的「引導式對話」與「引用來源提示」，降低信任門檻與認知負擔。",
+        "text": "在使用者介面上精心設計循序漸進的「引導式互動」元件，並在 AI 生成結果旁顯著標示出「引用文件來源與段落位置」，從根本上降低使用者的信任門檻與雙重驗證的認知負擔。",
         "score": 10
       }
     ]
@@ -1802,7 +1802,7 @@ export const QUESTIONS: Question[] = [
         "score": 3
       },
       {
-        "text": "針對該場景設計階層式的 RAG 架構，搭配意圖路由 (Intent Routing) 分流處理。",
+        "text": "針對該單一業務場景導入包含多種內部資料源的階層式 RAG (檢索增強生成) 架構，並在最前端搭配意圖路由 (Intent Routing) 模型將使用者請求精準分流至專屬子系統處理。",
         "score": 10
       },
       {
@@ -1817,7 +1817,7 @@ export const QUESTIONS: Question[] = [
     "text": "針對跨國供應鏈的專案，在要求保證 100% 的輸出正確率的情況下，進行「規劃自動化評測 (Evaluation) 指標」時，應該優先考量哪種策略？",
     "options": [
       {
-        "text": "採用混合檢索 (Hybrid Search) 與重排 (Reranking) 技術提升知識庫命中率。",
+        "text": "採用混合檢索 (Hybrid Search) 搭配大模型重排 (Reranking) 架構，以最佳化且低成本的方式大幅提升知識庫的搜尋精準度與最終生成摘要的品質。",
         "score": 10
       },
       {
@@ -1844,7 +1844,7 @@ export const QUESTIONS: Question[] = [
         "score": 5
       },
       {
-        "text": "解構任務流程，透過較小模型處理特定分類，高階模型負責最終總結，以平衡成本與效能。",
+        "text": "透過工作流引擎解構複雜任務，利用輕量化小模型處理前端快速分類與過濾，再交由前沿高階模型負責最終的推論總結，完美平衡單位推論成本與整體運作效能。",
         "score": 10
       }
     ]
@@ -1855,7 +1855,7 @@ export const QUESTIONS: Question[] = [
     "text": "針對程式碼生成工具的專案，在希望能根據使用者歷史行為提供個人化建議的情況下，進行「處理使用者回饋與資料飛輪 (Data Flywheel)」時，應該優先考量哪種策略？",
     "options": [
       {
-        "text": "建立明確的評測基準 (Golden Dataset)，並透過 LLM-as-a-judge 持續追蹤改版成效。",
+        "text": "協同領域專家建立涵蓋各類邊界案例的嚴謹自動化評測基準 (Golden Dataset)，並導入 LLM-as-a-judge 機制進行無人干預且持續的迭代改版成效追蹤。",
         "score": 10
       },
       {
@@ -1882,7 +1882,7 @@ export const QUESTIONS: Question[] = [
         "score": 6
       },
       {
-        "text": "在使用者介面設計流暢的「引導式對話」與「引用來源提示」，降低信任門檻與認知負擔。",
+        "text": "在使用者介面上精心設計循序漸進的「引導式互動」元件，並在 AI 生成結果旁顯著標示出「引用文件來源與段落位置」，從根本上降低使用者的信任門檻與雙重驗證的認知負擔。",
         "score": 10
       }
     ]
@@ -1901,7 +1901,7 @@ export const QUESTIONS: Question[] = [
         "score": 4
       },
       {
-        "text": "針對該場景設計階層式的 RAG 架構，搭配意圖路由 (Intent Routing) 分流處理。",
+        "text": "針對該單一業務場景導入包含多種內部資料源的階層式 RAG (檢索增強生成) 架構，並在最前端搭配意圖路由 (Intent Routing) 模型將使用者請求精準分流至專屬子系統處理。",
         "score": 10
       }
     ]
