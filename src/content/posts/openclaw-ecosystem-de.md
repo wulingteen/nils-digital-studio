@@ -8,7 +8,7 @@ excerptDe: "OpenClaw hat gezeigt, dass ein Assistent eine persistente Computing-
 date: "2026-03-18"
 author: "Nils Liu"
 tags: ["AI", "OpenClaw", "Agent", "Product Strategy"]
-coverImage: "/images/blog/openclaw.jpg"
+coverImage: "/images/blog/openclaw.png"
 ---
 
 Wenn Sie in letzter Zeit die Entwicklung von persönlichen KI-Assistenten, immer aktiven Agenten oder der sogenannten "KI-Betriebssystem"-Entwicklung verfolgt haben, ist Ihnen OpenClaw sicherlich aufgefallen.

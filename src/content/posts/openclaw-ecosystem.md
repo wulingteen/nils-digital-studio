@@ -8,7 +8,7 @@ excerptDe: "OpenClaw hat gezeigt, dass ein Assistent eine persistente Computing-
 date: "2026-03-18"
 author: "Nils Liu"
 tags: ["AI", "OpenClaw", "Agent", "Product Strategy"]
-coverImage: "/images/blog/openclaw.jpg"
+coverImage: "/images/blog/openclaw.png"
 ---
 
 這陣子如果你有在看個人 AI assistant、always-on agent、甚至是所謂的「AI 作業系統」這條線，應該很難沒注意到 OpenClaw。
