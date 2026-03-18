@@ -8,7 +8,7 @@ excerptDe: "OpenClaw hat gezeigt, dass ein Assistent eine persistente Computing-
 date: "2026-03-18"
 author: "Nils Liu"
 tags: ["AI", "OpenClaw", "Agent", "Product Strategy"]
-coverImage: "/images/blog/openclaw.png"
+coverImage: "/images/blog/openclaw.webp"
 ---
 
 If you’ve been following the evolution of personal AI assistants, always-on agents, or the so-called "AI OS" trajectory recently, you’ve likely noticed OpenClaw.

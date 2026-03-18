@@ -243,7 +243,7 @@ export default function AIPMQuizPage({ lang = 'zh' }: { lang?: string }) {
                   : 'Want to dive deeper into AI PM and System Architecture? Subscribe to get first-hand enterprise GenAI deployment experiences, or keep reading my articles. '}
               </p>
               <form action="https://formsubmit.co/wulingteen@gmail.com" method="POST" className="flex gap-2 w-full max-w-sm">
-                <input type="hidden" name="_next" value="https://nils-digital-studio.vercel.app" />
+                <input type="hidden" name="_next" value="https://nilsliu.dev" />
                 <input type="hidden" name="_subject" value="New Subscriber from Quiz Page" />
                 <input 
                   type="email" 
