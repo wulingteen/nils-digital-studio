@@ -167,7 +167,7 @@ export default function AIPMQuizPage({ lang = 'zh' }: { lang?: string }) {
 
   /* ── Results Screen ── */
   if (finished) {
-    const pct = Math.round((score / (QUESTIONS.length * 10)) * 100);
+    const pct = Math.round((score / (activeQuestions.length * 10)) * 100);
     const BadgeIcon = pct >= 100 ? Award : pct >= 70 ? Trophy : pct >= 40 ? Target : BookOpen;
     const badgeTitle = pct >= 100
       ? (lang === 'zh' ? 'GenAI 大師' : 'GenAI Master')
@@ -196,12 +196,13 @@ export default function AIPMQuizPage({ lang = 'zh' }: { lang?: string }) {
           </h3>
           {activeTopics.slice(0, 5).map(topic => { // Show top 5 topics for brevity
             const s = topicScores[topic] || 0;
-            const w = Math.round((s / 10) * 100);
+            const maxS = activeQuestions.filter(q => q.topic === topic).length * 10;
+            const w = maxS > 0 ? Math.round((s / maxS) * 100) : 0;
             return (
               <div key={topic} className="mb-2">
                 <div className="flex justify-between text-xs mb-1">
                   <span className="text-muted-foreground">{topic}</span>
-                  <span className="font-bold text-foreground">{s}/10</span>
+                  <span className="font-bold text-foreground">{s}/{maxS}</span>
                 </div>
                 <div className="h-2 rounded-full bg-muted overflow-hidden">
                   <div
