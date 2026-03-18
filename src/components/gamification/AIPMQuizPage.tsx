@@ -65,15 +65,18 @@ export default function AIPMQuizPage({ lang = 'zh' }: { lang?: string }) {
   }, [started, finished, step, activeQuestions]);
   const advanceStep = (optScore: number) => {
     const q = activeQuestions[step];
-    setTopicScores(prev => ({ ...prev, [q.topic]: (prev[q.topic] || 0) + optScore }));
+    const scaleFactor = 100 / (activeQuestions.length * 10);
+    const scaledScore = optScore * scaleFactor;
+    
+    setTopicScores(prev => ({ ...prev, [q.topic]: (prev[q.topic] || 0) + scaledScore }));
 
     if (step >= activeQuestions.length - 1) {
-      const finalScore = score + optScore;
+      const finalScore = score + scaledScore;
       setScore(finalScore);
       setFinished(true);
       if (timerRef.current) clearInterval(timerRef.current);
       // Persist
-      setAssessmentScore(finalScore);
+      setAssessmentScore(Math.round(finalScore));
       setBestCombo(maxCombo);
       // Badges
       unlockBadge('quiz-completed');
@@ -81,7 +84,7 @@ export default function AIPMQuizPage({ lang = 'zh' }: { lang?: string }) {
       else if (finalScore >= 70) unlockBadge('ai-strategist');
       else if (finalScore >= 40) unlockBadge('ai-rookie');
     } else {
-      setScore(prev => prev + optScore);
+      setScore(prev => prev + scaledScore);
       setStep(prev => prev + 1);
       setTimer(TIMER_SECONDS);
       setSelectedIdx(null);
@@ -137,10 +140,10 @@ export default function AIPMQuizPage({ lang = 'zh' }: { lang?: string }) {
           <Brain className="w-10 h-10 text-primary" />
         </div>
         <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-          {lang === 'zh' ? 'AI PM 核心能力測驗' : lang === 'de' ? 'AI PM Kompetenztest' : 'AI PM Skills Assessment'}
+          {lang === 'zh' ? 'AI PM 核心知識遊戲' : lang === 'de' ? 'AI PM Wissensspiel' : 'AI PM Knowledge Game'}
         </h1>
         <p className="text-muted-foreground mb-2 max-w-lg mx-auto">
-          {lang === 'zh' ? '從百大真實企業情境中隨機抽取 20 題，測驗你的 AI 產品力。每題限時 30 秒，連續答對獲得 Combo 加成！'
+          {lang === 'zh' ? '從百大真實企業情境中隨機抽取 20 題，挑戰你的 AI 知識。每題限時 30 秒，連續答對獲得 Combo 加成！'
             : lang === 'de' ? '20 zufällige Szenarien aus 100 realen Unternehmensfragen, 30 Sekunden pro Frage.'
             : '20 random scenarios from 100 real-world enterprise situations, 30 seconds per question. Build combos for streaks!'}
         </p>
@@ -159,7 +162,7 @@ export default function AIPMQuizPage({ lang = 'zh' }: { lang?: string }) {
           onClick={startQuiz}
           className="mt-2 inline-flex items-center gap-2 rounded-full bg-primary px-8 py-3.5 text-base font-bold text-primary-foreground shadow-[0_0_30px_rgba(200,160,80,0.3)] transition-all hover:-translate-y-1 hover:shadow-[0_0_40px_rgba(200,160,80,0.5)] cursor-pointer"
         >
-          {lang === 'zh' ? '開始測驗' : lang === 'de' ? 'Test starten' : 'Start Quiz'}
+          {lang === 'zh' ? '開始遊戲' : lang === 'de' ? 'Spiel starten' : 'Start Game'}
         </button>
       </div>
     );
@@ -167,7 +170,8 @@ export default function AIPMQuizPage({ lang = 'zh' }: { lang?: string }) {
 
   /* ── Results Screen ── */
   if (finished) {
-    const pct = Math.round((score / (activeQuestions.length * 10)) * 100);
+    const displayScore = Math.round(score);
+    const pct = displayScore;
     const BadgeIcon = pct >= 100 ? Award : pct >= 70 ? Trophy : pct >= 40 ? Target : BookOpen;
     const badgeTitle = pct >= 100
       ? (lang === 'zh' ? 'GenAI 大師' : 'GenAI Master')
@@ -184,7 +188,7 @@ export default function AIPMQuizPage({ lang = 'zh' }: { lang?: string }) {
           <BadgeIcon className="w-16 h-16 text-primary mx-auto" />
         </div>
         <h2 className="text-2xl font-bold text-foreground mb-1">{badgeTitle}</h2>
-        <p className="text-4xl font-black text-primary my-4">{score} / {activeQuestions.length * 10}</p>
+        <p className="text-4xl font-black text-primary my-4">{displayScore} / 100</p>
         <p className="text-muted-foreground mb-6">
           {lang === 'zh' ? `正確率 ${pct}%　|　最高 Combo ${maxCombo}` : `Accuracy ${pct}%  |  Max Combo ${maxCombo}`}
         </p>
@@ -196,13 +200,13 @@ export default function AIPMQuizPage({ lang = 'zh' }: { lang?: string }) {
           </h3>
           {activeTopics.slice(0, 5).map(topic => { // Show top 5 topics for brevity
             const s = topicScores[topic] || 0;
-            const maxS = activeQuestions.filter(q => q.topic === topic).length * 10;
+            const maxS = (activeQuestions.filter(q => q.topic === topic).length * 10) * (100 / (activeQuestions.length * 10));
             const w = maxS > 0 ? Math.round((s / maxS) * 100) : 0;
             return (
               <div key={topic} className="mb-2">
                 <div className="flex justify-between text-xs mb-1">
                   <span className="text-muted-foreground">{topic}</span>
-                  <span className="font-bold text-foreground">{s}/{maxS}</span>
+                  <span className="font-bold text-foreground">{Math.round(s)}/{Math.round(maxS)}</span>
                 </div>
                 <div className="h-2 rounded-full bg-muted overflow-hidden">
                   <div
@@ -366,7 +370,7 @@ export default function AIPMQuizPage({ lang = 'zh' }: { lang?: string }) {
       {/* Score tracker */}
       <div className="mt-6 text-center">
         <span className="text-sm text-muted-foreground">
-          {lang === 'zh' ? '目前得分' : 'Score'}: <strong className="text-foreground">{score}</strong>
+          {lang === 'zh' ? '目前得分' : 'Score'}: <strong className="text-foreground">{Math.round(score)}</strong>
         </span>
       </div>
     </div>
