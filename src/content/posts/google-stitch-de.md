@@ -2,7 +2,7 @@
 title: "Das große Google Stitch Update: Wie die KI-native Design-Canvas Figma herausfordert"
 titleEn: "Google Stitch's Massive Update: How the AI-Native Design Canvas is Disrupting Figma"
 titleDe: "Das große Google Stitch Update: Wie die KI-native Design-Canvas Figma herausfordert"
-excerpt: "Im März 2026 hat Google ein großes Update für Stitch eingeführt. Angetrieben von Gemini geht diese Plattform über die konversationelle UI-Generierung hinaus. Mit Funktionen wie 'Voice Canvas' und 'Vibe Design' automatisiert sie den Wireframing-Prozess und definiert den Workflow für das Software-Interface-Design völlig neu."
+excerpt: "Im März 2026 hat Google ein großes Update für Stitch eingeführt. Angetrieben von Gemini generiert diese KI-native Design-Canvas UI durch natürliche Sprache. Wie wird dies Figma und den zukünftigen Workflow von Designern völlig stören?"
 date: "2026-03-19"
 author: "Nils Liu"
 tags: ["AI", "Architecture", "Design"]
@@ -11,13 +11,13 @@ coverImage: "/images/blog/google-stitch.webp"
 
 Im März dieses Jahres (2026) versetzte Google die Welt der Softwareentwicklung und des Designs erneut in Erstaunen. Ursprünglich als experimentelles Labs-Projekt auf der letztjährigen I/O-Konferenz vorgestellt, hat **Google Stitch** gerade ein episches Update erhalten und seine Position als „KI-native Software-Design-Canvas“ offiziell gefestigt.
 
-Dieses Update hat nicht nur die Entwickler-Community begeistert – es hatte sofortige Auswirkungen auf den Markt. Am Tag der Ankündigung fiel die Aktie von Figma um fast 8,8 %. Was genau hat Google Stitch richtig gemacht?
+Dieses Update hat nicht nur die Entwickler-Community begeistert – es hatte sofortige Auswirkungen auf den Markt. Am Tag der Ankündigung fiel die Aktie von [Figma](https://www.figma.com/) um fast 8,8 %. Genau wie [OpenClaw](/de/insights/openclaw-ecosystem) das zugrunde liegende Ökosystem für persönliche KI-Assistenten neu definiert hat, verändert Google Stitch die Grenzen von Frontend und Design völlig. Was genau hat Google Stitch richtig gemacht?
 
 ## Was ist Google Stitch?
 
 Einfach ausgedrückt ist Google Stitch ein Tool, mit dem Sie Anwendungsoberflächen durch **natürliche Sprache „generieren“** können.
 
-Traditionell erforderte das UI-Design, dass Designer Wireframes erstellten, Layouts verwalteten und Komponenten-Zustände in Tools wie Figma konfigurierten. Ingenieure würden diese Designs dann in HTML/CSS- oder React-Komponenten zerlegen. Stitch zielt darauf ab, diese Mauer einzureißen. Angetrieben von der robusten Gemini-Modellfamilie (insbesondere dem neuesten Gemini 3) kann es Ihre Beschreibungen des „Vibes“ eines Produkts direkt verstehen und sofort originalgetreue interaktive Prototypen und sogar produktionsreifen Code erstellen.
+Traditionell erforderte das UI-Design, dass Designer Wireframes erstellten, Layouts verwalteten und Komponenten-Zustände in Tools wie Figma konfigurierten. Ingenieure würden diese Designs dann in HTML/CSS- oder React-Komponenten zerlegen. Stitch zielt darauf ab, diese Mauer einzureißen. Angetrieben von der robusten [Gemini-Modellfamilie](https://deepmind.google/technologies/gemini/) (insbesondere dem neuesten Gemini 3) kann es Ihre Beschreibungen des „Vibes“ eines Produkts direkt verstehen und sofort originalgetreue **interaktive Prototypen** und sogar produktionsreifen Code erstellen.
 
 ## Drei Killer-Features im März-Update
 
@@ -29,7 +29,7 @@ Im neuen Stitch können Sie einfach beschreiben, **„welches Gefühl dieses Pro
 ### 2. Voice Canvas (Sprach-Leinwand)
 Maus und Tastatur sind möglicherweise nicht mehr die ausschließlichen Eingabegeräte für das Design. Stitch hat die Voice Canvas eingeführt, mit der Designer oder PMs „direkt mit der Leinwand sprechen“ können.
 
-„Entfernen Sie die Anmelde-Schaltfläche oben, ersetzen Sie sie durch 'Anmelden mit Google' und machen Sie das Layout etwas enger.“ Das System versteht Ihre Anfrage im Handumdrehen und zeichnet die geänderte Benutzeroberfläche sofort neu auf die Leinwand. Diese Funktion verkürzt den „Design-Iterationszyklus“ drastisch.
+„Entfernen Sie die Anmelde-Schaltfläche oben, ersetzen Sie sie durch 'Anmelden mit Google' und machen Sie das Layout etwas enger.“ Das System versteht Ihre Anfrage im Handumdrehen und zeichnet die geänderte Benutzeroberfläche sofort neu auf die Leinwand. Diese Funktion verkürzt den **Design-Iterationszyklus** drastisch.
 
 ### 3. Nahtloser Export & Code-Generierung
 Um sicherzustellen, dass es nicht nur ein Spielzeug zum Generieren hübscher Bilder wird, unterstützt Stitch jetzt reibungslosen, nahtlosen Export. Es kann nicht nur sauberen HTML/CSS-Code mit modernen Framework-Strukturen generieren, sondern auch mit einem Klick direkt zu Figma rückexportieren. Mit anderen Worten, es muss Figma nicht vollständig auslöschen; es kann als leistungsstarker Ausgangspunkt für den gesamten Design-Workflow dienen.
@@ -42,4 +42,4 @@ Als KI-PM oder Architekt hätte die Demonstration einer neuen KI-Funktion vor F�
 
 „**Design ist nicht länger die Handarbeit zur Überbrückung der Kluft zwischen Ideen und Produkten; es ist der Akt des Denkens selbst.**“
 
-Google Stitch kann derzeit kostenlos genutzt werden (mit täglichen Rechenlimits). Da es weiter in die Google Cloud und das Android-Ökosystem integriert wird, glaube ich, dass wir bis zur zweiten Hälfte des Jahres 2026 einen Zustrom hervorragender Produkte sehen werden, die vollständig „per Spracheingabe“ von Nicht-Designern oder Einzelentwicklern entwickelt wurden.
+Google Stitch kann derzeit kostenlos genutzt werden (mit täglichen Rechenlimits). Da es weiter in die [Google Cloud](https://cloud.google.com/) und das Android-Ökosystem integriert wird, glaube ich, dass wir bis zur zweiten Hälfte des Jahres 2026 einen Zustrom hervorragender Produkte sehen werden, die vollständig „per Spracheingabe“ von Nicht-Designern oder Einzelentwicklern entwickelt wurden.
