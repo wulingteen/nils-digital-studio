@@ -6,7 +6,7 @@ excerpt: "In March 2026, Google introduced a major update to Stitch. Powered by 
 date: "2026-03-19"
 author: "Nils Liu"
 tags: ["AI", "Architecture", "Design"]
-coverImage: "/images/blog/google-stitch.png"
+coverImage: "/images/blog/google-stitch.webp"
 ---
 
 In March of this year (2026), Google once again sent shockwaves through the software development and design world. Originally introduced as an experimental Labs project at last year's I/O conference, **Google Stitch** has just received an epic update, officially cementing its position as an "AI-native software design canvas."
