@@ -10,7 +10,7 @@ import ReadingProgress from '../../../components/gamification/ReadingProgress';
 import BottomUnlock from '../../../components/gamification/BottomUnlock';
 import ActionPanel from '../../../components/gamification/ActionPanel';
 import InteractiveScenarioForm from '../../../components/gamification/InteractiveScenarioForm';
-import ContentPaywall from '../../../components/gamification/ContentPaywall';
+import InteractiveScenarioForm from '../../../components/gamification/InteractiveScenarioForm';
 
 export async function getStaticPaths() {
   const allPosts = await getCollection('posts');
@@ -201,17 +201,9 @@ const articleLd = {
         />
       )}
 
-      {currentTags.includes('AI PM 系列') || currentTags.includes('Architecture') ? (
-        <ContentPaywall lang={lang} client:load>
-          <div class="prose prose-lg dark:prose-invert prose-headings:font-bold prose-headings:text-foreground prose-p:text-muted-foreground prose-a:text-primary hover:prose-a:text-primary/80 prose-strong:text-foreground prose-code:text-primary prose-code:bg-primary/5 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded-md prose-code:before:content-none prose-code:after:content-none max-w-none">
-            <Content />
-          </div>
-        </ContentPaywall>
-      ) : (
-        <div class="prose prose-lg dark:prose-invert prose-headings:font-bold prose-headings:text-foreground prose-p:text-muted-foreground prose-a:text-primary hover:prose-a:text-primary/80 prose-strong:text-foreground prose-code:text-primary prose-code:bg-primary/5 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded-md prose-code:before:content-none prose-code:after:content-none max-w-none">
-          <Content />
-        </div>
-      )}
+      <div class="prose prose-lg dark:prose-invert prose-headings:font-bold prose-headings:text-foreground prose-p:text-muted-foreground prose-a:text-primary hover:prose-a:text-primary/80 prose-strong:text-foreground prose-code:text-primary prose-code:bg-primary/5 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded-md prose-code:before:content-none prose-code:after:content-none max-w-none">
+        <Content />
+      </div>
 
       {basePost.data.seriesInfo && (
         <InteractiveScenarioForm articleId={basePost.id} client:visible />
