@@ -215,6 +215,47 @@ const SinglePageContent = () => {
             </section>
 
             {/* ═══════════════════════════════════════════════
+          § IMPACT NUMBERS
+          ═══════════════════════════════════════════════ */}
+            <section id="impact" className="section-padding border-t border-border bg-secondary/20 relative overflow-hidden">
+                <div className="absolute inset-0 bg-[linear-gradient(to_right,hsl(var(--foreground))_1px,transparent_1px),linear-gradient(to_bottom,hsl(var(--foreground))_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-[0.025] pointer-events-none" />
+                <div className="container-narrow relative z-10">
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6 }}
+                        viewport={{ once: true, margin: "-50px" }}
+                        className="mb-12 text-center"
+                    >
+                        <h2 className="mb-3 text-3xl font-bold text-gradient md:text-4xl">
+                            {t("impact.title")}
+                        </h2>
+                        <p className="text-muted-foreground text-base">{t("impact.sub")}</p>
+                    </motion.div>
+
+                    <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
+                        {(t("impact.items", { returnObjects: true }) as { number: string; label: string; context: string }[]).map((item, i) => (
+                            <motion.div
+                                key={i}
+                                initial={{ opacity: 0, y: 24 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                whileHover={{ y: -4, transition: { duration: 0.3 } }}
+                                transition={{ delay: i * 0.1, duration: 0.5 }}
+                                viewport={{ once: true, margin: "-40px" }}
+                                className="glass-card rounded-2xl p-6 border border-primary/10 text-center flex flex-col items-center gap-3 hover:border-primary/40 hover:bg-primary/5 transition-all duration-300 shadow-sm"
+                            >
+                                <div className="text-4xl sm:text-5xl font-extrabold text-gradient leading-none tracking-tight">
+                                    {item.number}
+                                </div>
+                                <div className="text-sm font-semibold text-foreground leading-snug">{item.label}</div>
+                                <div className="text-xs text-muted-foreground leading-relaxed">{item.context}</div>
+                            </motion.div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* ═══════════════════════════════════════════════
           § CAREER JOURNEY GLOBE SECTION
           ═══════════════════════════════════════════════ */}
             <section id="career" className="section-padding border-t border-border relative overflow-hidden bg-background">
@@ -440,6 +481,64 @@ const SinglePageContent = () => {
 
 
             {/* ═══════════════════════════════════════════════
+          § PATENTS DETAIL
+          ═══════════════════════════════════════════════ */}
+            <section id="patents" className="section-padding border-t border-border relative overflow-hidden bg-background">
+                <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
+                <div className="container-narrow relative z-10">
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6 }}
+                        viewport={{ once: true, margin: "-50px" }}
+                        className="mb-12"
+                    >
+                        <h2 className="mb-3 text-3xl font-bold text-gradient md:text-4xl">
+                            {t("patents_detail.title")}
+                        </h2>
+                        <p className="max-w-xl text-muted-foreground">{t("patents_detail.sub")}</p>
+                        <div className="mt-4 flex flex-wrap gap-3">
+                            <span className="inline-flex items-center gap-1.5 rounded-full border border-primary/30 bg-primary/5 px-3 py-1 text-xs font-semibold text-primary">
+                                <span className="h-1.5 w-1.5 rounded-full bg-primary" />
+                                {t("patents_detail.inventor_badge")}
+                            </span>
+                        </div>
+                    </motion.div>
+
+                    <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                        {(t("patents_detail.items", { returnObjects: true }) as { id: string; title: string; problem: string; pending?: boolean }[]).map((patent, i) => (
+                            <motion.div
+                                key={i}
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                whileHover={{ y: -3, transition: { duration: 0.3 } }}
+                                transition={{ delay: i * 0.08, duration: 0.5 }}
+                                viewport={{ once: true, margin: "-40px" }}
+                                className="group glass-card rounded-xl p-6 border border-border hover:border-primary/30 hover:bg-secondary/40 transition-all duration-300 shadow-sm"
+                            >
+                                <div className="flex items-start justify-between gap-2 mb-3">
+                                    <span className="inline-block px-2.5 py-1 text-xs font-bold font-mono text-primary bg-primary/10 rounded-md border border-primary/20 tracking-wider">
+                                        {patent.id}
+                                    </span>
+                                    {patent.pending && (
+                                        <span className="inline-block px-2 py-1 text-xs font-medium text-amber-500/80 bg-amber-500/10 rounded-md border border-amber-500/20 shrink-0">
+                                            {t("patents_detail.pending_badge")}
+                                        </span>
+                                    )}
+                                </div>
+                                <h4 className="text-sm font-semibold text-foreground mb-2 group-hover:text-primary transition-colors duration-300 leading-snug">
+                                    {patent.title}
+                                </h4>
+                                <p className="text-xs leading-relaxed text-muted-foreground">
+                                    {patent.problem}
+                                </p>
+                            </motion.div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* ═══════════════════════════════════════════════
           § ABOUT
           ═══════════════════════════════════════════════ */}
             <section id="about" className="section-padding bg-secondary/30 relative border-t border-border">
@@ -492,6 +591,33 @@ const SinglePageContent = () => {
                                     <p className="text-sm font-medium text-foreground">{c.value}</p>
                                 </div>
                             ))}
+                        </div>
+                    </motion.div>
+
+                    {/* Open Dialogue Signal */}
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.6, delay: 0.2 }}
+                        viewport={{ once: true, margin: "-50px" }}
+                        className="mt-16"
+                    >
+                        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 rounded-2xl border border-primary/20 bg-primary/5 p-8 shadow-[0_0_30px_rgba(200,160,80,0.05)]">
+                            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                                <MessageSquare className="h-6 w-6" />
+                            </div>
+                            <div className="flex-1">
+                                <p className="text-sm sm:text-base leading-relaxed text-foreground/80 font-medium">
+                                    {t("about.open_dialogue")}
+                                </p>
+                            </div>
+                            <motion.a
+                                whileHover={hoverScale}
+                                href="#contact"
+                                className="shrink-0 inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground shadow-[0_0_15px_rgba(200,160,80,0.2)] transition-all hover:shadow-[0_0_25px_rgba(200,160,80,0.4)]"
+                            >
+                                {t("about.open_dialogue_cta")} <ArrowRight className="h-4 w-4" />
+                            </motion.a>
                         </div>
                     </motion.div>
                 </div>

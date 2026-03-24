@@ -133,6 +133,77 @@
       }
     ]
   },
+  "impact": {
+    "title": "Wirkung in Zahlen",
+    "sub": "Keine Feature-Liste. Echte Ergebnisse, produktiv ausgeliefert.",
+    "items": [
+      {
+        "number": "#1",
+        "label": "Erste produktive GenAI einer führenden Bank",
+        "context": "Live seit August 2024, im Einsatz für tausende Bankmitarbeiter."
+      },
+      {
+        "number": "96%",
+        "label": "AI Coach Zufriedenheit",
+        "context": "3-Schicht-Agent-Architektur mit GraphRAG und Rubrics-basierter Evaluation."
+      },
+      {
+        "number": "6",
+        "label": "Erteilte AI-Patente",
+        "context": "Alleiniger Erfinder aller 6 Patente. 2 weitere Erfindungspatente in Prüfung."
+      },
+      {
+        "number": "7",
+        "label": "Konferenz-Vorträge",
+        "context": "iThome Hello World 2024+2025, DevFest Taipei 2025."
+      },
+      {
+        "number": "Wochen",
+        "label": "PoC bis Produktion",
+        "context": "Von null bis live in einem regulierten Finanzumfeld."
+      }
+    ]
+  },
+  "patents_detail": {
+    "title": "6 KI-Patente — Die Geschichten dahinter",
+    "sub": "Alleiniger Erfinder aller sechs. Jedes Patent entstand aus einem realen Unternehmensproblem, nicht aus akademischer Theorie.",
+    "inventor_badge": "Alleiniger Erfinder",
+    "pending_badge": "Erfindungspatent in Prüfung",
+    "items": [
+      {
+        "id": "M670472",
+        "title": "System zur Generierung von Finanzanlageberatung",
+        "problem": "LLMs lieferten unstrukturierte, nicht prüfbare Anlageempfehlungen. Dieses Patent erzwingt strukturierte Ausgaben, die Finanz-Compliance-Anforderungen erfüllen."
+      },
+      {
+        "id": "M671161",
+        "title": "Intelligentes Optimierungssystem",
+        "problem": "Enterprise-Prompts wurden ungeordnet ohne Versionierung verwaltet. Dieses Patent etabliert einen versionierten Prompt-Optimierungsmechanismus."
+      },
+      {
+        "id": "M671223",
+        "title": "Informationsabfragesystem",
+        "problem": "Traditionelle Stichwortsuche versagt bei unstrukturierten Unternehmensdokumenten. Dieses Patent führt eine semantische Retrieval-Architektur ein."
+      },
+      {
+        "id": "M671449",
+        "title": "Anpassbares Generatives KI-System",
+        "problem": "Verschiedene Bankbereiche benötigten individuelle KI-Verhaltensweisen auf demselben Basismodell. Dieses Patent löst das Skalierungsproblem bei Mehr-Szenario-Deployments.",
+        "pending": true
+      },
+      {
+        "id": "M674713",
+        "title": "Datenabfragesystem",
+        "problem": "Systemübergreifende Datenabfragen waren fragmentiert und integrationsaufwendig. Dieses Patent bietet eine einheitliche Abfrageschnittstelle zur Reduzierung des Engineering-Aufwands."
+      },
+      {
+        "id": "M676680",
+        "title": "Wissensgraph-Aufbausystem",
+        "problem": "Unstrukturiertes Unternehmenswissen war für KI-Systeme nicht nutzbar. Dieses Patent baut eine schlussfolgernde Wissensstruktur auf, damit KI Geschäftszusammenhänge wirklich versteht.",
+        "pending": true
+      }
+    ]
+  },
   "services_teaser": {
     "title": "Wie ich helfe",
     "sub": "Von der Strategie bis zur Umsetzung — ich helfe Teams, schnell mit AI voranzukommen.",
@@ -300,6 +371,8 @@
       "PostgreSQL / Vektordatenbanken"
     ],
     "credibility_title": "Referenzen",
+    "open_dialogue": "Wenn Sie darüber nachdenken, wie KI in einem regulierten Umfeld wirklich eingesetzt werden kann — oder wenn Sie ein Team aufbauen, das diese Art von Erfahrung braucht — bin ich offen für ein Gespräch. Ob Beratungsmandat, Einladung als Speaker oder langfristige Möglichkeit.",
+    "open_dialogue_cta": "Gespräch beginnen",
     "credibility": [
       {
         "label": "Patente",

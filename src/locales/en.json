@@ -133,6 +133,77 @@
       }
     ]
   },
+  "impact": {
+    "title": "Impact in Numbers",
+    "sub": "Not a feature list. Real outcomes shipped in production.",
+    "items": [
+      {
+        "number": "#1",
+        "label": "First Production GenAI at a Leading Bank",
+        "context": "Launched August 2024, serving thousands of bank staff."
+      },
+      {
+        "number": "96%",
+        "label": "AI Coach Satisfaction",
+        "context": "3-layer Agent architecture with GraphRAG and Rubrics-based evaluation."
+      },
+      {
+        "number": "6",
+        "label": "AI Patents Granted",
+        "context": "Sole inventor on all 6. 2 additional invention patents under review."
+      },
+      {
+        "number": "7",
+        "label": "Conference Talks",
+        "context": "iThome Hello World 2024+2025, DevFest Taipei 2025."
+      },
+      {
+        "number": "Weeks",
+        "label": "PoC to Production",
+        "context": "Zero to live in a regulated financial environment."
+      }
+    ]
+  },
+  "patents_detail": {
+    "title": "6 AI Patents — The Stories Behind Them",
+    "sub": "Sole inventor on all six. Each patent originated from a real enterprise problem, not an academic exercise.",
+    "inventor_badge": "Sole Inventor",
+    "pending_badge": "Invention Patent Pending",
+    "items": [
+      {
+        "id": "M670472",
+        "title": "Financial Investment Advice Generation System",
+        "problem": "LLMs produced unstructured, unauditable investment recommendations. This patent enforces structured output that meets financial compliance requirements."
+      },
+      {
+        "id": "M671161",
+        "title": "Intelligent Optimization System",
+        "problem": "Enterprise prompts were managed ad-hoc with no versioning. This patent establishes a version-controlled prompt optimization mechanism."
+      },
+      {
+        "id": "M671223",
+        "title": "Information Query System",
+        "problem": "Traditional keyword search fails on unstructured enterprise documents. This patent introduces a semantic retrieval architecture for accurate information access."
+      },
+      {
+        "id": "M671449",
+        "title": "Customizable Generative AI System",
+        "problem": "Different bank departments needed custom AI behaviors on the same underlying model. This patent solves the multi-scenario deployment scaling problem.",
+        "pending": true
+      },
+      {
+        "id": "M674713",
+        "title": "Data Query System",
+        "problem": "Cross-system data queries were fragmented and costly to integrate. This patent provides a unified query interface to reduce engineering overhead."
+      },
+      {
+        "id": "M676680",
+        "title": "Knowledge Graph Construction System",
+        "problem": "Unstructured enterprise knowledge was inaccessible to AI systems. This patent builds a reasoning-capable knowledge structure so AI genuinely understands business context.",
+        "pending": true
+      }
+    ]
+  },
   "services_teaser": {
     "title": "How I Help",
     "sub": "From strategy to shipping — I help teams move fast with AI.",
@@ -300,6 +371,8 @@
       "PostgreSQL / Vector DBs"
     ],
     "credibility_title": "Credentials",
+    "open_dialogue": "If you're thinking about how to genuinely deploy AI in a regulated environment — or you're building a team that needs this kind of experience — I'm open to a conversation. Whether that's advisory work, a speaking invitation, or a longer-term opportunity.",
+    "open_dialogue_cta": "Start a Conversation",
     "credibility": [
       {
         "label": "Patents",

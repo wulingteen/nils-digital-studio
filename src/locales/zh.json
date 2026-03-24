@@ -133,6 +133,77 @@
       }
     ]
   },
+  "impact": {
+    "title": "用數字說話",
+    "sub": "不是 feature list，是真實交付的成果。",
+    "items": [
+      {
+        "number": "#1",
+        "label": "本土龍頭銀行首個生產級 GenAI",
+        "context": "2024 年 8 月上線，服務全行員工。"
+      },
+      {
+        "number": "96%",
+        "label": "AI Coach 滿意度",
+        "context": "三層 Agent 架構，GraphRAG + Rubrics 評分機制。"
+      },
+      {
+        "number": "6",
+        "label": "已核准 AI 專利",
+        "context": "Sole inventor，另有 2 件發明專利正在審查中。"
+      },
+      {
+        "number": "7",
+        "label": "技術演講場次",
+        "context": "iThome Hello World 2024+2025、DevFest Taipei 2025。"
+      },
+      {
+        "number": "Weeks",
+        "label": "PoC 到 Production",
+        "context": "在受監管的金融環境中，從零到正式上線。"
+      }
+    ]
+  },
+  "patents_detail": {
+    "title": "6 件 AI 專利，背後的故事",
+    "sub": "Sole inventor。每件專利都源自一個真實的企業痛點，而不是純粹的技術探索。",
+    "inventor_badge": "唯一發明人",
+    "pending_badge": "發明專利審查中",
+    "items": [
+      {
+        "id": "M670472",
+        "title": "金融投資建議生成系統",
+        "problem": "LLM 給出的投資建議格式不一、無法稽核。此專利讓輸出結構化，符合金融合規要求。"
+      },
+      {
+        "id": "M671161",
+        "title": "智慧優化系統",
+        "problem": "企業內部 prompt 管理混亂、版本難以追蹤。此專利建立可版本控制的 prompt 優化機制。"
+      },
+      {
+        "id": "M671223",
+        "title": "資訊查詢系統",
+        "problem": "傳統關鍵字搜尋在非結構化文件上效果差。此專利導入語意檢索架構，解決查詢不精準的問題。"
+      },
+      {
+        "id": "M671449",
+        "title": "客製化生成式人工智慧系統",
+        "problem": "銀行各部門需求不同，卻難以在同一底層模型上客製行為。此專利解決多場景部署的擴展困境。",
+        "pending": true
+      },
+      {
+        "id": "M674713",
+        "title": "資料查詢系統",
+        "problem": "跨系統資料查詢整合複雜、介面不一。此專利提供統一查詢介面，降低工程整合成本。"
+      },
+      {
+        "id": "M676680",
+        "title": "知識圖譜建構系統",
+        "problem": "非結構化企業知識難以被 AI 有效利用。此專利建立可推理的知識圖譜結構，讓 AI 真正理解業務脈絡。",
+        "pending": true
+      }
+    ]
+  },
   "services_teaser": {
     "title": "我如何幫助您",
     "sub": "從策略到交付 — 幫助團隊快速推進 AI 落地。",
@@ -300,6 +371,8 @@
       "PostgreSQL / 向量資料庫"
     ],
     "credibility_title": "資歷",
+    "open_dialogue": "如果你正在思考如何在受監管的環境中真正落地 AI——或者你在建立一個需要這種經驗的團隊——我很樂意交流。無論是顧問合作、演講邀約，或者更長期的機會。",
+    "open_dialogue_cta": "開始對話",
     "credibility": [
       {
         "label": "專利",
