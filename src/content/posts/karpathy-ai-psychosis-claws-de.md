@@ -4,7 +4,7 @@ titleEn: "Andrej Karpathy's 'AI Psychosis' and the Next Decade: From Hand-Coding
 titleDe: "Andrej Karpathys „KI-Psychose“ und das nächste Jahrzehnt: Vom Hand-Coding zur Steuerung von Agenten"
 excerpt: "Andrej Karpathy 在最新的访谈中提到自己彷彿得了「AI 精神病」——他已經幾個月沒親自寫過程式碼了。這篇文章整理了他在《No Priors》Podcast 分享的核心觀點，包括 Claws 的概念以及未來軟體開發範式的轉變。"
 excerptEn: "In his latest interview, Andrej Karpathy described experiencing 'AI Psychosis'—he hasn't written code himself in months. This article summarizes his core insights from the 'No Priors' podcast, including the concept of 'Claws' and the paradigm shift in software development."
-excerptDe: "In seinem neuesten Interview beschrieb Andrej Karpathy eine „KI-Psychose“ – er hat seit Monaten keinen Code mehr selbst geschrieben. Dieser Artikel fasst seine zentralen Erkenntnisse aus dem „No Priors“-Podcast zusammen, einschließlich des Konzepts der „Claws“ und eines Paradigmenwechsels in der Technologie."
+excerptDe: "Der ehemalige OpenAI- und Tesla-KI-Direktor Andrej Karpathy spricht im No Priors-Podcast über seine 'KI-Psychose'. Erfahren Sie, wie Claws, Token-Angst und Software 3.0 KI-Agenten und die Softwareentwicklung verändern."
 date: "2026-03-24"
 author: "Nils Liu"
 tags:
@@ -19,7 +19,7 @@ Der ehemalige Tesla Director of AI und OpenAI-Mitgründer Andrej Karpathy ist se
 
 Wenn Sie ein Ingenieur, PM oder eine Führungskraft sind, die erforscht, wie GenAI in der Produktion eingesetzt werden kann, werden seine Beobachtungen Ihre vorgefassten Meinungen über das „Schreiben von Software“ völlig zerstören.
 
-## Von der „Syntax-Schreibung“ zum „Ausdruck von Absichten“
+## Der Software 3.0 Wandel: Von der Syntax-Schreibung zum Ausdruck von Absichten
 
 Karpathy enthüllte während des Interviews eine erstaunliche Tatsache: **Er hat seit Dezember 2025 keine einzige Zeile Code mehr selbst getippt.**
 
@@ -27,7 +27,7 @@ Sein Tagesablauf besteht jetzt darin, stundenlang vor einem Bildschirm zu sitzen
 
 Dies ist die konkrete Umsetzung der von ihm zuvor erwähnten „Software 3.0“-Vision. Die Softwareentwicklung durchläuft einen grundlegenden Wandel – wir geben Computern keine „Wie“-Anweisungen mehr über Python oder C++. Stattdessen sagen wir der KI „Was“ wir wollen, indem wir natürliche Sprache (Prompting) verwenden.
 
-## „KI-Psychose“ und das Token-Angst-Syndrom
+## Nebenwirkungen der KI-Integration: „KI-Psychose“ und das Token-Angst-Syndrom
 
 Wenn all das schwere Heben an die KI ausgelagert werden kann, ändert sich die Quelle der menschlichen Angst.
 
@@ -35,7 +35,7 @@ Karpathy erwähnte, dass er eine unbeschreibliche „Nervosität oder Angst“ v
 
 Der Engpass in der KI-Entwicklung ist derzeit **nicht mehr die arithmetische Rechenleistung, sondern die menschliche Unfähigkeit, diese Systeme effektiv zu steuern.** Er sprach offen aus, dass die Unfähigkeit, KI gut zu kommandieren, die Absicht in unseren Köpfen klar in Prompts für die KI zu übersetzen, eigentlich ein „Skill-Problem“ für uns Menschen ist.
 
-## Claws: Jenseits von Session-basierten Agenten
+## Claws: Persistente Hintergrund-KI-Agenten jenseits des Chat-Fensters
 
 Während des Interviews stellte Karpathy ein Konzept vor, das fortschrittlicher ist als ein Standard-Agent und das er **„Claws“ (Krallen)** nennt.
 
@@ -45,7 +45,7 @@ Stellen Sie sich das vor: Während Sie schlafen, durchsuchen Ihre „Claws“ da
 
 Dies ist genau die Eigenschaft, die wir am meisten brauchen, wenn wir KI-Agenten in Unternehmensumgebungen einführen. Unternehmen brauchen nicht mehr „geschwätzige Bots“; Unternehmen brauchen digitale Arbeitskraft, die zur „Hintergrundprozessautomatisierung“ fähig ist.
 
-## Das Super-Jahrzehnt der Agenten
+## Das Super-Jahrzehnt der intelligenten Agenten
 
 Wenn wir auf Karpathys Äußerungen Ende 2025 zurückblicken, können wir sein klares Urteil über den Entwicklungspfad der KI erkennen:
 

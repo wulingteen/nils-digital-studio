@@ -3,7 +3,7 @@ title: "Andrej Karpathy's 'AI Psychosis' and the Next Decade: From Hand-Coding t
 titleEn: "Andrej Karpathy's 'AI Psychosis' and the Next Decade: From Hand-Coding to Directing Agents"
 titleDe: "Andrej Karpathys „KI-Psychose“ und das nächste Jahrzehnt: Vom Hand-Coding zur Steuerung von Agenten"
 excerpt: "Andrej Karpathy 在最新的访谈中提到自己彷彿得了「AI 精神病」——他已經幾個月沒親自寫過程式碼了。這篇文章整理了他在《No Priors》Podcast 分享的核心觀點，包括 Claws 的概念以及未來軟體開發範式的轉變。"
-excerptEn: "In his latest interview, Andrej Karpathy described experiencing 'AI Psychosis'—he hasn't written code himself in months. This article summarizes his core insights from the 'No Priors' podcast, including the concept of 'Claws' and the paradigm shift in software development."
+excerptEn: "Former OpenAI and Tesla AI Director Andrej Karpathy details his 'AI Psychosis' on the No Priors podcast. Discover how Claws, Token Anxiety, and Software 3.0 are reshaping AI Agents and software engineering."
 excerptDe: "In seinem neuesten Interview beschrieb Andrej Karpathy eine „KI-Psychose“ – er hat seit Monaten keinen Code mehr selbst geschrieben. Dieser Artikel fasst seine zentralen Erkenntnisse aus dem „No Priors“-Podcast zusammen, einschließlich des Konzepts der „Claws“."
 date: "2026-03-24"
 author: "Nils Liu"
@@ -19,7 +19,7 @@ Former Tesla Director of AI and OpenAI founding member Andrej Karpathy has long 
 
 If you are an engineer, PM, or a leader exploring how to deploy GenAI in production, his observations will completely shatter your preconceived notions about "writing software."
 
-## From "Writing Syntax" to "Expressing Intent"
+## The Software 3.0 Shift: From Writing Syntax to Expressing Intent
 
 Karpathy revealed a stunning fact during the interview: **he hasn't typed a single line of code himself since December 2025.**
 
@@ -27,7 +27,7 @@ His daily routine now consists of spending hours sitting in front of a screen, p
 
 This is the concrete realization of the "Software 3.0" vision he mentioned previously. Software engineering is going through a fundamental shift—we are no longer giving computers "How" instructions via Python or C++. Instead, we are telling AI "What" we want using natural language (Prompting).
 
-## "AI Psychosis" and Token Anxiety Syndrome
+## AI Empowerment Side Effects: "AI Psychosis" and Token Anxiety Syndrome
 
 When all heavy lifting can be outsourced to AI, the source of human anxiety changes.
 
@@ -35,7 +35,7 @@ Karpathy mentioned that when he finds he hasn't exhausted his allocated AI Token
 
 The bottleneck in AI development right now is **no longer arithmetic computing power, but the human inability to effectively direct these systems.** He bluntly stated that the inability to command AI well, to clearly translate the intent in our heads into Prompts for AI to execute, is actually a "Skill Issue" for us humans.
 
-## Claws: Beyond Session-based Agents
+## Claws: Persistent Background AI Agents Beyond the Chat Window
 
 During the interview, Karpathy introduced a concept more advanced than a standard Agent, which he calls **"Claws."**
 
@@ -45,7 +45,7 @@ Imagine this: while you are sleeping, your "Claws" are crawling the repository f
 
 This is exactly the trait we need most when introducing AI Agents into enterprise environments. Enterprises don't need more "chatty bots"; enterprises need digital labor capable of "background process automation."
 
-## The Super Decade of Agents
+## Embracing the Super Decade of Intelligent Agents
 
 Looking back at Karpathy's remarks in late 2025, we can see his clear judgment on the developmental path of AI:
 
