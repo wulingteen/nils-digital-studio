@@ -11,7 +11,7 @@ tags:
   - "GenAI"
   - "Blog"
   - "Architecture"
-coverImage: "/images/blog/graphrag-knowledge.jpg"
+coverImage: "/images/blog/stargate-ai-infra.jpg"
 ---
 
 Traditional RAG pipelines have a structural weakness: when conversations stretch long or topics jump categories, semantic fragmentation sets in. The LLM ends up with too much noise and not enough coherent signal, generating responses that are verbose but off-target.

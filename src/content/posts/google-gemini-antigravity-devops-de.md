@@ -12,7 +12,7 @@ tags:
   - "Blog"
   - "Architecture"
   - "Career"
-coverImage: "/images/blog/google-gemini-antigravity.jpg"
+coverImage: "/images/blog/google-io-all.jpg"
 ---
 
 ## Die Weiterentwicklung der Entwicklerrolle

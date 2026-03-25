@@ -12,7 +12,7 @@ tags:
   - "Blog"
   - "Architecture"
   - "Career"
-coverImage: "/images/blog/google-gemini-antigravity.jpg"
+coverImage: "/images/blog/google-io-all.jpg"
 ---
 
 After Google pushed Gemini 3 Pro and Antigravity, I found myself rethinking how I frame the relationship between developers and AI infrastructure.

@@ -12,7 +12,7 @@ tags:
   - "Blog"
   - "Architecture"
   - "Career"
-coverImage: "/images/blog/google-gemini-antigravity.jpg"
+coverImage: "/images/blog/google-io-all.jpg"
 ---
 
 Google 把 Gemini 3 Pro 和 Antigravity 推上來之後

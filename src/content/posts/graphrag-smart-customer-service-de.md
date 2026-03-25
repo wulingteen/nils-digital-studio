@@ -11,7 +11,7 @@ tags:
   - "GenAI"
   - "Blog"
   - "Architecture"
-coverImage: "/images/blog/graphrag-knowledge.jpg"
+coverImage: "/images/blog/stargate-ai-infra.jpg"
 ---
 
 ## GraphRAG: Revolution im intelligenten Kundenservice

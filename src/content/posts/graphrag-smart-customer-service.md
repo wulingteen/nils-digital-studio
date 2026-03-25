@@ -11,7 +11,7 @@ tags:
   - "GenAI"
   - "Blog"
   - "Architecture"
-coverImage: "/images/blog/graphrag-knowledge.jpg"
+coverImage: "/images/blog/stargate-ai-infra.jpg"
 ---
 
 GraphRAG 以知識圖譜串聯記憶，重塑智慧客服推理能力
