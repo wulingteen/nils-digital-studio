@@ -13,7 +13,7 @@ tags:
   - "Agent"
   - "Architecture"
 coverImage: "/images/blog/AI_Coach.webp"
-pinned: true
+pinned: false
 ---
 
 Late last year I took the stage at DevFest Taipei 2025 to share something we've actually shipped — a 24/7 AI coaching platform for overseas sales agents. Not a demo. A real system running in production.

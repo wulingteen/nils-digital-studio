@@ -13,7 +13,7 @@ tags:
   - "GenAI"
   - "Architecture"
 coverImage: "/images/blog/ithome-hello-world-2025.png"
-pinned: true
+pinned: false
 ---
 
 ## iThome Hello World 2025 Entwicklerkonferenz

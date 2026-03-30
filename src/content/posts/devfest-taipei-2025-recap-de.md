@@ -13,7 +13,7 @@ tags:
   - "Agent"
   - "Architecture"
 coverImage: "/images/blog/AI_Coach.webp"
-pinned: true
+pinned: false
 ---
 
 ## Rekapitulation DevFest Taipei 2025

@@ -13,7 +13,7 @@ tags:
   - "GenAI"
   - "Architecture"
 coverImage: "/images/blog/ithome-hello-world-2025.png"
-pinned: true
+pinned: false
 ---
 
 At this year's iThome Hello World 2025 Dev Conference, I delivered four back-to-back sessions focused entirely on the practical realities of putting AI into production. This wasn't just about sharing knowledge; it was a distillation of the hard-learned lessons our team gathered while deploying LLMs in the banking sector.

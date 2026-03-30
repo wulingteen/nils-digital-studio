@@ -13,7 +13,7 @@ tags:
   - "GenAI"
   - "Architecture"
 coverImage: "/images/blog/ithome-hello-world-2025.png"
-pinned: true
+pinned: false
 ---
 
 在今年的 iThome Hello World 2025 開發者大會上，我一口氣帶來了四場跟 AI 實戰高度相關的議程。這不僅僅是知識的分享，更是我們團隊在銀行內部推動 LLM 落地過程中的血汗經驗總結。
