@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useGamificationStore } from '../../store/gamificationStore';
 import { Bookmark, Linkedin, Share2, Facebook, Twitter, MessageCircle, AtSign } from 'lucide-react';
-import SocialProof from './SocialProof';
+
 
 interface Props {
   articleId: string;
@@ -59,7 +59,7 @@ export default function ActionPanel({ articleId, lang, title }: Props) {
 
   return (
     <div className="flex flex-col gap-4 sm:flex-row sm:items-center justify-between w-full p-4 rounded-2xl bg-secondary/20 border border-primary/10">
-      <SocialProof articleId={articleId} />
+
       
       <div className="flex flex-wrap items-center gap-2">
         <button
