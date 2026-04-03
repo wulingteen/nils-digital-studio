@@ -12,7 +12,7 @@ tags:
   - "Tech"
   - "Agent"
   - "Open Source"
-coverImage: "/images/blog/gemma-4-developer-guide.webp"
+coverImage: "/images/blog/gemma4-guide-cover.webp"
 ---
 
 2026 年 4 月 2 日，Google DeepMind 正式發布了 **Gemma 4**，這是 Gemma 系列迄今最強大的一代開源語言模型。在 AI 開發者社群，這次發布有幾個值得特別關注的重點：首次採用 **Apache 2.0 完全開放授權**、首次將 **Agentic 能力**內建於邊緣模型、以及 31B 模型在全球開放模型排行榜上殺進**前三名**。
