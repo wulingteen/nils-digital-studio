@@ -2,7 +2,6 @@
 import Layout from '../../../layouts/Layout.astro';
 import { t } from '../../../i18n/utils';
 import { getCollection, render } from 'astro:content';
-import HeaderIsland from '../../../components/layout/HeaderIsland';
 import FooterStatic from '../../../components/layout/FooterStatic.astro';
 import NewsletterForm from '../../../components/NewsletterForm.astro';
 import RandomArticleButton from '../../../components/gamification/RandomArticleButton';
@@ -132,8 +131,8 @@ const articleLd = {
   articleDate={basePost.data.date.toISOString().split('T')[0]}
   articleAuthor={basePost.data.author}
   articleSection={currentTags[0] || "GenAI"}
+  currentPath={`/${lang}/insights/${basePost.id}`}
 >
-  <HeaderIsland lang={lang} currentPath={`/${lang}/insights/${basePost.id}`} client:load />
 
   <article class="min-h-screen pb-20 pt-32">
     <div class="container-narrow mx-auto max-w-3xl px-6 md:px-8">

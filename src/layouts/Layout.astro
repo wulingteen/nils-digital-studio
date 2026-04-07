@@ -17,6 +17,7 @@ interface Props {
   articleDate?: string;
   articleAuthor?: string;
   articleSection?: string;
+  currentPath?: string;
 }
 
 const { 
@@ -29,7 +30,8 @@ const {
   ogType = "website",
   articleDate,
   articleAuthor,
-  articleSection
+  articleSection,
+  currentPath
 } = Astro.props;
 
 // For generating full image URLs if a relative path is provided
@@ -111,22 +113,12 @@ const serviceSchema = JSON.stringify({
     <title>{title}</title>
     <meta name="description" content={description} />
     <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0a0a0a" />
     <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="generator" content={Astro.generator} />
 
     <!-- Canonical URL -->
     <link rel="canonical" href={canonicalURL || new URL(Astro.url.pathname, Astro.site || 'https://nilsliu.dev/').href} />
-
-    <script type="application/json" id="astro-debug-variables">
-      {JSON.stringify({
-        pathname: Astro.url.pathname,
-        basePath: basePath,
-        pathWithoutBase: pathWithoutBase,
-        pathWithoutLang: pathWithoutLang,
-        site: Astro.site?.href,
-        hreflangZh: hreflangZh
-      })}
-    </script>
 
     <!-- Hreflang Tags for Multi-language SEO -->
     <link rel="alternate" hreflang="zh-TW" href={hreflangZh} />
@@ -151,6 +143,8 @@ const serviceSchema = JSON.stringify({
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@wulingten" />
+    <meta name="twitter:creator" content="@wulingten" />
     <meta name="twitter:url" content={canonicalURL || Astro.url.href} />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
@@ -183,7 +177,7 @@ const serviceSchema = JSON.stringify({
       <!-- Splash Screen Island handles session storage logic client-side -->
       <SplashScreenIsland client:load />
 
-      <HeaderIsland client:load lang={lang} currentPath={`/${lang}/`} />
+      <HeaderIsland client:load lang={lang} currentPath={currentPath || `/${lang}/`} />
       
       <main class="flex-1 pt-16">
         <slot />
