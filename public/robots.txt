@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://nils-digital-studio.vercel.app/sitemap-index.xml
+Sitemap: https://nilsliu.dev/sitemap-index.xml
