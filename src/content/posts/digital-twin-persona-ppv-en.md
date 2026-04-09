@@ -18,7 +18,7 @@ In 2023, the landmark **Generative Agents** paper from Stanford and Google stunn
 
 This experiment raised a fascinating and unsettling question: **If language models can simulate fictional characters' behaviors, can they simulate *you*?**
 
-Nearly three years later, the academic community has forged three distinct paths: **Digital Twin**, **Persona Bot**, and an emerging framework still taking shape—**Psychometric Persona Vectors (PPV)**. This article systematically unpacks the technical core of each approach, their known bottlenecks, and what they mean for the future of AI product design.
+Nearly three years later, the academic community has forged three distinct paths: **Digital Twin**, **Persona Bot**, and an emerging framework still taking shape—**Psychometric Persona Vectors (PPV)**. PPV is an original concept being actively researched and developed by the author (Nils Liu). This article systematically unpacks the technical core of each approach, their known bottlenecks, and what they mean for the future of AI product design.
 
 ---
 
@@ -70,9 +70,11 @@ However, the most popular implementation path—**Persona Prompting (PP)**—exp
 
 ## Path 3: PPV — The RAG-Free Psychometric Vector Framework
 
+> **Author's Note**: PPV (Psychometric Persona Vectors) is an original research concept currently being developed and researched by the author, Nils Liu. The framework described in this section represents an active research direction. Researchers and engineers interested in this space are welcome to reach out for discussion.
+
 ### Core Concept: "Metadata Compression" of Personality
 
-**Psychometric Persona Vectors (PPV)** represents the most frontier direction in current research. Its core assumption: an individual's conversational behavior patterns can be explained by a small number of **orthogonal psychological dimensions**—dimensions that can be inferred from limited natural language interactions and compressed into high-density vectors.
+**Psychometric Persona Vectors (PPV)** is a framework proposed and actively researched by the author. Its core assumption: an individual's conversational behavior patterns can be explained by a small number of **orthogonal psychological dimensions**—dimensions that can be inferred from limited natural language interactions and compressed into high-density vectors.
 
 ```
 PPV = f( Big Five, MBTI Axes, DISC, Enneagram, Decision Heuristics, Communication Style )
@@ -137,10 +139,10 @@ Despite their different emphases, all three paths are stuck on four fundamental 
 
 ## Conclusion: The Next Frontier of Digital Twins
 
-From Generative Agents making us marvel that "AI can spontaneously socialize," to BehaviorChain revealing "LLM behavioral prediction still far underperforms humans," to PPV seeking to bridge "individual consistency" and "cold-start efficiency" through psychometric vectors—this field is evolving at breathtaking speed.
+From Generative Agents making us marvel that "AI can spontaneously socialize," to BehaviorChain revealing "LLM behavioral prediction still far underperforms humans," to PPV—the author's ongoing research—seeking to bridge "individual consistency" and "cold-start efficiency" through psychometric vectors: this field is evolving at breathtaking speed.
 
-For AI product designers, this academic debate carries a direct implication: **The era of "slapping a persona mask on an AI via prompt" is fading. What's coming is "embedding genuine psychological constructs into the model's reasoning pathway."** Regardless of PPV's near-term progress, the research direction it represents—LLM personality driven by interpretable psychometric vectors—will likely be one of the central topics in human-computer interaction design for the next decade.
+For AI product designers, this academic debate carries a direct implication: **The era of "slapping a persona mask on an AI via prompt" is fading. What's coming is "embedding genuine psychological constructs into the model's reasoning pathway."** PPV, as the author's active research project, represents a direction—LLM personality driven by interpretable psychometric vectors—that will likely be one of the central topics in human-computer interaction design for the next decade. If you're interested in the PPV research direction, the author welcomes direct conversation.
 
 ---
 
-*References: BehaviorChain (Li et al., ACL 2025), TwinVoice (Du et al., 2025), Twin-2K-500 (Columbia DAPLab, 2025), PersonaLLM (Jiang et al., 2023), Generative Agents (Park et al., UIST 2023), Quantifying the Persona Effect (Hu & Collier, ACL 2024).*
+*External references: BehaviorChain (Li et al., ACL 2025), TwinVoice (Du et al., 2025), Twin-2K-500 (Columbia DAPLab, 2025), PersonaLLM (Jiang et al., 2023), Generative Agents (Park et al., UIST 2023), Quantifying the Persona Effect (Hu & Collier, ACL 2024). The PPV framework is original research by the author, Nils Liu, and is currently ongoing.*

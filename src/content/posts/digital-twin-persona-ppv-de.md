@@ -18,7 +18,7 @@ Im Jahr 2023 sorgte das bahnbrechende **Generative Agents**-Paper von Stanford u
 
 Dieses Experiment warf eine faszinierende und beunruhigende Frage auf: **Wenn Sprachmodelle das Verhalten fiktiver Charaktere simulieren können – können sie dann auch *Sie* simulieren?**
 
-Knapp drei Jahre später hat die Forschungsgemeinschaft drei eigenständige Wege eingeschlagen: **Digital Twin**, **Persona Bot** und ein aufstrebendes Framework, das noch Form annimmt – **Psychometric Persona Vectors (PPV)**. Dieser Artikel analysiert systematisch die technischen Grundlagen jedes Ansatzes, seine bekannten Engpässe und seine Bedeutung für die Zukunft des KI-Produktdesigns.
+Knapp drei Jahre später hat die Forschungsgemeinschaft drei eigenständige Wege eingeschlagen: **Digital Twin**, **Persona Bot** und ein aufstrebendes Framework, das noch Form annimmt—**Psychometric Persona Vectors (PPV)**. PPV ist ein originelles Konzept, das der Autor (Nils Liu) derzeit aktiv erforscht und entwickelt. Dieser Artikel analysiert systematisch die technischen Grundlagen jedes Ansatzes, seine bekannten Engpässe und seine Bedeutung für die Zukunft des KI-Produktdesigns.
 
 ---
 
@@ -70,9 +70,11 @@ Der populärste Implementierungsweg – **Persona Prompting (PP)** – offenbart
 
 ## Weg 3: PPV — Das RAG-freie psychometrische Vektor-Framework
 
+> **Hinweis des Autors**: PPV (Psychometric Persona Vectors) ist ein originelles Forschungskonzept, das der Autor, Nils Liu, derzeit entwickelt und erforscht. Das in diesem Abschnitt beschriebene Framework repräsentiert eine aktive Forschungsrichtung. Interessierte Forscher und Ingenieure sind herzlich eingeladen, sich auszutauschen.
+
 ### Kernkonzept: „Metadaten-Komprimierung" der Persönlichkeit
 
-**Psychometric Persona Vectors (PPV)** repräsentiert die aktuell fortschrittlichste Forschungsrichtung. Seine Kernannahme: Das Gesprächsverhalten eines Individuums lässt sich durch wenige **orthogonale psychologische Dimensionen** erklären – Dimensionen, die aus begrenzten natürlichsprachlichen Interaktionen abgeleitet und in hochdichte Vektoren komprimiert werden können.
+**Psychometric Persona Vectors (PPV)** ist ein Framework, das vom Autor vorgeschlagen wird und aktiv erforscht wird. Seine Kernannahme: Das Gesprächsverhalten eines Individuums lässt sich durch wenige **orthogonale psychologische Dimensionen** erklären – Dimensionen, die aus begrenzten natürlichsprachlichen Interaktionen abgeleitet und in hochdichte Vektoren komprimiert werden können.
 
 ```
 PPV = f( Big Five, MBTI-Achsen, DISC, Enneagramm, Entscheidungsheuristiken, Kommunikationsstil )
@@ -137,10 +139,10 @@ Trotz unterschiedlicher Schwerpunkte stoßen alle drei Wege auf dieselben vier g
 
 ## Fazit: Die nächste Grenze digitaler Zwillinge
 
-Von Generative Agents, die uns staunen ließen, dass „KI spontan sozial interagieren kann", über BehaviorChain, das zeigte, dass „die Verhaltensvorhersage von LLMs noch weit hinter Menschen liegt", bis hin zu PPV, das versucht, durch psychometrische Vektoren eine Brücke zwischen „individueller Konsistenz" und „Cold-Start-Effizienz" zu bauen – dieses Feld entwickelt sich mit atemberaubender Geschwindigkeit.
+Von Generative Agents, die uns staunen ließen, dass „KI spontan sozial interagieren kann“, über BehaviorChain, das zeigte, dass „die Verhaltensvorhersage von LLMs noch weit hinter Menschen liegt“, bis hin zu PPV – der laufenden Forschung des Autors –, das versucht, durch psychometrische Vektoren eine Brücke zwischen „individueller Konsistenz“ und „Cold-Start-Effizienz“ zu bauen: Dieses Feld entwickelt sich mit atemberaubender Geschwindigkeit.
 
-Für KI-Produktdesigner hat diese akademische Debatte eine direkte Implikation: **Die Ära, einer KI einfach per Prompt eine Persona-Maske aufzusetzen, verblasst. Was kommt, ist die Einbettung echter psychologischer Konstrukte in den Inferenzpfad des Modells.** Unabhängig von PPVs kurzfristigen Fortschritten – die Forschungsrichtung, die es repräsentiert, wird wahrscheinlich eines der zentralen Themen in der Mensch-Computer-Interaktion des nächsten Jahrzehnts sein.
+Für KI-Produktdesigner hat diese akademische Debatte eine direkte Implikation: **Die Ära, einer KI einfach per Prompt eine Persona-Maske aufzusetzen, verblasst. Was kommt, ist die Einbettung echter psychologischer Konstrukte in den Inferenzpfad des Modells.** PPV als aktives Forschungsprojekt des Autors repräsentiert eine Richtung – KI-Persönlichkeit, angetrieben durch interpretierbare psychometrische Vektoren –, die wahrscheinlich eines der zentralen Themen in der Mensch-Computer-Interaktion des nächsten Jahrzehnts sein wird. Wenn Sie an der PPV-Forschungsrichtung interessiert sind, freut sich der Autor über direkten Austausch.
 
 ---
 
-*Quellen: BehaviorChain (Li et al., ACL 2025), TwinVoice (Du et al., 2025), Twin-2K-500 (Columbia DAPLab, 2025), PersonaLLM (Jiang et al., 2023), Generative Agents (Park et al., UIST 2023), Quantifying the Persona Effect (Hu & Collier, ACL 2024).*
+*Externe Quellen: BehaviorChain (Li et al., ACL 2025), TwinVoice (Du et al., 2025), Twin-2K-500 (Columbia DAPLab, 2025), PersonaLLM (Jiang et al., 2023), Generative Agents (Park et al., UIST 2023), Quantifying the Persona Effect (Hu & Collier, ACL 2024). Das PPV-Framework ist Originalforschung des Autors Nils Liu und wird derzeit weiterentwickelt.*
