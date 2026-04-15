@@ -2,9 +2,9 @@
 title: "Harness Engineering: Die Ausführungsschicht für Ihren KI-Agenten aufbauen"
 titleEn: "Harness Engineering: Building the Execution Layer for Your AI Agent"
 titleDe: "Harness Engineering: Die Ausführungsschicht für Ihren KI-Agenten aufbauen"
-excerpt: "Egal wie elegant Ihre Agent-Logik ist — ohne ein solides Harness ist das Live-Gehen ein Glücksspiel. Dieser Beitrag erläutert das Kerndesign von Harness Engineering."
-excerptEn: "No matter how elegant your Agent logic is, without a solid Harness, going live is gambling. This post breaks down the core design of Harness Engineering."
-excerptDe: "Egal wie elegant Ihre Agent-Logik ist — ohne ein solides Harness ist das Live-Gehen ein Glücksspiel. Dieser Beitrag erläutert das Kerndesign von Harness Engineering."
+excerpt: "Harness Engineering ist die Ausführungsschicht in der KI-Agenten-Architektur. Dieser Beitrag stellt das Kerndesign eines Harness vor: Ausführungskontrolle, Observierbarkeit, Hooks, Tool-Sandbox und Zustandsverwaltung."
+excerptEn: "Harness Engineering is the execution layer in AI Agent architecture. This post introduces the core design of a Harness: execution control, observability, hooks, tool sandboxing, and state management."
+excerptDe: "Harness Engineering ist die Ausführungsschicht in der KI-Agenten-Architektur. Dieser Beitrag stellt das Kerndesign eines Harness vor: Ausführungskontrolle, Observierbarkeit, Hooks, Tool-Sandbox und Zustandsverwaltung."
 date: "2026-04-15"
 author: "Nils Liu"
 tags:
@@ -16,11 +16,9 @@ coverImage: "/images/blog/harness-engineering.webp"
 lang: "de"
 ---
 
-**Harness Engineering** ist das Konzept, das ich in Gesprächen mit Entwicklungsteams am häufigsten ausgelassen sehe.
+**Harness Engineering** beschreibt das Systemdesign hinter der Ausführungsschicht in der KI-Agenten-Architektur.
 
-Teams verbringen Monate damit, Prompts zu optimieren, Agent-Abläufe zu entwerfen und Embedding-Modelle auszuwählen — dann wird alles zusammengesteckt, man sagt „unser Agent läuft" und deployed. Was folgt, ist vorhersehbar: Der Agent fällt sporadisch durch Timeouts, ohne jegliche Logs. Ein Tool-Call schlägt still fehl, der Agent läuft weiter und produziert eine Ausgabe, die korrekt aussieht, aber komplett falsch ist. Nutzer melden, dass „die KI sich manchmal komisch verhält", und man weiß nicht, wo man anfangen soll zu debuggen.
-
-Das sind die Symptome eines fehlenden Harness.
+Die meisten Diskussionen rund um KI-Agenten konzentrieren sich auf Prompt-Design, Agent-Abläufe und Modellauswahl. Harness adressiert eine andere Dimension — nicht die Geschäftslogik, sondern die Zuverlässigkeit, Observierbarkeit und Sicherheitsgrenzen der Laufzeitumgebung. Dieser Beitrag erläutert das Kerndesign von Harness Engineering: welche Komponenten es enthält und wofür jede einzelne verantwortlich ist.
 
 ## Was ist Harness Engineering
 
@@ -42,7 +40,7 @@ Sie benötigen harte Grenzen für die Agent-Ausführung:
 - **Timeouts**: Jeder LLM-Call und Tool-Call benötigt seinen eigenen Timeout. Verlassen Sie sich nicht auf den Frontend-Verbindungs-Timeout, um unkontrollierte Agenten aufzuhalten.
 - **Circuit Breaker**: Wenn dasselbe Tool N-mal hintereinander fehlschlägt, sollte das Harness diesen Pfad pausieren, auf Fallback wechseln oder vollständig abbrechen.
 
-Das sind keine optionalen Features. Ich habe erlebt, wie ein Agent ohne Max-Steps-Limit in der Produktionsumgebung 200 Schritte lief, sein Token-Budget verbrauchte und nie stoppte.
+Sinnvolle Schrittobergrenzen halten die Agent-Ausführung in vorhersehbaren Grenzen, was Debugging und Kostenkontrolle deutlich erleichtert.
 
 ### 2. Observierbarkeit (Observability)
 
@@ -78,7 +76,7 @@ Welche Tools ein Agent aufrufen darf, sollte die Entscheidung des Harness sein, 
 - **Dynamische Autorisierung**: Manche Tools nur unter bestimmten Bedingungen erlaubt (z.B. Transaktionen über einem Schwellenwert erfordern einen manuellen Überprüfungs-Trigger).
 - **Sandbox-Isolation**: Hochrisiko-Tools (alles, das in Datenbanken schreibt oder externe Anfragen sendet) laufen in einer isolierten Umgebung, um Seiteneffekte einzudämmen.
 
-In [5 Produktdesign-Fallen beim Bau von KI-Agenten](/de/insights/ai-agent-product-design-traps) habe ich „übermäßiges Vertrauen in das Reasoning des Agenten" als einen der häufigsten Fehler bezeichnet. Tool-Sandboxing verhindert dies auf Architekturebene — nicht durch Prompt-basierte Selbstdisziplin.
+In [5 Produktdesign-Fallen beim Bau von KI-Agenten](/de/insights/ai-agent-product-design-traps) gehe ich auf die Problematik des „übermäßigen Vertrauens in das Reasoning des Agenten" ein. Tool-Sandboxing adressiert dies auf Architekturebene — nicht durch Prompt-basierte Selbstdisziplin.
 
 ### 5. Zustandsverwaltung (State Management)
 
@@ -103,7 +101,7 @@ Aber sobald eines der folgenden zutrifft, sollte Harness auf der Roadmap stehen:
 3. Sie müssen erklären können: „Warum hat der Agent diese Entscheidung getroffen?"
 4. Es gibt Compliance- oder Sicherheitsanforderungen (Finanzen, Gesundheit, Recht — fast alle haben sie)
 
-Das Harness zu überspringen bedeutet nicht, dass es keine Probleme gibt. Es bedeutet, dass Sie sie noch nicht gesehen haben.
+Wann in ein Harness investiert werden sollte, hängt von der Phase und dem Kontext des Agenten ab. Eine frühzeitige Planung der Ausführungsschicht zahlt sich aus, wenn es darum geht, den Agenten zu betreiben und zu skalieren.
 
 ---
 
