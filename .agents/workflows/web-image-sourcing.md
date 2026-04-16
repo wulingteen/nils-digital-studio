@@ -10,10 +10,32 @@ description: 自動從網路尋找免版權圖片並轉換格式 (Web Image Sour
 
 ### 第一階段：決定下載來源與關鍵字
 1. **確定圖像主題**：根據內容（例如「駭客」、「辦公室」、「雲端伺服器」）選擇相關關鍵字。
-2. **尋找來源 URL (Unsplash API)**：
-   - Unsplash 支援隨機關鍵字抓取高品質圖片。預設使用此端點：
-     `https://images.unsplash.com/featured/1200x800/?<keyword_1>,<keyword_2>`
-     例如：`https://images.unsplash.com/featured/1200x800/?cybersecurity,code`
+2. **尋找來源 URL (Unsplash Direct CDN)**：
+
+   ⚠️ **注意：`images.unsplash.com/featured/` 和 `source.unsplash.com/` 這兩種舊格式均已失效，會回傳 404 或 503，請勿使用。**
+
+   正確做法是使用**已知有效的 Unsplash 直接 Photo ID URL**。以下是按主題整理的可用圖片 ID 清單：
+
+   | 主題 | Photo ID | 說明 |
+   |------|----------|------|
+   | AI / Neural Network | `1620712943543-bcc4688e7485` | 神經網路抽象視覺 |
+   | Engineering / Infrastructure | `1558494949-ef010cbdcc31` | 工程基礎設施 |
+   | Coding / Technology | `1461749280684-dccba630e2f6` | 程式碼螢幕 |
+   | Data / Analytics | `1551288049-bebda4e38f71` | 資料分析圖表 |
+   | Cloud / Server | `1558494950-f3e5a6c6e6e6` | 雲端伺服器 |
+   | Business / Meeting | `1556761175-b413da4baf72` | 商業會議 |
+   | Security / Lock | `1555949963-ff9fe0c870cb` | 安全鎖 |
+   | Robot / Automation | `1485827404703-89b55fcc595e` | 機器人自動化 |
+   | Abstract / Purple | `1518770660439-4636190af475` | 抽象紫色科技 |
+   | Finance / Banking | `1554774853-719586f82d77` | 金融銀行 |
+
+   使用格式：
+   ```
+   https://images.unsplash.com/photo-{PHOTO_ID}?w=1200&q=80
+   ```
+   例如：`https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&q=80`
+
+   **如果上表找不到合適主題**：先用 `curl -L -I` 測試 URL 是否回傳 `HTTP/2 200` 再下載，避免浪費時間。可嘗試在 Unsplash 網站搜尋後從 URL 複製 Photo ID（格式為 `/photo-XXXXX`）。
 
 ### 第二階段：下載並轉檔
 為確保網站（特別是 Astro 或 Next.js 專案）的效能與 SEO 分數，所有首圖與插入圖片**必須**轉換為 `webp`，並控制寬度。

@@ -28,8 +28,13 @@ description: 自動化多語系技術洞察文章發布流程 (LLM Insights Publ
 
 ## 第三階段：更新網站索引 (Update Router/Index)
 為了讓網站能抓取到這篇文章，必須在索引檔中註冊 slug。
+
 1. **讀取設定檔**：查看 `src/pages/llm.astro` 中 `const articles` 陣列的結構。
-2. **按字母順序插入 Slug**：準確找到對應的字母排序位置，將 `<slug>` 插入陣列中（請勿重複插入）。
+2. **按字母順序插入 Slug**：
+   - 陣列是**嚴格字母升序排列**。例如 `"graphrag..."` 後面接 `"harness..."` 再接 `"hermes..."` 再接 `"hiring..."`。
+   - 插入前先找到新 slug 的前後鄰居（逐字母比較），用 Edit 工具精確插入，**勿使用 append**。
+   - 確認不重複：先 `grep` 確認 slug 不在陣列中才插入。
+3. **⚠️ 本步驟是必做項目**，不是可選的。漏掉這步文章會在 `/llm` 路徑消失，LLM 爬蟲也找不到。
 
 ## 第四階段：版控與部署 (Commit & Push)
 完成所有檔案修改後，執行自動化的 Git 提交：
