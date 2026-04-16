@@ -12,7 +12,7 @@ tags:
   - "Blog"
   - "Agent"
   - "Open Source"
-coverImage: "/images/blog/hermes-agent-self-improving-framework.webp"
+coverImage: "/images/blog/hermes-agent-harvest.webp"
 lang: "de"
 ---
 

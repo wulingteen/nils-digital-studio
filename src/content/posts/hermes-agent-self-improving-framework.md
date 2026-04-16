@@ -12,7 +12,7 @@ tags:
   - "Blog"
   - "Agent"
   - "Open Source"
-coverImage: "/images/blog/hermes-agent-self-improving-framework.webp"
+coverImage: "/images/blog/hermes-agent-harvest.webp"
 ---
 
 **Hermes Agent** 是 NousResearch 在 2026 年 2 月 25 日發布的開源 AI Agent 框架，發布幾週內就累積了 57,000 個 GitHub Stars，是今年成長最快的 Agent 開源專案之一。
