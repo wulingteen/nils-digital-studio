@@ -8,6 +8,7 @@ excerptDe: "Ilya sagt, Kompression ist Lernen. Freedman findet, dass nur polynom
 date: "2026-04-19"
 author: "Nils Liu"
 tags: ["GenAI", "Research", "PPV"]
+coverImage: "/images/blog/compression-persona-ppv.webp"
 pinned: false
 ---
 
@@ -20,6 +21,17 @@ Fields-Medaillen-Träger Michael Freedman erweiterte diese These kürzlich in ei
 Dieses Ergebnis löste eine kühne Frage aus: **Ist menschliche Persönlichkeit komprimierbar?**
 
 Falls ja, erhält die KI-Persona-Simulation ein weit solideres mathematisches Fundament. Falls nicht, betreibt jede Persona-KI im Grunde ein sinnloses Unterfangen.
+
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin:2rem 0;border-radius:8px;">
+  <iframe
+    src="https://www.youtube.com/embed/fOmkQQnTHIw"
+    style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+    loading="lazy"
+    title="Compression is All You Need — Fields-Medaillen-Träger Michael Freedman"
+  ></iframe>
+</div>
 
 ---
 

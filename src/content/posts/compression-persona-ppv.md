@@ -8,6 +8,7 @@ excerptDe: "Ilya sagt, Kompression ist Lernen. Freedman findet, dass nur polynom
 date: "2026-04-19"
 author: "Nils Liu"
 tags: ["GenAI", "Research", "PPV"]
+coverImage: "/images/blog/compression-persona-ppv.webp"
 pinned: false
 ---
 
@@ -20,6 +21,17 @@ Ilya Sutskever 在多次演講中提出了一個發人深省的命題：**壓縮
 這個數學結論讓我想到一個大膽的問題：**人格可以被壓縮嗎？**
 
 如果可以，那麼 AI Persona 模擬就有了更堅實的數學基礎。如果不行，那麼所有的 Persona AI 都只是在做一件徒勞的事。
+
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin:2rem 0;border-radius:8px;">
+  <iframe
+    src="https://www.youtube.com/embed/fOmkQQnTHIw"
+    style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+    loading="lazy"
+    title="Compression is All You Need — Michael Freedman"
+  ></iframe>
+</div>
 
 ---
 
