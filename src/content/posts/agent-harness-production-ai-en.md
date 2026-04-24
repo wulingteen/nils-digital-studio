@@ -13,15 +13,13 @@ tags:
   - "Architecture"
   - "LLM"
   - "Tech"
-coverImage: "/images/blog/agent-harness-architecture.webp"
+coverImage: "/images/blog/harness-engineering.webp"
 lang: "en"
 ---
 
 As AI architects, we must acknowledge a harsh reality: **in 2026, AI competition is no longer about parameter count — it's about Agent Harness architecture.**
 
 Many agents perform flawlessly in demos, only to collapse in complex production environments. The "success rate chasm" has a clear cause: **the model itself is rarely the problem. The scaffolding around it is.**
-
-![Agent Harness multi-layer architecture: LLM at the core, surrounded by Runtime, Capabilities, and Safety & Scale rings](/images/blog/agent-harness-architecture.webp)
 
 LangChain ran a landmark experiment: without changing any model weights or algorithms, optimizing the Harness architecture alone pushed an agent from outside the top 30 to **5th place** on TerminalBench 2.0. LLM-optimized Harness systems achieve task pass rates of **76.4%** — far exceeding hand-crafted traditional systems.
 

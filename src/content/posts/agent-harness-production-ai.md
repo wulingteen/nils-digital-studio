@@ -13,14 +13,12 @@ tags:
   - "Architecture"
   - "LLM"
   - "Tech"
-coverImage: "/images/blog/agent-harness-architecture.webp"
+coverImage: "/images/blog/harness-engineering.webp"
 ---
 
 身為 AI 架構師，我們必須承認一個殘酷的現實：**2026 年的 AI 競爭，本質上已不再是模型參數的「內卷」，而是 Agent Harness（智能體支架）架構的博弈。**
 
 許多智能體在 Demo 展示時流暢無比，一旦進入複雜的生產環境便「原形畢露」，任務成功率斷崖式下跌。這道「成功率鴻溝」背後的真相在於：**模型本身往往不是問題，問題在於模型周圍的支架設施。**
-
-![Agent Harness 多層架構示意圖：以 LLM 為核心，由內而外涵蓋 Runtime、Capabilities 與 Safety & Scale 三大圈層](/images/blog/agent-harness-architecture.webp)
 
 LangChain 曾進行一項震撼行業的實驗：在完全不改動模型權重與算法的前提下，僅透過優化包裹模型的 Harness 架構，智能體在 TerminalBench 2.0 評測中的排名便從 30 名開外躍升至第 5 名。利用 LLM 自主優化的 Harness 系統，其任務通過率可高達 **76.4%**，遠超人工設計的傳統系統。
 

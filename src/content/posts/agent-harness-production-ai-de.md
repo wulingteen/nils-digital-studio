@@ -13,15 +13,13 @@ tags:
   - "Architecture"
   - "LLM"
   - "Tech"
-coverImage: "/images/blog/agent-harness-architecture.webp"
+coverImage: "/images/blog/harness-engineering.webp"
 lang: "de"
 ---
 
 Als KI-Architekten müssen wir eine harte Wahrheit anerkennen: **Im Jahr 2026 dreht sich der KI-Wettbewerb nicht mehr um Parameteranzahlen — sondern um Agent-Harness-Architektur.**
 
 Viele Agenten funktionieren in Demos reibungslos, versagen jedoch in komplexen Produktionsumgebungen. Die Ursache des „Erfolgsraten-Grabens" ist eindeutig: **Das Modell selbst ist selten das Problem. Das Gerüst darum herum ist es.**
-
-![Agent Harness Mehrschicht-Architektur: LLM im Kern, umgeben von Runtime-, Capabilities- und Safety & Scale-Ringen](/images/blog/agent-harness-architecture.webp)
 
 LangChain führte ein wegweisendes Experiment durch: Ohne eine einzige Modellgewichtung zu ändern, katapultierte allein die Optimierung der Harness-Architektur einen Agenten von außerhalb der Top 30 auf **Platz 5** im TerminalBench 2.0. LLM-optimierte Harness-Systeme erreichen Task-Erfolgsraten von **76,4 %** — weit über handgestrickten traditionellen Systemen.
 
