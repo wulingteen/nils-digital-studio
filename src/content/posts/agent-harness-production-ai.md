@@ -13,7 +13,7 @@ tags:
   - "Architecture"
   - "LLM"
   - "Tech"
-coverImage: "/images/blog/harness-engineering.webp"
+coverImage: "/images/blog/agent-harness-architecture.svg"
 ---
 
 身為 AI 架構師，我們必須承認一個殘酷的現實：**2026 年的 AI 競爭，本質上已不再是模型參數的「內卷」，而是 Agent Harness（智能體支架）架構的博弈。**

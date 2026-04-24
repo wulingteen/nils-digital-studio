@@ -13,7 +13,7 @@ tags:
   - "Architecture"
   - "LLM"
   - "Tech"
-coverImage: "/images/blog/harness-engineering.webp"
+coverImage: "/images/blog/agent-harness-architecture.svg"
 lang: "en"
 ---
 
